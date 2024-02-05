@@ -1,0 +1,60 @@
+.whoWeareWrap{
+    width:1300px;
+    margin: 0 auto;
+    margin-top:50px;
+    padding: 0 35px;
+
+}
+.ourGoal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.leftSide{
+    width:550px;
+    
+}
+
+.leftSide img{
+    width:100%;
+    object-fit: cover;
+}
+.rightside{
+    width:65%;
+    text-align:left;
+}
+.rightside p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width:1024px){
+    .whoWeareWrap{
+        width:100%;
+    }
+    .ourGoal{
+       flex-direction: column;;
+    
+    }
+    .rightside, .leftSide{
+        width:100%;
+    }
+    .leftSide{
+        display: none;
+     }
+}
+@media only screen and (max-width:768px){
+    .whoWeareWrap {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width:500px){
+   
+    .whoWeareWrap{
+        margin-top:70px;
+        padding: 0 20px;
+    }
+   
+}
+

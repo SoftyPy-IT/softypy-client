@@ -1,0 +1,111 @@
+.editIcon,
+.deleteIcon {
+  font-size: 25px;
+  color: #F87015;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.deleteIcon {
+  color: red;
+}
+.addHotel button {
+    background: #F87015;
+    color: white;
+    border: 1px solid #fff;
+    transition: all 0.5s cubic-bezier(0, 0.01, 0.98, 0.93);
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+.addHotel button:hover {
+  background: #fff;
+  color: #F87015;
+  border: 1px solid #F87015;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.paginationBtn button{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #F87015;
+  color: #F87015;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 12px;
+  transition: all .5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+
+
+}
+.paginationBtn button:hover{
+  background-color: #F87015;
+  color:white;
+
+}
+.arrowLeft, .arrowRight{
+  color: #F87015 !important;
+  font-size: 15px !important;
+}
+.arrowLeft:hover, .arrowRight:hover{
+  color:white !important;
+}
+.paginationBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addServicesWrap{
+  width: 900px;
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px;
+  border-radius: 5px;
+
+}
+.singleForm{
+  margin-bottom:15px;
+}
+.submitBtn{
+  width: 50%;
+  background: #F87015;
+  margin: 0 auto;
+  color: white;
+  height: 37px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.singleForm textarea, .inputField:focus{
+  outline: none;
+
+}
+@media only screen and (max-width:768px) {
+  .addServicesWrap {
+    width: 700px;
+  }
+  
+}
+@media only screen and (max-width:500px) {
+  .addServicesWrap {
+    width: 400px;
+    padding:20px 15px;
+  }
+  
+}
+@media only screen and (max-width:400px) {
+  .addServicesWrap {
+    width: 330px;
+  }
+  
+}

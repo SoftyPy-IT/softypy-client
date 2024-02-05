@@ -1,0 +1,39 @@
+.brandWrap{
+    width:1300px;
+    margin: 0 auto;
+}
+.slider{
+    width:200px;
+}
+.slider img{
+    width: 100%;
+    object-fit: cover;
+}
+.slider:focus{
+    outline: none;
+}
+.slidersWraps{
+
+}
+@media screen and (max-width:1024px){
+    .brandWrap{
+        width:100%;
+    
+}
+
+
+}
+@media screen and (max-width:768px){
+    .brandWrap {
+        width: 100%;
+    }
+    
+    }
+@media screen and (max-width:500px){  
+
+.slider img {
+    width: 200px !important;
+    margin-top: -51px;
+    margin-bottom: -32px;
+}
+}

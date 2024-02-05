@@ -1,0 +1,213 @@
+
+
+  .timeline {
+    position: relative;
+    width: 1300px;
+    margin: 50px auto;
+    padding:0 35px;
+  }
+  .container {
+    padding: 10px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+    border:1px dashed;
+    margin:0px 0px !important;
+   
+  }
+  .container:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .container:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .container:nth-child(3) {
+    animation-delay: 3s;
+  }
+  .container:nth-child(4) {
+    animation-delay: 4s;
+  }
+  .container:nth-child(5) {
+    animation-delay: 5s;
+  }
+  .container:nth-child(6) {
+    animation-delay: 6s;
+  }
+  @keyframes movedown {
+    0% {
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .textBox {
+    padding: 20px;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .leftContainer {
+    left: 0;
+    border-top-left-radius: 170px;
+    border-bottom-left-radius: 27px;
+    border: 1px dashed;
+    border-right: none;
+
+  }
+  .rightContainer {
+    left: 50%;
+    border-top-right-radius: 170px;
+     border-bottom-right-radius: 27px;
+     border: 1px dashed;
+     border-left: none;
+
+  }
+  .container span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: -26px;
+    z-index: 10;
+    background: #951FE8;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContainer span {
+    left: -20px;
+  }
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #F97015;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+  }
+  
+  @keyframes moveline {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  .leftContentArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+  }
+  .rightContentArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+  }
+  
+
+.textBox .textBoxImg{
+    width: 155px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius:50%;
+    border: 1px solid #F87015;
+
+
+}
+.textBoxImg img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .timeLinesWraps{
+    width:100%;
+  }
+    .timeline {
+     width:100%;
+    }
+.home{
+  width:100%;
+  overflow: hidden;
+}
+}
+
+
+  @media only screen and (max-width: 768px) {
+
+ 
+    .timeline {
+      margin: 50px auto;
+    }
+    .timeline::after {
+      left: 31px;
+    }
+    .container {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25p;
+      border: none;
+    }
+    .rightContainer {
+      left: 0;
+    }
+    .leftContainer span,
+    .rightContainer span {
+      left: -25px;
+    }
+    .leftContentArrow,
+    .rightContentArrow {
+      border-right: 15px solid #fff;
+      border-left: 0;
+      left: -15px;
+    }
+  }
+  
+@media only screen and (max-width:500px){
+  .container {
+    padding-left: 23px;
+    padding-right: 0px;
+}
+.timeline {
+  padding:0 20px;
+}
+.textBox {
+  width: 100%;
+}
+.leftContainer span, .rightContainer span {
+  left: -8px;
+  top: 89px;
+}
+.textBox {
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+}

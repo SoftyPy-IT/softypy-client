@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:first-of-type {
+    border-left: 5px solid red !important;
+}
+.react-tabs__tab--selected {
+   border:2px solid #F87015 !important;
+}
+.react-tabs__tab--selected::after{
+    position:absolute;
+    width:40px;
+    height:40px;
+    background:red;
+    
+
+ }
+.react-tabs__tab-list {
+    border-bottom: 1px solid #F87015 !important;
+    margin-bottom: 70px !important;
+}
+.css-10d9dml-MuiTabs-indicator {
+    background-color: #951FE8 !important;
+    height: 100% !important;
+    display: none !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    position: relative
+    
+ }
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #F87015;
+    bottom: -1px;
+    z-index: 99 !important;
+    transform: rotate(56deg);
+ display: none !important;
+
+
+}
+.css-1aquho2-MuiTabs-indicator {
+    background-color: #F87015 !important;
+}
+.css-1ujnqem-MuiTabs-root {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.rfm-marquee-container {
+    padding-top:80px !important;
+   }
+   .css-jpln7h-MuiTabs-scroller {
+    overflow-x: hidden !important;
+   
+}
+table {
+    width: 100%;
+  }
+  .table :where(thead, tfoot) {
+    white-space: pre-wrap;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: hsl(var(--bc) / 0.6);
+  }
+  
+  .table :where(th, td) {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    vertical-align: middle;
+    white-space: pre-wrap;
+  }
+  .table :where(td) {
+    border-right: 1px solid #ddd;
+    text-align: center;
+    font-size: 12px;
+    border-bottom:1px solid #F87015;
+  }
+  .table :where(td):nth-last-of-type() {
+    border-bottom: 3px solid #ddd !important;
+  }
+  .table :where(th) {
+    border: 1px solid #fff;
+    text-align: center;
+    background: #F87015;
+    font-size: 14px;
+    color: white;
+  
+  }
+  .table {
+    width: 100%;
+    text-align: left;
+    font-size: 0.6em;
+    line-height: 1.75rem;
+    border-radius: var(--rounded-box, 1rem);
+  }
+  .drawer-content {
+    position: absolute !important;
+    right: 0px !important;
+    width: 76%;
+}
+.drawerflex {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+.drawwerLeftSide {
+    width: 24% !important;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.countdown > * {
+    overflow-y: visible !important;
+}
+.countdown > *:before {
+    position: relative;
+    content: "" !important;
+}
+.scroll-to-top {
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #FF3D00 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999 !important;
+}
+@media only screen and (max-width:1024px){
+    .css-lfwcke-MuiTabs-flexContainer {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+   
+    
+}
+@media only screen and (max-width:768px){
+
+    .css-1ujnqem-MuiTabs-root {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .css-lfwcke-MuiTabs-flexContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+        font-size: 10px !important;
+        line-height: -3px !important;
+        min-width: 40px !important;
+        background: #F87015 !important;
+        margin-left: 5px !important;
+        margin: 2px !important;
+        min-height: 34px !important;
+        color: white !important;
+        border-radius: 3px !important;
+    }
+    
+}

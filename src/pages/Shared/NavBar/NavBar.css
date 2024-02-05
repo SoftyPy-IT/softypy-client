@@ -1,0 +1,211 @@
+.navbar {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+.navbar-list {
+  display: flex;
+  color: white;
+}
+.logo {
+  color: white;
+}
+.navbar-list li {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.sticky {
+  width: 1300px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #541283fb, #ff5400);
+  width: 100%;
+  color: white ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  padding: 20px 30px;
+}
+.sticky .navbar-list,
+.sticky .logo {
+  color: white !important;
+}
+
+.navbar-list li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #f76300;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-list li:hover::after {
+  width: 90%;
+  border-bottom: 1px solid white;
+}
+.bar {
+  display: none;
+}
+.mobileMenu,
+.mobileMenuActive {
+  display: none;
+}
+.usersWrap{
+  position: relative;
+}
+.userItems{
+  position: absolute;
+  background: #F87015;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 3px;
+  display: none;
+  justify-content: center;
+}
+.usersWrap:hover .userItems{
+  display: block;
+}
+.user, .user2{
+  width:3.12rem;
+  height:3.12rem;
+  border-radius: 100%;
+  
+}
+.user2{
+  color:white;
+  border:1px solid #ffffff;
+}
+.security{
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar,
+  .sticky {
+    width:100%;
+  }
+  .navbar{
+    padding:10px 30px;
+  }
+  .security {
+    position: relative;
+    left: -44%;
+}
+  .navbar-list {
+    display: none;
+  }
+  .mobileMenu,
+  .mobileMenuActive {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    color: #f76300;
+    top: -19px;
+    left: -350px;
+    padding-top: 50px;
+    display: block;
+    z-index: 999;
+    padding-left: 20px;
+    transition: all 0.5s cubic-bezier(0.46, 0.38, 0.52, 0.46);
+    box-shadow: #f76300 0px 5px 15px;
+    z-index: 99999999999;
+  }
+  .mobileMenuActive {
+    left: 0px !important;
+  }
+  .mobileMenu li,
+  .mobileMenuActive li {
+    margin-bottom: 18px;
+  }
+
+  .bar {
+    padding: 0px !important;
+    text-align: left !important;
+    width: 49px;
+    height: 46px;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+    position: absolute;
+    top: 14px;
+    right: 21px;
+    z-index: 999999;
+  }
+  .bar div {
+    position: relative;
+  }
+  .bar span {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 6px;
+    display: block;
+    transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+  }
+  .sticky .bar span {
+    background-color: #fff;
+  }
+  .bar1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -2px;
+    left: -12px;
+    transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+  }
+  .bar2 {
+    display: none;
+    position: absolute !important;
+    display: none !important;
+    transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+  }
+  .bar3 {
+    transform: rotate(45deg);
+    position: absolute;
+    top: -2px;
+    right: -18px;
+    transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+  }
+}
+
+@media only screen and (max-width:500px){
+  .navbar {
+    padding: 5px 8px;
+}
+.bar{
+  top: 12px;
+  right: 1px;
+}
+.user, .user2 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+}
+@media  only screen and (max-width:400px) {
+
+  .security {
+    left: -40%;
+}
+  
+}

@@ -1,0 +1,8 @@
+.serviceBox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    width:400px;
+    margin: 10px auto;
+
+}

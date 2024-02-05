@@ -1,0 +1,7 @@
+.singleForm select{
+ width:100%;
+ border:1px solid #F87015;
+}
+.singleForm select:focus{
+    outline: none;
+}

@@ -1,0 +1,235 @@
+.contactInfoWrap {
+  padding: 0px 50px;
+}
+.contactHeroSection {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, #541283fb, #ff5400);
+  background-size: 300% 300%;
+  height: 85vh;
+  background-size: 300% 300%;
+}
+.contactHeroSection::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: white;
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(100% 10%, 0 100%, 100% 100%);
+}
+.questionWrap {
+  width: 300px !important;
+  height: 300px !important;
+}
+.contactss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  height: 100%;
+}
+.contactText {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -50px;
+  color: white;
+  align-items: center;
+}
+.getInTouch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+.getInTouchLeft {
+  width: 45%;
+  padding-top: 35px;
+}
+.getInTouchRight {
+  width: 55%;
+  margin-left: 22px;
+  height: 100%;
+  z-index: 999;
+}
+
+.formControl {
+  margin-bottom: 25px;
+}
+.formControl label {
+  display: block;
+}
+.formControl .inputField {
+    width: 100%;
+    border: 1px solid #ff5502;
+    height: 50px;
+    border-radius: 8px;
+    
+}
+.formControl input::placeholder,
+.formControl textarea::placeholder,
+.subscribeContent input::placeholder {
+  color: black !important;
+  padding-left: 5px;
+  font-size: 14px;
+}
+.formControl :where(textarea, .inputField){
+  padding-left: 10px;
+}
+.formControl textarea {
+  border: 1px solid #ff5502;
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  padding-top:10px;
+
+}
+.sendMessageBtn {
+  background: #ff5502;
+  color: white;
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 45px;
+  position: relative;
+}
+.contactLine {
+  background: #ff5502;
+  width: 2px !important;
+  height: 55px;
+}
+.contactIcon {
+  font-size: 36px;
+  color: #ff5502;
+  margin-right: 6px;
+}
+.socialMedia {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+}
+.singleSocialMedia,
+.activeSocial {
+  width: 280px;
+  background: #fff;
+  aspect-ratio: 1/1;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #951fe8;
+  color: black;
+  transition: all cubic-bezier(0.25, 0.22, 1, 0.99);
+}
+
+.activeSocial {
+  background-color: #951fe8 !important;
+  color: white !important;
+}
+.activeSocial:hover {
+  background-color: #fff !important;
+  color: black !important;
+}
+.singleSocialMedia:hover {
+  background-color: #951fe8 !important;
+  color: white !important;
+  border: 1px solid #fff;
+}
+.contacSocialIcon {
+  width: 50px;
+  height: 50px;
+  background: #19abe3;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 29px;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .singleSocialMedia,
+  .activeSocial {
+    width: 220px;
+  }
+  .contactText {
+    padding: 0px 25px;
+  }
+  .contactInfo {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .getInTouch,
+  .socialMedia {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .getInTouchLeft,
+  .getInTouchRight {
+    width: 100%;
+  }
+
+  .singleSocialMedia {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contactText {
+    display: block;
+  }
+
+  .questionWrap {
+    width: 240px !important;
+    height: 230px !important;
+    margin:0 auto;
+  }
+  .contactInfoWrap {
+    padding: 0px 12px;
+  }
+  .singleSocialMedia,
+  .activeSocial {
+    margin: 15px auto;
+  }
+  .contactInfo {
+    flex-direction: column;
+  }
+  .contactUsWrap {
+    height: 490px;
+  }
+  .contactss {
+    margin-top: -50px;
+  }
+  .formControl .inputField,
+  .formControl textarea,
+  .sendMessageBtn {
+    width: 100%;
+  }
+  .contactHeroSection::after{
+    clip-path: polygon(100% 100%, 0 100%, 100% 100%);
+  }
+  .getInTouchRight {
+     margin-left: 0px;
+}
+}

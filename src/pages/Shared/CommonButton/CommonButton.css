@@ -1,0 +1,17 @@
+.bannerBtn{
+   width:230px;
+   height: 50px;
+    background-color: #F76300;
+    color:white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all .5s ease-in-out;
+    border:1px solid #fff;
+    font-weight: bold;
+}
+.bannerBtn:hover{
+    background:#951FE8;
+    color:#fff;
+}
