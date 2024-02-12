@@ -1,7 +1,6 @@
 
 .aboutWrap{
-    width:1200px;
-    margin:0 auto;
+
     overflow: hidden;
 }
 .aboutHero{
@@ -276,9 +275,7 @@ img {
 .aboutLeftContainer {
   left: 46px !important;
 }
-.mission {
-  padding: 0 20px;
-}
+
 .aboutRightContainer {
   left: 10px !important;
 }

@@ -51,4 +51,7 @@
     .boostSectionLeft {
         padding-left: 6px;
     }
+    .boostSectionWrap{
+        margin-bottom: 0px;;
+    }
 }

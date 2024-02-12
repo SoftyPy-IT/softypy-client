@@ -70,7 +70,7 @@ const Services = () => {
         <div className="my-10">
           <TopServices />
         </div>
-        <div className="ourServices my-14">
+        <div className="ourServices">
           <div className="mb-8">
             <SectionTitle
               title="Types of Web Development Services"

@@ -6,9 +6,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 import "./Director.css";
-const AboutDirectior = () => {
+import Container from "../../ui/Container";
+const AboutDirector = () => {
   return (
-    <div>
+    <Container>
       <div className="aboutTimeLine">
         <div data-aos="fade-right" className="aboutLeftContainer aboutContainer">
           <span>
@@ -77,8 +78,8 @@ const AboutDirectior = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
-export default AboutDirectior;
+export default AboutDirector;

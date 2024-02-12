@@ -4,7 +4,7 @@
   position: relative;
   max-width: 1200px;
   margin: 50px auto;
-  padding:0 35px;
+  /* padding:0 35px; */
 }
 .aboutTimeLine::after {
   content: "";

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import "./About.css";
 import team from "../../../public/assets/team6.jpeg";
 import team2 from "../../../public/assets/team2.jpg";
@@ -11,12 +12,13 @@ import { FaArrowRight } from "react-icons/fa";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import { useRef } from "react";
 import { useEffect } from "react";
-import AboutDirectior from "./AboutDirectior";
 import PortfolioCountdown from "../Home/CountDown/CountDown";
 import ManageMent from "./ManageMent/ManageMent";
 import NavBar from "../Shared/NavBar/NavBar";
 import { Link } from "react-router-dom";
 import Subscribe from "../../components/Subscribe/Subscribe";
+import AboutDirector from "./AboutDirector";
+import Container from "../../ui/Container";
 const About = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -25,14 +27,16 @@ const About = () => {
 
   return (
     <section>
-       <div className=" portfolioHeroSection">
+      <div className=" portfolioHeroSection">
         <div className="navsBarWrap">
           <NavBar />
 
           <div className=" portfolioContent">
             <h3 className="text-3xl md:text-5xl font-bold mb-2">About Us </h3>
             <p className="md:text-xl">
-            We are a global IT solutions provider, dedicated to delivering cutting-edge technology solutions and exceptional services worldwide.
+              We are a global IT solutions provider, dedicated to delivering
+              cutting-edge technology solutions and exceptional services
+              worldwide.
             </p>
           </div>
         </div>
@@ -40,9 +44,9 @@ const About = () => {
       <div className="aboutWrap">
         <div className="my-24">
           <SectionTitle title="STATEMENTS OF OUR HONORABLE MANAGING DIRECTOR"></SectionTitle>
-          <AboutDirectior />
+          <AboutDirector />
         </div>
-        <div>
+        <Container>
           <SectionTitle
             title="Our History "
             text='"Mission: Igniting Change. Vision: A Better Future."'
@@ -88,15 +92,15 @@ const About = () => {
               ></lottie-player>
             </div>
           </div>
-        </div>
-        <div className="team-anim--section">
+        </Container>
+        <Container className="team-anim--section">
           <div className="inner">
             <div
               className="basic-title--wrap aos-init aos-animate"
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              <h2 className="basic-title">Meet Our Amazing Team</h2>
+              <h2 className="basic-title ">Meet Our Amazing Team</h2>
               <div className="basic-title--sub">
                 <p>
                   {" "}
@@ -241,12 +245,12 @@ const About = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </Container>
         <ManageMent />
 
         <PortfolioCountdown />
       </div>
-      <Subscribe/>
+      <Subscribe />
     </section>
   );
 };
