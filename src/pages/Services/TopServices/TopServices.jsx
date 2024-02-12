@@ -1,3 +1,6 @@
+/* eslint-disable no-irregular-whitespace */
+/* eslint-disable no-func-assign */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/display-name */
 import  { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
@@ -8,6 +11,7 @@ import { useRef, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
+import Container from "../../../ui/Container";
 AOS.init();
 
 export default Arrow = () => {
@@ -29,7 +33,7 @@ export default Arrow = () => {
   });
 
   return (
-    <>
+    <Container>
       <main className="topServicesWrap">
         <div>
           <div data-aos="fade-up" className="relatedServiceHead  mt-8">
@@ -221,7 +225,7 @@ export default Arrow = () => {
           </div>
         )}
       </main>
-    </>
+    </Container>
   );
 };
 

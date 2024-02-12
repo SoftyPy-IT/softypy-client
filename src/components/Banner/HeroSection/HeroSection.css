@@ -43,10 +43,10 @@ background: radial-gradient(farthest-side at 80% 80%, #FF333D, #F87015, #541283f
   background-size: 300% 300%;
 
 }
-.navsBarWrap{
-  width:1300px;
+/* .navsBarWrap{
+  width:1200px;
   margin:0 auto;
-}
+} */
 
 .header:before {
   content: "";
@@ -74,7 +74,7 @@ background: radial-gradient(farthest-side at 80% 80%, #FF333D, #F87015, #541283f
 
 .header-content .right-side, .header-content .left-side {
   width: 650px;
-  margin: 0 au;
+  margin: 0 auto;
 }
 
 .left-side {
@@ -135,9 +135,9 @@ background: radial-gradient(farthest-side at 80% 80%, #FF333D, #F87015, #541283f
   background: none;
     
   }
-  .navsBarWrap{
+  /* .navsBarWrap{
     width:100%;
-  }
+  } */
   /* .header:before {
     clip-path: polygon(0px 10%, 0 100%, 100% 100%);
     

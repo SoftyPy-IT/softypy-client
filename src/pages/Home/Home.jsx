@@ -3,7 +3,7 @@ import Review from "../../components/Review/Review";
 import SwiperTimeLine from "../../components/TimeLine/SwiperTimeLine";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
 import Services from "./Services/Services";
-import Choos2 from "./ChoosUs/Choose2";
+import Technologies from "./ChoosUs/Technologies";
 import TimeLine from "./TimeLine/TimeLine";
 import CountDown from "./CountDown/CountDown";
 import HeroSection from "../../components/Banner/HeroSection/HeroSection";
@@ -16,7 +16,7 @@ const Home = () => {
       <WhoWeAre />
       <SwiperTimeLine />
       <TimeLine />
-      <Choos2 />
+      <Technologies />
       <Services />
       <Brand />
       <Review />

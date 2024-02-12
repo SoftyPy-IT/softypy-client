@@ -1,10 +1,4 @@
 
-
-.topServicesWrap{
-    width:1300px;
-    margin:0 auto;
-    padding:0 35px;
-}
 .topServices{
     display: flex;
     align-items: center;
@@ -76,8 +70,6 @@
 
 @media only screen and (max-width:1024px){
     .topServicesWrap{
-        width: 100%;
-        padding: 0 20px;
         margin-bottom: 86px;
     
     }
@@ -114,7 +106,6 @@
         margin-top: 27px;
     }
     .topServicesWrap {
-        padding: 0px 10px;
         margin-bottom: 45px;
       }
 }

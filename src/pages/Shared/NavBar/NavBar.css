@@ -1,14 +1,27 @@
 .navbar {
-  width: 1300px;
+
   display: flex;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 20px 0px;
   align-items: center;
   z-index: 999999;
   top: 0;
   left: 0;
   right: 0;
   position: relative;
+}
+.sticky {
+  width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #541283fb, #ff5400);
+  width: 100%;
+  color: white ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  padding: 15px 60px;
 }
 
 .navbar-list {
@@ -26,19 +39,7 @@
   position: relative;
 }
 
-.sticky {
-  width: 1300px;
-  margin: 0 auto;
-  background: linear-gradient(to right, #541283fb, #ff5400);
-  width: 100%;
-  color: white ;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99999;
-  padding: 20px 30px;
-}
+
 .sticky .navbar-list,
 .sticky .logo {
   color: white !important;

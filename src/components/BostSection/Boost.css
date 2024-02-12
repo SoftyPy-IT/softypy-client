@@ -7,12 +7,13 @@
 
 }
 .boostSection{
-    width:1300px;
+    width:1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .boostSectionLeft{
     width:600px;
 }

@@ -7,6 +7,7 @@ import { useRef, useEffect } from "react";
 import TopServices from "./TopServices/TopServices";
 import BoostSection from "../../components/BostSection/BoostSection";
 import NavBar from "../Shared/NavBar/NavBar";
+import Container from "../../ui/Container";
 const Services = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -14,6 +15,7 @@ const Services = () => {
   });
 
  
+
 
   return (
     <div className="home" >
@@ -32,7 +34,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="singleServicesWrap">
+      <Container >
         <div className="services">
           <div className="servicesLeftSide">
             <h3>
@@ -258,7 +260,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
       <BoostSection/>
     </div>
   );

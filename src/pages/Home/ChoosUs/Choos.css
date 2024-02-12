@@ -1,260 +1,236 @@
-.choosWrap{
-    width:1300px;
-    margin:0 auto;
-    padding:0 35px;
-    overflow: hidden;
+.technologyWraps {
+  overflow: hidden;
 }
-.boxWrap{
-    display: flex;
-    width:1265px !important;
-    margin:0 auto;
-    justify-content: center;
-   
+.boxWrap {
+  display: flex;
+  width: 1265px !important;
+  margin: 0 auto;
+  justify-content: center;
 }
-.technologies{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:1015px !important;
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1015px !important;
 }
-.tabs{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 250px !important;
-    margin-top:130px !important;
+.tabs {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 250px !important;
+  margin-top: 130px !important;
 }
-.technologyWrap{
-    width: 1015px;
-    }
-  
-
-.container{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0;
-    transform-style: preserve-3d;
-    margin:50px 0;
-}
-.container .box{
-    position: relative;
-    width: 385px;
-    height: 300px;
-    background-color: #951FE8;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius:20px;
-}
-.container .box:hover{
-    box-shadow: 0 50px 80px rgba(0,0,0, .2);
+.technologyWrap {
+  width: 1015px;
 }
 
-
-.container .box .imgBx{
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  transform-style: preserve-3d;
+  margin: 50px 0;
 }
-.container .box .contentBx{
-    position:absolute;
-    top:50%;
-    left:50px;
-    right:50px;
-    background:#fff;
-    transform:translateZ(20px) scaleY(0);
-    padding: 40px 25px;
-    transform-origin: top;
-    transition: .5s;
-    transform-style: preserve-3d;
-   border-radius: 20px;
-    box-shadow: #F87015 0px 5px 15px;
+.container .box {
+  position: relative;
+  width: 385px;
+  height: 300px;
+  background-color: #951fe8;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
 }
-.container .box:hover .contentBx{
-       transform:translateZ(20px) scaleY(1);
-}
-.boxContent{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.category li small{
-    font-size: 18px !important;
-    margin-bottom:10px;
-}
-.checkIcon{
-    color:#F87015 !important;
-    font-size: 22px !important;
-}
-.technologyTitle{
-    color: #F97C28;
-    font-size: 30px;
-    font-weight: bold;
-    border-bottom: 2px solid #F97C28;
-    width: 200px;
-}
-.technologyRightSide{
-    width:500px;
+.container .box:hover {
+  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.2);
 }
 
-.choocesWrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .box .contentBx {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  right: 50px;
+  background: #fff;
+  transform: translateZ(20px) scaleY(0);
+  padding: 40px 25px;
+  transform-origin: top;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  box-shadow: #f87015 0px 5px 15px;
+}
+.container .box:hover .contentBx {
+  transform: translateZ(20px) scaleY(1);
+}
+.boxContent {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.category li small {
+  font-size: 18px !important;
+  margin-bottom: 10px;
+}
+.checkIcon {
+  color: #f87015 !important;
+  font-size: 22px !important;
+}
+.technologyTitle {
+  color: #f97c28;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid #f97c28;
+  width: 200px;
+}
+.technologyRightSide {
+  width: 500px;
 }
 
-
-.singleProduct{
-    width:400px;
-    aspect-ratio: 1/1;
-    background:red;
-    color: white;
+.choocesWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.singleProduct {
+  width: 400px;
+  aspect-ratio: 1/1;
+  background: red;
+  color: white;
+}
 
 /* marque styling  */
 
-  .skillAnimation{
-    width:170px;
-  }
-  .technologyHead h3{
-    font-size: 35px;
-  }
-  .skill{
-      animation: bounce  6s infinite linear;
-     
-  }
-  .skills{
-      margin-right:60px;
-  }
-  .skill2{
-      animation: bounce2  6s infinite linear;
-  }
-  
-  .hidSkill{
-      display: none;
-  }
-  @keyframes bounce {
-      0% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-50%); /* Move left to create the bounce effect */
-        }
-        100% {
-          transform: translateY(0);
-        }
-    }
-    
-    @keyframes bounce2 {
-      0% {
-          transform: translateY(-50%);
-        }
-        50% {
-          transform: translateY(0); /* Move left to create the bounce effect */
-        }
-        100% {
-          transform: translateY(-50%);
-        }
-    }
-
-    /* marquee styling */
-
-@media only screen and (max-width:1024px){
-    .choosWrap{
-        width:100%;
-    }
-/* marquee */
-
-      .tabs{
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: 30% !important;
-    }
-    .boxWrap, .technologyWrap, .technologies, .tabs{
-      width:100% !important;
-       
-    }
-    .boxWrap {
-        display: block;
-    }
-      
-    
+.skillAnimation {
+  width: 170px;
+}
+.technologyHead h3 {
+  font-size: 35px;
+}
+.skill {
+  animation: bounce 6s infinite linear;
+}
+.skills {
+  margin-right: 60px;
+}
+.skill2 {
+  animation: bounce2 6s infinite linear;
 }
 
-@media only screen and (max-width:768px){
-    .choosWrap{
-        padding:0 10px;
-    }
-    .technologies {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column-reverse;
-    }
-    .technologyWrap{
-        width: 100%;
-        }
-          .tabs{
-           width:100% !important;
-           margin:0 auto;
-        }
-        .technologyRightSide {
-            margin-bottom: 40px;
-        }
-    
-    
-        /* marquee */
-    
-        .technologyHead{
-            width:100%;
-            
-          }
-          .technologyHead h3{
-            font-size: 30px;
-          }
-          .skillAnimation{
-            width:130px;
-          }
-          .skills {
-            margin-right: 40px;
-        }
-    
-        
-    }
-      
-
-
-
-
-@media only screen and (max-width:500px){
-
-    .technologyRightSide {
-        width:100%;
-    }
-
-    /* marquee */
-
-    .technologyHead h3{
-        font-size: 23px;
-      }
-      .skillAnimation{
-        width:70px;
-      }
-      .skills {
-        margin-right: 18px;
-    }
-    .boxWrap {
-        margin-top: -110px;
-    }
-
+.hidSkill {
+  display: none;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%); /* Move left to create the bounce effect */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
+@keyframes bounce2 {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0); /* Move left to create the bounce effect */
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* marquee styling */
+
+@media only screen and (max-width: 1024px) {
+  /* marquee */
+
+  .tabs {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 30% !important;
+  }
+  .boxWrap,
+  .technologyWrap,
+  .technologies,
+  .tabs {
+    width: 100% !important;
+  }
+  .boxWrap {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .technologyWraps {
+    padding: 0 10px;
+  }
+  .technologies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .technologyWrap {
+    width: 100%;
+  }
+  .tabs {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .technologyRightSide {
+    margin-bottom: 40px;
+  }
+
+  /* marquee */
+
+  .technologyHead {
+    width: 100%;
+  }
+  .technologyHead h3 {
+    font-size: 30px;
+  }
+  .skillAnimation {
+    width: 130px;
+  }
+  .skills {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .technologyRightSide {
+    width: 100%;
+  }
+
+  /* marquee */
+
+  .technologyHead h3 {
+    font-size: 23px;
+  }
+  .skillAnimation {
+    width: 70px;
+  }
+  .skills {
+    margin-right: 18px;
+  }
+  .boxWrap {
+    margin-top: -110px;
+  }
+}

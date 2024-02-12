@@ -1,21 +1,19 @@
 .reviewSliderWrap{
-    width: 1300px;
-    margin: 0 auto;;
     overflow: hidden;
-    padding:0 35px;
 }
 
 .swiperWrap{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .reviewImg{
-    width:300px;
-    height: 300px;
+    width:350px;
+    height: 350px;
     border-radius: 50%;
     overflow: hidden;
+
 }
 .leftSide img{
     width:100%;
@@ -23,7 +21,7 @@
     height: 100%;
 }
 .reviewContent{
-    margin-left:30px;
+
     width:800px;
 }
 .reviewContent h3{
@@ -69,12 +67,6 @@
     margin-left:2px
 }
 
-@media only screen and (max-width:1024px){
-    .reviewSliderWrap{
-        width: 100%;
-        padding:0 10px;
-    } 
-}
 
 @media only screen and (max-width:500px){
     .reviewContent {

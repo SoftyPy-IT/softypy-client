@@ -32,11 +32,7 @@
   top: 150px;
   text-align: center;
 }
-.singleServicesWrap {
-  width: 1300px;
-  margin: 0 auto;
-  padding: 35px;
-}
+
 .services {
   display: flex;
   justify-content: space-between;
@@ -57,8 +53,8 @@
   padding: 20px;
 }
 .card {
-  width: 400px;
-  height: 400px;
+  width: 390px;
+  aspect-ratio: 1/1;
   margin: 0 auto;
   perspective: 1000px;
   cursor: pointer;
@@ -180,10 +176,6 @@
     width: 100%;
   }
 
-  .singleServicesWrap {
-    width: 100%;
-    padding: 0px 20px;
-  }
   .services {
     justify-content: center;
     align-items: center;

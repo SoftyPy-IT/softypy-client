@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import man from "../../../public/assets/kamal.jpg";
@@ -6,6 +7,7 @@ import man3 from "../../../public/assets/man3.png";
 import "./Review.css";
 import { FaQuoteLeft , FaArrowRight} from "react-icons/fa";
 import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
+import Container from "../../ui/Container";
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {
@@ -56,7 +58,7 @@ export default function Review() {
   );
 
   return (
-    <div>
+    <Container>
      <div className="mb-8">
      <SectionTitle title='What Our Client Say '></SectionTitle>
      </div>
@@ -170,6 +172,6 @@ export default function Review() {
         </div>
       </div>
       </div>
-    </div>
+    </Container>
   );
 }

@@ -1,5 +1,7 @@
+/* eslint-disable no-func-assign */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/display-name */
-import React, { useState } from "react";
+import  { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./SwiperTimeLine.css";
@@ -9,12 +11,12 @@ import icon from "../../../public/assets/icon.png";
 import icon2 from "../../../public/assets/icon2.png";
 import icon3 from "../../../public/assets/icon3.png";
 import icon4 from "../../../public/assets/icon4.png";
-import icon5 from "../../../public/assets/icon5.png";
 import icon6 from "../../../public/assets/icon6.png";
 import icon7 from "../../../public/assets/icon7.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
+import Container from "../../ui/Container";
 AOS.init();
 
 export default Arrow = () => {
@@ -36,7 +38,7 @@ export default Arrow = () => {
   });
 
   return (
-    <section className=" ">
+    <Container>
       <main className="chooseWrap">
        <div >
        <SectionTitle data-aos="zoom-in" title="Why Choose SoftyPy? Your Ideal IT Partner for Success "></SectionTitle>
@@ -178,7 +180,7 @@ export default Arrow = () => {
           </div>
         )}
       </main>
-    </section>
+    </Container>
   );
 };
 

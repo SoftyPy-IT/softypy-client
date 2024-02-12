@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../contexts/AuthProvider";
 import team from "../../../../public/assets/team11.jpeg";
 import login from "../../../../public/assets/login6.png";
+import Container from "../../../ui/Container";
 const NavBar = () => {
   const { user, logout } = useContext(AuthContext);
   const [mobileMenu, setMobileMenu] = useState(true);
@@ -13,7 +14,7 @@ const NavBar = () => {
   };
   window.addEventListener("scroll", function () {
     var header = document.querySelector(".navbar");
-    header.classList.toggle("sticky", window.scrollY > 300);
+    header.classList.toggle("sticky", window?.scrollY > 300);
   });
   const handleLogOut = () => {
     logout()
@@ -22,7 +23,7 @@ const NavBar = () => {
   };
 
   return (
-    <div>
+    <Container>
       <div className="navbar">
         <div className=" logo">
           <Link to="/">
@@ -131,7 +132,7 @@ const NavBar = () => {
           <li className="navbar-item">Sign Up </li>
         </Link>
       </ul>
-    </div>
+    </Container>
   );
 };
 

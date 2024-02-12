@@ -15,7 +15,7 @@ const Services = () => {
 
 
   return (
-    <div className="my-16 w-[1300px] mx-auto">
+    <div className="my-16 w-[1200px] mx-auto">
       <div className="mb-10">
         <SectionTitle
           title="Our Services"
