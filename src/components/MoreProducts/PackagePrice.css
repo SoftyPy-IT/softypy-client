@@ -52,3 +52,18 @@ padding:10px 0;
     background-color: #fc7706;
   }
 }
+
+@media only screen and (max-width:1024px){
+  .priceCard{
+    width:100%;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .priceCard{
+    width:80%;
+  }
+  .priceCard:nth-child(2) {
+    margin-top: 0px;
+  }
+}
