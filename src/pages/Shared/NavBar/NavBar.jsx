@@ -39,22 +39,26 @@ const NavBar = () => {
             {" "}
             <li className="navbar-item">Services</li>
           </Link>
+          <Link to="/packages">
+          {" "}
+          <li className="navbar-item">Packages</li>
+        </Link>
           <Link to="/portfolio">
             {" "}
             <li className="navbar-item">Portfolio</li>
           </Link>
-          <Link to="/client">
-            {" "}
-            <li className="navbar-item">Happy Clients </li>
-          </Link>
           <Link to="/about">
             {" "}
-            <li className="navbar-item">About Us </li>
+            <li className="navbar-item">About</li>
           </Link>
           <Link to="/contact">
             {" "}
-            <li className="navbar-item">Contact Us </li>
+            <li className="navbar-item">Contact</li>
           </Link>
+          <Link to="/client">
+          {" "}
+          <li className="navbar-item">Happy Clients </li>
+        </Link>
         </ul>
         <div className="security">
           {user?.uid ? (

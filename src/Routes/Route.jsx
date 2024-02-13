@@ -30,8 +30,7 @@ import AddSingleServices from "../pages/Dashboard/SingleServices/AddSingleServic
 import UpdateSingleServices from "../pages/Dashboard/SingleServices/UpdateSingleServices";
 import CustomerOrderList from "../pages/Dashboard/CustomerOrder/CustomerOrderList";
 import Faq from "../pages/FAQ/Faq";
-
-
+import Packages from "../pages/Packages/Packages";
 
 
 
@@ -72,6 +71,10 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />
+      },
+      {
+        path: '/packages',
+        element: <Packages />
       },
       {
         path: '/signup',
