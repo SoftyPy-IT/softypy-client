@@ -1,0 +1,54 @@
+.priceCard {
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s cubic-bezier(0.52, 0.52, 0.67, 0.65);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.priceCard img {
+  width: 100%;
+  height: 180px;
+}
+.priceCard:nth-child(2) {
+  margin-top: -200px;
+}
+.packageInclude {
+  height: 300px;
+  overflow-y: scroll;
+}
+.priceBtn{
+ background:#FC7706;
+ color:white;
+ border-radius: 2px;
+ margin: 10px auto;
+ width:200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+padding:10px 0;
+}
+/* bg-[#FC7706] text-white flex items-center cursor-pointer text-center max-auto  mt-4 w-[150px] p-2 rounded-lg  border */
+
+.packageInclude {
+  height: 300px;
+  overflow-y: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: #5b1782 #fc7706;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #5b1782;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #fc7706;
+  }
+}

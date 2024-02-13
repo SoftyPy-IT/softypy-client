@@ -4,6 +4,7 @@ import Technologies from "../Home/ChoosUs/Technologies";
 import Review from "../../components/Review/Review";
 import Brand from "../../components/Brand/Brand";
 import WorkPortfolio from "../../components/WorkPortfolio/WorkPortfolio";
+import PackagePrice from "../../components/MoreProducts/PackagePrice";
 const Packages = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const Packages = () => {
       <TimeLine />
       <Technologies/>
       <WorkPortfolio/>
+      <PackagePrice/>
     </div>
   );
 };
