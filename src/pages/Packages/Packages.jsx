@@ -10,6 +10,7 @@ import { useEffect, useRef } from "react";
 import { HiCheck } from "react-icons/hi";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import MorePackages from "../../components/MoreProducts/MorePackages";
+import HowSoftyPyWork from "./HowSoftyPyWork";
 const Packages = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -101,6 +102,7 @@ const Packages = () => {
         </section>
       </Container>
       <MorePackages/>
+      <HowSoftyPyWork/>
       <div className="mt-[60px]">
         <Review />
         <Brand />

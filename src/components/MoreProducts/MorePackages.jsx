@@ -5,35 +5,6 @@ import Container from "../../ui/Container";
 import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
 import { HiOutlineHome, HiOutlineShoppingCart } from "react-icons/hi";
 const MorePackages = () => {
-
-  //   {
-  //     id: 1,
-  //     name: "Web & APP Development",
-  //     desc:"SoftyPy specializes in crafting dynamic websites and innovative mobile apps, delivering a seamless user experience and digital solutions tailored to your needs."
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "ERP Solutions",
-  //     desc: "ERP Solutions optimize business operations through integrated software, fostering efficiency and informed decision-making for sustained growth."
-  //   },
-    
-  //   {
-  //     id: 3,
-  //     name: "UI/UX Design ​",
-  //     desc: "At SoftyPy, we craft exceptional UI/UX designs that harmonize aesthetics and functionality, ensuring delightful user experiences for your digital products."
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Digital Marketing",
-  //     desc:"SoftyPy drives business growth with data-driven digital marketing strategies, elevating your online presence and engaging target audiences for lasting results."
-  //   },
-  //   // {
-  //   //   id: 5,
-  //   //   name: "SEO ",
-  //   //   desc: 'SoftyPy SEO services can build your high rankings and achieving your organic traffic & improve search engine result.'
-  //   // },
-    
-  // ];
   return (
    <Container>
    <div className="my-16">

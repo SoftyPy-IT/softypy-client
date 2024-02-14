@@ -6,21 +6,8 @@ import { Link } from "react-router-dom";
 import Container from "../../../ui/Container";
 
 const Services = () => {
-const [singleservices] = usePopularServices()
+const [singleServices] = usePopularServices()
 
-const handleDetails = ()=>{
-  fetch('',{
-    method: "POST",
-    headers: {
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify()
-  })
-  .then(res=>res.json())
-  .then(data=>{
-    console.log(data)
-  })
-}
 
   return (
    <Container>
@@ -48,7 +35,7 @@ const handleDetails = ()=>{
      <div className="ourServicesRightSide">
        <div>
          <div className="cardsWrap">
-           {singleservices.map((card) => (
+           {singleServices.map((card) => (
              <div key={card.id} className="cards">
                <div className="inner-box">
                  <div className="cards-front cards-front5">
@@ -63,7 +50,7 @@ const handleDetails = ()=>{
                      <small className="my-1 md:my-3">
                       {card.subtitle.slice(0, 80)}...
                      </small>
-                     <div onClick={handleDetails}>
+                     <div>
                        <Link to={`singleService/${card._id}`}> <div className="flex items-center justify-center"> <span>Read More </span><small><FaArrowRight/></small></div></Link>
                        </div>
                        {/* type=${packageType} */}
