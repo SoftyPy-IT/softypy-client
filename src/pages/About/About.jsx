@@ -25,6 +25,7 @@ const About = () => {
     import("@lottiefiles/lottie-player");
   });
 
+  
   return (
     <section>
       <div className=" portfolioHeroSection">

@@ -32,7 +32,6 @@
  align-items: center;
 padding:10px 0;
 }
-/* bg-[#FC7706] text-white flex items-center cursor-pointer text-center max-auto  mt-4 w-[150px] p-2 rounded-lg  border */
 
 .packageInclude {
   height: 300px;
@@ -52,6 +51,11 @@ padding:10px 0;
     background-color: #fc7706;
   }
 }
+
+.requestBtn{
+  margin:0;
+}
+
 
 @media only screen and (max-width:1024px){
   .priceCard{
