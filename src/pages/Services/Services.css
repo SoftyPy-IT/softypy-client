@@ -44,7 +44,7 @@
 .servicesLeftSide h3 {
   font-size: 27px;
   font-weight: bold;
-  color: #f87015;
+  color: #F81600;
 }
 
 .singleService {
@@ -118,7 +118,7 @@
   width: 100%;
 }
 .card-back {
-  background-color: #951fe8;
+  background-color: #680C70;
   transform: rotateY(180deg);
 }
 

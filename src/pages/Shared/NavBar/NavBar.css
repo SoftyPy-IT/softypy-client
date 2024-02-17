@@ -13,7 +13,8 @@
 .sticky {
   width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(to right, #541283fb, #ff5400);
+  /* background: linear-gradient(to right, #541283fb, #ff5400); */
+  background-color: #680C70;
   width: 100%;
   color: white ;
   position: fixed;
@@ -21,20 +22,17 @@
   left: 0;
   right: 0;
   z-index: 99999;
-  padding: 15px 60px;
+  padding: 15px 80px;
 }
-
 .navbar-list {
   display: flex;
-  color: white;
+
 }
-.logo {
-  color: white;
-}
+
 .navbar-list li {
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   position: relative;
 }
@@ -72,8 +70,8 @@
 }
 .userItems{
   position: absolute;
-  background: #F87015;
-  color: white;
+  background: #F81600;
+
   text-align: center;
   padding: 20px 10px;
   border-radius: 3px;
@@ -93,9 +91,7 @@
   color:white;
   border:1px solid #ffffff;
 }
-.security{
 
-}
 
 @media only screen and (max-width: 1024px) {
   .navbar,

@@ -6,6 +6,8 @@ import { AuthContext } from "../../../contexts/AuthProvider";
 import team from "../../../../public/assets/team11.jpeg";
 import login from "../../../../public/assets/login6.png";
 import Container from "../../../ui/Container";
+import { LuUser } from "react-icons/lu";
+
 const NavBar = () => {
   const { user, logout } = useContext(AuthContext);
   const [mobileMenu, setMobileMenu] = useState(true);
@@ -40,9 +42,9 @@ const NavBar = () => {
             <li className="navbar-item">Services</li>
           </Link>
           <Link to="/packages">
-          {" "}
-          <li className="navbar-item">Packages</li>
-        </Link>
+            {" "}
+            <li className="navbar-item">Packages</li>
+          </Link>
           <Link to="/portfolio">
             {" "}
             <li className="navbar-item">Portfolio</li>
@@ -56,9 +58,9 @@ const NavBar = () => {
             <li className="navbar-item">Contact</li>
           </Link>
           <Link to="/client">
-          {" "}
-          <li className="navbar-item">Happy Clients </li>
-        </Link>
+            {" "}
+            <li className="navbar-item">Happy Clients </li>
+          </Link>
         </ul>
         <div className="security">
           {user?.uid ? (
@@ -85,14 +87,14 @@ const NavBar = () => {
           ) : (
             <>
               <div className="usersWrap">
-              <img className="user2" src={login} alt="login" />
-                  <ul className="userItems">
-                    <li>
-                      <Link to="/login" className="mr-3 dasboard">
-                        Login{" "}
-                      </Link>
-                    </li>
-                  </ul>
+                <LuUser size={35}/>
+                <ul className="userItems">
+                  <li>
+                    <Link to="/login" className="mr-3 dasboard">
+                      Login{" "}
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </>
           )}

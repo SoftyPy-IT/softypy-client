@@ -6,13 +6,13 @@ import {
   HiOutlineCheckCircle,
 } from "react-icons/hi";
 import "./PackagePrice.css";
-import price from "../../../public/assets/price2.png";
-import price2 from "../../../public/assets/price.png";
+import price from "../../../public/assets/price3.png";
+import price2 from "../../../public/assets/price4.png";
 
 const PackagePrice = () => {
   return (
     <Container>
-     <div className="mb-14">
+     <div className="mb-14" id='price'>
      <div className="mb-5 md:mb-36">
      <SectionTitle
        title=" Web Design Packages "
@@ -27,8 +27,8 @@ const PackagePrice = () => {
            <h3 className="text-xl mb-3  font-semibold text-white absolute top-4 left-3">
              The Golden Package
            </h3>
-           <div className="absolute top-14 right-[80px]">
-             <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full  bg-[#5B1782] text-white ">
+           <div className="absolute top-14 right-[120px]">
+             <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails  bg-[#5B1782] text-white ">
                <div>
                  <div>
                    <p>৳50250</p>
@@ -148,8 +148,8 @@ const PackagePrice = () => {
            <h3 className="text-xl mb-3  font-semibold text-white absolute top-4 left-3">
              The Golden Package
            </h3>
-           <div className="absolute top-14 right-[80px]">
-             <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full  bg-[#5B1782] text-white ">
+           <div className="absolute top-14 right-[120px]">
+             <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails2  bg-[#F81600] text-white ">
                <div>
                  <div>
                    <p>৳50250</p>
@@ -269,8 +269,8 @@ const PackagePrice = () => {
            <h3 className="text-xl mb-3  font-semibold text-white absolute top-4 left-3">
              The Golden Package
            </h3>
-           <div className="absolute top-14 right-[80px]">
-             <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full  bg-[#5B1782] text-white ">
+           <div className="absolute top-14 right-[130px]">
+             <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails bg-[#680C70] text-white ">
                <div>
                  <div>
                    <p>৳50250</p>

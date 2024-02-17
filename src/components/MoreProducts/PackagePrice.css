@@ -9,6 +9,16 @@
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+
+}
+.priceDetails{
+  transition:all .5s ease;
+}
+.priceCard:hover .priceDetails{
+  background:#F81600 !important;
+}
+.priceCard:hover .priceDetails2{
+  background:#fc7706 !important;
 }
 .priceCard img {
   width: 100%;

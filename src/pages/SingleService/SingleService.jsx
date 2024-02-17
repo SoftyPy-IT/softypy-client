@@ -148,42 +148,42 @@ const SingleService = () => {
                 <div className="portfolio grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
                   <Link>
                     <div className="singlePortfolio singleServicePortFolio portfolio1">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio singleServicePortFolio portfolio2">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio3">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://airtrips.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio4">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips </h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio5">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Animate</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio6">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
@@ -194,42 +194,42 @@ const SingleService = () => {
                 <div className="portfolio grid grid-cols-1 md:grid-cols-3 place-items-center">
                   <Link>
                     <div className="singlePortfolio singleServicePortFolio portfolio1">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio singleServicePortFolio portfolio2">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio3">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://airtrips.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio4">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips </h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio5">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Animate</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio6">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
@@ -240,42 +240,42 @@ const SingleService = () => {
                 <div className="portfolio grid grid-cols-1 md:grid-cols-3 place-items-center">
                   <Link>
                     <div className="singlePortfolio singleServicePortFolio portfolio1">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio singleServicePortFolio portfolio2">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio3">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://airtrips.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio4">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips </h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio5">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Animate</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio6">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
@@ -286,42 +286,42 @@ const SingleService = () => {
                 <div className="portfolio grid grid-cols-1 md:grid-cols-3 place-items-center">
                   <Link>
                     <div className="singlePortfolio singleServicePortFolio portfolio1">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio singleServicePortFolio portfolio2">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio3">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://airtrips.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio4">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips </h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio5">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Animate</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio6">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
@@ -332,42 +332,42 @@ const SingleService = () => {
                 <div className="portfolio grid grid-cols-1 md:grid-cols-3 place-items-center">
                   <Link>
                     <div className="singlePortfolio singleServicePortFolio portfolio1">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio singleServicePortFolio portfolio2">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio3">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://airtrips.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio4">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips </h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio5">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Animate</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio6">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
@@ -378,42 +378,42 @@ const SingleService = () => {
                 <div className="portfolio grid grid-cols-1 md:grid-cols-3 place-items-center">
                   <Link>
                     <div className="singlePortfolio singleServicePortFolio portfolio1">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio singleServicePortFolio portfolio2">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio3">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://airtrips.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio4">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips </h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio5">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Animate</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio6">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
@@ -424,42 +424,42 @@ const SingleService = () => {
                 <div className="portfolio grid grid-cols-1 md:grid-cols-3 place-items-center">
                   <Link>
                     <div className="singlePortfolio singleServicePortFolio portfolio1">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio singleServicePortFolio portfolio2">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio3">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://airtrips.net/">
                     <div className="singlePortfolio singleServicePortFolio portfolio4">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips </h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio5">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Animate</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio singleServicePortFolio portfolio6">
-                      <div className="bg-[#951FE8] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                       </div>
                     </div>

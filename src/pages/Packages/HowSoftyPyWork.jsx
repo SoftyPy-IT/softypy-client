@@ -50,7 +50,7 @@ const workData = [
    </div>
    <div className="ourServicesWrap">
      <div  className="ourServiceLeftSide">
-       <h3 className="text-3xl mb-3 text-[#F87015] font-bold ">
+       <h3 className="text-3xl mb-3 text-[#F81600] font-bold ">
         
 "Unlocking Our Workflow: The Mechanics of How We Operate"
        </h3>
@@ -71,7 +71,7 @@ const workData = [
              <div key={card.id} className="cards workCard">
            
                <div className="inner-box">
-                 <div className={`cards-front cards-front5  ${i=== 2 ? 'cardsFront2' : ''} ${i=== 1 ? 'cardsFront3' : '' } ${i=== 3 ? 'cardsFront4' : '' } ` }>
+                 <div className={`cards-front cards-front2 cards-front5  ${i=== 2 ? 'cardsFront2' : ''} ${i=== 1 ? 'cardsFront3' : '' } ${i=== 3 ? 'cardsFront4' : '' } ` }>
                    <div className="">
                    {
                     i === 1 ? <p ><HiLightBulb size={70}  /> </p>   : ''                   
@@ -96,7 +96,7 @@ const workData = [
                    </div>
                    <p className="mt-2 font-semibold">{card.title}</p>
                  </div>
-                 <div className="cards-back text-white">
+                 <div className="cards-back cards-back2 text-white">
                    <div className="cards-back-content md:px-3 text-center">
                      <b className="block"> {card.title}</b>
                      <small className="my-1 md:my-3">

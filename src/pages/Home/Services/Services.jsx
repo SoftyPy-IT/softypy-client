@@ -20,7 +20,7 @@ const [singleServices] = usePopularServices()
    </div>
    <div className="ourServicesWrap">
      <div  className="ourServiceLeftSide">
-       <h3 className="text-3xl mb-3 text-[#F87015] font-bold ">
+       <h3 className="text-3xl mb-3 text-[#F81600] font-bold ">
          Your Vision, Our Mission.
        </h3>
        <p>
@@ -34,6 +34,7 @@ const [singleServices] = usePopularServices()
      </div>
      <div className="ourServicesRightSide">
        <div>
+       
          <div className="cardsWrap">
            {singleServices.map((card) => (
              <div key={card.id} className="cards">

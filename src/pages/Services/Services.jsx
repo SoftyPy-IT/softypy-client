@@ -97,7 +97,7 @@ const Services = () => {
                       traveling scopes both at home and abroad. Make sure
                       travelers can find it easy and helpful.
                     </p>
-                    <div className="flex items-center justify-center bg-[#F87015] w-32 h-10 mx-auto rounded-full radius">
+                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
                       <button>See more </button>
                       <FaArrowRight className="ml-2" />
                     </div>
@@ -120,7 +120,7 @@ const Services = () => {
                       you want to sell. Help your customers to purchase easily
                       through eCommerce sites.
                     </p>
-                    <div className="flex items-center justify-center bg-[#F87015] w-32 h-10 mx-auto rounded-full radius">
+                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
                       <button>See more </button>
                       <FaArrowRight className="ml-2" />
                     </div>
@@ -143,7 +143,7 @@ const Services = () => {
                       learner-friendly educational website. Take the learning
                       system to one step higher.
                     </p>
-                    <div className="flex items-center justify-center bg-[#F87015] w-32 h-10 mx-auto rounded-full radius">
+                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
                       <button>See more </button>
                       <FaArrowRight className="ml-2" />
                     </div>
@@ -166,7 +166,7 @@ const Services = () => {
                       a nice-looking blog/portfolio website. Give your readers
                       an amazing reading environment.
                     </p>
-                    <div className="flex items-center justify-center bg-[#F87015] w-32 h-10 mx-auto rounded-full radius">
+                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
                       <button>See more </button>
                       <FaArrowRight className="ml-2" />
                     </div>
@@ -188,7 +188,7 @@ const Services = () => {
                       “Every problem is a gift—without problems we would not
                       grow.”
                     </p>
-                    <div className="flex items-center justify-center bg-[#F87015] w-32 h-10 mx-auto rounded-full radius">
+                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
                       <button>See more </button>
                       <FaArrowRight className="ml-2" />
                     </div>
@@ -212,7 +212,7 @@ const Services = () => {
                       government, I should not hesitate a moment to prefer the
                       latter.”
                     </p>
-                    <div className="flex items-center justify-center bg-[#F87015] w-32 h-10 mx-auto rounded-full radius">
+                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
                       <button>See more </button>
                       <FaArrowRight className="ml-2" />
                     </div>
@@ -232,6 +232,7 @@ const Services = () => {
               </p>
             </div>
           </div>
+          
 
           <div className="products mt-56">
             <div className="productLeftSide ">

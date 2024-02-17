@@ -99,10 +99,10 @@ const Signup = () => {
             <div>
               <p className="text-center ">
                 By proceeding, I agree to SoftyPy's{" "}
-                <b className="text-[#951FE8]">
+                <b className="text-[#680C70]">
                   Terms & Conditions, Community Guidelines
                 </b>
-                , & <b className="text-lg text-[#951FE8]">Privacy Policy</b>
+                , & <b className="text-lg text-[#680C70]">Privacy Policy</b>
               </p>
             </div>
             <div className="my-8 signupLine"> </div>
@@ -110,7 +110,7 @@ const Signup = () => {
               <p>
                 Already have an account?{" "}
                 <Link to="/login">
-                  <b className="text-[#951FE8]">Login</b>
+                  <b className="text-[#680C70]">Login</b>
                 </Link>
               </p>
             </div>

@@ -25,7 +25,7 @@
     width:800px;
 }
 .reviewContent h3{
-    color:#F87015;
+    color:#F81600;
     font-weight:bold;
     font-size:30px;
 }
@@ -45,7 +45,7 @@
     height:70px;
     overflow: hidden;
     border-radius: 50%;
-    border:2px solid #F87015;
+    border:2px solid #F81600;
 }
 .reviewThum img{
     width:100%;

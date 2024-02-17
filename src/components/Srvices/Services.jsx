@@ -34,7 +34,7 @@ const Services = () => {
              <Link to={`/services/${service._id}`}>
              <div className="flex items-center">
                 <button className="mr-2">Learn More</button>
-                <FaArrowRight className="text-[#951FE8] " />
+                <FaArrowRight className="text-[#680C70] " />
               </div>
              </Link>
             </div>

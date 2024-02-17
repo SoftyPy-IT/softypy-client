@@ -1,6 +1,4 @@
   .chooseWrap{
-   
-    margin:70px auto;
     padding:0 35px;
 
   }
@@ -54,7 +52,7 @@
   }
   
   .dot.active {
-    background: #F87015;
+    background: #F81600;
   }
   
 .sliderWrap{
@@ -112,7 +110,7 @@
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background: #F87015;
+    background: #F81600;
     left: -7px;
     top: -11px;
     animation: zoom 5s linear  infinite;
@@ -135,7 +133,7 @@
     }
     to{
       transform: scale(1);
-      background-color: #951FE8;
+      background-color: #680C70;
     }
     
   }

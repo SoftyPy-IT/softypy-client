@@ -68,7 +68,7 @@ export default Arrow = () => {
 
                   <div className="flex items-center cursor-pointer">
                     <span>Learn More </span>
-                    <FaArrowRight className="ml-2 text-[#F87015] " />
+                    <FaArrowRight className="ml-2 text-[#F81600] " />
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default Arrow = () => {
                   <Link to='/services'>
                  <div className="flex items-center cursor-pointer">
                     <span>Learn More </span>
-                    <FaArrowRight className="ml-2 text-[#F87015] " />
+                    <FaArrowRight className="ml-2 text-[#F81600] " />
                   </div>
                  </Link>
                 </div>
@@ -135,7 +135,7 @@ export default Arrow = () => {
                   <Link to='/services'>
                  <div className="flex items-center cursor-pointer">
                     <span>Learn More </span>
-                    <FaArrowRight className="ml-2 text-[#F87015] " />
+                    <FaArrowRight className="ml-2 text-[#F81600] " />
                   </div>
                  </Link>
                 </div>
@@ -167,7 +167,7 @@ export default Arrow = () => {
                  <Link to='/services'>
                  <div className="flex items-center cursor-pointer">
                     <span>Learn More </span>
-                    <FaArrowRight className="ml-2 text-[#F87015] " />
+                    <FaArrowRight className="ml-2 text-[#F81600] " />
                   </div>
                  </Link>
                 </div>

@@ -1,33 +1,147 @@
+import {
+    HiOutlineLocationMarker,
+  HiOutlineQrcode,
+  HiOutlineUserGroup,
+} from "react-icons/hi";
+import img from "../../../public/assets/line2.svg"
 import './WhoWeare.css'
-import img from '../../../public/assets/feature.png'
-import CommonButton from '../../pages/Shared/CommonButton/CommonButton';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Container from '../../ui/Container';
-AOS.init();
-const WhoWeAre = () => {
-    return (
-        <Container>
-        <div className='whoWeareWrap '>
-        <div className="ourGoal">
-         <div className='leftSide order-3' data-aos="fade-left">
-         <img src={img} alt="who we are " />
-         </div>
-         <div className="rightside"  data-aos="fade-right">
-             <h2 className="text-4xl mb-3 text-[#F87015] font-bold">Who We Are?</h2>
-             <p>At SOFTYPY, we are a team of innovative and results-driven digital marketing experts. We believe that a strong online presence is essential for businesses of all sizes to succeed in today’s fast-paced digital world.</p>
-             <p>Founded in 2016, our agency has helped countless clients achieve their marketing goals and drive growth through customized, data-driven strategies. From website design and development to SEO, PPC, and social media marketing, we offer a comprehensive suite of services to help our clients reach their target audience and succeed online.
+import { FaClinicMedical, FaDonate } from "react-icons/fa";
+import { FaHouseMedicalFlag } from "react-icons/fa6";
+import Container from "../../ui/Container";
+const WhatWeDo = () => {
+  const workData = [
+    {
+      id: 1,
+      title: "Emergency Response Alerts",
+      image: "",
+      subTitle:
+        "Offer a subscription service where users can sign up to receive email or SMS alerts about urgent humanitarian crises, allowing them to stay informed and take action quickly.",
+    },
+    {
+      id: 1,
+      title: "Medical Aid",
+      image: "",
+      subTitle:
+        " The Medical Aid feature on AidUrgency is dedicated to providing crucial medical assistance to individuals",
+    },
+    {
+      id: 1,
+      title: "Real-Time Crisis Map:",
+      image: "",
+      subTitle:
+        "Implement a dynamic map that displays ongoing crises, natural disasters, and humanitarian emergencies worldwide.",
+    },
+    {
+      id: 1,
+      title: "Join Hands ",
+      image: "",
+      subTitle:
+        "Forge partnerships with other humanitarian organizations, government agencies, and tech companies to leverage resources and expertise in delivering effective aid during emergencies.",
+    },
+    {
+      id: 1,
+      title: "Donation Matching Programs",
+      image: "",
+      subTitle:
+        " Implement donation matching programs where corporate sponsors or philanthropic organizations match individual donations during specific time periods or for specific causes, maximizing the impact of contributions.",
+    },
+  ];
 
-             </p>
-             <p>We pride ourselves on our commitment to delivering exceptional results for our clients. Our team is comprised of experienced professionals who bring a diverse range of skills and perspectives to the table. We work closely with our clients to understand their unique needs and develop customized solutions that deliver real results.</p>
-            <div className="text-left">
-            <CommonButton text='Learn More '/>
+  return (
+    <Container className=" ">
+      <div className="servicesWraps">
+        <div className="ourServicesWrap">
+          <div className="ourServiceLeftSide">
+            <h2 className=" mb-3 text-[#680C70] font-bold text-4xl">
+             What We Do ?
+            </h2>
+            <p>
+              {" "}
+              At <b className="text-[#680C70]">AidUrgency</b>, we are dedicated to providing rapid and effective disaster relief and humanitarian assistance to communities in crisis around the world. Our mission is to alleviate suffering, restore dignity, and promote resilience among those affected by emergencies, natural disasters, conflicts, and other humanitarian crises.
+            </p>
+          </div>
+          <div className="ourServicesRightSide">
+            <div>
+              <div className="cardsWrap">
+                {workData?.map((card, i) => (
+                  <div key={card.id} className="cards workCard">
+                    <div className="inner-box">
+                      <div
+                        className={`cards-front cards-front2 cards-front5  ${
+                          i === 2 ? "cardsFront2" : ""
+                        } ${i === 1 ? "cardsFront3" : ""} ${
+                          i === 3 ? "cardsFront4" : ""
+                        } `}
+                      >
+                        <div className="">
+                          {i === 1 ? (
+                            <p>
+                              <FaClinicMedical className="cardIcons"  />{" "}
+                            </p>
+                          ) : (
+                            ""
+                          )}{" "}
+                          {i === 0 ? (
+                            <p>
+                              <FaHouseMedicalFlag className="cardIcons"   />{" "}
+                            </p>
+                          ) : (
+                            ""
+                          )}
+                          {i === 2 ? (
+                            <p>
+                              <HiOutlineLocationMarker className="cardIcons"   />{" "}
+                            </p>
+                          ) : (
+                            ""
+                          )}
+                          {i === 3 ? (
+                            <p>
+                              <HiOutlineUserGroup className="cardIcons"   />{" "}
+                            </p>
+                          ) : (
+                            ""
+                          )}
+                          {i === 4 ? (
+                            <p>
+                              <FaDonate className="cardIcons"   />{" "}
+                            </p>
+                          ) : (
+                            ""
+                          )}
+                          {i === 5 ? (
+                            <p>
+                              <HiOutlineQrcode className="cardIcons"  />{" "}
+                            </p>
+                          ) : (
+                            ""
+                          )}
+                        </div>
+                        <p className="mt-2 font-semibold ">{card.title}</p>
+                      </div>
+                      <div className="cards-back cards-back2 text-white">
+                        <div className="cards-back-content md:px-3 text-center">
+                          <b className="block text-[10px]"> {card.title}</b>
+                          <small className="my-1 md:my-3">
+                            {card.subTitle.slice(0, 70)}...
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-         </div>
+            <img src={img} alt="line" className="cardLine" />
+            <div className="cardLine2"></div>
+
+            <div className="cardLine3"></div>
+            <div className="cardLine4"></div>
+          </div>
         </div>
-     </div>
-        </Container>
-    );
+      </div>
+    </Container>
+  );
 };
 
-export default WhoWeAre;
+export default WhatWeDo;

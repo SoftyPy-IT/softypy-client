@@ -21,10 +21,10 @@ const MorePackages = () => {
            <h3 className="text-xl font-bold uppercase">Startup Website </h3>
            <span> $2000 BDT only</span>
            <small>Best small Business </small>
-           <div className="flex items-center cursor-pointer mt-2">
-             <span>Request Now </span>
-             <FaArrowRight className="ml-2  text-white" />
-           </div>
+           <div className="flex items-center cursor-pointer mt-2 ">
+           <span>Request Now </span>
+           <FaArrowRight className="ml-2  text-white" />
+         </div>
          </div>
        </div>
        <div  className="productCard packageCard">

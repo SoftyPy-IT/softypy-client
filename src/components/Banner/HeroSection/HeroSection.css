@@ -36,18 +36,15 @@
   }
   }
 .header {
-  height: 85vh;
-  position: relative;
-background: radial-gradient(farthest-side at 80% 80%, #FF333D, #F87015, #541283fb, #F87015, #951FE8, #F87015);
-  animation: heroBackground 20s ease-in-out infinite;
-  background-size: 300% 300%;
 
+  position: relative;
+background: #680C70 ;
 }
 /* .navsBarWrap{
   width:1200px;
   margin:0 auto;
 } */
-
+/* 
 .header:before {
   content: "";
   position: absolute;
@@ -58,35 +55,35 @@ background: radial-gradient(farthest-side at 80% 80%, #FF333D, #F87015, #541283f
   clip-path: polygon(0px 10%, 0 100%, 100% 100%);
   background:white;
   
-}
+} */
 
 
-
+/* 
 .header-content {
   width: 100%;
   display: flex;
   position:relative;
-}
+} */
 .right-side{
     position:relative;
     top:50px
 }
 
-.header-content .right-side, .header-content .left-side {
+.header-content  {
   width: 650px;
   margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
 }
 
-.left-side {
-  padding-top: 100px;
-  padding-left: 50px;
-}
 
 .left-side h1 {
   font-size: 49px;
   color: #fff;
-  margin-bottom: 0px;
-  animation: animate_left 2s 1 ease;
+  margin-bottom: 0px;  animation: animate_left 2s 1 ease;
 }
 
 .left-side p {
@@ -96,23 +93,23 @@ background: radial-gradient(farthest-side at 80% 80%, #FF333D, #F87015, #541283f
 }
 
 .ExploreBtn{
-  width: 200px;
-  padding: 10px;
   background-color: #fff;
-  border-radius: 15px;
-  font-size: 19px;
+  border-radius: 8px;
+  font-size: 18px;
   border: none;
   transition-duration: 0.2s;
   cursor: pointer;
-  margin-top:10px;
+  margin-top: 10px;
   animation-delay: 0.5s;
   animation: animate_left 2s 1 ease;
-  transition:all .5s ease-in-out;
-  border: 1px solid #f87015;
+  transition: all .5s ease-in-out;
+  border: 1px solid #F81600;
+  padding: 6px 20px;
+  margin:10px auto;
 }
 
 .ExploreBtn:hover {
-    background: linear-gradient(to right, #951fe8, #f87015);
+    background: linear-gradient(to right, #680C70, #F81600);
     color:white;
     border:1px solid white;
 }

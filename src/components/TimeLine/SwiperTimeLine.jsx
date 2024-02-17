@@ -36,10 +36,9 @@ export default Arrow = () => {
   useEffect(() => {
     import("@lottiefiles/lottie-player");
   });
-
   return (
     <Container>
-      <main className="chooseWrap">
+      <main className="chooseWrap sectionMargin">
        <div >
        <SectionTitle data-aos="zoom-in" title="Why Choose SoftyPy? Your Ideal IT Partner for Success "></SectionTitle>
        </div>

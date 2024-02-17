@@ -101,8 +101,18 @@ const Packages = () => {
           </div>
         </section>
       </Container>
-      <MorePackages/>
-      <HowSoftyPyWork/>
+      <MorePackages />
+      <HowSoftyPyWork />
+      <Container>
+      <div className="flex justify-between  my-14">
+      <h2 className="text-[60px] w-[50%] font-semibold">Why Choose Our Web Design Packages ? </h2>
+      <div className="mt-44 w-[50%]">
+        <p className="font-semibold">
+        At SoftyPy we redefine web design. Our packages blend creativity and functionality to craft immersive digital experiences. Led by passionate storytellers, our team ensures your website stands out, resonates, and converts. From sleek interfaces to responsive designs, we prioritize aesthetics and usability. But we're not just about looks; we're about results. Our packages are engineered to meet your business goals, enhancing conversions, brand visibility, and user satisfaction. Don't settle for ordinary. Choose [Your Company Name] and elevate your online presence to extraordinary heights.
+        </p>
+      </div>
+    </div>
+      </Container>
       <div className="mt-[60px]">
         <Review />
         <Brand />
@@ -110,6 +120,20 @@ const Packages = () => {
         <Technologies />
         <WorkPortfolio />
         <PackagePrice />
+        <Container>
+        <div className="flex justify-between  my-32">
+        <h2 className="text-[50px] w-[40%] font-semibold">Want to talks us ? </h2>
+        <div className="mt-24 w-[60%]">
+          <p className="text-[80px]">
+           softypy@gmail.com
+          </p>
+          <p className="text-[80px]">
+         +88-01965666222
+         </p>
+         <button className="priceBtn">Contact Us</button>
+        </div>
+      </div>
+        </Container>
       </div>
     </div>
   );

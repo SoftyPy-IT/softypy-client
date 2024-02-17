@@ -37,14 +37,14 @@ const Products = () => {
         {cardData.map((data) => (
           <div key={data.id} className="productCard">
             <div className="moreServiceIconWrap">
-           <FaLaptopCode className="moreServiceIcon" />
+           <FaLaptopCode className="" size={70} />
             </div>
             <div className="productCardContent">
               <h3 className="text-xl font-bold">{data.name}</h3>
               <small>{data.desc}</small>
               <div className="flex items-center cursor-pointer mt-2">
                 <span>Learn More </span>
-                <FaArrowRight className="ml-2 text-[#F87015] " />
+                <FaArrowRight className="ml-2 text-[#F81600] " />
               </div>
             </div>
           </div>

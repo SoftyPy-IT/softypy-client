@@ -54,11 +54,14 @@ background:red;
     width:100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 100%;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.cards-front2, .cards-back2{
+    border-radius: 100%;
 }
 
 .cards-front{
@@ -68,8 +71,8 @@ background:red;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
-.cards-front{
-    background:#F87015 ;
+.cards-front2 {
+    background:#F81600 ;
     color:#fff;
 }
 .cardsFront2, .cardsFront3, .cardsFront4{
@@ -84,7 +87,7 @@ background:red;
     width: 100%;
  }
  .cards-back{
-     background-color: #F87015;
+     background-color: #F81600;
      transform: rotateY(180deg);
      
  }

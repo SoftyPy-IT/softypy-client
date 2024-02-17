@@ -86,7 +86,7 @@ export default function Review() {
                   to their website, and generate leads and sales.
                 </p>
               </blockquote>
-             <div className="flex flex-end items-center text-[#F87015] ml-8">
+             <div className="flex flex-end items-center text-[#F81600] ml-8">
              <button>Read history </button>
              <FaArrowRight className="historyIcon"/>
              </div>
@@ -99,7 +99,7 @@ export default function Review() {
               <img src={man2} alt="" />
             </div>
             <div className="reviewContent">
-              <h3 className="text-4xl font-bold text-[#F87015] ">
+              <h3 className="text-4xl font-bold text-[#F81600] ">
                 Kamal Hossain
               </h3>
               <h6 className="text-xl font-bold mt-2">
@@ -115,7 +115,7 @@ export default function Review() {
                   to their website, and generate leads and sales.
                 </p>
               </blockquote>
-              <div className="flex flex-end items-center text-[#F87015] ml-8">
+              <div className="flex flex-end items-center text-[#F81600] ml-8">
              <button>Read history </button>
              <FaArrowRight className="historyIcon"/>
              </div>
@@ -128,7 +128,7 @@ export default function Review() {
               <img src={man3} alt="" />
             </div>
             <div className="reviewContent">
-              <h3 className="text-4xl font-bold text-[#F87015] ">
+              <h3 className="text-4xl font-bold text-[#F81600] ">
                 Kamal Hossain{" "}
               </h3>
               <h6 className="text-xl font-bold mt-2">
@@ -144,7 +144,7 @@ export default function Review() {
                   to their website, and generate leads and sales.
                 </p>
               </blockquote>
-              <div className="flex flex-end items-center text-[#F87015] ml-8">
+              <div className="flex flex-end items-center text-[#F81600] ml-8">
              <button>Read history </button>
              <FaArrowRight className="historyIcon"/>
              </div>

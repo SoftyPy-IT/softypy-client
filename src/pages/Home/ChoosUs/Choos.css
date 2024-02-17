@@ -37,7 +37,7 @@
   position: relative;
   width: 385px;
   height: 300px;
-  background-color: #951fe8;
+  background-color: #680C70;
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 20px;
@@ -65,7 +65,7 @@
   transition: 0.5s;
   transform-style: preserve-3d;
   border-radius: 20px;
-  box-shadow: #f87015 0px 5px 15px;
+  box-shadow: #F81600 0px 5px 15px;
 }
 .container .box:hover .contentBx {
   transform: translateZ(20px) scaleY(1);
@@ -83,7 +83,7 @@
   margin-bottom: 10px;
 }
 .checkIcon {
-  color: #f87015 !important;
+  color: #F81600 !important;
   font-size: 22px !important;
 }
 .technologyTitle {
