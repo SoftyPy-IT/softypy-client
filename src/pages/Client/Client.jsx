@@ -7,7 +7,9 @@ const Client = () => {
     <section>
       <div className=" clientSection">
         <div className="navsBarWrap">
-          <NavBar />
+         <div className="text-white">
+         <NavBar />
+         </div>
         </div>
       </div>
       <div className="my-24">

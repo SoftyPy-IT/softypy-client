@@ -19,11 +19,7 @@
     opacity: 0.7;
   }
 
-.portfolioWrap{
 
-    margin: 30px auto;
-    
-}
 .portfolioContent{
     display: flex;
     flex-direction: column;

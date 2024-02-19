@@ -9,6 +9,7 @@ import "./Director.css";
 import Container from "../../ui/Container";
 const AboutDirector = () => {
   return (
+    
     <Container>
       <div className="aboutTimeLine">
         <div data-aos="fade-right" className="aboutLeftContainer aboutContainer">

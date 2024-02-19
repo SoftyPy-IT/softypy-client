@@ -83,15 +83,12 @@
 
   }
 
+
+
   @media only screen and (max-width: 768px) {
     .aboutTimeLine {
       width:100%;
      }
-
-    }
-
-  @media only screen and (max-width: 768px) {
- 
     .aboutContainer {
         width: 100%;
        
@@ -102,16 +99,22 @@
     .aboutTimeLine::after {
       left: 31px;
     }
+    .aboutRightContainer {
+      left: 81px !important;
+  }
 
     }
 
   @media only screen and (max-width: 500px) {
-      .aboutLeftContainer {
+      /* .aboutLeftContainer {
         left: 27px;
     }
     .aboutRightContainer {
-        left: 33px;
-    }
+        left: 23px;
+    } */
+    .aboutRightContainer, .aboutLeftContainer {
+      left: 39px !important;
+  }
     .aboutContainer:nth-child(3),   .aboutContainer:nth-child(1),   .aboutContainer:nth-child(5) {
         width: 90% !important;
         height: 90%;

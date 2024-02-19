@@ -1,41 +1,74 @@
-
 import "./Services.css";
 import responsive from "../../../public/assets/dev.png";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
-import { FaArrowRight } from "react-icons/fa";
 import { useRef, useEffect } from "react";
 import TopServices from "./TopServices/TopServices";
 import BoostSection from "../../components/BostSection/BoostSection";
 import NavBar from "../Shared/NavBar/NavBar";
 import Container from "../../ui/Container";
 const Services = () => {
+
   const ref = useRef(null);
   useEffect(() => {
     import("@lottiefiles/lottie-player");
   });
 
- 
-
+  const cardData = [
+    {
+      id: 1,
+      name: "Ecommerce Website ",
+      
+    },
+    {
+      id: 1,
+      name: "Ecommerce Website ",
+      
+    },
+    {
+      id: 1,
+      name: "Ecommerce Website ",
+      
+    },
+    {
+      id: 1,
+      name: "Ecommerce Website ",
+      
+    },
+    {
+      id: 1,
+      name: "Ecommerce Website ",
+      
+    },
+    {
+      id: 1,
+      name: "Ecommerce Website ",
+      
+    },
+  ]
 
   return (
-    <div className="home" >
-       <div className="servicessWraps">
+    <div className="home">
+      <div className="servicessWraps">
         <div className="navsBarWrap">
-        <NavBar/>
-        
-        <div className="servicesContents">
-          <div>
-            <h2 className="text-2xl md:text-5xl font-bold">We Are SoftyPy </h2>
-            <h3 className="text-xl md:text-2xl font-bold mt-2">
-              Best Web Development Company In Bangladesh
-            </h3>
+         <div className="text-white">
+         <NavBar />
+         </div>
+
+          <div className="servicesContents">
+            <div>
+              <h2 className="text-2xl md:text-5xl font-bold">
+                We Are SoftyPy{" "}
+              </h2>
+              <h3 className="text-xl md:text-2xl font-bold mt-2">
+                Best Web Development Company In Bangladesh
+              </h3>
+            </div>
           </div>
-        </div>
         </div>
       </div>
 
-      <Container >
-        <div className="services">
+      <Container>
+        <div className="services sectionMargin ">
           <div className="servicesLeftSide">
             <h3>
               Premium Website Development Service Empowering Business Growth
@@ -67,162 +100,26 @@ const Services = () => {
             <img src={responsive} alt="device" />
           </div>
         </div>
-        <div className="my-10">
+        <div className="sectionMargin">
           <TopServices />
         </div>
-        <div className="ourServices">
-          <div className="mb-8">
+        <div className="ourServices sectionMargin">
+          <div className="mb-12">
             <SectionTitle
               title="Types of Web Development Services"
               text="“Web design is not just about creating pretty layouts. It's about understanding the marketing challenge behind your business.”"
             ></SectionTitle>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="card">
-              <div className="inner-box">
-                <div className="card-front card-front5">
-                  <h3 className="text-white text-2xl md:text-4xl font-bold">
-                    Travel Agency Website
-                  </h3>
-                </div>
-                <div className="card-back text-white">
-                  <div className="card-back-content px-3">
-                    <h4 className="text-xl md:text-2xl font-bold ">
-                      {" "}
-                      Travel Agency Website{" "}
-                    </h4>
-                    <p className="my-1 md:my-3 leading-4">
-                      Decorate an attractive website that represents all the
-                      traveling scopes both at home and abroad. Make sure
-                      travelers can find it easy and helpful.
-                    </p>
-                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
-                      <button>See more </button>
-                      <FaArrowRight className="ml-2" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="inner-box">
-                <div className="card-front card-front1">
-                  <h3  className="text-white text-2xl md:text-4xl font-bold">
-                    Eccomerce Website{" "}
-                  </h3>
-                </div>
-                <div className="card-back text-white">
-                  <div className="card-back-content px-3">
-                    <h4 className="text-xl md:text-2xl font-bold ">Ecommerce Website </h4>
-                    <p className="my-1 md:my-3 leading-4">
-                      A website that can properly manage all kinds of products
-                      you want to sell. Help your customers to purchase easily
-                      through eCommerce sites.
-                    </p>
-                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
-                      <button>See more </button>
-                      <FaArrowRight className="ml-2" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="inner-box">
-                <div className="card-front card-front2">
-                  <h3 className="text-white text-2xl md:text-4xl font-bold">
-                    Education Website{" "}
-                  </h3>
-                </div>
-                <div className="card-back text-white">
-                  <div className="card-back-content px-3">
-                    <h4 className="text-xl md:text-2xl font-bold ">Education Website </h4>
-                    <p className="my-1 md:my-3 leading-4">
-                      Spread the proper education using an informative and
-                      learner-friendly educational website. Take the learning
-                      system to one step higher.
-                    </p>
-                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
-                      <button>See more </button>
-                      <FaArrowRight className="ml-2" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="inner-box">
-                <div className="card-front card-front3">
-                  <h3 className="text-white text-2xl md:text-4xl font-bold">
-                    Blog Website{" "}
-                  </h3>
-                </div>
-                <div className="card-back text-white">
-                  <div className="card-back-content px-3">
-                    <h4 className="text-xl md:text-2xl font-bold ">Blog Website </h4>
-                    <p className="my-1 md:my-3 leading-4">
-                      Publish all your writings and personal experience through
-                      a nice-looking blog/portfolio website. Give your readers
-                      an amazing reading environment.
-                    </p>
-                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
-                      <button>See more </button>
-                      <FaArrowRight className="ml-2" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="inner-box">
-                <div className="card-front card-front4">
-                  <h3 className="text-white text-2xl md:text-4xl font-bold">
-                    Corporate Website{" "}
-                  </h3>
-                </div>
-                <div className="card-back text-white">
-                  <div className="card-back-content px-3">
-                    <h4 className="text-xl md:text-2xl font-bold ">Corporate Website </h4>
-                    <p className="my-1 md:my-3 leading-4">
-                      “Every problem is a gift—without problems we would not
-                      grow.”
-                    </p>
-                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
-                      <button>See more </button>
-                      <FaArrowRight className="ml-2" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="inner-box">
-                <div className="card-front card-front6">
-                  <h3 className="text-white text-2xl md:text-4xl font-bold">
-                    News Website{" "}
-                  </h3>
-                </div>
-                <div className="card-back text-white">
-                  <div className="card-back-content px-3">
-                    <h4 className="text-xl md:text-2xl font-bold ">News Website </h4>
-                    <p className="my-1 md:my-3 leading-4">
-                      “Were it left to me to decide if we should have a
-                      government without newspapers, or newspapers without a
-                      government, I should not hesitate a moment to prefer the
-                      latter.”
-                    </p>
-                    <div className="flex items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
-                      <button>See more </button>
-                      <FaArrowRight className="ml-2" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
+         {
+          cardData.map((data)=>(
+            <div key={data.id} className="projectServicesCard">
+            <h5>Ecommerce website </h5>
           </div>
-
-          <div className="whatWeDo my-14">
+          ))
+         }
+         </div>
+          <div className="whatWeDo sectionMargin">
             <h2>What We Do </h2>
             <div>
               <p>
@@ -232,9 +129,8 @@ const Services = () => {
               </p>
             </div>
           </div>
-          
 
-          <div className="products mt-56">
+          <div className="products mt-44 lg:mt-56">
             <div className="productLeftSide ">
               <h2>Products </h2>
               <p className="text-xl">
@@ -262,7 +158,7 @@ const Services = () => {
           </div>
         </div>
       </Container>
-      <BoostSection/>
+      <BoostSection />
     </div>
   );
 };

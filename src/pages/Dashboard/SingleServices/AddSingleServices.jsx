@@ -1,11 +1,14 @@
 import { useForm } from "react-hook-form";
 import './SingleServices.css'
 import Swal from "sweetalert2";
+import { useCreateSingleServicesMutation } from "../../../redux/features/singleServices/singleServicesApi";
 
 
 const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN
 const AddSingleServices = () => {
-  const { register,reset, handleSubmit } = useForm();
+const [createSingleServices,{isSuccess}] = useCreateSingleServicesMutation()
+
+  const { register, handleSubmit } = useForm();
   const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`;
 
   const onSubmit = (data) => {
@@ -20,35 +23,26 @@ const AddSingleServices = () => {
       .then((res) => res.json())
       .then((imageData) => {
         const imageUrl = imageData.data.url;
-        const {title, subtitle, category } = data
+        const {title, subtitle, category, name, description} = data
         const newSingleServices = {
+          name,
           title,
           subtitle,
           category,
           image: imageUrl,
+          description
         
         }
-        console.log(newSingleServices)
-        fetch('http://localhost:5000/singleservices', {
-          method: 'POST',
-          headers: {
-            'content-type': 'application/json'
-          },
-          body: JSON.stringify(newSingleServices)
-        })
-        .then(res=>res.json())
-        .then(data=>{
-          if(data.insertedId){
-            Swal.fire({
-              position: 'center',
-              icon: 'success',
-              title: 'Single Services added Successfully !',
-              showConfirmButton: false,
-              timer: 1500
-            })
-          }
-          reset()
-        })
+        createSingleServices(newSingleServices)
+        if(isSuccess){
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Single Service added Successfully !',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        }
       
       })
       .catch((error) => {
@@ -68,12 +62,13 @@ const AddSingleServices = () => {
             <div className="singleForm">
               <label>Category </label>
               <select
-              defaultValue="Pick One"
+              defaultValue="Select Category"
               {...register("category", { required: true })}
               className="select select-bordered"
               autoComplete="off"
               name='category'
             >
+                
                 <option>Development</option>
                 <option>ERP</option>
                 <option>Design</option>
@@ -81,6 +76,17 @@ const AddSingleServices = () => {
                 <option>SEO</option>
             </select>
             </div>
+            <div className="singleForm">
+            <label>Service Name </label>
+            <input
+              {...register("name", { required: true })}
+              name="name"
+              placeholder="Service Name"
+              type="text"
+              className="inputField"
+               autoComplete="off"
+            />
+          </div>
             <div className="singleForm">
               <label>Title </label>
               <input
@@ -92,6 +98,7 @@ const AddSingleServices = () => {
                  autoComplete="off"
               />
             </div>
+           
             <div className="singleForm">
               <label>Sub Title </label>
               <input

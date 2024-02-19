@@ -30,7 +30,9 @@ const About = () => {
     <section>
       <div className=" portfolioHeroSection">
         <div className="navsBarWrap">
-          <NavBar />
+        <div className="text-white">
+        <NavBar />
+        </div>
 
           <div className=" portfolioContent">
             <h3 className="text-3xl md:text-5xl font-bold mb-2">About Us </h3>
@@ -43,57 +45,60 @@ const About = () => {
         </div>
       </div>
       <div className="aboutWrap">
-        <div className="my-24">
+        <div className="sectionMargin">
           <SectionTitle title="STATEMENTS OF OUR HONORABLE MANAGING DIRECTOR"></SectionTitle>
           <AboutDirector />
         </div>
-        <Container>
-          <SectionTitle
-            title="Our History "
-            text='"Mission: Igniting Change. Vision: A Better Future."'
-          ></SectionTitle>
-          <div className="mission">
-            <div className="missionRightSide">
-              <div>
-                <h3 className="text-5xl font-bold">Mission</h3>
-                <p className="mt-3 leading-8">
-                  SoftyPy is an emerging IT firm in Bangladesh producing
-                  world-class quality software for its clients since 2018. We
-                  build customized, interactive, dynamic websites with custom or
-                  open source back end. Our customized web-based solutions
-                  include Custom Websites, e-commerce portals, Personal or
-                  Business portfolios, and management solutions. We also build
-                  easy-to-use, fast, and beautiful native and non-native mobile
-                  applications for iOS and Android Devices.
-                </p>
-              </div>
-              <div className="mt-5">
-                <h3 className="text-5xl font-bold">Vission </h3>
-                <p className="mt-3 leading-8">
-                  Our vision is to be widely accepted as a brand that provides
-                  unique, creative, trustworthy and easy-to-use software
-                  services in the IT industry. We have the vision to lead the
-                  software industry by solving real-life challenges
-                  simplistically, and we are working relentlessly to execute our
-                  plans. We want to go above and beyond the expectations of our
-                  clients by providing the best solutions for them by making
-                  them see things differently.
-                </p>
-              </div>
-            </div>
-            <div className="missionLeftSide">
-              <lottie-player
-                id="firstLottie"
-                ref={ref}
-                autoplay
-                loop
-                mode="normal"
-                src="/vission.json"
-                className="animation"
-              ></lottie-player>
-            </div>
-          </div>
-        </Container>
+       <div className="sectionMargin">
+       <Container>
+       <SectionTitle
+         title="Our History "
+         text='"Mission: Igniting Change. Vision: A Better Future."'
+       ></SectionTitle>
+       <div className="mission">
+         <div className="missionRightSide">
+           <div>
+             <h3 className="text-5xl font-bold">Mission</h3>
+             <p className="mt-3 leading-8">
+               SoftyPy is an emerging IT firm in Bangladesh producing
+               world-class quality software for its clients since 2018. We
+               build customized, interactive, dynamic websites with custom or
+               open source back end. Our customized web-based solutions
+               include Custom Websites, e-commerce portals, Personal or
+               Business portfolios, and management solutions. We also build
+               easy-to-use, fast, and beautiful native and non-native mobile
+               applications for iOS and Android Devices.
+             </p>
+           </div>
+           <div className="mt-5">
+             <h3 className="text-5xl font-bold">Vission </h3>
+             <p className="mt-3 leading-8">
+               Our vision is to be widely accepted as a brand that provides
+               unique, creative, trustworthy and easy-to-use software
+               services in the IT industry. We have the vision to lead the
+               software industry by solving real-life challenges
+               simplistically, and we are working relentlessly to execute our
+               plans. We want to go above and beyond the expectations of our
+               clients by providing the best solutions for them by making
+               them see things differently.
+             </p>
+           </div>
+         </div>
+         <div className="missionLeftSide">
+           <lottie-player
+             id="firstLottie"
+             ref={ref}
+             autoplay
+             loop
+             mode="normal"
+             src="/vission.json"
+             className="animation"
+           ></lottie-player>
+         </div>
+       </div>
+     </Container>
+       </div>
+        <div className="sectionMargin">
         <Container className="team-anim--section">
           <div className="inner">
             <div
@@ -247,6 +252,7 @@ const About = () => {
             </div>
           </div>
         </Container>
+        </div>
         <ManageMent />
 
         <PortfolioCountdown />

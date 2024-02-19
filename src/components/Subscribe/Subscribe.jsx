@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Container from "../../ui/Container";
 const Subscribe = () => {
   return (
+  <div className="sectionMargin mb-[80px]">
   <Container>
   <div className="footerTop">
     <div className="footerTopBarContent">
@@ -44,7 +45,9 @@ const Subscribe = () => {
       </Link>
     </div>
   </div>
+  
   </Container>
+  </div>
   );
 };
 

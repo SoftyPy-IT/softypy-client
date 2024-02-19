@@ -1,22 +1,32 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable no-unused-vars */
 import "./SingleService.css";
 import { useRef, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { TabList, TabPanel, Tabs, Tab } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { Link, useLoaderData } from "react-router-dom";
 import WhyChoosSe from "../Home/ChoosUs/WhyChoosSe";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import Products from "../../components/MoreProducts/Products";
 import NavBar from "../Shared/NavBar/NavBar";
+import { useGetSingleServicesQuery } from "../../redux/features/singleServices/singleServicesApi";
+import { Link, useParams } from "react-router-dom";
 AOS.init();
 
-
 const SingleService = () => {
-  const services = useLoaderData()
   const [checked, setChecked] = useState([1]);
   const [tabIndex, setTabIndex] = useState(0);
-  console.log(services)
+
+  const {id} = useParams()
+const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
+if(isLoading){
+  return <p>Loding............</p>
+}
+if(isError){
+  return <p>Something went to wrong </p>
+}
+
   const handleToggle = (value) => () => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
@@ -35,24 +45,24 @@ const SingleService = () => {
 
   return (
     <div>
-   
-     
       <div className="servicessWraps">
         <div className="navsBarWrap">
-        <NavBar/>
-        
-        <div className="servicesContents">
-          <div className="singleServicessContent">
-          <h2 className="text-2xl md:text-5xl font-bold">
-            {services.title}
-              {/* One-Stop Shop for All Your Online Needs{" "} */}
-            </h2>
-            <h3 className="text-xl  md:text-2xl font-bold mt-5">
-              {/* Best Web Development Company In Bangladesh */}
-              {services.subtitle}
-            </h3>
+          <div className="text-white">
+            <NavBar />
           </div>
-        </div>
+
+          <div className="servicesContents">
+            <div className="singleServicessContent">
+              <h2 className="text-2xl md:text-5xl font-bold">
+                {services?.title}
+                {/* One-Stop Shop for All Your Online Needs{" "} */}
+              </h2>
+              <h3 className="text-xl  md:text-2xl font-bold mt-5">
+                {/* Best Web Development Company In Bangladesh */}
+                {services?.subtitle}
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -60,10 +70,12 @@ const SingleService = () => {
         <div className="ecommerServices">
           <div className="leftSideServices">
             <h3 className="text-4xl font-bold mb-3">
-              Why Need {services.title}?
+              Why Need {services?.title}?
             </h3>
             <div className="my-2">
+
               <b>Global Reach:</b>
+              <p>{services.description}</p>
               <p>
                 {" "}
                 An eCommerce website enables your business to transcend
@@ -127,8 +139,12 @@ const SingleService = () => {
           <SectionTitle title="Our More Products "></SectionTitle>
           <Products />
         </div>
-        <div >
-          <SectionTitle className='portfolioTitle' title="Some Of Our Work Portfolio " text=' "At SoftyPy, we deliver reliable IT solutions. Our portfolio highlights our expertise in problem-solving, system optimization, and exceptional customer service, ensuring your business is success."'></SectionTitle>
+        <div>
+          <SectionTitle
+            className="portfolioTitle"
+            title="Some Of Our Work Portfolio "
+            text=' "At SoftyPy, we deliver reliable IT solutions. Our portfolio highlights our expertise in problem-solving, system optimization, and exceptional customer service, ensuring your business is success."'
+          ></SectionTitle>
           <div className="mt-16 mb-5">
             <Tabs
               className="tabWrap"
@@ -469,7 +485,7 @@ const SingleService = () => {
             </Tabs>
           </div>
         </div>
-        <div >
+        <div>
           <SectionTitle title="Why Choose SoftyPy For Your Software Solution?"></SectionTitle>
           <div className="whyChooseServices">
             <WhyChoosSe />

@@ -64,6 +64,9 @@ background:#FC5302;
   .productCard:nth-child(4){
     position:initial;
   }
+  .productCard {
+    width: 80%;
+}
   
   
 }

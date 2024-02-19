@@ -66,8 +66,8 @@ class PortfolioCountdown extends Component {
 
   render() {
     return (
-      <section>
-        <div className="featured-item bg-fixed text-white  my-20">
+      <section className="sectionMargin">
+        <div className="featured-item bg-fixed text-white  ">
          <Container>
          <div className="md:flex justify-between items-center ">
          <div className="portFolioExample">

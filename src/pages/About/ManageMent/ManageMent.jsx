@@ -57,11 +57,11 @@ export default function Review() {
   );
 
   return (
+    <div className="sectionMargin">
     <Container>
-    <div className="mb-16">
-    <div className="mb-24">
+
     <SectionTitle title='Leadership Team of SoftyPy !'></SectionTitle>
-    </div>
+
      <div className="reviewSliderWrap">
      <div ref={sliderRef} className="keen-slider keenSlider">
        <div className="keen-slider__slide number-slide1">
@@ -175,8 +175,8 @@ export default function Review() {
        </div>
      </div>
      </div>
+     </Container>
    </div>
     
-    </Container>
   );
 }

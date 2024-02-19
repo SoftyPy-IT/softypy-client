@@ -20,7 +20,9 @@ const Packages = () => {
     <div>
       <div className=" portfolioHeroSection">
         <div className="navsBarWrap">
-          <NavBar />
+          <div className="text-white">
+            <NavBar />
+          </div>
           <div className=" portfolioContent">
             <h3 className="text-3xl md:text-5xl font-bold mb-2">
               Best Website Development Packages.
@@ -42,7 +44,7 @@ const Packages = () => {
               <h3 className="text-xl font-semibold">
                 Website Development Packages
               </h3>
-              <h2 className="text-5xl font-semibold my-3 capitalize ">
+              <h2 className="text-3xl md:text-5xl font-semibold my-3 capitalize ">
                 Web Designs Starts from at the lowest price ONLY
               </h2>
               <p>
@@ -87,7 +89,7 @@ const Packages = () => {
                 <button className=" priceBtn requestBtn">Request Now </button>
               </div>
             </div>
-            <div className="w-full lg:w-[50%]">
+            <div className="mt-10 lg:mt-0 w-full lg:w-[50%]">
               <lottie-player
                 id="firstLottie"
                 ref={ref}
@@ -104,37 +106,48 @@ const Packages = () => {
       <MorePackages />
       <HowSoftyPyWork />
       <Container>
-      <div className="flex justify-between  my-14">
-      <h2 className="text-[60px] w-[50%] font-semibold">Why Choose Our Web Design Packages ? </h2>
-      <div className="mt-44 w-[50%]">
-        <p className="font-semibold">
-        At SoftyPy we redefine web design. Our packages blend creativity and functionality to craft immersive digital experiences. Led by passionate storytellers, our team ensures your website stands out, resonates, and converts. From sleek interfaces to responsive designs, we prioritize aesthetics and usability. But we're not just about looks; we're about results. Our packages are engineered to meet your business goals, enhancing conversions, brand visibility, and user satisfaction. Don't settle for ordinary. Choose [Your Company Name] and elevate your online presence to extraordinary heights.
-        </p>
-      </div>
-    </div>
+        <div className="flex justify-between flex-col lg:flex-row ">
+          <h2 className="text-3xl md:text-[60px] leading-[60px] w-[100%] lg:w-[50%] font-semibold">
+            Why Choose Our Web Design Packages ?{" "}
+          </h2>
+          <div className="mt-5 lg:mt-44 lg:w-[50%]">
+            <p className="font-semibold">
+              At SoftyPy we redefine web design. Our packages blend creativity
+              and functionality to craft immersive digital experiences. Led by
+              passionate storytellers, our team ensures your website stands out,
+              resonates, and converts. From sleek interfaces to responsive
+              designs, we prioritize aesthetics and usability. But we're not
+              just about looks; we're about results. Our packages are engineered
+              to meet your business goals, enhancing conversions, brand
+              visibility, and user satisfaction. Don't settle for ordinary.
+              Choose [Your Company Name] and elevate your online presence to
+              extraordinary heights.
+            </p>
+          </div>
+        </div>
       </Container>
-      <div className="mt-[60px]">
+
         <Review />
         <Brand />
 
         <Technologies />
         <WorkPortfolio />
         <PackagePrice />
+        <div className="sectionMargin"> 
         <Container>
-        <div className="flex justify-between  my-32">
-        <h2 className="text-[50px] w-[40%] font-semibold">Want to talks us ? </h2>
-        <div className="mt-24 w-[60%]">
-          <p className="text-[80px]">
-           softypy@gmail.com
-          </p>
-          <p className="text-[80px]">
-         +88-01965666222
-         </p>
-         <button className="priceBtn">Contact Us</button>
-        </div>
-      </div>
+          <div className=" flex flex-col lg:flex-row md:justify-between justify-center">
+            <h2 className="text-4xl md:text-[50px] lg:w-[40%] w-full text-center font-semibold">
+              Want to talks us ?{" "}
+            </h2>
+            <div className="mt-5 lg:mt-24 w-full text-center  lg:w-[60%]">
+              <p className="text-3xl md:text-[80px]">softypy@gmail.com</p>
+              <p className=" mt-14 mb-10 text-3xl md:text-[80px]">+88-01965666222</p>
+              <button className="priceBtn">Contact Us</button>
+            </div>
+          </div>
         </Container>
-      </div>
+        </div>
+
     </div>
   );
 };

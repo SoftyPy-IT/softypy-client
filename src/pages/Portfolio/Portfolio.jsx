@@ -25,7 +25,9 @@ const Portfolio = () => {
     <div>
       <div className=" portfolioHeroSection">
         <div className="navsBarWrap">
-          <NavBar />
+        <div className="text-white">
+        <NavBar />
+        </div>
 
           <div className=" portfolioContent">
             <h3 className="text-3xl md:text-5xl font-bold mb-2">Portfolio </h3>
@@ -38,7 +40,7 @@ const Portfolio = () => {
         </div>
       </div>
      <Container>
-     <div className="portfolioWrap">
+     <div className="sectionMargin mb-24">
      <SectionTitle title="Working Portfolio"></SectionTitle>
      <div className="mt-8mb-24">
        <Tabs

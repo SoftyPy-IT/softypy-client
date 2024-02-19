@@ -27,12 +27,12 @@ const NavBar = () => {
   return (
     <Container>
       <div className="navbar">
-        <div className=" logo">
+        <div className=" logo ">
           <Link to="/">
             <h3 className="text-3xl md:text-4xl font-bold">SoftyPy</h3>
           </Link>
         </div>
-        <ul className="navbar-list">
+        <ul className="navbar-list ">
           <Link to="/">
             {" "}
             <li className="navbar-item">Home</li>
@@ -57,10 +57,7 @@ const NavBar = () => {
             {" "}
             <li className="navbar-item">Contact</li>
           </Link>
-          <Link to="/client">
-            {" "}
-            <li className="navbar-item">Happy Clients </li>
-          </Link>
+        
         </ul>
         <div className="security">
           {user?.uid ? (
@@ -87,7 +84,7 @@ const NavBar = () => {
           ) : (
             <>
               <div className="usersWrap">
-                <LuUser size={35}/>
+                <LuUser size={35} />
                 <ul className="userItems">
                   <li>
                     <Link to="/login" className="mr-3 dasboard">

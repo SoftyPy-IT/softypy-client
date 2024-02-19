@@ -15,7 +15,9 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import Container from "../../ui/Container";
+import { useCrateOrderMutation } from "../../redux/features/orders/ordersApi";
 const Contact = () => {
+  const [crateOrder,{isSuccess}] = useCrateOrderMutation()
   const { register, formState: { errors }, handleSubmit } = useForm();
   const navigate = useNavigate()
 const onSubmit = (data) => {
@@ -26,16 +28,9 @@ const onSubmit = (data) => {
     message: data.message
   }
 
-  fetch('http://localhost:5000/orders', {
-    method: "POST",
-    headers: {
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify(user)
-  })
-  .then(res=>res.json())
-  .then(data=>{
-   if(data.insertedId){
+
+try{
+  if(isSuccess){
     Swal.fire({
       position: 'center',
       icon: 'success',
@@ -43,9 +38,16 @@ const onSubmit = (data) => {
       showConfirmButton: false,
       timer: 1500
     })
-    navigate('/')
-   }
-  })
+  }
+  crateOrder(user)
+  
+}
+catch(error){
+  console.log(error)
+}
+navigate('/')
+
+
 };
 
 
@@ -58,7 +60,9 @@ const onSubmit = (data) => {
       <section>
         <div className=" contactHeroSection">
           <div className="navsBarWrap">
-            <NavBar />
+         <div className="text-white">
+         <NavBar />
+         </div>
             <div className="md:flex items-center justify-center text-center">
                 <div className="questionWrap">
                 <lottie-player
@@ -180,7 +184,7 @@ const onSubmit = (data) => {
           </div>
         </div>
       </section>
-      <section className="socialMedia">
+      <section className="socialMedia sectionMargin">
         <div className="singleSocialMedia">
           <div className="contacSocialIcon">
             <FaFacebookF />
@@ -212,20 +216,21 @@ const onSubmit = (data) => {
       </section>
 
       {/* map section */}
-      <section className=" w-full mx-auto flex flex-row justify-center items-center md:my-24 mb-32 md:mb-32 p-5">
-        <Iframe
-          className="lg:h-[600px] h-[300px] "
-          url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.702714087243!2d-118.24379858493394!3d34.05149622521712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648957fbb05%3A0x8c6c875a0069f4c9!2s26%20N%20Los%20Angeles%20St%2C%20Los%20Angeles%2C%20CA%2090012%2C%20USA!5e0!3m2!1sen!2sbd!4v1674159891667!5m2!1sen!2sbd"
-          width="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          position="relative"
-        ></Iframe>
-      </section>
+   
     </div>
       </Container>
+      <section className=" w-full mx-auto flex flex-row justify-center items-center md:my-24 mb-32 md:mb-32 ">
+      <Iframe
+        className="lg:h-[600px] h-[300px] "
+        url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.702714087243!2d-118.24379858493394!3d34.05149622521712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648957fbb05%3A0x8c6c875a0069f4c9!2s26%20N%20Los%20Angeles%20St%2C%20Los%20Angeles%2C%20CA%2090012%2C%20USA!5e0!3m2!1sen!2sbd!4v1674159891667!5m2!1sen!2sbd"
+        width="100%"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        position="relative"
+      ></Iframe>
+    </section>
       <Subscribe/>
     </div>
   );

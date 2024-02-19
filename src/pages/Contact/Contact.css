@@ -2,7 +2,7 @@
 .contactHeroSection {
   width: 100%;
   position: relative;
-  background: linear-gradient(to right, #541283fb, #ff5400);
+  background: linear-gradient(to right, #541283fb, #F81600);
   background-size: 300% 300%;
   height: 85vh;
   background-size: 300% 300%;
@@ -64,7 +64,7 @@
 }
 .formControl .inputField {
     width: 100%;
-    border: 1px solid #ff5502;
+    border: 1px solid #F81600;
     height: 50px;
     border-radius: 8px;
     
@@ -80,7 +80,7 @@
   padding-left: 10px;
 }
 .formControl textarea {
-  border: 1px solid #ff5502;
+  border: 1px solid #F81600;
   resize: none;
   width: 100%;
   height: 150px;
@@ -89,7 +89,7 @@
 
 }
 .sendMessageBtn {
-  background: #ff5502;
+  background: #F81600;
   color: white;
   width: 100%;
   height: 50px;
@@ -108,13 +108,13 @@
   position: relative;
 }
 .contactLine {
-  background: #ff5502;
+  background: #F81600;
   width: 2px !important;
   height: 55px;
 }
 .contactIcon {
   font-size: 36px;
-  color: #ff5502;
+  color: #F81600;
   margin-right: 6px;
 }
 .socialMedia {
@@ -122,7 +122,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px auto;
+
 }
 .singleSocialMedia,
 .activeSocial {

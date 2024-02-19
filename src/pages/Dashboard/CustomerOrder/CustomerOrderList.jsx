@@ -1,12 +1,16 @@
 
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
-import { useQuery } from "react-query";
+import { useGetOrdersQuery } from "../../../redux/features/orders/ordersApi";
 
 const CustomerOrderList = () => {
-  const {data: orders = []} = useQuery(['orders'], async ()=>{
-    const res = await fetch('http://localhost:5000/orders');
-    return res.json()
-  })
+const {data:orders, isLoading, isError} = useGetOrdersQuery()
+
+if(isLoading){
+  return <p>Loading........</p>
+}
+if(isError){
+  return <p>Something went to wrong.</p>
+}
     return (
         <div className="mt-5 mb-24 w-full">
        

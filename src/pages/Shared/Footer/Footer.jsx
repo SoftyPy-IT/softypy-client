@@ -1,4 +1,4 @@
-import softypy from "../../../../public/assets/softypy2.png";
+import softypy from "../../../../public/assets/logo.png";
 import "./Footer.css";
 import {
   FaPhoneAlt,
@@ -18,7 +18,7 @@ const Footer = () => {
    <div className="contactUs">
      <div>
        <div className="w-56 text-left">
-         <img src={softypy} alt="softypy" />
+         <img className="w-28 h-24 object-cover" src={softypy} alt="softypy" />
          <div className="flex items-center">
            <img className="mr-2" src={location} alt="location" />
            <p className="mt-3">
@@ -29,7 +29,7 @@ const Footer = () => {
        </div>
      </div>
      <div>
-       <Link to='/services'> <h3 className="text-xl font-bold text-[#FF5400] mb-3">Services </h3></Link>
+       <Link to='/services'> <h3 className="text-xl font-bold text-[#F81600] mb-3">Services </h3></Link>
        <p>Web & APP Development</p>
        <p>ERP Solutions</p>
        <p>UI/UX Design</p>
@@ -37,15 +37,17 @@ const Footer = () => {
        <p>SEO</p>
      </div>
      <div>
-       <Link to='/about'> <h3 className="text-xl font-bold text-[#FF5400] mb-3">About </h3></Link>
-       <p>Happy Client</p>
+       <Link to='/about'> <h3 className="text-xl font-bold text-[#F81600] mb-3">About </h3></Link>
+       <Link to="/client">
+            <p className="navbar-item">Happy Clients </p>
+          </Link>
        <p>About SoftyPy </p>
        <p>Blog </p>
        <Link to='/faq'><p>FAQ </p></Link>
      </div>
 
      <div>
-       <Link to='/contact'> <h3 className="text-xl font-bold text-[#FF5400] mb-3">Contact  </h3></Link>
+       <Link to='/contact'> <h3 className="text-xl font-bold text-[#F81600] mb-3">Contact  </h3></Link>
 
        <div className="flex items-center">
          <FaPhoneAlt />
@@ -60,7 +62,7 @@ const Footer = () => {
          <p>softypy@gmail.com</p>
        </div>
        <div className="mt-3">
-         <h3 className="text-xl font-bold text-[#FF5400] mb-3 ">
+         <h3 className="text-xl font-bold text-[#F81600] mb-3 ">
            Follow Us
          </h3>
          <div className="flex items-center w-[150px] justify-between">

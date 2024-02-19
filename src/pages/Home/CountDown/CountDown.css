@@ -4,7 +4,6 @@
     position:relative;
     height:500px;
     width:100%;
-    margin:50px auto;
     margin-bottom:80px;
 }
 .featured-item:after{
@@ -45,7 +44,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
     transition: all .9s cubic-bezier(0.54, 0.49, 0.83, 0.76);
-    background-color: #F8761F;
+    background-color: #F81600;
     color:white;
     
 }

@@ -7,10 +7,10 @@ import { HiOutlineHome, HiOutlineShoppingCart } from "react-icons/hi";
 const MorePackages = () => {
   return (
    <Container>
-   <div className="my-16">
+   <div className="sectionMargin">
       <SectionTitle title='Choose Your Website Development Packages' />
    </div>
-   <div className="my-28">
+   <div className="mt-8">
    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-6">
  
        <div  className="productCard packageCard">

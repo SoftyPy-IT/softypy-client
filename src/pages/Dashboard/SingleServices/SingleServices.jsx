@@ -2,50 +2,78 @@
 import { FaTrashAlt, FaEdit, FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import TextField from "@mui/material/TextField";
 import { Link } from "react-router-dom";
-import { useQuery } from "react-query";
 import Swal from "sweetalert2";
+import { useDeleteSingleServiceMutation, useGetAllSingleServicesQuery } from "../../../redux/features/singleServices/singleServicesApi";
 
 const SingleServices = () => {
-  const {data: services = [], refetch} = useQuery(['services'], async ()=>{
-    const res = await fetch('http://localhost:5000/singleservices');
-    return res.json()
-  })
+
+  const {data:services, isLoading, isError } = useGetAllSingleServicesQuery()
+const [deleteSingleService ] = useDeleteSingleServiceMutation()
 
 
+if(isLoading){
+  return <p>Loading...........</p>
+}
+if(isError){
+  return <p>Something went to wrong </p>
+}
 
-  const handleDelete = id =>{
-    Swal.fire({
-        title: 'Are you sure?',
-        text: "You want to delete this user!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-      }).then((result) => {
-        if (result.isConfirmed) {
-            fetch(`http://localhost:5000/singleservices/${id}`,{
-                method: "DELETE"
-            })
-            .then(res=>res.json())
-            .then(data=>{
-                refetch()
-                if(data.deletedCount){
-                    Swal.fire(
-                        'Deleted!',
-                        'User has been deleted.',
-                        'success'
-                      )
-                }
-            })
+
+  // const handleDelete = id =>{
+  //   Swal.fire({
+  //       title: 'Are you sure?',
+  //       text: "You want to delete this user!",
+  //       icon: 'warning',
+  //       showCancelButton: true,
+  //       confirmButtonColor: '#3085d6',
+  //       cancelButtonColor: '#d33',
+  //       confirmButtonText: 'Yes, delete it!'
+  //     }).then((result) => {
+  //       if (result.isConfirmed) {
+  //           fetch(`http://localhost:5000/singleservices/${id}`,{
+  //               method: "DELETE"
+  //           })
+  //           .then(res=>res.json())
+  //           .then(data=>{
+  //               refetch()
+  //               if(data.deletedCount){
+  //                   Swal.fire(
+  //                       'Deleted!',
+  //                       'User has been deleted.',
+  //                       'success'
+  //                     )
+  //               }
+  //           })
 
           
-        }
-      })
+  //       }
+  //     })
 
    
-  }
+  // }
+const handleDelete = id =>{
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You want to delete this services !",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then((result) => {
 
+    deleteSingleService(id)
+    if (result.isSuccess) {
+      Swal.fire({
+        title: "Deleted!",
+        text: "Single Services deleted successfully.",
+        icon: "success"
+      });
+    }
+  });
+  
+
+}
 
     return (
         <div className="mt-5 mb-24 w-full">
@@ -73,15 +101,9 @@ const SingleServices = () => {
             </thead>
             <tbody>
               {
-                services.map(service=><tr key={service._id}>
+                services.map((service,i)=><tr key={service._id}>
                   <td>
-                    <div className="mask   h-[100px] w-[100px] mx-auto ">
-                      <img
-                        className=" h-full w-full object-cover text-center"
-                        src={service.image}
-                        alt="img"
-                      />
-                    </div>
+                   {i+1}
                   </td>
                   <td>{service.category} </td>
                   <td>{service.title}</td>

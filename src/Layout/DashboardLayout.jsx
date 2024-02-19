@@ -1,6 +1,6 @@
 
 import { Link, Outlet, } from "react-router-dom";
-import logo from "../../public/assets/softypy.png"
+import logo from "../../public/assets/logo.png"
 
 const DashboardLayout = () => {
   return (

@@ -47,42 +47,44 @@ const Brand = () => {
     ],
   };
   return (
-    <Container>
-      <div className="brandWrap">
-        <SectionTitle title="Our Happy Clients "></SectionTitle>
-        <div className="slidersWraps">
-          <Slider {...settings}>
-            <div className="slider">
-              <img src={brand} alt="brand" />
-            </div>
-            <div className="slider">
-              <img src={brand2} alt="brand" />
-            </div>
-            <div className="slider">
-              <img src={brand3} alt="brand" />
-            </div>
-            <div className="slider">
-              <img src={brand4} alt="brand" />
-            </div>
-            <div className="slider">
-              <img src={brand5} alt="brand" />
-            </div>
-            <div className="slider">
-              <img src={brand} alt="brand" />
-            </div>
-            <div className="slider">
-              <img src={brand2} alt="brand" />
-            </div>
-            <div className="slider">
-              <img src={brand6} alt="brand" />
-            </div>
-            <div className="slider">
-              <img src={brand3} alt="brand" />
-            </div>
-          </Slider>
-        </div>
-      </div>
-    </Container>
+   <div className="sectionMargin">
+   <Container>
+   <div >
+     <SectionTitle title="Our Happy Clients "></SectionTitle>
+     <div className="slidersWraps">
+       <Slider {...settings}>
+         <div className="slider">
+           <img src={brand} alt="brand" />
+         </div>
+         <div className="slider">
+           <img src={brand2} alt="brand" />
+         </div>
+         <div className="slider">
+           <img src={brand3} alt="brand" />
+         </div>
+         <div className="slider">
+           <img src={brand4} alt="brand" />
+         </div>
+         <div className="slider">
+           <img src={brand5} alt="brand" />
+         </div>
+         <div className="slider">
+           <img src={brand} alt="brand" />
+         </div>
+         <div className="slider">
+           <img src={brand2} alt="brand" />
+         </div>
+         <div className="slider">
+           <img src={brand6} alt="brand" />
+         </div>
+         <div className="slider">
+           <img src={brand3} alt="brand" />
+         </div>
+       </Slider>
+     </div>
+   </div>
+ </Container>
+   </div>
   );
 };
 
