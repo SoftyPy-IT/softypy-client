@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useForm } from "react-hook-form";
 import NavBar from "../Shared/NavBar/NavBar";
 import { Link, useNavigate } from "react-router-dom";
@@ -30,7 +31,9 @@ const Login = () => {
     <div>
      <div className=" clientSection">
         <div className="navsBarWrap">
-          <NavBar />
+        <div className="text-white">
+        <NavBar />
+        </div>
         </div>
       </div>
     <div className="my-16">

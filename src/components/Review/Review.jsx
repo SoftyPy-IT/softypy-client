@@ -143,11 +143,10 @@ export default function Review() {
             <div className="keen-slider__slide number-slide1">
               <div className="swiperWrap">
                 <div className={`${reviews[2]?.image ? "reviewImg" : ""}`}>
-                  {reviews[0]?.image ? (
+                  {reviews[2]?.image ? (
                     <img src={reviews[2]?.image} alt="" />
                   ) : (
                     <iframe
-                      className="w-full h-full"
                       width="450"
                       height="250"
                       src={reviews[2]?.videoUrl}

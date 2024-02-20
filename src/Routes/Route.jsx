@@ -21,7 +21,6 @@ import UpdateContact from "../pages/Dashboard/Dashboard/ContactUs/UpdateContact"
 import ViewPortFolio from "../pages/Dashboard/Dashboard/PortFolio/ViewPortFolio";
 import AddPortFolio from "../pages/Dashboard/Dashboard/PortFolio/AddPortFolio";
 import UpdatePortFolio from "../pages/Dashboard/Dashboard/PortFolio/UpdatePortFolio";
-import Profile from "../pages/Dashboard/Profile/Profile";
 import Signup from "../pages/Signup/Signup";
 import Login from "../pages/Login/Login";
 import SingleServices from "../pages/Dashboard/SingleServices/SingleServices";
@@ -32,6 +31,8 @@ import Faq from "../pages/FAQ/Faq";
 import Packages from "../pages/Packages/Packages";
 import AddReviews from "../pages/Dashboard/Reviews/AddReviews";
 import ReviewList from "../pages/Dashboard/Reviews/ReviewList";
+import AddPortfolio from "../pages/Dashboard/Portfolio/AddPortfolio";
+import PortfolioList from "../pages/Dashboard/Portfolio/PortfolioList";
 
 export const router = createBrowserRouter([
   {
@@ -151,15 +152,11 @@ export const router = createBrowserRouter([
         element: <UpdatePortFolio />,
       },
       {
-        path: "profile",
-        element: <Profile />,
-      },
-      {
         path: "singleServices",
         element: <SingleServices />,
       },
       {
-        path: "addSingleServices",
+        path: "add-singleService",
         element: <AddSingleServices />,
       },
       {
@@ -179,6 +176,14 @@ export const router = createBrowserRouter([
       {
         path: "reviews",
         element: <ReviewList />,
+      },
+      {
+        path: "add-portfolio",
+        element: <AddPortfolio/>,
+      },
+      {
+        path: "portfolio-list",
+        element: <PortfolioList/>,
       },
     ],
   },
