@@ -126,7 +126,7 @@ table {
   .drawer-content {
     position: absolute !important;
     right: 0px !important;
-    width: 76%;
+    width: 82%;
 }
 .drawerflex {
     width: 100% !important;
@@ -134,7 +134,7 @@ table {
     justify-content: space-between;
 }
 .drawwerLeftSide {
-    width: 20% !important;
+    width: 18% !important;
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
@@ -142,10 +142,7 @@ input:focus, textarea:focus, select:focus{
 .countdown > * {
     overflow-y: visible !important;
 }
-.countdown > *:before {
-    position: relative;
-    content: "" !important;
-}
+
 .scroll-to-top {
     right: 40px;
     bottom: 40px;

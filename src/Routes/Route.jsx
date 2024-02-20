@@ -22,7 +22,6 @@ import ViewPortFolio from "../pages/Dashboard/Dashboard/PortFolio/ViewPortFolio"
 import AddPortFolio from "../pages/Dashboard/Dashboard/PortFolio/AddPortFolio";
 import UpdatePortFolio from "../pages/Dashboard/Dashboard/PortFolio/UpdatePortFolio";
 import Profile from "../pages/Dashboard/Profile/Profile";
-import Reviews from "../pages/Dashboard/Review/Reviews";
 import Signup from "../pages/Signup/Signup";
 import Login from "../pages/Login/Login";
 import SingleServices from "../pages/Dashboard/SingleServices/SingleServices";
@@ -31,8 +30,8 @@ import UpdateSingleServices from "../pages/Dashboard/SingleServices/UpdateSingle
 import CustomerOrderList from "../pages/Dashboard/CustomerOrder/CustomerOrderList";
 import Faq from "../pages/FAQ/Faq";
 import Packages from "../pages/Packages/Packages";
-
-
+import AddReviews from "../pages/Dashboard/Reviews/AddReviews";
+import ReviewList from "../pages/Dashboard/Reviews/ReviewList";
 
 export const router = createBrowserRouter([
   {
@@ -40,142 +39,147 @@ export const router = createBrowserRouter([
     element: <Main></Main>,
     children: [
       {
-        path: '/',
-        element: <Home></Home>
+        path: "/",
+        element: <Home></Home>,
       },
       {
-        path: '/about',
-        element: <About />
+        path: "/about",
+        element: <About />,
       },
       {
-        path: '/portfolio',
-        element: <Portfolio />
+        path: "/portfolio",
+        element: <Portfolio />,
       },
       // {
       //   path: '/singleService',
       //   element: <SingleService />
       // },
       {
-        path: '/singleServices/:id',
+        path: "/singleServices/:id",
         element: <SingleService />,
-        loader: ({ params }) => fetch(`http://localhost:5000/singleServices/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/singleServices/${params.id}`),
       },
       {
-        path: '/services',
-        element: <Services></Services>
+        path: "/services",
+        element: <Services></Services>,
       },
       {
-        path: '/client',
-        element: <Client />
+        path: "/client",
+        element: <Client />,
       },
       {
-        path: '/contact',
-        element: <Contact />
+        path: "/contact",
+        element: <Contact />,
       },
       {
-        path: '/packages',
-        element: <Packages />
+        path: "/packages",
+        element: <Packages />,
       },
       {
-        path: '/signup',
-        element: <Signup />
+        path: "/signup",
+        element: <Signup />,
       },
       {
-        path: '/login',
-        element: <Login />
+        path: "/login",
+        element: <Login />,
       },
       {
-        path: '/faq',
-        element: <Faq/>
-      }
-
+        path: "/faq",
+        element: <Faq />,
+      },
     ],
-
   },
   {
-    path: 'dashboard',
+    path: "dashboard",
     element: <DashboardLayout />,
     children: [
       {
-        path: '/dashboard',
-        element: <Dashboard />
+        path: "/dashboard",
+        element: <Dashboard />,
       },
       {
-        path: 'serviceData',
-        element: <ServiceData />
+        path: "serviceData",
+        element: <ServiceData />,
       },
       {
-        path: 'addservice',
-        element: <AddServices />
+        path: "addservice",
+        element: <AddServices />,
       },
       {
-        path: 'updatedservice/:id',
+        path: "updatedservice/:id",
         element: <UpdateServices />,
-        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/services/${params.id}`),
       },
       {
-        path: 'about',
-        element: <ViewAbout />
+        path: "about",
+        element: <ViewAbout />,
       },
       {
-        path: 'addabout',
-        element: <AddAbout />
+        path: "addabout",
+        element: <AddAbout />,
       },
       {
-        path: 'updateAbout/:id',
+        path: "updateAbout/:id",
         element: <UpdateAbout />,
-        loader: ({ params }) => fetch(`http://localhost:5000/about/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/about/${params.id}`),
       },
       {
-        path: 'contact',
-        element: <ViewContact />
+        path: "contact",
+        element: <ViewContact />,
       },
       {
-        path: 'addcontact',
-        element: <AddContact />
+        path: "addcontact",
+        element: <AddContact />,
       },
       {
-        path: 'updateContact',
-        element: <UpdateContact />
+        path: "updateContact",
+        element: <UpdateContact />,
       },
       {
-        path: 'portfolio',
-        element: <ViewPortFolio />
+        path: "portfolio",
+        element: <ViewPortFolio />,
       },
       {
-        path: 'addPortfolio',
-        element: <AddPortFolio />
+        path: "addPortfolio",
+        element: <AddPortFolio />,
       },
       {
-        path: 'updatePortfolio',
-        element: <UpdatePortFolio />
+        path: "updatePortfolio",
+        element: <UpdatePortFolio />,
       },
       {
-        path: 'profile',
-        element: <Profile />
+        path: "profile",
+        element: <Profile />,
       },
       {
-        path: 'review',
-        element: <Reviews />
+        path: "singleServices",
+        element: <SingleServices />,
       },
       {
-        path: 'singleServices',
-        element: <SingleServices />
+        path: "addSingleServices",
+        element: <AddSingleServices />,
       },
       {
-        path: 'addSingleServices',
-        element: <AddSingleServices />
-      },
-      {
-        path: 'updatedSingleServices/:id',
+        path: "updatedSingleServices/:id",
         element: <UpdateSingleServices />,
-        loader: ({ params }) => fetch(`http://localhost:5000/singleServices/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/singleServices/${params.id}`),
       },
       {
-        path: 'orders',
+        path: "orders",
         element: <CustomerOrderList />,
       },
-    ]
-  }
-
+      {
+        path: "add-reviews",
+        element: <AddReviews />,
+      },
+      {
+        path: "reviews",
+        element: <ReviewList />,
+      },
+    ],
+  },
 ]);

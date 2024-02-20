@@ -1,13 +1,14 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/no-unescaped-entities */
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import man from "../../../public/assets/kamal.jpg";
-import man2 from "../../../public/assets/man2.webp";
-import man3 from "../../../public/assets/man3.png";
 import "./Review.css";
 import { FaQuoteLeft, FaArrowRight } from "react-icons/fa";
 import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
 import Container from "../../ui/Container";
+import { useGetAllReviewsQuery } from "../../redux/features/review/reviewApi";
+import YouTube from 'react-youtube';
+
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {
@@ -43,6 +44,10 @@ function ThumbnailPlugin(mainRef) {
 }
 
 export default function Review() {
+  const {data:reviews, isLoading, isError } = useGetAllReviewsQuery()
+
+
+
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
   });
@@ -56,8 +61,20 @@ export default function Review() {
     },
     [ThumbnailPlugin(instanceRef)]
   );
+
+  if(isLoading){
+    return <p>Loading.....</p>
+  }
+  
+  if(isError){
+    return <p>Something went to wrong </p>
+  }
+
+
+
   return (
     <div className=" sectionMargin">
+
       <Container>
         <div className="mb-8">
           <SectionTitle title="What Our Client Say "></SectionTitle>
@@ -67,19 +84,28 @@ export default function Review() {
             <div className="keen-slider__slide number-slide1">
               <div className="swiperWrap">
                 <div className="reviewImg">
-                  <img src={man} alt="" />
+                 {
+                  reviews[0]?.image ?
+                  <img src={reviews[0]?.image} alt="" /> : 
+                  <iframe 
+                  width="400" 
+                  height="315" 
+                  src={reviews[0]?.videoUrl} 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+                 }
+
                 </div>
                 <div className="reviewContent">
-                  <h3>Kamal Hossain </h3>
-                  <h6>Buildtech Architect & Engineers</h6>
+                  <h3>{reviews[0]?.name}</h3>
+                  <h6>{reviews[0]?.title}</h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">
-                      SOFTYPY is providing a valuable service to businesses in
-                      today's fast-paced and technology-driven world. The team's
-                      expertise in digital marketing is helping companies reach
-                      their target audience, increase brand awareness, drive
-                      traffic to their website, and generate leads and sales.
+                     {reviews[0].description}
                     </p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#F81600] ml-8">
@@ -92,23 +118,32 @@ export default function Review() {
             <div className="keen-slider__slide number-slide1">
               <div className="swiperWrap">
                 <div className="reviewImg">
-                  <img src={man2} alt="" />
+                {
+                  reviews[1]?.image ?
+                  <img src={reviews[1]?.image} alt="" /> : 
+                  <iframe 
+                  width="250" 
+                  height="315" 
+                  src={reviews[0]?.videoUrl} 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+                 }
+
                 </div>
                 <div className="reviewContent">
                   <h3 className="text-4xl font-bold text-[#F81600] ">
-                    Kamal Hossain
+                  {reviews[1]?.name}
                   </h3>
                   <h6 className="text-xl font-bold mt-2">
-                    Buildtech Architect & Engineers
+                  {reviews[1]?.title}
                   </h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">
-                      SOFTYPY is providing a valuable service to businesses in
-                      today is fast-paced and technology-driven world. The team
-                      expertise in digital marketing is helping companies reach
-                      their target audience, increase brand awareness, drive
-                      traffic to their website, and generate leads and sales.
+                    {reviews[1]?.description}
                     </p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#F81600] ml-8">
@@ -121,23 +156,33 @@ export default function Review() {
             <div className="keen-slider__slide number-slide1">
               <div className="swiperWrap">
                 <div className="reviewImg">
-                  <img src={man3} alt="" />
+                {
+                  reviews[0]?.image ?
+                  <img src={reviews[2]?.image} alt="" /> : 
+                  <iframe 
+                  className="w-full h-full"
+                width='300'
+                height='300'
+                  src={reviews[2]?.videoUrl} 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+                 }
+
                 </div>
                 <div className="reviewContent">
                   <h3 className="text-4xl font-bold text-[#F81600] ">
-                    Kamal Hossain{" "}
+                  {reviews[2]?.name}
                   </h3>
                   <h6 className="text-xl font-bold mt-2">
-                    Buildtech Architect & Engineers
+                  {reviews[2]?.title}
                   </h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">
-                      SOFTYPY is providing a valuable service to businesses in
-                      today's fast-paced and technology-driven world. The team's
-                      expertise in digital marketing is helping companies reach
-                      their target audience, increase brand awareness, drive
-                      traffic to their website, and generate leads and sales.
+                    {reviews[2]?.description}
                     </p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#F81600] ml-8">
@@ -152,17 +197,18 @@ export default function Review() {
           <div ref={thumbnailRef} className="keen-slider thumbnail">
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-                <img src={man} alt="man" />
+              <img src={`https://img.youtube.com/vi/${getYoutubeVideoId(reviews[0]?.videoUrl)}/0.jpg`} alt="man" />
+           
               </div>
             </div>
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-                <img src={man2} alt="man" />
+              <img src={`https://img.youtube.com/vi/${getYoutubeVideoId(reviews[1]?.videoUrl)}/0.jpg`} alt="man" />
               </div>
             </div>
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-                <img src={man3} alt="man" />
+              <img src={`https://img.youtube.com/vi/${getYoutubeVideoId(reviews[2]?.videoUrl)}/0.jpg`} alt="man" />
               </div>
             </div>
           </div>
@@ -170,4 +216,16 @@ export default function Review() {
       </Container>
     </div>
   );
+}
+
+
+function getYoutubeVideoId(url) {
+  const regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const match = url?.match(regExp);
+  if (match && match[2].length === 11) {
+    return match[2];
+  } else {
+    // Handle invalid URL or ID not found
+    return 'Invalid YouTube URL or ID';
+  }
 }

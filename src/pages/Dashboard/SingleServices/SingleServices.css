@@ -1,6 +1,7 @@
-.singleForm select{
+.singleForm select, .singleForm input{
  width:100%;
- border:1px solid #F81600;
+ border:1px solid black;
+ padding:10px;
 }
 .singleForm select:focus{
     outline: none;

@@ -8,13 +8,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.reviewImg{
+/* .reviewImg{
     width:350px;
     height: 350px;
     border-radius: 50%;
     overflow: hidden;
+    object-fit: cover;
 
-}
+} */
 .leftSide img{
     width:100%;
     object-fit: cover;
@@ -22,7 +23,7 @@
 }
 .reviewContent{
 
-    width:800px;
+    width:700px;
 }
 .reviewContent h3{
     color:#F81600;
@@ -88,8 +89,8 @@
         margin-left: 0px;
     }
     .reviewImg {
-        width: 235px;
-        height: 235px;
+        width: 300px;
+        height: 2250px;
     }
 }
 

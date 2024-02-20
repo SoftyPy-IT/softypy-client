@@ -64,12 +64,10 @@
 }
 .formControl .inputField {
     width: 100%;
-    border: 1px solid #F81600;
-    height: 50px;
     border-radius: 8px;
     
 }
-.formControl input::placeholder,
+
 .formControl textarea::placeholder,
 .subscribeContent input::placeholder {
   color: black !important;
@@ -80,7 +78,7 @@
   padding-left: 10px;
 }
 .formControl textarea {
-  border: 1px solid #F81600;
+  border: 1px solid #ddd;
   resize: none;
   width: 100%;
   height: 150px;
