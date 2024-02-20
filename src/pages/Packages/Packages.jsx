@@ -127,13 +127,13 @@ const Packages = () => {
         </div>
       </Container>
 
-        <Review />
-        <Brand />
+      <Review />
+      <Brand />
 
-        <Technologies />
-        <WorkPortfolio />
-        <PackagePrice />
-        <div className="sectionMargin"> 
+      <Technologies />
+      <WorkPortfolio />
+      <PackagePrice />
+      <div className="sectionMargin">
         <Container>
           <div className=" flex flex-col lg:flex-row md:justify-between justify-center">
             <h2 className="text-4xl md:text-[50px] lg:w-[40%] w-full text-center font-semibold">
@@ -141,13 +141,17 @@ const Packages = () => {
             </h2>
             <div className="mt-5 lg:mt-24 w-full text-center  lg:w-[60%]">
               <p className="text-3xl md:text-[80px]">softypy@gmail.com</p>
-              <p className=" mt-14 mb-10 text-3xl md:text-[80px]">+88-01965666222</p>
+              <p className=" mt-14 mb-10 text-3xl md:text-[80px]">
+                +88-01762-380594
+              </p>
+              <p className=" mt-14 mb-10 text-3xl md:text-[80px]">
+                +88-01303042561
+              </p>
               <button className="priceBtn">Contact Us</button>
             </div>
           </div>
         </Container>
-        </div>
-
+      </div>
     </div>
   );
 };

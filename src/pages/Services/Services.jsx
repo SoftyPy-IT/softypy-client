@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./Services.css";
 import responsive from "../../../public/assets/dev.png";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
@@ -7,7 +8,6 @@ import BoostSection from "../../components/BostSection/BoostSection";
 import NavBar from "../Shared/NavBar/NavBar";
 import Container from "../../ui/Container";
 const Services = () => {
-
   const ref = useRef(null);
   useEffect(() => {
     import("@lottiefiles/lottie-player");
@@ -17,42 +17,28 @@ const Services = () => {
     {
       id: 1,
       name: "Ecommerce Website ",
-      
     },
     {
       id: 1,
       name: "Ecommerce Website ",
-      
     },
     {
       id: 1,
       name: "Ecommerce Website ",
-      
     },
     {
       id: 1,
       name: "Ecommerce Website ",
-      
     },
-    {
-      id: 1,
-      name: "Ecommerce Website ",
-      
-    },
-    {
-      id: 1,
-      name: "Ecommerce Website ",
-      
-    },
-  ]
+  ];
 
   return (
     <div className="home">
       <div className="servicessWraps">
         <div className="navsBarWrap">
-         <div className="text-white">
-         <NavBar />
-         </div>
+          <div className="text-white">
+            <NavBar />
+          </div>
 
           <div className="servicesContents">
             <div>
@@ -103,22 +89,30 @@ const Services = () => {
         <div className="sectionMargin">
           <TopServices />
         </div>
+
         <div className="ourServices sectionMargin">
-          <div className="mb-12">
-            <SectionTitle
-              title="Types of Web Development Services"
-              text="“Web design is not just about creating pretty layouts. It's about understanding the marketing challenge behind your business.”"
-            ></SectionTitle>
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <div className="w-[50%] pr-5">
+              <h2 className="  text-[#680C70] font-bold text-4xl">
+                Types of Web Development Services
+              </h2>
+              <p>
+                “Web design is not just about creating pretty layouts. It's
+                about understanding the marketing challenge behind your
+                business.”
+              </p>
+            </div>
+            <div className="w-[100%] md:w-[50%]">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
+                {cardData.map((data) => (
+                  <div key={data.id} className="projectServicesCard">
+                    <h5>Ecommerce website </h5>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
-         {
-          cardData.map((data)=>(
-            <div key={data.id} className="projectServicesCard">
-            <h5>Ecommerce website </h5>
-          </div>
-          ))
-         }
-         </div>
+
           <div className="whatWeDo sectionMargin">
             <h2>What We Do </h2>
             <div>

@@ -1,13 +1,27 @@
 import "./WhoWeare.css";
 import Container from "../../ui/Container";
-import img from '../../../public/assets/sortware.png'
+// import img from '../../../public/assets/sortware.png'
+import { useEffect, useRef } from "react";
 const WhatWeDo = () => {
+  const ref = useRef(null);
+  useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
+
   return (
     <div className="sectionMargin h-[420px] overflow-hidden">
       <Container>
-        <div className="flex flex-col md:flex-row items-center justify-center" >
-          <div className="w-[50%] ">
-           <img src={img} className="w-[500px] object-cover" alt="software" />
+        <div className="flex flex-col gap-10 md:flex-row items-center justify-center" >
+          <div className="w-[48%] ">
+          <lottie-player
+          id="firstLottie"
+          ref={ref}
+          autoplay
+          loop
+          mode="normal"
+          src="/package.json"
+          className="animation"
+        ></lottie-player>
           </div>
           <div className="w-[100%] md:w-[50%]">
             <h2 className=" mb-3 text-[#680C70] font-bold text-4xl">

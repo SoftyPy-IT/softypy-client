@@ -7,8 +7,6 @@ import { useGetAllSingleServicesQuery } from "../../../redux/features/singleServ
 
 const Services = () => {
 const {data:services} = useGetAllSingleServicesQuery()
-console.log(services)
-
   return (
     <Container>
       <div className="servicesWraps ">

@@ -7,8 +7,6 @@ import { FaQuoteLeft, FaArrowRight } from "react-icons/fa";
 import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
 import Container from "../../ui/Container";
 import { useGetAllReviewsQuery } from "../../redux/features/review/reviewApi";
-import YouTube from 'react-youtube';
-
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {
@@ -44,9 +42,7 @@ function ThumbnailPlugin(mainRef) {
 }
 
 export default function Review() {
-  const {data:reviews, isLoading, isError } = useGetAllReviewsQuery()
-
-
+  const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
 
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
@@ -62,51 +58,45 @@ export default function Review() {
     [ThumbnailPlugin(instanceRef)]
   );
 
-  if(isLoading){
-    return <p>Loading.....</p>
-  }
-  
-  if(isError){
-    return <p>Something went to wrong </p>
+  if (isLoading) {
+    return <p>Loading.....</p>;
   }
 
-
+  if (isError) {
+    return <p>Something went to wrong </p>;
+  }
 
   return (
-    <div className=" sectionMargin">
-
+    <div className="sectionMargin">
       <Container>
-        <div className="mb-8">
+        <div className="mb-20">
           <SectionTitle title="What Our Client Say "></SectionTitle>
         </div>
         <div className="reviewSliderWrap ">
           <div ref={sliderRef} className="keen-slider keenSlider">
             <div className="keen-slider__slide number-slide1">
               <div className="swiperWrap">
-                <div className="reviewImg">
-                 {
-                  reviews[0]?.image ?
-                  <img src={reviews[0]?.image} alt="" /> : 
-                  <iframe 
-                  width="400" 
-                  height="315" 
-                  src={reviews[0]?.videoUrl} 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-                 }
-
+                <div className={`${reviews[0]?.image ? "reviewImg" : ""}`}>
+                  {reviews[0]?.image ? (
+                    <img src={reviews[0]?.image} alt="" />
+                  ) : (
+                    <iframe
+                      width="450"
+                      height="250"
+                      src={reviews[0]?.videoUrl}
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  )}
                 </div>
                 <div className="reviewContent">
                   <h3>{reviews[0]?.name}</h3>
                   <h6>{reviews[0]?.title}</h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">
-                     {reviews[0].description}
-                    </p>
+                    <p className="text-xl">{reviews[0]?.description}</p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#F81600] ml-8">
                     <button>Read history </button>
@@ -117,34 +107,31 @@ export default function Review() {
             </div>
             <div className="keen-slider__slide number-slide1">
               <div className="swiperWrap">
-                <div className="reviewImg">
-                {
-                  reviews[1]?.image ?
-                  <img src={reviews[1]?.image} alt="" /> : 
-                  <iframe 
-                  width="250" 
-                  height="315" 
-                  src={reviews[0]?.videoUrl} 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-                 }
-
+                <div className={`${reviews[1]?.image ? "reviewImg" : ""}`}>
+                  {reviews[1]?.image ? (
+                    <img src={reviews[1]?.image} alt="" />
+                  ) : (
+                    <iframe
+                      width="450"
+                      height="250"
+                      src={reviews[0]?.videoUrl}
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  )}
                 </div>
                 <div className="reviewContent">
                   <h3 className="text-4xl font-bold text-[#F81600] ">
-                  {reviews[1]?.name}
+                    {reviews[1]?.name}
                   </h3>
                   <h6 className="text-xl font-bold mt-2">
-                  {reviews[1]?.title}
+                    {reviews[1]?.title}
                   </h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">
-                    {reviews[1]?.description}
-                    </p>
+                    <p className="text-xl">{reviews[1]?.description}</p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#F81600] ml-8">
                     <button>Read history </button>
@@ -155,35 +142,32 @@ export default function Review() {
             </div>
             <div className="keen-slider__slide number-slide1">
               <div className="swiperWrap">
-                <div className="reviewImg">
-                {
-                  reviews[0]?.image ?
-                  <img src={reviews[2]?.image} alt="" /> : 
-                  <iframe 
-                  className="w-full h-full"
-                width='300'
-                height='300'
-                  src={reviews[2]?.videoUrl} 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-                 }
-
+                <div className={`${reviews[2]?.image ? "reviewImg" : ""}`}>
+                  {reviews[0]?.image ? (
+                    <img src={reviews[2]?.image} alt="" />
+                  ) : (
+                    <iframe
+                      className="w-full h-full"
+                      width="450"
+                      height="250"
+                      src={reviews[2]?.videoUrl}
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  )}
                 </div>
                 <div className="reviewContent">
                   <h3 className="text-4xl font-bold text-[#F81600] ">
-                  {reviews[2]?.name}
+                    {reviews[2]?.name}
                   </h3>
                   <h6 className="text-xl font-bold mt-2">
-                  {reviews[2]?.title}
+                    {reviews[2]?.title}
                   </h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">
-                    {reviews[2]?.description}
-                    </p>
+                    <p className="text-xl">{reviews[2]?.description}</p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#F81600] ml-8">
                     <button>Read history </button>
@@ -197,18 +181,44 @@ export default function Review() {
           <div ref={thumbnailRef} className="keen-slider thumbnail">
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-              <img src={`https://img.youtube.com/vi/${getYoutubeVideoId(reviews[0]?.videoUrl)}/0.jpg`} alt="man" />
-           
+                {reviews[0]?.videoUrl ? (
+                  <img
+                    src={`https://img.youtube.com/vi/${getYoutubeVideoId(
+                      reviews[0]?.videoUrl
+                    )}/0.jpg`}
+                    alt="man"
+                  />
+                ) : (
+                  <img src={reviews[0]?.image} />
+                )}
               </div>
             </div>
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-              <img src={`https://img.youtube.com/vi/${getYoutubeVideoId(reviews[1]?.videoUrl)}/0.jpg`} alt="man" />
+                {reviews[1]?.videoUrl ? (
+                  <img
+                    src={`https://img.youtube.com/vi/${getYoutubeVideoId(
+                      reviews[1]?.videoUrl
+                    )}/0.jpg`}
+                    alt="man"
+                  />
+                ) : (
+                  <img src={reviews[1]?.image} />
+                )}
               </div>
             </div>
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-              <img src={`https://img.youtube.com/vi/${getYoutubeVideoId(reviews[2]?.videoUrl)}/0.jpg`} alt="man" />
+                {reviews[2]?.videoUrl ? (
+                  <img
+                    src={`https://img.youtube.com/vi/${getYoutubeVideoId(
+                      reviews[2]?.videoUrl
+                    )}/0.jpg`}
+                    alt="man"
+                  />
+                ) : (
+                  <img src={reviews[2]?.image} />
+                )}
               </div>
             </div>
           </div>
@@ -218,14 +228,14 @@ export default function Review() {
   );
 }
 
-
 function getYoutubeVideoId(url) {
-  const regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const regExp =
+    /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
   const match = url?.match(regExp);
   if (match && match[2].length === 11) {
     return match[2];
   } else {
     // Handle invalid URL or ID not found
-    return 'Invalid YouTube URL or ID';
+    return "Invalid YouTube URL or ID";
   }
 }

@@ -11,6 +11,8 @@ import {
   HiOutlineVideoCamera,
 } from "react-icons/hi";
 import img from "../../../public/assets/line2.svg";
+
+
 const HowSoftyPyWork = () => {
   const workData = [
     {
@@ -85,6 +87,7 @@ const HowSoftyPyWork = () => {
                           i === 3 ? "cardsFront4" : ""
                         } `}
                       >
+                      
                         <div className="">
                           {i === 1 ? (
                             <p>
