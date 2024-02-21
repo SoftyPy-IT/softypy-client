@@ -1,9 +1,37 @@
 
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
-import { useGetOrdersQuery } from "../../../redux/features/orders/ordersApi";
+import { FaLongArrowAltLeft, FaLongArrowAltRight, FaTrashAlt } from "react-icons/fa";
+import { useDeleteOrderMutation, useGetOrdersQuery } from "../../../redux/features/orders/ordersApi";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const CustomerOrderList = () => {
+  const navigate = useNavigate()
 const {data:orders, isLoading, isError} = useGetOrdersQuery()
+const [deleteOrder] = useDeleteOrderMutation()
+const handleDelete = (id) => {
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You want to delete this services !",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!",
+  }).then((result) => {
+    deleteOrder(id);
+    if (result.isSuccess) {
+      Swal.fire({
+        title: "Deleted!",
+        text: "Review deleted successfully.",
+        icon: "success",
+      });
+    }
+  });
+
+  navigate("/dashboard/orders");
+};
+
+
 
 if(isLoading){
   return <p>Loading........</p>
@@ -23,6 +51,7 @@ if(isError){
                 <th>Customer Name</th>
                 <th>Email </th>
                 <th>Phone Number </th>
+                <th>Action </th>
               </tr>
             </thead>
             <tbody>
@@ -32,6 +61,14 @@ if(isError){
                    <td>{order.name}</td>
                    <td>{order.email}</td>
                    <td>{order.phone}</td>
+                   <td>
+                   <div
+                    onClick={() => handleDelete(order._id)}
+                    className="editIconWrap"
+                  >
+                    <FaTrashAlt className="deleteIcon" />
+                  </div>
+                   </td>
                   </tr>)
              }
             </tbody>

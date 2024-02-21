@@ -20,12 +20,7 @@ const SingleService = () => {
 
   const {id} = useParams()
 const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
-if(isLoading){
-  return <p>Loding............</p>
-}
-if(isError){
-  return <p>Something went to wrong </p>
-}
+
 
   const handleToggle = (value) => () => {
     const currentIndex = checked.indexOf(value);
@@ -42,6 +37,14 @@ if(isError){
   useEffect(() => {
     import("@lottiefiles/lottie-player");
   });
+
+  
+  if(isLoading){
+    return <p>Loding............</p>
+  }
+  if(isError){
+    return <p>Something went to wrong </p>
+  }
 
   return (
     <div>

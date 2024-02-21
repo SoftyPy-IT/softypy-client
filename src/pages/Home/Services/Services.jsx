@@ -7,6 +7,7 @@ import { useGetAllSingleServicesQuery } from "../../../redux/features/singleServ
 
 const Services = () => {
 const {data:services} = useGetAllSingleServicesQuery()
+
   return (
     <Container>
       <div className="servicesWraps ">
@@ -68,5 +69,6 @@ const {data:services} = useGetAllSingleServicesQuery()
     </Container>
   );
 };
+
 
 export default Services;

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Services.css";
 import responsive from "../../../public/assets/dev.png";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import { useRef, useEffect } from "react";
 import TopServices from "./TopServices/TopServices";
 import BoostSection from "../../components/BostSection/BoostSection";

@@ -53,7 +53,7 @@ const PortfolioList = () => {
               <th>Image </th>
               <th>Title </th>
               <th>Link</th>
-              <th colSpan={3}>Action</th>
+              <th colSpan={2}>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -71,13 +71,6 @@ const PortfolioList = () => {
                 </td>
                 <td>{data.title} </td>
                 <td>{data.link}</td>
-                <td>
-                  <div className="editIconWrap">
-                    <Link to={`/dashboard/add-portfolio`}>
-                      <FaPlus className="editIcon" />
-                    </Link>
-                  </div>
-                </td>
                 <td>
                   <div className="editIconWrap">
                     <Link to={`/dashboard/`}>

@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-irregular-whitespace */
 /* eslint-disable no-func-assign */
 /* eslint-disable no-unused-vars */
@@ -36,7 +37,7 @@ export default Arrow = () => {
     <Container>
       <main className="topServicesWrap">
         <div>
-          <div data-aos="fade-up" className="relatedServiceHead  mt-8">
+          <div data-aos="fade-up" className="relatedServiceHead  mb-8">
             <h2 className="text-3xl md:text-5xl">Our Top Services</h2>
           </div>
         </div>
@@ -56,7 +57,6 @@ export default Arrow = () => {
                     className="animation"
                   ></lottie-player>
                 </div>
-
                 <div className="topServiceRight">
                   <h2 className="text-4xl font-bold">
                     Web Design & Development{" "}
@@ -230,13 +230,13 @@ export default Arrow = () => {
 };
 
 function Arrow(props) {
-  const disabeld = props.disabled ? " arrow--disabled" : "";
+  const disabled = props.disabled ? " arrow--disabled" : "";
   return (
     <svg
       onClick={props.onClick}
       className={`arrow ${
         props.left ? "arrow--left" : "arrow--right"
-      } ${disabeld}`}
+      } ${disabled}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >

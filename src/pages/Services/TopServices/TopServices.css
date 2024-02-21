@@ -26,13 +26,9 @@
     border-radius: 40%;
     overflow: hidden;
 }
-.topServiceContent img{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-}
+
 .topServicesLeft{
-    width:50%
+    width:500px;
 }
 .leftArrow{
     width: 50px;

@@ -2,10 +2,12 @@ import { useForm } from "react-hook-form";
 import './SingleServices.css'
 import Swal from "sweetalert2";
 import { useCreateSingleServicesMutation } from "../../../redux/features/singleServices/singleServicesApi";
+import { useNavigate } from "react-router-dom";
 
 
 const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN
 const AddSingleServices = () => {
+  const navigate = useNavigate();
 const [createSingleServices,{isSuccess}] = useCreateSingleServicesMutation()
 
   const { register, handleSubmit } = useForm();
@@ -43,6 +45,7 @@ const [createSingleServices,{isSuccess}] = useCreateSingleServicesMutation()
             timer: 1500
           })
         }
+        navigate('/dashboard/SingleServices')
       
       })
       .catch((error) => {

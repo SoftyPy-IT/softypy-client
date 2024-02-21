@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
 import "./SingleServices.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useGetSingleServicesQuery, useUpdateSingleServiceMutation } from "../../../redux/features/singleServices/singleServicesApi";
 
 const UpdateSingleServices = () => {
+  const navigate = useNavigate()
   const { register, handleSubmit } = useForm();
 const {id} = useParams()
 const [updateSingleService] = useUpdateSingleServiceMutation()
@@ -26,6 +27,7 @@ const {data:singleServices} = useGetSingleServicesQuery(id)
   
     console.log(updateSingleService)
     updateSingleService(updatedServices)
+    navigate('/dashboard/SingleServices')
  
   };
 

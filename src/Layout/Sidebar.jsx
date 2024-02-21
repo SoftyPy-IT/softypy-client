@@ -36,7 +36,7 @@ const Sidebar = () => {
             <Typography>
               <Link to="/dashboard/reviews">
                 <div className="flex items-center text-sm ">
-                  <FaPlus className="mr-1 " />
+                <FaThList className="mr-1 " />
                   <span>All Reviews </span>
                 </div>
               </Link>

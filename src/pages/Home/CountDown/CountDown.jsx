@@ -68,54 +68,54 @@ class PortfolioCountdown extends Component {
     return (
       <section className="sectionMargin">
         <div className="featured-item bg-fixed text-white  ">
-         <Container>
-         <div className="md:flex justify-between items-center ">
-         <div className="portFolioExample">
-           <div className="countDownWrap">
-             <div
-               className="countdown"
-               onClick={() => this.resetCounts("projectCount")}
-             >
-               <div className="singleCountDown">
-                 <p>{this.state.projectCount}</p>
-                 <span>+</span>
-               </div>
-               <h2>Projects</h2>
-             </div>
-             <div
-               className="countdown"
-               onClick={() => this.resetCounts("developerCount")}
-             >
-               <div className="singleCountDown">
-                 <p>{this.state.developerCount}</p>
-                 <span>+</span>
-               </div>
-               <h2>Professional Developers</h2>
-             </div>
-             <div
-               className="countdown"
-               onClick={() => this.resetCounts("experienceYears")}
-             >
-               <div className="singleCountDown">
-                 <p>{this.state.experienceYears}</p>
-                 <span>+</span>
-               </div>
-               <h2>Years of Experience</h2>
-             </div>
-             <div
-               className="countdown"
-               onClick={() => this.resetCounts("clientCount")}
-             >
-               <div className="singleCountDown">
-                 <p>{this.state.clientCount}</p>
-                 <span>+</span>
-               </div>
-               <h2>Esteemed Clients</h2>
-             </div>
-           </div>
-         </div>
-       </div>
-         </Container>
+          <Container>
+            <div className="md:flex justify-between items-center ">
+              <div className="portFolioExample">
+                <div className="countDownWrap">
+                  <div
+                    className="countdown"
+                    onClick={() => this.resetCounts("projectCount")}
+                  >
+                    <div className="singleCountDown">
+                      <p>{this.state.projectCount}</p>
+                      <span>+</span>
+                    </div>
+                    <h2>Projects</h2>
+                  </div>
+                  <div
+                    className="countdown"
+                    onClick={() => this.resetCounts("developerCount")}
+                  >
+                    <div className="singleCountDown">
+                      <p>{this.state.developerCount}</p>
+                      <span>+</span>
+                    </div>
+                    <h2>Professional Developers</h2>
+                  </div>
+                  <div
+                    className="countdown"
+                    onClick={() => this.resetCounts("experienceYears")}
+                  >
+                    <div className="singleCountDown">
+                      <p>{this.state.experienceYears}</p>
+                      <span>+</span>
+                    </div>
+                    <h2>Years of Experience</h2>
+                  </div>
+                  <div
+                    className="countdown"
+                    onClick={() => this.resetCounts("clientCount")}
+                  >
+                    <div className="singleCountDown">
+                      <p>{this.state.clientCount}</p>
+                      <span>+</span>
+                    </div>
+                    <h2>Esteemed Clients</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
         </div>
       </section>
     );
