@@ -3,3 +3,8 @@
 .sectionMargin{
    margin-top:80px;
 }
+
+.chatIcon{
+   font-size: 16px !important;
+   margin:0 3px;
+}

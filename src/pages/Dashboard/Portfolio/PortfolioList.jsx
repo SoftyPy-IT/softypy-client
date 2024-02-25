@@ -3,7 +3,6 @@ import {
   FaEdit,
   FaLongArrowAltLeft,
   FaLongArrowAltRight,
-  FaPlus,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
