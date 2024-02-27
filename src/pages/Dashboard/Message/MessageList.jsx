@@ -59,6 +59,7 @@ import {
                 <th>SL NO </th>
                 <th>Customer Name </th>
                 <th>Email Address</th>
+                <th>Message</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -68,6 +69,7 @@ import {
                   <td>{i + 1}</td>
                   <td>{review.name} </td>
                   <td>{review.title}</td>
+                  <td>All message here </td>
                  
                   <td>
                     <div
