@@ -5,12 +5,12 @@ import Typography from "@mui/material/Typography";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { FaPlus, FaThList } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { HiChatBubbleLeft } from "react-icons/hi2";
 const Sidebar = () => {
   return (
     <div className="fixed overflow-y-scroll overflow-x-hidden  drawwerLeftSide h-screen text-lg font-semibold  bg-[#191E2D] text-white">
       <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
       <ul className=" p-4 ">
-
         <li>
           <Link to="/dashboard" className="shadow-md z-10">
             Dashboard
@@ -36,7 +36,7 @@ const Sidebar = () => {
             <Typography>
               <Link to="/dashboard/reviews">
                 <div className="flex items-center text-sm ">
-                <FaThList className="mr-1 " />
+                  <FaThList className="mr-1 " />
                   <span>All Reviews </span>
                 </div>
               </Link>
@@ -174,6 +174,25 @@ const Sidebar = () => {
                 <div className="flex items-center text-sm ">
                   <FaThList className="mr-1 " />
                   <span>All Portfolio </span>
+                </div>
+              </Link>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDownwardIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            <Typography> Message </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              <Link to="/dashboard/message-list">
+                <div className="flex items-center text-sm ">
+                  <HiChatBubbleLeft className="mr-1 " />
+                  <span> Message List </span>
                 </div>
               </Link>
             </Typography>
