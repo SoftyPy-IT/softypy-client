@@ -57,7 +57,11 @@ const Main = () => {
 
       <div className="message rounded-full p-2 fixed bg-[#680C70] text-white bottom-14 right-1 cursor-pointer transition-all duration-75 ">
         {open ? (
-          <IoIosClose onClick={handleClose} size={45} className="transition ease-in-out delay-75 " />
+          <IoIosClose
+            onClick={handleClose}
+            size={45}
+            className="transition ease-in-out delay-75 "
+          />
         ) : (
           <HiChatBubbleLeft
             className="transition ease-in-out delay-75 "

@@ -33,6 +33,7 @@ import AddReviews from "../pages/Dashboard/Reviews/AddReviews";
 import ReviewList from "../pages/Dashboard/Reviews/ReviewList";
 import AddPortfolio from "../pages/Dashboard/Portfolio/AddPortfolio";
 import PortfolioList from "../pages/Dashboard/Portfolio/PortfolioList";
+import MessageList from "../pages/Dashboard/Message/MessageList";
 
 export const router = createBrowserRouter([
   {
@@ -184,6 +185,10 @@ export const router = createBrowserRouter([
       {
         path: "portfolio-list",
         element: <PortfolioList/>,
+      },
+      {
+        path: "message-list",
+        element: <MessageList/>,
       },
     ],
   },
