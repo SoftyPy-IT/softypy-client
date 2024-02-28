@@ -30,6 +30,25 @@ const Main = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+
+
+  useEffect(() => {
+    // Generate a random temporary ID
+    function generateTemporaryId() {
+      return 'user_' + Math.random().toString(36).substr(2, 9);
+    }
+
+    // Check if sessionStorage already has a temporary ID
+    let temporaryId = sessionStorage.getItem('temporaryId');
+
+    // If not, generate a new one and store it in sessionStorage
+    if (!temporaryId) {
+      temporaryId = generateTemporaryId();
+      sessionStorage.setItem('temporaryId', temporaryId);
+    }
+  }, []);
+
+
   return (
     <div>
       <Outlet />
