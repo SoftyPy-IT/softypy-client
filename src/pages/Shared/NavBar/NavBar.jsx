@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../contexts/AuthProvider";
 import team from "../../../../public/assets/team11.jpeg";
-import login from "../../../../public/assets/login6.png";
 import Container from "../../../ui/Container";
 import { LuUser } from "react-icons/lu";
 

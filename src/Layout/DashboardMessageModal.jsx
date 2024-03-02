@@ -9,19 +9,15 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { io } from "socket.io-client";
 
-
 const socket = io("http://localhost:5000");
 
-const MessageModal = () => {
+const DashboardMessageModal = () => {
   const [conversations, setConversations] = useState([]);
   const [newMessage, setNewMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [reload, setReload] = useState(false);
   const messageContainerRef = useRef(null);
   const userTempId = sessionStorage.getItem("temporaryId");
-
-
-
 
   useEffect(() => {
     socket.on("connect", () => {
@@ -37,8 +33,6 @@ const MessageModal = () => {
       socket.off("received-message", receivedMessageHandler);
     };
   }, [setMessages]);
-
-
 
   useEffect(() => {
     const getConversations = async () => {
@@ -86,7 +80,7 @@ const MessageModal = () => {
     const response = await axios.post("http://localhost:5000/message", values);
     if (response.status === 200) {
       setReload(!reload);
-      reset()
+      reset();
     }
   };
 
@@ -159,4 +153,4 @@ const MessageModal = () => {
   );
 };
 
-export default MessageModal;
+export default DashboardMessageModal;
