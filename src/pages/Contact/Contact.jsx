@@ -54,6 +54,8 @@ const Contact = () => {
   useEffect(() => {
     import("@lottiefiles/lottie-player");
   });
+
+  
   return (
     <div>
       <section>
