@@ -6,8 +6,18 @@ import { AuthContext } from "../../../contexts/AuthProvider";
 import team from "../../../../public/assets/team11.jpeg";
 import Container from "../../../ui/Container";
 import { LuUser } from "react-icons/lu";
+import { HiChevronDown } from "react-icons/hi";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "../../../redux/features/themeSlice";
+import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
 
 const NavBar = () => {
+  const dispatch = useDispatch();
+  const { darkMode } = useSelector((store) => store.theme);
+  const handleToggleTheme = () => {
+    dispatch(toggleTheme());
+  };
+
   const { user, logout } = useContext(AuthContext);
   const [mobileMenu, setMobileMenu] = useState(true);
   const toggleMobileMenu = () => {
@@ -33,13 +43,23 @@ const NavBar = () => {
         </div>
         <ul className="navbar-list ">
           <Link to="/">
-            {" "}
             <li className="navbar-item">Home</li>
           </Link>
+          {/** 
           <Link to="/services">
             {" "}
-            <li className="navbar-item">Services</li>
-          </Link>
+            </Link>
+            */}
+          <li className="navbar-item flex items-center serviceNavItems">
+            Services <HiChevronDown size={23} />{" "}
+            <div className="dropDownMenu">
+              <ul>
+                <li>Website </li>
+                <li>APP </li>
+                <li>Digital Marketing </li>
+              </ul>
+            </div>
+          </li>
           <Link to="/packages">
             {" "}
             <li className="navbar-item">Packages</li>
@@ -56,9 +76,25 @@ const NavBar = () => {
             {" "}
             <li className="navbar-item">Contact</li>
           </Link>
-        
         </ul>
+        
+
         <div className="security">
+
+        <div className="flex items-center ">
+          <button
+            onClick={handleToggleTheme}
+            className="rounded-lg backdrop-blur-[2px] p-1 inline-block mr-2 "
+          >
+            {darkMode ? (
+              <HiOutlineSun size={30} />
+            ) : (
+              <HiOutlineMoon size={30} />
+            )}
+          </button>
+          <div></div>
+        </div>
+        
           {user?.uid ? (
             <>
               <div className="usersWrap">
@@ -94,6 +130,7 @@ const NavBar = () => {
               </div>
             </>
           )}
+
         </div>
 
         <div onClick={toggleMobileMenu} className="bar">

@@ -6,6 +6,7 @@ import TopServices from "./TopServices/TopServices";
 import BoostSection from "../../components/BostSection/BoostSection";
 import NavBar from "../Shared/NavBar/NavBar";
 import Container from "../../ui/Container";
+import { HiCode } from "react-icons/hi";
 const Services = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -31,6 +32,14 @@ const Services = () => {
     },
   ];
 
+  const websiteData = [
+    {
+      id:1,
+      name: 'Ecommerce Website',
+      
+    }
+  ]
+
   return (
     <div className="home">
       <div className="servicessWraps">
@@ -50,6 +59,22 @@ const Services = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="w-full bg-red-500 h-[300px]">
+        <Container>
+          <div className="grid grid-cols-3  place-content-between  ">
+          <div className="mainServiceCard ">
+          <HiCode size={95} />
+          <h2 className="text-2xl">Ecommerce Website </h2>
+          <p className="mt-3">
+            "Discover quality products, from electronics to fashion, in our
+            online store. Shop now for great deals!"
+          </p>
+
+        </div>
+          </div>
+        </Container>
       </div>
 
       <Container>

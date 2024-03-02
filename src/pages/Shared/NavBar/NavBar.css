@@ -43,7 +43,7 @@
   color: white !important;
 }
 
-.navbar-list li::after {
+/* .navbar-list li::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -52,12 +52,12 @@
   left: 0;
   bottom: 0;
   transition: all 0.5s ease-in-out;
-}
+} */
 
-.navbar-list li:hover::after {
+/* .navbar-list li:hover::after {
   width: 90%;
   border-bottom: 1px solid white;
-}
+} */
 .bar {
   display: none;
 }
@@ -90,6 +90,29 @@
 .user2{
   color:white;
   border:1px solid #ffffff;
+}
+.serviceNavItems{
+  position:relative;
+}
+.dropDownMenu {
+  position: absolute;
+  background: red;
+  top: 24px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 3px;
+  opacity: 0;
+  transform:scaleY(0);
+  transition: all .5s ease;
+  transform-origin: top;
+  cursor:pointer;
+}
+.serviceNavItems:hover .dropDownMenu{
+  opacity: 1;
+  transform:scaleY(1);
+}
+.dropDownMenu ul li{
+  
 }
 
 

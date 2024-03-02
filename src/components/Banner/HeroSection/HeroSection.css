@@ -1,5 +1,3 @@
-
-
 @keyframes animate_left {
   0% {
     opacity: 0;
@@ -24,52 +22,89 @@
   }
 }
 @keyframes heroBackground {
-    0% {
-      background-position: 0% 50%;
-    }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
+  0% {
+    background-position: 0% 50%;
   }
-  }
-.header {
 
-  position: relative;
-background: #680C70 ;
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-/* .navsBarWrap{
-  width:1200px;
-  margin:0 auto;
-} */
-/* 
-.header:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  left: 0;
-  bottom: 0;
-  clip-path: polygon(0px 10%, 0 100%, 100% 100%);
-  background:white;
-  
-} */
+
+@keyframes animateFutureText {
+  0%, 49.99% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50%, 100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+.futureText, .futureText2, .futureText3 {
+  display: none; /* Initially hide all text items */
+}
+
+.show {
+  display: inline; /* Display only the text item with the 'show' class */
+}
+
+.futureText.show, .futureText2.show, .futureText3.show {
+  animation-name: animateFutureText;
+  animation-duration: 2s; 
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: infinite; 
+  animation-direction: alternate; 
+  animation-fill-mode: both;
+  animation-play-state: running; 
+}
+
+.futureText {
+  animation-delay: 5s;
+}
+
+.futureText2 {
+  animation-delay: 10s;
+}
+
+.futureText3 {
+  animation-delay: 15s;
+}
 
 
+.header {
+  position: relative;
+  background: #680c70;
+  height: 100vh;
+  background-image: url(../../../../public/assets/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.header::after{
+  content: '';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  background:black;
+  opacity:.9
+ 
+}
+
+.right-side {
+  position: relative;
+  top: 50px;
+}
 /* 
 .header-content {
-  width: 100%;
-  display: flex;
-  position:relative;
-} */
-.right-side{
-    position:relative;
-    top:50px
-}
-
-.header-content  {
   width: 650px;
   margin: 0 auto;
   text-align: center;
@@ -77,13 +112,27 @@ background: #680C70 ;
   justify-content: center;
   align-items: center;
   height: 400px;
+} */
+.header-content{
+  display: flex;
+margin-top:100px;
+position: absolute;
+z-index: 9;
+width:1200px;
+padding-right:40px;
+
 }
-
-
+.welcome-heading{
+  color:#680c70 !important;
+}
+.left-side{
+  width:100%;
+}
 .left-side h1 {
   font-size: 50px;
   color: #fff;
-  margin-bottom: 0px;  animation: animate_left 2s 1 ease;
+  margin-bottom: 0px;
+  animation: animate_left 2s 1 ease;
 }
 
 .left-side p {
@@ -92,7 +141,7 @@ background: #680C70 ;
   color: #fff;
 }
 
-.ExploreBtn{
+.ExploreBtn {
   background-color: #fff;
   border-radius: 8px;
   font-size: 18px;
@@ -102,16 +151,16 @@ background: #680C70 ;
   margin-top: 10px;
   animation-delay: 0.5s;
   animation: animate_left 2s 1 ease;
-  transition: all .5s ease-in-out;
-  border: 1px solid #F81600;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #f81600;
   padding: 6px 20px;
-  margin:10px auto;
+  margin: 10px auto;
 }
 
 .ExploreBtn:hover {
-    background: linear-gradient(to right, #680C70, #F81600);
-    color:white;
-    border:1px solid white;
+  background: linear-gradient(to right, #680c70, #f81600);
+  color: white;
+  border: 1px solid white;
 }
 
 .right-side {
@@ -121,27 +170,19 @@ background: #680C70 ;
   width: 500px;
 }
 
-
-
-
-
-@media only screen and (max-width:500px){
-
-  .header-content  {
+@media only screen and (max-width: 500px) {
+  .header-content {
     width: 100%;
-    padding:0 20px;
-    height:350px;
+    padding: 0 20px;
+    height: 350px;
   }
-  
-.left-side h1 {
-  font-size:30px;
-}
-.ExploreBtn{
-  border-radius: 8px;
-  font-size: 15px;
-  padding: 5px 12px;
-}
 
-
+  .left-side h1 {
+    font-size: 30px;
+  }
+  .ExploreBtn {
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 5px 12px;
+  }
 }
-

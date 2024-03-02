@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { HiChevronDoubleUp } from "react-icons/hi";
 import MessageModal from "./MessageModal";
 import { IoIosClose } from "react-icons/io";
+import { useSelector } from "react-redux";
 
 const Main = () => {
   useEffect(() => {
@@ -46,10 +47,12 @@ const Main = () => {
     }
   }, []);
 
-  return (
-    <div>
-      <Outlet />
+const {darkMode} =  useSelector((state)=>state.theme)
+console.log(darkMode)
 
+  return (
+    <div className={` ${darkMode ? 'bg-black text-white' : '' }`}>
+      <Outlet />
       <Footer />
 
       <div className="message rounded-full p-2 fixed bg-[#680C70] text-white bottom-10 right-3 cursor-pointer transition-all duration-75 ">
