@@ -32,7 +32,7 @@ const HeroSection = () => {
         <Container>
         <div className="header-content capitalize">
         <div className="left-side">
-          <h1 className="welcome-heading text-6xl font-semibold text-[#680C70]">
+          <h1 className="welcome-heading text-6xl font-bold text-[#F81600]">
           Next-gen enterprise
           </h1>
           <p className="welcome-paragraph text-5xl font-semibold mt-3  ">
@@ -45,7 +45,7 @@ const HeroSection = () => {
           <span className={"text-[#F81600] futureText2 " + (showText === 2 ? "show" : "")}>New</span>
           <span className={"text-[#F81600] futureText3 " + (showText === 3 ? "show" : "")}>Value</span>
           </h3>
-          <button className="bg-[#680C70] w-60 py-3 rounded-sm text"> Let's Talk </button>
+          <button className="bg-[#F81600] w-60 py-3 rounded-sm text"> Let's Talk </button>
           </div>
 
   {/** 
