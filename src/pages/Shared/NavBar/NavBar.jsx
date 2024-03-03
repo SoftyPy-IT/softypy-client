@@ -54,7 +54,32 @@ const NavBar = () => {
             Services <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
               <ul>
-                <li>Website </li>
+                <li className="flex items-center mainSubmenu">
+                  Website <HiChevronDown size={23} />
+                  <div className="subMenu1">
+                    <div className="flex items-center hoverSubmenu">
+                      <p>MERN </p>
+                      <HiChevronDown size={23} />
+                    </div>
+                    <div className="flex items-center hoverSubmenu">
+                      <p>WORDPRESS</p>
+                      <HiChevronDown size={23} />
+                    </div>
+
+                    <div className="submenu">
+                      <ul>
+                        <li>Online Travel Agency (OTA) Website. </li>
+                        <li>Corporate Business Website</li>
+                        <li>E-commerce Website </li>
+                        <li>Nonprofit / Donation Websites </li>
+                        <li>Educational Websites </li>
+                        <li>Agency Website </li>
+                        <li>Real Estate Websites </li>
+                        <li>Health and Fitness Websites </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
                 <li>APP </li>
                 <li>Digital Marketing </li>
               </ul>
@@ -77,24 +102,22 @@ const NavBar = () => {
             <li className="navbar-item">Contact</li>
           </Link>
         </ul>
-        
 
         <div className="security">
+          <div className="flex items-center ">
+            <button
+              onClick={handleToggleTheme}
+              className="rounded-lg backdrop-blur-[2px] p-1 inline-block mr-2 "
+            >
+              {darkMode ? (
+                <HiOutlineSun size={30} />
+              ) : (
+                <HiOutlineMoon size={30} />
+              )}
+            </button>
+            <div></div>
+          </div>
 
-        <div className="flex items-center ">
-          <button
-            onClick={handleToggleTheme}
-            className="rounded-lg backdrop-blur-[2px] p-1 inline-block mr-2 "
-          >
-            {darkMode ? (
-              <HiOutlineSun size={30} />
-            ) : (
-              <HiOutlineMoon size={30} />
-            )}
-          </button>
-          <div></div>
-        </div>
-        
           {user?.uid ? (
             <>
               <div className="usersWrap">
@@ -130,7 +153,6 @@ const NavBar = () => {
               </div>
             </>
           )}
-
         </div>
 
         <div onClick={toggleMobileMenu} className="bar">

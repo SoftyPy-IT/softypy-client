@@ -47,11 +47,11 @@ const Main = () => {
     }
   }, []);
 
-const {darkMode} =  useSelector((state)=>state.theme)
-console.log(darkMode)
+  const { darkMode } = useSelector((state) => state.theme);
+  console.log(darkMode);
 
   return (
-    <div className={` ${darkMode ? 'bg-black text-white' : '' }`}>
+    <div className={` ${darkMode ? "bg-black text-white" : ""}`}>
       <Outlet />
       <Footer />
 

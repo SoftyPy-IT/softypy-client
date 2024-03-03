@@ -1,5 +1,4 @@
 .navbar {
-
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
@@ -14,9 +13,9 @@
   width: 1200px;
   margin: 0 auto;
   /* background: linear-gradient(to right, #541283fb, #F81600); */
-  background-color: #680C70;
+  background-color: #680c70;
   width: 100%;
-  color: white ;
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +25,6 @@
 }
 .navbar-list {
   display: flex;
-
 }
 
 .navbar-list li {
@@ -36,7 +34,6 @@
   font-weight: bold;
   position: relative;
 }
-
 
 .sticky .navbar-list,
 .sticky .logo {
@@ -65,12 +62,12 @@
 .mobileMenuActive {
   display: none;
 }
-.usersWrap{
+.usersWrap {
   position: relative;
 }
-.userItems{
+.userItems {
   position: absolute;
-  background: #F81600;
+  background: #f81600;
 
   text-align: center;
   padding: 20px 10px;
@@ -78,56 +75,91 @@
   display: none;
   justify-content: center;
 }
-.usersWrap:hover .userItems{
+.usersWrap:hover .userItems {
   display: block;
 }
-.user, .user2{
-  width:3.12rem;
-  height:3.12rem;
+.user,
+.user2 {
+  width: 3.12rem;
+  height: 3.12rem;
   border-radius: 100%;
-  
 }
-.user2{
-  color:white;
-  border:1px solid #ffffff;
+.user2 {
+  color: white;
+  border: 1px solid #ffffff;
 }
-.serviceNavItems{
-  position:relative;
+.serviceNavItems {
+  position: relative;
 }
 .dropDownMenu {
   position: absolute;
+  /* background: rgba(0, 0, 0, 0.137); */
   background: red;
   top: 24px;
   width: 250px;
   padding: 10px;
   border-radius: 3px;
   opacity: 0;
-  transform:scaleY(0);
-  transition: all .5s ease;
+  transform: scaleY(0);
+  visibility: hidden;
+  transition: all 0.5s ease;
   transform-origin: top;
-  cursor:pointer;
+  cursor: pointer;
+  z-index: 8888;
 }
-.serviceNavItems:hover .dropDownMenu{
+.serviceNavItems:hover .dropDownMenu {
   opacity: 1;
-  transform:scaleY(1);
+  transform: scaleY(1);
+  visibility: visible;
 }
-.dropDownMenu ul li{
-  
+.mainSubmenu:hover .subMenu1 {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
 }
+.subMenu1 {
+  width: 200px;
+  background-color: black;
+  padding: 15px;
+  position: absolute;
+  top: 17px;
+  right: -91px;
+  z-index: 9;
+  opacity: 0;
+  transform: scaleY(0);
+  visibility: hidden;
+  transition: all 0.5s ease;
+  transform-origin: top;
+}
+.submenu {
+  background: green;
+  position: absolute;
+  width: 400px;
+  padding: 20px;
+  z-index: 9999;
+  top: 6px;
 
+  transition: all 0.5s ease;
+  transform-origin: top;
+}
+.hoverSubmenu:hover .submenu{
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
 
 @media only screen and (max-width: 1024px) {
   .navbar,
   .sticky {
-    width:100%;
+    width: 100%;
   }
-  .navbar{
-    padding:10px 30px;
+  .navbar {
+    padding: 10px 30px;
   }
   .security {
     position: relative;
     left: -44%;
-}
+  }
   .navbar-list {
     display: none;
   }
@@ -209,23 +241,22 @@
   }
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width: 500px) {
   .navbar {
     padding: 5px 8px;
+  }
+  .bar {
+    top: 12px;
+    right: 1px;
+  }
+  .user,
+  .user2 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
-.bar{
-  top: 12px;
-  right: 1px;
-}
-.user, .user2 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-}
-@media  only screen and (max-width:400px) {
-
+@media only screen and (max-width: 400px) {
   .security {
     left: -40%;
-}
-  
+  }
 }

@@ -34,6 +34,7 @@ import ReviewList from "../pages/Dashboard/Reviews/ReviewList";
 import AddPortfolio from "../pages/Dashboard/Portfolio/AddPortfolio";
 import PortfolioList from "../pages/Dashboard/Portfolio/PortfolioList";
 import MessageList from "../pages/Dashboard/Message/MessageList";
+import Website from "../pages/Website";
 
 export const router = createBrowserRouter([
   {
@@ -77,6 +78,10 @@ export const router = createBrowserRouter([
       {
         path: "/packages",
         element: <Packages />,
+      },
+      {
+        path: "/website",
+        element: <Website />,
       },
       {
         path: "/signup",
@@ -180,15 +185,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "add-portfolio",
-        element: <AddPortfolio/>,
+        element: <AddPortfolio />,
       },
       {
         path: "portfolio-list",
-        element: <PortfolioList/>,
+        element: <PortfolioList />,
       },
       {
         path: "message-list",
-        element: <MessageList/>,
+        element: <MessageList />,
       },
     ],
   },
