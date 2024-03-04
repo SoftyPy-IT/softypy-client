@@ -10,6 +10,8 @@ import { HiChevronDown } from "react-icons/hi";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../../../redux/features/themeSlice";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
+import { FaCode, FaShopify, FaWordpressSimple } from "react-icons/fa";
+import { FaMobileScreen } from "react-icons/fa6";
 
 const NavBar = () => {
   const dispatch = useDispatch();
@@ -54,18 +56,47 @@ const NavBar = () => {
             Services <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
               <ul>
-                <li className="flex items-center mainSubmenu">
-                  Website <HiChevronDown size={23} />
-                  <div className="subMenu1">
-                    <div className="flex items-center hoverSubmenu">
-                      <p>MERN </p>
-                      <HiChevronDown size={23} />
+                <li className="flex items-center mainSubmenu capitalize">
+                  Website Development <HiChevronDown size={23} />
+                  <div className="subMenu1 flex items-center justify-between p-8 ">
+                  <div className=" menuBox  flex items-center justify-center flex-col">
+                  <div className="iconsShapeWrap mb-4 ">
+                    <FaMobileScreen size={40} />
+                  </div>
+                  <p>APPS </p>
+                  <p>Development</p>
+                </div>
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                    
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaCode size={40} />
+                      </div>
+                      <p>Custom (MERN) </p>
+                      <p>Website Development</p>
                     </div>
-                    <div className="flex items-center hoverSubmenu">
-                      <p>WORDPRESS</p>
-                      <HiChevronDown size={23} />
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaWordpressSimple size={40} />
+                      </div>
+                      <p>Wordpress </p>
+                      <p>Development</p>
                     </div>
-
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4">
+                        <FaShopify size={40} />
+                      </div>
+                      <p>Shopify </p>
+                      <p>Development</p>
+                    </div>
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaShopify size={40} />
+                      </div>
+                      <p>Digital </p>
+                      <p>Marketing</p>
+                    </div>
+                  
+                    {/** 
                     <div className="submenu">
                       <ul>
                         <li>Online Travel Agency (OTA) Website. </li>
@@ -78,9 +109,10 @@ const NavBar = () => {
                         <li>Health and Fitness Websites </li>
                       </ul>
                     </div>
+*/}
                   </div>
                 </li>
-                <li>APP </li>
+                <li>APP Development </li>
                 <li>Digital Marketing </li>
               </ul>
             </div>

@@ -94,7 +94,8 @@
 .dropDownMenu {
   position: absolute;
   /* background: rgba(0, 0, 0, 0.137); */
-  background: red;
+  background: #fff;
+  color:black;
   top: 24px;
   width: 250px;
   padding: 10px;
@@ -106,6 +107,7 @@
   transform-origin: top;
   cursor: pointer;
   z-index: 8888;
+  font-size: 12px;
 }
 .serviceNavItems:hover .dropDownMenu {
   opacity: 1;
@@ -118,34 +120,67 @@
   visibility: visible;
 }
 .subMenu1 {
-  width: 200px;
-  background-color: black;
-  padding: 15px;
+  width: 1000px;
+  background-color: white;
+  color:black;
+  padding: 10px 15px;
   position: absolute;
-  top: 17px;
-  right: -91px;
+  top: 92px;
   z-index: 9;
+  transition: all 0.5s ease;
+  transform-origin: top;
+  right:-450px;
+  font-size: 14px;
   opacity: 0;
   transform: scaleY(0);
   visibility: hidden;
-  transition: all 0.5s ease;
-  transform-origin: top;
+
 }
+.mainSubmenu:hover .subMenu1{
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+
 .submenu {
   background: green;
   position: absolute;
   width: 400px;
   padding: 20px;
   z-index: 9999;
-  top: 6px;
-
+  top: 113px;
   transition: all 0.5s ease;
   transform-origin: top;
+  left: 29px;
 }
 .hoverSubmenu:hover .submenu{
   opacity: 1;
   transform: scaleY(1);
   visibility: visible;
+}
+.menuBox{
+  border-right:1px solid #ddd;
+  padding: 0 15px;
+  width:220px;
+  margin:0 auto;
+  text-align: center;
+}
+.menuBox:last-child{
+  border-right: 0px;
+}
+.iconsShapeWrap{
+  position: relative;
+}
+.iconsShapeWrap::after{
+  position:absolute;
+  content: '';
+  width:50px;
+  height:50px;
+  background:#EDEDEE;
+  border-radius: 100%;
+  z-index: -2;
+  top:5px;
+  left:-15px
 }
 
 @media only screen and (max-width: 1024px) {

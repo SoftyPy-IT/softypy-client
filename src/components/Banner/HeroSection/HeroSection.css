@@ -80,7 +80,8 @@
   position: relative;
 
   height: 80vh;
-  background-image: url(../../../../public/assets/banner.png);
+  /* background-image: url(../../../../public/assets/banner.png); */
+  background-image: url(../../../../public/assets/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-right-radius: 150px;

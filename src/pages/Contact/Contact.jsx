@@ -17,6 +17,7 @@ import Subscribe from "../../components/Subscribe/Subscribe";
 import Container from "../../ui/Container";
 import { useCrateOrderMutation } from "../../redux/features/orders/ordersApi";
 import { TextField } from "@mui/material";
+import contact from '../../../public/assets/message.png'
 const Contact = () => {
   const [crateOrder, { isSuccess }] = useCrateOrderMutation();
   const {
@@ -167,15 +168,7 @@ const Contact = () => {
               </form>
             </div>
             <div className="getInTouchRight">
-              <lottie-player
-                id="firstLottie"
-                ref={ref}
-                autoplay
-                loop
-                mode="normal"
-                src="/contactUs.json"
-                className="animation"
-              ></lottie-player>
+            <img src={contact} alt="" />
               <div className="contactInfo">
                 <div className="flex items-center">
                   <FaPhoneAlt className="contactIcon" />

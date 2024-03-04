@@ -11,6 +11,7 @@ import { HiCheck } from "react-icons/hi";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import MorePackages from "../../components/MoreProducts/MorePackages";
 import HowSoftyPyWork from "./HowSoftyPyWork";
+import Ready from "./Ready";
 const Packages = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -18,6 +19,10 @@ const Packages = () => {
   });
   return (
     <div>
+      <div className="bg-[#680C70] text-white">
+        <NavBar />
+      </div>
+      {/** 
       <div className=" portfolioHeroSection">
         <div className="navsBarWrap">
           <div className="text-white">
@@ -30,12 +35,11 @@ const Packages = () => {
           </div>
         </div>
       </div>
-
+*/}
       <Container>
         <div className="my-16">
           <SectionTitle
-            title='
-     "Crafting Digital Excellence: Elevate Your Brand with Our Bespoke Web Designs"'
+            title=' "Crafting Digital Excellence: Elevate Your Brand with Our Bespoke Web Designs"'
           />
         </div>
         <section className="my-10 bg-[#951FE]">
@@ -133,6 +137,7 @@ const Packages = () => {
       <Technologies />
       <WorkPortfolio />
       <PackagePrice />
+     
       <div className="sectionMargin">
         <Container>
           <div className=" flex flex-col lg:flex-row md:justify-between justify-center">
@@ -152,6 +157,7 @@ const Packages = () => {
           </div>
         </Container>
       </div>
+      <Ready/>
     </div>
   );
 };

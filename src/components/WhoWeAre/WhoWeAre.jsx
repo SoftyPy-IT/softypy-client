@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./WhoWeare.css";
 import Container from "../../ui/Container";
 // import img from '../../../public/assets/sortware.png'
 import { useEffect, useRef } from "react";
-import { useScroll, useTransform, motion, useInView, useAnimation } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 const WhatWeDo = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -67,13 +68,7 @@ useEffect(()=>{
               Who We Are ?
             </h2>
             <p>
-              {" "}
-              At <b className="text-[#680C70]">SoftyPy</b>, we are dedicated to
-              providing rapid and effective disaster relief and humanitarian
-              assistance to communities in crisis around the world. Our mission
-              is to alleviate suffering, restore dignity, and promote resilience
-              among those affected by emergencies, natural disasters, conflicts,
-              and other humanitarian crises.
+            Our team craft to seamlessly blend innovation, collaboration, and excellence. We are dedicated to delivering tailored software solutions that not only meet but exceed our clients' expectations. Here's a glimpse into our unique workflow:
             </p>
           </motion.div>
         </div>

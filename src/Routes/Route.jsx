@@ -35,6 +35,7 @@ import AddPortfolio from "../pages/Dashboard/Portfolio/AddPortfolio";
 import PortfolioList from "../pages/Dashboard/Portfolio/PortfolioList";
 import MessageList from "../pages/Dashboard/Message/MessageList";
 import Website from "../pages/Website";
+import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
 
 export const router = createBrowserRouter([
   {
@@ -82,6 +83,10 @@ export const router = createBrowserRouter([
       {
         path: "/website",
         element: <Website />,
+      },
+      {
+        path: "/website-details",
+        element: <WebsiteDetails/>,
       },
       {
         path: "/signup",

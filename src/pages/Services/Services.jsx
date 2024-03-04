@@ -1,17 +1,17 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import "./Services.css";
 import responsive from "../../../public/assets/dev.png";
-import { useRef, useEffect } from "react";
 import TopServices from "./TopServices/TopServices";
 import BoostSection from "../../components/BostSection/BoostSection";
 import NavBar from "../Shared/NavBar/NavBar";
 import Container from "../../ui/Container";
-import { HiCode } from "react-icons/hi";
+import CommonButton from "../Shared/CommonButton/CommonButton";
 const Services = () => {
-  const ref = useRef(null);
-  useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
+  // const ref = useRef(null);
+  // useEffect(() => {
+  //   import("@lottiefiles/lottie-player");
+  // });
 
   const cardData = [
     {
@@ -32,50 +32,19 @@ const Services = () => {
     },
   ];
 
-  const websiteData = [
-    {
-      id:1,
-      name: 'Ecommerce Website',
-      
-    }
-  ]
+
 
   return (
     <div className="home">
-      <div className="servicessWraps">
-        <div className="navsBarWrap">
-          <div className="text-white">
-            <NavBar />
-          </div>
+    <div className="navsBarWrap">
+    <div className="bg-[#680C70] text-white ">
+      <NavBar />
+    </div>
 
-          <div className="servicesContents">
-            <div>
-              <h2 className="text-2xl md:text-5xl font-bold">
-                We Are SoftyPy{" "}
-              </h2>
-              <h3 className="text-xl md:text-2xl font-bold mt-2">
-                Best Web Development Company In Bangladesh
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div className="w-full bg-red-500 h-[300px]">
-        <Container>
-          <div className="grid grid-cols-3  place-content-between  ">
-          <div className="mainServiceCard ">
-          <HiCode size={95} />
-          <h2 className="text-2xl">Ecommerce Website </h2>
-          <p className="mt-3">
-            "Discover quality products, from electronics to fashion, in our
-            online store. Shop now for great deals!"
-          </p>
+  </div>
 
-        </div>
-          </div>
-        </Container>
-      </div>
+ 
 
       <Container>
         <div className="services sectionMargin ">
@@ -89,22 +58,8 @@ const Services = () => {
               working for more than 5 years. A corporate website is a platform
               where a business company or organization upholds its
               functionality. A company introduction, its products, and services,
-              its terms and conditions, protocols, its policy, and consumer
-              relations, etc are placed on a website. In the era of digital
-              marketing, every existing corporate body has an official corporate
-              website. Here’s to mention one thing, a corporate website is
-              completely different from an Ecommerce website.{" "}
             </p>
-            <p>
-              Our professional web developers follow industry trends and
-              creative design websites. For the last five years, FARA IT
-              LIMITED, a web developer company in Dhaka, Bangladesh, has been
-              designing and developing a significant number of websites for
-              multiple industries. From our vast experience, we can say that no
-              matter which industry you are in, you need a super good-looking,
-              responsive, secure, flexible, and well-structured website.
-              Therefore, we build websites based on our clients’ demands.
-            </p>
+            <CommonButton text='Get More ' />
           </div>
           <div className="srvicesRightSide">
             <img src={responsive} alt="device" />
@@ -113,7 +68,7 @@ const Services = () => {
         <div className="sectionMargin">
           <TopServices />
         </div>
-
+        {/*  
         <div className="ourServices sectionMargin">
           <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="w-[50%] pr-5">
@@ -175,6 +130,10 @@ const Services = () => {
             </div>
           </div>
         </div>
+     
+
+      */}
+
       </Container>
       <BoostSection />
     </div>
