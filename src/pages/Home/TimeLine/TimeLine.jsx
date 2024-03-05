@@ -18,11 +18,13 @@ AOS.init();
 const TimeLine = () => {
   return (
     <div className="sectionMargin mb-[140px] block">
-      <SectionTitle
-        title="How We Work"
-        text="Our team craft to seamlessly blend innovation, collaboration, and excellence. We are dedicated to delivering tailored software solutions that not only meet but exceed our clients' expectations. Here's a glimpse into our unique workflow:
+      <div className="mb-14">
+        <SectionTitle
+          title="How We Work"
+          text="Our team craft to seamlessly blend innovation, collaboration, and excellence. We are dedicated to delivering tailored software solutions that not only meet but exceed our clients' expectations. Here's a glimpse into our unique workflow:
 "
-      ></SectionTitle>
+        ></SectionTitle>
+      </div>
 
       <Container>
         <div className="relative">
