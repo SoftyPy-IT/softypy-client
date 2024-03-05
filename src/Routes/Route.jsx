@@ -36,6 +36,7 @@ import PortfolioList from "../pages/Dashboard/Portfolio/PortfolioList";
 import MessageList from "../pages/Dashboard/Message/MessageList";
 import Website from "../pages/Website";
 import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
+import Users from "../pages/Dashboard/Users/User";
 
 export const router = createBrowserRouter([
   {
@@ -199,6 +200,10 @@ export const router = createBrowserRouter([
       {
         path: "message-list",
         element: <MessageList />,
+      },
+      {
+        path: "users-list",
+        element: <Users />,
       },
     ],
   },
