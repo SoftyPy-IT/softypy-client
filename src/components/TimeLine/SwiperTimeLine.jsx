@@ -41,7 +41,7 @@ export default Arrow = () => {
     <Container>
       <main className="chooseWrap sectionMargin">
        <div >
-       <SectionTitle data-aos="zoom-in" title="Why Choose SoftyPy? "></SectionTitle>
+       <SectionTitle data-aos="zoom-in" title="Why Choose Us? "></SectionTitle>
        </div>
 
         <div data-aos="fade-up-left" className="navigation-wrapper">

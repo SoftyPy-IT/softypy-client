@@ -12,19 +12,19 @@ import {
   REGISTER,
 } from "redux-persist";
 import themeSlice from "./features/themeSlice";
-
-
+import authReducer from "./features/auth/authSlice";
 
 const persistConfig = {
   key: "root",
   storage,
 };
 
-
+const persistedReducer = persistReducer(persistConfig, authReducer);
 const persistedThemeReducer = persistReducer(persistConfig, themeSlice);
 export const store = configureStore({
   reducer: {
     [baseApi.reducerPath]: baseApi.reducer,
+    auth: persistedReducer,
     theme: persistedThemeReducer,
   },
   middleware: (getDefaultMiddlewares) =>

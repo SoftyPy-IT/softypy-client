@@ -37,9 +37,8 @@ const About = () => {
           <div className=" portfolioContent">
             <h3 className="text-3xl md:text-5xl font-bold mb-2">About Us </h3>
             <p className="md:text-xl">
-              We are a global IT solutions provider, dedicated to delivering
-              cutting-edge technology solutions and exceptional services
-              worldwide.
+            At SoftyPy, we are not just a software company; we are architects of innovation, developers of digital dreams, and pioneers of cutting-edge solutions. With a relentless passion for technology and a commitment to delivering unparalleled services, we take pride in being your one-stop destination for all things digital.
+
             </p>
           </div>
         </div>
@@ -60,27 +59,16 @@ const About = () => {
            <div>
              <h3 className="text-5xl font-bold">Mission</h3>
              <p className="mt-3 leading-8">
-               SoftyPy is an emerging IT firm in Bangladesh producing
-               world-class quality software for its clients since 2018. We
-               build customized, interactive, dynamic websites with custom or
-               open source back end. Our customized web-based solutions
-               include Custom Websites, e-commerce portals, Personal or
-               Business portfolios, and management solutions. We also build
-               easy-to-use, fast, and beautiful native and non-native mobile
-               applications for iOS and Android Devices.
+             At SoftyPy, our mission is clear: to empower businesses with transformative digital solutions that catalyze growth and foster lasting success. We strive to be the catalyst that propels your brand into the digital forefront, ensuring that every line of code, every pixel, and every strategy we deploy contributes to your journey of continuous evolution.
+
+
              </p>
            </div>
            <div className="mt-5">
              <h3 className="text-5xl font-bold">Vission </h3>
              <p className="mt-3 leading-8">
-               Our vision is to be widely accepted as a brand that provides
-               unique, creative, trustworthy and easy-to-use software
-               services in the IT industry. We have the vision to lead the
-               software industry by solving real-life challenges
-               simplistically, and we are working relentlessly to execute our
-               plans. We want to go above and beyond the expectations of our
-               clients by providing the best solutions for them by making
-               them see things differently.
+             SoftyPy envisions a digital realm where businesses not only survive but thrive. We aspire to be the driving force behind this transformation, providing innovative and scalable solutions that empower organizations to harness the full potential of the digital age. Our vision is to be your trusted partner in navigating the dynamic and ever-evolving digital landscape.
+
              </p>
            </div>
          </div>

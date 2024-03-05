@@ -1,86 +1,93 @@
-/* eslint-disable react/no-unescaped-entities */
+import { TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
-import NavBar from "../Shared/NavBar/NavBar";
 import { Link, useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../contexts/AuthProvider";
 import Swal from "sweetalert2";
-
+import { useDispatch } from "react-redux";
+import { setUser } from "../../redux/features/auth/authSlice";
+import { verifyToken } from "../../utils/verifyToken";
+import { useLoginMutation } from "../../redux/features/auth/authApi";
+import NavBar from "../Shared/NavBar/NavBar";
 
 const Login = () => {
-  const {signin} = useContext(AuthContext)
-  const navigate = useNavigate()
-    const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => {
-   signin(data.email, data.password)
-   .then((data)=>{
-    console.log(data)
-    Swal.fire({
-      position: 'center',
-      icon: 'success',
-      title: 'Login Successfully ! ',
-      showConfirmButton: false,
-      timer: 1500
-    })
-    navigate('/')
-   })
-   .catch(error=>console.log(error))
+  const navigate = useNavigate();
+  const [login, { isSuccess }] = useLoginMutation();
+  const { register, handleSubmit } = useForm();
+
+  const dispatch = useDispatch();
+
+  const onSubmit = async (data) => {
+    const { email, password } = data;
+    const userInfo = {
+      email,
+      password,
+    };
+console.log(userInfo)
+    const res = await login(userInfo).unwrap();
+    console.log(res.token);
+    const user = verifyToken(res.token);
+
+    console.log(user);
+    dispatch(setUser({ email: res.email, token: res.token }));
   };
-  
+  if (isSuccess) {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Login successfully !",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    navigate("/");
+  }
+
   return (
     <div>
-     <div className=" clientSection">
-        <div className="navsBarWrap">
-        <div className="text-white">
-        <NavBar />
+    <div className="bg-[#680C70] text-white">
+    <NavBar />
+  </div>
+      <div className="signupWrap">
+      <h3 className="text-3xl font-bold text-center mb-5">Welcome to Back !</h3>
+        <div className="text-center">
+          <span>
+            Sign In SoftyPy or{" "}
+            <Link to="/signup">
+              {" "}
+              <small className="border-b-2 border-[#680C70]">
+                create an account{" "}
+              </small>
+            </Link>
+          </span>
         </div>
-        </div>
-      </div>
-    <div className="my-16">
-      <h2 className="text-3xl font-bold text-center">Hi There, Welcome Back!</h2>
-      <div className="w-full mx-auto addServicesWrap">
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="formControl">
-            <div className="singleForm">
-              <label>Email </label>
-              <input
-               {...register("email", { required: true })}
-                name="email"
-                placeholder="Email"
-                type="email"
-                className="inputField"
-                autoComplete="off"
-              />
+        <form className="businessFormWrap" onSubmit={handleSubmit(onSubmit)}>
+          <div className="my-5">
+            <TextField
+              {...register("email")}
+              id="email"
+              className="signupInput"
+              label="Email "
+              size="small"
+              
+            />
+          </div>
+          <div className="mb-5">
+            <TextField
+              {...register("password")}
+              id="password"
+              className="signupInput"
+              label="Password "
+              size="small"
+            />
+          </div>
+          <button
+            type="submit"
+            className="  bg-[#680C70] w-[310px] h-10 text-white businessBtn"
+          >
+            Login{" "}
+          </button>
 
-            </div>
-            <div className="singleForm">
-              <label>Password</label>
-              <input
-                {...register("password", { required: true })}
-                name="password"
-                placeholder="Password"
-                type="password"
-                className="inputField"
-                autoComplete="off"
-              />
-            </div>
-          </div>
-
-          <div className="formControl">
-            <button className="submitBtn" type="submit">
-              Submit
-            </button>
-          </div>
-          <div>
-            <p className="text-center ">By proceeding, I agree to SoftyPy's <b className="text-[#680C70]">Terms & Conditions, Community Guidelines</b>, & <b className="text-lg text-[#680C70]">Privacy Policy</b></p>
-          </div>
-          <div className="my-8 signupLine"> </div>
-          <div className="text-center">
-            <p>Don’t have an account an account?  <Link to='/signup'><b className="text-[#680C70]">Sign up</b></Link></p>
-          </div>
+        
         </form>
       </div>
-    </div>
     </div>
   );
 };

@@ -56,7 +56,7 @@ const HowSoftyPyWork = () => {
       <div className="servicesWraps">
         <div className="">
           <SectionTitle
-            title="How SoftyPy Work"
+            title="How We Work"
             text=" Unlocking digital potential, we provide bespoke IT services that blend innovation with reliability, ensuring your business stands out in a rapidly evolving tech landscape"
           ></SectionTitle>
         </div>

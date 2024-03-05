@@ -54,10 +54,8 @@ const Services = () => {
               With Professionalism & Expertise
             </h3>
             <p className="my-5">
-              SoftyPy IT LIMITED is a corporate website development company
-              working for more than 5 years. A corporate website is a platform
-              where a business company or organization upholds its
-              functionality. A company introduction, its products, and services,
+            We take pride in offering a comprehensive suite of cutting-edge services tailored to elevate your digital presence and streamline your business operations. Our commitment is to deliver solutions that not only meet but exceed your expectations.
+
             </p>
             <CommonButton text='Get More ' />
           </div>

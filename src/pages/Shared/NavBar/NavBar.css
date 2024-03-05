@@ -93,7 +93,6 @@
 }
 .dropDownMenu {
   position: absolute;
-  /* background: rgba(0, 0, 0, 0.137); */
   background: #fff;
   color:black;
   top: 24px;
@@ -102,7 +101,7 @@
   border-radius: 3px;
   opacity: 0;
   transform: scaleY(0);
-  visibility: hidden;
+  visibility: visible;
   transition: all 0.5s ease;
   transform-origin: top;
   cursor: pointer;
@@ -119,22 +118,35 @@
   transform: scaleY(1);
   visibility: visible;
 }
-.subMenu1 {
-  width: 1000px;
+.mainSubmenu2:hover .subMenu2{
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+.subMenu1, .subMenu2 {
+  width: 500px;
   background-color: white;
   color:black;
   padding: 10px 15px;
   position: absolute;
-  top: 92px;
   z-index: 9;
   transition: all 0.5s ease;
   transform-origin: top;
-  right:-450px;
+  right:-160px;
+  top: 92px;
   font-size: 14px;
   opacity: 0;
   transform: scaleY(0);
-  visibility: hidden;
+  visibility: visible;
 
+}
+.subMenu2{
+  width:300px;
+  opacity: 0;
+  transform: scaleY(0);
+  visibility: visible;
+  right:-100px;
+  top: 66px;
 }
 .mainSubmenu:hover .subMenu1{
   opacity: 1;

@@ -1,0 +1,41 @@
+.signupWrap {
+    width: 800px;
+    margin: 50px auto;
+  }
+  .SignupFormWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .signupInput {
+    width: 310px !important;
+  }
+  
+
+  .businessFormWrap {
+    display: grid;
+    place-items: center;
+  }
+  .SingleInput {
+    margin-right: 10px !important;
+    width: 150px !important;
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+    .signupWrap {
+      width: 100%;
+    }
+    .SignupFormWrap {
+      flex-direction: column;
+    }
+   
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .signupInput {
+      width: 300px !important;
+    }
+  }
+  

@@ -187,7 +187,7 @@ const PackagePrice = () => {
                     </div>
                     <div className="flex items-center justify-between my-5 text-center px-3">
                       <div>
-                        <small className="text-[#FC7706] block">
+                        <small className="text-[#F81600] block">
                           Speak with us{" "}
                         </small>
                         <b>+88-01762-380594</b>
@@ -195,7 +195,7 @@ const PackagePrice = () => {
                         <b>+88-01303042561</b>
                       </div>
                       <div className="w-[2px] h-[40px] bg-[#5B1782]"></div>
-                      <small className="text-[#FC7706]">Want to discuss?</small>
+                      <small className="text-[#F81600]">Want to discuss?</small>
                     </div>
                     <div className="priceBtn">
                       <small>Get Start Now </small>
@@ -557,7 +557,7 @@ const PackagePrice = () => {
                     </div>
                     <div className="flex items-center justify-between my-5 text-center px-3">
                       <div>
-                        <small className="text-[#FC7706] block">
+                        <small className="text-[#F81600] block">
                           Speak with us{" "}
                         </small>
                         <b>+88-01762-380594</b>
@@ -565,7 +565,7 @@ const PackagePrice = () => {
                         <b>+88-01303042561</b>
                       </div>
                       <div className="w-[2px] h-[40px] bg-[#5B1782]"></div>
-                      <small className="text-[#FC7706]">Want to discuss?</small>
+                      <small className="text-[#F81600]">Want to discuss?</small>
                     </div>
                     <div className="priceBtn">
                       <small>Get Start Now </small>
@@ -793,7 +793,7 @@ const PackagePrice = () => {
                     </div>
                     <div className="flex items-center justify-between my-5 text-center px-3">
                       <div>
-                        <small className="text-[#FC7706] block">
+                        <small className="text-[#F81600] block">
                           Speak with us{" "}
                         </small>
                         <b>+88-01762-380594</b>
@@ -801,7 +801,7 @@ const PackagePrice = () => {
                         <b>+88-01303042561</b>
                       </div>
                       <div className="w-[2px] h-[40px] bg-[#5B1782]"></div>
-                      <small className="text-[#FC7706]">Want to discuss?</small>
+                      <small className="text-[#F81600]">Want to discuss?</small>
                     </div>
                     <div className="priceBtn">
                       <small>Get Start Now </small>

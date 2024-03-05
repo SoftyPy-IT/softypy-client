@@ -1,17 +1,14 @@
 import "./NavBar.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../../contexts/AuthProvider";
-import team from "../../../../public/assets/team11.jpeg";
+import { Link, NavLink } from "react-router-dom";
 import Container from "../../../ui/Container";
-import { LuUser } from "react-icons/lu";
 import { HiChevronDown } from "react-icons/hi";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../../../redux/features/themeSlice";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
-import { FaCode, FaShopify, FaWordpressSimple } from "react-icons/fa";
+import { FaCode, FaReact, FaShopify, FaWordpressSimple } from "react-icons/fa";
 import { FaMobileScreen } from "react-icons/fa6";
+import { logout } from "../../../redux/features/auth/authSlice";
 
 const NavBar = () => {
   const dispatch = useDispatch();
@@ -19,8 +16,6 @@ const NavBar = () => {
   const handleToggleTheme = () => {
     dispatch(toggleTheme());
   };
-
-  const { user, logout } = useContext(AuthContext);
   const [mobileMenu, setMobileMenu] = useState(true);
   const toggleMobileMenu = () => {
     setMobileMenu((mobileMenu) => !mobileMenu);
@@ -29,11 +24,16 @@ const NavBar = () => {
     var header = document.querySelector(".navbar");
     header.classList.toggle("sticky", window?.scrollY > 300);
   });
-  const handleLogOut = () => {
-    logout()
-      .then(() => {})
-      .catch((error) => console.error(error));
+ 
+
+  const { email } = useSelector((state) => state.auth);
+console.log(email)
+
+  const handleLogout = () => {
+    dispatch(logout());
   };
+
+
 
   return (
     <Container>
@@ -59,15 +59,7 @@ const NavBar = () => {
                 <li className="flex items-center mainSubmenu capitalize">
                   Website Development <HiChevronDown size={23} />
                   <div className="subMenu1 flex items-center justify-between p-8 ">
-                  <div className=" menuBox  flex items-center justify-center flex-col">
-                  <div className="iconsShapeWrap mb-4 ">
-                    <FaMobileScreen size={40} />
-                  </div>
-                  <p>APPS </p>
-                  <p>Development</p>
-                </div>
                     <div className=" menuBox  flex items-center justify-center flex-col">
-                    
                       <div className="iconsShapeWrap mb-4 ">
                         <FaCode size={40} />
                       </div>
@@ -88,14 +80,7 @@ const NavBar = () => {
                       <p>Shopify </p>
                       <p>Development</p>
                     </div>
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaShopify size={40} />
-                      </div>
-                      <p>Digital </p>
-                      <p>Marketing</p>
-                    </div>
-                  
+
                     {/** 
                     <div className="submenu">
                       <ul>
@@ -112,14 +97,31 @@ const NavBar = () => {
 */}
                   </div>
                 </li>
-                <li>APP Development </li>
+                <li className="mainSubmenu2 flex items-center ">
+                  APP Development <HiChevronDown size={23} />
+                  <div className="subMenu2 flex items-center justify-between p-8 ">
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaMobileScreen size={40} />
+                      </div>
+                      <p>Flutter </p>
+                    </div>
+
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaReact size={40} />
+                      </div>
+                      <p>React Native </p>
+                    </div>
+                  </div>
+                </li>
                 <li>Digital Marketing </li>
               </ul>
             </div>
           </li>
           <Link to="/packages">
             {" "}
-            <li className="navbar-item">Packages</li>
+            <li className="navbar-item">Pricing </li>
           </Link>
           <Link to="/portfolio">
             {" "}
@@ -150,41 +152,22 @@ const NavBar = () => {
             <div></div>
           </div>
 
-          {user?.uid ? (
+          {email ? (
             <>
-              <div className="usersWrap">
-                <img src={team} className="user" alt="team" />
-                <ul className="userItems">
-                  <li>
-                    <Link to="/dashboard" className=" dasboard">
-                      Dashboard
-                    </Link>
-                  </li>
-                  <li>
-                    <button
-                      onClick={handleLogOut}
-                      className="mr-3 font-bold dasboard"
-                    >
-                      Logout
-                    </button>
-                  </li>
-                </ul>
-              </div>
+              <button
+                className="logoutBtn "
+                onClick={handleLogout}
+              >
+                Log Out{" "}
+              </button>
             </>
           ) : (
-            <>
-              <div className="usersWrap">
-                <LuUser size={35} />
-                <ul className="userItems">
-                  <li>
-                    <Link to="/login" className="mr-3 dasboard">
-                      Login{" "}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </>
+            <button className="logoutBtn  ">
+              <NavLink to="/login">Login</NavLink>
+            </button>
           )}
+
+        
         </div>
 
         <div onClick={toggleMobileMenu} className="bar">

@@ -1,124 +1,111 @@
-/* eslint-disable react/no-unescaped-entities */
+import { FormControl, InputLabel, Select, TextField } from "@mui/material";
+import "./Signup.css";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import NavBar from "../Shared/NavBar/NavBar";
-import { Link, useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../contexts/AuthProvider";
 import Swal from "sweetalert2";
+import NavBar from "../Shared/NavBar/NavBar";
+import { useSetRegisterMutation } from "../../redux/features/auth/authApi";
 
 const Signup = () => {
-  const { createUser, updateUserProfile } = useContext(AuthContext);
   const navigate = useNavigate();
-  const { register, handleSubmit } = useForm();
+  const [setRegister, { isSuccess }] = useSetRegisterMutation();
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    createUser(data.email, data.password)
-      .then((result) => {
-        const loggedUser = result.user;
-        console.log(loggedUser)
-        updateUserProfile(data.name, data.photoURL)
-          .then(() => {
-            console.log(data)
-            Swal.fire({
-              position: "center",
-              icon: "success",
-              title: "Sign Up Successfully ! ",
-              showConfirmButton: false,
-              timer: 1500,
-            });
-            navigate("/");
-          })
-          .catch((error) => console.log(error));
-      })
-      .catch((error) => console.log(error));
+    const { name, email, password, role } = data;
+    const userInfo = {
+      name,
+      email,
+      password,
+      role
+    };
+    console.log(userInfo)
+    setRegister(userInfo);
+    reset();
   };
+  if (isSuccess) {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Register successfully !",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    navigate("/login");
+  }
 
   return (
-    <div>
-      <div className=" clientSection">
-        <div className="navsBarWrap">
-        <div className="text-white">
+    <div className="">
+      <div className="bg-[#680C70] text-white">
         <NavBar />
-        </div>
-        </div>
       </div>
-      <div className="my-16">
-        <h2 className="text-3xl font-bold text-center">
-          Create A New Account{" "}
-        </h2>
-        <div className="w-full mx-auto addServicesWrap">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="formControl">
-              <div className="singleForm">
-                <label>Name </label>
-                <input
-                  {...register("name", { required: true })}
-                  name="name"
-                  placeholder="Name"
-                  type="text"
-                  className="inputField"
-                  autoComplete="off"
-                />
-              </div>
-              <div className="singleForm">
-                <label>Photo </label>
-                <input
-                  {...register("photo" )}
-                  name="photo"
-                  placeholder="Photo URL"
-                  type="text"
-                  className="inputField"
-                  autoComplete="off"
-                />
-              </div>
-              <div className="singleForm">
-                <label>Email </label>
-                <input
-                  {...register("email", { required: true })}
-                  name="email"
-                  placeholder="Email"
-                  type="email"
-                  className="inputField"
-                  autoComplete="off"
-                />
-              </div>
-              <div className="singleForm">
-                <label>Password</label>
-                <input
-                  {...register("password", { required: true })}
-                  name="password"
-                  placeholder="Password"
-                  type="password"
-                  className="inputField"
-                  autoComplete="off"
-                />
-              </div>
+      <div className="signupWrap">
+        <h3 className="text-3xl font-bold text-center mb-5  capitalize">
+          Create an account
+        </h3>
+
+        <form className="SignupFormWrap" onSubmit={handleSubmit(onSubmit)}>
+          <div>
+            <div className="flex items-center mt-5">
+              <TextField
+                {...register("name")}
+                className="signupInput"
+                label="Full Name "
+                id="name"
+                size="small"
+              />
+            </div>
+            <div className="mt-5">
+              <FormControl>
+                <InputLabel htmlFor="grouped-native-select">
+                  Select Role
+                </InputLabel>
+                <Select
+                  className="signupInput"
+                  {...register("role", { required: true })}
+                  name="role"
+                  fullWidth
+                  native
+                  id="grouped-native-select"
+                  label="Select Role"
+                  size="small"
+                >
+                  <option value="User">
+                    Select Role
+                  </option>
+                  <option>
+                  User
+                </option>
+                  <option value="Admin">Admin</option>
+                </Select>
+              </FormControl>
             </div>
 
-            <div className="formControl">
-              <button className="submitBtn" type="submit">
-                Submit
-              </button>
+            <div className="flex items-center mt-5">
+              <TextField
+                {...register("email")}
+                className="signupInput"
+                label="Email Address "
+                id="email"
+                size="small"
+              />
             </div>
-            <div>
-              <p className="text-center ">
-                By proceeding, I agree to SoftyPy's{" "}
-                <b className="text-[#680C70]">
-                  Terms & Conditions, Community Guidelines
-                </b>
-                , & <b className="text-lg text-[#680C70]">Privacy Policy</b>
-              </p>
+            <div className="flex items-center my-5">
+              <TextField
+                {...register("password")}
+                className="signupInput"
+                label="Password "
+                id="password"
+                size="small"
+              />
             </div>
-            <div className="my-8 signupLine"> </div>
-            <div className="text-center">
-              <p>
-                Already have an account?{" "}
-                <Link to="/login">
-                  <b className="text-[#680C70]">Login</b>
-                </Link>
-              </p>
-            </div>
-          </form>
-        </div>
+            <button
+              type="submit"
+              className="  bg-[#680C70] w-[310px] h-10 text-white businessBtn"
+            >
+              Register
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
