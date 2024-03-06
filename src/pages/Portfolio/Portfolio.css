@@ -1,40 +1,6 @@
-.portfolioHeroSection {
-    width: 100%;
-    height: 55vh;
-    position: relative;
-    background-size: 300% 300%;
-    background-image: url("../../../public/assets/web2.jpg");
-  
-  }
-  .portfolioHeroSection:after{
-    content: '';
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    background: #541283fb;
-    opacity: 0.7;
-  }
 
 
-.portfolioContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 99;
-    color: white;
-    width: 600px;
-    margin: 0 auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+
 .tabWrap{
     width: 100%;
     margin: 0 auto;
@@ -153,18 +119,6 @@
 @media only screen and (max-width:768px){
     .singlePortfolio {
   width:100%;
-    }
-    
-}@media only screen and (max-width:500px){
-    .portfolioHeroSection {
-        height: 50vh;
-      
-      }
-
-    .portfolioContent {
-        width: 100%;
-        padding: 0 10px;
-        margin-top:20px;
     }
     
 }

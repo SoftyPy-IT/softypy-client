@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../Shared/NavBar/NavBar";
 import Container from "../../ui/Container";
 import { useGetPortfolioQuery } from "../../redux/features/portfolio/portfolioApi";
+import { FaAngleRight } from "react-icons/fa";
 const Portfolio = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const {
@@ -24,19 +25,22 @@ const Portfolio = () => {
 
   return (
     <div>
-      <div className=" portfolioHeroSection">
+      <div className=" ">
         <div className="navsBarWrap">
-          <div className="text-white">
+          <div className="bg-[#680C70] text-white ">
             <NavBar />
           </div>
-
-          <div className=" portfolioContent">
-            <h3 className="text-3xl md:text-5xl font-bold mb-2">Portfolio </h3>
-            <p className="md:text-xl">
-              Explore our portfolio to witness a showcase of our diverse IT
-              projects, demonstrating our commitment to innovation and
-              excellence.
-            </p>
+          <div className="aboutContainers portfolioContainer">
+            <div className="aboutContent">
+              <div className="flex items-center uppercase bg-[#680C70] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
+                <p>Home</p>
+                <FaAngleRight />
+                <p>Portfolio </p>
+              </div>
+              <h2 className="md:text-5xl ml-0 xl:-ml-36 font-bold text-3xl text-left md:text-center uppercase ">
+                Our Portfolio
+              </h2>
+            </div>
           </div>
         </div>
       </div>

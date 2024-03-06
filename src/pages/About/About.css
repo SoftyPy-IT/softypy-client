@@ -306,6 +306,9 @@ img {
   background-position: center;
   position: relative;
 }
+.portfolioContainer{
+  background-image: url(../../../public/assets/portfolio1.jpg);
+}
 
 .aboutContainers::after {
   content: "";

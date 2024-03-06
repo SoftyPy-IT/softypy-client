@@ -5,8 +5,12 @@ import { Link } from "react-router-dom";
 import Container from "../../../ui/Container";
 import { useGetAllSingleServicesQuery } from "../../../redux/features/singleServices/singleServicesApi";
 
+
 const Services = () => {
 const {data:services} = useGetAllSingleServicesQuery()
+
+
+
 
   return (
     <Container>

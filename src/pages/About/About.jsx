@@ -92,8 +92,17 @@ const About = () => {
         <div className="sectionMargin">
           <Container>
             <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-4xl font-semibold text-[#F81600]">Our History </h2>
-              <p>At SoftyPy, we are not just a software company; we are architects of innovation, developers of digital dreams, and pioneers of cutting-edge solutions. With a relentless passion for technology and a commitment to delivering unparalleled services, we take pride in being your one-stop destination for all things digital.</p>
+              <h2 className="text-4xl font-semibold text-[#F81600]">
+                Our History{" "}
+              </h2>
+              <p>
+                At SoftyPy, we are not just a software company; we are
+                architects of innovation, developers of digital dreams, and
+                pioneers of cutting-edge solutions. With a relentless passion
+                for technology and a commitment to delivering unparalleled
+                services, we take pride in being your one-stop destination for
+                all things digital.
+              </p>
             </div>
             <div className="mission">
               <div className="missionRightSide">
