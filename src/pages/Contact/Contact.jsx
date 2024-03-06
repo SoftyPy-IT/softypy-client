@@ -17,7 +17,10 @@ import Subscribe from "../../components/Subscribe/Subscribe";
 import Container from "../../ui/Container";
 import { useCrateOrderMutation } from "../../redux/features/orders/ordersApi";
 import { TextField } from "@mui/material";
-import contact from '../../../public/assets/message.png'
+import contact from "../../../public/assets/message.png";
+import address from "../../../public/assets/address.png";
+import address2 from "../../../public/assets/address2.png";
+import address3 from "../../../public/assets/address3.png";
 const Contact = () => {
   const [crateOrder, { isSuccess }] = useCrateOrderMutation();
   const {
@@ -56,7 +59,30 @@ const Contact = () => {
     import("@lottiefiles/lottie-player");
   });
 
-  
+  const addressData = [
+    {
+      id: 1,
+      name: "Office Address",
+      title: "Ta-134/A, Bissaw Road",
+      text: "Link Rd, Dhaka",
+      img: address,
+    },
+    {
+      id: 1,
+      name: "Email Us ",
+      title: "support@renovix.net",
+      text: "info@codesless.com",
+      img: address2,
+    },
+    {
+      id: 1,
+      name: "Call Us",
+      title: "01762-380594",
+      text: "01670-405744",
+      img: address3,
+    },
+  ];
+
   return (
     <div>
       <section>
@@ -127,12 +153,12 @@ const Contact = () => {
                     Email <span className="text-red-500 text-xl">*</span>
                   </label>
                   <TextField
-                  {...register("email", { required: true })}
-                  name="email"
-                  fullWidth
-                  label="Enter Your Email "
-                  className="inputField"
-                />
+                    {...register("email", { required: true })}
+                    name="email"
+                    fullWidth
+                    label="Enter Your Email "
+                    className="inputField"
+                  />
                 </div>
                 <div className="formControl">
                   <label>
@@ -140,13 +166,13 @@ const Contact = () => {
                     Phone Number <span className="text-red-500 text-xl">*</span>
                   </label>
                   <TextField
-                  {...register("phone", { required: true })}
-                  name="phone"
-                  type="number"
-                  fullWidth
-                  label="Enter Your Phone Number  "
-                  className="inputField"
-                />
+                    {...register("phone", { required: true })}
+                    name="phone"
+                    type="number"
+                    fullWidth
+                    label="Enter Your Phone Number  "
+                    className="inputField"
+                  />
                   {errors.phone && (
                     <p className="text-red-500 ">Phone number is required!</p>
                   )}
@@ -168,7 +194,7 @@ const Contact = () => {
               </form>
             </div>
             <div className="getInTouchRight">
-            <img src={contact} alt="" />
+              <img src={contact} alt="" />
               <div className="contactInfo">
                 <div className="flex items-center">
                   <FaPhoneAlt className="contactIcon" />
@@ -222,10 +248,23 @@ const Contact = () => {
               <strong>Subscribes</strong>
             </div>
           </section>
-
-          {/* map section */}
         </div>
+        <section className="sectionMargin">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10  place-items-center">
+            {addressData.map((address) => (
+              <div key={address.id} className="address">
+                <img src={address.img} alt="address" />
+                <h3 className="text-3xl font-semibold">{address.name}</h3>
+                <p>{address.title} </p>
+                <p>{address.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
       </Container>
+<div className="sectionMargin">
+
+</div>
       <section className=" w-full mx-auto flex flex-row justify-center items-center md:my-24 mb-32 md:mb-32 ">
         <Iframe
           className="lg:h-[600px] h-[300px] "
