@@ -262,11 +262,82 @@ img {
     align-items: center;
 }
 .missionLeftSide{
-   width:45%
+   width:50%
 }
 .missionRightSide{
-   width:55%;
+   width:45%;
 }
+
+.teamImgWrap{
+  width:250px;
+  height:250px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.teamImgWrap img{
+  width:100%;
+  height:100%;
+  border-radius: 100%;
+  scale:1;
+  transition:all .5s ease-in-out;
+}
+.teamImgWrap img:hover{
+  scale:1.2;
+}
+.teamCard{
+  background:#EBF7EB;
+  color: black;
+  width: 330px;
+  text-align: center;
+  padding:40px 0;
+  display: grid;
+  place-content: center;
+  border-top-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+
+}
+
+.aboutContainers{
+  width: 100%;
+  height: 300px;
+  background-image: url(../../../public/assets/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.aboutContainers::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:black;
+  opacity:0.6;
+  z-index: 2;
+}
+
+.aboutContent {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  color: #fff;
+  text-align: center;
+}
+.aboutContent button {
+  width: 150px;
+  border: 1px solid #fff;
+  height: 49px;
+  transition: all 0.3s ease-in-out;
+}
+.aboutContent button:hover {
+  background: #fff;
+  color: black;
+}
+
+
 
 @media only screen and (max-width:1024px){
   .aboutContent {
@@ -418,7 +489,7 @@ img {
   padding-left: 37px;
 }
 
-.aboutContainer .imgWrap {
+.aboutContainers .imgWrap {
   width: 300px !important;
   height: 300px !important;
   border-radius: 100% !important;
