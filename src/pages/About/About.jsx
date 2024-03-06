@@ -18,7 +18,6 @@ import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import { useRef } from "react";
 import { useEffect } from "react";
 import PortfolioCountdown from "../Home/CountDown/CountDown";
-import ManageMent from "./ManageMent/ManageMent";
 import NavBar from "../Shared/NavBar/NavBar";
 import { Link } from "react-router-dom";
 import Subscribe from "../../components/Subscribe/Subscribe";
@@ -84,44 +83,10 @@ const About = () => {
             <p>about us </p>
           </div>
           <h2 className="md:text-5xl -ml-20 font-bold text-3xl text-left md:text-center uppercase ">
-          Our Expert TEAM
+            Our Expert TEAM
           </h2>
         </div>
       </div>
-      <Container>
-      {/** 
-        <div className="text-center mt-14 max-w-[800px] mx-auto ">
-          <h2 className="text-4xl font-bold mb-3">About Us </h2>
-          <p>
-            At SoftyPy, we are not just a software company; we are architects of
-            innovation, developers of digital dreams, and pioneers of
-            cutting-edge solutions. With a relentless passion for technology and
-            a commitment to delivering unparalleled services, we take pride in
-            being your one-stop destination for all things digital.
-          </p>
-        </div>
-*/}
-        <div className="mt-10">
-          <div className="grid grid-cols-3 gap-5 place-items-center ">
-            {teamData.map((team) => (
-              <div key={team.id} className="teamCard">
-                <div className="teamImgWrap">
-                  <img src={team1} alt="" />
-                </div>
-                <div className="teamContent mt-2">
-                  <h3 className="text-2xl font-bold">Shakib Al Hasan </h3>
-                  <span>MERN Stack Developer </span>
-                  <div className="flex items-center justify-center mt-2 space-x-3 cursor-pointer ">
-                    <FaFacebookF />
-                    <FaLinkedinIn />
-                    <FaXTwitter />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Container>
 
       <div className="aboutWrap">
         <div className="sectionMargin">
@@ -191,6 +156,47 @@ const About = () => {
           <SectionTitle title="STATEMENTS OF OUR HONORABLE MANAGING DIRECTOR"></SectionTitle>
           <AboutDirector />
         </div>
+
+        <Container>
+        <div
+        className="basic-title--wrap aos-init aos-animate"
+        data-aos="fade-up"
+        data-aos-duration="600"
+      >
+        <h2 className="basic-title text-[#F81600]">
+          Our Expert Team
+        </h2>
+        <div className="basic-title--sub">
+          <p>
+            {" "}
+            Meet our Visionary Collective, where aspirations are our
+            compass, and success is the destination we chart together.
+            We are not just a team; we are a journey towards greatness.
+          </p>
+        </div>
+      </div>
+          <div className="mt-10">
+            <div className="grid grid-cols-3 gap-5 place-items-center ">
+              {teamData.map((team) => (
+                <div key={team.id} className="teamCard">
+                  <div className="teamImgWrap">
+                    <img src={team1} alt="" />
+                  </div>
+                  <div className="teamContent mt-2">
+                    <h3 className="text-2xl font-bold">Shakib Al Hasan </h3>
+                    <span>MERN Stack Developer </span>
+                    <div className="flex items-center justify-center mt-2 space-x-3 cursor-pointer ">
+                      <FaFacebookF />
+                      <FaLinkedinIn />
+                      <FaXTwitter />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+
         <div className="sectionMargin">
           <Container className="team-anim--section">
             <div className="inner">
@@ -348,7 +354,6 @@ const About = () => {
             </div>
           </Container>
         </div>
-        <ManageMent />
 
         <PortfolioCountdown />
       </div>
