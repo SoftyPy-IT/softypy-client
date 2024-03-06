@@ -350,6 +350,13 @@ img {
 .aboutRightContainer {
   left: 10px !important;
 }
+.aboutContent {
+  left:50%;
+ align-items: center;
+}
+
+
+
 }
 
 @media (min-width: 768px) {
@@ -496,7 +503,10 @@ img {
   overflow: hidden;
 }
 
-
+.aboutContent {
+  left: 47%;
+  top: 37%;
+}
 
 }
 

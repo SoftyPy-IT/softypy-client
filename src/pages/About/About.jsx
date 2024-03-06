@@ -82,7 +82,7 @@ const About = () => {
             <FaAngleRight />
             <p>about us </p>
           </div>
-          <h2 className="md:text-5xl -ml-20 font-bold text-3xl text-left md:text-center uppercase ">
+          <h2 className="md:text-5xl ml-0 xl:-ml-20 font-bold text-3xl text-left md:text-center uppercase ">
             Our Expert TEAM
           </h2>
         </div>
@@ -91,10 +91,10 @@ const About = () => {
       <div className="aboutWrap">
         <div className="sectionMargin">
           <Container>
-            <SectionTitle
-              title="Our History "
-              text='"Mission: Igniting Change. Vision: A Better Future."'
-            ></SectionTitle>
+            <div className="max-w-[800px] mx-auto text-center">
+            <h2 className="text-4xl font-semibold text-[#F81600]">Our History </h2>
+              <p>At SoftyPy, we are not just a software company; we are architects of innovation, developers of digital dreams, and pioneers of cutting-edge solutions. With a relentless passion for technology and a commitment to delivering unparalleled services, we take pride in being your one-stop destination for all things digital.</p>
+            </div>
             <div className="mission">
               <div className="missionRightSide">
                 <div>
@@ -158,25 +158,23 @@ const About = () => {
         </div>
 
         <Container>
-        <div
-        className="basic-title--wrap aos-init aos-animate"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
-        <h2 className="basic-title text-[#F81600]">
-          Our Expert Team
-        </h2>
-        <div className="basic-title--sub">
-          <p>
-            {" "}
-            Meet our Visionary Collective, where aspirations are our
-            compass, and success is the destination we chart together.
-            We are not just a team; we are a journey towards greatness.
-          </p>
-        </div>
-      </div>
+          <div
+            className="basic-title--wrap aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <h2 className="basic-title text-[#F81600]">Our Expert Team</h2>
+            <div className="basic-title--sub">
+              <p>
+                {" "}
+                Meet our Visionary Collective, where aspirations are our
+                compass, and success is the destination we chart together. We
+                are not just a team; we are a journey towards greatness.
+              </p>
+            </div>
+          </div>
           <div className="mt-10">
-            <div className="grid grid-cols-3 gap-5 place-items-center ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center ">
               {teamData.map((team) => (
                 <div key={team.id} className="teamCard">
                   <div className="teamImgWrap">
