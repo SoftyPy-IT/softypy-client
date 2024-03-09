@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { HiChevronDoubleUp } from "react-icons/hi";
 import MessageModal from "./MessageModal";
 import { IoIosClose } from "react-icons/io";
+import Cookies from "js-cookie";
 
 const Main = () => {
   useEffect(() => {
@@ -30,24 +31,21 @@ const Main = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-
-
   useEffect(() => {
     // Generate a random temporary ID
     function generateTemporaryId() {
-      return 'user_' + Math.random().toString(36).substr(2, 9);
+      return "user_" + Math.random().toString(36).substr(2, 9);
     }
 
     // Check if sessionStorage already has a temporary ID
-    let temporaryId = sessionStorage.getItem('temporaryId');
+    let temporaryId = Cookies.get("temporaryId");
 
     // If not, generate a new one and store it in sessionStorage
     if (!temporaryId) {
       temporaryId = generateTemporaryId();
-      sessionStorage.setItem('temporaryId', temporaryId);
+      Cookies.set("temporaryId", temporaryId);
     }
   }, []);
-
 
   return (
     <div>
