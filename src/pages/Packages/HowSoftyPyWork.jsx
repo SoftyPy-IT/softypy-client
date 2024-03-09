@@ -12,7 +12,6 @@ import {
 } from "react-icons/hi";
 import img from "../../../public/assets/line2.svg";
 
-
 const HowSoftyPyWork = () => {
   const workData = [
     {
@@ -56,7 +55,7 @@ const HowSoftyPyWork = () => {
       <div className="servicesWraps">
         <div className="">
           <SectionTitle
-            title="How SoftyPy Work"
+            title="How We Work"
             text=" Unlocking digital potential, we provide bespoke IT services that blend innovation with reliability, ensuring your business stands out in a rapidly evolving tech landscape"
           ></SectionTitle>
         </div>
@@ -134,7 +133,11 @@ const HowSoftyPyWork = () => {
                         </div>
                         <small className=" font-semibold text-[12px]">{card.title}</small>
                       </div>
-                      <div className="cards-back cards-back2 text-white">
+                      <div className={`cards-back cards-back2 text-white 
+                      ${
+                        i === 0 ? "cards-back2" : ""
+                      } ${i === 4 ? " cards-back2:" : ""}
+                      `}>
                         <div className="cards-back-content md:px-3 text-center">
                           <b className="block"> {card.title}</b>
                           <small className="my-1 md:my-3">

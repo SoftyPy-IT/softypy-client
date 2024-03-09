@@ -198,6 +198,25 @@ const Sidebar = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
+        <Accordion>
+        <AccordionSummary
+          expandIcon={<ArrowDownwardIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          <Typography> Users </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            <Link to="/dashboard/users-list">
+              <div className="flex items-center text-sm ">
+                <HiChatBubbleLeft className="mr-1 " />
+                <span>All Users </span>
+              </div>
+            </Link>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
       </ul>
     </div>
   );

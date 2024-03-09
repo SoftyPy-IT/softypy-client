@@ -34,6 +34,12 @@ import ReviewList from "../pages/Dashboard/Reviews/ReviewList";
 import AddPortfolio from "../pages/Dashboard/Portfolio/AddPortfolio";
 import PortfolioList from "../pages/Dashboard/Portfolio/PortfolioList";
 import MessageList from "../pages/Dashboard/Message/MessageList";
+import Website from "../pages/Website";
+import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
+import Users from "../pages/Dashboard/Users/User";
+import AppDevelopment from "../pages/AppDevelopment/AppDevelopment";
+import ERP from "../pages/ERP/ERP";
+import ERPDetails from "../pages/ERPDetails/ERPDetails";
 
 export const router = createBrowserRouter([
   {
@@ -52,10 +58,6 @@ export const router = createBrowserRouter([
         path: "/portfolio",
         element: <Portfolio />,
       },
-      // {
-      //   path: '/singleService',
-      //   element: <SingleService />
-      // },
       {
         path: "/singleServices/:id",
         element: <SingleService />,
@@ -79,6 +81,14 @@ export const router = createBrowserRouter([
         element: <Packages />,
       },
       {
+        path: "/website",
+        element: <Website />,
+      },
+      {
+        path: "/website-details",
+        element: <WebsiteDetails/>,
+      },
+      {
         path: "/signup",
         element: <Signup />,
       },
@@ -89,6 +99,18 @@ export const router = createBrowserRouter([
       {
         path: "/faq",
         element: <Faq />,
+      },
+      {
+        path: "/app-development",
+        element: <AppDevelopment />,
+      },
+      {
+        path: "/erp",
+        element: <ERP/>,
+      },
+      {
+        path: "/erp-details",
+        element: <ERPDetails/>,
       },
     ],
   },
@@ -180,15 +202,19 @@ export const router = createBrowserRouter([
       },
       {
         path: "add-portfolio",
-        element: <AddPortfolio/>,
+        element: <AddPortfolio />,
       },
       {
         path: "portfolio-list",
-        element: <PortfolioList/>,
+        element: <PortfolioList />,
       },
       {
         path: "message-list",
-        element: <MessageList/>,
+        element: <MessageList />,
+      },
+      {
+        path: "users-list",
+        element: <Users />,
       },
     ],
   },

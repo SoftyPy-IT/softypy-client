@@ -1,13 +1,12 @@
-
 .contactHeroSection {
   width: 100%;
   position: relative;
-  background: linear-gradient(to right, #541283fb, #F81600);
+  background: linear-gradient(to right, #541283fb, #f81600);
   background-size: 300% 300%;
   height: 85vh;
   background-size: 300% 300%;
 }
-.contactHeroSection::after{
+.contactHeroSection::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -63,9 +62,8 @@
   display: block;
 }
 .formControl .inputField {
-    width: 100%;
-    border-radius: 8px;
-    
+  width: 100%;
+  border-radius: 8px;
 }
 
 .formControl textarea::placeholder,
@@ -74,7 +72,7 @@
   padding-left: 5px;
   font-size: 14px;
 }
-.formControl :where(textarea, .inputField){
+.formControl :where(textarea, .inputField) {
   padding-left: 10px;
 }
 .formControl textarea {
@@ -83,18 +81,16 @@
   width: 100%;
   height: 150px;
   border-radius: 12px;
-  padding-top:10px;
-
+  padding-top: 10px;
 }
 .sendMessageBtn {
-  background: #F81600;
+  background: #f81600;
   color: white;
   width: 100%;
   height: 50px;
   border-radius: 20px;
   font-weight: bold;
   font-size: 18px;
-  font-style: italic;
 }
 .contactInfo {
   display: flex;
@@ -106,13 +102,13 @@
   position: relative;
 }
 .contactLine {
-  background: #F81600;
+  background: #f81600;
   width: 2px !important;
   height: 55px;
 }
 .contactIcon {
   font-size: 36px;
-  color: #F81600;
+  color: #f81600;
   margin-right: 6px;
 }
 .socialMedia {
@@ -120,7 +116,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .singleSocialMedia,
 .activeSocial {
@@ -132,13 +127,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #680C70;
+  border: 2px solid #680c70;
   color: black;
   transition: all cubic-bezier(0.25, 0.22, 1, 0.99);
 }
 
 .activeSocial {
-  background-color: #680C70 !important;
+  background-color: #680c70 !important;
   color: white !important;
 }
 .activeSocial:hover {
@@ -146,7 +141,7 @@
   color: black !important;
 }
 .singleSocialMedia:hover {
-  background-color: #680C70 !important;
+  background-color: #680c70 !important;
   color: white !important;
   border: 1px solid #fff;
 }
@@ -162,6 +157,28 @@
   font-size: 29px;
   color: white;
 }
+.address {
+  background: #EFFDFC;
+  width: 380px;
+  padding: 20px;
+  display: grid;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+
+}
+.address:nth-child(1){
+  border-bottom-right-radius: 100px;
+}
+.address:nth-child(2){
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.address:nth-child(3){
+  border-top-left-radius: 100px;
+}
+
 
 @media only screen and (max-width: 1024px) {
   .singleSocialMedia,
@@ -173,6 +190,9 @@
   }
   .contactInfo {
     width: 100%;
+  }
+  .address{
+    width:100%;
   }
 }
 
@@ -199,7 +219,7 @@
   .questionWrap {
     width: 240px !important;
     height: 230px !important;
-    margin:0 auto;
+    margin: 0 auto;
   }
   .contactInfoWrap {
     padding: 0px 12px;
@@ -222,10 +242,10 @@
   .sendMessageBtn {
     width: 100%;
   }
-  .contactHeroSection::after{
+  .contactHeroSection::after {
     clip-path: polygon(100% 100%, 0 100%, 100% 100%);
   }
   .getInTouchRight {
-     margin-left: 0px;
-}
+    margin-left: 0px;
+  }
 }

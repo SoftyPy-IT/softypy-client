@@ -11,8 +11,19 @@ import {
   useGetAllReviewsQuery,
 } from "../../../redux/features/review/reviewApi";
 import { useEffect, useState } from "react";
+import DashboardMessageModal from "../../../Layout/DashboardMessageModal";
 
 const MessageList = () => {
+
+  const [open, setOpen] = useState(false);
+  const [senderId, setSenderId] = useState("")
+  const handleOpen = (value) => {
+    setOpen(true)
+    setSenderId(value)
+  };
+  const handleClose = () => setOpen(false);
+
+
   const navigate = useNavigate();
   const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
   const [deleteReview] = useDeleteReviewMutation();
@@ -25,6 +36,9 @@ const MessageList = () => {
       .then((data) => setSenderData(data));
   }, []);
 
+
+ 
+  
   if (isLoading) {
     return <p>Loading...........</p>;
   }
@@ -76,6 +90,7 @@ const MessageList = () => {
   };
   
 
+
   return (
     <div className="mt-5 mb-24 w-full">
       <h3 className="text-xl text-center mb-3 font-bold">All Message</h3>
@@ -91,12 +106,12 @@ const MessageList = () => {
             </tr>
           </thead>
           <tbody>
-            {senderData.map((review, i) => (
+            {senderData?.map((review, i) => (
               <tr key={review._id}>
                 <td>{i + 1}</td>
                 <td>{review._id} </td>
-                <td>{review.message.text}</td>
-                <td>All message here </td>
+                <td>{review.text}</td>
+                <td onClick={()=>handleOpen(review.senderId)} className=" cursor-pointer">All message here </td>
 
                 <td>
                   <div
@@ -126,6 +141,7 @@ const MessageList = () => {
           </button>
         </div>
       </div>
+      {open && <DashboardMessageModal senderId={senderId}/>}
     </div>
   );
 };

@@ -11,6 +11,8 @@ import { HiCheck } from "react-icons/hi";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import MorePackages from "../../components/MoreProducts/MorePackages";
 import HowSoftyPyWork from "./HowSoftyPyWork";
+import Ready from "./Ready";
+import PackagePrice2 from "./PackagePrice2";
 const Packages = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -18,6 +20,10 @@ const Packages = () => {
   });
   return (
     <div>
+      <div className="bg-[#680C70] text-white">
+        <NavBar />
+      </div>
+      {/** 
       <div className=" portfolioHeroSection">
         <div className="navsBarWrap">
           <div className="text-white">
@@ -30,13 +36,10 @@ const Packages = () => {
           </div>
         </div>
       </div>
-
+*/}
       <Container>
         <div className="my-16">
-          <SectionTitle
-            title='
-     "Crafting Digital Excellence: Elevate Your Brand with Our Bespoke Web Designs"'
-          />
+          <SectionTitle title=' "Crafting Digital Excellence: Elevate Your Brand with Our Bespoke Web Designs"' />
         </div>
         <section className="my-10 bg-[#951FE]">
           <div className="flex-col items-center lg:flex lg:flex-row justify-center lg:justify-between ">
@@ -57,31 +60,31 @@ const Packages = () => {
               </p>
               <div className="space-y-2 mt-5">
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#FD5302]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span>Fast Loading (within 3 seconds)</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#FD5302]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> Mobile Responsive</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#FD5302]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> After Sales Support</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#FD5302]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span>Fast Loading (within 3 seconds)</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#FD5302]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> Multiple Image Upload Option</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#FD5302]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> Login with Facebook and Gmail</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#FD5302]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> Product Image Zoom-in Capability</span>
                 </div>
               </div>
@@ -103,7 +106,8 @@ const Packages = () => {
           </div>
         </section>
       </Container>
-      <MorePackages />
+      
+      <PackagePrice2 />
       <HowSoftyPyWork />
       <Container>
         <div className="flex justify-between flex-col lg:flex-row ">
@@ -132,7 +136,9 @@ const Packages = () => {
 
       <Technologies />
       <WorkPortfolio />
+      {/** 
       <PackagePrice />
+*/}
       <div className="sectionMargin">
         <Container>
           <div className=" flex flex-col lg:flex-row md:justify-between justify-center">
@@ -152,6 +158,7 @@ const Packages = () => {
           </div>
         </Container>
       </div>
+      <Ready />
     </div>
   );
 };

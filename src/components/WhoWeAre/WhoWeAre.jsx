@@ -1,12 +1,48 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./WhoWeare.css";
 import Container from "../../ui/Container";
 // import img from '../../../public/assets/sortware.png'
 import { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 const WhatWeDo = () => {
   const ref = useRef(null);
   useEffect(() => {
     import("@lottiefiles/lottie-player");
   });
+
+
+
+  const containerAnimation = {
+    hidden: {
+      opacity:1,
+      y: '200px'
+    },
+    visible:{
+      opacity:1,
+      y:'0px',
+      transition:{
+        
+
+        type: 'spring',
+        stiffness:120,
+      }
+    }
+  }
+
+  const animationRef = useRef()
+const inView = useInView(animationRef)
+const sectionControl = useAnimation();
+useEffect(()=>{
+  if(inView){
+    sectionControl.start('visible')
+  }
+  else{
+    sectionControl.start('hidden')
+  }
+
+},[inView])
+
+
 
   return (
     <div className="sectionMargin h-[420px] overflow-hidden">
@@ -23,20 +59,18 @@ const WhatWeDo = () => {
           className="animation"
         ></lottie-player>
           </div>
-          <div className="w-[100%] md:w-[50%]">
+          <motion.div 
+          // initial='hidden'
+          // variants={containerAnimation}
+          // animate={sectionControl}
+          className="w-[100%] md:w-[50%]">
             <h2 className=" mb-3 text-[#680C70] font-bold text-4xl">
               Who We Are ?
             </h2>
             <p>
-              {" "}
-              At <b className="text-[#680C70]">SoftyPy</b>, we are dedicated to
-              providing rapid and effective disaster relief and humanitarian
-              assistance to communities in crisis around the world. Our mission
-              is to alleviate suffering, restore dignity, and promote resilience
-              among those affected by emergencies, natural disasters, conflicts,
-              and other humanitarian crises.
+            Our team craft to seamlessly blend innovation, collaboration, and excellence. We are dedicated to delivering tailored software solutions that not only meet but exceed our clients' expectations. Here's a glimpse into our unique workflow:
             </p>
-          </div>
+          </motion.div>
         </div>
       </Container>
     </div>

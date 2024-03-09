@@ -130,6 +130,10 @@ object-fit: cover;
     rotate: -25deg;
 
  }
+
+ .cards-back2{
+    background:#680C70 
+ }
 .cardLine3{
     top: 395px;
     rotate: 22deg;

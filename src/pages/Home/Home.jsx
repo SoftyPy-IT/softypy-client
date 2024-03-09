@@ -24,6 +24,7 @@ const Home = () => {
       <Subscribe />
     </div>
   );
+  
 };
 
 export default Home;

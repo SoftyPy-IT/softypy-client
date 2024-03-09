@@ -24,10 +24,14 @@
     "axios": "^1.6.7",
     "clsx": "^2.1.0",
     "firebase": "^10.5.0",
-    "framer-motion": "^11.0.3",
     "js-cookie": "^3.0.5",
+ 
+    "framer-motion": "^11.0.6",
+    "jwt-decode": "^4.0.0",
+ 
     "keen-slider": "^6.8.6",
     "lottie-player": "^1.0.0",
+    "lucide-react": "^0.344.0",
     "react": "^18.2.0",
     "react-countdown": "^2.3.5",
     "react-dom": "^18.2.0",
@@ -47,6 +51,7 @@
     "react-vertical-timeline-component": "^3.6.0",
     "react-youtube": "^10.1.0",
     "recharts": "^2.9.0",
+    "redux-persist": "^6.0.0",
     "slick-carousel": "^1.8.1",
     "socket.io-client": "^4.7.4",
     "styled-components": "^5.3.11",

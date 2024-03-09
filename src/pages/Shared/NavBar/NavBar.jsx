@@ -1,15 +1,21 @@
 import "./NavBar.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../../contexts/AuthProvider";
-import team from "../../../../public/assets/team11.jpeg";
-import login from "../../../../public/assets/login6.png";
+import { Link, NavLink } from "react-router-dom";
 import Container from "../../../ui/Container";
-import { LuUser } from "react-icons/lu";
+import { HiChevronDown } from "react-icons/hi";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "../../../redux/features/themeSlice";
+import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
+import { FaCode, FaReact, FaShopify, FaWordpressSimple } from "react-icons/fa";
+import { FaMobileScreen } from "react-icons/fa6";
+import { logout } from "../../../redux/features/auth/authSlice";
 
 const NavBar = () => {
-  const { user, logout } = useContext(AuthContext);
+  const dispatch = useDispatch();
+  const { darkMode } = useSelector((store) => store.theme);
+  const handleToggleTheme = () => {
+    dispatch(toggleTheme());
+  };
   const [mobileMenu, setMobileMenu] = useState(true);
   const toggleMobileMenu = () => {
     setMobileMenu((mobileMenu) => !mobileMenu);
@@ -18,10 +24,12 @@ const NavBar = () => {
     var header = document.querySelector(".navbar");
     header.classList.toggle("sticky", window?.scrollY > 300);
   });
-  const handleLogOut = () => {
-    logout()
-      .then(() => {})
-      .catch((error) => console.error(error));
+
+  const { email } = useSelector((state) => state.auth);
+  console.log(email);
+
+  const handleLogout = () => {
+    dispatch(logout());
   };
 
   return (
@@ -34,20 +42,109 @@ const NavBar = () => {
         </div>
         <ul className="navbar-list ">
           <Link to="/">
-            {" "}
             <li className="navbar-item">Home</li>
           </Link>
+          {/** 
           <Link to="/services">
             {" "}
-            <li className="navbar-item">Services</li>
-          </Link>
+            </Link>
+            */}
+          <li className="navbar-item flex items-center serviceNavItems">
+            Services <HiChevronDown size={23} />{" "}
+            <div className="dropDownMenu">
+              <ul className="space-y-3">
+                <li className="flex items-center mainSubmenu capitalize">
+                  Web Development <HiChevronDown size={23} />
+                  <div className="subMenu1 flex items-center justify-between p-8 ">
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaCode size={40} />
+                      </div>
+                      <p>Custom (MERN) </p>
+                      <p>Website Development</p>
+                    </div>
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaWordpressSimple size={40} />
+                      </div>
+                      <p>Wordpress </p>
+                      <p>Development</p>
+                    </div>
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4">
+                        <FaShopify size={40} />
+                      </div>
+                      <p>Shopify </p>
+                      <p>Development</p>
+                    </div>
+
+                    {/** 
+                    <div className="submenu">
+                      <ul>
+                        <li>Online Travel Agency (OTA) Website. </li>
+                        <li>Corporate Business Website</li>
+                        <li>E-commerce Website </li>
+                        <li>Nonprofit / Donation Websites </li>
+                        <li>Educational Websites </li>
+                        <li>Agency Website </li>
+                        <li>Real Estate Websites </li>
+                        <li>Health and Fitness Websites </li>
+                      </ul>
+                    </div>
+*/}
+                  </div>
+                </li>
+                <li className="mainSubmenu2 flex items-center ">
+                  Mobile <HiChevronDown size={23} />
+                  <div className="subMenu2 flex items-center justify-between p-8 ">
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaMobileScreen size={40} />
+                      </div>
+                      <p>Flutter </p>
+                    </div>
+
+                    <div className=" menuBox  flex items-center justify-center flex-col">
+                      <div className="iconsShapeWrap mb-4 ">
+                        <FaReact size={40} />
+                      </div>
+                      <p>React Native </p>
+                    </div>
+                  </div>
+                </li>
+                <li>Cloud & DevOps </li>
+                <li>UI/UX Design </li>
+                <li>Wordpress Development </li>
+                <li className="teamHoverMenuItem flex items-center ">
+                  Dedicated Team <HiChevronDown size={23} />
+                  <div className="teamSubMenu">
+                    <ul className="space-y-2">
+                      <li>Java Developer</li>
+                      <li>Node js Developer</li>
+                      <li>.NET Developer</li>
+                      <li>React js Developer</li>
+                      <li>Angular Developer</li>
+                      <li>UI/UX Designer </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>QA & Testing</li>
+                <li>Technology Consulting</li>
+                <li>Support & Maintenance </li>
+              </ul>
+            </div>
+          </li>
           <Link to="/packages">
             {" "}
-            <li className="navbar-item">Packages</li>
+            <li className="navbar-item">Pricing </li>
           </Link>
           <Link to="/portfolio">
             {" "}
             <li className="navbar-item">Portfolio</li>
+          </Link>
+          <Link to="">
+            {" "}
+            <li className="navbar-item">Careers</li>
           </Link>
           <Link to="/about">
             {" "}
@@ -57,43 +154,33 @@ const NavBar = () => {
             {" "}
             <li className="navbar-item">Contact</li>
           </Link>
-        
         </ul>
+
         <div className="security">
-          {user?.uid ? (
+          <div className="flex items-center ">
+            <button
+              onClick={handleToggleTheme}
+              className="rounded-lg backdrop-blur-[2px] p-1 inline-block mr-2 "
+            >
+              {darkMode ? (
+                <HiOutlineSun size={30} />
+              ) : (
+                <HiOutlineMoon size={30} />
+              )}
+            </button>
+            <div></div>
+          </div>
+
+          {email ? (
             <>
-              <div className="usersWrap">
-                <img src={team} className="user" alt="team" />
-                <ul className="userItems">
-                  <li>
-                    <Link to="/dashboard" className=" dasboard">
-                      Dashboard
-                    </Link>
-                  </li>
-                  <li>
-                    <button
-                      onClick={handleLogOut}
-                      className="mr-3 font-bold dasboard"
-                    >
-                      Logout
-                    </button>
-                  </li>
-                </ul>
-              </div>
+              <button className="logoutBtn " onClick={handleLogout}>
+                Log Out{" "}
+              </button>
             </>
           ) : (
-            <>
-              <div className="usersWrap">
-                <LuUser size={35} />
-                <ul className="userItems">
-                  <li>
-                    <Link to="/login" className="mr-3 dasboard">
-                      Login{" "}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </>
+            <button className="logoutBtn  ">
+              <NavLink to="/login">Login</NavLink>
+            </button>
           )}
         </div>
 

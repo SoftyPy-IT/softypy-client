@@ -1,10 +1,10 @@
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import './CommonButton.css'
-import {FaArrowRight } from "react-icons/fa";
 const CommonButton = ({ text }) => {
     return (
         <div className="bannerBtn">
         <button> {text}</button>
-        <FaArrowRight className='ml-2'/>
+        <HiOutlineArrowNarrowRight className='ml-2'/>
         </div>
     );
 };

@@ -1,5 +1,4 @@
 .navbar {
-
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
@@ -14,9 +13,9 @@
   width: 1200px;
   margin: 0 auto;
   /* background: linear-gradient(to right, #541283fb, #F81600); */
-  background-color: #680C70;
+  background-color: #680c70;
   width: 100%;
-  color: white ;
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +25,6 @@
 }
 .navbar-list {
   display: flex;
-
 }
 
 .navbar-list li {
@@ -37,13 +35,12 @@
   position: relative;
 }
 
-
 .sticky .navbar-list,
 .sticky .logo {
   color: white !important;
 }
 
-.navbar-list li::after {
+/* .navbar-list li::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -52,12 +49,12 @@
   left: 0;
   bottom: 0;
   transition: all 0.5s ease-in-out;
-}
+} */
 
-.navbar-list li:hover::after {
+/* .navbar-list li:hover::after {
   width: 90%;
   border-bottom: 1px solid white;
-}
+} */
 .bar {
   display: none;
 }
@@ -65,12 +62,12 @@
 .mobileMenuActive {
   display: none;
 }
-.usersWrap{
+.usersWrap {
   position: relative;
 }
-.userItems{
+.userItems {
   position: absolute;
-  background: #F81600;
+  background: #f81600;
 
   text-align: center;
   padding: 20px 10px;
@@ -78,33 +75,148 @@
   display: none;
   justify-content: center;
 }
-.usersWrap:hover .userItems{
+.usersWrap:hover .userItems {
   display: block;
 }
-.user, .user2{
-  width:3.12rem;
-  height:3.12rem;
+.user,
+.user2 {
+  width: 3.12rem;
+  height: 3.12rem;
   border-radius: 100%;
-  
 }
-.user2{
-  color:white;
-  border:1px solid #ffffff;
+.user2 {
+  color: white;
+  border: 1px solid #ffffff;
+}
+.serviceNavItems {
+  position: relative;
+}
+.dropDownMenu, .teamSubMenu {
+  position: absolute;
+  background: #fff;
+  color:black;
+  top: 24px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 3px;
+  opacity: 0;
+  transform: scaleY(0);
+  visibility: visible;
+  transition: all 0.5s ease;
+  transform-origin: top;
+  cursor: pointer;
+  z-index: 8888;
+  font-size: 12px;
+}
+.serviceNavItems:hover .dropDownMenu {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+.mainSubmenu:hover .subMenu1 {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+.mainSubmenu2:hover .subMenu2{
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+.subMenu1, .subMenu2 {
+  width: 500px;
+  background-color: white;
+  color:black;
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 9;
+  transition: all 0.5s ease;
+  transform-origin: top;
+  right:-160px;
+  top: 92px;
+  font-size: 14px;
+  opacity: 0;
+  transform: scaleY(0);
+  visibility: visible;
+
+}
+.subMenu2{
+  opacity: 0;
+  transform: scaleY(0);
+  visibility: visible;
+  width: 300px;
+  right: -327px;
+  top: 8px;
+}
+.mainSubmenu:hover .subMenu1{
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
 }
 
+.submenu {
+  background: green;
+  position: absolute;
+  width: 400px;
+  padding: 20px;
+  z-index: 9999;
+  top: 113px;
+  transition: all 0.5s ease;
+  transform-origin: top;
+  left: 29px;
+}
+.hoverSubmenu:hover .submenu{
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+.teamSubMenu{
+  left:225px;
+}
+
+.teamHoverMenuItem:hover .teamSubMenu{
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+
+.menuBox{
+  border-right:1px solid #ddd;
+  padding: 0 15px;
+  width:220px;
+  margin:0 auto;
+  text-align: center;
+}
+.menuBox:last-child{
+  border-right: 0px;
+}
+.iconsShapeWrap{
+  position: relative;
+}
+.iconsShapeWrap::after{
+  position:absolute;
+  content: '';
+  width:50px;
+  height:50px;
+  background:#EDEDEE;
+  border-radius: 100%;
+  z-index: -2;
+  top:5px;
+  left:-15px
+}
 
 @media only screen and (max-width: 1024px) {
   .navbar,
   .sticky {
-    width:100%;
+    width: 100%;
   }
-  .navbar{
-    padding:10px 30px;
+  .navbar {
+    padding: 10px 30px;
   }
   .security {
     position: relative;
     left: -44%;
-}
+  }
   .navbar-list {
     display: none;
   }
@@ -186,23 +298,22 @@
   }
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width: 500px) {
   .navbar {
     padding: 5px 8px;
+  }
+  .bar {
+    top: 12px;
+    right: 1px;
+  }
+  .user,
+  .user2 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
-.bar{
-  top: 12px;
-  right: 1px;
-}
-.user, .user2 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-}
-@media  only screen and (max-width:400px) {
-
+@media only screen and (max-width: 400px) {
   .security {
     left: -40%;
-}
-  
+  }
 }

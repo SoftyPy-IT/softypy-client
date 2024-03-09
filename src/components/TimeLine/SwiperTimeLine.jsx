@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-func-assign */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/display-name */
@@ -40,22 +41,19 @@ export default Arrow = () => {
     <Container>
       <main className="chooseWrap sectionMargin">
        <div >
-       <SectionTitle data-aos="zoom-in" title="Why Choose SoftyPy? Your Ideal IT Partner for Success "></SectionTitle>
+       <SectionTitle data-aos="zoom-in" title="Why Choose Us? "></SectionTitle>
        </div>
 
         <div data-aos="fade-up-left" className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
             <div className="keen-slider__slide number-slide1">
               <div className="smallHead">
-                <h3 className="text-6xl "> 24/7 </h3>
-                <p className="-mr-5">Support</p>
+                <h3 className="text-3xl "> Expert Team, Exceptional Results</h3>
               </div>
               <div className="sliderWrap">
                 <div className="sliderLeftSide">
                   <p className="md:text-xl ">
-                    Advent International acquires and merges FieldEdge with
-                    Clearent. FieldEdge operates as an independent subsidiary
-                    under the Clearent Software Holdings portfolio of companies.
+                  Behind every success story is a team of experts. At SoftyPy , our skilled professionals bring a wealth of experience and knowledge to the table. With a shared commitment to excellence, we tackle challenges head-on and turn them into opportunities.
                   </p>
                 </div>
 
@@ -77,15 +75,13 @@ export default Arrow = () => {
             <div className="keen-slider__slide number-slide2">
             
               <div className="smallHead">
-                <h3 className="text-6xl ">Design  </h3>
-                <p className="-mr-5 mt-3">User Friendly </p>
+                <h3 className="text-3xl ">Transparent Communication  </h3>
               </div>
               <div className="sliderWrap">
                 <div>
                   <p className="md:text-xl ">
-                    Advent International acquires and merges FieldEdge with
-                    Clearent. FieldEdge operates as an independent subsidiary
-                    under the Clearent Software Holdings portfolio of companies.
+                  We believe in transparency. Throughout the project lifecycle, expect clear and open communication. We keep you informed, engaged, and confident in the progress and direction of your project.
+
                   </p>
                 </div>
                 <div className="sliderLeftSide">
@@ -105,15 +101,13 @@ export default Arrow = () => {
             </div>
             <div className="keen-slider__slide number-slide3">
             <div className="smallHead">
-                <h3 className="text-6xl ">Development  </h3>
-                <p className="-mr-8">Full Stack </p>
+                <h3 className="text-3xl ">Quality Assurance as Standard  </h3>
               </div>
               <div className="sliderWrap">
                 <div>
                   <p className="md:text-xl ">
-                    Advent International acquires and merges FieldEdge with
-                    Clearent. FieldEdge operates as an independent subsidiary
-                    under the Clearent Software Holdings portfolio of companies.
+                  Quality is not just a checkbox; it's ingrained in our culture. Rigorous testing processes and a commitment to excellence ensure that every product or service we deliver meets the highest industry standards.
+
                   </p>
                 </div>
 
@@ -132,6 +126,35 @@ export default Arrow = () => {
                 </div>
               </div>
             </div>
+            <div className="keen-slider__slide number-slide3">
+            <div className="smallHead">
+                <h3 className="text-3xl ">Timely Delivery, Every Time </h3>
+              </div>
+              <div className="sliderWrap">
+                <div>
+                  <p className="md:text-xl ">
+                  We understand the value of time. [Your Company Name] is dedicated to delivering projects on time, without compromising on quality. Trust us to meet your deadlines and exceed your expectations.
+
+
+                  </p>
+                </div>
+
+                <div className="sliderLeftSide">
+                  <div className="circleWrap">
+                    <div className="circle">
+                      <img src={icon6} alt="computer" />
+                    </div>
+                    <div className="circle">
+                      <img src={icon} alt="computer" />
+                    </div>
+                  </div>
+                  <div className="line"></div>
+                  <div className="line2"></div>
+                  <div className="line3"></div>
+                </div>
+              </div>
+            </div>
+
           </div>
           {loaded && instanceRef.current && (
             <div className="arrowWrap arrowWrap2">

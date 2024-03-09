@@ -82,303 +82,324 @@ export default function VerticalTabs() {
   };
 
   return (
-    <div className="">
-    <Container>
-    <div className="technologyWraps py-3">
-      <div>
-        <h3 className="technologyTitle">Technologies</h3>
-      </div>
-      <Box className="boxWrap" sx={{ bgcolor: "background.paper" }}>
-        <Tabs
-          orientation="vertical"
-          variant=""
-          value={value}
-          onChange={handleChange}
-          aria-label="Vertical tabs example"
-          className="tabs"
-        >
-          {" "}
-          <Tab label="Programming" {...a11yProps(0)} />
-          <Tab label="DATABASE" {...a11yProps(1)} />
-          <Tab label="REPORTING" {...a11yProps(2)} />
-          <Tab label="PROJECT MANAGEMENT" {...a11yProps(3)} />
-          <Tab label="TESTING" {...a11yProps(4)} />
-        </Tabs>
-        <TabPanel value={value} index={0}>
-          <div className="technologyWrap">
-            <h3 className="text-xl md:text-3xl font-bold ">
-              Using Programming Language
-            </h3>
-            <div className="flex items-center">
-              <Marquee pauseOnHover={true}>
-                <div className="skill skills">
-                  <img src={react} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={next} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img
-                    src={javaScript}
-                    alt="html"
-                    className="skillAnimation"
-                  />
-                </div>
-                <div className="skill2 skills">
-                  <img src={html} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={ts} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={css} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={php} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={node} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={docker} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={postman} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={php} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={node} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={aws} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={graphql} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={restapi} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={node} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={redux} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={test} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={restapi} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={sql} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill skills">
-                  <img src={vitest} alt="html" className="skillAnimation" />
-                </div>
-                <div className="skill2 skills">
-                  <img src={trello} alt="html" className="skillAnimation" />
-                </div>
-              </Marquee>
-            </div>
+    <div className=" mt-[80px]">
+      <Container>
+        <div className="technologyWraps py-3">
+          <div>
+            <h3 className="technologyTitle">Technologies</h3>
           </div>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <div className="technologyWrap">
-            <h3 className="text-xl md:text-3xl font-bold ">
+          <Box className="boxWrap" sx={{ bgcolor: "background.paper" }}>
+            <Tabs
+              orientation="vertical"
+              variant=""
+              value={value}
+              onChange={handleChange}
+              aria-label="Vertical tabs example"
+              className="tabs"
+            >
               {" "}
-              Using Database{" "}
-            </h3>
-            <div className="flex items-center">
-              <Marquee pauseOnHover={true}>
-                <div className="skill2 skills">
-                  <img src={mongo} alt="html" className="skillAnimation" />
+              <Tab label="Programming" {...a11yProps(0)} />
+              <Tab label="DATABASE" {...a11yProps(1)} />
+              <Tab label="REPORTING" {...a11yProps(2)} />
+              <Tab label="PROJECT MANAGEMENT" {...a11yProps(3)} />
+              <Tab label="TESTING" {...a11yProps(4)} />
+            </Tabs>
+            <TabPanel value={value} index={0}>
+              <div className="technologyWrap">
+                <h3 className="text-xl md:text-3xl font-bold ">
+                  Using Programming Language
+                </h3>
+                <div className="flex items-center">
+                  <Marquee pauseOnHover={true}>
+                    <div className="skill skills">
+                      <img src={react} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={next} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img
+                        src={javaScript}
+                        alt="html"
+                        className="skillAnimation"
+                      />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={html} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img src={ts} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={css} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img src={php} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={node} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img src={docker} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill2 skills">
+                      <img
+                        src={postman}
+                        alt="html"
+                        className="skillAnimation"
+                      />
+                    </div>
+                    <div className="skill skills">
+                      <img src={php} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={node} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img src={aws} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill2 skills">
+                      <img
+                        src={graphql}
+                        alt="html"
+                        className="skillAnimation"
+                      />
+                    </div>
+                    <div className="skill skills">
+                      <img
+                        src={restapi}
+                        alt="html"
+                        className="skillAnimation"
+                      />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={node} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img src={redux} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={test} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img
+                        src={restapi}
+                        alt="html"
+                        className="skillAnimation"
+                      />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={sql} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img src={vitest} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill2 skills">
+                      <img src={trello} alt="html" className="skillAnimation" />
+                    </div>
+                  </Marquee>
                 </div>
-                <div className="skill skills">
-                  <img src={mysql} alt="html" className="skillAnimation" />
-                </div>
+              </div>
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              <div className="technologyWrap">
+                <h3 className="text-xl md:text-3xl font-bold ">
+                  {" "}
+                  Using Database{" "}
+                </h3>
+                <div className="flex items-center">
+                  <Marquee pauseOnHover={true}>
+                    <div className="skill2 skills">
+                      <img src={mongo} alt="html" className="skillAnimation" />
+                    </div>
+                    <div className="skill skills">
+                      <img src={mysql} alt="html" className="skillAnimation" />
+                    </div>
 
-                <div className="skill2 skills">
-                  <img
-                    src={postgresql}
-                    alt="html"
-                    className="skillAnimation"
-                  />
+                    <div className="skill2 skills">
+                      <img
+                        src={postgresql}
+                        alt="html"
+                        className="skillAnimation"
+                      />
+                    </div>
+                  </Marquee>
                 </div>
-              </Marquee>
-            </div>
-          </div>
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <div className="technologies">
-            <div>
-              <h3 className="text-xl md:text-3xl font-bold ">Reporting</h3>
-              <ul className="category">
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small>iReport</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small>Crystal Report</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small>Microsoft Reporting Server</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small>Microsoft Client reports</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small>HTML5</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small>CharJs, Google Chart, Flot</small>
-                </li>
-              </ul>
-            </div>
-            <div className="technologyRightSide">
-              <lottie-player
-                id="firstLottie"
-                autoplay
-                loop
-                mode="normal"
-                src="/reporting.json"
-                className="animation"
-              ></lottie-player>
-            </div>
-          </div>
-        </TabPanel>
-        <TabPanel value={value} index={3}>
-          <div className="technologies">
-            <div>
-              <h3 className="text-3xl font-bold mb-5">Project Management </h3>
-              <ul className="category">
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> Scrum, TDD, CI</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> Microsoft Project Server, Microsoft Project</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> Jira</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> Trello, Redmine</small>
-                </li>
-              </ul>
-            </div>
-            <div className="technologyRightSide">
-              <lottie-player
-                id="firstLottie"
-                autoplay
-                loop
-                mode="normal"
-                src="/programming.json"
-                className="animation"
-              ></lottie-player>
-            </div>
-          </div>
-        </TabPanel>
-        <TabPanel value={value} index={4}>
-          <div className="technologies">
-            <div>
-              <h3 className="text-xl md:text-3xl font-bold ">Testing</h3>
-              <ul className="category">
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> MSTest</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> NUnit</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> JUnit</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> TestNG</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> Selenium (Java/C#/Python)</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> Apium</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> LoadRunner</small>
-                </li>
-                <li className="flex items-center">
-                  <small className="mr-3">
-                    <FaRegCheckCircle className="checkIcon" />
-                  </small>{" "}
-                  <small> dEVTOOLS</small>
-                </li>
-              </ul>
-            </div>
-            <div className="technologyRightSide">
-              <lottie-player
-                id="firstLottie"
-                autoplay
-                loop
-                mode="normal"
-                src="/testing.json"
-                className="animation"
-              ></lottie-player>
-            </div>
-          </div>
-        </TabPanel>
-      </Box>
-    </div>
-  </Container>
+              </div>
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+              <div className="technologies">
+                <div>
+                  <h3 className="text-xl md:text-3xl font-bold ">Reporting</h3>
+                  <ul className="category">
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small>iReport</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small>Crystal Report</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small>Microsoft Reporting Server</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small>Microsoft Client reports</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small>HTML5</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small>CharJs, Google Chart, Flot</small>
+                    </li>
+                  </ul>
+                </div>
+                <div className="technologyRightSide">
+                  <lottie-player
+                    id="firstLottie"
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="/reporting.json"
+                    className="animation"
+                  ></lottie-player>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel value={value} index={3}>
+              <div className="technologies">
+                <div>
+                  <h3 className="text-3xl font-bold mb-5">
+                    Project Management{" "}
+                  </h3>
+                  <ul className="category">
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> Scrum, TDD, CI</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small>
+                        {" "}
+                        Microsoft Project Server, Microsoft Project
+                      </small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> Jira</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> Trello, Redmine</small>
+                    </li>
+                  </ul>
+                </div>
+                <div className="technologyRightSide">
+                  <lottie-player
+                    id="firstLottie"
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="/programming.json"
+                    className="animation"
+                  ></lottie-player>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel value={value} index={4}>
+              <div className="technologies">
+                <div>
+                  <h3 className="text-xl md:text-3xl font-bold ">Testing</h3>
+                  <ul className="category">
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> MSTest</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> NUnit</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> JUnit</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> TestNG</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> Selenium (Java/C#/Python)</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> Apium</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> LoadRunner</small>
+                    </li>
+                    <li className="flex items-center">
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> dEVTOOLS</small>
+                    </li>
+                  </ul>
+                </div>
+                <div className="technologyRightSide">
+                  <lottie-player
+                    id="firstLottie"
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="/testing.json"
+                    className="animation"
+                  ></lottie-player>
+                </div>
+              </div>
+            </TabPanel>
+          </Box>
+        </div>
+      </Container>
     </div>
   );
 }

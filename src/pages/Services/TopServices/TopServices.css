@@ -17,9 +17,9 @@
     z-index: 99;
     position: relative;
 }
-.topServiceContent, .topServiceRight{
+/* .topServiceContent, .topServiceRight{
     width:50%;
-}
+} */
 .topServiceContent{
     width:400px;
     height: 500px;

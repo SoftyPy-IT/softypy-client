@@ -18,7 +18,7 @@
   background:#F81600 !important;
 }
 .priceCard:hover .priceDetails2{
-  background:#fc7706 !important;
+  background:#F81600 !important;
 }
 .priceCard img {
   width: 100%;
@@ -32,7 +32,7 @@
   overflow-y: scroll;
 }
 .priceBtn{
- background:#FC7706;
+ background:#F81600;
  color:white;
  border-radius: 2px;
  margin: 10px auto;
@@ -48,7 +48,7 @@ padding:10px 0;
   overflow-y: auto;
 
   scrollbar-width: thin;
-  scrollbar-color: #5b1782 #fc7706;
+  scrollbar-color: #5b1782 #F81600;
   &::-webkit-scrollbar {
     width: 10px;
   }
@@ -58,7 +58,7 @@ padding:10px 0;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: #fc7706;
+    background-color: #F81600;
   }
 }
 

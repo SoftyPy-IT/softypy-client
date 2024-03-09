@@ -1,16 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-irregular-whitespace */
 /* eslint-disable no-func-assign */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/display-name */
-import  { useState } from "react";
+import { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./TopServices.css";
 import { FaLocationArrow, FaArrowRight } from "react-icons/fa";
 import { useRef, useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Container from "../../../ui/Container";
 AOS.init();
@@ -37,193 +38,119 @@ export default Arrow = () => {
     <Container>
       <main className="topServicesWrap">
         <div>
-          <div data-aos="fade-up" className="relatedServiceHead  mb-8">
+          <div className="relatedServiceHead  mb-8">
             <h2 className="text-3xl md:text-5xl">Our Top Services</h2>
           </div>
         </div>
 
-        <div data-aos="fade-up-left" className="navigation-wrapper">
-          <div ref={sliderRef} className="keen-slider">
-            <div className="keen-slider__slide number-slide1">
-              <div className="topServices ">
-                <div className="topServicesLeft">
-                  <lottie-player
-                    id="firstLottie"
-                    ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src="/development2.json"
-                    className="animation"
-                  ></lottie-player>
-                </div>
-                <div className="topServiceRight">
-                  <h2 className="text-4xl font-bold">
-                    Web Design & Development{" "}
-                  </h2>
-                  <p className="my-3 leading-7">
-                    {" "}
-                    Web Designers are responsible for designing and building the
-                    interface, navigation and aesthetic of websites for
-                    businesses and clients. Likely working in the IT team of an
-                    organisation or for a digital design agency that services
-                    clients, Web Designers should possess a range of skills and
-                    qualities.
-                  </p>
+        <div className="grid grid-cols-2 mt-20">
+          <div className="topServicesLeft">
+            <lottie-player
+              id="firstLottie"
+              ref={ref}
+              autoplay
+              loop
+              mode="normal"
+              src="/development2.json"
+              className="animation"
+            ></lottie-player>
+          </div>
 
-                  <div className="flex items-center cursor-pointer">
-                    <span>Learn More </span>
-                    <FaArrowRight className="ml-2 text-[#F81600] " />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide2">
-              <div className="flex items-center justify-between ">
-                <div className="topServicesLeft">
-                  <lottie-player
-                    id="firstLottie"
-                    ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src="/digital.json"
-                    className="animation"
-                  ></lottie-player>
-                </div>
+          <div className="topServiceRight">
+            <h2 className="text-4xl font-bold">Web Design & Development </h2>
+            <p className="my-3 leading-7">
+            Unlock the full potential of your online presence with our bespoke website design and development services. Our team of skilled designers and developers work collaboratively to create visually stunning, user-friendly websites that not only captivate your audience but also provide seamless navigation. From responsive design to e-commerce solutions, we ensure that your website is a true reflection of your brand and engages visitors effectively.
 
-                <div className="topServiceRight">
-                  <h2 className="text-4xl font-bold">
-                  Digital Marketing Strategy​​
-                  </h2>
-                  <p className="my-3 leading-7">
-                    {" "}
-                    Web Designers are responsible for designing and building the
-                    interface, navigation and aesthetic of websites for
-                    businesses and clients. Likely working in the IT team of an
-                    organisation or for a digital design agency that services
-                    clients, Web Designers should possess a range of skills and
-                    qualities.
-                  </p>
+            </p>
 
-                  <Link to='/services'>
-                 <div className="flex items-center cursor-pointer">
-                    <span>Learn More </span>
-                    <FaArrowRight className="ml-2 text-[#F81600] " />
-                  </div>
-                 </Link>
-                </div>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide3">
-              <div className="flex items-center justify-between ">
-                <div className="topServicesLeft">
-                  <lottie-player
-                    id="firstLottie"
-                    ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src="/digital2.json"
-                    className="animation"
-                  ></lottie-player>
-                </div>
-
-                <div className="topServiceRight">
-                  <h2 className="text-4xl font-bold">
-                  Social Media​​ Marketing
-                  </h2>
-                  <p className="my-3 leading-7">
-                    {" "}
-                    SoftyPy Digitla Marketing Agency classifies your business goals & executes competitor by follow social media strategy.
-                  </p>
-                  <Link to='/services'>
-                 <div className="flex items-center cursor-pointer">
-                    <span>Learn More </span>
-                    <FaArrowRight className="ml-2 text-[#F81600] " />
-                  </div>
-                 </Link>
-                </div>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide3">
-              <div className="flex items-center justify-between ">
-                <div className="topServicesLeft">
-                  <lottie-player
-                    id="firstLottie"
-                    ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src="/content.json"
-                    className="animation"
-                  ></lottie-player>
-                </div>
-
-                <div className="topServiceRight">
-                  <h2 className="text-4xl font-bold">
-                  Content Marketing​
-                  </h2>
-                  <p className="my-3 leading-7">
-                    {" "}
-                    SoftyPy is the best content marketing agency in the world. We have a professionals team for content marketing
-                  </p>
-
-                 <Link to='/services'>
-                 <div className="flex items-center cursor-pointer">
-                    <span>Learn More </span>
-                    <FaArrowRight className="ml-2 text-[#F81600] " />
-                  </div>
-                 </Link>
-                </div>
-              </div>
+            <div className="flex items-center cursor-pointer">
+              <span>Learn More </span>
+              <FaArrowRight className="ml-2 text-[#F81600] " />
             </div>
           </div>
-          {loaded && instanceRef.current && (
-            <div className="arrowWrap">
-              <div className="leftArrow">
-                <FaLocationArrow
-                  className="leftArrowIcon"
-                  left
-                  onClick={(e) =>
-                    e.stopPropagation() || instanceRef.current?.prev()
-                  }
-                  disabled={currentSlide === 0}
-                />
-              </div>
 
-              <div className="rightArrow">
-                <FaLocationArrow
-                  className="rightArrowIcon"
-                  onClick={(e) =>
-                    e.stopPropagation() || instanceRef.current?.next()
-                  }
-                  disabled={
-                    currentSlide ===
-                    instanceRef.current.track.details.slides.length - 1
-                  }
-                />
+
+          <div className="topServiceRight">
+            <h2 className="text-4xl font-bold">App Development​​</h2>
+            <p className="my-3 leading-7">
+            Stay ahead of the curve with our innovative app development services. Whether you're looking to create a mobile application for iOS, Android, or cross-platform, we've got you covered. Our experienced team leverages the latest technologies to build intuitive and feature-rich apps that cater to your unique business requirements. From concept to deployment, we prioritize user experience and functionality to ensure your app stands out in the competitive digital landscape.
+
+            </p>
+
+            <Link to="/services">
+              <div className="flex items-center cursor-pointer">
+                <span>Learn More </span>
+                <FaArrowRight className="ml-2 text-[#F81600] " />
               </div>
-            </div>
-          )}
+            </Link>
+          </div>
+          <div className="topServicesLeft">
+            <lottie-player
+              id="firstLottie"
+              ref={ref}
+              autoplay
+              loop
+              mode="normal"
+              src="/digital.json"
+              className="animation"
+            ></lottie-player>
+          </div>
+
+
+
+
+          <div className="topServicesLeft">
+            <lottie-player
+              id="firstLottie"
+              ref={ref}
+              autoplay
+              loop
+              mode="normal"
+              src="/digital2.json"
+              className="animation"
+            ></lottie-player>
+          </div>
+          <div className="topServiceRight">
+            <h2 className="text-4xl font-bold">ERP Software Solution</h2>
+            <p className="my-3 leading-7">
+            Optimize your business processes with our robust ERP (Enterprise Resource Planning) software solutions. We understand the importance of efficiency and integration in today's fast-paced business environment. Our ERP solutions are tailored to streamline your operations, enhance collaboration, and provide real-time insights into your business data. Experience increased productivity and seamless workflow management with our customized ERP systems.
+
+            </p>
+            <Link to="/services">
+              <div className="flex items-center cursor-pointer">
+                <span>Learn More </span>
+                <FaArrowRight className="ml-2 text-[#F81600] " />
+              </div>
+            </Link>
+          </div>
+
+          <div className="topServiceRight mt-10">
+            <h2 className="text-4xl font-bold">Digital Marketing​</h2>
+            <p className="my-3 leading-7">
+            Amplify your online presence and reach your target audience with our comprehensive digital marketing services. Our team of experts specializes in creating data-driven strategies across various channels, including social media, search engine optimization (SEO), content marketing, and more. Whether you're looking to boost brand awareness, drive traffic, or increase conversions, our digital marketing solutions are designed to deliver tangible and measurable results.
+
+            </p>
+
+            <Link to="/services">
+              <div className="flex items-center cursor-pointer">
+                <span>Learn More </span>
+                <FaArrowRight className="ml-2 text-[#F81600] " />
+              </div>
+            </Link>
+          </div>
+
+          <div className="topServicesLeft">
+            <lottie-player
+              id="firstLottie"
+              ref={ref}
+              autoplay
+              loop
+              mode="normal"
+              src="/content.json"
+              className="animation"
+            ></lottie-player>
+          </div>
         </div>
-        {loaded && instanceRef.current && (
-          <div className="dots">
-            {[
-              ...Array(instanceRef.current.track.details.slides.length).keys(),
-            ].map((idx) => {
-              return (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    instanceRef.current?.moveToIdx(idx);
-                  }}
-                  className={"dot" + (currentSlide === idx ? " active" : "")}
-                ></button>
-              );
-            })}
-          </div>
-        )}
       </main>
     </Container>
   );

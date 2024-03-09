@@ -1,0 +1,30 @@
+.appPortFolioWrap {
+  width: 430px;
+  height: 430px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+.appPortFolioWrap::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:black;
+    top:0;
+    left:0;
+    opacity: 0.6;
+
+}
+.appPortFolioWrap img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.appSliderWraps {
+  width: 600px;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 20px !important;
+
+}
