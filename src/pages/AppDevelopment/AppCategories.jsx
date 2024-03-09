@@ -16,7 +16,11 @@ import {
   FaHeartCircleBolt,
   FaOilWell,
 } from "react-icons/fa6";
-import { HiOutlineArrowNarrowRight, HiOutlineShoppingCart, HiOutlineUserGroup } from "react-icons/hi";
+import {
+  HiOutlineArrowNarrowRight,
+  HiOutlineShoppingCart,
+  HiOutlineUserGroup,
+} from "react-icons/hi";
 import { FaVideoSlash } from "react-icons/fa6";
 
 const AppCategories = () => {
@@ -358,13 +362,10 @@ const AppCategories = () => {
             </Accordion>
           </div>
         </div>
-       
       </div>
-      <button className="bg-[#680C70] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center ">
-      <span>Contact Us</span> <HiOutlineArrowNarrowRight className="ml-2"/>
-    </button>
-
-
+      <button className="bg-[#680C70] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center">
+        <span>Contact Us</span> <HiOutlineArrowNarrowRight className="ml-2" />
+      </button>
     </div>
   );
 };

@@ -23,7 +23,7 @@ const Portfolio = () => {
     return <p>Something went to wrong</p>;
   }
 
-  return (
+  return ( 
     <div>
       <div className=" ">
         <div className="navsBarWrap">

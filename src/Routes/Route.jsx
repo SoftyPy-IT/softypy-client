@@ -38,6 +38,8 @@ import Website from "../pages/Website";
 import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
 import Users from "../pages/Dashboard/Users/User";
 import AppDevelopment from "../pages/AppDevelopment/AppDevelopment";
+import ERP from "../pages/ERP/ERP";
+import ERPDetails from "../pages/ERPDetails/ERPDetails";
 
 export const router = createBrowserRouter([
   {
@@ -101,6 +103,14 @@ export const router = createBrowserRouter([
       {
         path: "/app-development",
         element: <AppDevelopment />,
+      },
+      {
+        path: "/erp",
+        element: <ERP/>,
+      },
+      {
+        path: "/erp-details",
+        element: <ERPDetails/>,
       },
     ],
   },
