@@ -143,28 +143,11 @@ color: #F81600 !important;
   animation: animate_right 2s 1 ease;
   color: #fff;
 }
-
-.ExploreBtn {
-  background-color: #fff;
-  border-radius: 8px;
-  font-size: 18px;
-  border: none;
-  transition-duration: 0.2s;
-  cursor: pointer;
-  margin-top: 10px;
-  animation-delay: 0.5s;
-  animation: animate_left 2s 1 ease;
-  transition: all 0.5s ease-in-out;
-  border: 1px solid #f81600;
-  padding: 6px 20px;
-  margin: 10px auto;
+.getContactField{
+  width:445px !important;
 }
 
-.ExploreBtn:hover {
-  background: linear-gradient(to right, #680c70, #f81600);
-  color: white;
-  border: 1px solid white;
-}
+
 
 .right-side {
   text-align: right;
@@ -183,9 +166,5 @@ color: #F81600 !important;
   .left-side h1 {
     font-size: 30px;
   }
-  .ExploreBtn {
-    border-radius: 8px;
-    font-size: 15px;
-    padding: 5px 12px;
-  }
+
 }

@@ -37,6 +37,7 @@ import MessageList from "../pages/Dashboard/Message/MessageList";
 import Website from "../pages/Website";
 import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
 import Users from "../pages/Dashboard/Users/User";
+import AppDevelopment from "../pages/AppDevelopment/AppDevelopment";
 
 export const router = createBrowserRouter([
   {
@@ -55,10 +56,6 @@ export const router = createBrowserRouter([
         path: "/portfolio",
         element: <Portfolio />,
       },
-      // {
-      //   path: '/singleService',
-      //   element: <SingleService />
-      // },
       {
         path: "/singleServices/:id",
         element: <SingleService />,
@@ -100,6 +97,10 @@ export const router = createBrowserRouter([
       {
         path: "/faq",
         element: <Faq />,
+      },
+      {
+        path: "/app-development",
+        element: <AppDevelopment />,
       },
     ],
   },

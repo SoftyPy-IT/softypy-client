@@ -3,11 +3,11 @@ import "./HeroSection.css";
 import NavBar from "../../../pages/Shared/NavBar/NavBar";
 import Container from "../../../ui/Container";
 import { useEffect, useState } from "react";
+import ContactModal from "./ContactModal";
 const HeroSection = () => {
   const [showText, setShowText] = useState(1);
 
   useEffect(() => {
-    // After each animation cycle, toggle the showText state to display the next text item
     const interval = setInterval(() => {
       setShowText((prevShowText) => {
         if (prevShowText === 3) {
@@ -16,11 +16,15 @@ const HeroSection = () => {
           return prevShowText + 1;
         }
       });
-    }, 5000); // Change this delay according to your animation duration
+    }, 5000); 
 
-    // Clear the interval when the component unmounts
+
     return () => clearInterval(interval);
-  }, []); // Run this effect only once when the component mounts
+  }, []); 
+
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div>
@@ -45,20 +49,22 @@ const HeroSection = () => {
           <span className={"text-[#F81600] futureText2 " + (showText === 2 ? "show" : "")}>New</span>
           <span className={"text-[#F81600] futureText3 " + (showText === 3 ? "show" : "")}>Value</span>
           </h3>
-          <button className="bg-[#F81600] w-60 py-3 rounded-sm text"> Let's Talk </button>
+          <button
+          onClick={handleOpen}
+           className="bg-[#F81600] w-60 py-3 rounded-sm text"> Let's Talk </button>
           </div>
-
-  {/** 
-          <Link to="/contact">
-            <button className="ExploreBtn "> <span>Explore Us </span><HiOutlineArrowNarrowRight/> </button>
-          </Link>
-*/}
 
         </div>
       </div>
         </Container>
         </div>
       </div>
+
+      {
+        open && <ContactModal
+        onClose={handleClose}
+        />
+      }
     </div>
   );
 };

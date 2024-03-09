@@ -39,7 +39,7 @@ const Signup = () => {
         <NavBar />
       </div>
       <div className="signupWrap">
-        <h3 className="text-3xl font-bold text-center mb-5  capitalize">
+        <h3 className="text-3xl font-bold text-center   capitalize">
           Create an account
         </h3>
 

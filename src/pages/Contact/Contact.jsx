@@ -262,9 +262,7 @@ const Contact = () => {
           </div>
         </section>
       </Container>
-<div className="sectionMargin">
-
-</div>
+      <div className="sectionMargin"></div>
       <section className=" w-full mx-auto flex flex-row justify-center items-center md:my-24 mb-32 md:mb-32 ">
         <Iframe
           className="lg:h-[600px] h-[300px] "

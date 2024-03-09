@@ -52,9 +52,9 @@ console.log(userInfo)
             Sign In SoftyPy or{" "}
             <Link to="/signup">
               {" "}
-              <small className="border-b-2 border-[#680C70]">
-                create an account{" "}
-              </small>
+              <b className="text-[#680C70]">
+                Create an account{" "}
+              </b>
             </Link>
           </span>
         </div>

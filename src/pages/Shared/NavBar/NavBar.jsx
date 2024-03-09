@@ -24,16 +24,13 @@ const NavBar = () => {
     var header = document.querySelector(".navbar");
     header.classList.toggle("sticky", window?.scrollY > 300);
   });
- 
 
   const { email } = useSelector((state) => state.auth);
-console.log(email)
+  console.log(email);
 
   const handleLogout = () => {
     dispatch(logout());
   };
-
-
 
   return (
     <Container>
@@ -55,9 +52,9 @@ console.log(email)
           <li className="navbar-item flex items-center serviceNavItems">
             Services <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
-              <ul>
+              <ul className="space-y-3">
                 <li className="flex items-center mainSubmenu capitalize">
-                  Website Development <HiChevronDown size={23} />
+                  Web Development <HiChevronDown size={23} />
                   <div className="subMenu1 flex items-center justify-between p-8 ">
                     <div className=" menuBox  flex items-center justify-center flex-col">
                       <div className="iconsShapeWrap mb-4 ">
@@ -98,7 +95,7 @@ console.log(email)
                   </div>
                 </li>
                 <li className="mainSubmenu2 flex items-center ">
-                  APP Development <HiChevronDown size={23} />
+                  Mobile <HiChevronDown size={23} />
                   <div className="subMenu2 flex items-center justify-between p-8 ">
                     <div className=" menuBox  flex items-center justify-center flex-col">
                       <div className="iconsShapeWrap mb-4 ">
@@ -115,7 +112,25 @@ console.log(email)
                     </div>
                   </div>
                 </li>
-                <li>Digital Marketing </li>
+                <li>Cloud & DevOps </li>
+                <li>UI/UX Design </li>
+                <li>Wordpress Development </li>
+                <li className="teamHoverMenuItem flex items-center ">
+                  Dedicated Team <HiChevronDown size={23} />
+                  <div className="teamSubMenu">
+                    <ul className="space-y-2">
+                      <li>Java Developer</li>
+                      <li>Node js Developer</li>
+                      <li>.NET Developer</li>
+                      <li>React js Developer</li>
+                      <li>Angular Developer</li>
+                      <li>UI/UX Designer </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>QA & Testing</li>
+                <li>Technology Consulting</li>
+                <li>Support & Maintenance </li>
               </ul>
             </div>
           </li>
@@ -126,6 +141,10 @@ console.log(email)
           <Link to="/portfolio">
             {" "}
             <li className="navbar-item">Portfolio</li>
+          </Link>
+          <Link to="">
+            {" "}
+            <li className="navbar-item">Careers</li>
           </Link>
           <Link to="/about">
             {" "}
@@ -154,10 +173,7 @@ console.log(email)
 
           {email ? (
             <>
-              <button
-                className="logoutBtn "
-                onClick={handleLogout}
-              >
+              <button className="logoutBtn " onClick={handleLogout}>
                 Log Out{" "}
               </button>
             </>
@@ -166,8 +182,6 @@ console.log(email)
               <NavLink to="/login">Login</NavLink>
             </button>
           )}
-
-        
         </div>
 
         <div onClick={toggleMobileMenu} className="bar">

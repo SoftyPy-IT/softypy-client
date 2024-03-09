@@ -91,7 +91,7 @@
 .serviceNavItems {
   position: relative;
 }
-.dropDownMenu {
+.dropDownMenu, .teamSubMenu {
   position: absolute;
   background: #fff;
   color:black;
@@ -141,12 +141,12 @@
 
 }
 .subMenu2{
-  width:300px;
   opacity: 0;
   transform: scaleY(0);
   visibility: visible;
-  right:-100px;
-  top: 66px;
+  width: 300px;
+  right: -327px;
+  top: 8px;
 }
 .mainSubmenu:hover .subMenu1{
   opacity: 1;
@@ -170,6 +170,16 @@
   transform: scaleY(1);
   visibility: visible;
 }
+.teamSubMenu{
+  left:225px;
+}
+
+.teamHoverMenuItem:hover .teamSubMenu{
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+
 .menuBox{
   border-right:1px solid #ddd;
   padding: 0 15px;
