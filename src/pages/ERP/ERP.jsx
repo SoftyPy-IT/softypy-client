@@ -1,9 +1,15 @@
+/* eslint-disable react-refresh/only-export-components */
 import { FaAngleRight } from "react-icons/fa";
 import NavBar from "../Shared/NavBar/NavBar";
 import "./ERP.style.css";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import { HiClipboardList, HiOutlineCloudDownload } from "react-icons/hi";
 import { FaGear } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import FrequentlyAskQuestions from "../../components/FrequentlyAskQuestions/FrequentlyAskQuestions";
+import Review from "../../components/Review/Review";
+import Brand from "../../components/Brand/Brand";
+import ModuleCovered from "./ModulesCovered/ModuleCovered";
 const ERP = () => {
   const erpData = [
     {
@@ -31,26 +37,26 @@ const ERP = () => {
       </div>
       <div className="aboutContainers">
         <div className="aboutContent">
-          <div className="flex items-center uppercase bg-[#680C70] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
+          <div className="flex items-center uppercase bg-[#680C70] text-white rounded-md w-[120px] justify-between mb-5 px-3 py-3">
             <p>Home</p>
             <FaAngleRight />
             <p>ERP </p>
           </div>
-          <h2 className="md:text-5xl ml-0 xl:-ml-20 font-bold text-3xl text-left md:text-center uppercase ">
+          <h2 className="md:text-5xl ml-0 xl:-ml-44 font-bold text-3xl text-left md:text-center uppercase ">
             ERP Solution
           </h2>
         </div>
       </div>
 
-      <div className=" erpWraps pt-16">
+      <div className="px-3 lg:px-0  erpWraps pt-16 ">
         <div>
-          <div className="max-w-[1000px] pl-8 ">
+          <div className="max-w-[1000px] pl-0 lg:pl-8 ">
             <SectionTitle
               title="ERP Applications Platforms"
               text="Best fitting and sustainable infrastructure for your business."
             />
 
-            <div className="grid grid-cols-3 gap-5 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 place-items-center ">
               {erpData.map((data, i) => (
                 <div key={data.id} className="erpCard">
                   <div>
@@ -63,7 +69,7 @@ const ERP = () => {
                     )}
                     <h3 className="text-2xl font-bold mt-5">{data.title}</h3>
                     <p className=" my-4">{data.text}</p>
-                    <button className="erpBtn">View More </button>
+                   <Link to='/erp-details'> <button className="erpBtn">View More </button></Link>
                   </div>
                 </div>
               ))}
@@ -71,6 +77,10 @@ const ERP = () => {
           </div>
         </div>
       </div>
+      <ModuleCovered/>
+      <Brand/>
+      <Review/>
+      <FrequentlyAskQuestions/>
     </div>
   );
 };

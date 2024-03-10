@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/no-unescaped-entities */
 import { useKeenSlider } from "keen-slider/react";
@@ -67,7 +68,7 @@ export default function Review() {
   }
 
   return (
-    <div className="sectionMargin">
+    <div className="">
       <Container>
         <div className="mb-20">
           <SectionTitle title="What Our Client Say "></SectionTitle>

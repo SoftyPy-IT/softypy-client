@@ -63,9 +63,64 @@
     margin:0 auto;
 }
 
+.moduleCard{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding:20px 0px;
+    border-radius: 5px;
+    width:220px;
+    height:160px;
+    scale: 1;
+    transition:all .5s ease-in-out;
+    padding: 20px;
+    display: grid;
+    place-items:center;
+}
+.moduleCard:hover{
+    margin-top:-10px;
+}
+
+.moduleIconWraps{
+    position:relative;
+    width:60px;
+    height:60px;
+    margin:0 auto;
+
+}
+.moduleIconWraps::after{
+    content: '';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#ddd;
+    border-radius: 100%;
+    top:-8px;
+    z-index: -8;
+    left:3px
+
+}
+
+@media only screen and (max-width:1024px){
+    .moduleCard{
+        width:100%;
+    }
+}
+
+
+
+
 @media only screen and (max-width:768px){
+    .erpWraps{
+       height: auto ;
+       padding-bottom:30px;
+    }
+    
     .userCard{
         width:100%;
+    }
+    .erpCard{
+        max-width: 100%;
+        margin:0 auto;
+    
     }
     .erpPriceCard{
        width:250px;

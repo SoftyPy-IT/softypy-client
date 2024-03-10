@@ -3,6 +3,7 @@ import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import "../ERP/ERP.style.css";
 import { HiCheck, HiX } from "react-icons/hi";
 import Container from "../../ui/Container";
+import FrequentlyAskQuestions from "../../components/FrequentlyAskQuestions/FrequentlyAskQuestions";
 const ERPDetails = () => {
   const erpPriceData = [
     {
@@ -183,11 +184,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -198,14 +199,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Item Category-30X5 Grouping </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -216,21 +217,21 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td>Conversion Factor-Carton/Box/Dozen </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -241,14 +242,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -260,11 +261,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -275,25 +276,25 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Item Image- Item wise </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -307,7 +308,7 @@ const ERPDetails = () => {
               <td>Multiple Barcodes/EAN Codes against single item</td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -318,14 +319,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -343,14 +344,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -366,14 +367,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -384,7 +385,7 @@ const ERPDetails = () => {
               <td> TDS & TDS Reports </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -402,7 +403,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -420,14 +421,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -439,7 +440,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -450,36 +451,36 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Cost Element wise Budgeting </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -491,11 +492,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -506,14 +507,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Gift Voucher & Discount Coupon </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -524,14 +525,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -545,18 +546,18 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -570,7 +571,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -581,7 +582,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -593,7 +594,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -604,11 +605,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -622,11 +623,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -640,18 +641,18 @@ const ERPDetails = () => {
               <td>Party and Item Group Wise Markdowns </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -674,68 +675,68 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
-                <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
-              </td>
-              <td>
-                {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
                 <HiX size={25} className="text-red-700 mx-auto" />{" "}
+              </td>
+              <td>
+                {" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Party + Item wise Commission/Targets </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td>Commission Slabs on Sale of Ageing Stock </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -751,14 +752,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -769,18 +770,18 @@ const ERPDetails = () => {
               <td> Journey cycle wise Sales Man Incentive </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -799,11 +800,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -814,7 +815,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -828,11 +829,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -851,36 +852,36 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Purchase Voucher and Purchase Return </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -934,14 +935,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -953,18 +954,18 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -982,18 +983,18 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1009,14 +1010,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -1034,18 +1035,18 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1068,17 +1069,28 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Touch Enabled POS Bill & Credit Note & Refund </td>
               <td>
                 {" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
+              </td>
+              <td>
+                <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
+              </td>
+              <td>
+                {" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
+              </td>
+              <td>
+                {" "}
                 <HiX size={25} className="text-red-700 mx-auto" />{" "}
               </td>
               <td>
@@ -1086,18 +1098,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
-              </td>
-              <td>
-                {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
-              </td>
-              <td>
-                <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
-              </td>
-              <td>
-                {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -1111,18 +1112,18 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -1140,14 +1141,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1159,22 +1160,22 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1186,22 +1187,22 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -1215,11 +1216,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -1238,11 +1239,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -1253,14 +1254,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Barcode </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -1271,14 +1272,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1294,25 +1295,25 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
-                <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
-              </td>
-              <td>
-                {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                 <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
                 <HiX size={25} className="text-red-700 mx-auto" />{" "}
+              </td>
+              <td>
+                {" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
               <td> Shift Manager Management </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -1323,14 +1324,14 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -1344,18 +1345,18 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1367,7 +1368,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -1378,11 +1379,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1394,11 +1395,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -1409,7 +1410,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1425,18 +1426,18 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
             <tr>
@@ -1461,7 +1462,7 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
 
@@ -1473,18 +1474,18 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
@@ -1502,11 +1503,11 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
@@ -1529,23 +1530,24 @@ const ERPDetails = () => {
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 <HiCheck size={25} className="text-[#198759] mx-auto" />{" "}
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
               <td>
                 {" "}
-                <HiX size={25} className="text-red-700 mx-auto" />{" "}
+                   <HiCheck size={25} className="text-[#198759] mx-auto" />
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+      <FrequentlyAskQuestions/>
     </div>
   );
 };

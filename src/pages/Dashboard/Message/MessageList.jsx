@@ -91,11 +91,11 @@ const MessageList = () => {
             </tr>
           </thead>
           <tbody>
-            {senderData.map((review, i) => (
+            {senderData?.map((review, i) => (
               <tr key={review._id}>
                 <td>{i + 1}</td>
                 <td>{review._id} </td>
-                <td>{review.message.text}</td>
+                <td>{review?.message?.text}</td>
                 <td>All message here </td>
 
                 <td>
