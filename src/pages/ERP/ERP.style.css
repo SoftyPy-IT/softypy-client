@@ -30,3 +30,64 @@
 .pricingTable th{
     border:1px solid red;
 }
+.priceTable :where(td,th,tr){
+    text-align: center;
+    padding: 15px;
+}
+.priceTable tr, .priceTable td{
+    border: 1px solid #ddd;
+}
+ .priceTable td{
+   width:250px;
+}
+
+.erpPriceCard{
+    width:155px;
+    border: 1px solid #ddd;
+    padding:20px 10px;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 5px;;
+
+}
+
+.keyFeatureCard{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding:20px 10px;
+}
+.userCard{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:30px 20px;
+    text-align: center;
+    width:330px;
+    margin:0 auto;
+}
+
+@media only screen and (max-width:768px){
+    .userCard{
+        width:100%;
+    }
+    .erpPriceCard{
+       width:250px;
+    
+}
+.pricingTable{
+    display: none;
+}
+
+
+}
+
+@media only screen and (max-width:500px){
+.erpPriceCard{
+    width:350px;
+    margin-bottom:10px;
+}
+
+}
+@media only screen and (max-width:400px){
+    .erpPriceCard{
+        max-width:100%;
+    }
+    
+    }
