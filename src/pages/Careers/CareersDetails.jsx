@@ -19,9 +19,9 @@ const CareersDetails = () => {
       </div>
 
       <Container>
-        <div className="px-5 xl:px-0 ">
+        <div className="pl-3 md:pl-0 md:px-5 xl:px-0 ">
           <div className="mt-20 text-black">
-            <h3 className="text-4xl font-bold text-black mb-5">
+            <h3 className="text-2xl md:text-4xl font-bold text-black mb-5">
               Our Expectations{" "}
             </h3>
             <span className="text-2xl font-semibold ">Required</span>
@@ -55,7 +55,7 @@ const CareersDetails = () => {
             </ul>
           </div>
           <div className="mt-20 text-black">
-            <h3 className="text-4xl font-bold text-black mb-5">
+            <h3 className="text-2xl md:text-4xl font-bold text-black mb-5">
               Your responsibilities{" "}
             </h3>
             <ul className="space-y-2 mt-2 experienceList">
@@ -75,7 +75,7 @@ const CareersDetails = () => {
             </ul>
           </div>
           <div className="mt-20 text-black">
-            <h3 className="text-4xl font-bold text-black mb-5">
+            <h3 className="text-2xl md:text-4xl font-bold text-black mb-5">
               What we offer
             </h3>
             <ul className="space-y-2 mt-2 experienceList">
@@ -90,7 +90,7 @@ const CareersDetails = () => {
               <li>Social benefits project bonus</li>
             </ul>
           </div>
-          <div className="flex justify-end">
+          <div className="block md:flex justify-end">
             {" "}
            <Link to='/careers-apply'> <button className="applyBtn mt-5 ">Apply Now</button></Link>
           </div>

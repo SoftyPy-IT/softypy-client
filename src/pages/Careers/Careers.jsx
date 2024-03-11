@@ -58,16 +58,16 @@ const Careers = () => {
           {jobData.map((data) => (
             <div
               key={data.id}
-              className=" block md:flex items-center justify-between mt-20 border-t pt-8 "
+              className=" block md:flex items-center justify-between mt-10 border-t pt-8 "
             >
               <div>
-                <h2 className="text-3xl xl:text-5xl font-bold text-black">
+                <h2 className="text-xl md:text-3xl xl:text-5xl font-bold text-black">
                   {data.name}
                 </h2>
                 <span className="mt-2 block">{data.text} </span>
               </div>
               <Link to="/careers-details">
-                <button className="w-[180px] mt-3 md:mt-0 h-[60px] border border-[#ddd]  flex items-center justify-center rounded-sm jobBtn">
+                <button className="w-[140px]  md:w-[180px] mt-3 md:mt-0 h-[40px] md:h-[60px] border border-[#ddd]  flex items-center justify-center rounded-sm jobBtn">
                   <span>See Details</span>{" "}
                   <HiOutlineArrowNarrowRight className="ml-1" size={20} />
                 </button>
