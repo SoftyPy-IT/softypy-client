@@ -1,6 +1,6 @@
 import { FormControl, InputLabel, Select, TextField } from "@mui/material";
 import "./Signup.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import NavBar from "../Shared/NavBar/NavBar";
@@ -100,12 +100,21 @@ const Signup = () => {
             </div>
             <button
               type="submit"
-              className="  bg-[#680C70] w-[310px] h-10 text-white businessBtn"
+              className="  bg-[#680C70] h-10 text-white businessBtn"
             >
               Register
             </button>
           </div>
         </form>
+        <span className="block mt-3 text-center ">
+       Already have an account?
+        <Link to="/login">
+          {" "}
+          <b className="text-[#680C70]">
+           Login
+          </b>
+        </Link>
+      </span>
       </div>
     </div>
   );

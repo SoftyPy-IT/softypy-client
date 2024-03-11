@@ -6,7 +6,7 @@ import Brand from "../../components/Brand/Brand";
 import WorkPortfolio from "../../components/WorkPortfolio/WorkPortfolio";
 import Container from "../../ui/Container";
 import { useEffect, useRef } from "react";
-import { HiCheck } from "react-icons/hi"; 
+import { HiCheck } from "react-icons/hi";
 import HowSoftyPyWork from "./HowSoftyPyWork";
 import Ready from "./Ready";
 import PackagePrice2 from "./PackagePrice2";
@@ -98,7 +98,6 @@ const Packages = () => {
                 loop
                 mode="normal"
                 src="/package.json"
-        
               ></lottie-player>
             </div>
           </div>

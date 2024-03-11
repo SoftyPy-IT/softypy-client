@@ -44,11 +44,6 @@ const NavBar = () => {
           <Link to="/">
             <li className="navbar-item">Home</li>
           </Link>
-          {/** 
-          <Link to="/services">
-            {" "}
-            </Link>
-            */}
           <li className="navbar-item flex items-center serviceNavItems">
             Services <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
