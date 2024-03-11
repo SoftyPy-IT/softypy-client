@@ -191,6 +191,9 @@ object-fit: cover;
         order: 1;
         margin-top:15px;
     }
+    .ourServicesRightSide::before{
+      display: none;
+     }
 
  }
  @media only screen and (max-width:500px){
@@ -227,6 +230,13 @@ object-fit: cover;
     .cards {
         width: 135px;
         height: 139px;
+    }
+    
+}
+@media only screen and (max-width:300px){
+    .cards {
+        width: 120px;
+        height: 130px;
     }
     
 }

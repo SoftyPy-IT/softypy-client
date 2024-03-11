@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/no-unescaped-entities */
 import { useKeenSlider } from "keen-slider/react";

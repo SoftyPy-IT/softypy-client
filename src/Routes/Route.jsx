@@ -40,6 +40,9 @@ import Users from "../pages/Dashboard/Users/User";
 import AppDevelopment from "../pages/AppDevelopment/AppDevelopment";
 import ERP from "../pages/ERP/ERP";
 import ERPDetails from "../pages/ERPDetails/ERPDetails";
+import Careers from "../pages/Careers/Careers";
+import CareersDetails from "../pages/Careers/CareersDetails";
+import CareersApply from "../pages/Careers/CareersApply";
 
 export const router = createBrowserRouter([
   {
@@ -111,6 +114,18 @@ export const router = createBrowserRouter([
       {
         path: "/erp-details",
         element: <ERPDetails/>,
+      },
+      {
+        path: "/careers",
+        element: <Careers/>,
+      },
+      {
+        path: "/careers-details",
+        element: <CareersDetails/>,
+      },
+      {
+        path: "/careers-apply",
+        element: <CareersApply/>,
       },
     ],
   },

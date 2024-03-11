@@ -21,8 +21,10 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-4xl mr-3">৳</span>
-                  <h2 className="text-5xl xl:text-6xl font-bold">25000</h2>
+                  <span className="text-2xl md:text-4xl mr-3">৳</span>
+                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                    25000
+                  </h2>
                 </div>
                 <div>
                   <h4 className="lg:text-xl xl:text-2xl font-bold">Basic</h4>
@@ -81,7 +83,7 @@ const PackagePrice2 = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-3 ml-20 md:ml-8 lg:ml-0 ">
+            <div className="mt-3  md:ml-8 lg:ml-0 ">
               <Link to="/contact">
                 {" "}
                 <CommonButton text="Contact Us" />
@@ -95,8 +97,10 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-4xl mr-3">৳</span>
-                  <h2 className="text-5xl xl:text-6xl font-bold">45000</h2>
+                  <span className="text-2xl md:text-4xl mr-3">৳</span>
+                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                    45000
+                  </h2>
                 </div>
                 <div>
                   <h4 className="lg:text-xl xl:text-2xl font-bold">Advance</h4>
@@ -169,12 +173,12 @@ const PackagePrice2 = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-3 ml-20 md:ml-8 lg:ml-0 ">
-            <Link to="/contact">
-              {" "}
-              <CommonButton text="Contact Us" />
-            </Link>
-          </div>
+            <div className="mt-3 md:ml-8 lg:ml-0 ">
+              <Link to="/contact">
+                {" "}
+                <CommonButton text="Contact Us" />
+              </Link>
+            </div>
           </div>
 
           <div className="wordPressPackageWrap">
@@ -183,8 +187,10 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-4xl mr-3">৳</span>
-                  <h2 className="text-5xl xl:text-6xl font-bold">45000</h2>
+                  <span className="text-2xl md:text-4xl mr-3">৳</span>
+                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                    45000
+                  </h2>
                 </div>
                 <div>
                   <h4 className="lg:text-xl xl:text-2xl font-bold">Premium</h4>
@@ -264,23 +270,25 @@ const PackagePrice2 = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-3 ml-20 md:ml-8 lg:ml-0 ">
-            <Link to="/contact">
-              {" "}
-              <CommonButton text="Contact Us" />
-            </Link>
-          </div>
+            <div className="mt-3 md:ml-8 lg:ml-0 ">
+              <Link to="/contact">
+                {" "}
+                <CommonButton text="Contact Us" />
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="grid grid-cols-1    lg:grid-cols-3 xl:grid-cols-3 mt-16 gap-10 place-content-center  ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 mt-16 gap-10 place-content-center  ">
           <div className="wordPressPackageWrap">
             <div className="wordPressPackage">
               <FaWordpressSimple size={100} />
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-4xl mr-3">৳</span>
-                  <h2 className="text-5xl xl:text-6xl font-bold">25000</h2>
+                  <span className="text-2xl md:text-4xl mr-3">৳</span>
+                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                    60000
+                  </h2>
                 </div>
                 <div>
                   <h4 className="lg:text-xl xl:text-2xl font-bold">Basic</h4>
@@ -339,12 +347,12 @@ const PackagePrice2 = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-3 ml-20 md:ml-8 lg:ml-0 ">
-            <Link to="/contact">
-              {" "}
-              <CommonButton text="Contact Us" />
-            </Link>
-          </div>
+            <div className="mt-3 md:ml-8 lg:ml-0 ">
+              <Link to="/contact">
+                {" "}
+                <CommonButton text="Contact Us" />
+              </Link>
+            </div>
           </div>
 
           <div className="wordPressPackageWrap">
@@ -353,8 +361,10 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-4xl mr-3">৳</span>
-                  <h2 className="text-5xl xl:text-6xl font-bold">45000</h2>
+                  <span className="text-2xl md:text-4xl mr-3">৳</span>
+                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                    45000
+                  </h2>
                 </div>
                 <div>
                   <h4 className="lg:text-xl xl:text-2xl font-bold">Advance</h4>
@@ -427,12 +437,12 @@ const PackagePrice2 = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-3 ml-20 md:ml-8 lg:ml-0 ">
-            <Link to="/contact">
-              {" "}
-              <CommonButton text="Contact Us" />
-            </Link>
-          </div>
+            <div className="mt-3 md:ml-8 lg:ml-0 ">
+              <Link to="/contact">
+                {" "}
+                <CommonButton text="Contact Us" />
+              </Link>
+            </div>
           </div>
 
           <div className="wordPressPackageWrap">
@@ -441,8 +451,10 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-4xl mr-3">৳</span>
-                  <h2 className="text-5xl xl:text-6xl font-bold">45000</h2>
+                  <span className="text-2xl md:text-4xl mr-3">৳</span>
+                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                    45000
+                  </h2>
                 </div>
                 <div>
                   <h4 className="lg:text-xl xl:text-2xl font-bold">Premium</h4>
@@ -522,7 +534,7 @@ const PackagePrice2 = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-3 ml-20 md:ml-8 lg:ml-0 ">
+            <div className="mt-3 md:ml-8 lg:ml-0 ">
               <Link to="/contact">
                 {" "}
                 <CommonButton text="Contact Us" />

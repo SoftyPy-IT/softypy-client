@@ -1,0 +1,57 @@
+.careerContainerWraps{
+    width:100%;
+    height:350px;
+    background-image: url(../../../public/assets/career.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.careerText{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    color:#fff;
+    text-align: center;
+}
+.careerContainerWraps::after{
+    width:100%;
+    height:100%;
+    background:black;
+    content: "";
+    position: absolute;
+    opacity: 0.8;
+}
+.jobBtn{
+transition:all .5s ease-in-out;
+}
+.jobBtn:hover{
+    background:#6D146C;
+    color:#fff;
+}
+.experienceList li {
+    list-style-type: disc;
+}
+.applyInput{
+    width:400px;
+}
+
+@media only screen and (max-width:768px){
+    .applyInput{
+        width:350px
+    }
+}
+@media only screen and (max-width:500px){
+    .applyInput{
+        width:300px;
+    }
+    .careerContainerWraps{
+        height:250px;
+    }
+}
+@media only screen and (max-width:350px){
+    .applyInput{
+        width:270px;
+    }
+}

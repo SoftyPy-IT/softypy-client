@@ -12,7 +12,6 @@
 .sticky {
   width: 1200px;
   margin: 0 auto;
-  /* background: linear-gradient(to right, #541283fb, #F81600); */
   background-color: #680c70;
   width: 100%;
   color: white;
@@ -40,21 +39,7 @@
   color: white !important;
 }
 
-/* .navbar-list li::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  background-color: #f76300;
-  left: 0;
-  bottom: 0;
-  transition: all 0.5s ease-in-out;
-} */
 
-/* .navbar-list li:hover::after {
-  width: 90%;
-  border-bottom: 1px solid white;
-} */
 .bar {
   display: none;
 }
@@ -226,7 +211,7 @@
     width: 250px;
     height: 100vh;
     background: white;
-    color: #f76300;
+    color: white;
     top: -19px;
     left: -350px;
     padding-top: 50px;
@@ -234,8 +219,8 @@
     z-index: 999;
     padding-left: 20px;
     transition: all 0.5s cubic-bezier(0.46, 0.38, 0.52, 0.46);
-    box-shadow: #f76300 0px 5px 15px;
     z-index: 99999999999;
+    background:black;
   }
   .mobileMenuActive {
     left: 0px !important;
@@ -311,9 +296,10 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+  .security {
+   display: none;
+  }
 }
 @media only screen and (max-width: 400px) {
-  .security {
-    left: -40%;
-  }
+ 
 }

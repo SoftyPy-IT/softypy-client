@@ -9,6 +9,7 @@ import CountDown from "./CountDown/CountDown";
 import HeroSection from "../../components/Banner/HeroSection/HeroSection";
 import Subscribe from "../../components/Subscribe/Subscribe";
 
+
 const Home = () => {
   return (
     <div className="home">
@@ -23,8 +24,8 @@ const Home = () => {
       <Review />
       <Subscribe />
     </div>
+
   );
-  
 };
 
 export default Home;

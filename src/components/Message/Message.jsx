@@ -5,7 +5,9 @@ import "./message.css";
 export default function Message({ messages }) {
   const senderId = Cookies.get("temporaryId");
   return (
+ 
     <div>
+ 
       {messages.length > 0 ? (
         <>
           {messages.map((message) => {
@@ -27,6 +29,7 @@ export default function Message({ messages }) {
                   </p>
                 </div>
               </div>
+ 
             );
           })}
         </>

@@ -138,3 +138,9 @@ top:-50px;
         height:480px;
     }
 }
+@media only screen and (max-width:350px){
+ 
+    .countdown {
+        width: 130px;
+    }
+}

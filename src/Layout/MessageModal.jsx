@@ -18,7 +18,7 @@ const MessageModal = () => {
   const [reload, setReload] = useState(false);
   const messageContainerRef = useRef(null);
 
-  const receiverId = "65ec7035623bd1302a34169a"
+  const receiverId = "65edb8661cddda554c7cf90b"
 
 
   useEffect(() => {

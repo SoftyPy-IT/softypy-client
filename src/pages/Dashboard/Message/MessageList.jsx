@@ -110,8 +110,13 @@ const MessageList = () => {
               <tr key={review._id}>
                 <td>{i + 1}</td>
                 <td>{review._id} </td>
+
+                <td>{review?.message?.text}</td>
+                <td>All message here </td>
+
                 <td>{review.text}</td>
                 <td onClick={()=>handleOpen(review.senderId)} className=" cursor-pointer">All message here </td>
+
 
                 <td>
                   <div

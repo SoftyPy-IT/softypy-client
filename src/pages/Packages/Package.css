@@ -1,20 +1,26 @@
-
-.wordPressPackage{
-    width:380px;
-    background:white;
-    padding:30px 20px;
-    color:black;
-    border-radius: 5px;
-    margin:0 auto;
+.wordPressPackage {
+  width: 380px;
+  background: white;
+  padding: 30px 20px;
+  color: black;
+  border-radius: 5px;
+  margin: 0 auto;
 }
-@media only screen and (max-width:1024px){
-    .wordPressPackage{
-        width:320px;
-    } 
+@media only screen and (max-width: 1024px) {
+  .wordPressPackage {
+    width: 320px;
+  }
 }
 
-@media only screen and (max-width:768px){
-    .wordPressPackage{
-        width:90%;
-    } 
+@media only screen and (max-width: 768px) {
+  .wordPressPackage {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .bannerBtn {
+    width: 165px;
+    margin: 0 auto;
+  }
 }

@@ -8,7 +8,7 @@
     align-items: center;
 
   }
-  .signupInput {
+  .signupInput, .businessBtn {
     width: 310px !important;
   }
   
@@ -33,9 +33,12 @@
    
   }
   
-  @media only screen and (max-width: 400px) {
-    .signupInput {
-      width: 300px !important;
+  @media only screen and (max-width: 350px) {
+
+    .signupInput, .businessBtn{
+      width: 290px !important;
+      margin-right: 0px !important;
     }
+    
   }
   

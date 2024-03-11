@@ -5,7 +5,6 @@ import NavBar from "../Shared/NavBar/NavBar";
 import "./Website.css";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 const Website = () => {
-
   return (
     <div className="pb-10 bg-[#E5E5E5]">
       <div className="bg-[#680C70] text-white">
@@ -13,7 +12,10 @@ const Website = () => {
       </div>
 
       <div className="w-full bg-[#00578A] h-[250px] ">
-      <h3 className="text-center font-bold text-white text-5xl pt-10"> "Webverse: Gateway to Digital World" </h3>
+        <h3 className="text-center font-bold text-white text-5xl pt-10">
+          {" "}
+          "Webverse: Gateway to Digital World"{" "}
+        </h3>
       </div>
       <div className="-mt-[80px] z-[99999]">
         <Container>
@@ -33,19 +35,22 @@ const Website = () => {
               </div>
             </div>
             <div className="servicesCard">
-            <div>
-              <HiOutlineShoppingCart
-                className="text-center mx-auto"
-                size={70}
-              />
-              <h3 className="text-xl font-semibold "> News Portal Website </h3>
-              <p>
-                {" "}
-                E-commerce websites provide global accessibility, convenience,
-                and data insights
-              </p>
+              <div>
+                <HiOutlineShoppingCart
+                  className="text-center mx-auto"
+                  size={70}
+                />
+                <h3 className="text-xl font-semibold ">
+                  {" "}
+                  News Portal Website{" "}
+                </h3>
+                <p>
+                  {" "}
+                  E-commerce websites provide global accessibility, convenience,
+                  and data insights
+                </p>
+              </div>
             </div>
-          </div>
             <div className="servicesCard">
               <div>
                 <HiOutlineShoppingCart
@@ -213,7 +218,9 @@ const Website = () => {
                   className="text-center mx-auto"
                   size={70}
                 />
-                <h3 className="text-xl font-semibold ">Social Media Website </h3>
+                <h3 className="text-xl font-semibold ">
+                  Social Media Website{" "}
+                </h3>
                 <p>
                   {" "}
                   E-commerce websites provide global accessibility, convenience,
