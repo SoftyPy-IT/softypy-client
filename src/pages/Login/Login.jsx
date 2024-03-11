@@ -26,7 +26,7 @@ const Login = () => {
     const user = verifyToken(res.token);
 
     console.log(user);
-    Cookies.set("softy_user_id", user.email._id)
+    Cookies.set("softy_user_id", user.email._id, { expires: 7 });
     dispatch(setUser({ email: res.email, token: res.token }));
   };
   if (isSuccess) {

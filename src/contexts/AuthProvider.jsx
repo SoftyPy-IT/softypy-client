@@ -13,6 +13,7 @@ import {
     updateProfile,
 } from 'firebase/auth'
 import app from '../firebase/firebase.config'
+import Cookies from 'js-cookie'
 
 
 export const AuthContext = createContext()
@@ -54,6 +55,7 @@ const AuthProvider = ({ children }) => {
     // 5. Logout
     const logout = () => {
         setLoading(true)
+        Cookies.remove("softy_user_id")
         localStorage.removeItem('accessToken')
         return signOut(auth)
     }

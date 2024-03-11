@@ -2,8 +2,6 @@
 import { FaLink, FaUserTie } from "react-icons/fa";
 import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
-import Message from "../components/Message/Message";
-import ChatOnline from "../components/ChatOnline/ChatOnline";
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
@@ -14,25 +12,16 @@ import { io } from "socket.io-client";
 const socket = io("ws://localhost:5000");
 
 const DashboardMessageModal = ({ senderId }) => {
-  const [newMessage, setNewMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [reload, setReload] = useState(false);
   const messageContainerRef = useRef(null);
-  const userTempId = Cookies.get("temporaryId");
   const loggedinUser = Cookies.get("softy_user_id");
-
-  // useEffect(() => {
-  //   fetch("http://localhost:5000/register")
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
 
   useEffect(() => {
     socket.on("connect", () => {
       socket.emit("set-user", loggedinUser);
     });
     const receivedMessageHandler = (message) => {
-      console.log(message);
       setMessages((prevMessages) => [...prevMessages, message]);
     };
     socket.on("received-message", receivedMessageHandler);
@@ -40,19 +29,6 @@ const DashboardMessageModal = ({ senderId }) => {
       socket.off("received-message", receivedMessageHandler);
     };
   }, [loggedinUser, setMessages]);
- 
-
-  // useEffect(() => {
-  //   const getMessages = async () => {
-  //     try {
-  //       const res = await axios.get("http://localhost:5000/messages/");
-  //       setMessages(res.data);
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   getMessages();
-  // }, []);
 
   const {
     register,
@@ -89,7 +65,6 @@ const DashboardMessageModal = ({ senderId }) => {
     getMessage();
   }, [loggedinUser, reload, senderId]);
 
-  // console.log(messages);
   useEffect(() => {
     if (messageContainerRef.current) {
       messageContainerRef.current.scrollTop =
@@ -107,7 +82,8 @@ const DashboardMessageModal = ({ senderId }) => {
               <FaUserTie size={20} />
             </div>
             <span className="ml-2 text-sm ">
-              <ChatOnline />
+              {/* <ChatOnline /> */}
+              {senderId}
             </span>
           </div>
         </div>
@@ -118,6 +94,7 @@ const DashboardMessageModal = ({ senderId }) => {
           <DashboardMessage
             own={messages.some((message) => message.senderId === loggedinUser)}
             messages={messages}
+            loggedinUser={loggedinUser}
           />
         </div>
 

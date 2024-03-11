@@ -23,6 +23,13 @@
       color: white;
       max-width: 300px;
   }
+  .messageTextSender{
+      padding: 10px;
+      border-radius: 20px;
+      background-color: rgb(226, 225, 225);
+      color: black;
+      max-width: 300px;
+  }
   
   .messageBottom{
       font-size: 12px;

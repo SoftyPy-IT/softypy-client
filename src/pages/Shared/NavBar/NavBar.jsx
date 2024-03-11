@@ -9,6 +9,7 @@ import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
 import { FaCode, FaReact, FaShopify, FaWordpressSimple } from "react-icons/fa";
 import { FaMobileScreen } from "react-icons/fa6";
 import { logout } from "../../../redux/features/auth/authSlice";
+import Cookies from "js-cookie";
 
 const NavBar = () => {
   const dispatch = useDispatch();
@@ -29,6 +30,7 @@ const NavBar = () => {
   console.log(email);
 
   const handleLogout = () => {
+    Cookies.remove("softy_user_id")
     dispatch(logout());
   };
 
