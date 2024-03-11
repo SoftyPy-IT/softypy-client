@@ -5,7 +5,7 @@ import CommonButton from "../Shared/CommonButton/CommonButton";
 const Ready = () => {
   return (
     <div className="sectionMargin">
-      <div className="w-[600px] mx-auto text-center ">
+      <div className="max-w-[600px] mx-auto text-center ">
       <span>Let's Get Started </span>
         <h2 className="text-center text-4xl font-semibold">
           Are you ready for a better, more <br />

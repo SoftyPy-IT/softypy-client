@@ -4,15 +4,13 @@ import Technologies from "../Home/ChoosUs/Technologies";
 import Review from "../../components/Review/Review";
 import Brand from "../../components/Brand/Brand";
 import WorkPortfolio from "../../components/WorkPortfolio/WorkPortfolio";
-import PackagePrice from "../../components/MoreProducts/PackagePrice";
 import Container from "../../ui/Container";
 import { useEffect, useRef } from "react";
-import { HiCheck } from "react-icons/hi";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
-import MorePackages from "../../components/MoreProducts/MorePackages";
+import { HiCheck } from "react-icons/hi"; 
 import HowSoftyPyWork from "./HowSoftyPyWork";
 import Ready from "./Ready";
 import PackagePrice2 from "./PackagePrice2";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 const Packages = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -92,7 +90,7 @@ const Packages = () => {
                 <button className=" priceBtn requestBtn">Request Now </button>
               </div>
             </div>
-            <div className="mt-10 lg:mt-0 w-full lg:w-[50%]">
+            <div className="mt-10 lg:mt-0 mx-auto packageLottieWrap lg:max-w-[50%]">
               <lottie-player
                 id="firstLottie"
                 ref={ref}
@@ -100,18 +98,18 @@ const Packages = () => {
                 loop
                 mode="normal"
                 src="/package.json"
-                className="animation"
+        
               ></lottie-player>
             </div>
           </div>
         </section>
       </Container>
-      
+
       <PackagePrice2 />
       <HowSoftyPyWork />
       <Container>
         <div className="flex justify-between flex-col lg:flex-row ">
-          <h2 className="text-3xl md:text-[60px] leading-[60px] w-[100%] lg:w-[50%] font-semibold">
+          <h2 className="text-3xl md:text-[60px] leading-[60px] max-w-[100%] lg:w-[50%] font-semibold">
             Why Choose Our Web Design Packages ?{" "}
           </h2>
           <div className="mt-5 lg:mt-44 lg:w-[50%]">

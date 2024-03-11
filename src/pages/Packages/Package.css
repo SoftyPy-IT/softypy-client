@@ -17,4 +17,11 @@
     .wordPressPackage{
         width:90%;
     } 
+ 
+}
+
+@media only screen and (max-width:500px){
+    .packageLottieWrap{
+        width:350px !important;
+    }
 }

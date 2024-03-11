@@ -68,7 +68,7 @@ export default function Review() {
   }
 
   return (
-    <div className="">
+    <div className="sectionMargin">
       <Container>
         <div className="mb-20">
           <SectionTitle title="What Our Client Say "></SectionTitle>
