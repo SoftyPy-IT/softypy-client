@@ -8,67 +8,35 @@ import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { io } from "socket.io-client";
+import Cookies from "js-cookie";
 
 
 const socket = io("http://localhost:5000");
 
 const MessageModal = () => {
-  const [conversations, setConversations] = useState([]);
-  const [newMessage, setNewMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [reload, setReload] = useState(false);
   const messageContainerRef = useRef(null);
-  const userTempId = sessionStorage.getItem("temporaryId");
 
-
+  const receiverId = "65edb8661cddda554c7cf90b"
 
 
   useEffect(() => {
     socket.on("connect", () => {
-      // Connection is established; now emit "set-email"
-      socket.emit("set-user", "123456");
+      
+      socket.emit("set-user", receiverId);
     });
     const receivedMessageHandler = (message) => {
       setMessages((prevMessages) => [...prevMessages, message]);
     };
     socket.on("received-message", receivedMessageHandler);
-    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       socket.off("received-message", receivedMessageHandler);
     };
   }, [setMessages]);
+ 
 
-
-
-  useEffect(() => {
-    const getConversations = async () => {
-      try {
-        const res = await axios.get(
-          `http://localhost:5000/conversation/${userTempId}`
-        );
-        setConversations(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    getConversations();
-  }, [userTempId]);
-
-  console.log(conversations);
-
-  // useEffect(() => {
-  //   const getMessages = async () => {
-  //     try {
-  //       const res = await axios.get("http://localhost:5000/messages/");
-  //       setMessages(res.data);
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   getMessages();
-  // }, []);
-
-  const id = sessionStorage.getItem("temporaryId");
+  const senderId = Cookies.get("temporaryId");
 
   const {
     register,
@@ -79,10 +47,11 @@ const MessageModal = () => {
   const onSubmit = async (data) => {
     const values = {
       text: data.message,
-      senderId: id,
-      receiverId: "123456",
+      senderId: senderId,
+      receiverId: receiverId,
     };
 
+    socket.emit("send-message", values)
     const response = await axios.post("http://localhost:5000/message", values);
     if (response.status === 200) {
       setReload(!reload);
@@ -93,17 +62,18 @@ const MessageModal = () => {
   useEffect(() => {
     const getMessage = async () => {
       const response = await axios.get(
-        `http://localhost:5000/message?receiverId=${"123456"}&senderId=${id}`
+        `http://localhost:5000/message?receiverId=${receiverId}&senderId=${senderId}`
       );
 
       if (response.status === 200) {
         setMessages(response.data);
+        socket.emit("set-user", senderId);
       }
     };
     getMessage();
-  }, [id, reload]);
+  }, [reload, senderId]);
 
-  console.log(messages);
+   
   useEffect(() => {
     if (messageContainerRef.current) {
       messageContainerRef.current.scrollTop =
@@ -130,7 +100,7 @@ const MessageModal = () => {
           className="h-[250px] overflow-y-scroll pl-5 pr-3 pb-5"
         >
           <Message
-            own={messages.some((message) => message.senderId === id)}
+            own={messages.some((message) => message.senderId === senderId)}
             messages={messages}
           />
         </div>

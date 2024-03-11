@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { HiChevronDoubleUp } from "react-icons/hi";
 import MessageModal from "./MessageModal";
 import { IoIosClose } from "react-icons/io";
-import { useSelector } from "react-redux";
+import Cookies from "js-cookie";
 
 const Main = () => {
   useEffect(() => {
@@ -38,24 +38,22 @@ const Main = () => {
     }
 
     // Check if sessionStorage already has a temporary ID
-    let temporaryId = sessionStorage.getItem("temporaryId");
+    let temporaryId = Cookies.get("temporaryId");
 
     // If not, generate a new one and store it in sessionStorage
     if (!temporaryId) {
       temporaryId = generateTemporaryId();
-      sessionStorage.setItem("temporaryId", temporaryId);
+      Cookies.set("temporaryId", temporaryId);
     }
   }, []);
 
-  const { darkMode } = useSelector((state) => state.theme);
-  console.log(darkMode);
-
   return (
-    <div className={` ${darkMode ? "bg-black text-white" : ""}`}>
+    <div>
       <Outlet />
+
       <Footer />
 
-      <div className="message rounded-full p-2 fixed bg-[#680C70] text-white bottom-10 right-3 cursor-pointer transition-all duration-75 ">
+      <div className="message rounded-full p-2 fixed bg-[#680C70] text-white bottom-14 right-1 cursor-pointer transition-all duration-75 ">
         {open ? (
           <IoIosClose
             onClick={handleClose}

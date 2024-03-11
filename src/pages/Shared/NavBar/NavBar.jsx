@@ -142,7 +142,7 @@ const NavBar = () => {
             {" "}
             <li className="navbar-item">Portfolio</li>
           </Link>
-          <Link to="">
+          <Link to="/careers">
             {" "}
             <li className="navbar-item">Careers</li>
           </Link>

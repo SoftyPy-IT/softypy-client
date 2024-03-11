@@ -7,48 +7,40 @@ import ChatOnline from "../components/ChatOnline/ChatOnline";
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import Cookies from "js-cookie";
+import DashboardMessage from "../components/Message/DashboardMessage";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("ws://localhost:5000");
 
-const DashboardMessageModal = () => {
-  const [conversations, setConversations] = useState([]);
+const DashboardMessageModal = ({ senderId }) => {
   const [newMessage, setNewMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [reload, setReload] = useState(false);
   const messageContainerRef = useRef(null);
-  const userTempId = sessionStorage.getItem("temporaryId");
+  const userTempId = Cookies.get("temporaryId");
+  const loggedinUser = Cookies.get("softy_user_id");
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/register")
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data));
+  // }, []);
 
   useEffect(() => {
     socket.on("connect", () => {
-      // Connection is established; now emit "set-email"
-      socket.emit("set-user", "123456");
+      socket.emit("set-user", loggedinUser);
     });
     const receivedMessageHandler = (message) => {
+      console.log(message);
       setMessages((prevMessages) => [...prevMessages, message]);
     };
     socket.on("received-message", receivedMessageHandler);
-    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       socket.off("received-message", receivedMessageHandler);
     };
-  }, [setMessages]);
-
-  useEffect(() => {
-    const getConversations = async () => {
-      try {
-        const res = await axios.get(
-          `http://localhost:5000/conversation/${userTempId}`
-        );
-        setConversations(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    getConversations();
-  }, [userTempId]);
-
-  console.log(conversations);
+  }, [loggedinUser, setMessages]);
+ 
 
   // useEffect(() => {
   //   const getMessages = async () => {
@@ -62,8 +54,6 @@ const DashboardMessageModal = () => {
   //   getMessages();
   // }, []);
 
-  const id = sessionStorage.getItem("temporaryId");
-
   const {
     register,
     handleSubmit,
@@ -73,10 +63,11 @@ const DashboardMessageModal = () => {
   const onSubmit = async (data) => {
     const values = {
       text: data.message,
-      senderId: id,
-      receiverId: "123456",
+      senderId: loggedinUser,
+      receiverId: senderId,
     };
 
+    socket.emit("send-message", values);
     const response = await axios.post("http://localhost:5000/message", values);
     if (response.status === 200) {
       setReload(!reload);
@@ -87,17 +78,18 @@ const DashboardMessageModal = () => {
   useEffect(() => {
     const getMessage = async () => {
       const response = await axios.get(
-        `http://localhost:5000/message?receiverId=${"123456"}&senderId=${id}`
+        `http://localhost:5000/message?receiverId=${senderId}&senderId=${loggedinUser}`
       );
-
       if (response.status === 200) {
         setMessages(response.data);
+        // Emit socket event after setting messages
+        socket.emit("set-user", loggedinUser);
       }
     };
     getMessage();
-  }, [id, reload]);
+  }, [loggedinUser, reload, senderId]);
 
-  console.log(messages);
+  // console.log(messages);
   useEffect(() => {
     if (messageContainerRef.current) {
       messageContainerRef.current.scrollTop =
@@ -123,8 +115,8 @@ const DashboardMessageModal = () => {
           ref={messageContainerRef}
           className="h-[250px] overflow-y-scroll pl-5 pr-3 pb-5"
         >
-          <Message
-            own={messages.some((message) => message.senderId === id)}
+          <DashboardMessage
+            own={messages.some((message) => message.senderId === loggedinUser)}
             messages={messages}
           />
         </div>

@@ -7,6 +7,7 @@ import { setUser } from "../../redux/features/auth/authSlice";
 import { verifyToken } from "../../utils/verifyToken";
 import { useLoginMutation } from "../../redux/features/auth/authApi";
 import NavBar from "../Shared/NavBar/NavBar";
+import Cookies from "js-cookie";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -21,12 +22,11 @@ const Login = () => {
       email,
       password,
     };
-console.log(userInfo)
     const res = await login(userInfo).unwrap();
-    console.log(res.token);
     const user = verifyToken(res.token);
 
     console.log(user);
+    Cookies.set("softy_user_id", user.email._id)
     dispatch(setUser({ email: res.email, token: res.token }));
   };
   if (isSuccess) {
