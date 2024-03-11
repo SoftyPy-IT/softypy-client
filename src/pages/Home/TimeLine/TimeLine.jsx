@@ -31,8 +31,8 @@ const TimeLine = () => {
       },
     },
     hover: {
-      scale: 2,
-      z: 9999,
+      // scale: 2,
+      // z: 9999,
       transition: {
         ease: easeInOut,
       },
@@ -40,7 +40,7 @@ const TimeLine = () => {
   };
 
   return (
-    <div className="sectionMargin mb-[200px] block">
+    <div className="sectionMargin mb-[200px] block workFlowWrapHide">
       <div className="mb-14">
         <SectionTitle
           title="How We Work"
@@ -50,7 +50,7 @@ const TimeLine = () => {
       </div>
 
       <Container>
-        <div className="relative">
+        <div className="relative ">
           <div className="borderRound2">
             <h3 className="grid place-items-center mt-12 circleMove">
               <FaRecycle size={90} />

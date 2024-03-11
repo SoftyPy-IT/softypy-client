@@ -35,7 +35,7 @@
   rotate: 0deg
  }
  0%{
-  rotate:380deg
+  rotate:-380deg
  }
 }
 .circleMove{
@@ -266,6 +266,9 @@
   .home {
     width: 100%;
     overflow: hidden;
+  }
+  .workFlowWrapHide{
+    display: none;
   }
 }
 

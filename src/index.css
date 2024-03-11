@@ -142,6 +142,13 @@ input:focus, textarea:focus, select:focus{
 .countdown > * {
     overflow-y: visible !important;
 }
+.countdown > * {
+    overflow-y: visible !important;
+}
+.countdown > *:before {
+    position: relative;
+    content: "" !important;
+}
 
 .scroll-to-top {
     right: 40px;

@@ -15,7 +15,6 @@ const Home = () => {
     <div className="home">
       <HeroSection />
       <WhoWeAre />
-
       <Services />
       <SwiperTimeLine />
       <TimeLine />
@@ -25,6 +24,7 @@ const Home = () => {
       <Review />
       <Subscribe />
     </div>
+
   );
 };
 

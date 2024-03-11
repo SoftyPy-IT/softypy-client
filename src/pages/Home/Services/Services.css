@@ -230,3 +230,10 @@ object-fit: cover;
     }
     
 }
+@media only screen and (max-width:300px){
+    .cards {
+        width: 120px;
+        height: 130px;
+    }
+    
+}

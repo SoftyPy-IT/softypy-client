@@ -4,6 +4,7 @@ import "./message.css";
 export default function Message({ messages, own }) {
   return (
     <div className={own ? "message own" : "message"}>
+    
       {messages.length > 0 ? (
         <>
           {messages.map((message) => (

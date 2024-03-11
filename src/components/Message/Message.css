@@ -32,14 +32,12 @@
   .message.own{
       align-items: flex-end;
   }
-  
+
   .message.own .messageText{
       background-color: rgb(245, 241, 241);
-      color: black;
+      color: black ;
+      background:green !important;
   }
-  .own{
-    background:red !important
-  }
-  .message{
-
-  }
+.messageText{
+    background:red !important;
+}
