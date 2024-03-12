@@ -45,7 +45,7 @@ const Packages = () => {
               <h3 className="text-xl font-semibold">
                 Website Development Packages
               </h3>
-              <h2 className="text-3xl md:text-5xl font-semibold my-3 capitalize ">
+              <h2 className="text-2xl md:text-5xl font-semibold my-3 capitalize ">
                 Web Designs Starts from at the lowest price ONLY
               </h2>
               <p>

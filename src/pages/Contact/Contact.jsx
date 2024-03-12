@@ -193,7 +193,7 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-            <div className="getInTouchRight">
+            <div className="getInTouchRight mt-5 md:mt-0 ">
               <img src={contact} alt="" />
               <div className="contactInfo">
                 <div className="flex items-center">

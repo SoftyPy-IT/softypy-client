@@ -396,6 +396,9 @@ img {
     width: 617px;
     margin: 30px auto;
   }
+  .aboutLeftContainer {
+    left: 500px !important;
+}
 }
 @media only screen and (max-width: 768px) {
   .team-anim--sub {
@@ -452,12 +455,15 @@ img {
     width: 191px !important;
   }
   .aboutLeftContainer {
-    left: 46px;
+    left: 114px;
   }
   .aboutRightContainer {
     left: 43px !important;
-    width: 90%;
+    width: 90% !important;
   }
+  .aboutLeftContainer {
+    left: 0px !important;
+}
 }
 
 @media only screen and (max-width: 500px) {
@@ -496,20 +502,34 @@ img {
     padding-left: 37px;
   }
 
-  .aboutContainers .imgWrap {
+  /* .aboutContainers .imgWrap {
     width: 300px !important;
     height: 300px !important;
     border-radius: 100% !important;
     overflow: hidden;
-  }
+  } */
 
   .aboutContent {
     left: 47%;
     top: 37%;
   }
-  .imgWrap {
-    width: 100%;
+
+
+.aboutContainer {
+  overflow: visible;
+
+
 }
+
+.imgWrap {
+  width: 100% !important;
+  height: 360px !important;
+
+  border-radius: 100% !important;
+}
+
+
+
 }
 
 @keyframes team {
@@ -525,4 +545,33 @@ img {
   100% {
     transform: scale(1);
   }
+}
+
+
+@media only screen and (max-width:375px){
+  .imgWrap {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 100% !important;
+    margin-top: 28px !important;
+}
+.aboutContainer {
+  overflow: visible !important;
+}
+
+
+}
+
+@media only screen and (max-width:300px){
+
+.imgWrap {
+  width: 100% !important;
+  height: 234px !important;
+  border-radius: 100% !important;
+  margin-top:130px !important;
+}
+.imgWrap:nth-child(2) {
+  margin-top:0px !important;
+}
+
 }

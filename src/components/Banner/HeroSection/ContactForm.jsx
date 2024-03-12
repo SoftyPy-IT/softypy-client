@@ -42,12 +42,12 @@ const ContactForm = () => {
     <>
       <div className=" flex items-center py-8 px-6">
         <div className="w-full">
-          <h2 className=" text-[#F81600] font-bold text-4xl uppercase mb-10">
+          <h2 className=" text-[#F81600] font-bold text-2xl md:text-4xl uppercase mb-10">
             Get In Touch
           </h2>
           <div>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex items-center justify-between ">
+              <div className=" block md:flex items-center justify-between ">
                 <div className="formControl">
                   <TextField
                     {...register("name", { required: true })}
@@ -67,7 +67,7 @@ const ContactForm = () => {
                   />
                 </div>
               </div>
-              <div className="flex items-center justify-between ">
+              <div className="block md:flex  items-center justify-between ">
                 <div className="formControl">
                   <TextField
                     {...register("name", { required: true })}

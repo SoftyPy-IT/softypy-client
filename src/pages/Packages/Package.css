@@ -23,4 +23,7 @@
     width: 165px;
     margin: 0 auto;
   }
+  .cardLine{
+    display: none;
+  }
 }

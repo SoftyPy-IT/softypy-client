@@ -61,7 +61,7 @@ const HowSoftyPyWork = () => {
         </div>
         <div className="ourServicesWrap">
           <div className="ourServiceLeftSide">
-            <h3 className="text-3xl mb-3 text-[#F81600] font-bold ">
+            <h3 className="text-xl md:text-3xl mb-3 text-[#F81600] font-bold ">
               "Unlocking Our Workflow: The Mechanics of How We Operate"
             </h3>
             <p>
@@ -90,14 +90,14 @@ const HowSoftyPyWork = () => {
                         <div className="">
                           {i === 1 ? (
                             <p>
-                              <HiLightBulb size={70} />{" "}
+                              <HiLightBulb size={50} />{" "}
                             </p>
                           ) : (
                             ""
                           )}{" "}
                           {i === 0 ? (
                             <p>
-                              <HiDesktopComputer size={70} />{" "}
+                              <HiDesktopComputer size={50} />{" "}
                             </p>
                           ) : (
                             ""
@@ -111,21 +111,21 @@ const HowSoftyPyWork = () => {
                           )}
                           {i === 3 ? (
                             <p>
-                              <HiOutlineUserGroup size={70} />{" "}
+                              <HiOutlineUserGroup size={50} />{" "}
                             </p>
                           ) : (
                             ""
                           )}
                           {i === 4 ? (
                             <p>
-                              <HiCode size={70} />{" "}
+                              <HiCode size={50} />{" "}
                             </p>
                           ) : (
                             ""
                           )}
                           {i === 5 ? (
                             <p>
-                              <HiOutlineQrcode size={70} />{" "}
+                              <HiOutlineQrcode size={50} />{" "}
                             </p>
                           ) : (
                             ""
@@ -139,9 +139,9 @@ const HowSoftyPyWork = () => {
                       } ${i === 4 ? " cards-back2:" : ""}
                       `}>
                         <div className="cards-back-content md:px-3 text-center">
-                          <b className="block"> {card.title}</b>
+                          <b className="block text-[11px] md:text-sm "> {card.title}</b>
                           <small className="my-1 md:my-3">
-                            {card.subTitle.slice(0, 80)}...
+                            {card.subTitle.slice(0, 20)}...
                           </small>
                         </div>
                       </div>
