@@ -13,8 +13,8 @@ import Container from "../../../ui/Container";
 const Footer = () => {
   return (
    <Container>
-   <div className="footerWrap">
-   <hr className="my-8" />
+   <div className="footerWrap sectionMargin">
+
    <div className="contactUs">
      <div>
        <div className="w-56 text-left">

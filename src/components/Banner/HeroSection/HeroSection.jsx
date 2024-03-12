@@ -38,12 +38,12 @@ const HeroSection = () => {
                 <h1 className="welcome-heading text-6xl font-bold text-[#F81600]">
                   Next-gen enterprise
                 </h1>
-                <p className="welcome-paragraph text-4xl md:text-5xl font-semibold mt-3  ">
+                <p className="welcome-paragraph text-5xl font-semibold mt-3  ">
                   software development company
                 </p>
 
                 <div className=" block xl:flex w-full items-center justify-between text-white mt-10 xl:mt-20">
-                  <h3 className="text-4xl md:text-5xl  mb-3 xl:mb-0">
+                  <h3 className="text-5xl mb-3 xl:mb-0">
                     We Think <span className="text-[#F81600]">Future</span>
                     <span
                       className={
@@ -72,7 +72,7 @@ const HeroSection = () => {
                   </h3>
                   <button
                     onClick={handleOpen}
-                    className="bg-[#F81600] w-52 md:w-60 py-3 rounded-sm text"
+                    className="bg-[#F81600] w-60 py-3 rounded-sm text"
                   >
                     {" "}
                     Let's Talk{" "}

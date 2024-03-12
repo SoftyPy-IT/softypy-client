@@ -50,63 +50,69 @@ const NavBar = () => {
               <ul className="space-y-3">
                 <li className="flex items-center mainSubmenu capitalize">
                   Web Development <HiChevronDown size={23} />
-                  <div className="subMenu1 flex items-center justify-between p-8 ">
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaCode size={40} />
-                      </div>
-                      <p>Custom (MERN) </p>
-                      <p>Website Development</p>
-                    </div>
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaWordpressSimple size={40} />
-                      </div>
-                      <p>Wordpress </p>
-                      <p>Development</p>
-                    </div>
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4">
-                        <FaShopify size={40} />
-                      </div>
-                      <p>Shopify </p>
-                      <p>Development</p>
-                    </div>
+                 <Link to='/packages'>
+                 <div className="subMenu1 flex items-center justify-between p-8 ">
+                 <div className=" menuBox  flex items-center justify-center flex-col">
+                   <div className="iconsShapeWrap mb-4 ">
+                     <FaCode size={40} />
+                   </div>
+                   <p>Custom (MERN) </p>
+                   <p>Website Development</p>
+                 </div>
+                 <div className=" menuBox  flex items-center justify-center flex-col">
+                   <div className="iconsShapeWrap mb-4 ">
+                     <FaWordpressSimple size={40} />
+                   </div>
+                   <p>Wordpress </p>
+                   <p>Development</p>
+                 </div>
+                 <div className=" menuBox  flex items-center justify-center flex-col">
+                   <div className="iconsShapeWrap mb-4">
+                     <FaShopify size={40} />
+                   </div>
+                   <p>Shopify </p>
+                   <p>Development</p>
+                 </div>
+                 
 
-                    {/** 
-                    <div className="submenu">
-                      <ul>
-                        <li>Online Travel Agency (OTA) Website. </li>
-                        <li>Corporate Business Website</li>
-                        <li>E-commerce Website </li>
-                        <li>Nonprofit / Donation Websites </li>
-                        <li>Educational Websites </li>
-                        <li>Agency Website </li>
-                        <li>Real Estate Websites </li>
-                        <li>Health and Fitness Websites </li>
-                      </ul>
-                    </div>
+                 {/** 
+                 <div className="submenu">
+                   <ul>
+                     <li>Online Travel Agency (OTA) Website. </li>
+                     <li>Corporate Business Website</li>
+                     <li>E-commerce Website </li>
+                     <li>Nonprofit / Donation Websites </li>
+                     <li>Educational Websites </li>
+                     <li>Agency Website </li>
+                     <li>Real Estate Websites </li>
+                     <li>Health and Fitness Websites </li>
+                   </ul>
+                 </div>
 */}
-                  </div>
+               </div>
+                 </Link>
                 </li>
                 <li className="mainSubmenu2 flex items-center ">
                   Mobile <HiChevronDown size={23} />
-                  <div className="subMenu2 flex items-center justify-between p-8 ">
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaMobileScreen size={40} />
-                      </div>
-                      <p>Flutter </p>
-                    </div>
+                 <Link to='/app-development'>
+                 <div className="subMenu2 flex items-center justify-between p-8 ">
+                 <div className=" menuBox  flex items-center justify-center flex-col">
+                   <div className="iconsShapeWrap mb-4 ">
+                     <FaMobileScreen size={40} />
+                   </div>
+                   <p>Flutter </p>
+                 </div>
 
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaReact size={40} />
-                      </div>
-                      <p>React Native </p>
-                    </div>
-                  </div>
+                 <div className=" menuBox  flex items-center justify-center flex-col">
+                   <div className="iconsShapeWrap mb-4 ">
+                     <FaReact size={40} />
+                   </div>
+                   <p>React Native </p>
+                 </div>
+               </div>
+                 </Link>
                 </li>
+                <li> <Link to='/erp'>ERP Solutions</Link>  </li>
                 <li>Cloud & DevOps </li>
                 <li>UI/UX Design </li>
                 <li>Wordpress Development </li>

@@ -5,6 +5,7 @@ import Container from '../../ui/Container';
 const BoostSection = () => {
     return (
         <div className='boostSectionWrap'>
+        
            <Container>
            <div className="boostSection">
            <div className="boostSectionLeft pt-44  text-white ">

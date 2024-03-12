@@ -6,6 +6,7 @@ import AppCategories from "./AppCategories";
 import AppPortFolio from "./AppPortFolio";
 import Review from "../../components/Review/Review";
 import Brand from "../../components/Brand/Brand";
+import { Link } from "react-router-dom";
 
 const AppDevelopment = () => {
   return (
@@ -24,16 +25,18 @@ const AppDevelopment = () => {
                 Android apps that help businesses take their next big step
                 forward and rise quickly to Google Play’s top charts.
               </p>
-              <button className="bg-[#680C70] text-white w-[200px] h-[45px]">
-                Discuss Us{" "}
-              </button>
+              <Link to="/contact">
+                <button className="bg-[#680C70] text-white w-[200px] h-[45px]">
+                  Discuss Us{" "}
+                </button>
+              </Link>
             </div>
             <img src={app} alt="" />
           </div>
           <AppCategories />
         </Container>
         <AppPortFolio />
-        <Brand/>
+        <Brand />
         <Review />
       </div>
     </div>

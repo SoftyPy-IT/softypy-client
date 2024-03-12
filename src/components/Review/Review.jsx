@@ -82,8 +82,7 @@ export default function Review() {
                     <img src={reviews[0]?.image} alt="" />
                   ) : (
                     <iframe
-                      width="450"
-                      height="250"
+                     className='videoWidth'
                       src={reviews[0]?.videoUrl}
                       title="YouTube video player"
                       frameborder="0"
@@ -100,7 +99,7 @@ export default function Review() {
                     <p className="text-xl">{reviews[0]?.description}</p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#F81600] ml-8">
-                    <button>Read history </button>
+                    <button>See More </button>
                     <FaArrowRight className="historyIcon" />
                   </div>
                 </div>
@@ -113,8 +112,7 @@ export default function Review() {
                     <img src={reviews[1]?.image} alt="" />
                   ) : (
                     <iframe
-                      width="450"
-                      height="250"
+                    className='videoWidth'
                       src={reviews[0]?.videoUrl}
                       title="YouTube video player"
                       frameborder="0"
@@ -148,8 +146,7 @@ export default function Review() {
                     <img src={reviews[2]?.image} alt="" />
                   ) : (
                     <iframe
-                      width="450"
-                      height="250"
+                    className='videoWidth'
                       src={reviews[2]?.videoUrl}
                       title="YouTube video player"
                       frameborder="0"

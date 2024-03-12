@@ -22,6 +22,7 @@ import {
   HiOutlineUserGroup,
 } from "react-icons/hi";
 import { FaVideoSlash } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const AppCategories = () => {
   const [expanded, setExpanded] = useState(false);
@@ -363,9 +364,11 @@ const AppCategories = () => {
           </div>
         </div>
       </div>
-      <button className="bg-[#680C70] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center">
-        <span>Contact Us</span> <HiOutlineArrowNarrowRight className="ml-2" />
-      </button>
+    <Link to='/contact'>
+    <button className="bg-[#680C70] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center">
+    <span>Contact Us</span> <HiOutlineArrowNarrowRight className="ml-2" />
+  </button>
+    </Link>
     </div>
   );
 };

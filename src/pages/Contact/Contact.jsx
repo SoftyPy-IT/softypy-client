@@ -15,14 +15,14 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import Container from "../../ui/Container";
-import { useCrateOrderMutation } from "../../redux/features/orders/ordersApi";
 import { TextField } from "@mui/material";
 import contact from "../../../public/assets/message.png";
 import address from "../../../public/assets/address.png";
 import address2 from "../../../public/assets/address2.png";
 import address3 from "../../../public/assets/address3.png";
+import { useCreateOrderMutation } from "../../redux/features/orders/ordersApi";
 const Contact = () => {
-  const [crateOrder, { isSuccess }] = useCrateOrderMutation();
+  const [createOrder, { isSuccess }] = useCreateOrderMutation();
   const {
     register,
     formState: { errors },
@@ -47,7 +47,7 @@ const Contact = () => {
           timer: 1500,
         });
       }
-      crateOrder(user);
+      createOrder(user);
     } catch (error) {
       console.log(error);
     }
@@ -82,6 +82,7 @@ const Contact = () => {
       img: address3,
     },
   ];
+
 
   return (
     <div>
