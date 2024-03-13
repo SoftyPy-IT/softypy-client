@@ -1,3 +1,4 @@
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import portfolio from "../../../public/assets/app2.webp";
 import portfolio2 from "../../../public/assets/app3.webp";
 import portfolio3 from "../../../public/assets/app4.webp";
@@ -6,27 +7,45 @@ import portfolio5 from "../../../public/assets/app6.webp";
 import portfolio6 from "../../../public/assets/app7.webp";
 import portfolio7 from "../../../public/assets/app8.webp";
 import portfolio8 from "../../../public/assets/app9.webp";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "./AppDevelopment.css";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 const AppPortFolio = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSlidesToShow(1);
+      } else if (window.innerWidth < 1024) {
+        setSlidesToShow(2);
+      } else {
+        setSlidesToShow(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
   };
   return (
     <div className="sectionMargin">
-      <div className=" ml-20 mb-8">
+      <div className="mb-8 ml-20 ">
         <h3 className="text-5xl font-semibold">Latest Project </h3>
       </div>
       <Slider {...settings}>
         <div className="appSliderWraps">
-          <div className="appPortFolioWrap relative ">
+          <div className="relative appPortFolioWrap ">
             <h3 className="text-2xl font-bold absolute text-white z-[99] top-5 left-5 flex items-center ">
               {" "}
               <span> Flight Management App</span>{" "}
@@ -36,7 +55,7 @@ const AppPortFolio = () => {
           </div>
         </div>
         <div className="appSliderWraps">
-          <div className="appPortFolioWrap relative ">
+          <div className="relative appPortFolioWrap ">
             <h3 className="text-2xl font-bold absolute text-white z-[99] top-5 left-5 flex items-center ">
               {" "}
               <span> Live-Streaming </span>{" "}
@@ -46,7 +65,7 @@ const AppPortFolio = () => {
           </div>
         </div>
         <div className="appSliderWraps">
-          <div className="appPortFolioWrap relative ">
+          <div className="relative appPortFolioWrap ">
             <h3 className="text-2xl font-bold absolute text-white z-[99] top-5 left-5 flex items-center ">
               {" "}
               <span> Flight Management App</span>{" "}
@@ -56,7 +75,7 @@ const AppPortFolio = () => {
           </div>
         </div>
         <div className="appSliderWraps">
-          <div className="appPortFolioWrap relative ">
+          <div className="relative appPortFolioWrap ">
             <h3 className="text-2xl font-bold absolute text-white z-[99] top-5 left-5 flex items-center ">
               {" "}
               <span> Flight Management App</span>{" "}
@@ -66,7 +85,7 @@ const AppPortFolio = () => {
           </div>
         </div>
         <div className="appSliderWraps">
-          <div className="appPortFolioWrap relative ">
+          <div className="relative appPortFolioWrap ">
             <h3 className="text-2xl font-bold absolute text-white z-[99] top-5 left-5 flex items-center ">
               {" "}
               <span> Podcast App </span>{" "}
@@ -76,7 +95,7 @@ const AppPortFolio = () => {
           </div>
         </div>
         <div className="appSliderWraps">
-          <div className="appPortFolioWrap relative ">
+          <div className="relative appPortFolioWrap ">
             <h3 className="text-2xl font-bold absolute text-white z-[99] top-5 left-5 flex items-center ">
               {" "}
               <span>Auto Management App</span>{" "}
@@ -86,7 +105,7 @@ const AppPortFolio = () => {
           </div>
         </div>
         <div className="appSliderWraps">
-          <div className="appPortFolioWrap relative ">
+          <div className="relative appPortFolioWrap ">
             <h3 className="text-2xl font-bold absolute text-white z-[99] top-5 left-5 flex items-center ">
               {" "}
               <span> Dollar Shave Club </span>{" "}
@@ -96,7 +115,7 @@ const AppPortFolio = () => {
           </div>
         </div>
         <div className="appSliderWraps">
-          <div className="appPortFolioWrap relative ">
+          <div className="relative appPortFolioWrap ">
             <h3 className="text-2xl font-bold absolute text-white z-[99] top-5 left-5 flex items-center ">
               {" "}
               <span> Education App </span>{" "}

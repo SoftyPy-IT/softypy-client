@@ -1,30 +1,29 @@
 /* eslint-disable react/no-unknown-property */
-import "./About.css";
-import team from "../../../public/assets/team6.jpeg";
-import team2 from "../../../public/assets/team2.jpg";
-import team5 from "../../../public/assets/team5.jpg";
-import team6 from "../../../public/assets/team8.jpeg";
-import team7 from "../../../public/assets/team10.jpeg";
-import team8 from "../../../public/assets/team11.jpeg";
-import team9 from "../../../public/assets/team9.jpeg";
-import team14 from "../../../public/assets/team13.jpg";
+import { useEffect, useRef } from "react";
 import {
   FaAngleRight,
   FaArrowRight,
   FaFacebookF,
   FaLinkedinIn,
 } from "react-icons/fa";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
-import { useRef } from "react";
-import { useEffect } from "react";
+import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import team1 from "../../../public/assets/team1.jpg";
+import team7 from "../../../public/assets/team10.jpeg";
+import team8 from "../../../public/assets/team11.jpeg";
+import team14 from "../../../public/assets/team13.jpg";
+import team2 from "../../../public/assets/team2.jpg";
+import team5 from "../../../public/assets/team5.jpg";
+import team from "../../../public/assets/team6.jpeg";
+import team6 from "../../../public/assets/team8.jpeg";
+import team9 from "../../../public/assets/team9.jpeg";
+import Subscribe from "../../components/Subscribe/Subscribe";
+import Container from "../../ui/Container";
 import PortfolioCountdown from "../Home/CountDown/CountDown";
 import NavBar from "../Shared/NavBar/NavBar";
-import { Link } from "react-router-dom";
-import Subscribe from "../../components/Subscribe/Subscribe";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import "./About.css";
 import AboutDirector from "./AboutDirector";
-import Container from "../../ui/Container";
-import team1 from "../../../public/assets/team1.jpg";
-import { FaXTwitter } from "react-icons/fa6";
 
 const About = () => {
   const ref = useRef(null);
@@ -82,7 +81,7 @@ const About = () => {
             <FaAngleRight />
             <p>about us </p>
           </div>
-          <h2 className="md:text-5xl ml-0 xl:-ml-20 font-bold text-2xl text-left md:text-center uppercase ">
+          <h2 className="ml-0 text-2xl font-bold text-left uppercase md:text-5xl xl:-ml-20 md:text-center ">
             Our Expert TEAM
           </h2>
         </div>
@@ -130,19 +129,19 @@ const About = () => {
                 ></lottie-player>
               </div>
             </div>
-            <div className=" block lg:flex items-center justify-between">
-              <div className="missionLeftSide order-3 md:order-1">
+            <div className="items-center justify-between block lg:flex">
+              <div className="order-3 missionLeftSide md:order-1">
                 <lottie-player
                   id="firstLottie"
                   ref={ref}
                   autoplay
                   loop
                   mode="normal"
-                  src="/vission.json"
+                  src="/goal.json"
                   className="animation"
                 ></lottie-player>
               </div>
-              <div className="missionRightSide order-2">
+              <div className="order-2 missionRightSide">
                 <div>
                   <h3 className="text-5xl font-bold text-[#680C70]">
                     Vission{" "}
@@ -183,13 +182,13 @@ const About = () => {
               </div>
             </div>
             <div className="mt-10">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center ">
+              <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 place-items-center ">
                 {teamData.map((team) => (
                   <div key={team.id} className="teamCard">
                     <div className="teamImgWrap">
                       <img src={team1} alt="" />
                     </div>
-                    <div className="teamContent mt-2">
+                    <div className="mt-2 teamContent">
                       <h3 className="text-2xl font-bold">Shakib Al Hasan </h3>
                       <span>MERN Stack Developer </span>
                       <div className="flex items-center justify-center mt-2 space-x-3 cursor-pointer ">
