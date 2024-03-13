@@ -14,8 +14,3 @@
    margin:0 3px;
 }
 
-@media only screen and (max-width:500px){
-   .sectionMargin{
-      margin-top:40px;
-   }
-}
