@@ -6,9 +6,13 @@ import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { logout } from "../../../redux/features/auth/authSlice";
+
+import Cookies from "js-cookie";
+
 import { toggleTheme } from "../../../redux/features/themeSlice";
 import Container from "../../../ui/Container";
 import "./NavBar.css";
+
 
 const NavBar = () => {
   const dispatch = useDispatch();
@@ -29,6 +33,7 @@ const NavBar = () => {
   console.log(email);
 
   const handleLogout = () => {
+    Cookies.remove("softy_user_id")
     dispatch(logout());
   };
 
