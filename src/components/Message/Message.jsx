@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 import Cookies from "js-cookie";
 import "./message.css";
 

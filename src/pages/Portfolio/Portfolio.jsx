@@ -129,22 +129,7 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link to='https://www.bnpbd.org/' target="_blank">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/bnp.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">BNP Bangladesh</h2>
-                        <p>
-                        BNP.BD: Your political pulse. Stay informed with our comprehensive coverage, analysis, and insights into Bangladesh's political landscape.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
+                
                   <Link to='https://aidurgency.vercel.app/'>
                     <div
                       style={{

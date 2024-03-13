@@ -2,7 +2,6 @@
 import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
 
-import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { useEffect, useRef, useState } from "react";
@@ -10,13 +9,12 @@ import { useForm } from "react-hook-form";
 import { FaLink, FaUserTie } from "react-icons/fa";
 import { HiOutlineX } from "react-icons/hi";
 import { io } from "socket.io-client";
-import ChatOnline from "../components/ChatOnline/ChatOnline";
 import DashboardMessage from "../components/Message/DashboardMessage";
 
 const socket = io("ws://localhost:5000");
 
 
-const DashboardMessageModal = ({ senderId }) => {
+
 
 const DashboardMessageModal = ({ senderId, onClose }) => {
   const [newMessage, setNewMessage] = useState("");

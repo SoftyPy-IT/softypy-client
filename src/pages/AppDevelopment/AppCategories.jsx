@@ -1,8 +1,8 @@
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
 import {
   FaCarSide,
@@ -10,19 +10,19 @@ import {
   FaGraduationCap,
   FaVideo,
 } from "react-icons/fa";
-import "./AppDevelopment.css";
 import {
   FaCircleDollarToSlot,
   FaHeartCircleBolt,
   FaOilWell,
+  FaVideoSlash,
 } from "react-icons/fa6";
 import {
   HiOutlineArrowNarrowRight,
   HiOutlineShoppingCart,
   HiOutlineUserGroup,
 } from "react-icons/hi";
-import { FaVideoSlash } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import "./AppDevelopment.css";
 
 const AppCategories = () => {
   const [expanded, setExpanded] = useState(false);
@@ -44,7 +44,7 @@ const AppCategories = () => {
         outstanding user experience.
       </p>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-wrap">
         <div>
           <Accordion
             expanded={expanded === "panel1"}
