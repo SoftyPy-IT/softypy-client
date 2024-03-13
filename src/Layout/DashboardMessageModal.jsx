@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
+
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { useEffect, useRef, useState } from "react";
@@ -13,14 +15,16 @@ import DashboardMessage from "../components/Message/DashboardMessage";
 
 const socket = io("ws://localhost:5000");
 
+
+const DashboardMessageModal = ({ senderId }) => {
+
 const DashboardMessageModal = ({ senderId, onClose }) => {
   const [newMessage, setNewMessage] = useState("");
+
   const [messages, setMessages] = useState([]);
   const [reload, setReload] = useState(false);
   const messageContainerRef = useRef(null);
-  const userTempId = Cookies.get("temporaryId");
   const loggedinUser = Cookies.get("softy_user_id");
-
 
 
   useEffect(() => {
@@ -28,7 +32,6 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
       socket.emit("set-user", loggedinUser);
     });
     const receivedMessageHandler = (message) => {
-      console.log(message);
       setMessages((prevMessages) => [...prevMessages, message]);
     };
     socket.on("received-message", receivedMessageHandler);
@@ -36,7 +39,6 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
       socket.off("received-message", receivedMessageHandler);
     };
   }, [loggedinUser, setMessages]);
- 
 
 
   const {
@@ -74,7 +76,6 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
     getMessage();
   }, [loggedinUser, reload, senderId]);
 
-  // console.log(messages);
   useEffect(() => {
     if (messageContainerRef.current) {
       messageContainerRef.current.scrollTop =
@@ -94,7 +95,8 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
               <FaUserTie size={20} />
             </div>
             <span className="ml-2 text-sm ">
-              <ChatOnline />
+              {/* <ChatOnline /> */}
+              {senderId}
             </span>
            
           </div>
@@ -106,6 +108,7 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
           <DashboardMessage
             own={messages.some((message) => message.senderId === loggedinUser)}
             messages={messages}
+            loggedinUser={loggedinUser}
           />
         </div>
 
