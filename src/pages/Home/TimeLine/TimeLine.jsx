@@ -1,20 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./TimeLine.css";
-import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Container from "../../../ui/Container";
-import { HiOutlineLightBulb } from "react-icons/hi";
-import { FaPeopleGroup } from "react-icons/fa6";
+import { easeInOut, motion } from "framer-motion";
 import {
   FaHeadset,
   FaLaptopCode,
   FaRecycle,
   FaStreetView,
 } from "react-icons/fa";
-import { easeInOut, motion } from "framer-motion";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import Container from "../../../ui/Container";
+import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
+import "./TimeLine.css";
 
 AOS.init();
+
 
 const TimeLine = () => {
   const galleryAnimation = {
@@ -52,7 +53,7 @@ const TimeLine = () => {
       <Container>
         <div className="relative ">
           <div className="borderRound2">
-            <h3 className="grid place-items-center mt-12 circleMove">
+            <h3 className="grid mt-12 place-items-center circleMove">
               <FaRecycle size={90} />
             </h3>
           </div>

@@ -77,12 +77,12 @@ const About = () => {
       </div>
       <div className="aboutContainers">
         <div className="aboutContent">
-          <div className="flex items-center uppercase bg-[#680C70] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
+          <div className="flex items-center uppercase bg-[#680C70] text-white rounded-md w-[200px] mx-auto justify-between mb-5 px-3 py-3">
             <p>Home</p>
             <FaAngleRight />
             <p>about us </p>
           </div>
-          <h2 className="md:text-5xl ml-0 xl:-ml-20 font-bold text-3xl text-left md:text-center uppercase ">
+          <h2 className="md:text-5xl ml-0 xl:-ml-20 font-bold text-2xl text-left md:text-center uppercase ">
             Our Expert TEAM
           </h2>
         </div>
@@ -130,8 +130,8 @@ const About = () => {
                 ></lottie-player>
               </div>
             </div>
-            <div className="mission">
-              <div className="missionLeftSide">
+            <div className=" block lg:flex items-center justify-between">
+              <div className="missionLeftSide order-3 md:order-1">
                 <lottie-player
                   id="firstLottie"
                   ref={ref}
@@ -142,7 +142,7 @@ const About = () => {
                   className="animation"
                 ></lottie-player>
               </div>
-              <div className="missionRightSide">
+              <div className="missionRightSide order-2">
                 <div>
                   <h3 className="text-5xl font-bold text-[#680C70]">
                     Vission{" "}
@@ -165,44 +165,45 @@ const About = () => {
           <SectionTitle title="STATEMENTS OF OUR HONORABLE MANAGING DIRECTOR"></SectionTitle>
           <AboutDirector />
         </div>
-
-        <Container>
-          <div
-            className="basic-title--wrap aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-duration="600"
-          >
-            <h2 className="basic-title text-[#F81600]">Our Expert Team</h2>
-            <div className="basic-title--sub">
-              <p>
-                {" "}
-                Meet our Visionary Collective, where aspirations are our
-                compass, and success is the destination we chart together. We
-                are not just a team; we are a journey towards greatness.
-              </p>
+        <div className="sectionMargin">
+          <Container>
+            <div
+              className="basic-title--wrap aos-init aos-animate "
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              <h2 className="basic-title text-[#F81600]">Our Expert Team</h2>
+              <div className="basic-title--sub">
+                <p>
+                  {" "}
+                  Meet our Visionary Collective, where aspirations are our
+                  compass, and success is the destination we chart together. We
+                  are not just a team; we are a journey towards greatness.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="mt-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center ">
-              {teamData.map((team) => (
-                <div key={team.id} className="teamCard">
-                  <div className="teamImgWrap">
-                    <img src={team1} alt="" />
-                  </div>
-                  <div className="teamContent mt-2">
-                    <h3 className="text-2xl font-bold">Shakib Al Hasan </h3>
-                    <span>MERN Stack Developer </span>
-                    <div className="flex items-center justify-center mt-2 space-x-3 cursor-pointer ">
-                      <FaFacebookF />
-                      <FaLinkedinIn />
-                      <FaXTwitter />
+            <div className="mt-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center ">
+                {teamData.map((team) => (
+                  <div key={team.id} className="teamCard">
+                    <div className="teamImgWrap">
+                      <img src={team1} alt="" />
+                    </div>
+                    <div className="teamContent mt-2">
+                      <h3 className="text-2xl font-bold">Shakib Al Hasan </h3>
+                      <span>MERN Stack Developer </span>
+                      <div className="flex items-center justify-center mt-2 space-x-3 cursor-pointer ">
+                        <FaFacebookF />
+                        <FaLinkedinIn />
+                        <FaXTwitter />
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </Container>
+          </Container>
+        </div>
 
         <div className="sectionMargin">
           <Container className="team-anim--section">

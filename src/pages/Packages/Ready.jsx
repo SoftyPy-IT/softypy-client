@@ -7,11 +7,11 @@ const Ready = () => {
     <div className="sectionMargin">
       <div className="max-w-[600px] mx-auto text-center ">
       <span>Let's Get Started </span>
-        <h2 className="text-center text-4xl font-semibold">
+        <h2 className="text-center md:px-0 px-3 text-2xl md:text-4xl font-semibold">
           Are you ready for a better, more <br />
           productive business?
         </h2>
-        <p className="text-xl mt-2">
+        <p className="text-sm md:text-xl mt-2">
           Stop worrying about technology problems. Focus on your business. Let
           us provide the support you deserve.
         </p>

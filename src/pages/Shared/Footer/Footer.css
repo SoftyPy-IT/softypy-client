@@ -18,8 +18,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  border-radius: 5px;
-  box-shadow: #680C70 0px 1px 6px;
+border:1px solid #ddd;
 }
 .footerTopBarContent {
   z-index: 99;
@@ -156,14 +155,21 @@
     margin-left: 0px !important;
     top: -96px;
   }
-  .footerTopBarContent {
-    height: 459px;
-  }
+
   .leftSideContent {
     position: relative;
     top: -80px;
     order: 1;
   }
+  .leftSideContent {
+    top: 0px;
+}
+.rightSideImgWRap img {
+  top: 0px;
+}
+
+
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -187,13 +193,8 @@
     width: 100%;
     margin-top: 10px;
   }
-  .leftSideContent {
-    top: -44px;
-  }
-  .footerTopBarContent {
-    height: 680px;
-    margin-top: 34px;
-  }
+
+
 
   .footerTop {
     padding: 0px 10px;

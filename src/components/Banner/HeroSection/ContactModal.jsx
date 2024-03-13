@@ -12,7 +12,7 @@ const ContactModal = ({ onClose }) => {
             height={24}
             className="text-red-600 absolute top-10 right-10 cursor-pointer"
           />
-          <ContactForm />
+          <ContactForm onClose={onClose}/>
         </div>
       </div>
     </div>

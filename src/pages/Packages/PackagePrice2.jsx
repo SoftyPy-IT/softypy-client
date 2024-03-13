@@ -8,7 +8,7 @@ import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import { Link } from "react-router-dom";
 const PackagePrice2 = () => {
   return (
-    <div className="bg-[#e5e5e560] py-20 ">
+    <div className="bg-[#e5e5e560] py-10 md:py-20 ">
       <Container>
         <SectionTitle
           title="Web Development Packages and Prices"

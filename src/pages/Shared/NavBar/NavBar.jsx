@@ -1,15 +1,18 @@
-import "./NavBar.css";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import Container from "../../../ui/Container";
-import { HiChevronDown } from "react-icons/hi";
-import { useDispatch, useSelector } from "react-redux";
-import { toggleTheme } from "../../../redux/features/themeSlice";
-import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
 import { FaCode, FaReact, FaShopify, FaWordpressSimple } from "react-icons/fa";
 import { FaMobileScreen } from "react-icons/fa6";
+import { HiChevronDown } from "react-icons/hi";
+import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, NavLink } from "react-router-dom";
 import { logout } from "../../../redux/features/auth/authSlice";
+
 import Cookies from "js-cookie";
+
+import { toggleTheme } from "../../../redux/features/themeSlice";
+import Container from "../../../ui/Container";
+import "./NavBar.css";
+
 
 const NavBar = () => {
   const dispatch = useDispatch();
@@ -37,82 +40,88 @@ const NavBar = () => {
   return (
     <Container>
       <div className="navbar">
-        <div className=" logo ">
+        <div className=" logo">
           <Link to="/">
-            <h3 className="text-3xl md:text-4xl font-bold">SoftyPy</h3>
+            <h3 className="text-3xl font-bold md:text-4xl">SoftyPy</h3>
           </Link>
         </div>
         <ul className="navbar-list ">
           <Link to="/">
             <li className="navbar-item">Home</li>
           </Link>
-          <li className="navbar-item flex items-center serviceNavItems">
+          <li className="flex items-center navbar-item serviceNavItems">
             Services <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
               <ul className="space-y-3">
-                <li className="flex items-center mainSubmenu capitalize">
+                <li className="flex items-center capitalize mainSubmenu">
                   Web Development <HiChevronDown size={23} />
-                  <div className="subMenu1 flex items-center justify-between p-8 ">
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaCode size={40} />
-                      </div>
-                      <p>Custom (MERN) </p>
-                      <p>Website Development</p>
-                    </div>
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaWordpressSimple size={40} />
-                      </div>
-                      <p>Wordpress </p>
-                      <p>Development</p>
-                    </div>
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4">
-                        <FaShopify size={40} />
-                      </div>
-                      <p>Shopify </p>
-                      <p>Development</p>
-                    </div>
+                 <Link to='/packages'>
+                 <div className="flex items-center justify-between p-8 subMenu1 ">
+                 <div className="flex flex-col items-center justify-center menuBox">
+                   <div className="mb-4 iconsShapeWrap ">
+                     <FaCode size={40} />
+                   </div>
+                   <p>Custom (MERN) </p>
+                   <p>Website Development</p>
+                 </div>
+                 <div className="flex flex-col items-center justify-center menuBox">
+                   <div className="mb-4 iconsShapeWrap ">
+                     <FaWordpressSimple size={40} />
+                   </div>
+                   <p>Wordpress </p>
+                   <p>Development</p>
+                 </div>
+                 <div className="flex flex-col items-center justify-center menuBox">
+                   <div className="mb-4 iconsShapeWrap">
+                     <FaShopify size={40} />
+                   </div>
+                   <p>Shopify </p>
+                   <p>Development</p>
+                 </div>
+                 
 
-                    {/** 
-                    <div className="submenu">
-                      <ul>
-                        <li>Online Travel Agency (OTA) Website. </li>
-                        <li>Corporate Business Website</li>
-                        <li>E-commerce Website </li>
-                        <li>Nonprofit / Donation Websites </li>
-                        <li>Educational Websites </li>
-                        <li>Agency Website </li>
-                        <li>Real Estate Websites </li>
-                        <li>Health and Fitness Websites </li>
-                      </ul>
-                    </div>
+                 {/** 
+                 <div className="submenu">
+                   <ul>
+                     <li>Online Travel Agency (OTA) Website. </li>
+                     <li>Corporate Business Website</li>
+                     <li>E-commerce Website </li>
+                     <li>Nonprofit / Donation Websites </li>
+                     <li>Educational Websites </li>
+                     <li>Agency Website </li>
+                     <li>Real Estate Websites </li>
+                     <li>Health and Fitness Websites </li>
+                   </ul>
+                 </div>
 */}
-                  </div>
+               </div>
+                 </Link>
                 </li>
-                <li className="mainSubmenu2 flex items-center ">
+                <li className="flex items-center mainSubmenu2 ">
                   Mobile <HiChevronDown size={23} />
-                  <div className="subMenu2 flex items-center justify-between p-8 ">
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaMobileScreen size={40} />
-                      </div>
-                      <p>Flutter </p>
-                    </div>
+                 <Link to='/app-development'>
+                 <div className="flex items-center justify-between p-8 subMenu2 ">
+                 <div className="flex flex-col items-center justify-center menuBox">
+                   <div className="mb-4 iconsShapeWrap ">
+                     <FaMobileScreen size={40} />
+                   </div>
+                   <p>Flutter </p>
+                 </div>
 
-                    <div className=" menuBox  flex items-center justify-center flex-col">
-                      <div className="iconsShapeWrap mb-4 ">
-                        <FaReact size={40} />
-                      </div>
-                      <p>React Native </p>
-                    </div>
-                  </div>
+                 <div className="flex flex-col items-center justify-center menuBox">
+                   <div className="mb-4 iconsShapeWrap ">
+                     <FaReact size={40} />
+                   </div>
+                   <p>React Native </p>
+                 </div>
+               </div>
+                 </Link>
                 </li>
+                <li> <Link to='/erp'>ERP Solutions</Link>  </li>
                 <li>Cloud & DevOps </li>
                 <li>UI/UX Design </li>
                 <li>Wordpress Development </li>
-                <li className="teamHoverMenuItem flex items-center ">
+                <li className="flex items-center teamHoverMenuItem ">
                   Dedicated Team <HiChevronDown size={23} />
                   <div className="teamSubMenu">
                     <ul className="space-y-2">
@@ -175,7 +184,7 @@ const NavBar = () => {
               </button>
             </>
           ) : (
-            <button className="logoutBtn  ">
+            <button className="logoutBtn ">
               <NavLink to="/login">Login</NavLink>
             </button>
           )}
@@ -203,9 +212,9 @@ const NavBar = () => {
           {" "}
           <li className="navbar-item">Portfolio</li>
         </Link>
-        <Link to="/client">
+        <Link to="/careers">
           {" "}
-          <li className="navbar-item">Happy Clients </li>
+          <li className="navbar-item">Careers </li>
         </Link>
         <Link to="/about">
           {" "}

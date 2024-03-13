@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
-import { FaLink, FaUserTie } from "react-icons/fa";
 import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
-import Message from "../components/Message/Message";
-import ChatOnline from "../components/ChatOnline/ChatOnline";
-import { useEffect, useRef, useState } from "react";
 import axios from "axios";
-import { useForm } from "react-hook-form";
-import { io } from "socket.io-client";
 import Cookies from "js-cookie";
+import { useEffect, useRef, useState } from "react";
+import { useForm } from "react-hook-form";
+import { FaLink, FaUserTie } from "react-icons/fa";
+import { io } from "socket.io-client";
+import ChatOnline from "../components/ChatOnline/ChatOnline";
+import Message from "../components/Message/Message";
 
 
 const socket = io("http://localhost:5000");
@@ -82,7 +82,7 @@ const MessageModal = () => {
   }, [messages]);
 
   return (
-    <div className="w-[340px] h-[480px] bg-white fixed right-5 bottom-28 rounded-2xl text-black shadow-sm z-[9999999999] overflow-hidden ">
+    <div className="w-[360px] h-[550px] bg-white fixed right-5 bottom-32  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden ">
       <div className="flex flex-col justify-between h-full ">
         <div className="bg-[#680C70] w-full h-24 text-white flex justify-center items-center ">
           <div className="flex items-center">
@@ -108,7 +108,7 @@ const MessageModal = () => {
         <div className=" w-full h-24 bg-white flex pl-3  items-center border-t-[#ddd] border-[2px] ">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex items-start flex-col "
+            className="flex flex-col items-start "
           >
           
             <input

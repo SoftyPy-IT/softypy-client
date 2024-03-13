@@ -1,17 +1,17 @@
 /* eslint-disable no-unused-vars */
+import { useEffect, useState } from "react";
 import {
-  FaTrashAlt,
   FaLongArrowAltLeft,
   FaLongArrowAltRight,
+  FaTrashAlt,
 } from "react-icons/fa";
+import { HiChatAlt2 } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
+import DashboardMessageModal from "../../../Layout/DashboardMessageModal";
 import {
   useDeleteReviewMutation,
   useGetAllReviewsQuery,
 } from "../../../redux/features/review/reviewApi";
-import { useEffect, useState } from "react";
-import DashboardMessageModal from "../../../Layout/DashboardMessageModal";
 
 const MessageList = () => {
 
@@ -26,6 +26,7 @@ const MessageList = () => {
 
   const navigate = useNavigate();
   const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
+  console.log(reviews)
   const [deleteReview] = useDeleteReviewMutation();
 
   const [senderData, setSenderData] = useState([]);
@@ -92,17 +93,17 @@ const MessageList = () => {
 
 
   return (
-    <div className="mt-5 mb-24 w-full">
-      <h3 className="text-xl text-center mb-3 font-bold">All Message</h3>
+    <div className="w-full mt-5 mb-24">
+      <h3 className="mb-3 text-xl font-bold text-center">All Message</h3>
       <div className="overflow-x-auto ">
         <table className="table ">
           <thead className="tableWrap">
             <tr>
               <th>SL NO </th>
-              <th>Customer Name </th>
+              <th>User Id </th>
               <th>Email Address</th>
               <th>Message</th>
-              <th>Action</th>
+              <th colSpan={2}>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -112,10 +113,19 @@ const MessageList = () => {
                 <td>{review._id} </td>
 
                 <td>{review?.message?.text}</td>
-                <td>All message here </td>
+               
 
                 <td>{review.text}</td>
-                <td onClick={()=>handleOpen(review.senderId)} className=" cursor-pointer">All message here </td>
+                <td onClick={()=>handleOpen(review.senderId)} className="cursor-pointer ">
+               
+                  <div
+                  onClick={() => handleDelete(review._id)}
+                  className="editIconWrap"
+                >
+                  <HiChatAlt2 className="deleteIcon" />
+                </div>
+                
+                </td>
 
 
                 <td>
@@ -146,7 +156,7 @@ const MessageList = () => {
           </button>
         </div>
       </div>
-      {open && <DashboardMessageModal senderId={senderId}/>}
+      {open && <DashboardMessageModal onClose={handleClose} senderId={senderId}/>}
     </div>
   );
 };

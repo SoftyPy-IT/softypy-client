@@ -96,36 +96,6 @@ const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
                 customer satisfaction and boosts sales.
               </p>
             </div>
-            <div className="my-2">
-              <b> Cost-Effective: </b>
-              <p>
-                {" "}
-                Operating an eCommerce website is often more cost-effective than
-                maintaining a physical storefront. You save on expenses related
-                to rent, utilities, and staff, making it an efficient way to run
-                a business.
-              </p>
-            </div>
-            <div className="my-2">
-              <b> Customer Convenience:</b>
-              <p>
-                {" "}
-                Shoppers appreciate the convenience of browsing and buying from
-                the comfort of their homes. They can also compare products, read
-                reviews, and access detailed product information, contributing
-                to a better shopping experience.
-              </p>
-            </div>
-            <div className="my-2">
-              <b> Marketing Opportunities: </b>
-              <p>
-                {" "}
-                Online marketing tools and strategies like SEO, email marketing,
-                and social media can be seamlessly integrated into your
-                eCommerce website. These tools help increase your online
-                visibility and drive more traffic.
-              </p>
-            </div>
           </div>
           <div className="rightSideServices">
             <lottie-player
@@ -138,11 +108,11 @@ const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
             ></lottie-player>
           </div>
         </div>
-        <div className="my-10">
-          <SectionTitle title="Our More Products "></SectionTitle>
+        <div className="sectionMargin">
+          <SectionTitle title="Our More Services "></SectionTitle>
           <Products />
         </div>
-        <div>
+        <div className='sectionMargin'>
           <SectionTitle
             className="portfolioTitle"
             title="Some Of Our Work Portfolio "
@@ -488,9 +458,9 @@ const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
             </Tabs>
           </div>
         </div>
-        <div>
+        <div className='sectionMargin' >
           <SectionTitle title="Why Choose SoftyPy For Your Software Solution?"></SectionTitle>
-          <div className="whyChooseServices">
+          <div className="whyChooseServices ">
             <WhyChoosSe />
           </div>
         </div>

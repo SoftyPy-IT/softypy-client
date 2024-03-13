@@ -10,6 +10,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 import Slider from "react-slick";
 import "./AppDevelopment.css";
+import { Link } from "react-router-dom";
 const AppPortFolio = () => {
   const settings = {
     dots: true,
@@ -106,9 +107,11 @@ const AppPortFolio = () => {
         </div>
       </Slider>
       <div>
+        <Link to='/contact'>
         <button className="bg-[#680C70] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center ml-20 ">
           <span>Contact Us</span> <HiOutlineArrowNarrowRight className="ml-2" />
         </button>
+        </Link>
       </div>
 
     </div>

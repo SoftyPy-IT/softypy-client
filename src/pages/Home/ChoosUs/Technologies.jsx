@@ -82,7 +82,7 @@ export default function VerticalTabs() {
   };
 
   return (
-    <div className=" mt-[80px]">
+    <div className="sectionMargin">
       <Container>
         <div className="technologyWraps py-3">
           <div>

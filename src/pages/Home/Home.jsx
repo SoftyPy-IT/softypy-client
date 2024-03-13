@@ -1,13 +1,13 @@
+import HeroSection from "../../components/Banner/HeroSection/HeroSection";
 import Brand from "../../components/Brand/Brand";
 import Review from "../../components/Review/Review";
+import Subscribe from "../../components/Subscribe/Subscribe";
 import SwiperTimeLine from "../../components/TimeLine/SwiperTimeLine";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
-import Services from "./Services/Services";
 import Technologies from "./ChoosUs/Technologies";
-import TimeLine from "./TimeLine/TimeLine";
 import CountDown from "./CountDown/CountDown";
-import HeroSection from "../../components/Banner/HeroSection/HeroSection";
-import Subscribe from "../../components/Subscribe/Subscribe";
+import Services from "./Services/Services";
+import TimeLine from "./TimeLine/TimeLine";
 
 
 const Home = () => {
@@ -24,6 +24,7 @@ const Home = () => {
       <Review />
       <Subscribe />
     </div>
+    
 
   );
 };

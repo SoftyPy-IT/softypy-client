@@ -53,7 +53,6 @@
 .userItems {
   position: absolute;
   background: #f81600;
-
   text-align: center;
   padding: 20px 10px;
   border-radius: 3px;
@@ -86,7 +85,7 @@
   border-radius: 3px;
   opacity: 0;
   transform: scaleY(0);
-  visibility: visible;
+  visibility: hidden;
   transition: all 0.5s ease;
   transform-origin: top;
   cursor: pointer;
@@ -111,18 +110,18 @@
 .subMenu1, .subMenu2 {
   width: 500px;
   background-color: white;
-  color:black;
+  color: black;
   padding: 10px 15px;
   position: absolute;
   z-index: 9;
   transition: all 0.5s ease;
   transform-origin: top;
-  right:-160px;
-  top: 92px;
+  right: -526px;
+  top: 12px;
   font-size: 14px;
   opacity: 0;
   transform: scaleY(0);
-  visibility: visible;
+  visibility: hidden;
 
 }
 .subMenu2{
@@ -190,6 +189,12 @@
   left:-15px
 }
 
+@media only screen and (min-width:1200px){
+  .sticky{
+    padding: 15px 349px;
+  }
+  
+}
 @media only screen and (max-width: 1024px) {
   .navbar,
   .sticky {

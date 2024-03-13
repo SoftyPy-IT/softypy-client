@@ -1,21 +1,31 @@
 /* eslint-disable no-unused-vars */
-import { FaLink, FaUserTie } from "react-icons/fa";
 import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
+
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
-import { useForm } from "react-hook-form";
 import Cookies from "js-cookie";
-import DashboardMessage from "../components/Message/DashboardMessage";
+import { useEffect, useRef, useState } from "react";
+import { useForm } from "react-hook-form";
+import { FaLink, FaUserTie } from "react-icons/fa";
+import { HiOutlineX } from "react-icons/hi";
 import { io } from "socket.io-client";
+import ChatOnline from "../components/ChatOnline/ChatOnline";
+import DashboardMessage from "../components/Message/DashboardMessage";
 
 const socket = io("ws://localhost:5000");
 
+
 const DashboardMessageModal = ({ senderId }) => {
+
+const DashboardMessageModal = ({ senderId, onClose }) => {
+  const [newMessage, setNewMessage] = useState("");
+
   const [messages, setMessages] = useState([]);
   const [reload, setReload] = useState(false);
   const messageContainerRef = useRef(null);
   const loggedinUser = Cookies.get("softy_user_id");
+
 
   useEffect(() => {
     socket.on("connect", () => {
@@ -29,6 +39,7 @@ const DashboardMessageModal = ({ senderId }) => {
       socket.off("received-message", receivedMessageHandler);
     };
   }, [loggedinUser, setMessages]);
+
 
   const {
     register,
@@ -73,9 +84,11 @@ const DashboardMessageModal = ({ senderId }) => {
   }, [messages]);
 
   return (
-    <div className="w-[340px] h-[480px] bg-white fixed right-5 bottom-28 rounded-2xl text-black shadow-sm z-[9999999999] overflow-hidden ">
+    <div className="w-[340px] h-[550px] bg-white fixed right-5 bottom-28 rounded-2xl text-black shadow-sm z-[9999999999] overflow-hidden ">
       <div className="flex flex-col justify-between h-full ">
-        <div className="bg-[#680C70] w-full h-24 text-white flex justify-center items-center ">
+     
+        <div className="bg-[#680C70] w-full h-24 text-white flex justify-center items-center relative">
+        <button onClick={onClose} className="absolute top-2 right-5"><HiOutlineX size={25}/></button>
           <div className="flex items-center">
             <div className="bg-white p-1 rounded-full text-[#707584] ">
               {" "}
@@ -85,6 +98,7 @@ const DashboardMessageModal = ({ senderId }) => {
               {/* <ChatOnline /> */}
               {senderId}
             </span>
+           
           </div>
         </div>
         <div
@@ -101,7 +115,7 @@ const DashboardMessageModal = ({ senderId }) => {
         <div className=" w-full h-24 bg-white flex pl-3  items-center border-t-[#ddd] border-[2px] ">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex items-start flex-col "
+            className="flex flex-col items-start "
           >
             <input
               type="text"

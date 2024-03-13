@@ -9,7 +9,7 @@ export const orderApi = baseApi.injectEndpoints({
         }),
         providesTags: ['orders']
       }),
-    crateOrder: builder.mutation({
+    createOrder: builder.mutation({
       query: (data) => ({
         url: "/orders",
         method: "POST",
@@ -28,5 +28,5 @@ export const orderApi = baseApi.injectEndpoints({
   }),
 });
 
-export const { useCrateOrderMutation, useGetOrdersQuery, useDeleteOrderMutation } =
+export const { useCreateOrderMutation, useGetOrdersQuery, useDeleteOrderMutation } =
   orderApi;
