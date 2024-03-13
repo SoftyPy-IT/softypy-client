@@ -109,23 +109,18 @@
   position: relative;
   top: 50px;
 }
-/* 
-.header-content {
-  width: 650px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-} */
+
 .header-content {
   display: flex;
-  margin-top: 100px;
   position: absolute;
   z-index: 9;
   width: 1200px;
   padding-right: 40px;
+  justify-content: center;
+  top: 50%;
+  left: 50;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .welcome-heading {
   color: #680c70 !important;
@@ -155,6 +150,12 @@
 .right-side img {
   width: 500px;
 }
+@media only screen and (max-width:1024px){
+  .header-content {
+    width: 100%;
+    padding-left: 40px;
+}
+}
 
 @media only screen and (max-width: 500px) {
   .header-content {
@@ -170,9 +171,9 @@
   .header {
     height: 80vh;
   }
-  .header-content {
+  /* .header-content {
     margin-top: 40px;
-  }
+  } */
   .getContactField {
     width: 100% !important;
   }
@@ -187,7 +188,14 @@
   .header {
     height: 87vh;
   }
-  .header-content {
+  /* .header-content {
     margin-top: 40px;
-  }
+  } */
+}
+
+@media only screen and (max-width: 350px){
+
+.header {
+    height: 60vh;
+}
 }

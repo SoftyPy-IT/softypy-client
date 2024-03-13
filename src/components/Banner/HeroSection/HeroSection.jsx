@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./HeroSection.css";
+import { useEffect, useState } from "react";
 import NavBar from "../../../pages/Shared/NavBar/NavBar";
 import Container from "../../../ui/Container";
-import { useEffect, useState } from "react";
 import ContactModal from "./ContactModal";
+import "./HeroSection.css";
 const HeroSection = () => {
   const [showText, setShowText] = useState(1);
 
@@ -33,17 +33,17 @@ const HeroSection = () => {
             <NavBar />
           </div>
           <Container>
-            <div className="header-content capitalize">
+            <div className="capitalize header-content">
               <div className="left-side">
-                <h1 className="welcome-heading text-6xl font-bold text-[#F81600]">
+                <h1 className="welcome-heading text-3xl md:text-5xl font-bold text-[#F81600]">
                   Next-gen enterprise
                 </h1>
-                <p className="welcome-paragraph text-5xl font-semibold mt-3  ">
+                <p className="mt-3 text-3xl font-semibold welcome-paragraph md:text-5xl">
                   software development company
                 </p>
 
-                <div className=" block xl:flex w-full items-center justify-between text-white mt-10 xl:mt-20">
-                  <h3 className="text-5xl mb-3 xl:mb-0">
+                <div className="items-center justify-between block w-full mt-10 text-white xl:flex xl:mt-20">
+                  <h3 className="mb-3 text-3xl md:text-5xl xl:mb-0">
                     We Think <span className="text-[#F81600]">Future</span>
                     <span
                       className={
