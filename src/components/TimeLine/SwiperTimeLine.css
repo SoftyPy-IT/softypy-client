@@ -168,9 +168,7 @@
   .sliderLeftSide {
     width:100%;
 }
-.circleWrap {
-  width: 100%;
-}
+
 .circle {
   width: 145px;
   height: 145px;
@@ -192,6 +190,9 @@
 .circle {
   width: 120px;
   height: 120px;
+}
+.circleWrap {
+  width: 100%;
 }
   
 }

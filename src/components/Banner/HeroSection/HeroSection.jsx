@@ -72,7 +72,7 @@ const HeroSection = () => {
                   </h3>
                   <button
                     onClick={handleOpen}
-                    className="bg-[#F81600] w-60 py-3 rounded-sm text"
+                    className="bg-[#F81600] w-44  md:w-60 py-3 rounded-sm text"
                   >
                     {" "}
                     Let's Talk{" "}

@@ -189,6 +189,12 @@
   left:-15px
 }
 
+@media only screen and (min-width:1200px){
+  .sticky{
+    padding: 15px 349px;
+  }
+  
+}
 @media only screen and (max-width: 1024px) {
   .navbar,
   .sticky {

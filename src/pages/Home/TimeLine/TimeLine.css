@@ -323,3 +323,10 @@
     font-size: 15px;
   }
 }
+@media only screen and (max-width: 350px){
+  .circle {
+    width: 100px;
+    height: 100px;
+}
+}
+
