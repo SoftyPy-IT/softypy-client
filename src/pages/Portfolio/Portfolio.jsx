@@ -28,12 +28,12 @@ const Portfolio = () => {
     <div>
       <div className="">
         <div className="navsBarWrap">
-          <div className="bg-[#680C70] text-white ">
+          <div className="bg-[#40C7F4] text-white ">
             <NavBar />
           </div>
           <div className="aboutContainers portfolioContainer">
             <div className="aboutContent">
-              <div className="flex items-center uppercase bg-[#680C70] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
+              <div className="flex items-center uppercase bg-[#40C7F4] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
                 <p>Home</p>
                 <FaAngleRight />
                 <p>Portfolio </p>
@@ -73,7 +73,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                         <p>
                         Ghuronti.com: Your gateway to unforgettable adventures. Explore curated travel experiences worldwide with our expert guidance and personalized service. Start your journey today!
@@ -89,7 +89,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips Travels Ltd</h2>
                         <p>
                         Airtrips.com: Elevate your travel experience. Discover seamless booking, exclusive deals, and tailored itineraries. Your passport to extraordinary adventures awaits. Begin your journey with us!
@@ -105,7 +105,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Nextstair</h2>
                         <p>
                         NextStair: Ascend to the latest news heights. Dive into diverse perspectives, breaking stories, and insightful analysis. Your daily staircase to informed decisions and enriched understanding.
@@ -121,7 +121,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Taqwaacor</h2>
                         <p>
                         Taqwaacor.com: Elevate your shopping experience. Explore a diverse range of quality products, from fashion to electronics. Trustworthy service, secure transactions, and swift 
@@ -138,7 +138,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">GIVE</h2>
                         <p>
                         "Give.com: Empowering generosity. Support causes that matter. Easy, secure donations. Make a difference today with just a few clicks."
@@ -154,7 +154,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis</h2>
                         <p>
                           
@@ -171,7 +171,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">zynix</h2>
                         <p>
                         "Zynix: Your ultimate shopping destination. Discover trendy products, unbeatable deals, and seamless shopping experience. Elevate your lifestyle with just a click."
@@ -187,7 +187,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Event360</h2>
                         <p>
                         Event360: Crafting unforgettable experiences. From concept to execution, we deliver seamless events tailored to your vision. 
@@ -203,7 +203,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Trust Auto Solution</h2>
                         <p>
                         Trust Auto Solution: Streamline garage management effortlessly. From scheduling to inventory, our intuitive platform optimizes.
@@ -219,7 +219,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Trust-Auto-Solution</h2>
                         <p>
                         <p>
@@ -238,7 +238,7 @@ const Portfolio = () => {
                     }}
                     className="singlePortfolio "
                   >
-                    <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                       <h2 className="text-xl">Realpoint International </h2>
                       <p>
                       RealPointInternational: Your passport to unparalleled adventures. Explore curated travel experiences with personalized service
@@ -250,7 +250,7 @@ const Portfolio = () => {
                 
                   <Link to="https://www.ghuronti.com/hajj/search">
                     <div className="singlePortfolio portfolio10">
-                    <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Hajj & Umrah</h2>
                     <p>
                     Ghuronti.com: Your gateway to unforgettable adventures. Explore curated travel experiences worldwide with our expert 
@@ -260,7 +260,7 @@ const Portfolio = () => {
                   </Link>
                   <Link to="https://havenly-de0a6.web.app/">
                     <div className="singlePortfolio portfolio11">
-                    <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">House Rent </h2>
                     <p>HouseRent: Your key to finding the perfect home. Discover listings tailored to your needs. Let us help you find your dream space.</p>
                   </div>
@@ -268,7 +268,7 @@ const Portfolio = () => {
                   </Link>
                   <Link to="https://monumental-cheesecake-9a7972.netlify.app/">
                     <div className="singlePortfolio portfolio12">
-                    <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Education </h2>
                     <p>
                     EduXcellence: Unlocking potential through education. Empowering learners with innovative tools, resources, and personalized support for academic success and lifelong learning.</p>
@@ -278,7 +278,7 @@ const Portfolio = () => {
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio portfolio13">
                     <div className="singlePortfolio ">
-                    <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Digital Agenn</h2>
                     <p>
                     EduXcellence: Unlocking potential through education. Empowering learners with innovative tools, resources, and personalized support for academic success and lifelong learning.</p>
@@ -294,7 +294,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Airtrips Travels Ltd</h2>
                         <p>
                         Airtrips.com: Elevate your travel experience. Discover seamless booking, exclusive deals, and tailored itineraries. Your passport to extraordinary adventures awaits. Begin your journey with us!
@@ -314,7 +314,7 @@ const Portfolio = () => {
                  }}
                  className="singlePortfolio "
                >
-                 <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                 <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                    <h2 className="text-xl">Taqwaacor</h2>
                    <p>
                    Taqwaacor.com: Elevate your shopping experience. Explore a diverse range of quality products, from fashion to electronics.
@@ -330,7 +330,7 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">zynix</h2>
                         <p>
                         "Zynix: Your ultimate shopping destination. Discover trendy products, unbeatable deals, and seamless shopping experience. Elevate your lifestyle with just a click."
@@ -350,7 +350,7 @@ const Portfolio = () => {
                   }}
                   className="singlePortfolio "
                 >
-                  <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Airtrips Travels Ltd</h2>
                     <p>
                     Airtrips.com: Elevate your travel experience. Discover seamless booking, exclusive deals, and tailored itineraries. Your passport to extraordinary adventures awaits. Begin your journey with us!
@@ -366,7 +366,7 @@ const Portfolio = () => {
                   }}
                   className="singlePortfolio "
                 >
-                  <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Realpoint International </h2>
                     <p>
                     RealPointInternational: Your passport to unparalleled adventures. Explore curated travel experiences with personalized service
@@ -382,7 +382,7 @@ const Portfolio = () => {
                 }}
                 className="singlePortfolio "
               >
-                <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                   <h2 className="text-xl">Ghuronti Travels Ltd</h2>
                   <p>
                   Ghuronti.com: Your gateway to unforgettable adventures. Explore curated travel experiences worldwide with our expert guidance 
@@ -399,14 +399,14 @@ const Portfolio = () => {
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio portfolio2">
-                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio portfolio3">
-                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
@@ -423,7 +423,7 @@ const Portfolio = () => {
                   }}
                   className="singlePortfolio "
                 >
-                  <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Trust Auto Solution</h2>
                     <p>
                     Trust Auto Solution: Streamline garage management effortlessly. From scheduling to inventory, our intuitive platform optimizes.
@@ -439,7 +439,7 @@ const Portfolio = () => {
                   }}
                   className="singlePortfolio "
                 >
-                  <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Trust-Auto-Solution</h2>
                     <p>
                     <p>
@@ -451,14 +451,14 @@ const Portfolio = () => {
               </Link>
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio portfolio2">
-                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio portfolio3">
-                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
@@ -469,21 +469,21 @@ const Portfolio = () => {
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
                   <Link to="https://nextstair.com/">
                     <div className="singlePortfolio portfolio2">
-                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">NextStair</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio portfolio3">
-                      <div className="bg-[#680C70] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://havenly-de0a6.web.app/">
                   <div className="singlePortfolio portfolio11">
-                  <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                   <h2 className="text-xl">House Rent </h2>
                   <p>HouseRent: Your key to finding the perfect home. Discover listings tailored to your needs. Let us help you find your dream space.</p>
                 </div>
@@ -501,7 +501,7 @@ const Portfolio = () => {
                   }}
                   className="singlePortfolio "
                 >
-                  <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Event360</h2>
                     <p>
                     Event360: Crafting unforgettable experiences. From concept to execution, we deliver seamless events tailored to your vision. 
@@ -517,7 +517,7 @@ const Portfolio = () => {
                   }}
                   className="singlePortfolio "
                 >
-                  <div className="bg-[#680C70] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                     <h2 className="text-xl">Trust Auto Solution</h2>
                     <p>
                     Trust Auto Solution: Streamline garage management effortlessly. From scheduling to inventory, our intuitive platform optimizes.

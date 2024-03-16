@@ -15,10 +15,10 @@
   transition:all .5s ease;
 }
 .priceCard:hover .priceDetails{
-  background:#F81600 !important;
+  background:#2D57A2 !important;
 }
 .priceCard:hover .priceDetails2{
-  background:#F81600 !important;
+  background:#2D57A2 !important;
 }
 .priceCard img {
   width: 100%;
@@ -32,7 +32,7 @@
   overflow-y: scroll;
 }
 .priceBtn{
- background:#F81600;
+ background:#2D57A2;
  color:white;
  border-radius: 2px;
  margin: 10px auto;
@@ -48,7 +48,7 @@ padding:10px 0;
   overflow-y: auto;
 
   scrollbar-width: thin;
-  scrollbar-color: #5b1782 #F81600;
+  scrollbar-color: #5b1782 #2D57A2;
   &::-webkit-scrollbar {
     width: 10px;
   }
@@ -58,7 +58,7 @@ padding:10px 0;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: #F81600;
+    background-color: #2D57A2;
   }
 }
 

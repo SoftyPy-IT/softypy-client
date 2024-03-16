@@ -61,7 +61,7 @@ const HowSoftyPyWork = () => {
         </div>
         <div className="ourServicesWrap">
           <div className="ourServiceLeftSide">
-            <h3 className="text-xl md:text-3xl mb-3 text-[#F81600] font-bold ">
+            <h3 className="text-xl md:text-3xl mb-3 text-[#2D57A2] font-bold ">
               "Unlocking Our Workflow: The Mechanics of How We Operate"
             </h3>
             <p>
@@ -138,7 +138,7 @@ const HowSoftyPyWork = () => {
                         i === 0 ? "cards-back2" : ""
                       } ${i === 4 ? " cards-back2:" : ""}
                       `}>
-                        <div className="cards-back-content md:px-3 text-center">
+                        <div className="text-center cards-back-content md:px-3">
                           <b className="block text-[11px] md:text-sm "> {card.title}</b>
                           <small className="my-1 md:my-3">
                             {card.subTitle.slice(0, 20)}...
@@ -152,7 +152,6 @@ const HowSoftyPyWork = () => {
             </div>
             <img src={img} alt="line" className="cardLine" />
             <div className="cardLine2"></div>
-
             <div className="cardLine3"></div>
             <div className="cardLine4"></div>
           </div>

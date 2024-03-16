@@ -5,7 +5,7 @@ import "./Careers.css";
 const CareersApply = () => {
   return (
     <div>
-      <div className="text-white bg-[#680C70]">
+      <div className="text-white bg-[#40C7F4]">
         <NavBar />
       </div>
       <Container>

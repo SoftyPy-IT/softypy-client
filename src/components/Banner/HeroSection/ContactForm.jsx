@@ -40,7 +40,7 @@ const ContactForm = ({ onClose }) => {
     <>
       <div className=" flex items-center py-8 px-6">
         <div className="w-full">
-          <h2 className=" text-[#F81600] font-bold text-2xl md:text-4xl uppercase mb-10">
+          <h2 className=" text-[#2D57A2] font-bold text-2xl md:text-4xl uppercase mb-10">
             Get In Touch
           </h2>
           <div>

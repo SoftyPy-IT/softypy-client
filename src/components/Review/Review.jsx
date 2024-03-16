@@ -98,7 +98,7 @@ export default function Review() {
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">{reviews[0]?.description}</p>
                   </blockquote>
-                  <div className="flex flex-end items-center text-[#F81600] ml-8">
+                  <div className="flex flex-end items-center text-[#2D57A2] ml-8">
                     <button>See More </button>
                     <FaArrowRight className="historyIcon" />
                   </div>
@@ -122,7 +122,7 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent">
-                  <h3 className="text-4xl font-bold text-[#F81600] ">
+                  <h3 className="text-4xl font-bold text-[#2D57A2] ">
                     {reviews[1]?.name}
                   </h3>
                   <h6 className="text-xl font-bold mt-2">
@@ -132,7 +132,7 @@ export default function Review() {
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">{reviews[1]?.description}</p>
                   </blockquote>
-                  <div className="flex flex-end items-center text-[#F81600] ml-8">
+                  <div className="flex flex-end items-center text-[#2D57A2] ml-8">
                     <button>Read history </button>
                     <FaArrowRight className="historyIcon" />
                   </div>
@@ -156,7 +156,7 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent">
-                  <h3 className="text-4xl font-bold text-[#F81600] ">
+                  <h3 className="text-4xl font-bold text-[#2D57A2] ">
                     {reviews[2]?.name}
                   </h3>
                   <h6 className="text-xl font-bold mt-2">
@@ -166,7 +166,7 @@ export default function Review() {
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">{reviews[2]?.description}</p>
                   </blockquote>
-                  <div className="flex flex-end items-center text-[#F81600] ml-8">
+                  <div className="flex flex-end items-center text-[#2D57A2] ml-8">
                     <button>Read history </button>
                     <FaArrowRight className="historyIcon" />
                   </div>

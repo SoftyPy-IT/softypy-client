@@ -16,9 +16,10 @@ const Packages = () => {
   useEffect(() => {
     import("@lottiefiles/lottie-player");
   });
+  
   return (
     <div>
-      <div className="bg-[#680C70] text-white">
+      <div className="bg-[#40C7F4] text-white">
         <NavBar />
       </div>
       {/** 
@@ -28,7 +29,7 @@ const Packages = () => {
             <NavBar />
           </div>
           <div className=" portfolioContent">
-            <h3 className="text-3xl md:text-5xl font-bold mb-2">
+            <h3 className="mb-2 text-3xl font-bold md:text-5xl">
               Best Website Development Packages.
             </h3>
           </div>
@@ -40,12 +41,12 @@ const Packages = () => {
           <SectionTitle title=' "Crafting Digital Excellence: Elevate Your Brand with Our Bespoke Web Designs"' />
         </div>
         <section className="my-10 bg-[#951FE]">
-          <div className="flex-col items-center lg:flex lg:flex-row justify-center lg:justify-between ">
+          <div className="flex-col items-center justify-center lg:flex lg:flex-row lg:justify-between ">
             <div className="w-full lg:w-[50%]">
               <h3 className="text-xl font-semibold">
                 Website Development Packages
               </h3>
-              <h2 className="text-2xl md:text-5xl font-semibold my-3 capitalize ">
+              <h2 className="my-3 text-2xl font-semibold capitalize md:text-5xl ">
                 Web Designs Starts from at the lowest price ONLY
               </h2>
               <p>
@@ -56,33 +57,33 @@ const Packages = () => {
                 Don't miss out on this exclusive offer to elevate your brand
                 without breaking the bank."
               </p>
-              <div className="space-y-2 mt-5">
+              <div className="mt-5 space-y-2">
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
+                  <HiCheck size={30} className="text-[#2D57A2]" />
                   <span>Fast Loading (within 3 seconds)</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
+                  <HiCheck size={30} className="text-[#2D57A2]" />
                   <span> Mobile Responsive</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
+                  <HiCheck size={30} className="text-[#2D57A2]" />
                   <span> After Sales Support</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
+                  <HiCheck size={30} className="text-[#2D57A2]" />
                   <span>Fast Loading (within 3 seconds)</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
+                  <HiCheck size={30} className="text-[#2D57A2]" />
                   <span> Multiple Image Upload Option</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
+                  <HiCheck size={30} className="text-[#2D57A2]" />
                   <span> Login with Facebook and Gmail</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
+                  <HiCheck size={30} className="text-[#2D57A2]" />
                   <span> Product Image Zoom-in Capability</span>
                 </div>
               </div>
@@ -107,7 +108,7 @@ const Packages = () => {
       <PackagePrice2 />
       <HowSoftyPyWork />
       <Container>
-        <div className="flex justify-between flex-col lg:flex-row ">
+        <div className="flex flex-col justify-between lg:flex-row ">
           <h2 className="text-3xl md:text-[60px] leading-[60px] max-w-[100%] lg:w-[50%] font-semibold">
             Why Choose Our Web Design Packages ?{" "}
           </h2>
@@ -138,7 +139,7 @@ const Packages = () => {
 */}
       <div className="sectionMargin">
         <Container>
-          <div className=" flex flex-col lg:flex-row md:justify-between justify-center">
+          <div className="flex flex-col justify-center  lg:flex-row md:justify-between">
             <h2 className="text-4xl md:text-[50px] lg:w-[40%] w-full text-center font-semibold">
               Want to talks us ?{" "}
             </h2>

@@ -71,12 +71,12 @@ const About = () => {
 
   return (
     <section>
-      <div className="text-white bg-[#680C70]">
+      <div className="text-white bg-[#40C7F4]">
         <NavBar />
       </div>
       <div className="aboutContainers">
         <div className="aboutContent">
-          <div className="flex items-center uppercase bg-[#680C70] text-white rounded-md w-[200px] mx-auto justify-between mb-5 px-3 py-3">
+          <div className="flex items-center uppercase bg-[#40C7F4] text-white rounded-md w-[200px] mx-auto justify-between mb-5 px-3 py-3">
             <p>Home</p>
             <FaAngleRight />
             <p>about us </p>
@@ -91,7 +91,7 @@ const About = () => {
         <div className="sectionMargin">
           <Container>
             <div className="max-w-[800px] mx-auto text-center">
-              <h2 className="text-4xl font-semibold text-[#F81600]">
+              <h2 className="text-4xl font-semibold text-[#2D57A2]">
                 Our History{" "}
               </h2>
               <p>
@@ -106,7 +106,7 @@ const About = () => {
             <div className="mission">
               <div className="missionRightSide">
                 <div>
-                  <h3 className="text-5xl font-bold text-[#680C70]">Mission</h3>
+                  <h3 className="text-5xl font-bold text-[#40C7F4]">Mission</h3>
                   <p className="mt-3 leading-8">
                     At SoftyPy, our mission is clear: to empower businesses with
                     transformative digital solutions that catalyze growth and
@@ -143,7 +143,7 @@ const About = () => {
               </div>
               <div className="order-2 missionRightSide">
                 <div>
-                  <h3 className="text-5xl font-bold text-[#680C70]">
+                  <h3 className="text-5xl font-bold text-[#40C7F4]">
                     Vission{" "}
                   </h3>
                   <p className="mt-3 leading-8">
@@ -171,7 +171,7 @@ const About = () => {
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              <h2 className="basic-title text-[#F81600]">Our Expert Team</h2>
+              <h2 className="basic-title text-[#2D57A2]">Our Expert Team</h2>
               <div className="basic-title--sub">
                 <p>
                   {" "}
@@ -212,7 +212,7 @@ const About = () => {
                 data-aos="fade-up"
                 data-aos-duration="600"
               >
-                <h2 className="basic-title text-[#F81600]">
+                <h2 className="basic-title text-[#2D57A2]">
                   Meet Our Amazing Team
                 </h2>
                 <div className="basic-title--sub">

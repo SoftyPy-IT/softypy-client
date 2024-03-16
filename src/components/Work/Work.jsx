@@ -22,10 +22,10 @@ const Work = () => {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#F81600", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #F81600" }}
+          contentStyle={{ background: "#2D57A2", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #2D57A2" }}
           date="2011 - present"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaEnvelopeOpenText />}
         >
           <h3 className="vertical-timeline-element-title text-xl font-bold ">
@@ -42,7 +42,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2010 - 2011"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaPhoneVolume />}
         >
           <img src={plan} alt="result" />
@@ -50,7 +50,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2008 - 2010"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaRecycle />}
         >
           <h3 className="vertical-timeline-element-title text-2xl font-bold">
@@ -68,7 +68,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2006 - 2008"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaRecycle />}
         >
           <img src={plan} alt="result" />
@@ -76,7 +76,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="April 2013"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaCheckDouble />}
         >
           <h3 className="vertical-timeline-element-title text-2xl font-bold">
@@ -93,7 +93,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="November 2012"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaCheckDouble />}
         >
           <img src={plan2} alt="result" />
@@ -101,7 +101,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2002 - 2006"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaSpellCheck/>}
         >
           <h3 className="vertical-timeline-element-title text-2xl font-bold">
@@ -118,7 +118,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2002 - 2006"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaSpellCheck />}
         >
           <img src={implementation} alt="result" />
@@ -126,7 +126,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2002 - 2006"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaStreetView />}
         >
           <h3 className="vertical-timeline-element-title text-2xl font-bold">
@@ -143,7 +143,7 @@ const Work = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2002 - 2006"
-          iconStyle={{ background: "#F81600", color: "#fff" }}
+          iconStyle={{ background: "#2D57A2", color: "#fff" }}
           icon={<FaStreetView />}
         >
           <img src={result} alt="result" />

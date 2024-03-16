@@ -1,7 +1,7 @@
 .bannerBtn{
    width:230px;
    height: 50px;
-    background-color: #F81600;
+    background-color: #2D57A2;
     color:white;
     border-radius: 50px;
     display: flex;
@@ -12,6 +12,6 @@
     font-weight: bold;
 }
 .bannerBtn:hover{
-    background:#680C70;
+    background:#40C7F4;
     color:#fff;
 }

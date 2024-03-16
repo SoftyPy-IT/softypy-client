@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <div className="home">
     <div className="navsBarWrap">
-    <div className="bg-[#680C70] text-white ">
+    <div className="bg-[#40C7F4] text-white ">
       <NavBar />
     </div>
 
@@ -70,7 +70,7 @@ const Services = () => {
         <div className="ourServices sectionMargin">
           <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="w-[50%] pr-5">
-              <h2 className="  text-[#680C70] font-bold text-4xl">
+              <h2 className="  text-[#40C7F4] font-bold text-4xl">
                 Types of Web Development Services
               </h2>
               <p>

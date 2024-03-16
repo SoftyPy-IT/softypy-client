@@ -17,7 +17,7 @@ const {data:services} = useGetAllSingleServicesQuery()
       <div className="servicesWraps ">
         <div className="ourServicesWrap">
           <div className="ourServiceLeftSide">
-            <h3 className="text-4xl mb-3 text-[#F81600] font-bold ">
+            <h3 className="text-4xl mb-3 text-[#2D57A2] font-bold ">
               Our Services
             </h3>
             <p>

@@ -84,7 +84,7 @@ const MessageModal = () => {
   return (
     <div className="w-[360px] h-[550px] bg-white fixed right-5 bottom-32  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden ">
       <div className="flex flex-col justify-between h-full ">
-        <div className="bg-[#680C70] w-full h-24 text-white flex justify-center items-center ">
+        <div className="bg-[#40C7F4] w-full h-24 text-white flex justify-center items-center ">
           <div className="flex items-center">
             <div className="bg-white p-1 rounded-full text-[#707584] ">
               {" "}

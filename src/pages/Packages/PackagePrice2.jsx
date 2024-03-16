@@ -14,21 +14,21 @@ const PackagePrice2 = () => {
           title="Web Development Packages and Prices"
           text="SoftyPy is a technical agency based in Dhaka, Bangladesh. We had started website design & development in mind but with the time the canvas is widened as a full-service software development company."
         />
-        <div className="grid grid-cols-1   lg:grid-cols-3 xl:grid-cols-3 mt-16 gap-10 place-content-center  ">
+        <div className="grid grid-cols-1 gap-10 mt-16 lg:grid-cols-3 xl:grid-cols-3 place-content-center ">
           <div className="wordPressPackageWrap">
             <div className="wordPressPackage">
               <IoLogoNodejs size={100} />
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-2xl md:text-4xl mr-3">৳</span>
-                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                  <span className="mr-3 text-2xl md:text-4xl">৳</span>
+                  <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
                     25000
                   </h2>
                 </div>
                 <div>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Basic</h4>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Package </h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Basic</h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
                 </div>
               </div>
               <hr />
@@ -83,7 +83,7 @@ const PackagePrice2 = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-3  md:ml-8 lg:ml-0 ">
+            <div className="mt-3 md:ml-8 lg:ml-0 ">
               <Link to="/contact">
                 {" "}
                 <CommonButton text="Contact Us" />
@@ -97,14 +97,14 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-2xl md:text-4xl mr-3">৳</span>
-                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                  <span className="mr-3 text-2xl md:text-4xl">৳</span>
+                  <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
                     45000
                   </h2>
                 </div>
                 <div>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Advance</h4>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Package </h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Advance</h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
                 </div>
               </div>
               <hr />
@@ -187,14 +187,14 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-2xl md:text-4xl mr-3">৳</span>
-                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                  <span className="mr-3 text-2xl md:text-4xl">৳</span>
+                  <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
                     45000
                   </h2>
                 </div>
                 <div>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Premium</h4>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Package </h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Premium</h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
                 </div>
               </div>
               <hr />
@@ -205,7 +205,7 @@ const PackagePrice2 = () => {
                 </div>
                 <div className="flex items-center mt-3">
                   <HiOutlineCheck className="mr-2" size={25} />
-                  <span> Online Store(Ecommerce) </span>
+                  <span> Online Store(E-Commerce) </span>
                 </div>
 
                 <div className="flex items-center mt-3">
@@ -278,21 +278,21 @@ const PackagePrice2 = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 mt-16 gap-10 place-content-center  ">
+        <div className="grid grid-cols-1 gap-10 mt-16 lg:grid-cols-3 xl:grid-cols-3 place-content-center ">
           <div className="wordPressPackageWrap">
             <div className="wordPressPackage">
               <FaWordpressSimple size={100} />
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-2xl md:text-4xl mr-3">৳</span>
-                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                  <span className="mr-3 text-2xl md:text-4xl">৳</span>
+                  <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
                     60000
                   </h2>
                 </div>
                 <div>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Basic</h4>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Package </h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Basic</h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
                 </div>
               </div>
               <hr />
@@ -361,14 +361,14 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-2xl md:text-4xl mr-3">৳</span>
-                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                  <span className="mr-3 text-2xl md:text-4xl">৳</span>
+                  <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
                     45000
                   </h2>
                 </div>
                 <div>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Advance</h4>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Package </h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Advance</h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
                 </div>
               </div>
               <hr />
@@ -451,14 +451,14 @@ const PackagePrice2 = () => {
               <hr className="my-5" />
               <div className="flex items-center justify-between py-3 ">
                 <div className="flex">
-                  <span className="text-2xl md:text-4xl mr-3">৳</span>
-                  <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+                  <span className="mr-3 text-2xl md:text-4xl">৳</span>
+                  <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
                     45000
                   </h2>
                 </div>
                 <div>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Premium</h4>
-                  <h4 className="lg:text-xl xl:text-2xl font-bold">Package </h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Premium</h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
                 </div>
               </div>
               <hr />

@@ -11,7 +11,7 @@ import AppPortFolio from "./AppPortFolio";
 const AppDevelopment = () => {
   return (
     <div>
-      <div className="bg-[#680C70] text-white ">
+      <div className="bg-[#40C7F4] text-white ">
         <NavBar />
       </div>
       <div className="sectionMargin">
@@ -26,7 +26,7 @@ const AppDevelopment = () => {
                 forward and rise quickly to Google Play’s top charts.
               </p>
               <Link to="/contact">
-                <button className="bg-[#680C70] text-white w-[200px] h-[45px]">
+                <button className="bg-[#40C7F4] text-white w-[200px] h-[45px]">
                   Discuss Us{" "}
                 </button>
               </Link>

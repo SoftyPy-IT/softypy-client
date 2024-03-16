@@ -33,7 +33,7 @@ border:1px solid #ddd;
 }
 .requestDemo {
   display: flex;
-  border: 1px solid #F81600;
+  border: 1px solid #2D57A2;
   padding: 10px;
   border-radius: 3px;
 }
@@ -49,7 +49,7 @@ border:1px solid #ddd;
 
 .emalIcon {
   font-size: 25px !important;
-  color: #F81600;
+  color: #2D57A2;
 }
 .socialIcon {
   width: 30px;
@@ -78,7 +78,7 @@ border:1px solid #ddd;
 .contactBtn {
   display: flex;
   align-items: center;
-  background: #680C70;
+  background: #40C7F4;
   width: 200px;
   height: 50px;
   padding-left: 5px;
@@ -98,7 +98,7 @@ border:1px solid #ddd;
   cursor: pointer;
 }
 .termCondition p:hover {
-  color: #F81600;
+  color: #2D57A2;
 }
 .contactUs p {
   margin-bottom: 10px;

@@ -29,7 +29,7 @@ const Footer = () => {
        </div>
      </div>
      <div>
-       <Link to='/services'> <h3 className="text-xl font-bold text-[#F81600] mb-3">Services </h3></Link>
+       <Link to='/services'> <h3 className="text-xl font-bold text-[#2D57A2] mb-3">Services </h3></Link>
        <p>Web & APP Development</p>
        <p>ERP Solutions</p>
        <p>UI/UX Design</p>
@@ -37,7 +37,7 @@ const Footer = () => {
        <p>SEO</p>
      </div>
      <div>
-       <Link to='/about'> <h3 className="text-xl font-bold text-[#F81600] mb-3">About </h3></Link>
+       <Link to='/about'> <h3 className="text-xl font-bold text-[#2D57A2] mb-3">About </h3></Link>
        <Link to="/client">
             <p className="navbar-item">Happy Clients </p>
           </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
      </div>
 
      <div>
-       <Link to='/contact'> <h3 className="text-xl font-bold text-[#F81600] mb-3">Contact  </h3></Link>
+       <Link to='/contact'> <h3 className="text-xl font-bold text-[#2D57A2] mb-3">Contact  </h3></Link>
 
        <div className="flex items-center">
          <FaPhoneAlt />
@@ -62,7 +62,7 @@ const Footer = () => {
          <p>softypy@gmail.com</p>
        </div>
        <div className="mt-3">
-         <h3 className="text-xl font-bold text-[#F81600] mb-3 ">
+         <h3 className="text-xl font-bold text-[#2D57A2] mb-3 ">
            Follow Us
          </h3>
          <div className="flex items-center w-[150px] justify-between">

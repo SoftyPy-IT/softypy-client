@@ -35,7 +35,7 @@ const Signup = () => {
 
   return (
     <div className="">
-      <div className="bg-[#680C70] text-white">
+      <div className="bg-[#40C7F4] text-white">
         <NavBar />
       </div>
       <div className="signupWrap">
@@ -100,7 +100,7 @@ const Signup = () => {
             </div>
             <button
               type="submit"
-              className="  bg-[#680C70] h-10 text-white businessBtn"
+              className="  bg-[#40C7F4] h-10 text-white businessBtn"
             >
               Register
             </button>
@@ -110,7 +110,7 @@ const Signup = () => {
        Already have an account?
         <Link to="/login">
           {" "}
-          <b className="text-[#680C70]">
+          <b className="text-[#40C7F4]">
            Login
           </b>
         </Link>

@@ -123,14 +123,14 @@
   transform: translate(-50%, -50%);
 }
 .welcome-heading {
-  color: #680c70 !important;
+  color: #40C7F4 !important;
 }
 .left-side {
   width: 100%;
 }
 .left-side h1 {
   font-size: 50px;
-  color: #f81600 !important;
+  color: #2D57A2 !important;
   margin-bottom: 0px;
   animation: animate_left 2s 1 ease;
 }

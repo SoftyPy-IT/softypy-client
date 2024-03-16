@@ -85,7 +85,7 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
     <div className="w-[340px] h-[550px] bg-white fixed right-5 bottom-28 rounded-2xl text-black shadow-sm z-[9999999999] overflow-hidden ">
       <div className="flex flex-col justify-between h-full ">
      
-        <div className="bg-[#680C70] w-full h-24 text-white flex justify-center items-center relative">
+        <div className="bg-[#40C7F4] w-full h-24 text-white flex justify-center items-center relative">
         <button onClick={onClose} className="absolute top-2 right-5"><HiOutlineX size={25}/></button>
           <div className="flex items-center">
             <div className="bg-white p-1 rounded-full text-[#707584] ">

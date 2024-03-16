@@ -33,7 +33,7 @@
 .leftArrow{
     width: 50px;
     height: 35px;
-    background: #F81600;
+    background: #2D57A2;
     display: grid;
     place-items: center;
     border-top-left-radius: 15px;
@@ -43,7 +43,7 @@
 .rightArrow{
     width: 50px;
     height: 35px;
-    background: #F81600;
+    background: #2D57A2;
     display: grid;
     place-items: center;
     border-top-right-radius: 17px;

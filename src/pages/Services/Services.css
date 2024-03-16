@@ -9,7 +9,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #541283fb, #f81600);
+  background: linear-gradient(to right, #541283fb, #2D57A2);
   top: 0;
   left: 0;
   bottom: 0;
@@ -42,7 +42,7 @@
 .servicesLeftSide h3 {
   font-size: 27px;
   font-weight: bold;
-  color: #f81600;
+  color: #2D57A2;
 }
 
 .singleService {
@@ -117,7 +117,7 @@ height:350px;
   width: 100%;
 }
 .card-back {
-  background-color: #680C70;
+  background-color: #40C7F4;
   transform: rotateY(180deg);
 }
 

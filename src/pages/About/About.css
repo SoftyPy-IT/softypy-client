@@ -234,7 +234,7 @@ img {
   position: relative;
   top: -55px;
   left: -62px;
-  border: 1px solid #f81600;
+  border: 1px solid #2D57A2;
 }
 .teamImg5 {
   width: 280px !important;
@@ -245,7 +245,7 @@ img {
 .btnWrap {
   width: 200px;
   height: 45px;
-  background: #f81600;
+  background: #2D57A2;
   color: white;
   display: flex;
   justify-content: center;

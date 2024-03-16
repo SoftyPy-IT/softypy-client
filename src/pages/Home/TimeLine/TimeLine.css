@@ -96,7 +96,7 @@
   right: -20px;
   top: -26px;
   z-index: 10;
-  background: #680c70;
+  background: #40C7F4;
   color: white;
   text-align: center;
   display: flex;
@@ -111,7 +111,7 @@
   position: absolute;
   width: 6px;
   height: 100%;
-  background: #f81600;
+  background: #2D57A2;
   top: 0;
   left: 50%;
   margin-left: -3px;
@@ -156,7 +156,7 @@
   overflow: hidden;
   margin: 0 auto;
   border-radius: 50%;
-  border: 1px solid #f81600;
+  border: 1px solid #2D57A2;
 }
 .textBoxImg img {
   width: 100%;

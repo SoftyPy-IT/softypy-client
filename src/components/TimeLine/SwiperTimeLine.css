@@ -52,7 +52,7 @@
   }
   
   .dot.active {
-    background: #F81600;
+    background: #2D57A2;
   }
   
 .sliderWrap{
@@ -110,7 +110,7 @@
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background: #F81600;
+    background: #2D57A2;
     left: -7px;
     top: -11px;
     animation: zoom 5s linear  infinite;
@@ -133,7 +133,7 @@
     }
     to{
       transform: scale(1);
-      background-color: #680C70;
+      background-color: #40C7F4;
     }
     
   }

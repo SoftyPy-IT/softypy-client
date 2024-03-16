@@ -40,7 +40,7 @@ const Products = () => {
               <small>{data.desc}</small>
               <div className="flex items-center cursor-pointer mt-2">
                 <span>Learn More </span>
-                <FaArrowRight className="ml-2 text-[#F81600] " />
+                <FaArrowRight className="ml-2 text-[#2D57A2] " />
               </div>
             </div>
           </div>

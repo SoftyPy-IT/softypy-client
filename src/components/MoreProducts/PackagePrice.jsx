@@ -187,7 +187,7 @@ const PackagePrice = () => {
                     </div>
                     <div className="flex items-center justify-between my-5 text-center px-3">
                       <div>
-                        <small className="text-[#F81600] block">
+                        <small className="text-[#2D57A2] block">
                           Speak with us{" "}
                         </small>
                         <b>+88-01762-380594</b>
@@ -195,7 +195,7 @@ const PackagePrice = () => {
                         <b>+88-01303042561</b>
                       </div>
                       <div className="w-[2px] h-[40px] bg-[#5B1782]"></div>
-                      <small className="text-[#F81600]">Want to discuss?</small>
+                      <small className="text-[#2D57A2]">Want to discuss?</small>
                     </div>
                     <div className="priceBtn">
                       <small>Get Start Now </small>
@@ -211,7 +211,7 @@ const PackagePrice = () => {
                     The Premium Package
                   </h3>
                   <div className="absolute top-14 right-[120px]">
-                    <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails2  bg-[#F81600] text-white ">
+                    <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails2  bg-[#2D57A2] text-white ">
                       <div>
                         <div>
                           <p>৳200250</p>
@@ -557,7 +557,7 @@ const PackagePrice = () => {
                     </div>
                     <div className="flex items-center justify-between my-5 text-center px-3">
                       <div>
-                        <small className="text-[#F81600] block">
+                        <small className="text-[#2D57A2] block">
                           Speak with us{" "}
                         </small>
                         <b>+88-01762-380594</b>
@@ -565,7 +565,7 @@ const PackagePrice = () => {
                         <b>+88-01303042561</b>
                       </div>
                       <div className="w-[2px] h-[40px] bg-[#5B1782]"></div>
-                      <small className="text-[#F81600]">Want to discuss?</small>
+                      <small className="text-[#2D57A2]">Want to discuss?</small>
                     </div>
                     <div className="priceBtn">
                       <small>Get Start Now </small>
@@ -582,7 +582,7 @@ const PackagePrice = () => {
                     The Platinum Package
                   </h3>
                   <div className="absolute top-14 right-[130px]">
-                    <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails bg-[#680C70] text-white ">
+                    <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails bg-[#40C7F4] text-white ">
                       <div>
                         <div>
                           <del>৳1350250</del>
@@ -793,7 +793,7 @@ const PackagePrice = () => {
                     </div>
                     <div className="flex items-center justify-between my-5 text-center px-3">
                       <div>
-                        <small className="text-[#F81600] block">
+                        <small className="text-[#2D57A2] block">
                           Speak with us{" "}
                         </small>
                         <b>+88-01762-380594</b>
@@ -801,7 +801,7 @@ const PackagePrice = () => {
                         <b>+88-01303042561</b>
                       </div>
                       <div className="w-[2px] h-[40px] bg-[#5B1782]"></div>
-                      <small className="text-[#F81600]">Want to discuss?</small>
+                      <small className="text-[#2D57A2]">Want to discuss?</small>
                     </div>
                     <div className="priceBtn">
                       <small>Get Start Now </small>

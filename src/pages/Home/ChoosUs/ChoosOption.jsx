@@ -28,7 +28,7 @@ const Effect3D = () => {
                   Every penny we spend and day that we work for you is fully
                   accountable, always open for discussion.
                 </p>
-                <div className="flex text-white mt-3 items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
+                <div className="flex text-white mt-3 items-center justify-center bg-[#2D57A2] w-32 h-10 mx-auto rounded-full radius">
                   <button>See more </button>
                   <FaArrowRight className="ml-2" />
                 </div>
@@ -55,7 +55,7 @@ const Effect3D = () => {
                   We measure everything. No hiding. We let the results speak for
                   themselves.
                 </p>
-                <div className="flex text-white mt-3 items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
+                <div className="flex text-white mt-3 items-center justify-center bg-[#2D57A2] w-32 h-10 mx-auto rounded-full radius">
                   <button>See more </button>
                   <FaArrowRight className="ml-2" />
                 </div>
@@ -88,7 +88,7 @@ const Effect3D = () => {
                   professionals. We will also assign a dedicated account manager
                   for you.
                 </p>
-                <div className="flex text-white mt-3 items-center justify-center bg-[#F81600] w-32 h-10 mx-auto rounded-full radius">
+                <div className="flex text-white mt-3 items-center justify-center bg-[#2D57A2] w-32 h-10 mx-auto rounded-full radius">
                   <button>See more </button>
                   <FaArrowRight className="ml-2" />
                 </div>

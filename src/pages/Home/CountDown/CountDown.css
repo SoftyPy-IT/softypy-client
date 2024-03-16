@@ -45,12 +45,12 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
     transition: all .9s cubic-bezier(0.54, 0.49, 0.83, 0.76);
-    background-color: #F81600;
+    background-color: #2D57A2;
     color:white;
     
 }
 .countdown:hover{
-    background:#680C70;
+    background:#40C7F4;
     color:white;
    
 }

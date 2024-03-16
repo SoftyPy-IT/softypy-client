@@ -57,8 +57,8 @@ const AppCategories = () => {
             >
               <Typography sx={{}}>
                 <div className="flex items-center">
-                  <FaVideo className="appIcon text-[#680C70]" size={35} />
-                  <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                  <FaVideo className="appIcon text-[#40C7F4]" size={35} />
+                  <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                     {" "}
                     Enterprise
                   </h3>
@@ -87,10 +87,10 @@ const AppCategories = () => {
                 <Typography sx={{}}>
                   <div className="flex items-center">
                     <HiOutlineShoppingCart
-                      className="appIcon text-[#680C70]"
+                      className="appIcon text-[#40C7F4]"
                       size={35}
                     />
-                    <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                    <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                       {" "}
                       E-commerce{" "}
                     </h3>
@@ -120,10 +120,10 @@ const AppCategories = () => {
                 <Typography sx={{}}>
                   <div className="flex items-center">
                     <HiOutlineUserGroup
-                      className="appIcon text-[#680C70]"
+                      className="appIcon text-[#40C7F4]"
                       size={35}
                     />
-                    <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                    <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                       {" "}
                       social Media{" "}
                     </h3>
@@ -153,10 +153,10 @@ const AppCategories = () => {
                 <Typography sx={{}}>
                   <div className="flex items-center">
                     <FaCommentDots
-                      className="appIcon text-[#680C70]"
+                      className="appIcon text-[#40C7F4]"
                       size={35}
                     />
-                    <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                    <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                       {" "}
                       Real-Time Communication{" "}
                     </h3>
@@ -186,10 +186,10 @@ const AppCategories = () => {
                 <Typography sx={{}}>
                   <div className="flex items-center">
                     <FaCircleDollarToSlot
-                      className="appIcon text-[#680C70]"
+                      className="appIcon text-[#40C7F4]"
                       size={35}
                     />
-                    <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                    <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                       {" "}
                       Finance
                     </h3>
@@ -219,8 +219,8 @@ const AppCategories = () => {
             >
               <Typography sx={{}}>
                 <div className="flex items-center">
-                  <FaVideoSlash className="appIcon text-[#680C70]" size={35} />
-                  <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                  <FaVideoSlash className="appIcon text-[#40C7F4]" size={35} />
+                  <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                     {" "}
                     Entertainment
                   </h3>
@@ -248,10 +248,10 @@ const AppCategories = () => {
                 <Typography sx={{}}>
                   <div className="flex items-center">
                     <FaHeartCircleBolt
-                      className="appIcon text-[#680C70]"
+                      className="appIcon text-[#40C7F4]"
                       size={35}
                     />
-                    <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                    <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                       {" "}
                       Healthcare
                     </h3>
@@ -281,10 +281,10 @@ const AppCategories = () => {
                 <Typography sx={{}}>
                   <div className="flex items-center">
                     <FaGraduationCap
-                      className="appIcon text-[#680C70]"
+                      className="appIcon text-[#40C7F4]"
                       size={35}
                     />
-                    <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                    <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                       {" "}
                       Education
                     </h3>
@@ -314,8 +314,8 @@ const AppCategories = () => {
               >
                 <Typography sx={{}}>
                   <div className="flex items-center">
-                    <FaCarSide className="appIcon text-[#680C70]" size={35} />
-                    <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                    <FaCarSide className="appIcon text-[#40C7F4]" size={35} />
+                    <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                       {" "}
                       Logistics & Transportation
                     </h3>
@@ -344,8 +344,8 @@ const AppCategories = () => {
               >
                 <Typography sx={{}}>
                   <div className="flex items-center">
-                    <FaOilWell className="appIcon text-[#680C70]" size={35} />
-                    <h3 className="text-3xl font-bold ml-3 text-[#680C70]">
+                    <FaOilWell className="appIcon text-[#40C7F4]" size={35} />
+                    <h3 className="text-3xl font-bold ml-3 text-[#40C7F4]">
                       Wellness
                     </h3>
                   </div>
@@ -365,7 +365,7 @@ const AppCategories = () => {
         </div>
       </div>
     <Link to='/contact'>
-    <button className="bg-[#680C70] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center">
+    <button className="bg-[#40C7F4] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center">
     <span>Contact Us</span> <HiOutlineArrowNarrowRight className="ml-2" />
   </button>
     </Link>

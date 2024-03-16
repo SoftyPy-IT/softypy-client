@@ -45,7 +45,7 @@ const ERPDetails = () => {
   ];
   return (
     <div>
-      <div className="text-white bg-[#680C70]">
+      <div className="text-white bg-[#40C7F4]">
         <NavBar />
       </div>
       <div className="py-10 md:px-0 px-3 ">

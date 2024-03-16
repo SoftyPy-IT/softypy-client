@@ -24,7 +24,7 @@
 border-radius: 100%;
 width:270px;
 height:200px;
-background:#F81600;
+background:#2D57A2;
 
 }
 
@@ -62,7 +62,7 @@ background:#F81600;
 }
 .projectServicesCard{
     width:280px;
-    background:#F81600;
+    background:#2D57A2;
     height:80px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -79,11 +79,11 @@ background:#F81600;
 
 }
 .cards-front2 {
-    background:#F81600 ;
+    background:#2D57A2 ;
     color:#fff;
 }
 .cardsFront2, .cardsFront3, .cardsFront4{
-    background:#591683 !important
+    background:#2D57A2!important
 }
 
 .cards .cards-back-content, .cards-front{
@@ -94,7 +94,7 @@ background:#F81600;
     width: 100%;
  }
  .cards-back{
-     background-color: #F81600;
+     background-color: #2D57A2;
      transform: rotateY(180deg);
      
  }
@@ -132,7 +132,7 @@ object-fit: cover;
  }
 
  .cards-back2{
-    background:#680C70 
+    background:#40C7F4 
  }
 .cardLine3{
     top: 395px;

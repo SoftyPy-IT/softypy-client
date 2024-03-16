@@ -72,11 +72,11 @@
 //             </button>
 //           </div>
 //           <div>
-//             <p className="text-center ">By proceeding, I agree to SoftyPy's <b className="text-[#680C70]">Terms & Conditions, Community Guidelines</b>, & <b className="text-lg text-[#680C70]">Privacy Policy</b></p>
+//             <p className="text-center ">By proceeding, I agree to SoftyPy's <b className="text-[#40C7F4]">Terms & Conditions, Community Guidelines</b>, & <b className="text-lg text-[#40C7F4]">Privacy Policy</b></p>
 //           </div>
 //           <div className="my-8 signupLine"> </div>
 //           <div className="text-center">
-//             <p>Don’t have an account an account?  <Link to='/signup'><b className="text-[#680C70]">Sign up</b></Link></p>
+//             <p>Don’t have an account an account?  <Link to='/signup'><b className="text-[#40C7F4]">Sign up</b></Link></p>
 //           </div>
 //         </form>
 //       </div>

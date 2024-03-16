@@ -64,7 +64,7 @@ useEffect(()=>{
           // variants={containerAnimation}
           // animate={sectionControl}
           className="w-[100%] md:w-[50%]">
-            <h2 className=" mb-3 text-[#680C70] font-bold text-4xl">
+            <h2 className=" mb-3 text-[#40C7F4] font-bold text-4xl">
               Who We Are ?
             </h2>
             <p>

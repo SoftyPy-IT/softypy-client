@@ -97,10 +97,10 @@
 //             <div>
 //               <p className="text-center ">
 //                 By proceeding, I agree to SoftyPy's{" "}
-//                 <b className="text-[#680C70]">
+//                 <b className="text-[#40C7F4]">
 //                   Terms & Conditions, Community Guidelines
 //                 </b>
-//                 , & <b className="text-lg text-[#680C70]">Privacy Policy</b>
+//                 , & <b className="text-lg text-[#40C7F4]">Privacy Policy</b>
 //               </p>
 //             </div>
 //             <div className="my-8 signupLine"> </div>
@@ -108,7 +108,7 @@
 //               <p>
 //                 Already have an account?{" "}
 //                 <Link to="/login">
-//                   <b className="text-[#680C70]">Login</b>
+//                   <b className="text-[#40C7F4]">Login</b>
 //                 </Link>
 //               </p>
 //             </div>

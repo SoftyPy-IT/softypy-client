@@ -127,7 +127,7 @@ const AppPortFolio = () => {
       </Slider>
       <div>
         <Link to='/contact'>
-        <button className="bg-[#680C70] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center ml-20 ">
+        <button className="bg-[#40C7F4] mt-10 text-white w-[200px] h-[45px] flex items-center justify-center ml-20 ">
           <span>Contact Us</span> <HiOutlineArrowNarrowRight className="ml-2" />
         </button>
         </Link>
