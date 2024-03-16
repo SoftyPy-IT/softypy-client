@@ -1,4 +1,4 @@
-import softypy from "../../../../public/assets/logo.png";
+import softypy from "../../../../public/assets/logo-softypy.png";
 import "./Footer.css";
 import {
   FaPhoneAlt,
@@ -18,7 +18,7 @@ const Footer = () => {
    <div className="contactUs">
      <div>
        <div className="w-56 text-left">
-         <img className="w-28 h-24 object-cover" src={softypy} alt="softypy" />
+         <img className="object-cover " src={softypy} alt="softypy" />
          <div className="flex items-center">
            <img className="mr-2" src={location} alt="location" />
            <p className="mt-3">
@@ -84,9 +84,9 @@ const Footer = () => {
      </div>
    </div>
    <hr className="mt-5" />
-   <div className="copyRight py-3">
+   <div className="py-3 copyRight">
      <p className="sm:mb-5">All Right reserve | SoftyPy - 2023 </p>
-     <div className="termCondition flex items-center justify-between flex-wrap ">
+     <div className="flex flex-wrap items-center justify-between termCondition ">
        <p>Term & Conditions </p>
        <p>Privacy policy </p>
        <p>Cookies </p>

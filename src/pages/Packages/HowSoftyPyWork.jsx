@@ -52,7 +52,7 @@ const HowSoftyPyWork = () => {
   ];
   return (
     <Container>
-      <div className="servicesWraps">
+      <div className="hidden servicesWraps none">
         <div className="">
           <SectionTitle
             title="How We Work"

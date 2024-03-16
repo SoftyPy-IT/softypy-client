@@ -35,7 +35,7 @@ const HeroSection = () => {
           <Container>
             <div className="capitalize header-content">
               <div className="left-side">
-                <h1 className="welcome-heading text-3xl md:text-5xl font-bold text-[#2D57A2]">
+                <h1 className="welcome-heading text-3xl md:text-5xl font-bold text-[#40C7F4]">
                   Next-gen enterprise
                 </h1>
                 <p className="mt-3 text-3xl font-semibold welcome-paragraph md:text-5xl">
@@ -44,10 +44,10 @@ const HeroSection = () => {
 
                 <div className="items-center justify-between block w-full mt-10 text-white xl:flex xl:mt-20">
                   <h3 className="mb-3 text-3xl md:text-5xl xl:mb-0">
-                    We Think <span className="text-[#2D57A2]">Future</span>
+                    We Think <span className="text-[#40C7F4]">Future</span>
                     <span
                       className={
-                        "text-[#2D57A2] futureText " +
+                        "text-[#40C7F4] futureText " +
                         (showText === 1 ? "show" : "")
                       }
                     >
@@ -55,7 +55,7 @@ const HeroSection = () => {
                     </span>
                     <span
                       className={
-                        "text-[#2D57A2] futureText2 " +
+                        "text-[#40C7F4] futureText2 " +
                         (showText === 2 ? "show" : "")
                       }
                     >
@@ -63,7 +63,7 @@ const HeroSection = () => {
                     </span>
                     <span
                       className={
-                        "text-[#2D57A2] futureText3 " +
+                        "text-[#40C7F4] futureText3 " +
                         (showText === 3 ? "show" : "")
                       }
                     >
@@ -72,7 +72,7 @@ const HeroSection = () => {
                   </h3>
                   <button
                     onClick={handleOpen}
-                    className="bg-[#2D57A2] w-44  md:w-60 py-3 rounded-sm text"
+                    className="bg-[#40C7F4] w-44  md:w-60 py-3 rounded-sm text"
                   >
                     {" "}
                     Let's Talk{" "}

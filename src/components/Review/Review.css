@@ -77,8 +77,10 @@
     width: 100%;
   }
   .reviewContent {
-    width: 520px;
+    width: 600px;
 }
+
+
 }
 @media only screen and (max-width: 768px) {
  .swiperWrap{
@@ -92,9 +94,7 @@
   }
 
 @media only screen and (max-width: 500px) {
-  .reviewContent {
-    width: 100%;
-  }
+
   .reviewContent p {
     font-size: 14px;
   }
@@ -103,10 +103,15 @@
     height: 40px;
   }
   .thumbnail {
+    width: 280px !important;
     margin-top: 20px !important;
+  
   }
+
   .reviewContent {
     margin-left: 0px;
+    height: 172px;
+    width: 100%;
   }
   .reviewImg {
     width: 100%;

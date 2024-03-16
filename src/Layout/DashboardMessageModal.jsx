@@ -82,7 +82,7 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
   }, [messages]);
 
   return (
-    <div className="w-[340px] h-[550px] bg-white fixed right-5 bottom-28 rounded-2xl text-black shadow-sm z-[9999999999] overflow-hidden ">
+    <div className="w-[360px] h-[550px] bg-white fixed right-5 bottom-32  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden ">
       <div className="flex flex-col justify-between h-full ">
      
         <div className="bg-[#40C7F4] w-full h-24 text-white flex justify-center items-center relative">

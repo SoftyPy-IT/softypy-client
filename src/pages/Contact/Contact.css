@@ -210,12 +210,17 @@
   .singleSocialMedia {
     margin-bottom: 20px;
   }
+  .contactHeroSection {
+    height: 65vh;
+}
 }
 @media only screen and (max-width: 500px) {
   .contactText {
     display: block;
   }
-
+  .contactHeroSection {
+    height: 58vh;
+}
   .questionWrap {
     width: 240px !important;
     height: 230px !important;

@@ -20,7 +20,7 @@ const CareersApply = () => {
             <div className="block md:flex items-center justify-between ">
               <div className="relative w-max">
                 <input
-                  className=" peer border-b applyInput border-[#6D146C] py-2 text-[#6D146C] focus:outline-none "
+                  className=" peer border-b applyInput border-[#40C7F4] py-2 text-[#40C7F4] focus:outline-none "
                   placeholder=""
                   type="text"
                 />
@@ -30,7 +30,7 @@ const CareersApply = () => {
               </div>
               <div className="relative w-max">
                 <input
-                  className=" peer border-b applyInput border-[#6D146C]  py-2 text-[#6D146C] focus:outline-none "
+                  className=" peer border-b applyInput border-[#40C7F4]  py-2 text-[#40C7F4] focus:outline-none "
                   placeholder=""
                   type="text"
                 />
@@ -42,7 +42,7 @@ const CareersApply = () => {
             <div className="block md:flex items-center justify-between ">
               <div className="relative w-max">
                 <input
-                  className=" peer border-b applyInput border-[#6D146C]  py-2 text-[#6D146C] focus:outline-none "
+                  className=" peer border-b applyInput border-[#40C7F4]  py-2 text-[#40C7F4] focus:outline-none "
                   placeholder=""
                   type="text"
                 />
@@ -52,7 +52,7 @@ const CareersApply = () => {
               </div>
               <div className="relative w-max">
                 <input
-                  className=" peer border-b applyInput border-[#6D146C]  py-2 text-[#6D146C] focus:outline-none "
+                  className=" peer border-b applyInput border-[#40C7F4]  py-2 text-[#40C7F4] focus:outline-none "
                   placeholder=""
                   type="text"
                 />
@@ -64,7 +64,7 @@ const CareersApply = () => {
             <div className="block md:flex items-center justify-between ">
               <div className="relative w-max">
                 <input
-                  className=" peer border-b applyInput border-[#6D146C]  py-2 text-[#6D146C] focus:outline-none "
+                  className=" peer border-b applyInput border-[#40C7F4]  py-2 text-[#40C7F4] focus:outline-none "
                   placeholder=""
                   type="text"
                 />
@@ -74,7 +74,7 @@ const CareersApply = () => {
               </div>
               <div className="relative w-max">
                 <input
-                  className=" peer border-b applyInput border-[#6D146C]  py-2 text-[#6D146C] focus:outline-none "
+                  className=" peer border-b applyInput border-[#40C7F4]  py-2 text-[#40C7F4] focus:outline-none "
                   placeholder=""
                   type="text"
                 />
@@ -88,7 +88,7 @@ const CareersApply = () => {
                 <input name="image" type="file" id="files" className="hidden" />
                 <label
                   htmlFor="files"
-                  className="flex  font-bold items-center text-[#6D146C] cursor-pointer  "
+                  className="flex  font-bold items-center text-[#40C7F4] cursor-pointer  "
                 >
                   <span>
                     <HiOutlineLink size={22} className="mr-1" />

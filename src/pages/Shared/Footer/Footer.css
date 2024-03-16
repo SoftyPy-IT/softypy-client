@@ -193,8 +193,10 @@ border:1px solid #ddd;
     width: 100%;
     margin-top: 10px;
   }
+ .footerWrap{
+  padding: 0 10px;
 
-
+ }
 
   .footerTop {
     padding: 0px 10px;

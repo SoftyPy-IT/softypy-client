@@ -16,7 +16,6 @@ const Packages = () => {
   useEffect(() => {
     import("@lottiefiles/lottie-player");
   });
-  
   return (
     <div>
       <div className="bg-[#40C7F4] text-white">
@@ -59,31 +58,31 @@ const Packages = () => {
               </p>
               <div className="mt-5 space-y-2">
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#2D57A2]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span>Fast Loading (within 3 seconds)</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#2D57A2]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> Mobile Responsive</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#2D57A2]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> After Sales Support</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#2D57A2]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span>Fast Loading (within 3 seconds)</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#2D57A2]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> Multiple Image Upload Option</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#2D57A2]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> Login with Facebook and Gmail</span>
                 </div>
                 <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#2D57A2]" />
+                  <HiCheck size={30} className="text-[#F81600]" />
                   <span> Product Image Zoom-in Capability</span>
                 </div>
               </div>
@@ -108,7 +107,7 @@ const Packages = () => {
       <PackagePrice2 />
       <HowSoftyPyWork />
       <Container>
-        <div className="flex flex-col justify-between lg:flex-row ">
+        <div className="flex flex-col justify-between pt-10 lg:flex-row">
           <h2 className="text-3xl md:text-[60px] leading-[60px] max-w-[100%] lg:w-[50%] font-semibold">
             Why Choose Our Web Design Packages ?{" "}
           </h2>
@@ -139,11 +138,11 @@ const Packages = () => {
 */}
       <div className="sectionMargin">
         <Container>
-          <div className="flex flex-col justify-center  lg:flex-row md:justify-between">
+          <div className="wantToTalk">
             <h2 className="text-4xl md:text-[50px] lg:w-[40%] w-full text-center font-semibold">
               Want to talks us ?{" "}
             </h2>
-            <div className="mt-5 lg:mt-24 w-full text-center  lg:w-[60%]">
+            <div className="mt-5 lg:mt-24 w-full text-center  xl:w-[60%]">
               <p className="text-3xl md:text-[80px]">softypy@gmail.com</p>
               <p className=" mt-14 mb-10 text-3xl md:text-[80px]">
                 +88-01762-380594

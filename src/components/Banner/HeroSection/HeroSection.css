@@ -130,7 +130,7 @@
 }
 .left-side h1 {
   font-size: 50px;
-  color: #2D57A2 !important;
+
   margin-bottom: 0px;
   animation: animate_left 2s 1 ease;
 }
@@ -160,7 +160,7 @@
 @media only screen and (max-width: 500px) {
   .header-content {
     width: 100%;
-    padding: 0 20px;
+    padding: 46px 20px;
     height: 350px;
   }
 
@@ -169,11 +169,9 @@
   }
 
   .header {
-    height: 80vh;
+    height: 55vh;
   }
-  /* .header-content {
-    margin-top: 40px;
-  } */
+
   .getContactField {
     width: 100% !important;
   }
@@ -181,24 +179,16 @@
 }
 
 @media only screen and (max-width: 350px) {
-  .header-content {
-    padding: 0 0px;
-  }
 
-  .header {
-    height: 87vh;
-  }
-  /* .header-content {
-    margin-top: 40px;
-  } */
+
+ 
 }
 
 @media only screen and (max-width: 300px){
-
-.header {
+  .header {
     height: 60vh;
-}
+  }
 .header-content {
-  padding: 0 13px;
+  padding: 30px 13px;
 }
 }

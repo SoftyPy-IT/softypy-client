@@ -9,6 +9,7 @@ import Container from "../../ui/Container";
 import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
 import project from "../../../public/assets/project.webp";
 import project2 from "../../../public/assets/project2.png";
+import './WorkFlow.css';
 export default function WorkPortfolio() {
   const [value, setValue] = React.useState("1");
 
@@ -25,7 +26,7 @@ export default function WorkPortfolio() {
       text="At Pinnacle Portfolios, we believe in the transformative power of vision realized. Each portfolio within our collection embodies the convergence of bold imagination and meticulous execution, culminating in exceptional outcomes that redefine industry standards"
     ></SectionTitle>
 
-  <div className="mt-10">
+  <div className="mt-10 workFlowWraps">
   <Box sx={{ width: "100%", typography: "body1" }}>
   <TabContext value={value}>
     <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -40,11 +41,12 @@ export default function WorkPortfolio() {
         <Tab label="Proactive Monitoring" value="3" />
         <Tab label="Cost-Efficiency" value="4" />
       </TabList>
+      
     </Box>
     <TabPanel value="1">
       <div className="whyChooces">
         <div className="chooseLeftSide">
-          <h3 className="text-3xl font-bold mb-5">
+          <h3 className="mb-5 text-3xl font-bold">
           "Zynix: Your Gateway to Tech Excellence"
           </h3>
           <p>
@@ -59,7 +61,7 @@ export default function WorkPortfolio() {
     <TabPanel value="2">
     <div className="whyChooces">
     <div className="chooseLeftSide">
-    <h3 className="text-3xl font-bold mb-5">
+    <h3 className="mb-5 text-3xl font-bold">
     "Zynix: Your Gateway to Tech Excellence"
     </h3>
     <p>
@@ -74,7 +76,7 @@ export default function WorkPortfolio() {
   <TabPanel value="3">
   <div className="whyChooces">
   <div className="chooseLeftSide">
-  <h3 className="text-3xl font-bold mb-5">
+  <h3 className="mb-5 text-3xl font-bold">
   "Zynix: Your Gateway to Tech Excellence"
   </h3>
   <p>
@@ -89,7 +91,7 @@ export default function WorkPortfolio() {
 <TabPanel value="3">
 <div className="whyChooces">
   <div className="chooseLeftSide">
-    <h3 className="text-3xl font-bold mb-5">
+    <h3 className="mb-5 text-3xl font-bold">
       Web Performance Optimization
     </h3>
     <p>
@@ -109,7 +111,7 @@ export default function WorkPortfolio() {
 <TabPanel value="3">
 <div className="whyChooces">
 <div className="chooseLeftSide">
-  <h3 className="text-3xl font-bold mb-5">
+  <h3 className="mb-5 text-3xl font-bold">
     Web Performance Optimization
   </h3>
   <p>

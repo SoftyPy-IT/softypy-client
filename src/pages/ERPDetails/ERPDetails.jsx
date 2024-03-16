@@ -57,7 +57,7 @@ const ERPDetails = () => {
 
      <div className="px-3 md:px-0">
      <Container>
-     <h3 className="text-2xl uppercase text-[#6D146C] mb-3 font-semibold ">
+     <h3 className="text-2xl uppercase text-[#40C7F4] mb-3 font-semibold ">
        Key features{" "}
      </h3>
      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -165,7 +165,7 @@ const ERPDetails = () => {
               <small className="block ">+Taxes</small>
               <small>Per Month</small>
               <h3 className="my-5">Billed Yearly </h3>
-              <button className="bg-[#6D146C] text-white rounded-full text-[13px]  w-[100px] h-[30px]">
+              <button className="bg-[#40C7F4] text-white rounded-full text-[13px]  w-[100px] h-[30px]">
                 View Pricing{" "}
               </button>
             </div>

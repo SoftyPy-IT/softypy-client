@@ -13,4 +13,8 @@
   .slider img {
     width: 260px !important;
   }
+  .slidersWraps{
+    width:290px !important;
+   overflow: hidden;
+  }
 }

@@ -39,7 +39,7 @@ const AppPortFolio = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="sectionMargin">
+    <div className="sectionMargin appFortpolioWraps">
       <div className="mb-8 ml-20 ">
         <h3 className="text-5xl font-semibold">Latest Project </h3>
       </div>

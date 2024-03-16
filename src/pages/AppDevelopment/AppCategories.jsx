@@ -31,11 +31,11 @@ const AppCategories = () => {
     setExpanded(isExpanded ? panel : false);
   };
   return (
-    <div className="sectionMargin">
-      <h2 className="text-5xl font-bold text-black ">
+    <div className="sectionMargin appCategoriesWraps">
+      <h2 className="text-3xl font-bold text-black md:text-5xl">
         Enterprise and consumer-oriented Android apps for any industry
       </h2>
-      <p className="my-5 text-xl max-w-[70%]">
+      <p className="w-full my-5 text-xl md:max-w-[70%]">
         {" "}
         We develop Android apps tailored to your specific needs. Whether you
         want better business processes, insights into customer data or millions
@@ -44,7 +44,7 @@ const AppCategories = () => {
         outstanding user experience.
       </p>
 
-      <div className="flex justify-between flex-wrap">
+      <div className="flex flex-wrap justify-between">
         <div>
           <Accordion
             expanded={expanded === "panel1"}

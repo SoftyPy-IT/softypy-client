@@ -6,16 +6,28 @@
   border-radius: 5px;
   margin: 0 auto;
 }
+.wantToTalk {
+
+  display:flex;
+  justify-content: space-between;
+  flex-direction:row;
+}
+
 @media only screen and (max-width: 1024px) {
   .wordPressPackage {
     width: 320px;
   }
+  .wantToTalk{
+    flex-direction: column;
+  }
+ 
 }
 
 @media only screen and (max-width: 768px) {
   .wordPressPackage {
     width: 90%;
   }
+ 
 }
 
 @media only screen and (max-width: 500px) {

@@ -38,3 +38,22 @@
 }
 }
 
+
+@media only screen and (max-width:500px) {
+  .appPortFolioWrap {
+   width: 100%;
+  
+}
+
+
+}
+
+@media only screen and (max-width:375px) {
+
+.appCategoriesWraps{
+  width:280px !important;
+  overflow: hidden;
+
+}
+
+}
