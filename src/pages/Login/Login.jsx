@@ -8,6 +8,7 @@ import { verifyToken } from "../../utils/verifyToken";
 import { useLoginMutation } from "../../redux/features/auth/authApi";
 import NavBar from "../Shared/NavBar/NavBar";
 import Cookies from "js-cookie";
+import Circle from "../../components/Circle/Circle";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -46,7 +47,7 @@ const Login = () => {
     <NavBar />
   </div>
       <div className="signupWrap">
-      <h3 className="text-3xl font-bold text-center mb-5">Welcome to Back !</h3>
+      <h3 className="mb-5 text-3xl font-bold text-center">Welcome to Back !</h3>
         <div className="text-center">
           <span>
             Sign In SoftyPy or{" "}
@@ -87,6 +88,7 @@ const Login = () => {
 
         
         </form>
+        <Circle/>
       </div>
     </div>
   );

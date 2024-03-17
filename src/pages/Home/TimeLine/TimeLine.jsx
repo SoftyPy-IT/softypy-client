@@ -81,7 +81,7 @@ const TimeLine = () => {
                 className="workFlowBox workFlowBox2"
               >
                 <div className="workFlowIcon">
-                  <FaPeopleGroup size={70} />
+                  <FaPeopleGroup size={70} className="text"/>
                 </div>
                 <div>
                   <b className="text-[#40C7F4]">Design and Planning</b>

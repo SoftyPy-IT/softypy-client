@@ -4,6 +4,10 @@ import NavBar from "../../../pages/Shared/NavBar/NavBar";
 import Container from "../../../ui/Container";
 import ContactModal from "./ContactModal";
 import "./HeroSection.css";
+import react from '../../../../public/assets/react.png'
+import node from '../../../../public/assets/node.png'
+import js from '../../../../public/assets/javaScript.png'
+import flutter from '../../../../public/assets/dart.webp'
 const HeroSection = () => {
   const [showText, setShowText] = useState(1);
 
@@ -38,6 +42,7 @@ const HeroSection = () => {
                 <h1 className="welcome-heading text-3xl md:text-5xl font-bold text-[#40C7F4]">
                   Next-gen enterprise
                 </h1>
+              
                 <p className="mt-3 text-3xl font-semibold welcome-paragraph md:text-5xl">
                   software development company
                 </p>
@@ -77,6 +82,18 @@ const HeroSection = () => {
                     {" "}
                     Let's Talk{" "}
                   </button>
+                  <div className="animationIcon ">
+                  <img src={react} alt="" />
+                  </div>
+                  <div className=" node">
+                  <img src={node} alt="" />
+                  </div>
+                  <div className=" js">
+                  <img src={js} alt="js" />
+                  </div>
+                  <div className="flutter">
+                  <img src={flutter} alt="flutter" />
+                  </div>
                 </div>
               </div>
             </div>
