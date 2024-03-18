@@ -6,8 +6,10 @@ import { HiChevronDoubleUp } from "react-icons/hi";
 import MessageModal from "./MessageModal";
 import { IoIosClose } from "react-icons/io";
 import Cookies from "js-cookie";
+import { useSelector } from "react-redux";
 
 const Main = () => {
+  const { darkMode } = useSelector((store) => store.theme);
   useEffect(() => {
     const handleScroll = () => {
       const button = document.getElementById("button");
@@ -48,7 +50,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div>
+    <div className={` ${darkMode ? "bg-black text-white" : ""}`}>
       <Outlet />
 
       <Footer />

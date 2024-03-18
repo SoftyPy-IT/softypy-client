@@ -1,16 +1,19 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { useCreateReviewsMutation } from "../../../redux/features/review/reviewApi";
+import { useNavigate } from "react-router-dom";
 
 
 const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN
 const AddReviews = () => {
+  const navigate = useNavigate()
 const [createReviews,{isSuccess}] = useCreateReviewsMutation()
 
   const { register, handleSubmit } = useForm();
   const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`;
 
   const onSubmit = (data) => {
+  
  
     const formData = new FormData();
     formData.append("image", data.image[0]);
@@ -41,6 +44,7 @@ const [createReviews,{isSuccess}] = useCreateReviewsMutation()
             timer: 1500
           })
         }
+        navigate('/dashboard/reviews')
       
       })
       .catch((error) => {
@@ -74,7 +78,7 @@ const [createReviews,{isSuccess}] = useCreateReviewsMutation()
               <input
                 {...register("title")}
                 name="title"
-                placeholder="Title"
+                placeholder="Designation"
                 type="text"
                 className="inputField"
                  autoComplete="off"
@@ -97,7 +101,6 @@ const [createReviews,{isSuccess}] = useCreateReviewsMutation()
               <input
                {...register("image")}
                 name="image"
-                placeholder="Products Descripton "
                 type="file"
                 className="inputField"
                  autoComplete="off"
