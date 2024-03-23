@@ -1,6 +1,6 @@
 
 import Cookies from "js-cookie";
-import "./message.css";
+// import "./message.css";
 
 export default function Message({ messages }) {
   const senderId = Cookies.get("temporaryId");
