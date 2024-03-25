@@ -33,7 +33,7 @@ const AddServices = () => {
         
         }
         console.log(newServices)
-        fetch('http://localhost:5000/services', {
+        fetch('https://softypy-server-liard.vercel.app/services', {
           method: 'POST',
           headers: {
             'content-type': 'application/json'
