@@ -26,22 +26,30 @@ const Footer = () => {
              Dhaka-1212, Bangladesh
            </p>
          </div>
+         <div className="flex items-center">
+           <img className="mr-2" src={location} alt="location" />
+           <p className="mt-3">
+           Ka-121, (Besides of IFIC Bank),Kuril, Vatara, Dhaka -1229
+           </p>
+         </div>
        </div>
      </div>
      <div>
        <Link to='/services'> <h3 className="text-xl font-bold text-[#2D57A2] mb-3">Services </h3></Link>
-       <p>Web & APP Development</p>
-       <p>ERP Solutions</p>
+       <Link to='/app-development'> <p>APP Development</p></Link>
+       <p> Web Development</p>
+      <Link to='/erp'> <p>ERP Solutions</p></Link>
        <p>UI/UX Design</p>
        <p>Digital Marketing</p>
        <p>SEO</p>
+       <Link to='/packages'> <p>Packages</p></Link>
      </div>
      <div>
        <Link to='/about'> <h3 className="text-xl font-bold text-[#2D57A2] mb-3">About </h3></Link>
        <Link to="/client">
             <p className="navbar-item">Happy Clients </p>
           </Link>
-       <p>About SoftyPy </p>
+       <Link to='/about'> <p>About SoftyPy</p></Link>
        <p>Blog </p>
        <Link to='/faq'><p>FAQ </p></Link>
      </div>
@@ -66,19 +74,28 @@ const Footer = () => {
            Follow Us
          </h3>
          <div className="flex items-center w-[150px] justify-between">
+         
+           <Link target="_blank" to='https://www.facebook.com/SoftyPyIT'>
            <div className="socialIcon">
              <FaFacebook />
            </div>
+           </Link>
+           <Link target="_blank" to='https://www.linkedin.com/company/softypy/mycompany/verification/'>
            <div className="socialIcon">
-             <FaLinkedin />
+           <FaLinkedin />
            </div>
+           </Link>
 
-           <div className="socialIcon twiteer">
-             <FaTwitter />
-           </div>
+           <Link target="_blank" to='https://www.facebook.com/SoftyPyIT'>
            <div className="socialIcon">
-             <FaYoutube />
+           <FaTwitter />
            </div>
+           </Link>
+           <Link target="_blank" to='https://www.facebook.com/SoftyPyIT'>
+           <div className="socialIcon">
+           <FaYoutube />
+           </div>
+           </Link>
          </div>
        </div>
      </div>

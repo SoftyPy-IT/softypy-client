@@ -17,6 +17,10 @@ import team5 from "../../../public/assets/team5.jpg";
 import team from "../../../public/assets/team6.jpeg";
 import team6 from "../../../public/assets/team8.jpeg";
 import team9 from "../../../public/assets/team9.jpeg";
+import Ibrahim from "../../../public/assets/ibrahim.jpg";
+import Omor from "../../../public/assets/Omor.jpeg";
+import Bablu from "../../../public/assets/Bablu.jpg";
+import Talukder from "../../../public/assets/Talukder.jpg";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import Container from "../../ui/Container";
 import PortfolioCountdown from "../Home/CountDown/CountDown";
@@ -33,38 +37,32 @@ const About = () => {
   const teamData = [
     {
       id: 1,
-      name: "Shakib Al Hasan",
-      title: "Software Engineer",
-      img: team1,
+      name: "Ibrahim Sikder",
+      title: "MERN Stack Developer",
+      img: Ibrahim,
+    },
+    {
+      id: 1,
+      name: "MD Omor Faruk",
+      title: "Backend Developer",
+      img: Omor,
+    },
+    {
+      id: 1,
+      name: "Bablu Mia ",
+      title: "MERN Stack Developer",
+      img: Bablu,
+    },
+    {
+      id: 1,
+      name: "Al Mamun Talukder",
+      title: "Frontend developer",
+      img: Talukder,
     },
     {
       id: 1,
       name: "Shakib Al Hasan",
-      title: "Software Engineer",
-      img: team1,
-    },
-    {
-      id: 1,
-      name: "Shakib Al Hasan",
-      title: "Software Engineer",
-      img: team1,
-    },
-    {
-      id: 1,
-      name: "Shakib Al Hasan",
-      title: "Software Engineer",
-      img: team1,
-    },
-    {
-      id: 1,
-      name: "Shakib Al Hasan",
-      title: "Software Engineer",
-      img: team1,
-    },
-    {
-      id: 1,
-      name: "Shakib Al Hasan",
-      title: "Software Engineer",
+      title: "Frontend Developer",
       img: team1,
     },
   ];
@@ -183,18 +181,86 @@ const About = () => {
             </div>
             <div className="mt-10">
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 place-items-center ">
-                {teamData.map((team) => (
+                {teamData.map((team, i) => (
                   <div key={team.id} className="teamCard">
                     <div className="teamImgWrap">
-                      <img src={team1} alt="" />
+                      <img src={team.img} alt="" />
                     </div>
                     <div className="mt-2 teamContent">
-                      <h3 className="text-2xl font-bold">Shakib Al Hasan </h3>
-                      <span>MERN Stack Developer </span>
+                      <h3 className="text-2xl font-bold">{team.name}</h3>
+                      <span>{team.title} </span>
                       <div className="flex items-center justify-center mt-2 space-x-3 cursor-pointer ">
-                        <FaFacebookF />
-                        <FaLinkedinIn />
-                        <FaXTwitter />
+                        {i == 0 ? (
+                          <>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaLinkedinIn />
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaXTwitter />
+                            </Link>
+                            <Link to="https://www.facebook.com/ibrahim.sikder5033">
+                              <FaFacebookF />
+                            </Link>
+                          </>
+                        ) : i == 1 ? (
+                          <>
+                          <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                            <FaLinkedinIn />
+                          </Link>
+                          <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                            <FaXTwitter />
+                          </Link>
+                          <Link to="https://www.facebook.com/profile.php?id=100081178906073">
+                            <FaFacebookF />
+                          </Link>
+                        </>
+                        ) : i == 2 ? (
+                          <>
+                            <Link to="https://www.linkedin.com/in/bablu-mia/">
+                              <FaLinkedinIn />
+                            </Link>
+                            <FaXTwitter />
+                            <Link to="https://www.facebook.com/bablumia799">
+                              <FaFacebookF />
+                            </Link>
+                          </>
+                        ):  i == 3 ? (
+<>
+                            <Link to="https://www.linkedin.com/in/amtalukder/">
+                              <FaLinkedinIn />
+                            </Link>
+                            <FaXTwitter />
+                            <Link to="https://www.facebook.com/amtsokal">
+                              <FaFacebookF />
+                            </Link>
+                          </>
+                        ) : i == 4 ? (
+                          <>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaLinkedinIn />
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaXTwitter />
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaFacebookF />
+                            </Link>
+                          </>
+                        ) : i == 5 ? (
+                          <>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaLinkedinIn />
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaXTwitter />
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaFacebookF />
+                            </Link>
+                          </>
+                        ) : null
+                        
+                        }
                       </div>
                     </div>
                   </div>

@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
-import { Container } from "@mui/material";
 const Brand = () => {
   var settings = {
     infinite: true,
@@ -48,7 +47,6 @@ const Brand = () => {
   };
   return (
    <div className="sectionMargin">
-   <Container>
    <div >
      <SectionTitle title="Our Happy Clients "></SectionTitle>
      <div className="slidersWraps">
@@ -83,7 +81,6 @@ const Brand = () => {
        </Slider>
      </div>
    </div>
- </Container>
    </div>
   );
 };

@@ -97,7 +97,7 @@ export default function Review() {
                   <h6>{reviews[0]?.title}</h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">{reviews[0]?.description}</p>
+                    <p className="text-xl">{reviews[0]?.description.slice(0,300)}....</p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#2D57A2] ml-8">
                     <button>See More </button>
@@ -165,7 +165,7 @@ export default function Review() {
                   </h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">{reviews[2]?.description}</p>
+                    <p className="text-xl">{reviews[2]?.description.slice(0,300)}</p>
                   </blockquote>
                   <div className="flex flex-end items-center text-[#2D57A2] ml-8">
                     <button>Read history </button>
@@ -199,7 +199,7 @@ export default function Review() {
                 </h6>
                 <blockquote className="flex mt-3">
                   <FaQuoteLeft className="leftQoute" />
-                  <p className="text-xl">{reviews[2]?.description}</p>
+                  <p className="text-xl">{reviews[2]?.description.slice(0,300)}</p>
                 </blockquote>
                 <div className="flex flex-end items-center text-[#2D57A2] ml-8">
                   <button>Read history </button>
@@ -233,7 +233,7 @@ export default function Review() {
               </h6>
               <blockquote className="flex mt-3">
                 <FaQuoteLeft className="leftQoute" />
-                <p className="text-xl">{reviews[2]?.description}</p>
+                <p className="text-xl">{reviews[2]?.description.slice(0,300)}</p>
               </blockquote>
               <div className="flex flex-end items-center text-[#2D57A2] ml-8">
                 <button>Read history </button>
