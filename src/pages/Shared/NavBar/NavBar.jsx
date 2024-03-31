@@ -162,6 +162,7 @@ const NavBar = () => {
         </ul>
 
         <div className="security">
+          {/** 
           <div className="flex items-center ">
             <button
               onClick={handleToggleTheme}
@@ -175,7 +176,7 @@ const NavBar = () => {
             </button>
             <div></div>
           </div>
-
+        **/}
           {email ? (
             <>
               <button className="logoutBtn " onClick={handleLogout}>
