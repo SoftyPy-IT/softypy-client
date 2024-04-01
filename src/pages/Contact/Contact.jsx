@@ -63,22 +63,24 @@ const Contact = () => {
     {
       id: 1,
       name: "Office Address",
-      title: "Ta-134/A, Bissaw Road",
-      text: "Link Rd, Dhaka",
+      title: " 42, Gulshan Avenue, Gulshan-1, Jabbar Tower (6th Floor), ",
+      text: "Dhaka-1212, Bangladesh",
       img: address,
     },
+   
+
     {
       id: 1,
       name: "Email Us ",
-      title: "support@renovix.net",
-      text: "info@codesless.com",
+      title: "softypy@gmail.com",
+      text: "softypyit@gmail.com",
       img: address2,
     },
     {
       id: 1,
       name: "Call Us",
-      title: "01762-380594",
-      text: "01670-405744",
+      title: "+88-01762-380594",
+      text: "+88-01670-405744",
       img: address3,
     },
   ];
@@ -263,7 +265,7 @@ const Contact = () => {
           </div>
         </section>
       </Container>
-      <div className="sectionMargin"></div>
+      <div className="sectionMargin">
       <section className="flex flex-row items-center justify-center w-full mx-auto mb-32 md:my-24 md:mb-32">
         <Iframe
           className="lg:h-[600px] h-[300px] "
@@ -276,6 +278,7 @@ const Contact = () => {
           position="relative"
         ></Iframe>
       </section>
+      </div>
       <Subscribe />
     </div>
   );

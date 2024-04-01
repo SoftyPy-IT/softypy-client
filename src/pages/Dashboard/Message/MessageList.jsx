@@ -32,7 +32,7 @@ const MessageList = () => {
   const [senderData, setSenderData] = useState([]);
 
   useEffect(() => {
-    fetch("https://softypy-server-liard.vercel.app/message/all")
+    fetch("http://localhost:5000/message/all")
       .then((res) => res.json())
       .then((data) => setSenderData(data));
   }, []);
@@ -72,7 +72,7 @@ const MessageList = () => {
 
   const handleDelete = (id) => {
     try {
-      fetch(`https://softypy-server-liard.vercel.app/message/${id}`, {
+      fetch(`http://localhost:5000/message/${id}`, {
         method: 'DELETE'
       })
       .then((res) => {

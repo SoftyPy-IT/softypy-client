@@ -69,7 +69,7 @@ const About = () => {
 
   return (
     <section>
-      <div className="text-white bg-[#40C7F4]">
+      <div >
         <NavBar />
       </div>
       <div className="aboutContainers">

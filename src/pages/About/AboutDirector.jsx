@@ -1,5 +1,5 @@
 
-import img from "../../../public/assets/saif.jpeg";
+// import img from "../../../public/assets/saif.jpeg";
 import img2 from "../../../public/assets/team11.jpeg";
 import img3 from "../../../public/assets/team9.jpeg";
 import AOS from "aos";
@@ -12,7 +12,7 @@ const AboutDirector = () => {
     
     <Container>
       <div className="aboutTimeLine">
-        <div data-aos="fade-right" className="aboutLeftContainer aboutContainer">
+        {/* <div data-aos="fade-right" className="aboutLeftContainer aboutContainer">
          
           <div>
             <div className="imgWrap">
@@ -32,7 +32,7 @@ const AboutDirector = () => {
               lead us to be a global brand in the industry.
             </p>
           </div>
-        </div>
+        </div> */}
         <div data-aos="fade-right" className="aboutLeftContainer aboutContainer">
          
           <div>

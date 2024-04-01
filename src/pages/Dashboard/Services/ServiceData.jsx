@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 const ServiceData = () => {
   const {data: services = [], refetch} = useQuery(['services'], async ()=>{
-    const res = await fetch('https://softypy-server-liard.vercel.app/services');
+    const res = await fetch('http://localhost:5000/services');
     return res.json()
   })
 
@@ -24,7 +24,7 @@ const ServiceData = () => {
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.isConfirmed) {
-            fetch(`https://softypy-server-liard.vercel.app/services/${id}`,{
+            fetch(`http://localhost:5000/services/${id}`,{
                 method: "DELETE"
             })
             .then(res=>res.json())
