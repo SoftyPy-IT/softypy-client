@@ -14,7 +14,7 @@ export default function Message({ messages }) {
               <div key={message._id} className="messageTop ">
                 <div
                   className={`flex rounded-md  mt-2 max-w-fit  ${
-                    isSender ? "ml-auto lg:w-9/12" : "lg:w-9/12" // Apply ml-auto class for sender's messages
+                    isSender ? "ml-auto lg:w-9/12" : "lg:w-9/12" 
                   }`}
                 >
                   <p

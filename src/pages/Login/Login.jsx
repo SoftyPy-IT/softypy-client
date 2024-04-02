@@ -44,7 +44,7 @@ const Login = () => {
 
   return (
     <div>
-    <div className="bg-[#40C7F4] text-white">
+    <div className="shadow-lg">
     <NavBar />
   </div>
       <div className="signupWrap">
