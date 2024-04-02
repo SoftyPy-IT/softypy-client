@@ -29,13 +29,14 @@
 
 }
 
-
+.appPortFolioWrap {
+  width: 280px;
+  margin: 0 auto;
+  margin: 0 21px;
+}
 
 @media only screen and (min-width:1200px) {
-  .appPortFolioWrap {
-   width: 597px;
-   margin:0 auto;
-}
+
 }
 
 

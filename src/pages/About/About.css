@@ -229,12 +229,16 @@ img {
 .teamImg3 {
   width: 460px !important;
 }
-.teamImg4 {
+.teamImg4, .teamImg9 {
   width: 250px !important;
   position: relative;
-  top: -55px;
-  left: -62px;
+  top: 68px;
+  left: 33px;
   border: 1px solid #2D57A2;
+}
+.teamImg9{
+  top: -91px;
+  left: -97px;
 }
 .teamImg5 {
   width: 280px !important;
@@ -336,6 +340,11 @@ img {
   background: #fff;
   color: black;
 }
+.aboutLeftContainer {
+  left: 133px;
+}
+
+   
 
 @media only screen and (max-width: 1024px) {
   .aboutContent {

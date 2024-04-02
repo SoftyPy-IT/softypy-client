@@ -494,23 +494,24 @@ const Portfolio = () => {
                     </div>
                   </Link>
                   <Link to="https://taqwaacor.com/" target="_blank">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/Taqwaa.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Taqwaacor</h2>
-                        <p>
-                          Taqwaacor.com: Elevate your shopping experience.
-                          Explore a diverse range of quality products, from
-                          fashion to electronics.
-                        </p>
-                      </div>
+                  <div
+                    style={{
+                      backgroundImage: `url('../../../public/assets/Taqwaa3.png')`,
+                      backgroundSize: "cover",
+                    }}
+                    className="singlePortfolio "
+                  >
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <h2 className="text-xl">Taqwaacor</h2>
+                      <p>
+                        Taqwaacor.com: Elevate your shopping experience.
+                        Explore a diverse range of quality products, from
+                        fashion to electronics. Trustworthy service, secure
+                        transactions, and swift
+                      </p>
                     </div>
-                  </Link>
+                  </div>
+                </Link>
                   <Link to="https://softy-express.vercel.app/">
                     <div
                       style={{
@@ -535,25 +536,25 @@ const Portfolio = () => {
 
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                  <Link to="https://www.ghuronti.com/" target="_blank">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/ghuronti.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                        <p>
-                          ghuronti.com: Your gateway to unforgettable
-                          adventures. Explore curated travel experiences
-                          worldwide with our expert guidance and personalized
-                          service. Start your journey today!
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
+                <Link to="https://www.ghuronti.com/" target="_blank">
+                <div
+                  style={{
+                    backgroundImage: `url('../../../public/assets/ghuronti3.jpeg')`,
+                    backgroundSize: "cover",
+                  }}
+                  className="singlePortfolio "
+                >
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                    <h2 className="text-xl">Ghuronti Travels Ltd</h2>
+                    <p>
+                      ghuronti.com: Your gateway to unforgettable
+                      adventures. Explore curated travel experiences
+                      worldwide with our expert guidance and personalized
+                      service. Start your journey today!
+                    </p>
+                  </div>
+                </div>
+              </Link>
                   <Link to="https://www.ghuronti.com/hajj/search">
                     <div className="singlePortfolio portfolio10">
                       <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">

@@ -1,4 +1,3 @@
-
 // import img from "../../../public/assets/saif.jpeg";
 import img2 from "../../../public/assets/team11.jpeg";
 import img3 from "../../../public/assets/team9.jpeg";
@@ -9,7 +8,6 @@ import "./Director.css";
 import Container from "../../ui/Container";
 const AboutDirector = () => {
   return (
-    
     <Container>
       <div className="aboutTimeLine">
         {/* <div data-aos="fade-right" className="aboutLeftContainer aboutContainer">
@@ -33,8 +31,10 @@ const AboutDirector = () => {
             </p>
           </div>
         </div> */}
-        <div data-aos="fade-right" className="aboutLeftContainer aboutContainer">
-         
+        <div
+          data-aos="fade-right"
+          className="aboutLeftContainer aboutContainer"
+        >
           <div>
             <div className="imgWrap">
               <img src={img2} alt="director" />
@@ -44,17 +44,20 @@ const AboutDirector = () => {
         <div className="aboutRightContainer aboutContainer">
           <div>
             <h2 className="text-3xl font-bold">MD. SHAHIN MIAH</h2>
-            <b>Managing Director  </b>
+            <b>Managing Director </b>
             <p>
-              I am so grateful that you have taken the time to consider
-              partnering with SOFTYPY PVT. LTD. to serve you. While we are proud
-              of our work and the results we will help you achieve … it is the
-              relationships we build that will endure. I look forward to working
-              closely with you and your team.
+              My dream is to establish SoftyPy as a centre of excellence in the
+              information technology industry by providing state-of-the-art
+              solutions to people’s challenges, achieving the trust of our
+              customers and setting a benchmark in customer services that will
+              lead us to be a global brand in the industry.
             </p>
           </div>
         </div>
-        <div data-aos="fade-right" className="aboutLeftContainer aboutContainer">
+        <div
+          data-aos="fade-right"
+          className="aboutLeftContainer aboutContainer"
+        >
           <div>
             <div className="imgWrap">
               <img src={img3} alt="director" />
@@ -64,10 +67,10 @@ const AboutDirector = () => {
         <div className="aboutRightContainer aboutContainer">
           <div>
             <h2 className="text-3xl font-bold">NUSUL ISLAM</h2>
-            <b>Chief executive officer (CEO) </b>
+            <b>Chief Executive Officer (CEO) </b>
             <p>
               I am so grateful that you have taken the time to consider
-              partnering with SOFTYPY PVT. LTD. to serve you. While we are proud
+              partnering with SOFTYPY IT to serve you. While we are proud
               of our work and the results we will help you achieve … it is the
               relationships we build that will endure. I look forward to working
               closely with you and your team.

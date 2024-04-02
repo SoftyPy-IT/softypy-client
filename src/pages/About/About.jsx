@@ -8,19 +8,16 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import team1 from "../../../public/assets/team1.jpg";
 import team7 from "../../../public/assets/team10.jpeg";
-import team8 from "../../../public/assets/team11.jpeg";
 import team14 from "../../../public/assets/team13.jpg";
-import team2 from "../../../public/assets/team2.jpg";
-import team5 from "../../../public/assets/team5.jpg";
 import team from "../../../public/assets/team6.jpeg";
-import team6 from "../../../public/assets/team8.jpeg";
-import team9 from "../../../public/assets/team9.jpeg";
 import Ibrahim from "../../../public/assets/ibrahim.jpg";
 import Omor from "../../../public/assets/Omor.jpeg";
 import Bablu from "../../../public/assets/Bablu.jpg";
 import Talukder from "../../../public/assets/Talukder.jpg";
+import rubel from "../../../public/assets/rubel.jpeg";
+import nazmul from "../../../public/assets/nazmul.jpeg";
+import group2 from "../../../public/assets/group2.jpeg";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import Container from "../../ui/Container";
 import PortfolioCountdown from "../Home/CountDown/CountDown";
@@ -42,34 +39,40 @@ const About = () => {
       img: Ibrahim,
     },
     {
-      id: 1,
+      id: 2,
       name: "MD Omor Faruk",
       title: "Backend Developer",
       img: Omor,
     },
     {
-      id: 1,
+      id: 3,
       name: "Bablu Mia ",
       title: "MERN Stack Developer",
       img: Bablu,
     },
     {
-      id: 1,
+      id: 4,
       name: "Al Mamun Talukder",
       title: "Frontend developer",
       img: Talukder,
     },
     {
-      id: 1,
-      name: "Shakib Al Hasan",
-      title: "Frontend Developer",
-      img: team1,
+      id: 5,
+      name: "Rubel Ahmed",
+      title: "Graphic Designer ",
+      img: rubel,
+    },
+    {
+      id: 6,
+      name: "Nazmul Hasan",
+      title: "UI UX Designer",
+      img: nazmul,
     },
   ];
 
   return (
     <section>
-      <div >
+      <div>
         <NavBar />
       </div>
       <div className="aboutContainers">
@@ -204,16 +207,16 @@ const About = () => {
                           </>
                         ) : i == 1 ? (
                           <>
-                          <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
-                            <FaLinkedinIn />
-                          </Link>
-                          <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
-                            <FaXTwitter />
-                          </Link>
-                          <Link to="https://www.facebook.com/profile.php?id=100081178906073">
-                            <FaFacebookF />
-                          </Link>
-                        </>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaLinkedinIn />
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                              <FaXTwitter />
+                            </Link>
+                            <Link to="https://www.facebook.com/profile.php?id=100081178906073">
+                              <FaFacebookF />
+                            </Link>
+                          </>
                         ) : i == 2 ? (
                           <>
                             <Link to="https://www.linkedin.com/in/bablu-mia/">
@@ -224,8 +227,8 @@ const About = () => {
                               <FaFacebookF />
                             </Link>
                           </>
-                        ):  i == 3 ? (
-<>
+                        ) : i == 3 ? (
+                          <>
                             <Link to="https://www.linkedin.com/in/amtalukder/">
                               <FaLinkedinIn />
                             </Link>
@@ -258,9 +261,13 @@ const About = () => {
                               <FaFacebookF />
                             </Link>
                           </>
-                        ) : null
-                        
-                        }
+                        ) : i == 6 ? (
+                          <>
+                            <FaLinkedinIn />
+                            <FaXTwitter />
+                            <FaFacebookF />
+                          </>
+                        ) : null}
                       </div>
                     </div>
                   </div>
@@ -283,7 +290,6 @@ const About = () => {
                 </h2>
                 <div className="basic-title--sub">
                   <p>
-                    {" "}
                     Meet our Visionary Collective, where aspirations are our
                     compass, and success is the destination we chart together.
                     We are not just a team; we are a journey towards greatness.
@@ -298,7 +304,7 @@ const About = () => {
                 <div className="team-anim--photo -pos-1 teamWrap">
                   <img
                     className="lazy loaded teamImg"
-                    src={team2}
+                    src={rubel}
                     alt="team"
                     data-was-processed="true"
                   />
@@ -306,7 +312,7 @@ const About = () => {
                 <div className="team-anim--photo -pos-2">
                   <img
                     className="lazy loaded teamImg2"
-                    src={team9}
+                    src={nazmul}
                     alt="team"
                     data-was-processed="true"
                   />
@@ -314,14 +320,14 @@ const About = () => {
                 <div className="team-anim--photo -pos-3">
                   <img
                     className="lazy loaded teamImg3"
-                    src={team5}
+                    src={team7}
                     alt="team"
                     data-was-processed="true"
                   />
                 </div>
                 <div className="team-anim--photo -pos-4">
                   <img
-                    className="lazy loaded teamImg4"
+                    className="lazy loaded teamImg9"
                     src={team14}
                     alt="team"
                     data-was-processed="true"
@@ -330,7 +336,7 @@ const About = () => {
                 <div className="team-anim--photo -pos-5">
                   <img
                     className="lazy loaded teamImg4"
-                    src={team6}
+                    src={Omor}
                     alt="team"
                     data-was-processed="true"
                   />
@@ -340,7 +346,7 @@ const About = () => {
                     className="lazy teamImg5 loaded"
                     data-src="https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/team-anim-photo-6.png"
                     alt=""
-                    src={team7}
+                    src={Bablu}
                     data-was-processed="true"
                   />
                 </div>
@@ -350,7 +356,7 @@ const About = () => {
                     className="lazy loaded teamImg8"
                     data-src="https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/team-anim-photo-7.jpg"
                     alt="team"
-                    src={team8}
+                    src={group2}
                     data-was-processed="true"
                   />
                 </div>
@@ -364,7 +370,17 @@ const About = () => {
                   />
                 </div>
                 <div className="team-anim--photo -pos-8 -back"></div>
-                <div className="team-anim--dec -dec-1"></div>
+{/** 
+                <div className="team-anim--dec -dec-1">
+                  <img
+                    className="lazy loaded teamImg9"
+                    data-src="https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/team-anim-photo-8.png"
+                    alt=""
+                    src={team}
+                    data-was-processed="true"
+                  />
+                </div>
+*/}
                 <div
                   className="team-anim--line aos-init aos-animate"
                   data-aos="fade-up"

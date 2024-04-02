@@ -13,6 +13,32 @@ import Slider from "react-slick";
 import "./AppDevelopment.css";
 import { useEffect, useState } from "react";
 const AppPortFolio = () => {
+  // const [slidesToShow, setSlidesToShow] = useState(3);
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 768) {
+  //       setSlidesToShow(1);
+  //     } else if (window.innerWidth < 1024) {
+  //       setSlidesToShow(2);
+  //     } else {
+  //       setSlidesToShow(3);
+  //     }
+  //   };
+
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: slidesToShow,
+  //   slidesToScroll: 1,
+  // };
+
   const [slidesToShow, setSlidesToShow] = useState(3);
 
   useEffect(() => {
@@ -22,7 +48,7 @@ const AppPortFolio = () => {
       } else if (window.innerWidth < 1024) {
         setSlidesToShow(2);
       } else {
-        setSlidesToShow(3);
+        setSlidesToShow(4); // Change to 4 slides on larger screens
       }
     };
 

@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Footer from "../pages/Shared/Footer/Footer";
 import { HiChatBubbleLeft } from "react-icons/hi2";
 import { useEffect, useState } from "react";
@@ -7,7 +7,8 @@ import MessageModal from "./MessageModal";
 import { IoIosClose } from "react-icons/io";
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
-
+import { FaWhatsapp } from "react-icons/fa";
+import whatsapp from "../../public/assets/whatsapp.png";
 const Main = () => {
   const { darkMode } = useSelector((store) => store.theme);
   useEffect(() => {
@@ -74,7 +75,14 @@ const Main = () => {
       <button onClick={scrollToTop} id="button">
         <HiChevronDoubleUp size={25} />
       </button>
-
+      <Link
+        to="https://wa.me/8801762380594?text=Hello how can I help you ?"
+        target="_blank"
+      >
+        <button className="whatsApp">
+          <img src={whatsapp} alt="" />
+        </button>
+      </Link>
       {open && <MessageModal />}
     </div>
   );
