@@ -20,8 +20,8 @@ const Home = () => {
       <TimeLine />
       <Technologies />
       <Brand />
-      <CountDown />
       <Review />
+      <CountDown />
       <Subscribe />
     </div>
     

@@ -38,7 +38,7 @@ const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
     import("@lottiefiles/lottie-player");
   });
 
-  
+
   if(isLoading){
     return <p>Loding............</p>
   }
@@ -69,7 +69,7 @@ const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
         </div>
       </div>
 
-      <div className="singleServicesWrap">
+      <div className="singleServicesWrap ">
         <div className="ecommerServices">
           <div className="leftSideServices">
             <h3 className="text-4xl font-bold mb-3">

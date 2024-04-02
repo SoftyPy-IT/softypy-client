@@ -12,6 +12,7 @@ const {data:services} = useGetAllSingleServicesQuery()
 
 
 
+
   return (
     <Container>
       <div className="servicesWraps ">

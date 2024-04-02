@@ -52,7 +52,7 @@ const MessageModal = () => {
     };
 
     socket.emit("send-message", values)
-    const response = await axios.post("https://softypy-server-liard.vercel.app/message", values);
+    const response = await axios.post("http://localhost:5000/message", values);
     if (response.status === 200) {
       setReload(!reload);
       reset()
@@ -62,7 +62,7 @@ const MessageModal = () => {
   useEffect(() => {
     const getMessage = async () => {
       const response = await axios.get(
-        `https://softypy-server-liard.vercel.app/message?receiverId=${receiverId}&senderId=${senderId}`
+        `http://localhost:5000/message?receiverId=${receiverId}&senderId=${senderId}`
       );
 
       if (response.status === 200) {

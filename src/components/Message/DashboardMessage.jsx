@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-// import "./message.css";
+import './Message.css'
 
 export default function DashboardMessage({ messages, loggedinUser }) {
   return (

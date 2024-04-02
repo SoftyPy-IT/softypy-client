@@ -1,6 +1,6 @@
 .servicessWraps {
   width: 100%;
-  height: 55vh;
+  height: 45vh;
   position: relative;
   background-image: url("../../../public/assets/web2.jpg");
 }
@@ -9,13 +9,13 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #541283fb, #2D57A2);
+  background: black;
+  opacity: 0.8;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 9;
-  opacity: 0.9;
 }
 
 .servicesContents {
