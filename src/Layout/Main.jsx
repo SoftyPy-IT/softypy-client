@@ -56,6 +56,8 @@ const Main = () => {
 
       <Footer />
 
+       {/** 
+
       <div className="message rounded-full p-2 fixed bg-[#40C7F4] text-white bottom-14 right-1 cursor-pointer transition-all duration-75 ">
         {open ? (
           <IoIosClose
@@ -72,6 +74,8 @@ const Main = () => {
         )}
       </div>
 
+     
+
       <button onClick={scrollToTop} id="button">
         <HiChevronDoubleUp size={25} />
       </button>
@@ -82,14 +86,11 @@ const Main = () => {
         <button className="whatsApp">
           <img src={whatsapp} alt="" />
         </button>
-
-        <FacebookProvider appId="321223840644901" chatSupport>
-        <CustomChat pageId="123456789" minimized={true}/>
-      </FacebookProvider>    
-
-
-
       </Link>
+*/}
+      <FacebookProvider appId="321223840644901" chatSupport>
+      <CustomChat pageId="123456789" minimized={true}/>
+    </FacebookProvider>  
       {open && <MessageModal />}
     </div>
   );
