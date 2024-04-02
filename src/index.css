@@ -141,7 +141,6 @@ select:focus {
   position: relative;
   content: "" !important;
 }
-
 /* .scroll-to-top {
     right: 40px;
     bottom: 40px;
@@ -157,21 +156,22 @@ select:focus {
     align-items: center;
     z-index: 9999 !important;
 } */
+
 .scrollToTopBtn {
   width: 40px;
   height: 40px;
   background: #2d57a2;
   color: white;
   border-radius: 100%;
+  display: none;
 }
 
-.scrollToTopBtn,
+
 .whatsApp {
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 200px;
   z-index: 9999 !important;
-
   display: grid;
   place-items: center;
   transition: all 0.5s ease;
@@ -181,7 +181,7 @@ select:focus {
   right: 8px;
   width: 60px;
   height: 60px;
-  bottom: 130px;
+  bottom: 230px;
 }
 
 .slick-slide .slider {

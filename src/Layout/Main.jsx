@@ -56,9 +56,9 @@ const Main = () => {
 
       <Footer />
 
-      {/** 
+   
 
-      <div className="message rounded-full p-2 fixed bg-[#40C7F4] text-white bottom-14 right-1 cursor-pointer transition-all duration-75 ">
+      <div className="message rounded-full p-2 fixed bg-[#40C7F4] text-white bottom-36 right-1 cursor-pointer transition-all duration-75 ">
         {open ? (
           <IoIosClose
             onClick={handleClose}
@@ -87,7 +87,7 @@ const Main = () => {
           <img src={whatsapp} alt="" />
         </button>
       </Link>
-*/}
+
       <FacebookProvider appId="321223840644901" chatSupport>
         <CustomChat pageId="257323552817721" minimized={true} />
         hello
