@@ -5,12 +5,10 @@ import './Client.css'
 const Client = () => {
   return (
     <section>
-      <div className=" clientSection">
-        <div className="navsBarWrap">
-         <div className="text-white">
-         <NavBar />
-         </div>
-        </div>
+      <div className=" ">
+      <div className="shadow-lg">
+      <NavBar />
+    </div>
       </div>
       <div className="my-24">
         <Review />

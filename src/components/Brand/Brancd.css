@@ -8,6 +8,9 @@
 .slider:focus {
   outline: none;
 }
+.slickSliderImgWrap{
+  width:200px;
+}
 
 @media screen and (max-width: 500px) {
   .slider img {

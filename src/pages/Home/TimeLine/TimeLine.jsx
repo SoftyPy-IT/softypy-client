@@ -41,7 +41,7 @@ const TimeLine = () => {
   };
 
   return (
-    <div className="sectionMargin mb-[200px] block workFlowWrapHide">
+    <div className="sectionMargin mb-[260px] block workFlowWrapHide">
       <div className="mb-14">
         <SectionTitle
           title="How We Work"

@@ -5,7 +5,6 @@ import Container from "../../ui/Container";
 const Subscribe = () => {
   return (
     <div className="sectionMargin">
-
         <div className="footerTop">
          <Container>
          <div className="footerTopBarContent">

@@ -6,7 +6,7 @@
    @apply md:text-xl mt-5 md:mt-0 text-sm w-36 md:w-44 h-10 md:h-14 before:absolute before:block before:inset-0 before:-z-10 before:bg-[#2D57A2] text-white after:block hover:after:w-full after:w-0 after:hover:left-0 after:right-0 after:top-0 after:h-full after:-z-10 after:duration-300 after:bg-[#40C7F4] after:absolute relative inline-block
 }
 .sectionMargin{
-   margin-top:80px;
+   margin-top:100px;
 }
 
 .chatIcon{

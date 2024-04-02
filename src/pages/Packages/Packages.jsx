@@ -11,6 +11,7 @@ import HowSoftyPyWork from "./HowSoftyPyWork";
 import Ready from "./Ready";
 import PackagePrice2 from "./PackagePrice2";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import { Link } from "react-router-dom";
 const Packages = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -57,39 +58,38 @@ const Packages = () => {
                 Don't miss out on this exclusive offer to elevate your brand
                 without breaking the bank."
               </p>
-              <div className="mt-5 space-y-2">
-                <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
-                  <span>Fast Loading (within 3 seconds)</span>
-                </div>
-                <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
-                  <span> Mobile Responsive</span>
-                </div>
-                <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
-                  <span> After Sales Support</span>
-                </div>
-                <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
-                  <span>Fast Loading (within 3 seconds)</span>
-                </div>
-                <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
-                  <span> Multiple Image Upload Option</span>
-                </div>
-                <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
-                  <span> Login with Facebook and Gmail</span>
-                </div>
-                <div className="flex items-center ">
-                  <HiCheck size={30} className="text-[#F81600]" />
-                  <span> Product Image Zoom-in Capability</span>
-                </div>
-              </div>
-              <div className="mt-5">
-                <button className=" priceBtn requestBtn">Request Now </button>
-              </div>
+
+              <ul className="mt-5 space-y-2 topPricingList">
+                <li className="flex items-center ">
+                  <HiCheck size={25} className="text-[#F81600] mr-2" />
+                  <span>User-Friendly Design</span>
+                </li>
+                <li className="flex items-center ">
+                  <HiCheck size={25} className="text-[#F81600] mr-2" />
+                  <span>Mobile Responsiveness </span>
+                </li>
+                <li className="flex items-center ">
+                  <HiCheck size={25} className="text-[#F81600] mr-2" />
+                  <span>Fast Loading Speed </span>
+                </li>
+                <li className="flex items-center ">
+                  <HiCheck size={25} className="text-[#F81600] mr-2" />
+                  <span>High-Quality Content </span>
+                </li>
+                <li className="flex items-center ">
+                  <HiCheck size={25} className="text-[#F81600] mr-2" />
+                  <span>Clear Call-to-Actions (CTAs) </span>
+                </li>
+                <li className="flex items-center ">
+                  <HiCheck size={25} className="text-[#F81600] mr-2" />
+                  <span> High-Security </span>
+                </li>
+              </ul>
+             <Link to='/contact'>
+             <button className="bg-[#40C7F4] w-32  md:w-36 text-white mt-5 py-3 rounded-md ">
+             Request Now
+           </button>
+             </Link>
             </div>
             <div className="mt-10 lg:mt-0 mx-auto packageLottieWrap lg:max-w-[50%]">
               <lottie-player

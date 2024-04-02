@@ -8,6 +8,7 @@ import { FaQuoteLeft, FaArrowRight } from "react-icons/fa";
 import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
 import Container from "../../ui/Container";
 import { useGetAllReviewsQuery } from "../../redux/features/review/reviewApi";
+import { Link } from "react-router-dom";
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {
@@ -44,7 +45,7 @@ function ThumbnailPlugin(mainRef) {
 
 export default function Review() {
   const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
-  console.log(reviews)
+  console.log(reviews);
 
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
@@ -83,7 +84,7 @@ export default function Review() {
                     <img src={reviews[0]?.image} alt="" />
                   ) : (
                     <iframe
-                     className='videoWidth'
+                      className="videoWidth"
                       src={reviews[0]?.videoUrl}
                       title="YouTube video player"
                       frameborder="0"
@@ -97,12 +98,16 @@ export default function Review() {
                   <h6>{reviews[0]?.title}</h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">{reviews[0]?.description.slice(0,300)}....</p>
+                    <p className="text-xl">
+                      {reviews[0]?.description.slice(0, 300)}....
+                    </p>
                   </blockquote>
-                  <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                    <button>See More </button>
-                    <FaArrowRight className="historyIcon" />
-                  </div>
+                  <Link to="/client">
+                    <div className="flex flex-end items-center text-[#2D57A2] ml-8">
+                      <button>See More </button>
+                      <FaArrowRight className="historyIcon" />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -113,7 +118,7 @@ export default function Review() {
                     <img src={reviews[1]?.image} alt="" />
                   ) : (
                     <iframe
-                    className='videoWidth'
+                      className="videoWidth"
                       src={reviews[0]?.videoUrl}
                       title="YouTube video player"
                       frameborder="0"
@@ -133,10 +138,12 @@ export default function Review() {
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">{reviews[1]?.description}</p>
                   </blockquote>
-                  <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                    <button>Read history </button>
-                    <FaArrowRight className="historyIcon" />
-                  </div>
+                  <Link to="/client">
+                    <div className="flex flex-end items-center text-[#2D57A2] ml-8">
+                      <button>See More </button>
+                      <FaArrowRight className="historyIcon" />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -147,7 +154,7 @@ export default function Review() {
                     <img src={reviews[2]?.image} alt="" />
                   ) : (
                     <iframe
-                    className='videoWidth'
+                      className="videoWidth"
                       src={reviews[2]?.videoUrl}
                       title="YouTube video player"
                       frameborder="0"
@@ -165,89 +172,64 @@ export default function Review() {
                   </h6>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">{reviews[2]?.description.slice(0,300)}</p>
+                    <p className="text-xl">
+                      {reviews[2]?.description.slice(0, 300)}
+                    </p>
                   </blockquote>
+                  <Link to="/client">
                   <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                    <button>Read history </button>
+                    <button>See More </button>
                     <FaArrowRight className="historyIcon" />
                   </div>
+                </Link>
                 </div>
               </div>
             </div>
             <div className="keen-slider__slide number-slide1">
-            <div className="swiperWrap">
-              <div className={`${reviews[3]?.image ? "reviewImg" : ""}`}>
-                {reviews[3]?.image ? (
-                  <img src={reviews[3]?.image} alt="" />
-                ) : (
-                  <iframe
-                  className='videoWidth'
-                    src={reviews[3]?.videoUrl}
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                )}
-              </div>
-              <div className="reviewContent">
-                <h3 className="text-4xl font-bold text-[#2D57A2] ">
-                  {reviews[3]?.name}
-                </h3>
-                <h6 className="mt-2 text-xl font-bold">
-                  {reviews[3]?.title}
-                </h6>
-                <blockquote className="flex mt-3">
-                  <FaQuoteLeft className="leftQoute" />
-                  <p className="text-xl">{reviews[2]?.description.slice(0,300)}</p>
-                </blockquote>
-                <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                  <button>Read history </button>
-                  <FaArrowRight className="historyIcon" />
+              <div className="swiperWrap">
+                <div className={`${reviews[3]?.image ? "reviewImg" : ""}`}>
+                  {reviews[3]?.image ? (
+                    <img src={reviews[3]?.image} alt="" />
+                  ) : (
+                    <iframe
+                      className="videoWidth"
+                      src={reviews[3]?.videoUrl}
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  )}
+                </div>
+                <div className="reviewContent">
+                  <h3 className="text-4xl font-bold text-[#2D57A2] ">
+                    {reviews[3]?.name}
+                  </h3>
+                  <h6 className="mt-2 text-xl font-bold">
+                    {reviews[3]?.title}
+                  </h6>
+                  <blockquote className="flex mt-3">
+                    <FaQuoteLeft className="leftQoute" />
+                    <p className="text-xl">
+                      {reviews[3]?.description.slice(0, 300)}
+                    </p>
+                  </blockquote>
+                  <Link to="/client">
+                  <div className="flex flex-end items-center text-[#2D57A2] ml-8">
+                    <button>See More </button>
+                    <FaArrowRight className="historyIcon" />
+                  </div>
+                </Link>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="keen-slider__slide number-slide1">
-          <div className="swiperWrap">
-            <div className={`${reviews[4]?.image ? "reviewImg" : ""}`}>
-              {reviews[4]?.image ? (
-                <img src={reviews[4]?.image} alt="" />
-              ) : (
-                <iframe
-                className='videoWidth'
-                  src={reviews[4]?.videoUrl}
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              )}
-            </div>
-            <div className="reviewContent">
-              <h3 className="text-4xl font-bold text-[#2D57A2] ">
-                {reviews[4]?.name}
-              </h3>
-              <h6 className="mt-2 text-xl font-bold">
-                {reviews[4]?.title}
-              </h6>
-              <blockquote className="flex mt-3">
-                <FaQuoteLeft className="leftQoute" />
-                <p className="text-xl">{reviews[2]?.description.slice(0,300)}</p>
-              </blockquote>
-              <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                <button>Read history </button>
-                <FaArrowRight className="historyIcon" />
-              </div>
-            </div>
-          </div>
-        </div>
+           
           </div>
 
           <div ref={thumbnailRef} className="keen-slider thumbnail">
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-              <img src={reviews[0]?.image} />
+                <img src={reviews[0]?.image} />
                 {reviews[0]?.videoUrl ? (
                   <img
                     src={`https://img.youtube.com/vi/${getYoutubeVideoId(
@@ -262,7 +244,7 @@ export default function Review() {
             </div>
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-              <img src={reviews[1]?.image} />
+                <img src={reviews[1]?.image} />
                 {reviews[1]?.videoUrl ? (
                   <img
                     src={`https://img.youtube.com/vi/${getYoutubeVideoId(
@@ -277,7 +259,7 @@ export default function Review() {
             </div>
             <div className="keen-slider__slide number-slide1">
               <div className="reviewThum">
-              <img src={reviews[2]?.image} />
+                <img src={reviews[2]?.image} />
                 {reviews[2]?.videoUrl ? (
                   <img
                     src={`https://img.youtube.com/vi/${getYoutubeVideoId(
@@ -291,51 +273,26 @@ export default function Review() {
               </div>
             </div>
             <div className="keen-slider__slide number-slide1">
-            {
-              reviews[3]?.image ? (
-                <div className="reviewThum"> 
-                <img src={reviews[3]?.image} />
-            
-                {reviews[3]?.videoUrl ? (
-                  <img
-                    src={`https://img.youtube.com/vi/${getYoutubeVideoId(
-                      reviews[3]?.videoUrl
-                    )}/0.jpg`}
-                    alt="man"
-                  />
-                ) : (
+              {reviews[3]?.image ? (
+                <div className="reviewThum">
                   <img src={reviews[3]?.image} />
-                )}
-              </div>
-              ): (
-                ''
-              )
-            }
-          
-          </div>
-          <div className="keen-slider__slide number-slide1">
-          {
-            reviews[4]?.image ? (
-              <div className="reviewThum"> 
-              <img src={reviews[3]?.image} />
-          
-              {reviews[4]?.videoUrl ? (
-                <img
-                  src={`https://img.youtube.com/vi/${getYoutubeVideoId(
-                    reviews[4]?.videoUrl
-                  )}/0.jpg`}
-                  alt="man"
-                />
+
+                  {reviews[3]?.videoUrl ? (
+                    <img
+                      src={`https://img.youtube.com/vi/${getYoutubeVideoId(
+                        reviews[3]?.videoUrl
+                      )}/0.jpg`}
+                      alt="man"
+                    />
+                  ) : (
+                    <img src={reviews[3]?.image} />
+                  )}
+                </div>
               ) : (
-                <img src={reviews[4]?.image} />
+                ""
               )}
             </div>
-            ): (
-              ''
-            )
-          }
-        
-        </div>
+           
           </div>
         </div>
       </Container>

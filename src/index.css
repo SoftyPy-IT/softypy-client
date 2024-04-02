@@ -182,7 +182,27 @@ input:focus, textarea:focus, select:focus{
 	animation-delay: .5s;
 }
 
+.slick-slide .slider {
+    display: block ;
+    width: 160px !important;
+    object-fit: cover !important;
+    margin-top: 35px !important;
+    height:130px !important;
+    overflow: hidden;
 
+}
+.slick-slide .slider img {
+    width: 100% !important;
+    object-fit: contain !important;
+    height:100%!important;
+}
+.slick-initialized .slick-slide {
+    display: block;
+    width: 250px !important;
+margin-right:20px !important;
+margin-left:20px !important;
+   
+}
 
 
 

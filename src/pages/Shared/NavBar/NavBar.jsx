@@ -196,7 +196,7 @@ const NavBar = () => {
               </button>
             </>
           ) : (
-            <button className="logoutBtn ">
+            <button className="logoutBtn font-semibold">
               <NavLink to="/login">Login</NavLink>
             </button>
           )}

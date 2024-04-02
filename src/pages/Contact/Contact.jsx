@@ -2,8 +2,9 @@ import {
   FaFacebookF,
   FaPhoneAlt,
   FaEnvelope,
-  FaTwitter,
-  FaUsers,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
 } from "react-icons/fa";
 import Iframe from "react-iframe";
 import "./Contact.css";
@@ -79,11 +80,12 @@ const Contact = () => {
     {
       id: 1,
       name: "Call Us",
-      title: "+88-01762-380594",
-      text: "+88-01670-405744",
+      title: "+88-0140 4030 502",
+      text: "+88-0167 0405 744",
       img: address3,
     },
   ];
+
 
 
   return (
@@ -117,7 +119,7 @@ const Contact = () => {
         </div>
       </section>
       <Container>
-        <div className="contactInfoWrap">
+        <div className="contactInfoWrap mt-14">
           <section className="getInTouch">
             <div className="getInTouchLeft">
               <div className="getInTouchHead">
@@ -231,21 +233,21 @@ const Contact = () => {
             </div>
             <div className="singleSocialMedia">
               <div className="contacSocialIcon">
-                <FaUsers />
+                <FaLinkedinIn/>
               </div>
               <h4 className="my-2 text-3xl font-bold">99K</h4>
               <strong>Members</strong>
             </div>
             <div className="activeSocial">
               <div className="contacSocialIcon">
-                <FaTwitter />
+                <FaInstagram />
               </div>
               <h4 className="my-2 text-3xl font-bold">59K</h4>
               <strong>Followers</strong>
             </div>
             <div className="singleSocialMedia">
               <div className="contacSocialIcon">
-                <FaEnvelope />
+                <FaYoutube />
               </div>
               <h4 className="my-2 text-3xl font-bold">150K</h4>
               <strong>Subscribes</strong>

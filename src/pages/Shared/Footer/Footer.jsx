@@ -5,8 +5,8 @@ import {
   FaLinkedin,
   FaFacebook,
   FaYoutube,
-  FaTwitter,
   FaEnvelope,
+  FaInstagram,
 } from "react-icons/fa";
 import location from "../../../../public/assets/location.png";
 import { Link } from "react-router-dom";
@@ -22,14 +22,14 @@ const Footer = () => {
               <div className="flex items-center">
                 <img className="mr-2" src={location} alt="location" />
                 <p className="mt-3">
-                  42, Gulshan Avenue, Gulshan-1, Jabbar Tower (6rd Floor),
+                  42, Gulshan Avenue, Gulshan-1, Jabbar Tower (6th Floor),
                   Dhaka-1212, Bangladesh
                 </p>
               </div>
               <div className="flex items-center">
                 <img className="mr-2" src={location} alt="location" />
                 <p className="mt-3">
-                  Ka-121, (Besides of IFIC Bank),Kuril, Vatara, Dhaka -1229
+                  Ka-121, (Besides of IFIC Bank, 2nd floor),Kuril, Vatara, Dhaka -1229
                 </p>
               </div>
             </div>
@@ -84,15 +84,15 @@ const Footer = () => {
               </h3>
             </Link>
 
-            <div className="flex items-center">
+            <div className="flex">
               <FaPhoneAlt className='text-[#40C7F4] mr-2' size={20} />
               <p> +880 1762-380594</p>
             </div>
-            <div className="flex items-center">
+            <div className="flex ">
               <FaPhoneAlt className='text-[#40C7F4] mr-2' size={20} />
               <p> +880 1670-405744</p>
             </div>
-            <div className="flex items-center">
+            <div className="flex ">
               <FaEnvelope className='text-[#40C7F4] mr-2' size={20} />
               <p>softypy@gmail.com</p>
             </div>
@@ -115,12 +115,12 @@ const Footer = () => {
                   </div>
                 </Link>
 
-                <Link target="_blank" to="https://www.facebook.com/SoftyPyIT">
+                <Link target="_blank" to="https://www.instagram.com/softypyit">
                   <div className="socialIcon">
-                    <FaTwitter />
+                    <FaInstagram />
                   </div>
                 </Link>
-                <Link target="_blank" to="https://www.facebook.com/SoftyPyIT">
+                <Link target="_blank" to="https://www.youtube.com/@softacademybd5392">
                   <div className="socialIcon">
                     <FaYoutube />
                   </div>

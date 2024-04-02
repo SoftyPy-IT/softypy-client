@@ -17,6 +17,10 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.topPricingList li{
+  list-style-type: disc;
+  
+}
 
 @media only screen and (max-width: 1024px) {
   .wordPressPackage {

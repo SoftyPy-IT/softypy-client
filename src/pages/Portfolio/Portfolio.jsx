@@ -69,7 +69,7 @@ const Portfolio = () => {
                   <Link to="https://www.ghuronti.com/" target="_blank">
                     <div
                       style={{
-                        backgroundImage: `url('../../../public/assets/ghuronti.png')`,
+                        backgroundImage: `url('../../../public/assets/ghuronti3.jpeg')`,
                         backgroundSize: "cover",
                       }}
                       className="singlePortfolio "
@@ -85,6 +85,7 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
+
                   <Link to="https://www.ghuronti.com/" target="_blank">
                     <div
                       style={{
@@ -123,27 +124,28 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link to="https://airtrips.net/" target="_blank">
-                  <div
-                    style={{
-                      backgroundImage: `url('../../../public/assets/AirTrips.png')`,
-                      backgroundSize: "cover",
-                    }}
-                    className="singlePortfolio "
-                  >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Airtrips Travels Ltd</h2>
-                      <p>
-                        Airtrips.com: Elevate your travel experience. Discover
-                        seamless booking, exclusive deals, and tailored
-                        itineraries. Your passport to extraordinary adventures
-                        awaits. Begin your journey with us!
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-               
 
+                  <Link to="https://airtrips.net/" target="_blank">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/AirTrips.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Airtrips Travels Ltd</h2>
+                        <p>
+                          Airtrips.com: Elevate your travel experience. Discover
+                          seamless booking, exclusive deals, and tailored
+                          itineraries. Your passport to extraordinary adventures
+                          awaits. Begin your journey with us!
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/*** 
                   <Link to="https://nextstair.com/" target="_blank">
                     <div
                       style={{
@@ -163,10 +165,12 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
+*/}
+
                   <Link to="https://taqwaacor.com/" target="_blank">
                     <div
                       style={{
-                        backgroundImage: `url('../../../public/assets/Taqwaa.png')`,
+                        backgroundImage: `url('../../../public/assets/Taqwaa3.png')`,
                         backgroundSize: "cover",
                       }}
                       className="singlePortfolio "
@@ -257,7 +261,7 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-                 
+
                   <Link to="https://trust-auto-solution.vercel.app/dashboard">
                     <div
                       style={{
@@ -278,28 +282,30 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link to="https://shop-master-five.vercel.app/dashboard" target="_blank">
-                  <div
-                    style={{
-                      backgroundImage: `url('../../../public/assets/shop-master.png')`,
-                      backgroundSize: "cover",
-                    }}
-                    className="singlePortfolio "
+                  <Link
+                    to="https://shop-master-five.vercel.app/dashboard"
+                    target="_blank"
                   >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Shop Master </h2>
-                      <p>
-                        Shop Master Your gateway to unforgettable
-                        adventures. Explore curated travel experiences
-                        worldwide with our expert guidance and personalized
-                        service. Start your journey today!
-                      </p>
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/shop-master.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Shop Master </h2>
+                        <p>
+                          Shop Master Your gateway to unforgettable adventures.
+                          Explore curated travel experiences worldwide with our
+                          expert guidance and personalized service. Start your
+                          journey today!
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
 
-                 
-                <Link to="https://newsdarpan24.com/">
+                  <Link to="https://newsdarpan24.com/">
                     <div
                       style={{
                         backgroundImage: `url('../../../public/assets/news24.png')`,
@@ -310,7 +316,65 @@ const Portfolio = () => {
                       <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">News24</h2>
                         <p>
-                          news24darpan.com Crafting unforgettable experiences. From
+                          news24darpan.com Crafting unforgettable experiences.
+                          From concept to execution, we deliver seamless events
+                          tailored to your vision.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to="https://buildingplanner.com.bd/">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/building.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Building Planner </h2>
+                        <p>
+                          buildingplanner.com Crafting unforgettable
+                          experiences. From concept to execution, we deliver
+                          seamless events tailored to your vision.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+
+                  <Link to="https://buildingplanner.com.bd/">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/summing.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">
+                          Qrbangladesh Swimmingpoolstrore{" "}
+                        </h2>
+                        <p>
+                          qrbangladeshswimmingpoolstore.com Crafting
+                          unforgettable experiences. From concept to execution,
+                          we deliver seamless events tailored to your vision.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+
+                  <Link to="https://buildingplanner.com.bd/">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/trandhaven.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Trandhaven </h2>
+                        <p>
+                          Trandhaven Crafting unforgettable experiences. From
                           concept to execution, we deliver seamless events
                           tailored to your vision.
                         </p>
@@ -318,79 +382,23 @@ const Portfolio = () => {
                     </div>
                   </Link>
                   <Link to="https://buildingplanner.com.bd/">
-                  <div
-                    style={{
-                      backgroundImage: `url('../../../public/assets/building.png')`,
-                      backgroundSize: "cover",
-                    }}
-                    className="singlePortfolio "
-                  >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Building Planner </h2>
-                      <p>
-                        buildingplanner.com Crafting unforgettable experiences. From
-                        concept to execution, we deliver seamless events
-                        tailored to your vision.
-                      </p>
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/techzon.jpeg')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Techzon </h2>
+                        <p>
+                          Techzon Crafting unforgettable experiences. From
+                          concept to execution, we deliver seamless events
+                          tailored to your vision.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-
-                <Link to="https://buildingplanner.com.bd/">
-                  <div
-                    style={{
-                      backgroundImage: `url('../../../public/assets/summing.png')`,
-                      backgroundSize: "cover",
-                    }}
-                    className="singlePortfolio "
-                  >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Qrbangladesh Swimmingpoolstrore </h2>
-                      <p>
-                      qrbangladeshswimmingpoolstore.com Crafting unforgettable experiences. From
-                        concept to execution, we deliver seamless events
-                        tailored to your vision.
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-              
-                <Link to="https://buildingplanner.com.bd/">
-                  <div
-                    style={{
-                      backgroundImage: `url('../../../public/assets/trandhaven.png')`,
-                      backgroundSize: "cover",
-                    }}
-                    className="singlePortfolio "
-                  >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Trandhaven </h2>
-                      <p>
-                      Trandhaven Crafting unforgettable experiences. From
-                        concept to execution, we deliver seamless events
-                        tailored to your vision.
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-                <Link to="https://buildingplanner.com.bd/">
-                <div
-                  style={{
-                    backgroundImage: `url('../../../public/assets/techzon.jpeg')`,
-                    backgroundSize: "cover",
-                  }}
-                  className="singlePortfolio "
-                >
-                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                    <h2 className="text-xl">Techzon </h2>
-                    <p>
-                    Techzon Crafting unforgettable experiences. From
-                      concept to execution, we deliver seamless events
-                      tailored to your vision.
-                    </p>
-                  </div>
-                </div>
-              </Link>
+                  </Link>
 
                   <Link to="https://www.ghuronti.com/hajj/search">
                     <div className="singlePortfolio portfolio10">
@@ -444,50 +452,47 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-
-                 
                 </div>
               </TabPanel>
 
-
               <TabPanel>
                 <div className="grid justify-between grid-cols-1 gap-10 portfolio lg:grid-cols-2">
-                <Link to="https://buildingplanner.com.bd/">
-                <div
-                  style={{
-                    backgroundImage: `url('../../../public/assets/trandhaven.png')`,
-                    backgroundSize: "cover",
-                  }}
-                  className="singlePortfolio "
-                >
-                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                    <h2 className="text-xl">Trandhaven </h2>
-                    <p>
-                    Trandhaven Crafting unforgettable experiences. From
-                      concept to execution, we deliver seamless events
-                      tailored to your vision.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link to="https://buildingplanner.com.bd/">
-              <div
-                style={{
-                  backgroundImage: `url('../../../public/assets/techzon.jpeg')`,
-                  backgroundSize: "cover",
-                }}
-                className="singlePortfolio "
-              >
-                <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                  <h2 className="text-xl">Techzon </h2>
-                  <p>
-                  Techzon Crafting unforgettable experiences. From
-                    concept to execution, we deliver seamless events
-                    tailored to your vision.
-                  </p>
-                </div>
-              </div>
-            </Link>
+                  <Link to="https://buildingplanner.com.bd/">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/trandhaven.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Trandhaven </h2>
+                        <p>
+                          Trandhaven Crafting unforgettable experiences. From
+                          concept to execution, we deliver seamless events
+                          tailored to your vision.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link to="https://buildingplanner.com.bd/">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/techzon.jpeg')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Techzon </h2>
+                        <p>
+                          Techzon Crafting unforgettable experiences. From
+                          concept to execution, we deliver seamless events
+                          tailored to your vision.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
                   <Link to="https://taqwaacor.com/" target="_blank">
                     <div
                       style={{
@@ -525,16 +530,12 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-             
-
                 </div>
               </TabPanel>
 
-
-
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                <Link to="https://www.ghuronti.com/" target="_blank">
+                  <Link to="https://www.ghuronti.com/" target="_blank">
                     <div
                       style={{
                         backgroundImage: `url('../../../public/assets/ghuronti.png')`,
@@ -554,18 +555,17 @@ const Portfolio = () => {
                     </div>
                   </Link>
                   <Link to="https://www.ghuronti.com/hajj/search">
-                  <div className="singlePortfolio portfolio10">
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Hajj & Umrah</h2>
-                      <p>
-                        Ghuronti.com: Your gateway to unforgettable
-                        adventures. Explore curated travel experiences
-                        worldwide with our expert
-                      </p>
+                    <div className="singlePortfolio portfolio10">
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Hajj & Umrah</h2>
+                        <p>
+                          Ghuronti.com: Your gateway to unforgettable
+                          adventures. Explore curated travel experiences
+                          worldwide with our expert
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-
+                  </Link>
 
                   <Link to="https://www.ghuronti.com/" target="_blank">
                     <div
@@ -606,57 +606,53 @@ const Portfolio = () => {
                     </div>
                   </Link>
                   <Link to="https://airtrips.net/" target="_blank">
-                  <div
-                    style={{
-                      backgroundImage: `url('../../../public/assets/AirTrips.png')`,
-                      backgroundSize: "cover",
-                    }}
-                    className="singlePortfolio "
-                  >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Airtrips Travels Ltd</h2>
-                      <p>
-                        Airtrips.com: Elevate your travel experience. Discover
-                        seamless booking, exclusive deals, and tailored
-                        itineraries. Your passport to extraordinary adventures
-                        awaits. Begin your journey with us!
-                      </p>
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/AirTrips.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Airtrips Travels Ltd</h2>
+                        <p>
+                          Airtrips.com: Elevate your travel experience. Discover
+                          seamless booking, exclusive deals, and tailored
+                          itineraries. Your passport to extraordinary adventures
+                          awaits. Begin your journey with us!
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-                
-                
+                  </Link>
                 </div>
               </TabPanel>
 
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                <Link to="https://newsdarpan24.com/">
-                <div
-                  style={{
-                    backgroundImage: `url('../../../public/assets/news24.png')`,
-                    backgroundSize: "cover",
-                  }}
-                  className="singlePortfolio "
-                >
-                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                    <h2 className="text-xl">News24</h2>
-                    <p>
-                      news24darpan.com Crafting unforgettable experiences. From
-                      concept to execution, we deliver seamless events
-                      tailored to your vision.
-                    </p>
-                  </div>
-                </div>
-              </Link>
-                  
+                  <Link to="https://newsdarpan24.com/">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/news24.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">News24</h2>
+                        <p>
+                          news24darpan.com Crafting unforgettable experiences.
+                          From concept to execution, we deliver seamless events
+                          tailored to your vision.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
               </TabPanel>
 
-
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                <Link to="https://aidurgency.vercel.app/">
+                  <Link to="https://aidurgency.vercel.app/">
                     <div
                       style={{
                         backgroundImage: `url('../../../public/assets/Give.png')`,
@@ -677,27 +673,26 @@ const Portfolio = () => {
                 </div>
               </TabPanel>
 
-
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                <Link to="https://buildingplanner.com.bd/">
-                <div
-                  style={{
-                    backgroundImage: `url('../../../public/assets/building.png')`,
-                    backgroundSize: "cover",
-                  }}
-                  className="singlePortfolio "
-                >
-                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                    <h2 className="text-xl">Building Planner </h2>
-                    <p>
-                      buildingplanner.com Crafting unforgettable experiences. From
-                      concept to execution, we deliver seamless events
-                      tailored to your vision.
-                    </p>
-                  </div>
-                </div>
-              </Link>
+                  <Link to="https://buildingplanner.com.bd/">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/building.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Building Planner </h2>
+                        <p>
+                          buildingplanner.com Crafting unforgettable
+                          experiences. From concept to execution, we deliver
+                          seamless events tailored to your vision.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio portfolio3">
                       <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
@@ -721,62 +716,73 @@ const Portfolio = () => {
               </TabPanel>
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                <Link to="https://nextstair.com/">
-                <div className="singlePortfolio portfolio2">
-                  <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
-                    <h2 className="text-xl">NextStair</h2>
+                <Link to="https://buildingplanner.com.bd/">
+                <div
+                  style={{
+                    backgroundImage: `url('../../../public/assets/softyEdu.png')`,
+                    backgroundSize: "cover",
+                  }}
+                  className="singlePortfolio "
+                >
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                    <h2 className="text-xl">SoftEdu </h2>
+                    <p>
+                      SoftEdu Crafting unforgettable experiences. From
+                      concept to execution, we deliver seamless events
+                      tailored to your vision.
+                    </p>
                   </div>
                 </div>
               </Link>
-                 
-                 
                 </div>
               </TabPanel>
-              <TabPanel>
-              <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-              <Link to="https://trust-auto-solution.vercel.app/dashboard">
-              <div
-                style={{
-                  backgroundImage: `url('../../../public/assets/Trust-Auto-Solution.png')`,
-                  backgroundSize: "cover",
-                }}
-                className="singlePortfolio "
-              >
-                <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                  <h2 className="text-xl">Trust-Auto-Solution</h2>
-                  <p>
-                    <p>
-                      Trust Auto Solution: Streamline garage management
-                      effortlessly. From scheduling to inventory, our
-                      intuitive platform optimizes.
-                    </p>
-                  </p>
-                </div>
-              </div>
-            </Link>
-            <Link to="https://shop-master-five.vercel.app/dashboard" target="_blank">
-            <div
-              style={{
-                backgroundImage: `url('../../../public/assets/shop-master.png')`,
-                backgroundSize: "cover",
-              }}
-              className="singlePortfolio "
-            >
-              <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                <h2 className="text-xl">Shop Master </h2>
-                <p>
-                  Shop Master Your gateway to unforgettable
-                  adventures. Explore curated travel experiences
-                  worldwide with our expert guidance and personalized
-                  service. Start your journey today!
-                </p>
-              </div>
-            </div>
-          </Link>
-               
-              </div>
-            </TabPanel>
 
+              <TabPanel>
+                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                  <Link to="https://trust-auto-solution.vercel.app/dashboard">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/Trust-Auto-Solution.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Trust-Auto-Solution</h2>
+                        <p>
+                          <p>
+                            Trust Auto Solution: Streamline garage management
+                            effortlessly. From scheduling to inventory, our
+                            intuitive platform optimizes.
+                          </p>
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link
+                    to="https://shop-master-five.vercel.app/dashboard"
+                    target="_blank"
+                  >
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/shop-master.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Shop Master </h2>
+                        <p>
+                          Shop Master Your gateway to unforgettable adventures.
+                          Explore curated travel experiences worldwide with our
+                          expert guidance and personalized service. Start your
+                          journey today!
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </TabPanel>
             </Tabs>
           </div>
         </div>

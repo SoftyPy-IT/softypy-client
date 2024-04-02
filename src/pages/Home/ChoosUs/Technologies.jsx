@@ -106,7 +106,7 @@ export default function VerticalTabs() {
             </Tabs>
             <TabPanel value={value} index={0}>
               <div className="technologyWrap">
-                <h3 className="text-xl md:text-3xl font-bold ">
+                <h3 className="text-xl md:text-3xl font-bold text-center mb-20">
                   Using Programming Language
                 </h3>
                 <div className="flex items-center">
@@ -203,11 +203,11 @@ export default function VerticalTabs() {
             </TabPanel>
             <TabPanel value={value} index={1}>
               <div className="technologyWrap">
-                <h3 className="text-xl md:text-3xl font-bold ">
+                <h3 className="text-xl md:text-3xl font-bold text-center mb-20">
                   {" "}
                   Using Database{" "}
                 </h3>
-                <div className="flex items-center">
+                <div className="flex items-center mt-8 ">
                   <Marquee pauseOnHover={true}>
                     <div className="skill2 skills">
                       <img src={mongo} alt="html" className="skillAnimation" />
@@ -230,7 +230,7 @@ export default function VerticalTabs() {
             <TabPanel value={value} index={2}>
               <div className="technologies">
                 <div>
-                  <h3 className="text-xl md:text-3xl font-bold ">Reporting</h3>
+                  <h3 className="text-xl md:text-3xl font-bold mb-20">Reporting</h3>
                   <ul className="category">
                     <li className="flex items-center">
                       <small className="mr-3">
@@ -285,10 +285,11 @@ export default function VerticalTabs() {
             <TabPanel value={value} index={3}>
               <div className="technologies">
                 <div>
-                  <h3 className="text-3xl font-bold mb-5">
+                  <h3 className="text-xl md:text-3xl font-bold mb-20">
                     Project Management{" "}
                   </h3>
                   <ul className="category">
+                 
                     <li className="flex items-center">
                       <small className="mr-3">
                         <FaRegCheckCircle className="checkIcon" />
@@ -316,6 +317,12 @@ export default function VerticalTabs() {
                       </small>{" "}
                       <small> Trello, Redmine</small>
                     </li>
+                    <li className="flex items-center">
+                    <small className="mr-3">
+                      <FaRegCheckCircle className="checkIcon" />
+                    </small>{" "}
+                    <small> Slack</small>
+                  </li>
                   </ul>
                 </div>
                 <div className="technologyRightSide">
@@ -333,7 +340,7 @@ export default function VerticalTabs() {
             <TabPanel value={value} index={4}>
               <div className="technologies">
                 <div>
-                  <h3 className="text-xl md:text-3xl font-bold ">Testing</h3>
+                  <h3 className="text-xl md:text-3xl font-bold  mb-20">Testing</h3>
                   <ul className="category">
                     <li className="flex items-center">
                       <small className="mr-3">
