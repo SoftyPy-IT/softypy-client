@@ -83,8 +83,8 @@ const Main = () => {
           <img src={whatsapp} alt="" />
         </button>
 
-        <FacebookProvider appId="123456789" chatSupport>
-        <CustomChat pageId="123456789" minimized={false}/>
+        <FacebookProvider appId="321223840644901" chatSupport>
+        <CustomChat pageId="123456789" minimized={true}/>
       </FacebookProvider>    
 
 
