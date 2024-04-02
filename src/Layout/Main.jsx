@@ -7,8 +7,8 @@ import MessageModal from "./MessageModal";
 import { IoIosClose } from "react-icons/io";
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
-import { FaWhatsapp } from "react-icons/fa";
 import whatsapp from "../../public/assets/whatsapp.png";
+import { CustomChat, FacebookProvider } from "react-facebook";
 const Main = () => {
   const { darkMode } = useSelector((store) => store.theme);
   useEffect(() => {
@@ -82,6 +82,13 @@ const Main = () => {
         <button className="whatsApp">
           <img src={whatsapp} alt="" />
         </button>
+
+        <FacebookProvider appId="123456789" chatSupport>
+        <CustomChat pageId="123456789" minimized={false}/>
+      </FacebookProvider>    
+
+
+
       </Link>
       {open && <MessageModal />}
     </div>
