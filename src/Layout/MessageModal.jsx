@@ -11,7 +11,7 @@ import ChatOnline from "../components/ChatOnline/ChatOnline";
 import Message from "../components/Message/Message";
 
 
-const socket = io("http://localhost:5000");
+const socket = io("https://softypy-server.vercel.app");
 
 const MessageModal = () => {
   const [messages, setMessages] = useState([]);
