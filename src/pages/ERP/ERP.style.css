@@ -42,14 +42,15 @@
 }
 
 .erpPriceCard{
-    width:155px;
+    width: 128px;
     border: 1px solid #ddd;
-    padding:20px 10px;
+    padding: 20px 10px;
     text-align: center;
-    margin:0 auto;
-    border-radius: 5px;;
+    margin: 0 auto;
+    border-radius: 5px;
 
 }
+
 
 .keyFeatureCard{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
