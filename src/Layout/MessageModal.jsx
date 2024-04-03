@@ -5,7 +5,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaLink, FaUserTie } from "react-icons/fa";
+import { FaLink, FaUserTie, FaWhatsapp } from "react-icons/fa";
 import { io } from "socket.io-client";
 import ChatOnline from "../components/ChatOnline/ChatOnline";
 import Message from "../components/Message/Message";
@@ -20,12 +20,10 @@ const MessageModal = () => {
   const [reload, setReload] = useState(false);
   const messageContainerRef = useRef(null);
 
-  const receiverId = "65edb8661cddda554c7cf90b"
-
+  const receiverId = "65edb8661cddda554c7cf90b";
 
   useEffect(() => {
     socket.on("connect", () => {
-      
       socket.emit("set-user", receiverId);
     });
     const receivedMessageHandler = (message) => {
@@ -36,7 +34,6 @@ const MessageModal = () => {
       socket.off("received-message", receivedMessageHandler);
     };
   }, [setMessages]);
- 
 
   const senderId = Cookies.get("temporaryId");
 
@@ -53,11 +50,11 @@ const MessageModal = () => {
       receiverId: receiverId,
     };
 
-    socket.emit("send-message", values)
+    socket.emit("send-message", values);
     const response = await axios.post("http://localhost:5000/message", values);
     if (response.status === 200) {
       setReload(!reload);
-      reset()
+      reset();
     }
   };
 
@@ -75,7 +72,6 @@ const MessageModal = () => {
     getMessage();
   }, [reload, senderId]);
 
-   
   useEffect(() => {
     if (messageContainerRef.current) {
       messageContainerRef.current.scrollTop =
@@ -97,20 +93,23 @@ const MessageModal = () => {
             </span>
 
             <div>
-            <FacebookProvider className='messengerApp' appId="321223840644901" chatSupport>
-            <CustomChat pageId="257323552817721" minimized={true} />
-          </FacebookProvider>
-            
+              <FacebookProvider
+                className="messengerApp"
+                appId="321223840644901"
+                chatSupport
+              >
+                <CustomChat pageId="257323552817721" minimized={true} />
+              </FacebookProvider>
             </div>
             <div>
-            <Link
-            to="https://wa.me/8801762380594?text=Hello how can I help you ?"
-            target="_blank"
-          >
-            <button className="whatsApp">
-              <img src={whatsapp} alt="" />
-            </button>
-          </Link>
+              <Link
+                to="https://wa.me/8801762380594?text=Hello how can I help you ?"
+                target="_blank"
+              >
+                <button className="whatsApp">
+                  <FaWhatsapp size={30} className="text-white" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -129,7 +128,6 @@ const MessageModal = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col items-start "
           >
-          
             <input
               type="text"
               name=""

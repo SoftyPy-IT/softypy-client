@@ -174,10 +174,11 @@ select:focus {
   place-items: center;
   transition: all 0.5s ease;
   animation-delay: 0.5s;
-  right: 88px;
-  width: 33px;
-  height: 28px;
-  bottom: 616px;
+  right: 81px;
+  /* width: 28px;
+  height: 24px; */
+  bottom: 698px;
+
 }
 /* .whatsApp {
   right: 8px;
@@ -185,9 +186,47 @@ select:focus {
   height: 60px;
   bottom: 230px;
 } */
-.messengerApp{
-  width:auto;
+
+
+/* messenger style */
+/* Styling the outer container */
+.messengerApp {
+  position: fixed !important; /* or any other positioning you prefer */
+  bottom: 20px !important;
+  right: 10px !important;
+  z-index: 9999 !important; /* adjust as needed */
+  right: 81px !important;
+  /* width: 28px;
+  height: 24px; */
+  bottom: 698px !important;
 }
+
+/* Styling the chat button */
+.messengerApp .fb_customer_chat_bounce_in_v2 {
+  background-color: #0084ff; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  border-radius: 50%; /* Make it round */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* Styling the chat icon */
+.messengerApp .fb_customer_chat_bounce_in_v2 .fb_incoming_bubble_image {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px;
+}
+
+/* Styling the chat box */
+.messengerApp .fb_customer_chat_bounce_in_v2 iframe {
+  width: 350px; /* Adjust width as needed */
+  height: 450px; /* Adjust height as needed */
+}
+
+
+
+
+
+
+/* slick slider style */
 
 .slick-slide .slider {
   display: block;
