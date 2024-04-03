@@ -44,6 +44,7 @@ import Careers from "../pages/Careers/Careers";
 import CareersDetails from "../pages/Careers/CareersDetails";
 import CareersApply from "../pages/Careers/CareersApply";
 import Application from "../pages/Dashboard/Application/Application";
+import Admin from "../pages/Admin/Admin";
 
 export const router = createBrowserRouter([
   {
@@ -127,6 +128,10 @@ export const router = createBrowserRouter([
       {
         path: "/careers-apply",
         element: <CareersApply/>,
+      },
+      {
+        path: "/admin",
+        element: <Admin/>,
       },
     ],
   },

@@ -77,12 +77,12 @@ const About = () => {
       </div>
       <div className="aboutContainers">
         <div className="aboutContent">
-          <div className="flex items-center uppercase bg-[#40C7F4] text-white rounded-md w-[200px] mx-auto justify-between mb-5 px-3 py-3">
+          <div className="flex items-center uppercase bg-[#40C7F4] text-white rounded-md w-[200px] max-auto justify-between mb-5 px-3 py-3 aboutBtnTopWraps">
             <p>Home</p>
             <FaAngleRight />
             <p>about us </p>
           </div>
-          <h2 className="ml-0 text-2xl font-bold text-left uppercase md:text-5xl xl:-ml-20 md:text-center ">
+          <h2 className=" text-2xl font-bold uppercase lg:text-5xl  md:text-center ">
             Our Expert TEAM
           </h2>
         </div>

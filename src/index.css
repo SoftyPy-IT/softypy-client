@@ -175,10 +175,11 @@ select:focus {
   place-items: center;
   transition: all 0.5s ease;
   animation-delay: 0.5s;
-  right: 147px;
-  bottom: 613px;
+  right: 230px;
+  bottom: 599px;
   border-radius: 100%;
-  width: 19px;
+  width: 30px;
+
 
 }
 
@@ -222,6 +223,14 @@ select:focus {
     width: 100% !important;
     flex-wrap: wrap !important;
   }
+
+  .whatsApp {
+    right: 228px;
+    bottom: 602px;
+    width: 29px;
+}
+
+
 }
 @media only screen and (max-width: 500px) {
   .css-lfwcke-MuiTabs-flexContainer {
@@ -239,4 +248,14 @@ select:focus {
     color: white !important;
     border-radius: 3px !important;
   }
+
+
+  .whatsApp{
+    right: 207px;
+    bottom: 408px;
+  }
+
+ 
 }
+
+

@@ -265,9 +265,9 @@
     display: block;
     transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
   }
-  .sticky .bar span {
+  /* .sticky .bar span {
     background-color: #fff;
-  }
+  } */
   .bar1 {
     transform: rotate(-45deg);
     position: absolute;

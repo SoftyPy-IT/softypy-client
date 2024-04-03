@@ -10,8 +10,11 @@ const Sidebar = () => {
   return (
     <div className="fixed overflow-y-scroll overflow-x-hidden  drawwerLeftSide h-screen text-lg font-semibold  bg-[#191E2D] text-white">
       <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
+      <Link to="/" className="shadow-md z-10">
+         <h3 className='text-3xl font-bold m-3'>   SoftyPy</h3>
+          </Link>
       <ul className=" p-4 ">
-        <li>
+        <li className="mb-3">
           <Link to="/dashboard" className="shadow-md z-10">
             Dashboard
           </Link>

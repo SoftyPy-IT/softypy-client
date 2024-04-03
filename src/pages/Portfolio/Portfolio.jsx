@@ -86,45 +86,30 @@ const Portfolio = () => {
                     </div>
                   </Link>
 
-                  <Link to="https://www.ghuronti.com/" target="_blank">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/Ghuronti-Visa.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                        <p>
-                          ghuronti.com: Your gateway to unforgettable
-                          adventures. Explore curated travel experiences
-                          worldwide with our expert guidance and personalized
-                          service. Start your journey today!
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link to="https://www.ghuronti.com/" target="_blank">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/Bus.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                        <p>
-                          ghuronti.com: Your gateway to unforgettable
-                          adventures. Explore curated travel experiences
-                          worldwide with our expert guidance and personalized
-                          service. Start your journey today!
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
+               
 
+                <Link to="https://buildingplanner.com.bd/">
+                  <div
+                    style={{
+                      backgroundImage: `url('../../../public/assets/trandhaven.png')`,
+                      backgroundSize: "cover",
+                    }}
+                    className="singlePortfolio "
+                  >
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <h2 className="text-xl">Trandhaven </h2>
+                      <p>
+                        Trandhaven Crafting unforgettable experiences. From
+                        concept to execution, we deliver seamless events
+                        tailored to your vision.
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+
+                 
+                  
+               
                   <Link to="https://airtrips.net/" target="_blank">
                     <div
                       style={{
@@ -205,6 +190,29 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
+
+                  <Link to="https://www.ghuronti.com/" target="_blank">
+                    <div
+                      style={{
+                        backgroundImage: `url('../../../public/assets/Bus.png')`,
+                        backgroundSize: "cover",
+                      }}
+                      className="singlePortfolio "
+                    >
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                        <h2 className="text-xl">Ghuronti Travels Ltd</h2>
+                        <p>
+                          ghuronti.com: Your gateway to unforgettable
+                          adventures. Explore curated travel experiences
+                          worldwide with our expert guidance and personalized
+                          service. Start your journey today!
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+
+
+
                   <Link to="https://arkaxis.net/">
                     <div
                       style={{
@@ -342,45 +350,7 @@ const Portfolio = () => {
                     </div>
                   </Link>
 
-                  <Link to="https://buildingplanner.com.bd/">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/summing.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">
-                          Qrbangladesh Swimmingpoolstrore{" "}
-                        </h2>
-                        <p>
-                          qrbangladeshswimmingpoolstore.com Crafting
-                          unforgettable experiences. From concept to execution,
-                          we deliver seamless events tailored to your vision.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-
-                  <Link to="https://buildingplanner.com.bd/">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/trandhaven.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Trandhaven </h2>
-                        <p>
-                          Trandhaven Crafting unforgettable experiences. From
-                          concept to execution, we deliver seamless events
-                          tailored to your vision.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
+                
                   <Link to="https://buildingplanner.com.bd/">
                     <div
                       style={{
@@ -399,7 +369,26 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-
+                  <Link to="https://buildingplanner.com.bd/">
+                  <div
+                    style={{
+                      backgroundImage: `url('../../../public/assets/summing.png')`,
+                      backgroundSize: "cover",
+                    }}
+                    className="singlePortfolio "
+                  >
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <h2 className="text-xl">
+                        Qrbangladesh Swimmingpoolstrore{" "}
+                      </h2>
+                      <p>
+                        qrbangladeshswimmingpoolstore.com Crafting
+                        unforgettable experiences. From concept to execution,
+                        we deliver seamless events tailored to your vision.
+                      </p>
+                    </div>
+                  </div>
+                </Link>
                   <Link to="https://www.ghuronti.com/hajj/search">
                     <div className="singlePortfolio portfolio10">
                       <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
@@ -437,11 +426,30 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
+                  <Link to="https://www.ghuronti.com/" target="_blank">
+                  <div
+                    style={{
+                      backgroundImage: `url('../../../public/assets/Ghuronti-Visa.png')`,
+                      backgroundSize: "cover",
+                    }}
+                    className="singlePortfolio "
+                  >
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                      <h2 className="text-xl">Ghuronti Travels Ltd</h2>
+                      <p>
+                        ghuronti.com: Your gateway to unforgettable
+                        adventures. Explore curated travel experiences
+                        worldwide with our expert guidance and personalized
+                        service. Start your journey today!
+                      </p>
+                    </div>
+                  </div>
+                </Link>
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio portfolio13">
                       <div className="singlePortfolio ">
                         <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                          <h2 className="text-xl">Digital Agenn</h2>
+                          <h2 className="text-xl">Digital Agency </h2>
                           <p>
                             EduXcellence: Unlocking potential through education.
                             Empowering learners with innovative tools,
@@ -555,6 +563,25 @@ const Portfolio = () => {
                   </div>
                 </div>
               </Link>
+              <Link to="https://airtrips.net/" target="_blank">
+              <div
+                style={{
+                  backgroundImage: `url('../../../public/assets/AirTrips.png')`,
+                  backgroundSize: "cover",
+                }}
+                className="singlePortfolio "
+              >
+                <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
+                  <h2 className="text-xl">Airtrips Travels Ltd</h2>
+                  <p>
+                    Airtrips.com: Elevate your travel experience. Discover
+                    seamless booking, exclusive deals, and tailored
+                    itineraries. Your passport to extraordinary adventures
+                    awaits. Begin your journey with us!
+                  </p>
+                </div>
+              </div>
+            </Link>
                   <Link to="https://www.ghuronti.com/hajj/search">
                     <div className="singlePortfolio portfolio10">
                       <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
@@ -606,25 +633,7 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link to="https://airtrips.net/" target="_blank">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/AirTrips.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Airtrips Travels Ltd</h2>
-                        <p>
-                          Airtrips.com: Elevate your travel experience. Discover
-                          seamless booking, exclusive deals, and tailored
-                          itineraries. Your passport to extraordinary adventures
-                          awaits. Begin your journey with us!
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
+                
                 </div>
               </TabPanel>
 

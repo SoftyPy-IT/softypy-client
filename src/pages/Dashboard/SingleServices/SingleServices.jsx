@@ -1,10 +1,8 @@
 import {
   FaTrashAlt,
-  FaEdit,
   FaLongArrowAltLeft,
   FaLongArrowAltRight,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import {
   useDeleteSingleServiceMutation,
@@ -58,7 +56,7 @@ const SingleServices = () => {
               <th>Title</th>
               <th>Sub title </th>
               <th>Priority</th>
-              <th colSpan={2}>Action</th>
+              <th colSpan={1}>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -69,6 +67,7 @@ const SingleServices = () => {
                 <td>{service.title}</td>
                 <td>{service.subtitle} </td>
                 <td>{service.priority} </td>
+                {/** 
                 <td>
                   <div className="editIconWrap">
                     <Link
@@ -78,6 +77,7 @@ const SingleServices = () => {
                     </Link>
                   </div>
                 </td>
+                */}
                 <td>
                   <div
                     onClick={() => handleDelete(service._id)}

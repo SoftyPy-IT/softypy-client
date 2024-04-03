@@ -59,11 +59,11 @@ const NavBar = () => {
             <li className="navbar-item">Home</li>
           </Link>
           <li className="flex items-center navbar-item serviceNavItems">
-            Services <HiChevronDown size={23} />{" "}
+            <Link to='/services'>Services</Link> <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
               <ul className="space-y-3">
               <li>
-              <Link to="/services">Our Services </Link>{" "}
+            
             </li>
                 <li className="flex items-center capitalize mainSubmenu">
                   Web Development <HiChevronDown size={23} />

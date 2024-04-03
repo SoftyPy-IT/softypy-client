@@ -5,13 +5,13 @@
   height: 70vh !important;
 }
 .aboutContent {
-  color: white;
-  position: relative;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  float: right;
-  margin-top: 37px;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  color: #fff;
+  text-align: center;
 }
 
 .inner {
@@ -321,7 +321,7 @@ img {
   z-index: 2;
 }
 
-.aboutContent {
+/* .aboutContent {
   position: absolute;
   top: 50%;
   left: 25%;
@@ -329,7 +329,7 @@ img {
   z-index: 5;
   color: #fff;
   text-align: center;
-}
+} */
 .aboutContent button {
   width: 150px;
   border: 1px solid #fff;
@@ -473,6 +473,17 @@ img {
   .aboutLeftContainer {
     left: 38px !important;
 }
+
+.teamImg9 {
+  top: -9px;
+  left: 0px;
+}
+.teamImg4 {
+  left: 56px;
+  top: 0px;
+}
+
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -537,6 +548,10 @@ img {
   border-radius: 100% !important;
 }
 
+.aboutBtnTopWraps{
+  margin-left: 78px;
+}
+
 
 
 }
@@ -566,6 +581,9 @@ img {
 }
 .aboutContainer {
   overflow: visible !important;
+}
+.aboutBtnTopWraps {
+  margin-left: 28px;
 }
 
 

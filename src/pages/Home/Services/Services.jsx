@@ -46,7 +46,7 @@ const {data:services} = useGetAllSingleServicesQuery()
                      <div className="cards-back-content md:px-3 text-center">
                        <b className="block"> {card.title}</b>
                        <small className="my-1 md:my-3">
-                         {card?.subtitle?.slice(0, 80)}...
+                         {card?.description?.slice(0, 80)}...
                        </small>
                        <div>
                          <Link to={`singleServices/${card._id}`}>
