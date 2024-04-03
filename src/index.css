@@ -202,26 +202,77 @@ select:focus {
 }
 
 /* Styling the chat button */
-.messengerApp .fb_customer_chat_bounce_in_v2 {
-  background-color: #0084ff; /* Change to your desired background color */
-  color: #fff; /* Change to your desired text color */
-  border-radius: 50%; /* Make it round */
-  padding: 10px; /* Adjust padding as needed */
+
+
+/* Example CSS to style the CustomChat component */
+
+/* Style the container of the CustomChat */
+/* Example CSS to style the CustomChat component */
+
+/* Style the container of the CustomChat */
+.fb-chat-container {
+  /* Apply styles to the container */
+  /* Example: Set a fixed width */
+  width: 300px;
+    position: fixed !important; /* or any other positioning you prefer */
+  right: 10px !important;
+  z-index: 9999 !important; /* adjust as needed */
+  right: 81px !important;
+  /* width: 28px;
+  height: 24px; */
+  bottom: 698px !important;
 }
 
-/* Styling the chat icon */
-.messengerApp .fb_customer_chat_bounce_in_v2 .fb_incoming_bubble_image {
-  width: 30px; /* Adjust icon size as needed */
-  height: 30px;
+/* Style the chat box */
+.fb-chat-box {
+  /* Apply styles to the chat box */
+  /* Example: Add a border */
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-/* Styling the chat box */
-.messengerApp .fb_customer_chat_bounce_in_v2 iframe {
-  width: 350px; /* Adjust width as needed */
-  height: 450px; /* Adjust height as needed */
+/* Style the header of the chat */
+.fb-chat-header {
+  /* Apply styles to the header */
+  /* Example: Change background color */
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
+/* Style the messages in the chat */
+.fb-chat-messages {
+  /* Apply styles to the messages */
+  /* Example: Set max height and overflow */
+  max-height: 300px;
+  overflow-y: auto;
+}
 
+/* Style the input field */
+.fb-chat-input {
+  /* Apply styles to the input field */
+  /* Example: Increase padding */
+  padding: 10px;
+}
+
+/* Style the send button */
+.fb-chat-send-button {
+  /* Apply styles to the send button */
+  /* Example: Change background color */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Style the minimized state */
+.fb-chat-minimized {
+  /* Apply styles when the chat is minimized */
+  /* Example: Reduce the size of the minimized chat */
+  width: 50px;
+  height: 50px;
+}
 
 
 
