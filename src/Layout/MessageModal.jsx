@@ -80,7 +80,7 @@ const MessageModal = () => {
   }, [messages]);
 
   return (
-    <div className="w-[300px] md:max-w-[360px] md:h-[600px] h-[400px]  bg-white fixed right-3 md:right-8 bottom-24  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden shadowStyle">
+    <div className="w-[300px] md:w-[360px] md:h-[600px] h-[400px]  bg-white fixed right-3 md:right-8 bottom-24  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden shadowStyle">
       <div className="flex flex-col justify-between h-full ">
         <div className="bg-[#2D57A2] w-full h-[120px] text-white flex justify-center items-center ">
           <div className="flex items-center">
@@ -95,7 +95,7 @@ const MessageModal = () => {
             </span>
               </div>
               <div className="flex items-center mt-2  justify-center ">
-                <small> Continue with </small>
+                <small> Continue with</small>
                 <Link
                   to="https://wa.me/8801762380594?text=Hi! how can we help you ?"
                   target="_blank"

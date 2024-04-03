@@ -175,10 +175,10 @@ select:focus {
   place-items: center;
   transition: all 0.5s ease;
   animation-delay: 0.5s;
-  right: 230px;
+  right: 260px;
   bottom: 599px;
   border-radius: 100%;
-  width: 30px;
+  width: 29px;
 
 
 }
