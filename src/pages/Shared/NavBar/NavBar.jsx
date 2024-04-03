@@ -62,6 +62,9 @@ const NavBar = () => {
             Services <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
               <ul className="space-y-3">
+              <li>
+              <Link to="/services">Our Services </Link>{" "}
+            </li>
                 <li className="flex items-center capitalize mainSubmenu">
                   Web Development <HiChevronDown size={23} />
                   <Link to="/packages">
@@ -196,7 +199,7 @@ const NavBar = () => {
               </button>
             </>
           ) : (
-            <button className="logoutBtn font-semibold">
+            <button className="logoutBtn font-bold">
               <NavLink to="/login">Login</NavLink>
             </button>
           )}

@@ -42,7 +42,7 @@ export default Arrow = () => {
             <h2 className="text-3xl md:text-5xl">Our Top Services</h2>
           </div>
         </div>
- mb-8
+
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 mb-8">
           <div className="topServicesLeft">
             <lottie-player

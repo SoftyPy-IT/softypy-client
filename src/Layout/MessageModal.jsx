@@ -80,36 +80,32 @@ const MessageModal = () => {
   }, [messages]);
 
   return (
-    <div className="w-[360px] h-[550px] bg-white fixed right-5 bottom-52  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden ">
+    <div className="w-[360px] h-[600px] bg-white fixed right-8 bottom-24  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden shadowStyle">
       <div className="flex flex-col justify-between h-full ">
-        <div className="bg-[#40C7F4] w-full h-24 text-white flex justify-center items-center ">
+        <div className="bg-[#2D57A2] w-full h-[120px] text-white flex justify-center items-center ">
           <div className="flex items-center">
-            <div className="bg-white p-1 rounded-full text-[#707584] ">
+            <div>
+              <div className="flex items-center">
+              <div className="bg-white p-1 rounded-full text-[#707584] ">
               {" "}
               <FaUserTie size={20} />
             </div>
-            <span className="ml-2 text-sm ">
+            <span className="ml-2 text-sm block">
               <ChatOnline />
             </span>
-
-            <div>
-              <FacebookProvider
-                className="messengerApp"
-                appId="321223840644901"
-                chatSupport
-              >
-                <CustomChat pageId="257323552817721" minimized={true} />
-              </FacebookProvider>
-            </div>
-            <div>
-              <Link
-                to="https://wa.me/8801762380594?text=Hello how can I help you ?"
-                target="_blank"
-              >
-                <button className="whatsApp">
-                  <FaWhatsapp size={30} className="text-white" />
-                </button>
-              </Link>
+              </div>
+              <div className="flex items-center mt-1 justify-center ">
+                <small> Continue with </small>
+                <Link
+                  to="https://wa.me/8801762380594?text=Hi! how can we help you ?"
+                  target="_blank"
+                >
+                  <button className="whatsApp">
+                  
+                    <img src={whatsapp} alt="whatsapp" />
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

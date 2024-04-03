@@ -56,7 +56,7 @@ const Main = () => {
 
       <Footer />
 
-      <div className="message rounded-full p-2 fixed bg-[#40C7F4] text-white bottom-36 right-1 cursor-pointer transition-all duration-75 ">
+      <div className="message rounded-full p-2 fixed bg-[#2D57A2] text-white bottom-5 right-1 cursor-pointer transition-all duration-75 shadowStyle">
         {open ? (
           <IoIosClose
             onClick={handleClose}
@@ -82,7 +82,7 @@ const Main = () => {
 
       softypy: 262323534563147
 
-       257323552817721
+      
 
        
  */}

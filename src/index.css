@@ -141,21 +141,17 @@ select:focus {
   position: relative;
   content: "" !important;
 }
-/* .scroll-to-top {
-    right: 40px;
-    bottom: 40px;
-    position: fixed;
-    cursor: pointer;
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    background: #FF3D00 !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999 !important;
-} */
+.scroll-to-top {
+  right: 40px;
+  bottom: 40px;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #ff3d00 !important;
+}
 
 .scrollToTopBtn {
   width: 40px;
@@ -163,9 +159,14 @@ select:focus {
   background: #2d57a2;
   color: white;
   border-radius: 100%;
-  display: none;
+  right: 16px;
+  position: fixed;
+  bottom: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999 !important;
 }
-
 
 .whatsApp {
   position: fixed;
@@ -174,108 +175,17 @@ select:focus {
   place-items: center;
   transition: all 0.5s ease;
   animation-delay: 0.5s;
-  right: 81px;
-  /* width: 28px;
-  height: 24px; */
-  bottom: 698px;
+  right: 147px;
+  bottom: 613px;
+  border-radius: 100%;
+  width: 19px;
 
 }
-/* .whatsApp {
-  right: 8px;
-  width: 60px;
-  height: 60px;
-  bottom: 230px;
-} */
 
 
-/* messenger style */
-/* Styling the outer container */
-.messengerApp {
-  position: fixed !important; /* or any other positioning you prefer */
-  bottom: 20px !important;
-  right: 10px !important;
-  z-index: 9999 !important; /* adjust as needed */
-  right: 81px !important;
-  /* width: 28px;
-  height: 24px; */
-  bottom: 698px !important;
+.shadowStyle {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-/* Styling the chat button */
-
-
-/* Example CSS to style the CustomChat component */
-
-/* Style the container of the CustomChat */
-/* Example CSS to style the CustomChat component */
-
-/* Style the container of the CustomChat */
-.fb-chat-container {
-  /* Apply styles to the container */
-  /* Example: Set a fixed width */
-  width: 300px;
-    position: fixed !important; /* or any other positioning you prefer */
-  right: 10px !important;
-  z-index: 9999 !important; /* adjust as needed */
-  right: 81px !important;
-  /* width: 28px;
-  height: 24px; */
-  bottom: 698px !important;
-}
-
-/* Style the chat box */
-.fb-chat-box {
-  /* Apply styles to the chat box */
-  /* Example: Add a border */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Style the header of the chat */
-.fb-chat-header {
-  /* Apply styles to the header */
-  /* Example: Change background color */
-  background-color: #f0f0f0;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-/* Style the messages in the chat */
-.fb-chat-messages {
-  /* Apply styles to the messages */
-  /* Example: Set max height and overflow */
-  max-height: 300px;
-  overflow-y: auto;
-}
-
-/* Style the input field */
-.fb-chat-input {
-  /* Apply styles to the input field */
-  /* Example: Increase padding */
-  padding: 10px;
-}
-
-/* Style the send button */
-.fb-chat-send-button {
-  /* Apply styles to the send button */
-  /* Example: Change background color */
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-/* Style the minimized state */
-.fb-chat-minimized {
-  /* Apply styles when the chat is minimized */
-  /* Example: Reduce the size of the minimized chat */
-  width: 50px;
-  height: 50px;
-}
-
-
-
 
 /* slick slider style */
 

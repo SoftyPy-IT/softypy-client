@@ -7,26 +7,24 @@ const Products = () => {
     {
       id: 1,
       name: "APPS Development",
-      desc:"SoftyPy specializes in crafting dynamic websites and innovative mobile apps, delivering a seamless user experience and digital solutions tailored to your needs."
+      desc: "SoftyPy specializes in crafting dynamic websites and innovative mobile apps, delivering a seamless user experience and digital solutions tailored to your needs.",
     },
     {
       id: 2,
       name: "Web Development",
-      desc: "ERP Solutions optimize business operations through integrated software, fostering efficiency and informed decision-making for sustained growth."
+      desc: "ERP Solutions optimize business operations through integrated software, fostering efficiency and informed decision-making for sustained growth.",
     },
-    
+
     {
       id: 3,
       name: "ERP Solutions ​",
-      desc: "At SoftyPy, we craft exceptional UI/UX designs that harmonize aesthetics and functionality, ensuring delightful user experiences for your digital products."
+      desc: "At SoftyPy, we craft exceptional UI/UX designs that harmonize aesthetics and functionality, ensuring delightful user experiences for your digital products.",
     },
     {
       id: 4,
       name: "Digital Marketing",
-      desc:"SoftyPy drives business growth with data-driven digital marketing strategies, elevating your online presence and engaging target audiences for lasting results."
+      desc: "SoftyPy drives business growth with data-driven digital marketing strategies, elevating your online presence and engaging target audiences for lasting results.",
     },
-
-    
   ];
   return (
     <div className="mt-0 lg:mt-20">
@@ -34,63 +32,49 @@ const Products = () => {
         {cardData.map((data, i) => (
           <div key={data.id} className="productCard mt-8">
             <div className="moreServiceIconWrap">
-           <FaLaptopCode className="" size={70} />
+              <FaLaptopCode className="" size={70} />
             </div>
             <div className="productCardContent">
               <h3 className="text-xl font-bold">{data.name}</h3>
               <small>{data.desc}</small>
 
-              
               <div className="flex items-center justify-center mt-2 space-x-3 cursor-pointer ">
-              {i == 0 ? (
-                <>
-                <Link to='/app'>
-                <div className="flex items-center cursor-pointer mt-2">
-                <span>See More </span>
-                <FaArrowRight className="ml-2 text-[#2D57A2] " />
+                {i == 0 ? (
+                  <>
+                    <Link to="/app-development">
+                      <div className="flex items-center cursor-pointer mt-2">
+                        <span>See More </span>
+                        <FaArrowRight className="ml-2 text-[#2D57A2] " />
+                      </div>
+                    </Link>
+                  </>
+                ) : i == 1 ? (
+                  <>
+                    <Link to="/packages">
+                      <div className="flex items-center cursor-pointer mt-2">
+                        <span>See More </span>
+                        <FaArrowRight className="ml-2 text-[#2D57A2] " />
+                      </div>
+                    </Link>
+                  </>
+                ) : i == 2 ? (
+                  <>
+                    <Link to="/erp">
+                      <div className="flex items-center cursor-pointer mt-2">
+                        <span>See More </span>
+                        <FaArrowRight className="ml-2 text-[#2D57A2] " />
+                      </div>
+                    </Link>
+                  </>
+                ) : i == 3 ? (
+                  <>
+                    <div className="flex items-center cursor-pointer mt-2">
+                      <span>See More </span>
+                      <FaArrowRight className="ml-2 text-[#2D57A2] " />
+                    </div>
+                  </>
+                ) : null}
               </div>
-                </Link>
-                </>
-              ) : i == 1 ? (
-                <>
-                <Link to='/app'>
-                <div className="flex items-center cursor-pointer mt-2">
-                <span>See More </span>
-                <FaArrowRight className="ml-2 text-[#2D57A2] " />
-              </div>
-                </Link>
-                </>
-              ) : i == 2 ? (
-                <>
-                <Link to='/app'>
-                <div className="flex items-center cursor-pointer mt-2">
-                <span>See More </span>
-                <FaArrowRight className="ml-2 text-[#2D57A2] " />
-              </div>
-                </Link>
-                </>
-              ) : i == 3 ? (
-                <>
-                <Link to='/app'>
-                <div className="flex items-center cursor-pointer mt-2">
-                <span>See More </span>
-                <FaArrowRight className="ml-2 text-[#2D57A2] " />
-              </div>
-                </Link>
-                </>
-              ) : i == 4 ? (
-                <>
-                <Link to='/app'>
-                <div className="flex items-center cursor-pointer mt-2">
-                <span>See More </span>
-                <FaArrowRight className="ml-2 text-[#2D57A2] " />
-              </div>
-                </Link>
-                </>
-              ) :  null}
-            </div>
-
-             
             </div>
           </div>
         ))}
