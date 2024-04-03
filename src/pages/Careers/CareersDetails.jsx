@@ -5,7 +5,7 @@ import NavBar from "../Shared/NavBar/NavBar";
 const CareersDetails = () => {
   return (
     <div>
-      <div className="text-white bg-[#40C7F4]">
+      <div className="shadow-lg">
         <NavBar />
       </div>
       <div className="careerContainerWraps">
@@ -24,70 +24,70 @@ const CareersDetails = () => {
             <h3 className="text-2xl md:text-4xl font-bold text-black mb-5">
               Our Expectations{" "}
             </h3>
-            <span className="text-2xl font-semibold ">Required</span>
+            <span className="text-2xl font-semibold ">🎯 Required</span>
             <ul className="space-y-2 mt-2 experienceList">
-              <li>2+ years in software development</li>
+
+              <li> 💠 Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model.</li>
               <li>
-                3+ years of production experience in backend development
-                (Python)
+              💠Through understanding of React JS, Next JS, rest API, Figma, Tailwind CSS, typescripts and its core principles.
               </li>
               <li>
-                {" "}
-                2+ years of production experience in front-end development (JS,
-                React.js/ HTML/CSS){" "}
+              💠Experience with popular React JS workflows (such as Redux).
               </li>
-              <li>Knowledge of SQL and experience with MongoDB, PostgreSQL</li>
+              <li>💠A knack for benchmarking and optimization.</li>
               <li>
-                Experience with TypeScript, Mongoose, Redux-Toolkit, Rest API{" "}
+              💠Familiarity with newer specifications of EcmaScript.
               </li>
-              <li>Testing React with React Testing Library & Vitest</li>
-              <li>Experience with Docker</li>
-              <li>Upper-Intermediate English</li>
+              <li>💠Familiarity with code versioning tools (such as Git).</li>
+              <li>💠Experience with standard front-end development tools such as Babel, Webpack, NPM, etc., is a plus. Knowledge of Node Js is a plus.</li>
+              <li>💠Responsive Design, Strong on Front-end </li>
             </ul>
 
             <span className="text-2xl font-semibold mt-10 block">
-              Nice to have{" "}
+            🎯 Nice to have{" "}
             </span>
             <ul className="space-y-2 mt-2 experienceList">
-              <li>Understanding of CI/CD(Travis, Jenkins) processes</li>
-              <li>React Native </li>
-              <li>Lead experience </li>
+              <li> 💠 Understanding of CI/CD(Travis, Jenkins) processes</li>
+              <li> 💠 React Native </li>
+              <li> 💠 Lead experience </li>
+            </ul>
+
+
+
+          </div>
+
+          <div className="mt-20 text-black">
+            <h3 className="text-2xl md:text-4xl font-bold text-black mb-5">
+            🎯 QUALIFICATIONS
+            </h3>
+            <ul className="space-y-2 mt-2 experienceList">
+              <li>
+               💠 -Diligent, innovative, and conscientious
+              </li>
+              <li> 💠 -Mastering design software</li>
+              <li>
+               💠 -Likes challenges
+              </li>
+              <li>💠 -Have a sense of art</li>
+              <li>
+               💠 -Have high creativity, communication, and action.
+              </li>
             </ul>
           </div>
           <div className="mt-20 text-black">
             <h3 className="text-2xl md:text-4xl font-bold text-black mb-5">
-              Your responsibilities{" "}
+            🎯 What we offer
             </h3>
             <ul className="space-y-2 mt-2 experienceList">
               <li>
-                Implement new and enhance existing features of the project.
-              </li>
-              <li>Implement scalable back-end and front-end solutions.</li>
-              <li>
-                Collaborate with and Designers to deliver appropriate data that
-                meets the product and technical needs of the various platforms.
-              </li>
-              <li>Write and test code in local and staging environments.</li>
-              <li>
-                Extract the interface into reusable components for use in
-                additional websites in the future.
-              </li>
-            </ul>
-          </div>
-          <div className="mt-20 text-black">
-            <h3 className="text-2xl md:text-4xl font-bold text-black mb-5">
-              What we offer
-            </h3>
-            <ul className="space-y-2 mt-2 experienceList">
-              <li>
-                A sense of community and friendship, diversity, and inclusivity
+                💠  A sense of community and friendship, diversity, and inclusivity
               </li>
               <li>
-                Informal working environment with short decision-making chains
+              💠 Informal working environment with short decision-making chains
               </li>
-              <li>Established personal development processes</li>
-              <li>Support of professional training and certification</li>
-              <li>Social benefits project bonus</li>
+              <li> 💠 Established personal development processes</li>
+              <li> 💠 Support of professional training and certification</li>
+              <li> 💠 Social benefits project bonus</li>
             </ul>
           </div>
           <div className="block md:flex justify-end">

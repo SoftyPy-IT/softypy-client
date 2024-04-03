@@ -8,30 +8,30 @@ const Careers = () => {
     {
       id: 1,
       name: "Frontend Developer",
-      text: "Onsite",
+      text: "Onsite (Open position for you.)",
     },
     {
-      id: 1,
+      id: 2,
       name: "MERN Stack Developer",
       text: "Onsite",
     },
     {
-      id: 1,
+      id: 3,
       name: "UI/UX Designer",
       text: "Onsite",
     },
     {
-      id: 1,
+      id: 4,
       name: "Java Developer",
       text: "Onsite",
     },
     {
-      id: 1,
+      id: 5,
       name: "React Native Developer",
       text: "Onsite",
     },
     {
-      id: 1,
+      id: 6,
       name: "Flutter Developer",
       text: "Onsite",
     },
@@ -55,7 +55,7 @@ const Careers = () => {
 
       <Container>
         <div className="px-5 xl:px-0">
-          {jobData.map((data) => (
+          {jobData.map((data, i ) => (
             <div
               key={data.id}
               className=" block md:flex items-center justify-between mt-10 border-t pt-8 "
@@ -66,12 +66,21 @@ const Careers = () => {
                 </h2>
                 <span className="mt-2 block">{data.text} </span>
               </div>
-              <Link to="/careers-details">
+             {
+              i == 0 ? (
+                <Link to="/careers-details">
                 <button className="w-[140px]  md:w-[180px] mt-3 md:mt-0 h-[40px] md:h-[60px] border border-[#ddd]  flex items-center justify-center rounded-sm jobBtn">
                   <span>See Details</span>{" "}
                   <HiOutlineArrowNarrowRight className="ml-1" size={20} />
                 </button>
               </Link>
+              ): (
+                <button className="w-[140px]  md:w-[180px] mt-3 md:mt-0 h-[40px] md:h-[60px] border border-[#ddd]  flex items-center justify-center rounded-sm jobBtn">
+                <span>See Details</span>{" "}
+                <HiOutlineArrowNarrowRight className="ml-1" size={20} />
+              </button>
+              )
+             }
             </div>
           ))}
         </div>

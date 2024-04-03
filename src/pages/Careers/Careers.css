@@ -30,9 +30,7 @@ transition:all .5s ease-in-out;
     background:#40C7F4;
     color:#fff;
 }
-.experienceList li {
-    list-style-type: disc;
-}
+
 .applyInput{
     width:400px;
 }
