@@ -60,10 +60,7 @@ const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
                 {services?.title}
                 {/* One-Stop Shop for All Your Online Needs{" "} */}
               </h2>
-              <h3 className="text-xl  md:text-2xl font-bold mt-5">
-                {/* Best Web Development Company In Bangladesh */}
-                {services?.subtitle}
-              </h3>
+             
             </div>
           </div>
         </div>
@@ -77,25 +74,18 @@ const {data:services, isLoading, isError} = useGetSingleServicesQuery(id)
             </h3>
             <div className="my-2">
 
-              <b>Global Reach:</b>
+              <b>{services.subtitle}:</b>
               <p>{services.description}</p>
-              <p>
-                {" "}
-                An eCommerce website enables your business to transcend
-                geographical boundaries, reaching potential customers worldwide.
-                It breaks down the limitations of a physical store and offers an
-                expansive global market to tap into.
-              </p>
             </div>
             <div className="my-2">
-              <b> 24/7 Accessibility: </b>
-              <p>
-                Your eCommerce website never closes. It provides customers with
-                the convenience of shopping whenever they prefer, whether it is
-                early morning or late at night. This accessibility enhances
-                customer satisfaction and boosts sales.
-              </p>
-            </div>
+            <b> 24/7 Accessibility: </b>
+            <p>
+              Your eCommerce website never closes. It provides customers with
+              the convenience of shopping whenever they prefer, whether it is
+              early morning or late at night. This accessibility enhances
+              customer satisfaction and boosts sales.
+            </p>
+          </div>
           </div>
           <div className="rightSideServices">
             <lottie-player

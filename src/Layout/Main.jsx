@@ -77,18 +77,22 @@ const Main = () => {
       </button>
 
       {/**
+      my appid: 321223840644901
+      my pageid: 257323552817721
 
       softypy: 262323534563147
 
        257323552817721
+
+       
  */}
 
       <FacebookProvider
         className="messengerApp"
-        appId="321223840644901"
+        appId="387557750848217"
         chatSupport
       >
-        <CustomChat pageId="257323552817721" minimized={true} />
+        <CustomChat pageId="262323534563147" minimized={true} />
       </FacebookProvider>
 
       {open && <MessageModal />}

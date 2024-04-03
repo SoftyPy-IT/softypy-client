@@ -27,7 +27,7 @@ const UpdateAbout = () => {
       teamDescriptions
 
     }
-    fetch(`https://softypy-server-fzco.vercel.app/about/${_id}`, {
+    fetch(`http://localhost:5000/about/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

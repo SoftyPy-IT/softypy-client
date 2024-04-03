@@ -1,6 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import "./Product.css";
 import { FaLaptopCode } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Products = () => {
   const cardData = [
     {
@@ -30,7 +31,7 @@ const Products = () => {
   return (
     <div className="mt-0 lg:mt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center place-content-center gap-5 ">
-        {cardData.map((data) => (
+        {cardData.map((data, i) => (
           <div key={data.id} className="productCard mt-8">
             <div className="moreServiceIconWrap">
            <FaLaptopCode className="" size={70} />
@@ -38,10 +39,58 @@ const Products = () => {
             <div className="productCardContent">
               <h3 className="text-xl font-bold">{data.name}</h3>
               <small>{data.desc}</small>
-              <div className="flex items-center cursor-pointer mt-2">
-                <span>Learn More </span>
+
+              
+              <div className="flex items-center justify-center mt-2 space-x-3 cursor-pointer ">
+              {i == 0 ? (
+                <>
+                <Link to='/app'>
+                <div className="flex items-center cursor-pointer mt-2">
+                <span>See More </span>
                 <FaArrowRight className="ml-2 text-[#2D57A2] " />
               </div>
+                </Link>
+                </>
+              ) : i == 1 ? (
+                <>
+                <Link to='/app'>
+                <div className="flex items-center cursor-pointer mt-2">
+                <span>See More </span>
+                <FaArrowRight className="ml-2 text-[#2D57A2] " />
+              </div>
+                </Link>
+                </>
+              ) : i == 2 ? (
+                <>
+                <Link to='/app'>
+                <div className="flex items-center cursor-pointer mt-2">
+                <span>See More </span>
+                <FaArrowRight className="ml-2 text-[#2D57A2] " />
+              </div>
+                </Link>
+                </>
+              ) : i == 3 ? (
+                <>
+                <Link to='/app'>
+                <div className="flex items-center cursor-pointer mt-2">
+                <span>See More </span>
+                <FaArrowRight className="ml-2 text-[#2D57A2] " />
+              </div>
+                </Link>
+                </>
+              ) : i == 4 ? (
+                <>
+                <Link to='/app'>
+                <div className="flex items-center cursor-pointer mt-2">
+                <span>See More </span>
+                <FaArrowRight className="ml-2 text-[#2D57A2] " />
+              </div>
+                </Link>
+                </>
+              ) :  null}
+            </div>
+
+             
             </div>
           </div>
         ))}

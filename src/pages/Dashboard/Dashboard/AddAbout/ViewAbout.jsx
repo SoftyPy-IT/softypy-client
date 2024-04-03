@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 const ViewAbout = () => {
   const { data: aboutItem = [], refetch } = useQuery(['aboutItem'], async () => {
-    const res = await fetch('https://softypy-server-fzco.vercel.app/about');
+    const res = await fetch('http://localhost:5000/about');
     return res.json()
   })
   const handleDelete = id => {
@@ -21,7 +21,7 @@ const ViewAbout = () => {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://softypy-server-fzco.vercel.app/about/${id}`, {
+        fetch(`http://localhost:5000/about/${id}`, {
           method: "DELETE"
         })
           .then(res => res.json())
