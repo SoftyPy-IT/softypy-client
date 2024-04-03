@@ -260,7 +260,7 @@
   .bar span {
     width: 30px;
     height: 2px;
-    background: #fff;
+    background: #111;
     margin-bottom: 6px;
     display: block;
     transition: all 0.5s linear(-0.47 -53.68%, 1 100%);

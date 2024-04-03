@@ -88,9 +88,8 @@ const Main = () => {
         </button>
       </Link>
 
-      <FacebookProvider appId="321223840644901" chatSupport>
+      <FacebookProvider className='messengerApp' appId="321223840644901" chatSupport>
         <CustomChat pageId="257323552817721" minimized={true} />
-        hello
       </FacebookProvider>
       {open && <MessageModal />}
     </div>
