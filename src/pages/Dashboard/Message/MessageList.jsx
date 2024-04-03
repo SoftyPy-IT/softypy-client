@@ -32,7 +32,7 @@ const MessageList = () => {
   const [senderData, setSenderData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/message/all")
+    fetch("https://softypy-server-fzco.vercel.app/message/all")
       .then((res) => res.json())
       .then((data) => setSenderData(data));
   }, []);
@@ -72,7 +72,7 @@ const MessageList = () => {
 
   const handleDelete = (id) => {
     try {
-      fetch(`http://localhost:5000/message/${id}`, {
+      fetch(`https://softypy-server-fzco.vercel.app/message/${id}`, {
         method: 'DELETE'
       })
       .then((res) => {

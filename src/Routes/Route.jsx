@@ -66,7 +66,7 @@ export const router = createBrowserRouter([
         path: "/singleServices/:id",
         element: <SingleService />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/singleServices/${params.id}`),
+          fetch(`https://softypy-server-fzco.vercel.app/singleServices/${params.id}`),
       },
       {
         path: "/services",
@@ -150,7 +150,7 @@ export const router = createBrowserRouter([
         path: "updatedservice/:id",
         element: <UpdateServices />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(`https://softypy-server-fzco.vercel.app/services/${params.id}`),
       },
       {
         path: "about",
@@ -164,7 +164,7 @@ export const router = createBrowserRouter([
         path: "updateAbout/:id",
         element: <UpdateAbout />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/about/${params.id}`),
+          fetch(`https://softypy-server-fzco.vercel.app/about/${params.id}`),
       },
       {
         path: "contact",
@@ -202,7 +202,7 @@ export const router = createBrowserRouter([
         path: "updatedSingleServices/:id",
         element: <UpdateSingleServices />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/singleServices/${params.id}`),
+          fetch(`https://softypy-server-fzco.vercel.app/singleServices/${params.id}`),
       },
       {
         path: "orders",

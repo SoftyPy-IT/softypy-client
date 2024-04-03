@@ -35,7 +35,7 @@ const AddAbout = () => {
           teamDescriptions
 
         }
-        fetch('http://localhost:5000/about', {
+        fetch('https://softypy-server-fzco.vercel.app/about', {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

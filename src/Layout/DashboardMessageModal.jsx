@@ -53,7 +53,7 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
     };
 
     socket.emit("send-message", values);
-    const response = await axios.post("http://localhost:5000/message", values);
+    const response = await axios.post("https://softypy-server-fzco.vercel.app/message", values);
     if (response.status === 200) {
       setReload(!reload);
       reset();
@@ -63,7 +63,7 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
   useEffect(() => {
     const getMessage = async () => {
       const response = await axios.get(
-        `http://localhost:5000/message?receiverId=${senderId}&senderId=${loggedinUser}`
+        `https://softypy-server-fzco.vercel.app/message?receiverId=${senderId}&senderId=${loggedinUser}`
       );
       if (response.status === 200) {
         setMessages(response.data);
