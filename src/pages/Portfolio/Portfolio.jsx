@@ -268,7 +268,7 @@ const Portfolio = () => {
                         backgroundImage: `url('../../../public/assets/Trust-Auto-Solution.png')`,
                         backgroundSize: "cover",
                       }}
-                      className="singlePortfolio "
+                      className="singlePortfolio portfolio19"
                     >
                       <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Trust-Auto-Solution</h2>
@@ -291,7 +291,7 @@ const Portfolio = () => {
                         backgroundImage: `url('../../../public/assets/shop-master.png')`,
                         backgroundSize: "cover",
                       }}
-                      className="singlePortfolio "
+                      className="singlePortfolio portfolio19"
                     >
                       <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Shop Master </h2>
@@ -715,6 +715,7 @@ const Portfolio = () => {
                   </Link>
                 </div>
               </TabPanel>
+
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
                 <Link to="https://buildingplanner.com.bd/">
@@ -742,11 +743,8 @@ const Portfolio = () => {
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
                   <Link to="https://trust-auto-solution.vercel.app/dashboard">
                     <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/Trust-Auto-Solution.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
+                      
+                      className="singlePortfolio portfolio19 "
                     >
                       <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Trust-Auto-Solution</h2>
@@ -769,7 +767,7 @@ const Portfolio = () => {
                         backgroundImage: `url('../../../public/assets/shop-master.png')`,
                         backgroundSize: "cover",
                       }}
-                      className="singlePortfolio "
+                      className="singlePortfolio portfolio19"
                     >
                       <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
                         <h2 className="text-xl">Shop Master </h2>

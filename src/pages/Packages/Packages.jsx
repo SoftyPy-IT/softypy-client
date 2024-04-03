@@ -12,6 +12,8 @@ import Ready from "./Ready";
 import PackagePrice2 from "./PackagePrice2";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import { Link } from "react-router-dom";
+import CommonButton from "../Shared/CommonButton/CommonButton";
+
 const Packages = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -151,7 +153,11 @@ const Packages = () => {
               <p className=" mt-14 mb-10 text-3xl md:text-[80px]">
                 +88-01303042561
               </p>
-              <button className="priceBtn">Contact Us</button>
+              <Link to='/contact'>
+              
+              <CommonButton text="Contact Us " />
+              </Link>
+
             </div>
           </div>
         </Container>

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import ready from "../../../public/assets/ready-banner.jpg";
-
 import CommonButton from "../Shared/CommonButton/CommonButton";
 const Ready = () => {
   return (

@@ -69,7 +69,10 @@ const ERP = () => {
                     )}
                     <h3 className="text-2xl font-bold mt-5">{data.title}</h3>
                     <p className=" my-4">{data.text}</p>
-                   <Link to='/erp-details'> <button className="erpBtn">View More </button></Link>
+                    <Link to="/erp-details">
+                      {" "}
+                      <button className="erpBtn">View More </button>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -77,10 +80,10 @@ const ERP = () => {
           </div>
         </div>
       </div>
-      <ModuleCovered/>
-      <Brand/>
-      <Review/>
-      <FrequentlyAskQuestions/>
+      <ModuleCovered />
+      <Brand />
+      <Review />
+      <FrequentlyAskQuestions />
     </div>
   );
 };

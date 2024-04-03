@@ -269,6 +269,21 @@ const Contact = () => {
       </Container>
       <div className="sectionMargin">
       <section className="flex flex-row items-center justify-center w-full mx-auto mb-32 md:my-24 md:mb-32">
+
+      <Iframe
+      className="lg:h-[600px] h-[300px] "
+      url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0928658240487!2d90.41446837602358!3d23.779707187649365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c729f12d1e81%3A0xf1af6c2806888e76!2sSoftyPy%20Pvt%20Ltd!5e0!3m2!1sen!2sbd!4v1712120567130!5m2!1sen!2sbd"
+      width="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      position="relative"
+    ></Iframe>
+
+ 
+
+{/** 
         <Iframe
           className="lg:h-[600px] h-[300px] "
           url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.702714087243!2d-118.24379858493394!3d34.05149622521712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648957fbb05%3A0x8c6c875a0069f4c9!2s26%20N%20Los%20Angeles%20St%2C%20Los%20Angeles%2C%20CA%2090012%2C%20USA!5e0!3m2!1sen!2sbd!4v1674159891667!5m2!1sen!2sbd"
@@ -279,6 +294,8 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
           position="relative"
         ></Iframe>
+*/}
+
       </section>
       </div>
       <Subscribe />
