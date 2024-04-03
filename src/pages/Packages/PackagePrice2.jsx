@@ -26,16 +26,22 @@ const PackagePrice2 = () => {
               </div>
               <div className="packagesContentWrap">
                 <hr className="my-5" />
-                <div className="flex items-center justify-center py-3 ">
-                  <div className="flex">
-                    <span className="mr-3 text-2xl md:text-4xl">৳</span>
-                    <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
-                      25000
-                    </h2>
+                <div className="flex items-center justify-center py-3">
+                  <div className="text-center">
+                    <div className="flex items-center">
+                      <span className="mr-3 text-2xl md:text-4xl">৳</span>
+                      <h2 className=" font-bold md:text-xl xl:text-2xl">
+                        99,990 Taka / $909 USD
+                      </h2>
+                    </div>
+                    <del className="text-red-600">
+                      2,00,000 Taka / $1,819 USD
+                    </del>
                   </div>
                 </div>
                 <hr />
                 <div>
+                  {/* List of features */}
                   <div className="flex items-center mt-3">
                     <HiOutlineCheck className="mr-2" size={25} />
                     <span>Free Domain+Hosting</span>
@@ -46,11 +52,11 @@ const PackagePrice2 = () => {
                   </div>
                   <div className="flex items-center mt-3">
                     <HiOutlineCheck className="mr-2" size={25} />
-                    <span>Basic Design</span>
+                    <span>Junior UI/UX Designer</span>
                   </div>
                   <div className="flex items-center mt-3">
                     <HiOutlineCheck className="mr-2" size={25} />
-                    <span>Technology: Woocommerce</span>
+                    <span>Technology: MERN </span>
                   </div>
                   <div className="flex items-center mt-3">
                     <HiOutlineCheck className="mr-2" size={25} />
@@ -78,7 +84,7 @@ const PackagePrice2 = () => {
                   </div>
                   <div className="flex items-center mt-3">
                     <HiOutlineCheck className="mr-2" size={25} />
-                    <span>Free Update: 1 Month</span>
+                    <span>Free https ssl certificte (First Year)</span>
                   </div>
                   <div className="flex items-center mt-3">
                     <HiOutlineCheck className="mr-2" size={25} />
@@ -86,11 +92,108 @@ const PackagePrice2 = () => {
                   </div>
                   <div className="flex items-center mt-3">
                     <HiOutlineCheck className="mr-2" size={25} />
-                    <span>Development Time: 14 Days</span>
+                    <span>Development Time: 75 Days</span>
                   </div>
                   <div className="flex items-center mt-3">
                     <HiOutlineCheck className="mr-2" size={25} />
-                    <span>Renew Charge: 3000 Taka (Per Year)</span>
+                    <span>Renew Charge: 10,000 Taka (Per Year)</span>
+                  </div>
+                </div>
+
+                {/* Contact button */}
+                <div className="mt-3 md:ml-8 lg:ml-0 ">
+                  <Link to="/contact">
+                    <CommonButton text="Contact Us" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="wordPressPackageWrap">
+            <div className="wordPressPackage">
+              <div className="flex items-center justify-between bg-[#40C7F4] text-white p-3">
+                <IoLogoNodejs size={100} />
+                <div>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Advance</h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
+                </div>
+              </div>
+              <div className="packagesContentWrap">
+                <hr className="my-5" />
+                <div className="flex items-center justify-center py-3 ">
+                  <div className="text-center">
+                    <div className="flex items-center">
+                      <span className="mr-3 text-2xl md:text-4xl">৳</span>
+                      <h2 className=" font-bold md:text-xl xl:text-2xl">
+                        2,49,990 Taka / $2,273 USD
+                      </h2>
+                    </div>
+                    <del className="text-red-600">
+                      2,00,000 Taka / $1,819 USD
+                    </del>
+                  </div>
+                </div>
+                <hr />
+                <div>
+                  {/* List of features */}
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Free Domain+Hosting</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Domain Name Email Address</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span> Senior UI/UX Designer</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Technology: MERN </span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Cash on Delivery</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Online Payment</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>User Management</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Sales Management</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Order Management</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Hot Deal/Flash Sale Management</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Free https ssl certificte (First Year)</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Free Training with video tutorial</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Development Time: 120Day </span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span> Renew Charge: 30,000Taka (Per Year)</span>
+                    
+                   
                   </div>
                 </div>
 
@@ -104,180 +207,90 @@ const PackagePrice2 = () => {
           </div>
 
           <div className="wordPressPackageWrap">
-          <div className="wordPressPackage">
-            <div className="flex items-center justify-between bg-[#40C7F4] text-white p-3">
-              <IoLogoNodejs size={100} />
-              <div>
-                <h4 className="font-bold lg:text-xl xl:text-2xl">Advance</h4>
-                <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
-              </div>
-            </div>
-            <div className="packagesContentWrap">
-              <hr className="my-5" />
-              <div className="flex items-center justify-center py-3 ">
-                <div className="flex">
-                  <span className="mr-3 text-2xl md:text-4xl">৳</span>
-                  <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
-                    45000
-                  </h2>
+            <div className="wordPressPackage">
+              <div className="flex items-center justify-between bg-[#40C7F4] text-white p-3">
+                <IoLogoNodejs size={100} />
+                <div>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Premium</h4>
+                  <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
                 </div>
               </div>
-              <hr />
-              <div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Free Domain+Hosting</span>
+              <div className="packagesContentWrap">
+                <hr className="my-5" />
+                <div className="flex items-center justify-center py-3 ">
+                  <div className="text-center">
+                    <h2 className=" font-bold xl:text-3xl">Negotiable</h2>
+                  </div>
                 </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Domain Name Email Address</span>
+                <hr />
+                <div>
+                  {/* List of features */}
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Free Domain+Hosting</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Domain Name Email Address</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span> Design - Custom</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Technology: Negotiable </span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Cash on Delivery</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Online Payment</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>User Management</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Sales Management</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Order Management</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Hot Deal/Flash Sale Management</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Free https ssl certificte (First Year)</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Free Training with video tutorial</span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Development Time: Negotiable </span>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <HiOutlineCheck className="mr-2" size={25} />
+                    <span>Renew Charge: Negotiable </span>
+                  </div>
                 </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Advance Design</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Technology: MERN </span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Cash on Delivery</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Online Payment</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>User Management</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Sales Management</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Order Management</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Hot Deal/Flash Sale Management</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Free Update: 2 Month</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Free Training with video tutorial</span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Development Time: 1 Month </span>
-                </div>
-                <div className="flex items-center mt-3">
-                  <HiOutlineCheck className="mr-2" size={25} />
-                  <span>Renew Charge: 5000 Taka (Per Year)</span>
-                </div>
-              </div>
 
-              <div className="mt-3 md:ml-8 lg:ml-0 ">
-                <Link to="/contact">
-                  <CommonButton text="Contact Us" />
-                </Link>
+                <div className="mt-3 md:ml-8 lg:ml-0 ">
+                  <Link to="/contact">
+                    <CommonButton text="Contact Us" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="wordPressPackageWrap">
-        <div className="wordPressPackage">
-          <div className="flex items-center justify-between bg-[#40C7F4] text-white p-3">
-            <IoLogoNodejs size={100} />
-            <div>
-              <h4 className="font-bold lg:text-xl xl:text-2xl">Premium</h4>
-              <h4 className="font-bold lg:text-xl xl:text-2xl">Package </h4>
-            </div>
-          </div>
-          <div className="packagesContentWrap">
-            <hr className="my-5" />
-            <div className="flex items-center justify-center py-3 ">
-              <div className="flex">
-                <span className="mr-3 text-2xl md:text-4xl">৳</span>
-                <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl">
-                  65,000
-                </h2>
-              </div>
-            </div>
-            <hr />
-            <div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Free Domain+Hosting</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Domain Name Email Address</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Premium Design</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Technology: MERN </span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Cash on Delivery</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Online Payment</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>User Management</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Sales Management</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Order Management</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Hot Deal/Flash Sale Management</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Free Update: 3 Month</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Free Training with video tutorial</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Development Time: 60 Days</span>
-              </div>
-              <div className="flex items-center mt-3">
-                <HiOutlineCheck className="mr-2" size={25} />
-                <span>Renew Charge: 8000 Taka (Per Year)</span>
-              </div>
-            </div>
-
-            <div className="mt-3 md:ml-8 lg:ml-0 ">
-              <Link to="/contact">
-                <CommonButton text="Contact Us" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
         </div>
 
         <div className="grid grid-cols-1 gap-10 mt-16 lg:grid-cols-3 xl:grid-cols-3 place-content-center ">

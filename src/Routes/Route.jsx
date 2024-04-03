@@ -43,6 +43,7 @@ import ERPDetails from "../pages/ERPDetails/ERPDetails";
 import Careers from "../pages/Careers/Careers";
 import CareersDetails from "../pages/Careers/CareersDetails";
 import CareersApply from "../pages/Careers/CareersApply";
+import Application from "../pages/Dashboard/Application/Application";
 
 export const router = createBrowserRouter([
   {
@@ -206,6 +207,10 @@ export const router = createBrowserRouter([
       {
         path: "orders",
         element: <CustomerOrderList />,
+      },
+      {
+        path: "application",
+        element: <Application />,
       },
       {
         path: "add-reviews",

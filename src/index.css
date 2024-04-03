@@ -169,20 +169,22 @@ select:focus {
 
 .whatsApp {
   position: fixed;
-  right: 10px;
-  bottom: 200px;
   z-index: 9999 !important;
   display: grid;
   place-items: center;
   transition: all 0.5s ease;
   animation-delay: 0.5s;
+  right: 88px;
+  width: 33px;
+  height: 28px;
+  bottom: 616px;
 }
-.whatsApp {
+/* .whatsApp {
   right: 8px;
   width: 60px;
   height: 60px;
   bottom: 230px;
-}
+} */
 .messengerApp{
   width:auto;
 }

@@ -79,22 +79,15 @@ const Main = () => {
       <button onClick={scrollToTop} id="button">
         <HiChevronDoubleUp size={25} />
       </button>
-      <Link
-        to="https://wa.me/8801762380594?text=Hello how can I help you ?"
-        target="_blank"
-      >
-        <button className="whatsApp">
-          <img src={whatsapp} alt="" />
-        </button>
-      </Link>
+      
 
       {/**
 
+      softypy: 262323534563147
+
        257323552817721
  */}
-      <FacebookProvider className='messengerApp' appId="321223840644901" chatSupport>
-        <CustomChat pageId="262323534563147" minimized={true} />
-      </FacebookProvider>
+     
       {open && <MessageModal />}
     </div>
   );

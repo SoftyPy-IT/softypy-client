@@ -9,7 +9,9 @@ import { FaLink, FaUserTie } from "react-icons/fa";
 import { io } from "socket.io-client";
 import ChatOnline from "../components/ChatOnline/ChatOnline";
 import Message from "../components/Message/Message";
-
+import { CustomChat, FacebookProvider } from "react-facebook";
+import { Link } from "react-router-dom";
+import whatsapp from "../../public/assets/whatsapp.png";
 
 const socket = io("https://softypy-server.vercel.app");
 
@@ -82,7 +84,7 @@ const MessageModal = () => {
   }, [messages]);
 
   return (
-    <div className="w-[360px] h-[550px] bg-white fixed right-5 bottom-32  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden ">
+    <div className="w-[360px] h-[550px] bg-white fixed right-5 bottom-52  rounded-2xl text-black shadow-xl z-[9999999999] overflow-hidden ">
       <div className="flex flex-col justify-between h-full ">
         <div className="bg-[#40C7F4] w-full h-24 text-white flex justify-center items-center ">
           <div className="flex items-center">
@@ -93,6 +95,23 @@ const MessageModal = () => {
             <span className="ml-2 text-sm ">
               <ChatOnline />
             </span>
+
+            <div>
+            <FacebookProvider className='messengerApp' appId="321223840644901" chatSupport>
+            <CustomChat pageId="257323552817721" minimized={true} />
+          </FacebookProvider>
+            
+            </div>
+            <div>
+            <Link
+            to="https://wa.me/8801762380594?text=Hello how can I help you ?"
+            target="_blank"
+          >
+            <button className="whatsApp">
+              <img src={whatsapp} alt="" />
+            </button>
+          </Link>
+            </div>
           </div>
         </div>
         <div

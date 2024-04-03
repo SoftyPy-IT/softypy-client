@@ -25,12 +25,13 @@ const [createSingleServices,{isSuccess}] = useCreateSingleServicesMutation()
       .then((res) => res.json())
       .then((imageData) => {
         const imageUrl = imageData.data.url;
-        const {title, subtitle, category, name, description} = data
+        const {title, subtitle, category, name, description, priority} = data
         const newSingleServices = {
           name,
           title,
           subtitle,
           category,
+          priority,
           image: imageUrl,
           description
         
@@ -113,6 +114,17 @@ const [createSingleServices,{isSuccess}] = useCreateSingleServicesMutation()
                  autoComplete="off"
               />
             </div>
+            <div className="singleForm">
+            <label>Priority </label>
+            <input
+              {...register("priority", { required: true })}
+              name="priority"
+              placeholder="Priority"
+              type="text"
+              className="inputField"
+               autoComplete="off"
+            />
+          </div>
             <div className="singleForm">
               <label>Image </label>
               <input

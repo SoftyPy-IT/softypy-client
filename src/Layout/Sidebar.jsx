@@ -73,6 +73,25 @@ const Sidebar = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion>
+        <AccordionSummary
+          expandIcon={<ArrowDownwardIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          <Typography>Employee Application</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            <Link to="/dashboard/application">
+              <div className="flex items-center text-sm ">
+                <FaThList className="mr-1 " />
+                <span>Application List </span>
+              </div>
+            </Link>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+        <Accordion>
           <AccordionSummary
             expandIcon={<ArrowDownwardIcon />}
             aria-controls="panel1-content"

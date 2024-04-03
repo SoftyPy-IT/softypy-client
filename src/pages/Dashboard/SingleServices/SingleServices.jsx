@@ -57,6 +57,7 @@ const SingleServices = () => {
               <th>Category </th>
               <th>Title</th>
               <th>Sub title </th>
+              <th>Priority</th>
               <th colSpan={2}>Action</th>
             </tr>
           </thead>
@@ -66,7 +67,8 @@ const SingleServices = () => {
                 <td>{i + 1}</td>
                 <td>{service.category} </td>
                 <td>{service.title}</td>
-                <td>{service.subTitle} </td>
+                <td>{service.subtitle} </td>
+                <td>{service.priority} </td>
                 <td>
                   <div className="editIconWrap">
                     <Link

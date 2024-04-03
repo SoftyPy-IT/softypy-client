@@ -13,7 +13,7 @@ const {data:singleServices} = useGetSingleServicesQuery(id)
 
   
   const onSubmit = (data) => {
-    const {name, category, title, subtitle,description } = data;
+    const {name, category, title, subtitle,description, priority} = data;
     const updatedServices = {
      id,
      data: {
@@ -22,6 +22,7 @@ const {data:singleServices} = useGetSingleServicesQuery(id)
       title,
       subtitle,
       description,
+      priority
      }
     };
   
@@ -92,6 +93,17 @@ const {data:singleServices} = useGetSingleServicesQuery(id)
              defaultValue={singleServices?.subtitle}
           />
         </div>
+        <div className="singleForm">
+        <label>Priority </label>
+        <input
+          {...register("priority", { required: true })}
+          name="priority"
+          placeholder="Priority"
+          type="text"
+          className="inputField"
+           autoComplete="off"
+        />
+      </div>
         <div className="singleForm">
             <label> Description </label> 
             <textarea
