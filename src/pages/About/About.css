@@ -7,7 +7,7 @@
 .aboutContent {
   position: absolute;
   top: 50%;
-  left: 27%;
+  left: 32%;
   transform: translate(-50%, -50%);
   z-index: 5;
   color: #fff;

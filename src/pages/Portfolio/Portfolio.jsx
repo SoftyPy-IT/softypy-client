@@ -38,7 +38,7 @@ const Portfolio = () => {
                 <FaAngleRight />
                 <p>Portfolio </p>
               </div>
-              <h2 className="ml-0 text-3xl font-bold text-left uppercase md:text-5xl xl:-ml-36 md:text-center ">
+              <h2 className="ml-0 text-3xl font-bold text-left uppercase md:text-5xl  md:text-center ">
                 Our Portfolio
               </h2>
             </div>
