@@ -7,6 +7,7 @@ import BoostSection from "../../components/BostSection/BoostSection";
 import NavBar from "../Shared/NavBar/NavBar";
 import Container from "../../ui/Container";
 import CommonButton from "../Shared/CommonButton/CommonButton";
+import { Link } from "react-router-dom";
 const Services = () => {
   // const ref = useRef(null);
   // useEffect(() => {
@@ -57,7 +58,7 @@ const Services = () => {
             We take pride in offering a comprehensive suite of cutting-edge services tailored to elevate your digital presence and streamline your business operations. Our commitment is to deliver solutions that not only meet but exceed your expectations.
 
             </p>
-            <CommonButton text='Get More ' />
+           <Link to='/contact'> <CommonButton text='Get More ' /></Link>
           </div>
           <div className="srvicesRightSide">
             <img src={responsive} alt="device" />

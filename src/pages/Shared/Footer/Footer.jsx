@@ -41,11 +41,15 @@ const Footer = () => {
                 Services{" "}
               </h3>
             </Link>
-            <Link to="/app-development">
+            <Link to="/packages">
               {" "}
-              <p>APP Development</p>
+              <p> Web Development</p>
             </Link>
-            <p> Web Development</p>
+            <Link to="/app-development">
+            {" "}
+            <p>APP Development</p>
+          </Link>
+       
             <Link to="/erp">
               {" "}
               <p>ERP Solutions</p>

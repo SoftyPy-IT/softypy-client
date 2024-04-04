@@ -49,7 +49,7 @@ export default function FrequentlyAskQuestions() {
              height="16"
              xmlns="http://www.w3.org/2000/svg"
            >
-             {" "}
+
              <rect
                y="7"
                width="16"

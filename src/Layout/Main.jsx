@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Footer from "../pages/Shared/Footer/Footer";
 import { HiChatBubbleLeft } from "react-icons/hi2";
 import { useEffect, useState } from "react";

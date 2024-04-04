@@ -56,24 +56,24 @@ export default Arrow = () => {
             ></lottie-player>
           </div>
           <div className="topServiceRight">
-          <h2 className="text-4xl font-bold">Web Design & Development </h2>
-          <p className="my-3 leading-7">
-            Unlock the full potential of your online presence with our bespoke
-            website design and development services. Our team of skilled
-            designers and developers work collaboratively to create visually
-            stunning, user-friendly websites that not only captivate your
-            audience but also provide seamless navigation. From responsive
-            design to e-commerce solutions, we ensure that your website is a
-            true reflection of your brand and engages visitors effectively.
-          </p>
-
-          <div className="flex items-center cursor-pointer">
-            <span>Learn More </span>
-            <FaArrowRight className="ml-2 text-[#2D57A2] " />
+            <h2 className="text-4xl font-bold">Web Design & Development </h2>
+            <p className="my-3 leading-7">
+              Unlock the full potential of your online presence with our bespoke
+              website design and development services. Our team of skilled
+              designers and developers work collaboratively to create visually
+              stunning, user-friendly websites that not only captivate your
+              audience but also provide seamless navigation. From responsive
+              design to e-commerce solutions, we ensure that your website is a
+              true reflection of your brand and engages visitors effectively.
+            </p>
+            <Link to='/packages'>
+              <div className="flex items-center cursor-pointer">
+                <span>Learn More </span>
+                <FaArrowRight className="ml-2 text-[#2D57A2] " />
+              </div>
+            </Link>
           </div>
         </div>
-        </div>
-       
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8">
           <div className="topServiceRight order-3 lg:order-1">
@@ -89,7 +89,7 @@ export default Arrow = () => {
               competitive digital landscape.
             </p>
 
-            <Link to="/services">
+            <Link to="/app-development">
               <div className="flex items-center cursor-pointer">
                 <span>Learn More </span>
                 <FaArrowRight className="ml-2 text-[#2D57A2] " />
@@ -133,7 +133,7 @@ export default Arrow = () => {
               productivity and seamless workflow management with our customized
               ERP systems.
             </p>
-            <Link to="/services">
+            <Link to="/erp">
               <div className="flex items-center cursor-pointer">
                 <span>Learn More </span>
                 <FaArrowRight className="ml-2 text-[#2D57A2] " />
@@ -143,41 +143,39 @@ export default Arrow = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8">
-        <div className="topServiceRight mt-10 order-3 lg:order-1">
-        <h2 className="text-4xl font-bold">Digital Marketing​</h2>
-        <p className="my-3 leading-7">
-          Amplify your online presence and reach your target audience with our
-          comprehensive digital marketing services. Our team of experts
-          specializes in creating data-driven strategies across various
-          channels, including social media, search engine optimization (SEO),
-          content marketing, and more. Whether you're looking to boost brand
-          awareness, drive traffic, or increase conversions, our digital
-          marketing solutions are designed to deliver tangible and measurable
-          results.
-        </p>
+          <div className="topServiceRight mt-10 order-3 lg:order-1">
+            <h2 className="text-4xl font-bold">Digital Marketing​</h2>
+            <p className="my-3 leading-7">
+              Amplify your online presence and reach your target audience with
+              our comprehensive digital marketing services. Our team of experts
+              specializes in creating data-driven strategies across various
+              channels, including social media, search engine optimization
+              (SEO), content marketing, and more. Whether you're looking to
+              boost brand awareness, drive traffic, or increase conversions, our
+              digital marketing solutions are designed to deliver tangible and
+              measurable results.
+            </p>
 
-        <Link to="/services">
-          <div className="flex items-center cursor-pointer">
-            <span>Learn More </span>
-            <FaArrowRight className="ml-2 text-[#2D57A2] " />
+            <Link to="/packages">
+              <div className="flex items-center cursor-pointer">
+                <span>Learn More </span>
+                <FaArrowRight className="ml-2 text-[#2D57A2] " />
+              </div>
+            </Link>
           </div>
-        </Link>
-      </div>
 
-      <div className="topServicesLeft order-2">
-        <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="/content.json"
-          className="animation"
-        ></lottie-player>
-      </div>
+          <div className="topServicesLeft order-2">
+            <lottie-player
+              id="firstLottie"
+              ref={ref}
+              autoplay
+              loop
+              mode="normal"
+              src="/content.json"
+              className="animation"
+            ></lottie-player>
+          </div>
         </div>
-
-       
       </main>
     </Container>
   );
