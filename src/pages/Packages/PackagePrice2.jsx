@@ -35,7 +35,7 @@ const PackagePrice2 = () => {
                       </h2>
                     </div>
                     <del className="text-red-600">
-                      2,00,000 Taka / $1,819 USD
+                      1,50,000 Taka / $1,819 USD
                     </del>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ const PackagePrice2 = () => {
                       </h2>
                     </div>
                     <del className="text-red-600">
-                      2,00,000 Taka / $1,819 USD
+                      3,00,000 Taka / $3,519 USD
                     </del>
                   </div>
                 </div>
