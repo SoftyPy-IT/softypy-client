@@ -30,6 +30,7 @@ const MessageList = () => {
   const [deleteReview] = useDeleteReviewMutation();
 
   const [senderData, setSenderData] = useState([]);
+  console.log(senderData)
 
   useEffect(() => {
     fetch("http://localhost:5000/message/all")

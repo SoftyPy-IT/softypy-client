@@ -159,7 +159,7 @@ select:focus {
   background: #2d57a2;
   color: white;
   border-radius: 100%;
-  right: 16px;
+  right: 27px;
   position: fixed;
   bottom: 87px;
   display: flex;
@@ -175,10 +175,10 @@ select:focus {
   place-items: center;
   transition: all 0.5s ease;
   animation-delay: 0.5s;
-  right: 260px;
-  bottom: 599px;
+  right: 15px;
+  bottom: 20px;
   border-radius: 100%;
-  width: 29px;
+  width: 60px;
 
 
 }

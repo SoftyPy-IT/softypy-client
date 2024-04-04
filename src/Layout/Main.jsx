@@ -1,14 +1,15 @@
-import { Outlet, ScrollRestoration } from "react-router-dom";
+/* eslint-disable no-unused-vars */
+import { Link, Outlet, ScrollRestoration } from "react-router-dom";
 import Footer from "../pages/Shared/Footer/Footer";
-import { HiChatBubbleLeft } from "react-icons/hi2";
 import { useEffect, useState } from "react";
 import { HiChevronDoubleUp } from "react-icons/hi";
 import MessageModal from "./MessageModal";
-import { IoIosClose } from "react-icons/io";
+
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
+import whatsapp from '../../public/assets/whatsapp.png'
 
-import { CustomChat, FacebookProvider } from "react-facebook";
+
 const Main = () => {
   const { darkMode } = useSelector((store) => store.theme);
   useEffect(() => {
@@ -31,8 +32,8 @@ const Main = () => {
   // <ScrollToTop smooth />
 
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  // const handleOpen = () => setOpen(true);
+  // const handleClose = () => setOpen(false);
 
   useEffect(() => {
     // Generate a random temporary ID
@@ -58,6 +59,8 @@ const Main = () => {
 
         <Footer />
 
+        {/** 
+
         <div className="message rounded-full p-2 fixed bg-[#2D57A2] text-white bottom-5 right-1 cursor-pointer transition-all duration-75 shadowStyle">
           {open ? (
             <IoIosClose
@@ -73,7 +76,7 @@ const Main = () => {
             />
           )}
         </div>
-
+*/}
         <button onClick={scrollToTop} id="button">
           <HiChevronDoubleUp size={25} />
         </button>
@@ -89,6 +92,7 @@ const Main = () => {
     
 */}
 
+{/** 
         <FacebookProvider
           className="messengerApp"
           appId="387557750848217"
@@ -96,6 +100,17 @@ const Main = () => {
         >
           <CustomChat pageId="262323534563147" minimized={true} />
         </FacebookProvider>
+        */}
+
+        <Link
+        to="https://wa.me/8801762380594?text=Hi! how can we help you ?"
+        target="_blank"
+      >
+        <button className="whatsApp">
+        
+          <img src={whatsapp} alt="whatsapp" />
+        </button>
+      </Link>
 
         <ScrollRestoration/>
 
