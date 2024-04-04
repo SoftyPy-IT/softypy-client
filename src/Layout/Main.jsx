@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import Footer from "../pages/Shared/Footer/Footer";
 import { HiChatBubbleLeft } from "react-icons/hi2";
 import { useEffect, useState } from "react";
@@ -7,7 +7,7 @@ import MessageModal from "./MessageModal";
 import { IoIosClose } from "react-icons/io";
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
-import whatsapp from "../../public/assets/whatsapp.png";
+
 import { CustomChat, FacebookProvider } from "react-facebook";
 const Main = () => {
   const { darkMode } = useSelector((store) => store.theme);
@@ -51,52 +51,58 @@ const Main = () => {
   }, []);
 
   return (
-    <div className={` ${darkMode ? "bg-black text-white" : ""}`}>
-      <Outlet />
+ 
+      <div className={` ${darkMode ? "bg-black text-white" : ""}`}>
+      
+        <Outlet />
 
-      <Footer />
+        <Footer />
 
-      <div className="message rounded-full p-2 fixed bg-[#2D57A2] text-white bottom-5 right-1 cursor-pointer transition-all duration-75 shadowStyle">
-        {open ? (
-          <IoIosClose
-            onClick={handleClose}
-            size={45}
-            className="transition ease-in-out delay-75 "
-          />
-        ) : (
-          <HiChatBubbleLeft
-            className="transition ease-in-out delay-75 "
-            onClick={handleOpen}
-            size={45}
-          />
-        )}
+        <div className="message rounded-full p-2 fixed bg-[#2D57A2] text-white bottom-5 right-1 cursor-pointer transition-all duration-75 shadowStyle">
+          {open ? (
+            <IoIosClose
+              onClick={handleClose}
+              size={45}
+              className="transition ease-in-out delay-75 "
+            />
+          ) : (
+            <HiChatBubbleLeft
+              className="transition ease-in-out delay-75 "
+              onClick={handleOpen}
+              size={45}
+            />
+          )}
+        </div>
+
+        <button onClick={scrollToTop} id="button">
+          <HiChevronDoubleUp size={25} />
+        </button>
+
+        {/**
+   my appid: 321223840644901
+   my pageid: 257323552817721
+
+   softypy: 262323534563147
+
+   
+
+    
+*/}
+
+        <FacebookProvider
+          className="messengerApp"
+          appId="387557750848217"
+          chatSupport
+        >
+          <CustomChat pageId="262323534563147" minimized={true} />
+        </FacebookProvider>
+
+        <ScrollRestoration/>
+
+        {open && <MessageModal />}
       </div>
 
-      <button onClick={scrollToTop} id="button">
-        <HiChevronDoubleUp size={25} />
-      </button>
 
-      {/**
-      my appid: 321223840644901
-      my pageid: 257323552817721
-
-      softypy: 262323534563147
-
-      
-
-       
- */}
-
-      <FacebookProvider
-        className="messengerApp"
-        appId="387557750848217"
-        chatSupport
-      >
-        <CustomChat pageId="262323534563147" minimized={true} />
-      </FacebookProvider>
-
-      {open && <MessageModal />}
-    </div>
   );
 };
 
