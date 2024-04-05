@@ -207,10 +207,10 @@ const About = () => {
                           </>
                         ) : i == 1 ? (
                           <>
-                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                            <Link to="https://www.linkedin.com/in/omarfaruk-238764240/">
                               <FaLinkedinIn />
                             </Link>
-                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
+                            <Link to="https://www.facebook.com/profile.php?id=100081178906073">
                               <FaXTwitter />
                             </Link>
                             <Link to="https://www.facebook.com/profile.php?id=100081178906073">
@@ -239,33 +239,21 @@ const About = () => {
                           </>
                         ) : i == 4 ? (
                           <>
-                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
-                              <FaLinkedinIn />
-                            </Link>
-                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
-                              <FaXTwitter />
-                            </Link>
-                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
-                              <FaFacebookF />
-                            </Link>
+                          <FaLinkedinIn />
+                          <FaXTwitter />
+                          <FaFacebookF />
                           </>
                         ) : i == 5 ? (
                           <>
-                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
-                              <FaLinkedinIn />
-                            </Link>
-                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
-                              <FaXTwitter />
-                            </Link>
-                            <Link to="https://www.linkedin.com/in/ibrahim-sikder33/">
-                              <FaFacebookF />
-                            </Link>
+                          <FaLinkedinIn />
+                          <FaXTwitter />
+                          <FaFacebookF />
                           </>
                         ) : i == 6 ? (
                           <>
-                            <FaLinkedinIn />
-                            <FaXTwitter />
-                            <FaFacebookF />
+                          <FaLinkedinIn />
+                          <FaXTwitter />
+                          <FaFacebookF />
                           </>
                         ) : null}
                       </div>
