@@ -1,13 +1,14 @@
-import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
-import { FaArrowRight } from "react-icons/fa";
-import "./Services.css";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
+import { API_URL } from "../../utils/util";
+import "./Services.css";
 
 const Services = () => {
     const [services, setServices] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/services')
+        fetch(`${API_URL}/services`)
         .then(res=>res.json())
         .then(data=>setServices(data))
     })

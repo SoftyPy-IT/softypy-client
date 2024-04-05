@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { API_URL } from "../../../../utils/util";
 const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN
 
 const AddAbout = () => {
@@ -35,7 +36,7 @@ const AddAbout = () => {
           teamDescriptions
 
         }
-        fetch('http://localhost:5000/about', {
+        fetch(`${API_URL}/about`, {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

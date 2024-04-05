@@ -1,7 +1,8 @@
-import { useLoaderData } from "react-router-dom";
-import "./ServiceData.css";
-import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
+import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
+import { API_URL } from "../../../utils/util";
+import "./ServiceData.css";
 
 const UpdateServices = () => {
   const services = useLoaderData();
@@ -29,7 +30,7 @@ const UpdateServices = () => {
       image,
       description,
     };
-    fetch(`http://localhost:5000/services/${_id}`, {
+    fetch(`${API_URL}/services/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

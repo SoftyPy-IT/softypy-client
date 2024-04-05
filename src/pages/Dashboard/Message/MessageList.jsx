@@ -12,6 +12,7 @@ import {
   useDeleteReviewMutation,
   useGetAllReviewsQuery,
 } from "../../../redux/features/review/reviewApi";
+import { API_URL } from "../../../utils/util";
 
 const MessageList = () => {
 
@@ -33,7 +34,7 @@ const MessageList = () => {
   console.log(senderData)
 
   useEffect(() => {
-    fetch("http://localhost:5000/message/all")
+    fetch(`${API_URL}/message/all`)
       .then((res) => res.json())
       .then((data) => setSenderData(data));
   }, []);
@@ -73,7 +74,7 @@ const MessageList = () => {
 
   const handleDelete = (id) => {
     try {
-      fetch(`http://localhost:5000/message/${id}`, {
+      fetch(`${API_URL}/message/${id}`, {
         method: 'DELETE'
       })
       .then((res) => {
