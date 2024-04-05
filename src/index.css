@@ -223,12 +223,14 @@ select:focus {
     width: 100% !important;
     flex-wrap: wrap !important;
   }
-
   .whatsApp {
-    right: 228px;
-    bottom: 602px;
-    width: 29px;
+    width: 50px;
 }
+.scrollToTopBtn {
+  right: 19px;
+}
+
+
 
 
 }
@@ -250,10 +252,7 @@ select:focus {
   }
 
 
-  .whatsApp{
-    right: 207px;
-    bottom: 408px;
-  }
+
 
  
 }

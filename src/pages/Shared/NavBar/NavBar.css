@@ -289,6 +289,14 @@
     transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
   }
 }
+@media only screen and (max-width: 768px) {
+
+  .bar span {
+    background: #fff;
+  }
+
+
+}
 
 @media only screen and (max-width: 500px) {
   .navbar {
@@ -306,7 +314,14 @@
   .security {
    display: none;
   }
+
+  .whatsApp {
+    right: 12px;
+}
+
+
 }
 @media only screen and (max-width: 400px) {
  
 }
+
