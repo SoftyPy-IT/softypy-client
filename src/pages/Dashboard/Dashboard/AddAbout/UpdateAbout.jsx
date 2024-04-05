@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import { API_URL } from "../../../../utils/util";
 
 
 const UpdateAbout = () => {
@@ -27,7 +28,7 @@ const UpdateAbout = () => {
       teamDescriptions
 
     }
-    fetch(`http://localhost:5000/about/${_id}`, {
+    fetch(`${API_URL}/about/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

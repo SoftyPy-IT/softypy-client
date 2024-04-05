@@ -1,13 +1,14 @@
 
-import { FaTrashAlt, FaEdit, FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import TextField from "@mui/material/TextField";
-import { Link } from "react-router-dom";
+import { FaEdit, FaLongArrowAltLeft, FaLongArrowAltRight, FaTrashAlt } from "react-icons/fa";
 import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { API_URL } from "../../../utils/util";
 
 const ServiceData = () => {
   const {data: services = [], refetch} = useQuery(['services'], async ()=>{
-    const res = await fetch('http://localhost:5000/services');
+    const res = await fetch(`${API_URL}/services`);
     return res.json()
   })
 
@@ -24,7 +25,7 @@ const ServiceData = () => {
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.isConfirmed) {
-            fetch(`http://localhost:5000/services/${id}`,{
+            fetch(`${API_URL}/services/${id}`,{
                 method: "DELETE"
             })
             .then(res=>res.json())

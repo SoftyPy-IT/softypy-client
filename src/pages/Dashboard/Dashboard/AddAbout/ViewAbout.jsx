@@ -1,13 +1,14 @@
-import { FaTrashAlt, FaEdit, FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import './AddAbout.css'
 import TextField from "@mui/material/TextField";
-import { Link } from "react-router-dom";
+import { FaArrowLeft, FaArrowRight, FaEdit, FaTrashAlt } from "react-icons/fa";
 import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { API_URL } from "../../../../utils/util";
+import './AddAbout.css';
 
 const ViewAbout = () => {
   const { data: aboutItem = [], refetch } = useQuery(['aboutItem'], async () => {
-    const res = await fetch('http://localhost:5000/about');
+    const res = await fetch(`${API_URL}/about`);
     return res.json()
   })
   const handleDelete = id => {
@@ -21,7 +22,7 @@ const ViewAbout = () => {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/about/${id}`, {
+        fetch(`${API_URL}/about/${id}`, {
           method: "DELETE"
         })
           .then(res => res.json())

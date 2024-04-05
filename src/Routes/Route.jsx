@@ -1,50 +1,51 @@
 import { createBrowserRouter } from "react-router-dom";
+import DashboardLayout from "../Layout/DashboardLayout";
 import Main from "../Layout/Main";
-import Home from "../pages/Home/Home";
-import Services from "../pages/Services/Services";
-import Portfolio from "../pages/Portfolio/Portfolio";
 import About from "../pages/About/About";
+import Admin from "../pages/Admin/Admin";
+import AppDevelopment from "../pages/AppDevelopment/AppDevelopment";
+import Careers from "../pages/Careers/Careers";
+import CareersApply from "../pages/Careers/CareersApply";
+import CareersDetails from "../pages/Careers/CareersDetails";
 import Client from "../pages/Client/Client";
 import Contact from "../pages/Contact/Contact";
-import SingleService from "../pages/SingleService/SingleService";
-import DashboardLayout from "../Layout/DashboardLayout";
-import Dashboard from "../pages/Dashboard/Dashboard/Dashboard";
-import ServiceData from "../pages/Dashboard/Services/ServiceData";
-import AddServices from "../pages/Dashboard/Services/AddServices";
-import UpdateServices from "../pages/Dashboard/Services/UpdateServices";
+import Application from "../pages/Dashboard/Application/Application";
+import CustomerOrderList from "../pages/Dashboard/CustomerOrder/CustomerOrderList";
 import AddAbout from "../pages/Dashboard/Dashboard/AddAbout/AddAbout";
-import ViewAbout from "../pages/Dashboard/Dashboard/AddAbout/ViewAbout";
 import UpdateAbout from "../pages/Dashboard/Dashboard/AddAbout/UpdateAbout";
-import ViewContact from "../pages/Dashboard/Dashboard/ContactUs/ViewContact";
+import ViewAbout from "../pages/Dashboard/Dashboard/AddAbout/ViewAbout";
 import AddContact from "../pages/Dashboard/Dashboard/ContactUs/AddContact";
 import UpdateContact from "../pages/Dashboard/Dashboard/ContactUs/UpdateContact";
-import ViewPortFolio from "../pages/Dashboard/Dashboard/PortFolio/ViewPortFolio";
+import ViewContact from "../pages/Dashboard/Dashboard/ContactUs/ViewContact";
+import Dashboard from "../pages/Dashboard/Dashboard/Dashboard";
 import AddPortFolio from "../pages/Dashboard/Dashboard/PortFolio/AddPortFolio";
 import UpdatePortFolio from "../pages/Dashboard/Dashboard/PortFolio/UpdatePortFolio";
-import Signup from "../pages/Signup/Signup";
-import Login from "../pages/Login/Login";
-import SingleServices from "../pages/Dashboard/SingleServices/SingleServices";
-import AddSingleServices from "../pages/Dashboard/SingleServices/AddSingleServices";
-import UpdateSingleServices from "../pages/Dashboard/SingleServices/UpdateSingleServices";
-import CustomerOrderList from "../pages/Dashboard/CustomerOrder/CustomerOrderList";
-import Faq from "../pages/FAQ/Faq";
-import Packages from "../pages/Packages/Packages";
-import AddReviews from "../pages/Dashboard/Reviews/AddReviews";
-import ReviewList from "../pages/Dashboard/Reviews/ReviewList";
+import ViewPortFolio from "../pages/Dashboard/Dashboard/PortFolio/ViewPortFolio";
+import MessageList from "../pages/Dashboard/Message/MessageList";
 import AddPortfolio from "../pages/Dashboard/Portfolio/AddPortfolio";
 import PortfolioList from "../pages/Dashboard/Portfolio/PortfolioList";
-import MessageList from "../pages/Dashboard/Message/MessageList";
-import Website from "../pages/Website";
-import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
+import AddReviews from "../pages/Dashboard/Reviews/AddReviews";
+import ReviewList from "../pages/Dashboard/Reviews/ReviewList";
+import AddServices from "../pages/Dashboard/Services/AddServices";
+import ServiceData from "../pages/Dashboard/Services/ServiceData";
+import UpdateServices from "../pages/Dashboard/Services/UpdateServices";
+import AddSingleServices from "../pages/Dashboard/SingleServices/AddSingleServices";
+import SingleServices from "../pages/Dashboard/SingleServices/SingleServices";
+import UpdateSingleServices from "../pages/Dashboard/SingleServices/UpdateSingleServices";
 import Users from "../pages/Dashboard/Users/User";
-import AppDevelopment from "../pages/AppDevelopment/AppDevelopment";
 import ERP from "../pages/ERP/ERP";
 import ERPDetails from "../pages/ERPDetails/ERPDetails";
-import Careers from "../pages/Careers/Careers";
-import CareersDetails from "../pages/Careers/CareersDetails";
-import CareersApply from "../pages/Careers/CareersApply";
-import Application from "../pages/Dashboard/Application/Application";
-import Admin from "../pages/Admin/Admin";
+import Faq from "../pages/FAQ/Faq";
+import Home from "../pages/Home/Home";
+import Login from "../pages/Login/Login";
+import Packages from "../pages/Packages/Packages";
+import Portfolio from "../pages/Portfolio/Portfolio";
+import Services from "../pages/Services/Services";
+import Signup from "../pages/Signup/Signup";
+import SingleService from "../pages/SingleService/SingleService";
+import Website from "../pages/Website";
+import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
+import { API_URL } from "../utils/util";
 
 export const router = createBrowserRouter([
   {
@@ -67,7 +68,7 @@ export const router = createBrowserRouter([
         path: "/singleServices/:id",
         element: <SingleService />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/singleServices/${params.id}`),
+          fetch(`${API_URL}/singleServices/${params.id}`),
       },
       {
         path: "/services",
@@ -155,7 +156,7 @@ export const router = createBrowserRouter([
         path: "updatedservice/:id",
         element: <UpdateServices />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(`${API_URL}/services/${params.id}`),
       },
       {
         path: "about",
@@ -169,7 +170,7 @@ export const router = createBrowserRouter([
         path: "updateAbout/:id",
         element: <UpdateAbout />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/about/${params.id}`),
+          fetch(`${API_URL}/about/${params.id}`),
       },
       {
         path: "contact",
@@ -207,7 +208,7 @@ export const router = createBrowserRouter([
         path: "updatedSingleServices/:id",
         element: <UpdateSingleServices />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/singleServices/${params.id}`),
+          fetch(`${API_URL}/singleServices/${params.id}`),
       },
       {
         path: "orders",

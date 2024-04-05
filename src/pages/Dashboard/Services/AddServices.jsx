@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
-import "./ServiceData.css";
 import Swal from "sweetalert2";
+import { API_URL } from "../../../utils/util";
+import "./ServiceData.css";
 
 
 const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN
@@ -33,7 +34,7 @@ const AddServices = () => {
         
         }
         console.log(newServices)
-        fetch('http://localhost:5000/services', {
+        fetch(`${API_URL}/services`, {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

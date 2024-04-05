@@ -10,6 +10,7 @@ import { FaLink, FaUserTie } from "react-icons/fa";
 import { HiOutlineX } from "react-icons/hi";
 import { io } from "socket.io-client";
 import DashboardMessage from "../components/Message/DashboardMessage";
+import { API_URL } from "../utils/util";
 
 const socket = io("ws://localhost:5000");
 
@@ -53,7 +54,7 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
     };
 
     socket.emit("send-message", values);
-    const response = await axios.post("http://localhost:5000/message", values);
+    const response = await axios.post(`${API_URL}/message`, values);
     if (response.status === 200) {
       setReload(!reload);
       reset();
@@ -63,7 +64,7 @@ const DashboardMessageModal = ({ senderId, onClose }) => {
   useEffect(() => {
     const getMessage = async () => {
       const response = await axios.get(
-        `http://localhost:5000/message?receiverId=${senderId}&senderId=${loggedinUser}`
+        `${API_URL}/message?receiverId=${senderId}&senderId=${loggedinUser}`
       );
       if (response.status === 200) {
         setMessages(response.data);

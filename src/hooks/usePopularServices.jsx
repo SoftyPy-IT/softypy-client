@@ -1,10 +1,11 @@
 import { useQuery } from "react-query";
+import { API_URL } from "../utils/util";
 
 const usePopularServices = () => {
     const {isLoading:loading , refetch, data: singleservices = []} = useQuery({
         queryKey: ['singleservices'],
         queryFn: async () =>{
-            const res = await fetch('http://localhost:5000/singleservices')
+            const res = await fetch(`${API_URL}/singleservices`)
             return res.json() 
         }
     })

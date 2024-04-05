@@ -5,13 +5,13 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaLink, FaUserTie, FaWhatsapp } from "react-icons/fa";
+import { FaLink, FaUserTie } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { io } from "socket.io-client";
+import whatsapp from "../../public/assets/whatsapp.png";
 import ChatOnline from "../components/ChatOnline/ChatOnline";
 import Message from "../components/Message/Message";
-import { CustomChat, FacebookProvider } from "react-facebook";
-import { Link } from "react-router-dom";
-import whatsapp from "../../public/assets/whatsapp.png";
+import { API_URL } from "../utils/util";
 
 const socket = io("https://softypy-server.vercel.app");
 
@@ -51,7 +51,7 @@ const MessageModal = () => {
     };
 
     socket.emit("send-message", values);
-    const response = await axios.post("http://localhost:5000/message", values);
+    const response = await axios.post(`${API_URL}/message`, values);
     if (response.status === 200) {
       setReload(!reload);
       reset();
@@ -61,7 +61,7 @@ const MessageModal = () => {
   useEffect(() => {
     const getMessage = async () => {
       const response = await axios.get(
-        `http://localhost:5000/message?receiverId=${receiverId}&senderId=${senderId}`
+        `${API_URL}/message?receiverId=${receiverId}&senderId=${senderId}`
       );
 
       if (response.status === 200) {
