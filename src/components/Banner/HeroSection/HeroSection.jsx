@@ -7,7 +7,7 @@ import "./HeroSection.css";
 import react from '../../../../public/assets/react.png'
 import node from '../../../../public/assets/node.png'
 import js from '../../../../public/assets/javaScript.png'
-import flutter from '../../../../public/assets/next.png'
+import flutter from '../../../../public/assets/mongo.png'
 const HeroSection = () => {
   const [showText, setShowText] = useState(1);
 

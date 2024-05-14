@@ -11,6 +11,7 @@ import logo from "../../../../public/assets/softypy-3.png";
 // import { toggleTheme } from "../../../redux/features/themeSlice";
 import Container from "../../../ui/Container";
 import "./NavBar.css";
+import { Button } from "@mui/material";
 
 const NavBar = () => {
   const location = useLocation();
@@ -178,26 +179,40 @@ const NavBar = () => {
         <div className="security">
           {email ? (
             <>
-              <button className="logoutBtn " onClick={handleLogout}>
+              <Button className="logoutBtn " onClick={handleLogout}>
                 Log Out{" "}
-              </button>
+              </Button>
             </>
           ) : (
-            <button className="logoutBtn font-bold">
+            <Button
+              sx={{
+                background: "#40C7F4",
+                color: "#fff",
+                padding: "5px 10px",
+                fontSize: "16px",
+                fontWeight: "bold",
+                width: '80px',
+                "&:hover": {
+                  background: "#2D57A2", 
+                },
+              }}
+            >
               <NavLink to="/login">Login</NavLink>
-            </button>
+            </Button>
           )}
         </div>
 
-        <div onClick={toggleMobileMenu} className={pathname === '/' ? 'bar bars' : 'bar'}>
-              <div>
-                <span className={mobileMenu ? ` ` : `bar1`}></span>
-                <span className={mobileMenu ? ` ` : `bar2`}></span>
-                <span className={mobileMenu ? ` ` : `bar3`}></span>
-              </div>
-            </div>
+        <div
+          onClick={toggleMobileMenu}
+          className={pathname === "/" ? "bar bars" : "bar"}
+        >
+          <div>
+            <span className={mobileMenu ? ` ` : `bar1`}></span>
+            <span className={mobileMenu ? ` ` : `bar2`}></span>
+            <span className={mobileMenu ? ` ` : `bar3`}></span>
+          </div>
+        </div>
       </div>
-      <div></div>
       <ul className={mobileMenu ? `mobileMenu` : `mobileMenuActive`}>
         <Link to="/">
           {" "}
