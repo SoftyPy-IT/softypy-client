@@ -70,9 +70,10 @@ const About = () => {
     },
   ];
 
+
   return (
     <section>
-      <div>
+      <div className="">
         <NavBar />
       </div>
       <div className="aboutContainers">

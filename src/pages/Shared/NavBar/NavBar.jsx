@@ -20,7 +20,6 @@ const NavBar = () => {
   const { pathname } = location;
 
   // Now you have the current pathname
-  console.log(pathname);
 
 
   const dispatch = useDispatch();
@@ -34,7 +33,7 @@ const NavBar = () => {
   };
   window.addEventListener("scroll", function () {
     var header = document.querySelector(".navbar");
-    header.classList.toggle("sticky", window?.scrollY > 300);
+    header.classList.toggle("sticky", window?.scrollY > 0);
   });
 
   const { email } = useSelector((state) => state.auth);

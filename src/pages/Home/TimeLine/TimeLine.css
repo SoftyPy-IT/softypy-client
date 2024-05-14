@@ -322,11 +322,14 @@
     border-radius: 6px;
     font-size: 15px;
   }
-}
-@media only screen and (max-width: 350px){
-  .circle {
-    width: 100px;
-    height: 100px;
-}
-}
 
+}
+@media only screen and (max-width: 350px) {
+
+      .circle {
+          width: 80px;
+          height: 80px;
+          margin-right: 5px;
+          margin-left: 5px;
+      }
+  }

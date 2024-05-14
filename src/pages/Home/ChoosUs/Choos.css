@@ -179,7 +179,8 @@
 
 @media only screen and (max-width: 768px) {
   .technologyWraps {
-    padding: 0 10px;
+    padding: 0px;
+    width:100%;
   }
   .technologies {
     display: flex;
@@ -187,9 +188,7 @@
     align-items: center;
     flex-direction: column-reverse;
   }
-  .technologyWrap {
-    width: 100%;
-  }
+
   .tabs {
     width: 100% !important;
     margin: 0 auto;

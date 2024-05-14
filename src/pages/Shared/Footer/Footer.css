@@ -103,11 +103,7 @@
   margin-bottom: 10px;
   transition: all 0.5s ease-in-out;
 }
-.copyRight {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .subscribeWraps {
   width: 1200px;
@@ -135,12 +131,13 @@
     display: flex;
     justify-content: center;
   }
-  .footerWrap {
-    margin-top: 60px;
-  }
+
   .contactUs {
-    flex-wrap: wrap;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
   .rightSideImgWRap img {
     margin-left: 106px;
   }
@@ -167,9 +164,10 @@
   top: 0px;
 }
 
-
-
 }
+
+
+
 
 @media only screen and (max-width: 500px) {
   .contact {
@@ -184,10 +182,7 @@
   .copyRight p {
     font-size: 14px;
   }
-  .copyRight,
-  .contactUs {
-    display: block;
-  }
+
   .requestDemo {
     width: 100%;
     margin-top: 10px;
@@ -205,7 +200,5 @@
   .rightSideImgWRap {
     width: 92%;
   }
-  .footerWrap {
-    margin-top: -25px;
-  }
+
 }
