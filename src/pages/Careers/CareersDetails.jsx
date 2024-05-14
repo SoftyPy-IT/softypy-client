@@ -10,7 +10,7 @@ const CareersDetails = () => {
       </div>
       <div className="careerContainerWraps">
         <div className="careerText">
-          <h3 className="text-xl md:text-4xl xl:text-7xl font-bold">
+          <h3 className=" md:text-4xl xl:text-7xl font-bold">
             Build things you’re proud of
           </h3>
           <span className="block mt-4 text-sm md:text-xl">

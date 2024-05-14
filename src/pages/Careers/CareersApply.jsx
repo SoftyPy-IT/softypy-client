@@ -53,8 +53,8 @@ const CareersApply = () => {
             </h3>
             <span>(Fresher)</span>
           </div>
-          <form onSubmit={handleSubmit(onSubmit)} className="mt-5 max-w-[830px] space-y-8">
-            <div className="block md:flex items-center justify-between ">
+          <form onSubmit={handleSubmit(onSubmit)} className="mt-5 w-full md:max-w-[830px] space-y-8">
+            <div className="block md:flex items-center justify-between space-y-3">
               <div className="relative w-max">
                 <input
                 name='name'
@@ -80,7 +80,7 @@ const CareersApply = () => {
                 </label>
               </div>
             </div>
-            <div className="block md:flex items-center justify-between ">
+            <div className="block md:flex items-center justify-between  space-y-3">
               <div className="relative w-max">
                 <input
                 name='phone'
@@ -106,7 +106,7 @@ const CareersApply = () => {
                 </label>
               </div>
             </div>
-            <div className="block md:flex items-center justify-between ">
+            <div className="block md:flex items-center justify-between  space-y-3">
               <div className="relative w-max">
                 <input
                 name='github'
@@ -132,7 +132,7 @@ const CareersApply = () => {
                 </label>
               </div>
             </div>
-            <div className="block md:flex items-center justify-between">
+            <div className="block md:flex items-center justify-between space-y-3">
             <div className="donationFields">
               <input
                 name='cv'

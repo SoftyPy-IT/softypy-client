@@ -482,11 +482,19 @@ img {
   left: 56px;
   top: 0px;
 }
+.basic-title--wrap .basic-title {
+  font-size: 22px;
+}
+
 
 
 }
 
 @media only screen and (max-width: 500px) {
+  .teamCard {
+    width: 100%;
+    margin:0 auto;
+}
 
   .react-tabs__tab {
     padding: 3px;
@@ -514,7 +522,7 @@ img {
   .teamImg5,
   .teamImg8,
   .teamImg9 {
-    width: 100% !important;
+    width: 80px !important;
   }
   .team-anim--photo {
     position: initial;
@@ -522,6 +530,8 @@ img {
   .team-anim--block {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .teamImg4 {
     left: 0px;
@@ -542,12 +552,7 @@ img {
     padding-left: 37px;
   }
 
-  /* .aboutContainers .imgWrap {
-    width: 300px !important;
-    height: 300px !important;
-    border-radius: 100% !important;
-    overflow: hidden;
-  } */
+
 
   .aboutContent {
     left: 47%;
@@ -568,11 +573,11 @@ img {
   border-radius: 100% !important;
 }
 
-.aboutBtnTopWraps{
-  margin-left: 78px;
+
+
+.team-anim--sub {
+  margin-top: 20px !important;
 }
-
-
 
 }
 
@@ -595,22 +600,41 @@ img {
 @media only screen and (max-width:375px){
   .imgWrap {
     width: 100% !important;
-    height: 300px !important;
-    border-radius: 100% !important;
-    margin-top: 28px !important;
+    height: 250px !important;
+    margin-top: 100px !important;
 }
+
 .aboutContainer {
   overflow: visible !important;
 }
 .aboutBtnTopWraps {
-  margin-left: 28px;
+  margin-left: 0px;
 }
 .aboutContent {
   left: 64%;
   top: 48%;
 }
+.teamImg, .teamImg2, .teamImg3, .teamImg4, .teamImg5, .teamImg8, .teamImg9 {
+  width: 49px !important;
+}
 
-
+.teamImg8 {
+  position: relative;
+  top: -50px;
+  left: -28px;
+}
+.teamImg2, .teamImg3{
+  top:-50px;
+  position: relative;
+}
+.teamImg2{
+ left:-10px;
+}
+.teamImg5 {
+  left: 26px;
+  position: relative;
+  top: 15px;
+}
 
 
 
@@ -618,17 +642,19 @@ img {
 
 @media only screen and (max-width:300px){
 
-.imgWrap {
-  width: 100% !important;
-  height: 234px !important;
-  border-radius: 100% !important;
-  margin-top:130px !important;
-}
+
 .imgWrap:nth-child(2) {
   margin-top:0px !important;
 }
 .aboutContent {
   left: 50%;
+}
+.teamImgWrap {
+  width: 200px;
+  height: 200px;
+}
+.aboutRightContainer {
+  top: -119px;
 }
 
 }
@@ -637,6 +663,29 @@ img {
 
 .aboutContent {
   left: 45%;
+}
+
+.teamImg8 {
+  top: -86px;
+  left: 25px;
+}
+.teamI{
+  left:0px;
+}
+.teamI {
+  left: 114px;
+  top: -40px;
+}
+.teamImg {
+  margin-left: -9px;
+}
+.teamImg4 {
+  left: -53px;
+  top: 15px;
+}
+.imgWrap {
+  height: 200px !important;
+  margin-top: 50px !important;
 }
 
 }

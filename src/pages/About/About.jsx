@@ -184,7 +184,7 @@ const About = () => {
               </div>
             </div>
             <div className="mt-10">
-              <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 place-items-center ">
+              <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 place-items-center  ">
                 {teamData.map((team, i) => (
                   <div key={team.id} className="teamCard">
                     <div className="teamImgWrap">
@@ -278,7 +278,7 @@ const About = () => {
                   Meet Our Amazing Team
                 </h2>
                 <div className="basic-title--sub">
-                  <p>
+                  <p className="text-sm ">
                     Meet our Visionary Collective, where aspirations are our
                     compass, and success is the destination we chart together.
                     We are not just a team; we are a journey towards greatness.
@@ -316,7 +316,7 @@ const About = () => {
                 </div>
                 <div className="team-anim--photo -pos-4">
                   <img
-                    className="lazy loaded teamImg9"
+                    className="lazy loaded teamImg9 teamI"
                     src={team14}
                     alt="team"
                     data-was-processed="true"
@@ -359,17 +359,7 @@ const About = () => {
                   />
                 </div>
                 <div className="team-anim--photo -pos-8 -back"></div>
-{/** 
-                <div className="team-anim--dec -dec-1">
-                  <img
-                    className="lazy loaded teamImg9"
-                    data-src="https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/team-anim-photo-8.png"
-                    alt=""
-                    src={team}
-                    data-was-processed="true"
-                  />
-                </div>
-*/}
+
                 <div
                   className="team-anim--line aos-init aos-animate"
                   data-aos="fade-up"
