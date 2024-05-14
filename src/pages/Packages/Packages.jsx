@@ -24,27 +24,23 @@ const Packages = () => {
       <div className="shadow-lg">
         <NavBar />
       </div>
-      {/** 
-       * 
-      <div className=" portfolioHeroSection">
-        <div className="navsBarWrap">
-          <div className="text-white">
-            <NavBar />
-          </div>
-          <div className=" portfolioContent">
-            <h3 className="mb-2 text-3xl font-bold md:text-5xl">
-              Best Website Development Packages.
-            </h3>
-          </div>
-        </div>
-      </div>
-*/}
+      
       <Container>
         <div className="my-16">
           <SectionTitle title=' "Crafting Digital Excellence: Elevate Your Brand with Our Bespoke Web Designs"' />
         </div>
         <section className="my-10 bg-[#951FE]">
           <div className="flex-col items-center justify-center lg:flex lg:flex-row lg:justify-between ">
+          <div className="mt-10 lg:mt-0 mx-auto packageLottieWrap w-full lg:max-w-[50%] websiteAnimations">
+              <lottie-player
+                id="firstLottie"
+                ref={ref}
+                autoplay
+                loop
+                mode="normal"
+                src="/package.json"
+              ></lottie-player>
+            </div>
             <div className="w-full lg:w-[50%]">
               <h3 className="text-xl font-semibold">
                 Website Development Packages
@@ -93,16 +89,7 @@ const Packages = () => {
            </button>
              </Link>
             </div>
-            <div className="mt-10 lg:mt-0 mx-auto packageLottieWrap lg:max-w-[50%]">
-              <lottie-player
-                id="firstLottie"
-                ref={ref}
-                autoplay
-                loop
-                mode="normal"
-                src="/package.json"
-              ></lottie-player>
-            </div>
+           
           </div>
         </section>
       </Container>
@@ -142,15 +129,15 @@ const Packages = () => {
       <div className="sectionMargin">
         <Container>
           <div className="wantToTalk">
-            <h2 className="text-4xl md:text-[50px] lg:w-[40%] w-full text-center font-semibold">
+            <h2 className="text-2xl md:text-4xl lg:text-[50px] lg:w-[40%] w-full text-center font-semibold">
               Want to talks us ?{" "}
             </h2>
             <div className="mt-5 lg:mt-24 w-full text-center  xl:w-[60%]">
-              <p className="text-3xl md:text-[80px]">softypy@gmail.com</p>
-              <p className=" mt-14 mb-10 text-3xl md:text-[80px]">
+              <p className="text-xl md:text-[80px]">softypy@gmail.com</p>
+              <p className=" mt-3 md:mt-14 md:mb-10 md:text-3xl lg:text-[80px]">
                 +88-01762-380594
               </p>
-              <p className=" mt-14 mb-10 text-3xl md:text-[80px]">
+              <p className=" mt-5 md:mt-14 mb-10 md:text-3xl lg:text-[80px]">
                 +88-01303042561
               </p>
               <Link to='/contact'>

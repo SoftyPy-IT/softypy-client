@@ -11,18 +11,7 @@ import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import "./Portfolio.css";
 const Portfolio = () => {
   const [tabIndex, setTabIndex] = useState(0);
-  // const {
-  //   data: portfolio,
-  //   isLoading,
-  //   isError,
-  // } = useGetPortfolioQuery(undefined);
-  // console.log(portfolio);
-  // if (isLoading) {
-  //   return <p>Loading.....</p>;
-  // }
-  // if (isError) {
-  //   return <p>Something went to wrong</p>;
-  // }
+
 
   return (
     <div>
@@ -38,7 +27,7 @@ const Portfolio = () => {
                 <FaAngleRight />
                 <p>Portfolio </p>
               </div>
-              <h2 className="ml-0 text-3xl font-bold text-left uppercase md:text-5xl  md:text-center ">
+              <h2 className="ml-0 text-xl md:text-3xl font-bold md:text-left text-center uppercase lg:text-5xl  ">
                 Our Portfolio
               </h2>
             </div>
@@ -74,9 +63,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Ghuronti Travels Ltd</h2>
+                        <p className="hidden xl:block">
                           ghuronti.com: Your gateway to unforgettable
                           adventures. Explore curated travel experiences
                           worldwide with our expert guidance and personalized
@@ -96,9 +85,9 @@ const Portfolio = () => {
                     }}
                     className="singlePortfolio "
                   >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Trandhaven </h2>
-                      <p>
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <h2 className="text-sm md:text-xl">Trandhaven </h2>
+                      <p className="hidden xl:block">
                         Trandhaven Crafting unforgettable experiences. From
                         concept to execution, we deliver seamless events
                         tailored to your vision.
@@ -118,9 +107,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Airtrips Travels Ltd</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Airtrips Travels Ltd</h2>
+                        <p className="hidden xl:block">
                           Airtrips.com: Elevate your travel experience. Discover
                           seamless booking, exclusive deals, and tailored
                           itineraries. Your passport to extraordinary adventures
@@ -130,28 +119,6 @@ const Portfolio = () => {
                     </div>
                   </Link>
 
-                  {/*** 
-                  <Link to="https://nextstair.com/" target="_blank">
-                    <div
-                      style={{
-                        backgroundImage: `url('../../../public/assets/NextStair.png')`,
-                        backgroundSize: "cover",
-                      }}
-                      className="singlePortfolio "
-                    >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Nextstair</h2>
-                        <p>
-                          NextStair: Ascend to the latest news heights. Dive
-                          into diverse perspectives, breaking stories, and
-                          insightful analysis. Your daily staircase to informed
-                          decisions and enriched understanding.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-*/}
-
                   <Link to="https://taqwaacor.com/" target="_blank">
                     <div
                       style={{
@@ -160,9 +127,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Taqwaacor</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Taqwaacor</h2>
+                        <p className="hidden xl:block">
                           Taqwaacor.com: Elevate your shopping experience.
                           Explore a diverse range of quality products, from
                           fashion to electronics. Trustworthy service, secure
@@ -180,9 +147,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">GIVE</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">GIVE</h2>
+                        <p className="hidden xl:block">
                           "Give.com: Empowering generosity. Support causes that
                           matter. Easy, secure donations. Make a difference
                           today with just a few clicks."
@@ -199,9 +166,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Ghuronti Travels Ltd</h2>
+                        <p className="hidden xl:block">
                           ghuronti.com: Your gateway to unforgettable
                           adventures. Explore curated travel experiences
                           worldwide with our expert guidance and personalized
@@ -221,9 +188,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Arkaxis</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Arkaxis</h2>
+                        <p className="hidden xl:block">
                           "ArkAxis: Navigate the world's complexities.
                           Cutting-edge analysis, strategic insights, and
                           innovative solutions. Empowering decision-makers for a
@@ -240,9 +207,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">zynix</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">zynix</h2>
+                        <p className="hidden xl:block">
                           "Zynix: Your ultimate shopping destination. Discover
                           trendy products, unbeatable deals, and seamless
                           shopping experience. Elevate your lifestyle with just
@@ -259,9 +226,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Event360</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Event360</h2>
+                        <p className="hidden xl:block">
                           Event360: Crafting unforgettable experiences. From
                           concept to execution, we deliver seamless events
                           tailored to your vision.
@@ -278,15 +245,15 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio portfolio19"
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Trust-Auto-Solution</h2>
-                        <p>
-                          <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Trust-Auto-Solution</h2>
+                        
+                          <p className="hidden xl:block">
                             Trust Auto Solution: Streamline garage management
                             effortlessly. From scheduling to inventory, our
                             intuitive platform optimizes.
                           </p>
-                        </p>
+                        
                       </div>
                     </div>
                   </Link>
@@ -301,9 +268,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio portfolio19"
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Shop Master </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Shop Master </h2>
+                        <p className="hidden xl:block">
                           Shop Master Your gateway to unforgettable adventures.
                           Explore curated travel experiences worldwide with our
                           expert guidance and personalized service. Start your
@@ -321,9 +288,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">News24</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">News24</h2>
+                        <p className="hidden xl:block">
                           news24darpan.com Crafting unforgettable experiences.
                           From concept to execution, we deliver seamless events
                           tailored to your vision.
@@ -339,9 +306,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Building Planner </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Building Planner </h2>
+                        <p className="hidden xl:block">
                           buildingplanner.com Crafting unforgettable
                           experiences. From concept to execution, we deliver
                           seamless events tailored to your vision.
@@ -359,9 +326,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Techzon </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Techzon </h2>
+                        <p className="hidden xl:block">
                           Techzon Crafting unforgettable experiences. From
                           concept to execution, we deliver seamless events
                           tailored to your vision.
@@ -377,11 +344,11 @@ const Portfolio = () => {
                     }}
                     className="singlePortfolio "
                   >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <h2 className="text-sm md:text-xl">
                         Qrbangladesh Swimmingpoolstrore{" "}
                       </h2>
-                      <p>
+                      <p className="hidden xl:block">
                         qrbangladeshswimmingpoolstore.com Crafting
                         unforgettable experiences. From concept to execution,
                         we deliver seamless events tailored to your vision.
@@ -391,9 +358,9 @@ const Portfolio = () => {
                 </Link>
                   <Link to="https://www.ghuronti.com/hajj/search">
                     <div className="singlePortfolio portfolio10">
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Hajj & Umrah</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Hajj & Umrah</h2>
+                        <p className="hidden xl:block">
                           Ghuronti.com: Your gateway to unforgettable
                           adventures. Explore curated travel experiences
                           worldwide with our expert
@@ -403,9 +370,9 @@ const Portfolio = () => {
                   </Link>
                   <Link to="https://havenly-de0a6.web.app/">
                     <div className="singlePortfolio portfolio11">
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">House Rent </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">House Rent </h2>
+                        <p className="hidden xl:block">
                           HouseRent: Your key to finding the perfect home.
                           Discover listings tailored to your needs. Let us help
                           you find your dream space.
@@ -415,9 +382,9 @@ const Portfolio = () => {
                   </Link>
                   <Link to="https://monumental-cheesecake-9a7972.netlify.app/">
                     <div className="singlePortfolio portfolio12">
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Education </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Education </h2>
+                        <p className="hidden xl:block">
                           EduXcellence: Unlocking potential through education.
                           Empowering learners with innovative tools, resources,
                           and personalized support for academic success and
@@ -434,9 +401,9 @@ const Portfolio = () => {
                     }}
                     className="singlePortfolio "
                   >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                      <p>
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <h2 className="text-sm md:text-xl">Ghuronti Travels Ltd</h2>
+                      <p className="hidden xl:block">
                         ghuronti.com: Your gateway to unforgettable
                         adventures. Explore curated travel experiences
                         worldwide with our expert guidance and personalized
@@ -448,9 +415,9 @@ const Portfolio = () => {
                   <Link to="https://www.ghuronti.com/hotel">
                     <div className="singlePortfolio portfolio13">
                       <div className="singlePortfolio ">
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                          <h2 className="text-xl">Digital Agency </h2>
-                          <p>
+                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                          <h2 className="text-sm md:text-xl">Digital Agency </h2>
+                          <p className="hidden xl:block">
                             EduXcellence: Unlocking potential through education.
                             Empowering learners with innovative tools,
                             resources, and personalized support for academic
@@ -473,9 +440,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Trandhaven </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Trandhaven </h2>
+                        <p className="hidden xl:block">
                           Trandhaven Crafting unforgettable experiences. From
                           concept to execution, we deliver seamless events
                           tailored to your vision.
@@ -491,9 +458,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Techzon </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Techzon </h2>
+                        <p className="hidden xl:block">
                           Techzon Crafting unforgettable experiences. From
                           concept to execution, we deliver seamless events
                           tailored to your vision.
@@ -509,9 +476,9 @@ const Portfolio = () => {
                     }}
                     className="singlePortfolio "
                   >
-                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                      <h2 className="text-xl">Taqwaacor</h2>
-                      <p>
+                    <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <h2 className="text-sm md:text-xl">Taqwaacor</h2>
+                      <p className="hidden xl:block">
                         Taqwaacor.com: Elevate your shopping experience.
                         Explore a diverse range of quality products, from
                         fashion to electronics. Trustworthy service, secure
@@ -528,9 +495,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">zynix</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">zynix</h2>
+                        <p className="hidden xl:block">
                           "Zynix: Your ultimate shopping destination. Discover
                           trendy products, unbeatable deals, and seamless
                           shopping experience. Elevate your lifestyle with just
@@ -552,9 +519,9 @@ const Portfolio = () => {
                   }}
                   className="singlePortfolio "
                 >
-                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                    <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                    <p>
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                    <h2 className="text-sm md:text-xl">Ghuronti Travels Ltd</h2>
+                    <p className="hidden xl:block">
                       ghuronti.com: Your gateway to unforgettable
                       adventures. Explore curated travel experiences
                       worldwide with our expert guidance and personalized
@@ -571,9 +538,9 @@ const Portfolio = () => {
                 }}
                 className="singlePortfolio "
               >
-                <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                  <h2 className="text-xl">Airtrips Travels Ltd</h2>
-                  <p>
+                <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                  <h2 className="text-sm md:text-xl">Airtrips Travels Ltd</h2>
+                  <p className="hidden xl:block">
                     Airtrips.com: Elevate your travel experience. Discover
                     seamless booking, exclusive deals, and tailored
                     itineraries. Your passport to extraordinary adventures
@@ -584,9 +551,9 @@ const Portfolio = () => {
             </Link>
                   <Link to="https://www.ghuronti.com/hajj/search">
                     <div className="singlePortfolio portfolio10">
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Hajj & Umrah</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Hajj & Umrah</h2>
+                        <p className="hidden xl:block">
                           Ghuronti.com: Your gateway to unforgettable
                           adventures. Explore curated travel experiences
                           worldwide with our expert
@@ -603,9 +570,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Ghuronti Travels Ltd</h2>
+                        <p className="hidden xl:block">
                           ghuronti.com: Your gateway to unforgettable
                           adventures. Explore curated travel experiences
                           worldwide with our expert guidance and personalized
@@ -622,9 +589,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Ghuronti Travels Ltd</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Ghuronti Travels Ltd</h2>
+                        <p className="hidden xl:block">
                           ghuronti.com: Your gateway to unforgettable
                           adventures. Explore curated travel experiences
                           worldwide with our expert guidance and personalized
@@ -647,9 +614,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">News24</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">News24</h2>
+                        <p className="hidden xl:block">
                           news24darpan.com Crafting unforgettable experiences.
                           From concept to execution, we deliver seamless events
                           tailored to your vision.
@@ -670,9 +637,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">GIVE</h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">GIVE</h2>
+                        <p className="hidden xl:block">
                           "Give.com: Empowering generosity. Support causes that
                           matter. Easy, secure donations. Make a difference
                           today with just a few clicks."
@@ -693,9 +660,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Building Planner </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Building Planner </h2>
+                        <p className="hidden xl:block">
                           buildingplanner.com Crafting unforgettable
                           experiences. From concept to execution, we deliver
                           seamless events tailored to your vision.
@@ -712,9 +679,9 @@ const Portfolio = () => {
                   </Link>
                   <Link to="https://havenly-de0a6.web.app/">
                     <div className="singlePortfolio portfolio11">
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">House Rent </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">House Rent </h2>
+                        <p className="hidden xl:block">
                           HouseRent: Your key to finding the perfect home.
                           Discover listings tailored to your needs. Let us help
                           you find your dream space.
@@ -735,9 +702,9 @@ const Portfolio = () => {
                   }}
                   className="singlePortfolio "
                 >
-                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                    <h2 className="text-xl">SoftEdu </h2>
-                    <p>
+                  <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                    <h2 className="text-sm md:text-xl">SoftEdu </h2>
+                    <p className="hidden xl:block">
                       SoftEdu Crafting unforgettable experiences. From
                       concept to execution, we deliver seamless events
                       tailored to your vision.
@@ -755,15 +722,15 @@ const Portfolio = () => {
                       
                       className="singlePortfolio portfolio19 "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Trust-Auto-Solution</h2>
-                        <p>
-                          <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Trust-Auto-Solution</h2>
+                      
+                          <p className="hidden xl:block">
                             Trust Auto Solution: Streamline garage management
                             effortlessly. From scheduling to inventory, our
                             intuitive platform optimizes.
                           </p>
-                        </p>
+                        
                       </div>
                     </div>
                   </Link>
@@ -778,9 +745,9 @@ const Portfolio = () => {
                       }}
                       className="singlePortfolio portfolio19"
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-2 right-0 bottom-0  ">
-                        <h2 className="text-xl">Shop Master </h2>
-                        <p>
+                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                        <h2 className="text-sm md:text-xl">Shop Master </h2>
+                        <p className="hidden xl:block">
                           Shop Master Your gateway to unforgettable adventures.
                           Explore curated travel experiences worldwide with our
                           expert guidance and personalized service. Start your

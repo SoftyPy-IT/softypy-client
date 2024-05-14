@@ -47,4 +47,13 @@
   .cardLine{
     display: none;
   }
+  .websiteAnimations{
+    width:300px;
+  }
+}
+@media only screen and (max-width: 375px) {
+
+  .websiteAnimations{
+    width:200px;
+  }
 }

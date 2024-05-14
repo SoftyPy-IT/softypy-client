@@ -487,6 +487,26 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
+
+  .react-tabs__tab {
+    padding: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    background: #40C7F4;
+    color: white;
+    margin: 2px;
+    border-radius: 20px !important;
+  }
+  .react-tabs__tab--selected {
+    background: #2D57A2 !important;
+    color: #fff !important;
+  }
+  .react-tabs__tab-list {
+    border-bottom: none !important;
+    margin-bottom: 30px !important;
+  }
+
+  
   .teamImg,
   .teamImg2,
   .teamImg3,
@@ -585,6 +605,13 @@ img {
 .aboutBtnTopWraps {
   margin-left: 28px;
 }
+.aboutContent {
+  left: 64%;
+  top: 48%;
+}
+
+
+
 
 
 }
@@ -599,6 +626,17 @@ img {
 }
 .imgWrap:nth-child(2) {
   margin-top:0px !important;
+}
+.aboutContent {
+  left: 50%;
+}
+
+}
+
+@media only screen and (max-width:275px){
+
+.aboutContent {
+  left: 45%;
 }
 
 }
