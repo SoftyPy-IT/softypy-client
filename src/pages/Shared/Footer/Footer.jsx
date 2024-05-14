@@ -135,7 +135,7 @@ const Footer = () => {
         </div>
         <hr className="mt-5" />
         <div className="py-3 copyRight flex flex-col md:flex-row justify-center md:justify-between gap-2 items-center ">
-          <p className="sm:mb-5">All Right reserve | SoftyPy - 2023 </p>
+          <p className="sm:mb-5">All Right reserve | @ 2023 - SoftyPy </p>
           <div className="flex gap-2 justify-center flex-wrap items-center md:flex-row flex-col md:justify-between termCondition ">
             <p>Term & Conditions </p>
             <p>Privacy policy </p>
