@@ -36,13 +36,8 @@
   position: relative;
 }
 
-.sticky .navbar-list,
-.sticky .logo {
-  /* color: white !important; */
-}
 
-
-.bar {
+.bar, .bar2 {
   display: none;
 }
 .mobileMenu,
@@ -238,7 +233,7 @@
     margin-bottom: 18px;
   }
 
-  .bar {
+  .bar, .bar2 {
     padding: 0px !important;
     text-align: left !important;
     width: 49px;
@@ -255,16 +250,23 @@
     right: 21px;
     z-index: 999999;
   }
-  .bar div {
+  .bar div , .bar2 div {
     position: relative;
   }
-  .bar span {
+  .bar span , .bar2 span {
     width: 30px;
     height: 2px;
     background: #111;
     margin-bottom: 6px;
     display: block;
     transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+  }
+
+  .bars span{
+    background:#fff !important;
+  }
+  .sticky .bars span{
+    background:#111 !important
   }
   /* .sticky .bar span {
     background-color: #fff;
@@ -326,6 +328,9 @@
 
 }
 @media only screen and (max-width: 400px) {
- 
+  .mobileMenu, .mobileMenuActive {
+    width: 195px;
+}
+
 }
 

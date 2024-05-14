@@ -7,20 +7,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { logout } from "../../../redux/features/auth/authSlice";
 import Cookies from "js-cookie";
-import logo from '../../../../public/assets/softypy-3.png'
+import logo from "../../../../public/assets/softypy-3.png";
 // import { toggleTheme } from "../../../redux/features/themeSlice";
 import Container from "../../../ui/Container";
 import "./NavBar.css";
 
 const NavBar = () => {
-
   const location = useLocation();
 
   // Extract the pathname from the location object
   const { pathname } = location;
 
   // Now you have the current pathname
-
 
   const dispatch = useDispatch();
   // const { darkMode } = useSelector((store) => store.theme);
@@ -45,12 +43,16 @@ const NavBar = () => {
 
   return (
     <Container>
-      <div className="navbar">
+      <div className="navbar flex items-center justify-between">
         <div className=" logo">
           <Link to="/">
-            {
-              pathname  === '/contact' ? <h3 className="text-5xl font-bold">SoftyPy</h3> : <img src={logo} alt="logo" className="w-40" />
-            }
+            {pathname === "/contact" ? (
+              <h3 className="text-3xl md:text-5xl font-semibold mt-2">
+                SoftyPy
+              </h3>
+            ) : (
+              <img src={logo} alt="logo" className="w-32 lg:w-40" />
+            )}
           </Link>
         </div>
         <ul className="navbar-list ">
@@ -58,12 +60,10 @@ const NavBar = () => {
             <li className="navbar-item">Home</li>
           </Link>
           <li className="flex items-center navbar-item serviceNavItems">
-            <Link to='/services'>Services</Link> <HiChevronDown size={23} />{" "}
+            <Link to="/services">Services</Link> <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
               <ul className="space-y-3">
-              <li>
-            
-            </li>
+                <li></li>
                 <li className="flex items-center capitalize mainSubmenu">
                   Web Development <HiChevronDown size={23} />
                   <Link to="/packages">
@@ -176,21 +176,6 @@ const NavBar = () => {
         </ul>
 
         <div className="security">
-          {/** 
-          <div className="flex items-center ">
-            <button
-              onClick={handleToggleTheme}
-              className="rounded-lg backdrop-blur-[2px] p-1 inline-block mr-2 "
-            >
-              {darkMode ? (
-                <HiOutlineSun size={30} />
-              ) : (
-                <HiOutlineMoon size={30} />
-              )}
-            </button>
-            <div></div>
-          </div>
-        **/}
           {email ? (
             <>
               <button className="logoutBtn " onClick={handleLogout}>
@@ -204,13 +189,13 @@ const NavBar = () => {
           )}
         </div>
 
-        <div onClick={toggleMobileMenu} className="bar">
-          <div>
-            <span className={mobileMenu ? ` ` : `bar1`}></span>
-            <span className={mobileMenu ? ` ` : `bar2`}></span>
-            <span className={mobileMenu ? ` ` : `bar3`}></span>
-          </div>
-        </div>
+        <div onClick={toggleMobileMenu} className={pathname === '/' ? 'bar bars' : 'bar'}>
+              <div>
+                <span className={mobileMenu ? ` ` : `bar1`}></span>
+                <span className={mobileMenu ? ` ` : `bar2`}></span>
+                <span className={mobileMenu ? ` ` : `bar3`}></span>
+              </div>
+            </div>
       </div>
       <div></div>
       <ul className={mobileMenu ? `mobileMenu` : `mobileMenuActive`}>
