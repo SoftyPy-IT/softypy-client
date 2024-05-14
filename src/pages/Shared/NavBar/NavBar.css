@@ -185,7 +185,10 @@
   top:5px;
   left:-15px
 }
-
+.active{
+  font-weight: bold;
+  color:#40C7F4;
+}
 
 @media only screen and (min-width:1200px){
   .sticky{

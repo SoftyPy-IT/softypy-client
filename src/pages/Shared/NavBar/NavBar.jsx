@@ -57,11 +57,11 @@ const NavBar = () => {
           </Link>
         </div>
         <ul className="navbar-list ">
-          <Link to="/">
+          <NavLink to="/">
             <li className="navbar-item">Home</li>
-          </Link>
+          </NavLink>
           <li className="flex items-center navbar-item serviceNavItems">
-            <Link to="/services">Services</Link> <HiChevronDown size={23} />{" "}
+            <NavLink to="/services">Services</NavLink> <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
               <ul className="space-y-3">
                 <li></li>
@@ -130,7 +130,7 @@ const NavBar = () => {
                 </li>
                 <li>
                   {" "}
-                  <Link to="/erp">ERP Solutions</Link>{" "}
+                  <NavLink to="/erp">ERP Solutions</NavLink>{" "}
                 </li>
                 <li>Cloud & DevOps </li>
                 <li>UI/UX Design </li>
@@ -154,26 +154,26 @@ const NavBar = () => {
               </ul>
             </div>
           </li>
-          <Link to="/packages">
+          <NavLink to="/packages">
             {" "}
             <li className="navbar-item">Pricing </li>
-          </Link>
-          <Link to="/portfolio">
+          </NavLink>
+          <NavLink to="/portfolio">
             {" "}
             <li className="navbar-item">Portfolio</li>
-          </Link>
-          <Link to="/careers">
+          </NavLink>
+          <NavLink to="/careers">
             {" "}
             <li className="navbar-item">Careers</li>
-          </Link>
-          <Link to="/about">
+          </NavLink>
+          <NavLink to="/about">
             {" "}
             <li className="navbar-item">About</li>
-          </Link>
-          <Link to="/contact">
+          </NavLink>
+          <NavLink to="/contact">
             {" "}
             <li className="navbar-item">Contact</li>
-          </Link>
+          </NavLink>
         </ul>
 
         <div className="security">
