@@ -77,10 +77,10 @@ class PortfolioCountdown extends Component {
                     onClick={() => this.resetCounts("projectCount")}
                   >
                     <div className="singleCountDown">
-                      <p>{this.state.projectCount}</p>
+                      <p className="">{this.state.projectCount}</p>
                       <span>+</span>
                     </div>
-                    <h2>Projects</h2>
+                    <h2 className="text-[12px] md:text-xl"> Projects</h2>
                   </div>
                   <div
                     className="countdown"
@@ -90,7 +90,7 @@ class PortfolioCountdown extends Component {
                       <p>{this.state.developerCount}</p>
                       <span>+</span>
                     </div>
-                    <h2>Professional Developers</h2>
+                    <h2 className="text-[12px] md:text-xl">Professional Developers</h2>
                   </div>
                   <div
                     className="countdown"
@@ -100,7 +100,7 @@ class PortfolioCountdown extends Component {
                       <p>{this.state.experienceYears}</p>
                       <span>+</span>
                     </div>
-                    <h2>Years of Experience</h2>
+                    <h2 className="text-[12px] md:text-xl">Years of Experience</h2>
                   </div>
                   <div
                     className="countdown"
@@ -110,7 +110,7 @@ class PortfolioCountdown extends Component {
                       <p>{this.state.clientCount}</p>
                       <span>+</span>
                     </div>
-                    <h2>Esteemed Clients</h2>
+                    <h2 className="text-[12px] md:text-xl">Esteemed Clients</h2>
                   </div>
                 </div>
               </div>

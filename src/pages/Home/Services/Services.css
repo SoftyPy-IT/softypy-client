@@ -210,10 +210,10 @@ object-fit: cover;
         font-size: 12px !important;
         color:red;
     }
-    .cards {
+    /* .cards {
         width: 150px;
         height: 142px;
-    }
+    } */
     .servicesWraps{
         padding:0 10px;
     }
@@ -224,19 +224,14 @@ object-fit: cover;
     .cards-back-content b{
         font-size:13px;
     }
+    .cards:nth-child(2), .cards:nth-child(4){
+        top:0px;
+    }
+    .cards {
+        width: 200px;
+        height: 150px;
+    }
+ 
  
  }
-@media only screen and (max-width:400px){
-    .cards {
-        width: 135px;
-        height: 139px;
-    }
-    
-}
-@media only screen and (max-width:300px){
-    .cards {
-        width: 120px;
-        height: 130px;
-    }
-    
-}
+

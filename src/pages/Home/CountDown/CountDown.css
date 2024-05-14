@@ -132,7 +132,7 @@ top:-50px;
         width: 140px;
     }
     .singleCountDown {
-        font-size: 35px;
+        font-size: 20px;
     }
     .featured-item{
         height:480px;
@@ -141,6 +141,6 @@ top:-50px;
 @media only screen and (max-width:350px){
  
     .countdown {
-        width: 130px;
+        width: 100px;
     }
 }

@@ -23,15 +23,7 @@
 .reviewContent {
   width: 650px;
 }
-.reviewContent h3 {
-  color: #2D57A2;
-  font-weight: bold;
-  font-size: 30px;
-}
-.reviewContent p,
-.reviewContent h6 {
-  font-size: 20px;
-}
+
 
 .leftQoute {
   font-size: 115px !important;
@@ -110,13 +102,20 @@
 
   .reviewContent {
     margin-left: 0px;
-    height: 172px;
     width: 100%;
   }
   .reviewImg {
     width: 100%;
     height: 100%;
   }
+  .reviewImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
 }
 
 @media only screen and (max-width: 375px) {

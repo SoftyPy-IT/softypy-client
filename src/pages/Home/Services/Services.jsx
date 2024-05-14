@@ -16,9 +16,12 @@ const {data:services} = useGetAllSingleServicesQuery()
     <Container className=''>
      <div className="sectionMargin">
      <div className="servicesWraps">
+     <h3 className="text-3xl md:text-4xl mb-5 text-[#2D57A2] font-bold text-center md:hidden block ">
+           Our Services
+         </h3>
      <div className="ourServicesWrap">
        <div className="ourServiceLeftSide">
-         <h3 className="text-4xl mb-3 text-[#2D57A2] font-bold ">
+         <h3 className="text-2xl text-center md:text-4xl mb-3 text-[#2D57A2] font-bold hidden md:block">
            Our Services
          </h3>
          <p>
@@ -32,11 +35,12 @@ const {data:services} = useGetAllSingleServicesQuery()
        </div>
        <div className="ourServicesRightSide">
          <div>
-           <div className="cardsWrap">
+           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
              {services?.map((card) => (
                <div key={card._id} className="cards">
                  <div className="inner-box">
                    <div className="cards-front cards-front5">
+              
                      <div className="iconWrap">
                        <img src={card.image} alt="icon" />
                      </div>

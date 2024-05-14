@@ -48,12 +48,13 @@ export default Arrow = () => {
           <div ref={sliderRef} className="keen-slider">
             <div className="keen-slider__slide number-slide1">
               <div className="smallHead">
-                <h3 className="text-3xl "> Expert Team, Exceptional Results</h3>
+                <h3 className=" md:text-3xl "> Expert Team, Exceptional Results</h3>
               </div>
               <div className="sliderWrap">
                 <div className="sliderLeftSide">
                   <p className="md:text-xl ">
-                  Behind every success story is a team of experts. At SoftyPy , our skilled professionals bring a wealth of experience and knowledge to the table. With a shared commitment to excellence, we tackle challenges head-on and turn them into opportunities.
+                  Behind every success story is a team of experts. At SoftyPy , our skilled professionals bring a wealth of experience and knowledge to the table. With a shared commitment to excellence.
+                  {/* we tackle challenges head-on and turn them into opportunities. */}
                   </p>
                 </div>
 
@@ -62,8 +63,8 @@ export default Arrow = () => {
                     <div className="circle">
                       <img src={icon7} alt="computer" />
                     </div>
-                    <div className="circle">
-                      <img src={icon2} alt="computer" />
+                    <div className="circle hiddenCircle">
+                      <img src={icon2} alt="computer"  />
                     </div>
                   </div>
                   <div className="line"></div>
@@ -75,16 +76,16 @@ export default Arrow = () => {
             <div className="keen-slider__slide number-slide2">
             
               <div className="smallHead">
-                <h3 className="text-3xl ">Transparent Communication  </h3>
+                <h3 className="md:text-3xl ">Transparent Communication  </h3>
               </div>
               <div className="sliderWrap">
-                <div>
+                <div className="sliderLeftSide">
                   <p className="md:text-xl ">
                   We believe in transparency. Throughout the project lifecycle, expect clear and open communication. We keep you informed, engaged, and confident in the progress and direction of your project.
 
                   </p>
                 </div>
-                <div className="sliderLeftSide">
+                <div className="sliderRightSide">
                   <div className="circleWrap">
                     <div className="circle">
                       <img src={icon3} alt="computer" />
@@ -101,17 +102,17 @@ export default Arrow = () => {
             </div>
             <div className="keen-slider__slide number-slide3">
             <div className="smallHead">
-                <h3 className="text-3xl ">Quality Assurance as Standard  </h3>
+                <h3 className="md:text-3xl ">Quality Assurance as Standard  </h3>
               </div>
               <div className="sliderWrap">
-                <div>
+                <div className="sliderLeftSide">
                   <p className="md:text-xl ">
                   Quality is not just a checkbox; it's ingrained in our culture. Rigorous testing processes and a commitment to excellence ensure that every product or service we deliver meets the highest industry standards.
 
                   </p>
                 </div>
 
-                <div className="sliderLeftSide">
+                <div className="sliderRightSide">
                   <div className="circleWrap">
                     <div className="circle">
                       <img src={icon6} alt="computer" />
@@ -128,18 +129,18 @@ export default Arrow = () => {
             </div>
             <div className="keen-slider__slide number-slide3">
             <div className="smallHead">
-                <h3 className="text-3xl ">Timely Delivery, Every Time </h3>
+                <h3 className="md:text-3xl ">Timely Delivery, Every Time </h3>
               </div>
               <div className="sliderWrap">
-                <div>
+                <div className="sliderLeftSide">
                   <p className="md:text-xl ">
-                  We understand the value of time. [Your Company Name] is dedicated to delivering projects on time, without compromising on quality. Trust us to meet your deadlines and exceed your expectations.
+                  We understand the value of time. SoftyPY is dedicated to delivering projects on time, without compromising on quality. Trust us to meet your deadlines and exceed your expectations.
 
 
                   </p>
                 </div>
 
-                <div className="sliderLeftSide">
+                <div className="sliderRightSide">
                   <div className="circleWrap">
                     <div className="circle">
                       <img src={icon6} alt="computer" />

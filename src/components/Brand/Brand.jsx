@@ -22,7 +22,7 @@ const Brand = () => {
     slidesToScroll: 5,
     initialSlide: 0,
     autoplay: true,
-    speed: 51000,
+    speed: 5100,
     autoplaySpeed: 5000,
     responsive: [
       {
@@ -51,13 +51,13 @@ const Brand = () => {
       },
     ],
   };
+
   return (
    <div className="sectionMargin">
    <div >
      <SectionTitle title="Our Happy Clients "></SectionTitle>
-     <div className="slidersWraps mt-16">
+     <div className="slidersWraps md:mt-10  lg:mt-16">
        <Slider {...settings}>
-        
          <div className="slider slickSliderImgWrap">
            <img src={brand2} alt="brand" />
          </div>

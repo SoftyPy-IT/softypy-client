@@ -90,7 +90,6 @@ export default function VerticalTabs() {
           </div>
           <Box className="boxWrap" sx={{ bgcolor: "background.paper" }}>
             <Tabs
-
               orientation="vertical"
               variant=""
               value={value}
@@ -231,7 +230,9 @@ export default function VerticalTabs() {
             <TabPanel value={value} index={2}>
               <div className="technologies">
                 <div>
-                  <h3 className="text-xl md:text-3xl font-bold text-center md:mb-5 lg:mb-20">Reporting</h3>
+                  <h3 className="text-xl md:text-3xl font-bold text-center md:mb-5 lg:mb-20">
+                    Reporting
+                  </h3>
                   <ul className="category">
                     <li className="flex items-center">
                       <small className="mr-3">
@@ -290,7 +291,6 @@ export default function VerticalTabs() {
                     Project Management{" "}
                   </h3>
                   <ul className="category">
-                 
                     <li className="flex items-center">
                       <small className="mr-3">
                         <FaRegCheckCircle className="checkIcon" />
@@ -319,11 +319,11 @@ export default function VerticalTabs() {
                       <small> Trello, Redmine</small>
                     </li>
                     <li className="flex items-center">
-                    <small className="mr-3">
-                      <FaRegCheckCircle className="checkIcon" />
-                    </small>{" "}
-                    <small> Slack</small>
-                  </li>
+                      <small className="mr-3">
+                        <FaRegCheckCircle className="checkIcon" />
+                      </small>{" "}
+                      <small> Slack</small>
+                    </li>
                   </ul>
                 </div>
                 <div className="technologyRightSide">
@@ -341,7 +341,9 @@ export default function VerticalTabs() {
             <TabPanel value={value} index={4}>
               <div className="technologies">
                 <div>
-                  <h3 className="text-xl md:text-3xl font-bold text-center md:mb-5 lg:mb-20">Testing</h3>
+                  <h3 className="text-xl md:text-3xl font-bold text-center md:mb-5 lg:mb-20">
+                    Testing
+                  </h3>
                   <ul className="category">
                     <li className="flex items-center">
                       <small className="mr-3">

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import "./WhoWeare.css";
 import Container from "../../ui/Container";
@@ -45,7 +46,7 @@ useEffect(()=>{
 
 
   return (
-    <div className="sectionMargin h-[420px] overflow-hidden">
+    <div className="sectionMargin ">
       <Container>
         <div className="flex flex-col gap-10 md:flex-row items-center justify-center" >
           <div className="w-[48%] ">

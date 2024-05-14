@@ -8,6 +8,7 @@ import react from '../../../../public/assets/react.png'
 import node from '../../../../public/assets/node.png'
 import js from '../../../../public/assets/javaScript.png'
 import flutter from '../../../../public/assets/next.png'
+import { Button } from "@mui/material";
 const HeroSection = () => {
   const [showText, setShowText] = useState(1);
 
@@ -75,13 +76,13 @@ const HeroSection = () => {
                       Value
                     </span>
                   </h3>
-                  <button
+                  <Button
                     onClick={handleOpen}
                     className="bg-[#40C7F4] w-44  md:w-60 py-3 rounded-sm text"
                   >
                     {" "}
                     Let's Talk{" "}
-                  </button>
+                  </Button>
                   <div className="animationIcon ">
                   <img src={react} alt="" />
                   </div>

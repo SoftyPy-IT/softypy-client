@@ -19,14 +19,14 @@ const Footer = () => {
           <div>
             <div className="w-56 text-left">
               <img className="object-cover " src={softypy} alt="softypy" />
-              <div className="flex items-center">
+              <div className="md:flex flex-col md:flex-row mt-3 items-center hidden ">
                 <img className="mr-2" src={location} alt="location" />
                 <p className="mt-3">
                   42, Gulshan Avenue, Gulshan-1, Jabbar Tower (6th Floor),
                   Dhaka-1212, Bangladesh
                 </p>
               </div>
-              <div className="flex items-center">
+              <div className="flex flex-col md:flex-row mt-3 items-center">
                 <img className="mr-2" src={location} alt="location" />
                 <p className="mt-3">
                   Ka-121, (Besides of IFIC Bank, 2nd floor),Kuril, Vatara, Dhaka -1229

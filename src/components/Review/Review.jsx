@@ -43,6 +43,7 @@ function ThumbnailPlugin(mainRef) {
   };
 }
 
+
 export default function Review() {
   const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
   console.log(reviews);
@@ -72,7 +73,7 @@ export default function Review() {
   return (
     <div className="sectionMargin">
       <Container>
-        <div className="mb-20">
+        <div className="mb-8 md:mb-20">
           <SectionTitle title="What Our Client Say "></SectionTitle>
         </div>
         <div className="reviewSliderWrap ">
@@ -93,13 +94,13 @@ export default function Review() {
                     ></iframe>
                   )}
                 </div>
-                <div className="reviewContent">
-                  <h3>{reviews[0]?.name}</h3>
-                  <h6>{reviews[0]?.title}</h6>
+                <div className="reviewContent mt-3">
+                  <h3 className="text-2xl md:text-3xl text-[#2D57A2] font-semibold ">{reviews[0]?.name}</h3>
+                  <span className="text-semibold ">{reviews[0]?.title}</span>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">
-                      {reviews[0]?.description.slice(0, 300)}....
+                      {reviews[0]?.description.slice(0, 200)}....
                     </p>
                   </blockquote>
                   <Link to="/client">
@@ -128,15 +129,15 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent">
-                  <h3 className="text-4xl font-bold text-[#2D57A2] ">
+                  <h3 className="text-2xl md:text-3xl text-[#2D57A2] font-semibold">
                     {reviews[1]?.name}
                   </h3>
-                  <h6 className="mt-2 text-xl font-bold">
+                  <span className="mt-2  font-semibold">
                     {reviews[1]?.title}
-                  </h6>
+                  </span>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">{reviews[1]?.description}</p>
+                    <p className="text-xl">{reviews[1]?.description.slice(0, 250)}...</p>
                   </blockquote>
                   <Link to="/client">
                     <div className="flex flex-end items-center text-[#2D57A2] ml-8">
@@ -164,16 +165,16 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent">
-                  <h3 className="text-4xl font-bold text-[#2D57A2] ">
+                  <h3 className="text-2xl md:text-3xl text-[#2D57A2] font-semibold ">
                     {reviews[2]?.name}
                   </h3>
-                  <h6 className="mt-2 text-xl font-bold">
+                  <span className="mt-2 font-semibold">
                     {reviews[2]?.title}
-                  </h6>
+                  </span>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">
-                      {reviews[2]?.description.slice(0, 300)}
+                      {reviews[2]?.description.slice(0, 250)}...
                     </p>
                   </blockquote>
                   <Link to="/client">
@@ -202,16 +203,16 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent">
-                  <h3 className="text-4xl font-bold text-[#2D57A2] ">
+                  <h3 className="text-2xl md:text-3xl text-[#2D57A2] font-semibold">
                     {reviews[3]?.name}
                   </h3>
-                  <h6 className="mt-2 text-xl font-bold">
+                  <span className="mt-2 font-semibold">
                     {reviews[3]?.title}
-                  </h6>
+                  </span>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">
-                      {reviews[3]?.description.slice(0, 300)}
+                      {reviews[3]?.description.slice(0, 250)}...
                     </p>
                   </blockquote>
                   <Link to="/client">

@@ -194,6 +194,22 @@
 .circleWrap {
   width: 100%;
 }
-  
+.sliderLeftSide{
+  font-size: 12px;
+  padding:0 2px;
+}
+.circle {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 5px;
+  padding: 14px;
+  display: flex;
+  width: 75px;
+  height: 75px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.smallHead{
+  margin:0px;
 }
 
+  
+}

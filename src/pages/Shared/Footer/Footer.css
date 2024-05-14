@@ -136,7 +136,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+    text-align: center;
+}
+.contactUs p{
+  margin-bottom:5px;
 }
   .rightSideImgWRap img {
     margin-left: 106px;

@@ -16,7 +16,6 @@ import "./TimeLine.css";
 
 AOS.init();
 
-
 const TimeLine = () => {
   const galleryAnimation = {
     hidden: {
