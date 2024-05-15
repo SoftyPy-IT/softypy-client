@@ -117,8 +117,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.singleSocialMedia,
-.activeSocial {
+.singleSocialMedia {
   width: 280px;
   background: #fff;
   aspect-ratio: 1/1;
@@ -132,10 +131,6 @@
   transition: all cubic-bezier(0.25, 0.22, 1, 0.99);
 }
 
-.activeSocial {
-  background-color: #40C7F4 !important;
-  color: white !important;
-}
 .activeSocial:hover {
   background-color: #fff !important;
   color: black !important;

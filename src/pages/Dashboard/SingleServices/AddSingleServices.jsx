@@ -75,7 +75,7 @@ const [createSingleServices,{isSuccess}] = useCreateSingleServicesMutation()
                 
                 <option>Development</option>
                 <option>ERP</option>
-                <option>Design</option>
+                <option>Wordpress</option>
                 <option>Digital</option>
                 <option>SEO</option>
             </select>

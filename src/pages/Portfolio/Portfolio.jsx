@@ -53,6 +53,7 @@ const Portfolio = () => {
                 <Tab>Education </Tab>
                 <Tab>ERP </Tab>
               </TabList>
+              
               <TabPanel>
                 <div className="grid justify-between grid-cols-1 gap-10 portfolio lg:grid-cols-2">
                   <Link to="https://www.ghuronti.com/" target="_blank">

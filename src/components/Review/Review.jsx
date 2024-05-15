@@ -46,8 +46,7 @@ function ThumbnailPlugin(mainRef) {
 
 export default function Review() {
   const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
-  console.log(reviews);
-
+ 
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
   });
@@ -95,8 +94,8 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent mt-3">
-                  <h3 className="text-2xl md:text-3xl text-[#2D57A2] font-semibold ">{reviews[0]?.name}</h3>
-                  <span className="text-semibold ">{reviews[0]?.title}</span>
+                  <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">{reviews[0]?.name}</h3>
+                  <span className=" text-[12px] md:text-sm text-semibold ">{reviews[0]?.title}</span>
                   <blockquote className="flex mt-3">
                     <FaQuoteLeft className="leftQoute" />
                     <p className="text-xl">
@@ -129,10 +128,10 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent">
-                  <h3 className="text-2xl md:text-3xl text-[#2D57A2] font-semibold">
+                  <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">
                     {reviews[1]?.name}
                   </h3>
-                  <span className="mt-2  font-semibold">
+                  <span className="mt-2 md:text-sm text-[12px]  font-semibold">
                     {reviews[1]?.title}
                   </span>
                   <blockquote className="flex mt-3">
@@ -165,10 +164,10 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent">
-                  <h3 className="text-2xl md:text-3xl text-[#2D57A2] font-semibold ">
+                  <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">
                     {reviews[2]?.name}
                   </h3>
-                  <span className="mt-2 font-semibold">
+                  <span className="mt-2 md:text-sm text-[12px] font-semibold">
                     {reviews[2]?.title}
                   </span>
                   <blockquote className="flex mt-3">
@@ -203,7 +202,7 @@ export default function Review() {
                   )}
                 </div>
                 <div className="reviewContent">
-                  <h3 className="text-2xl md:text-3xl text-[#2D57A2] font-semibold">
+                  <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">
                     {reviews[3]?.name}
                   </h3>
                   <span className="mt-2 font-semibold">

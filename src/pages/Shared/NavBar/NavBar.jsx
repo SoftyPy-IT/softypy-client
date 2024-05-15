@@ -61,7 +61,8 @@ const NavBar = () => {
             <li className="navbar-item">Home</li>
           </NavLink>
           <li className="flex items-center navbar-item serviceNavItems">
-            <NavLink to="/services">Services</NavLink> <HiChevronDown size={23} />{" "}
+            <NavLink to="/services">Services</NavLink>{" "}
+            <HiChevronDown size={23} />{" "}
             <div className="dropDownMenu">
               <ul className="space-y-3">
                 <li></li>
@@ -135,7 +136,7 @@ const NavBar = () => {
                 <li>Cloud & DevOps </li>
                 <li>UI/UX Design </li>
                 <li>Wordpress Development </li>
-                <li className="flex items-center teamHoverMenuItem ">
+                <li className="flex items-center teamHoverMenuItem relative ">
                   Dedicated Team <HiChevronDown size={23} />
                   <div className="teamSubMenu">
                     <ul className="space-y-2">
@@ -191,9 +192,9 @@ const NavBar = () => {
                 padding: "5px 10px",
                 fontSize: "16px",
                 fontWeight: "bold",
-                width: '80px',
+                width: "80px",
                 "&:hover": {
-                  background: "#2D57A2", 
+                  background: "#2D57A2",
                 },
               }}
             >
@@ -213,7 +214,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <ul className={mobileMenu ? `mobileMenu` : `mobileMenuActive`}>
+      {/* <ul className={mobileMenu ? `mobileMenu` : `mobileMenuActive`}>
         <Link to="/">
           {" "}
           <li className="navbar-item">Home</li>
@@ -241,6 +242,112 @@ const NavBar = () => {
         <Link to="/signup">
           <li className="navbar-item">Sign Up </li>
         </Link>
+      </ul> */}
+      <ul className={mobileMenu ? `mobileMenu` : `mobileMenuActive`}>
+        <NavLink to="/">
+          <li className="navbar-item">Home</li>
+        </NavLink>
+        <li className="flex items-center navbar-item serviceNavItems">
+        Services <HiChevronDown size={23} />
+          <div className="dropDownMenu">
+            <ul className="space-y-3">
+              <li></li>
+              <li className="flex items-center capitalize mainSubmenu">
+                Web Development <HiChevronDown size={23} />
+                <Link to="/packages">
+                  <div className="flex flex-col md:flex-row gap-4 items-center justify-center md:justify-between  p-8 subMenu1 ">
+                    <div className="flex flex-col items-center justify-center menuBox">
+                      <div className="mb-4 iconsShapeWrap ">
+                        <FaCode size={40} />
+                      </div>
+                      <p>Custom (MERN) </p>
+                      <p>Website Development</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center menuBox">
+                      <div className="mb-4 iconsShapeWrap ">
+                        <FaWordpressSimple size={40} />
+                      </div>
+                      <p>Wordpress </p>
+                      <p>Development</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center menuBox">
+                      <div className="mb-4 iconsShapeWrap">
+                        <FaShopify size={40} />
+                      </div>
+                      <p>Shopify </p>
+                      <p>Development</p>
+                    </div>
+
+                    
+                  </div>
+                </Link>
+              </li>
+              <li className="flex items-center mainSubmenu2 ">
+                Mobile <HiChevronDown size={23} />
+                <Link to="/app-development">
+                  <div className="flex items-center justify-between p-8 subMenu2 ">
+                    <div className="flex flex-col items-center justify-center menuBox">
+                      <div className="mb-4 iconsShapeWrap ">
+                        <FaMobileScreen size={40} />
+                      </div>
+                      <p>Flutter </p>
+                    </div>
+
+                    <div className="flex flex-col items-center justify-center menuBox">
+                      <div className="mb-4 iconsShapeWrap ">
+                        <FaReact size={40} />
+                      </div>
+                      <p>React Native </p>
+                    </div>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <NavLink to="/erp">ERP Solutions</NavLink>{" "}
+              </li>
+              <li>Cloud & DevOps </li>
+              <li>UI/UX Design </li>
+              <li>Wordpress Development </li>
+              <li className="flex items-center teamHoverMenuItem ">
+                Dedicated Team <HiChevronDown size={23} />
+                <div className="teamSubMenu">
+                  <ul className="space-y-2">
+                    <li>Java Developer</li>
+                    <li>Node js Developer</li>
+                    <li>.NET Developer</li>
+                    <li>React js Developer</li>
+                    <li>Angular Developer</li>
+                    <li>UI/UX Designer </li>
+                  </ul>
+                </div>
+              </li>
+              <li>QA & Testing</li>
+              <li>Technology Consulting</li>
+              <li>Support & Maintenance </li>
+            </ul>
+          </div>
+        </li>
+        <NavLink to="/packages">
+          {" "}
+          <li className="navbar-item">Pricing </li>
+        </NavLink>
+        <NavLink to="/portfolio">
+          {" "}
+          <li className="navbar-item">Portfolio</li>
+        </NavLink>
+        <NavLink to="/careers">
+          {" "}
+          <li className="navbar-item">Careers</li>
+        </NavLink>
+        <NavLink to="/about">
+          {" "}
+          <li className="navbar-item">About</li>
+        </NavLink>
+        <NavLink to="/contact">
+          {" "}
+          <li className="navbar-item">Contact</li>
+        </NavLink>
       </ul>
     </Container>
   );

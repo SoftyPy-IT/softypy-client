@@ -10,7 +10,6 @@ const {id} = useParams()
 const [updateSingleService] = useUpdateSingleServiceMutation()
 
 const {data:singleServices} = useGetSingleServicesQuery(id)
-
   
   const onSubmit = (data) => {
     const {name, category, title, subtitle,description, priority} = data;
@@ -50,10 +49,10 @@ const {data:singleServices} = useGetSingleServicesQuery(id)
         >
             
             <option>Development</option>
-            <option>ERP</option>
-            <option>Design</option>
-            <option>Digital</option>
-            <option>SEO</option>
+                <option>ERP</option>
+                <option>Wordpress</option>
+                <option>Digital</option>
+                <option>SEO</option>
         </select>
         </div>
         <div className="singleForm">

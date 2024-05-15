@@ -112,6 +112,7 @@ top:-50px;
     .countDownWrap {
         grid-template-columns: repeat(2, 1fr);
         gap:20px;
+        place-items: center;
     }
     .countdown {
         width: 170px;

@@ -89,6 +89,8 @@
   z-index: 8888;
   font-size: 12px;
 }
+
+
 .serviceNavItems:hover .dropDownMenu {
   opacity: 1;
   transform: scaleY(1);
@@ -154,6 +156,7 @@
 .teamSubMenu{
   left:225px;
 }
+
 
 .teamHoverMenuItem:hover .teamSubMenu{
   opacity: 1;
@@ -271,9 +274,7 @@
   .sticky .bars span{
     background:#111 !important
   }
-  /* .sticky .bar span {
-    background-color: #fff;
-  } */
+
   .bar1 {
     transform: rotate(-45deg);
     position: absolute;
@@ -296,14 +297,34 @@
   }
 }
 @media only screen and (max-width: 768px) {
-
-  /* .bar span {
-    background: #fff;
-  } */
+  .menuBox{      
+    border-right:none;
+ 
+  }
 .sticky .bar span{
   background:black;
 }
 
+.dropDownMenu, .teamSubMenu {
+  width: 200px;
+}
+.teamSubMenu {
+  left: 201px;
+  top: 232px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.subMenu1 {
+  left:210px;
+  background:#40C7F4;
+  
+}
+.subMenu2{
+  left:50px;
+  top:80px;
+  background:#40C7F4;
+  width: 250px;
+  padding:10px 0px;
+}
 
 }
 
@@ -328,12 +349,39 @@
     right: 12px;
 }
 
+.teamSubMenu {
+  left: 0px;
+  top: 241px;
+  background: #40C7F4;
+  color: white;
+
+}
+.subMenu1 {
+  left: 0px;
+  top: 0px;
+  width:200px;
+  background-color: #40C7F4;
+  padding-left:0px;
+  border:none ;
+  
+}
+.subMenu2{
+  left:10px;
+}
+
 
 }
 @media only screen and (max-width: 400px) {
   .mobileMenu, .mobileMenuActive {
     width: 195px;
 }
+.subMenu1 {
+  right: 0px;
+}
+.subMenu2{
+ width: 220px;
+}
+
 
 }
 

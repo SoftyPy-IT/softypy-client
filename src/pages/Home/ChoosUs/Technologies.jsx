@@ -101,7 +101,7 @@ export default function VerticalTabs() {
               <Tab label="Programming" {...a11yProps(0)} />
               <Tab label="DATABASE" {...a11yProps(1)} />
               <Tab label="REPORTING" {...a11yProps(2)} />
-              <Tab label="PROJECT MANAGEMENT" {...a11yProps(3)} />
+              <Tab label="MANAGEMENT" {...a11yProps(3)} />
               <Tab label="TESTING" {...a11yProps(4)} />
             </Tabs>
             <TabPanel value={value} index={0}>

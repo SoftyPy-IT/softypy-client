@@ -10,14 +10,19 @@
 }
 .slickSliderImgWrap{
   width:200px;
+  margin:0 30px;
+  height: auto;
+}
+.slickSliderImgWrap img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 500px) {
-  .slider img {
-    width: 260px !important;
-  }
-  .slidersWraps{
-    width:290px !important;
-   overflow: hidden;
+  .slickSliderImgWrap{
+    width:170px;
+    margin:0 20px;
+
   }
 }

@@ -64,8 +64,8 @@ const Contact = () => {
     {
       id: 1,
       name: "Office Address",
-      title: " 42, Gulshan Avenue, Gulshan-1, Jabbar Tower (6th Floor), ",
-      text: "Dhaka-1212, Bangladesh",
+      title: " Ka-121, (Besides of IFIC Bank, 2nd floor),Kuril, Vatara, ",
+      text: "Dhaka-1229, Bangladesh",
       img: address,
     },
 
@@ -225,28 +225,28 @@ const Contact = () => {
               <div className="contacSocialIcon">
                 <FaFacebookF />
               </div>
-              <h4 className="my-2 text-3xl font-bold">33K</h4>
+              <h4 className="my-2 text-3xl font-bold">2K</h4>
               <strong>Follower</strong>
             </div>
             <div className="singleSocialMedia">
               <div className="contacSocialIcon">
                 <FaLinkedinIn />
               </div>
-              <h4 className="my-2 text-3xl font-bold">99K</h4>
+              <h4 className="my-2 text-3xl font-bold">2K</h4>
               <strong>Members</strong>
             </div>
-            <div className="activeSocial">
+            <div className="singleSocialMedia">
               <div className="contacSocialIcon">
                 <FaInstagram />
               </div>
-              <h4 className="my-2 text-3xl font-bold">59K</h4>
+              <h4 className="my-2 text-3xl font-bold">1K</h4>
               <strong>Followers</strong>
             </div>
             <div className="singleSocialMedia">
               <div className="contacSocialIcon">
                 <FaYoutube />
               </div>
-              <h4 className="my-2 text-3xl font-bold">150K</h4>
+              <h4 className="my-2 text-3xl font-bold">2K</h4>
               <strong>Subscribes</strong>
             </div>
           </section>

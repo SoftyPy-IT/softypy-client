@@ -26,10 +26,11 @@ const Footer = () => {
                   Dhaka-1212, Bangladesh
                 </p>
               </div>
-              <div className="flex flex-col md:flex-row mt-3 items-center">
+              <div className="flex  md:flex-row mt-3 items-center">
                 <img className="mr-2" src={location} alt="location" />
                 <p className="mt-3">
-                  Ka-121, (Besides of IFIC Bank, 2nd floor),Kuril, Vatara, Dhaka -1229
+                  Ka-121, (Besides of IFIC Bank, 2nd floor),Kuril, Vatara, Dhaka
+                  -1229
                 </p>
               </div>
             </div>
@@ -46,10 +47,10 @@ const Footer = () => {
               <p> Web Development</p>
             </Link>
             <Link to="/app-development">
-            {" "}
-            <p>APP Development</p>
-          </Link>
-       
+              {" "}
+              <p>APP Development</p>
+            </Link>
+
             <Link to="/erp">
               {" "}
               <p>ERP Solutions</p>
@@ -89,15 +90,15 @@ const Footer = () => {
             </Link>
 
             <div className="flex">
-              <FaPhoneAlt className='text-[#40C7F4] mr-2' size={20} />
+              <FaPhoneAlt className="text-[#40C7F4] mr-2" size={20} />
               <p> +880 1762-380594</p>
             </div>
             <div className="flex ">
-              <FaPhoneAlt className='text-[#40C7F4] mr-2' size={20} />
+              <FaPhoneAlt className="text-[#40C7F4] mr-2" size={20} />
               <p> +880 1670-405744</p>
             </div>
             <div className="flex ">
-              <FaEnvelope className='text-[#40C7F4] mr-2' size={20} />
+              <FaEnvelope className="text-[#40C7F4] mr-2" size={20} />
               <p>softypy@gmail.com</p>
             </div>
             <div className="mt-3">
@@ -124,7 +125,10 @@ const Footer = () => {
                     <FaInstagram />
                   </div>
                 </Link>
-                <Link target="_blank" to="https://www.youtube.com/@softacademybd5392">
+                <Link
+                  target="_blank"
+                  to="https://www.youtube.com/@softacademybd5392"
+                >
                   <div className="socialIcon">
                     <FaYoutube />
                   </div>
