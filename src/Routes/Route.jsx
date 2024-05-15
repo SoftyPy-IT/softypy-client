@@ -46,6 +46,8 @@ import SingleService from "../pages/SingleService/SingleService";
 import Website from "../pages/Website";
 import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
 import { API_URL } from "../utils/util";
+import WebDevelopment from "../pages/WebDevelopment/WebDevelopment";
+import Wordpress from "../pages/Wordpress/Wordpress";
 
 export const router = createBrowserRouter([
   {
@@ -85,6 +87,14 @@ export const router = createBrowserRouter([
       {
         path: "/packages",
         element: <Packages />,
+      },
+      {
+        path: "/mern",
+        element: <WebDevelopment/>,
+      },
+      {
+        path: "/wordpress",
+        element: <Wordpress/>,
       },
       {
         path: "/website",

@@ -68,8 +68,9 @@ const NavBar = () => {
                 <li></li>
                 <li className="flex items-center capitalize mainSubmenu">
                   Web Development <HiChevronDown size={23} />
-                  <Link to="/packages">
+           
                     <div className="flex items-center justify-between p-8 subMenu1 ">
+                      <Link to='/mern'>
                       <div className="flex flex-col items-center justify-center menuBox">
                         <div className="mb-4 iconsShapeWrap ">
                           <FaCode size={40} />
@@ -77,6 +78,8 @@ const NavBar = () => {
                         <p>Custom (MERN) </p>
                         <p>Website Development</p>
                       </div>
+                      </Link>
+                      <Link to='/wordpress'>
                       <div className="flex flex-col items-center justify-center menuBox">
                         <div className="mb-4 iconsShapeWrap ">
                           <FaWordpressSimple size={40} />
@@ -84,6 +87,7 @@ const NavBar = () => {
                         <p>Wordpress </p>
                         <p>Development</p>
                       </div>
+                      </Link>
                       <div className="flex flex-col items-center justify-center menuBox">
                         <div className="mb-4 iconsShapeWrap">
                           <FaShopify size={40} />
@@ -92,22 +96,8 @@ const NavBar = () => {
                         <p>Development</p>
                       </div>
 
-                      {/** 
-                 <div className="submenu">
-                   <ul>
-                     <li>Online Travel Agency (OTA) Website. </li>
-                     <li>Corporate Business Website</li>
-                     <li>E-commerce Website </li>
-                     <li>Nonprofit / Donation Websites </li>
-                     <li>Educational Websites </li>
-                     <li>Agency Website </li>
-                     <li>Real Estate Websites </li>
-                     <li>Health and Fitness Websites </li>
-                   </ul>
-                 </div>
-*/}
                     </div>
-                  </Link>
+                
                 </li>
                 <li className="flex items-center mainSubmenu2 ">
                   Mobile <HiChevronDown size={23} />
@@ -248,7 +238,7 @@ const NavBar = () => {
           <li className="navbar-item">Home</li>
         </NavLink>
         <li className="flex items-center navbar-item serviceNavItems">
-        Services <HiChevronDown size={23} />
+          Services <HiChevronDown size={23} />
           <div className="dropDownMenu">
             <ul className="space-y-3">
               <li></li>
@@ -277,8 +267,6 @@ const NavBar = () => {
                       <p>Shopify </p>
                       <p>Development</p>
                     </div>
-
-                    
                   </div>
                 </Link>
               </li>

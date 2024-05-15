@@ -167,7 +167,7 @@
 .menuBox{
   border-right:1px solid #ddd;
   padding: 0 15px;
-  width:220px;
+  /* width:220px; */
   margin:0 auto;
   text-align: center;
 }

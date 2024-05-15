@@ -43,7 +43,7 @@ function ThumbnailPlugin(mainRef) {
   };
 }
 
-export default function Review() {
+export default function Client() {
   const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
 
   const [sliderRef, instanceRef] = useKeenSlider({

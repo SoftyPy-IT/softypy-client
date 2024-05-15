@@ -9,10 +9,12 @@ import { useEffect, useRef } from "react";
 import { HiCheck } from "react-icons/hi";
 import HowSoftyPyWork from "./HowSoftyPyWork";
 import Ready from "./Ready";
-import PackagePrice2 from "./PackagePrice2";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import { Link } from "react-router-dom";
-import CommonButton from "../Shared/CommonButton/CommonButton";
+import MernPackage from "./MernPackage";
+import WordPressPackage from "./WordPressPackage";
+import WhyChoseOurPackage from "./WhyChoseOurPackage";
+import WantToTalk from "./WantToTalk";
 
 const Packages = () => {
   const ref = useRef(null);
@@ -24,14 +26,14 @@ const Packages = () => {
       <div className="shadow-lg">
         <NavBar />
       </div>
-      
+
       <Container>
         <div className="my-16">
           <SectionTitle title=' "Crafting Digital Excellence: Elevate Your Brand with Our Bespoke Web Designs"' />
         </div>
         <section className="my-10 bg-[#951FE]">
-          <div className="flex-col items-center justify-center lg:flex lg:flex-row lg:justify-between ">
-          <div className="mt-10 lg:mt-0 mx-auto packageLottieWrap w-full lg:max-w-[50%] websiteAnimations">
+          <div className="flex-col lg:items-start items-center justify-center lg:flex lg:flex-row lg:justify-between ">
+            <div className="mt-10 lg:mt-0 mx-auto packageLottieWrap w-full lg:w-[40%] websiteAnimations">
               <lottie-player
                 id="firstLottie"
                 ref={ref}
@@ -83,72 +85,26 @@ const Packages = () => {
                   <span> High-Security </span>
                 </li>
               </ul>
-             <Link to='/contact'>
-             <button className="bg-[#40C7F4] w-32  md:w-36 text-white mt-5 py-3 rounded-md ">
-             Request Now
-           </button>
-             </Link>
+              <Link to="/contact">
+                <button className="bg-[#40C7F4] w-32  md:w-36 text-white mt-5 py-3 rounded-md ">
+                  Request Now
+                </button>
+              </Link>
             </div>
-           
           </div>
         </section>
       </Container>
-
-      <PackagePrice2 />
+      <MernPackage />
+      <WordPressPackage />
       <HowSoftyPyWork />
-      <Container>
-        <div className="flex flex-col justify-between pt-10 lg:flex-row">
-          <h2 className="text-3xl md:text-[60px] leading-[60px] max-w-[100%] lg:w-[50%] font-semibold">
-            Why Choose Our Web Design Packages ?{" "}
-          </h2>
-          <div className="mt-5 lg:mt-44 lg:w-[50%]">
-            <p className="font-semibold">
-              At SoftyPy we redefine web design. Our packages blend creativity
-              and functionality to craft immersive digital experiences. Led by
-              passionate storytellers, our team ensures your website stands out,
-              resonates, and converts. From sleek interfaces to responsive
-              designs, we prioritize aesthetics and usability. But we're not
-              just about looks; we're about results. Our packages are engineered
-              to meet your business goals, enhancing conversions, brand
-              visibility, and user satisfaction. Don't settle for ordinary.
-              Choose [Your Company Name] and elevate your online presence to
-              extraordinary heights.
-            </p>
-          </div>
-        </div>
-      </Container>
+      <WhyChoseOurPackage />
 
       <Review />
       <Brand />
 
       <Technologies />
       <WorkPortfolio />
-      {/** 
-      <PackagePrice />
-*/}
-      <div className="sectionMargin">
-        <Container>
-          <div className="wantToTalk">
-            <h2 className="text-2xl md:text-4xl lg:text-[50px] lg:w-[40%] w-full text-center font-semibold">
-              Want to talks us ?{" "}
-            </h2>
-            <div className="mt-5 lg:mt-24 w-full text-center  xl:w-[60%]">
-              <p className="text-xl md:text-[80px]">softypy@gmail.com</p>
-              <p className=" mt-3 md:mt-14 md:mb-10 md:text-3xl lg:text-[80px]">
-                +88-01762-380594
-              </p>
-              <p className=" mt-5 md:mt-14 mb-10 md:text-3xl lg:text-[80px]">
-                +88-01303042561
-              </p>
-              <Link to='/contact'>
-              
-              <CommonButton text="Contact Us " />
-              </Link>
-
-            </div>
-          </div>
-        </Container>
-      </div>
+      <WantToTalk />
       <Ready />
     </div>
   );

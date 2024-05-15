@@ -11,6 +11,7 @@ export default function FrequentlyAskQuestions() {
         'The full form of ERP is Enterprise Resource Planning. As the name suggests ERP is a suite of software tools which helps businesses manage its various processes seamlessly. These set of software tools integrates the functions of various departments, branches, business units etc. and makes the business works as a single functional unit. It helps in better analysis and gives a bird eye view of the business. ERP Software can help reduce costs and overheads, ensure better communication, remove duplication, bring efficiency in a business..',
     },
     {
+      
       title: "How can an ERsP Software help my business ?",
       description:
         "ERP Software can help businesses to have greater insight and visibility which helps in better decision-making process. ERP Software can streamline your business processes by removing manual work and integrating all your departments or business units enabling information flow seamlessly. One small example can be an invoice, or a bill generated at retail or branch level will instantly update the inventory of the branch, GST is posted in accounts, CRM is updated, and Head Office is notified of the sale for generation of stock replenishment at the branch etc..",

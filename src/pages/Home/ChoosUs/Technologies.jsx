@@ -74,7 +74,7 @@ function a11yProps(index) {
   };
 }
 
-export default function VerticalTabs() {
+export default function Technologies() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {

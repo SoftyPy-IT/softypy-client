@@ -16,8 +16,8 @@ const AppDevelopment = () => {
       </div>
       <div className="sectionMargin">
         <Container>
-          <div className="flex flex-wrap items-center justify-between ">
-            <div className="w-[100%]  lg:max-w-[40%] max-auto xl:order-3  order-4">
+          <div className="flex flex-col xl:flex-row gap-5 items-center justify-between">
+            <div className="w-[100%]  lg:max-w-[50%] max-auto xl:order-3  order-4">
               <h2 className="text-3xl font-bold xl:text-7xl"> Android app</h2>
               <h2 className="text-3xl font-bold xl:text-7xl">development</h2>
               <h2 className="text-3xl font-bold xl:text-7xl"> services </h2>
@@ -39,7 +39,7 @@ const AppDevelopment = () => {
           </div>
           <AppCategories />
         </Container>
-        <AppPortFolio />
+        {/* <AppPortFolio /> */}
         <Brand />
         <Review />
       </div>
