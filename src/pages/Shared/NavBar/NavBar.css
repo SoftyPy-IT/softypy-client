@@ -325,6 +325,9 @@
   width: 250px;
   padding:10px 0px;
 }
+.security {
+  display: none;
+ }
 
 }
 
@@ -341,9 +344,7 @@
     width: 2.5rem;
     height: 2.5rem;
   }
-  .security {
-   display: none;
-  }
+
 
   .whatsApp {
     right: 12px;

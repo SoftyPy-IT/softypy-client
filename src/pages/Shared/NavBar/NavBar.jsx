@@ -68,9 +68,8 @@ const NavBar = () => {
                 <li></li>
                 <li className="flex items-center capitalize mainSubmenu">
                   Web Development <HiChevronDown size={23} />
-           
-                    <div className="flex items-center justify-between p-8 subMenu1 ">
-                      <Link to='/mern'>
+                  <div className="flex items-center justify-between p-8 subMenu1 ">
+                    <Link to="/mern">
                       <div className="flex flex-col items-center justify-center menuBox">
                         <div className="mb-4 iconsShapeWrap ">
                           <FaCode size={40} />
@@ -78,8 +77,8 @@ const NavBar = () => {
                         <p>Custom (MERN) </p>
                         <p>Website Development</p>
                       </div>
-                      </Link>
-                      <Link to='/wordpress'>
+                    </Link>
+                    <Link to="/wordpress">
                       <div className="flex flex-col items-center justify-center menuBox">
                         <div className="mb-4 iconsShapeWrap ">
                           <FaWordpressSimple size={40} />
@@ -87,17 +86,15 @@ const NavBar = () => {
                         <p>Wordpress </p>
                         <p>Development</p>
                       </div>
-                      </Link>
-                      <div className="flex flex-col items-center justify-center menuBox">
-                        <div className="mb-4 iconsShapeWrap">
-                          <FaShopify size={40} />
-                        </div>
-                        <p>Shopify </p>
-                        <p>Development</p>
+                    </Link>
+                    <div className="flex flex-col items-center justify-center menuBox">
+                      <div className="mb-4 iconsShapeWrap">
+                        <FaShopify size={40} />
                       </div>
-
+                      <p>Shopify </p>
+                      <p>Development</p>
                     </div>
-                
+                  </div>
                 </li>
                 <li className="flex items-center mainSubmenu2 ">
                   Mobile <HiChevronDown size={23} />
@@ -183,6 +180,7 @@ const NavBar = () => {
                 fontSize: "16px",
                 fontWeight: "bold",
                 width: "80px",
+                display: { md: "none", lg:'block'},
                 "&:hover": {
                   background: "#2D57A2",
                 },

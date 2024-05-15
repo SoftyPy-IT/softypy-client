@@ -8,9 +8,9 @@ const BoostSection = () => {
         
            <Container>
            <div className="boostSection">
-           <div className="boostSectionLeft pt-44  text-white ">
-               <h3 className="text-2xl md:text-4xl font-bold my-5 ">Do You Want To Boost Your Business?</h3>
-               <p className="text-xl">Boost Your Business For Increase Sales By Technical Strategies. If You Want To Boost Your Business , You Just Drop A Message In Contact.</p>
+           <div className="boostSectionLeft pt-36 md:pt-44  text-white ">
+               <h3 className="text-xl md:text-4xl font-bold my-5 ">Do You Want To Boost Your Business?</h3>
+               <p className="md:text-xl text-sm">Boost Your Business For Increase Sales By Technical Strategies. If You Want To Boost Your Business , You Just Drop A Message In Contact.</p>
                <div className="mt-5">
                <CommonButton text='Contact Us'></CommonButton>
                </div>
