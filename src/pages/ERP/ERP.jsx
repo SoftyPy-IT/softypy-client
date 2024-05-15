@@ -37,7 +37,7 @@ const ERP = () => {
       </div>
       <div className="aboutContainers">
         <div className="aboutContent">
-          <div className="flex items-center uppercase bg-[#40C7F4] text-white rounded-md w-[120px] justify-between mb-5 px-3 py-3">
+          <div className="flex items-center uppercase bg-[#40C7F4] aboutBtnTopWraps text-white rounded-md w-[120px] justify-between mb-5 px-3 py-3">
             <p>Home</p>
             <FaAngleRight />
             <p>ERP </p>
@@ -48,9 +48,9 @@ const ERP = () => {
         </div>
       </div>
 
-      <div className="px-3 lg:px-0  erpWraps pt-16 ">
+      <div className="px-3 lg:px-0  erpWraps pt-12 md:pt-16 ">
         <div>
-          <div className="max-w-[1000px] pl-0 lg:pl-8 ">
+          <div className="w-full md:max-w-[1000px] pl-0 lg:pl-8 ">
             <SectionTitle
               title="ERP Applications Platforms"
               text="Best fitting and sustainable infrastructure for your business."

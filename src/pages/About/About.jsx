@@ -83,7 +83,7 @@ const About = () => {
             <FaAngleRight />
             <p>about us </p>
           </div>
-          <h2 className=" text-2xl font-bold uppercase lg:text-5xl  md:text-center ">
+          <h2 className="text-xl md:text-2xl font-bold uppercase lg:text-5xl  md:text-center ">
             Our Expert TEAM
           </h2>
         </div>
@@ -146,7 +146,7 @@ const About = () => {
               <div className="order-2 missionRightSide">
                 <div>
                   <h3 className="text-5xl font-bold text-[#40C7F4]">
-                    Vission{" "}
+                    Vision
                   </h3>
                   <p className="mt-3 leading-8">
                     SoftyPy envisions a digital realm where businesses not only

@@ -4,7 +4,6 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { FaQuoteLeft } from "react-icons/fa";
-import SectionTitle from "../../pages/Shared/SectionTitle/SectionTitle";
 import Container from "../../ui/Container";
 import { useGetAllReviewsQuery } from "../../redux/features/review/reviewApi";
 import NavBar from "../Shared/NavBar/NavBar";
@@ -70,14 +69,25 @@ export default function Client() {
 
   return (
     <div>
-    <div className="shadow-lg">
+    {/* <div className="shadow-lg">
       <NavBar/>
-    </div>
-      <Container>
-        <div className="mb-8 md:mb-20 pt-20">
-          <SectionTitle title="What Our Client Say "></SectionTitle>
+    </div> */}
+    <div className="shadow-lg">
+        <NavBar />
+      </div>
+      <div className="careerContainerWraps">
+        <div className="careerText">
+          <h3 className=" md:text-4xl xl:text-7xl font-bold">
+          What Our Client Say
+          </h3>
         </div>
-        <div className="reviewSliderWrap ">
+      </div>
+
+      <Container>
+        {/* <div className="mb-8 md:mb-20 pt-20">
+          <SectionTitle title="What Our Client Say "></SectionTitle>
+        </div> */}
+        <div className="reviewSliderWrap sectionMargin">
           <div ref={sliderRef} className="keen-slider keenSlider">
             <div className="keen-slider__slide number-slide1">
               <div className="swiperWrap">

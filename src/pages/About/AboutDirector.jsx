@@ -43,7 +43,7 @@ const AboutDirector = () => {
         </div>
         <div className="aboutRightContainer aboutContainer">
           <div>
-            <h2 className="text-3xl font-bold">MD. SHAHIN MIAH</h2>
+            <h2 className="text-xl md:text-3xl font-bold">MD. SHAHIN MIAH</h2>
             <b>Managing Director </b>
             <p>
               My dream is to establish SoftyPy as a centre of excellence in the
@@ -66,7 +66,7 @@ const AboutDirector = () => {
         </div>
         <div className="aboutRightContainer aboutContainer">
           <div>
-            <h2 className="text-3xl font-bold">NUSUL ISLAM</h2>
+            <h2 className="text-xl md:text-3xl font-bold">NUSUL ISLAM</h2>
             <b>Chief Executive Officer (CEO) </b>
             <p>
               I am so grateful that you have taken the time to consider

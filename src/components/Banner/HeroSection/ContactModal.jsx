@@ -6,11 +6,11 @@ const ContactModal = ({ onClose }) => {
       <div className="relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[420px] sm:max-w-[600px] lg:max-w-[984px] p-4 max-h-[90vh] overflow-auto">
         <div className="bg-white shadow-md dark:bg-[#12141D] rounded-2xl  overflow-hidden">
           <IoCloseSharp
-            size={40}
+            size={30}
             onClick={onClose}
             width={24}
             height={24}
-            className="text-red-600 absolute top-10 right-10 cursor-pointer"
+            className="text-red-600 absolute md:top-10 md:right-10 right-8 cursor-pointer"
           />
           <ContactForm onClose={onClose}/>
         </div>

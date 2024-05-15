@@ -82,7 +82,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="  bg-[#40C7F4] w-[310px] h-10 text-white businessBtn"
+            className="  bg-[#40C7F4] w-[100px] md:w-[310px] h-10 text-white businessBtn"
           >
             Login{" "}
           </button>

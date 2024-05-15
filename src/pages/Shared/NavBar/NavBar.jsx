@@ -122,7 +122,7 @@ const NavBar = () => {
                 </li>
                 <li>Cloud & DevOps </li>
                 <li>UI/UX Design </li>
-                <li>Wordpress Development </li>
+                {/* <li>Wordpress Development </li> */}
                 <li className="flex items-center teamHoverMenuItem relative ">
                   Dedicated Team <HiChevronDown size={23} />
                   <div className="teamSubMenu">
@@ -294,7 +294,7 @@ const NavBar = () => {
               </li>
               <li>Cloud & DevOps </li>
               <li>UI/UX Design </li>
-              <li>Wordpress Development </li>
+              {/* <li>Wordpress Development </li> */}
               <li className="flex items-center teamHoverMenuItem ">
                 Dedicated Team <HiChevronDown size={23} />
                 <div className="teamSubMenu">

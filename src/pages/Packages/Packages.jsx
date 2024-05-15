@@ -23,8 +23,18 @@ const Packages = () => {
   });
   return (
     <div>
+      {/* <div className="shadow-lg">
+        <NavBar />
+      </div> */}
       <div className="shadow-lg">
         <NavBar />
+      </div>
+      <div className="careerContainerWraps">
+        <div className="careerText">
+          <h3 className="text-xl md:text-4xl xl:text-7xl font-bold">
+           Choose Your Package !
+          </h3>
+        </div>
       </div>
 
       <Container>

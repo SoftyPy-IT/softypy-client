@@ -110,29 +110,19 @@ export default function AskAndQuestion() {
             >
               <span className="text-xl">{PerAccordion.title}</span>
               <span  className="rounded-full bg-blue-100 p-2">
-                <svg
-                  className="ml-8 mr-7 shrink-0 fill-[#00A2FF]"
-                  width="16"
-                  height="16"
+              <svg
+                  className={`ml-2 md:ml-8 mr-2 md:mr-7 shrink-0 fill-[#00A2FF] transition-transform duration-200 ${
+                    isOpen === idx ? "rotate-180" : ""
+                  } w-4  h-3 md:w-4 md:h-4`}
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <rect y="5" width="16" height="2" rx="1" />
                   <rect
                     y="7"
-                    width="16"
+                    width="13"
                     height="2"
                     rx="1"
-                    className={`origin-center transform transition duration-200 ease-out ${
-                      isOpen === idx && "!rotate-180"
-                    }`}
-                  />{" "}
-                  <rect
-                    y="7"
-                    width="16"
-                    height="2"
-                    rx="1"
-                    className={`origin-center rotate-90 transform transition duration-200 ease-out ${
-                      isOpen === idx && "!rotate-180"
-                    }`}
+                    className="origin-center rotate-90"
                   />
                 </svg>
               </span>

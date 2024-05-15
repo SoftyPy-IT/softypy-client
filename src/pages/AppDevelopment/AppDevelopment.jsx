@@ -21,7 +21,7 @@ const AppDevelopment = () => {
               <h2 className="text-3xl font-bold xl:text-7xl"> Android app</h2>
               <h2 className="text-3xl font-bold xl:text-7xl">development</h2>
               <h2 className="text-3xl font-bold xl:text-7xl"> services </h2>
-              <p className="my-5 text-xl">
+              <p className="my-5 text-xl mb-5">
                 Android apps that help businesses take their next big step
                 forward and rise quickly to Google Play’s top charts.
               </p>
@@ -31,7 +31,7 @@ const AppDevelopment = () => {
                 </button>
               </Link>
             </div>
-            <div className='order-3 mb-5 lg:mb-0'>
+            <div className='order-3 mb-5 lg:mb-0 appImagesWrap'>
             
             
             <img src={app} alt="apps" />

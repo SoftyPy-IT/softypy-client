@@ -22,7 +22,7 @@ const Portfolio = () => {
           </div>
           <div className="aboutContainers portfolioContainer">
             <div className="aboutContent">
-              <div className="flex items-center uppercase bg-[#40C7F4] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
+              <div className="flex items-center  aboutBtnTopWraps uppercase bg-[#40C7F4] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
                 <p>Home</p>
                 <FaAngleRight />
                 <p>Portfolio </p>

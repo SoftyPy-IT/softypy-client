@@ -17,8 +17,8 @@ const Footer = () => {
       <div className="footerWrap sectionMargin">
         <div className="contactUs">
           <div>
-            <div className="w-56 text-left">
-              <img className="object-cover " src={softypy} alt="softypy" />
+            <div className="w-full md:w-56 text-left">
+              <img className="object-cover md:w-full w-[150px] mx-auto" src={softypy} alt="softypy" />
               <div className="md:flex flex-col md:flex-row mt-3 items-center hidden ">
                 <img className="mr-2" src={location} alt="location" />
                 <p className="mt-3">
@@ -27,7 +27,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex  md:flex-row mt-3 items-center">
-                <img className="mr-2" src={location} alt="location" />
+                <img className="mr-2"  src={location} alt="location" />
                 <p className="mt-3">
                   Ka-121, (Besides of IFIC Bank, 2nd floor),Kuril, Vatara, Dhaka
                   -1229
@@ -42,9 +42,13 @@ const Footer = () => {
                 Services{" "}
               </h3>
             </Link>
-            <Link to="/packages">
+            <Link to="/mern">
               {" "}
               <p> Web Development</p>
+            </Link>
+            <Link to="/wordpress">
+              {" "}
+              <p> Wordpress Development</p>
             </Link>
             <Link to="/app-development">
               {" "}
@@ -139,7 +143,7 @@ const Footer = () => {
         </div>
         <hr className="mt-5" />
         <div className="py-3 copyRight flex flex-col md:flex-row justify-center md:justify-between gap-2 items-center ">
-          <p className="sm:mb-5">All Right reserve | @ 2023 - SoftyPy </p>
+          <small className=" sm:mb-5">All Right reserve | @ 2023 - SoftyPy </small>
           <div className="flex gap-2 justify-center flex-wrap items-center md:flex-row flex-col md:justify-between termCondition ">
             <p>Term & Conditions </p>
             <p>Privacy policy </p>
