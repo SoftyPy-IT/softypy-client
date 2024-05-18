@@ -3,22 +3,28 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Container from "../../../ui/Container";
 import { useGetAllSingleServicesQuery } from "../../../redux/features/singleServices/singleServicesApi";
-import web from "../../../../public/assets/icon6.png";
-import digital from "../../../../public/assets/icon8.png";
-import erp from "../../../../public/assets/icon3.png";
-import wordpress from "../../../../public/assets/icon10.png";
-import seo from "../../../../public/assets/icon9.png";
 
 const Services = () => {
-  const { data: services } = useGetAllSingleServicesQuery();
+  const { data: services, isLoading, isError } = useGetAllSingleServicesQuery({ allData: true });
 
-  console.log(services);
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  if (isError) {
+    return <p>Error fetching data.</p>;
+  }
+
+  if (!Array.isArray(services?.services) || services.length === 0) {
+    return <p>No data available.</p>;
+  }
+  const sortServicesData = services?.services?.slice()?.sort((a,b)=>(a.priority - b.priority ))
 
   return (
     <Container className="">
       <div className="sectionMargin">
         <div className="servicesWraps">
-          <h3 className="text-3xl md:text-4xl mb-5 text-[#2D57A2] font-bold text-center md:hidden block ">
+          <h3 className="text-3xl md:text-4xl mb-5 text-[#2D57A2] font-bold text-center md:hidden block">
             Our Services
           </h3>
           <div className="ourServicesWrap">
@@ -38,32 +44,18 @@ const Services = () => {
             <div className="ourServicesRightSide">
               <div>
                 <div className="grid grid-cols-2 place-items-center">
-                  {services?.map((card) => (
+                  {sortServicesData?.map((card) => (
                     <div key={card._id} className="cards">
                       <div className="inner-box">
                         <div className="cards-front cards-front5">
                           <div className="iconWrap">
-                            {card?.category.toLowerCase() == "development" ? (
-                              <img src={web} alt="icon" />
-                            ) : null}
-                            {card?.category.toLowerCase() == "digital" ? (
-                              <img src={digital} alt="icon" />
-                            ) : null}
-                            {card?.category.toLowerCase() == "erp" ? (
-                              <img src={erp} alt="icon" />
-                            ) : null}
-                            {card?.category.toLowerCase() == "seo" ? (
-                              <img src={seo} alt="icon" />
-                            ) : null}
-                            {card?.category.toLowerCase() == "wordpress" ? (
-                              <img src={wordpress} alt="icon" />
-                            ) : null}
+                            <img src={card.image} alt="icon" />
                           </div>
                           <p className="mt-2 font-bold">{card.category}</p>
                         </div>
                         <div className="cards-back text-white">
                           <div className="cards-back-content md:px-3 text-center">
-                            <b className="block"> {card.category}</b>
+                            <b className="block">{card.category}</b>
                             <small className="my-1 md:my-3">
                               {card?.description?.slice(0, 80)}...
                             </small>
@@ -79,7 +71,6 @@ const Services = () => {
                                 </div>
                               </Link>
                             </div>
-                            {/* type=${packageType} */}
                           </div>
                         </div>
                       </div>

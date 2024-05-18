@@ -223,11 +223,26 @@
 .right-side img {
   width: 500px;
 }
+@media only screen and (max-width:1440px){
+
+.animationIcon{
+  right: -60px;
+  top: -119px;
+}
+
+}
 @media only screen and (max-width:1024px){
   .header-content {
     width: 100%;
     padding-left: 40px;
 }
+.animationIcon, .node, .js, .flutter {
+  width: 70px;
+  position: absolute;
+  right: -60px;
+  top: -119px;
+}
+
 }
 
 @media only screen and (max-width: 500px) {

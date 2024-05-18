@@ -59,7 +59,7 @@ const CareersApply = () => {
                 <input
                 name='name'
                 {...register("name", { required: true })}
-                  className=" peer border-b applyInput border-[#40C7F4] py-2 text-[#40C7F4] focus:outline-none "
+                  className="  peer border-b applyInput border-[#40C7F4] py-2 text-[#40C7F4] focus:outline-none "
                   placeholder=""
                   type="text"
                 />

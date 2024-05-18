@@ -3,14 +3,10 @@ import { baseApi } from "../../api/baseApi";
 export const singleServiceApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
       getAllSingleServices: builder.query({
-        query: () => {
-          return {
-            url: `/singleServices`,
-            method: "GET",
-          };
-        },
-        providesTags: ["singleService"],
+        query: ({ page = 1, limit = 5, allData = false }) =>
+          allData ? `singleServices` : `singleServices?page=${page}&limit=${limit}`,
       }),
+      
       getSingleServices: builder.query({
         query: (id) => `/singleServices/${id}`,
       }),

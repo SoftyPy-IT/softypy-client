@@ -41,9 +41,9 @@
 
 @media only screen and (max-width: 500px) {
   .bannerBtn {
-    width: 165px;
+    width: 135px;
     margin: 0 auto;
-  }
+}
   .cardLine{
     display: none;
   }

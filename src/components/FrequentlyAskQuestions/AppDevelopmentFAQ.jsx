@@ -90,7 +90,7 @@ export default function AppDevelopmentFAQ() {
             >
               <div className="flex items-center">
                 {accordion.icon}
-                <span className="text-xl ml-3">{accordion.title}</span>
+                <span className=" text-sm md:text-xl ml-3">{accordion.title}</span>
               </div>
               <span className="rounded-full bg-blue-100 p-2">
                 <svg

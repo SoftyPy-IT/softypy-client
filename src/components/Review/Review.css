@@ -81,7 +81,10 @@
  .videoWidth, .reviewContent {
     width: 100%;
   }
-
+  .reviewImg {
+    width: 200px;
+    height: 200px;
+  }
 
   }
 
@@ -105,16 +108,15 @@
     width: 100%;
   }
   .reviewImg {
-    width: 100%;
-    height: 100%;
-  }
-  .reviewImg {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
     object-fit: contain;
     margin: 0 auto;
-}
+  }
+
+
+
 
 }
 

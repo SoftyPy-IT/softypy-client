@@ -1,89 +1,81 @@
-import {
-  FaTrashAlt,
-  FaLongArrowAltLeft,
-  FaLongArrowAltRight,
-  FaEdit,
-} from "react-icons/fa";
-import Swal from "sweetalert2";
-import {
-  useDeleteSingleServiceMutation,
-  useGetAllSingleServicesQuery,
-} from "../../../redux/features/singleServices/singleServicesApi";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { FaTrashAlt, FaLongArrowAltLeft, FaLongArrowAltRight, FaEdit } from 'react-icons/fa';
+import Swal from 'sweetalert2';
+import { useDeleteSingleServiceMutation, useGetAllSingleServicesQuery } from '../../../redux/features/singleServices/singleServicesApi';
+import { Link } from 'react-router-dom';
 
 const SingleServices = () => {
-  const { data: services, isLoading, isError } = useGetAllSingleServicesQuery();
+  const [page, setPage] = useState(1);
+  const limit = 3;
+  const { data: servicesData, isLoading, isError } = useGetAllSingleServicesQuery({ page, limit });
   const [deleteSingleService] = useDeleteSingleServiceMutation();
 
   if (isLoading) {
     return <p>Loading...........</p>;
   }
   if (isError) {
-    return <p>Something went to wrong </p>;
+    return <p>Something went wrong</p>;
   }
-
 
   const handleDelete = (id) => {
     Swal.fire({
-      title: "Are you sure?",
-      text: "You want to delete this services !",
-      icon: "warning",
+      title: 'Are you sure?',
+      text: 'You want to delete this service!',
+      icon: 'warning',
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!",
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!',
     }).then((result) => {
-      deleteSingleService(id);
-      if (result.isSuccess) {
-        Swal.fire({
-          title: "Deleted!",
-          text: "Single Services deleted successfully.",
-          icon: "success",
-        });
+      if (result.isConfirmed) {
+        deleteSingleService(id);
+        Swal.fire('Deleted!', 'Single service deleted successfully.', 'success');
       }
     });
   };
 
+  const totalPages = Math.ceil(servicesData.total / limit);
+
+  const sortedServices = [...servicesData.services].sort((a, b) => a.priority - b.priority);
+
   return (
     <div className="mt-10 mb-24 w-full">
       <h3 className="text-xl text-center mb-3 font-bold">
-        Total Services {services.length}
+        Total Services {servicesData.total}
       </h3>
-      <div className="overflow-x-auto ">
-        <table className="table ">
+      <div className="overflow-x-auto">
+        <table className="table">
           <thead className="tableWrap">
             <tr>
-              <th>Image</th>
-              <th>Category </th>
+              <th>#</th>
+              <th>Category</th>
               <th>Title</th>
-              <th>Sub title </th>
+              <th>Sub title</th>
+              <th>Image</th>
               <th>Priority</th>
               <th colSpan={2}>Action</th>
             </tr>
           </thead>
           <tbody>
-            {services.map((service, i) => (
+            {sortedServices.map((service, i) => (
               <tr key={service._id}>
-                <td>{i + 1}</td>
-                <td>{service.category} </td>
+                <td>{i + 1 + (page - 1) * limit}</td>
+                <td>{service.category}</td>
                 <td>{service.title}</td>
-                <td>{service.subtitle} </td>
-                <td>{service.priority} </td>
+                <td>{service.subtitle}</td>
+                <td>
+                  <img className="w-20 h-20 mx-auto" src={service.image} alt="services" />
+                </td>
+                <td>{service.priority}</td>
                 <td>
                   <div className="editIconWrap">
-                    <Link
-                      to={`/dashboard/updatedSingleServices/${service._id}`}
-                    >
+                    <Link to={`/dashboard/updatedSingleServices/${service._id}`}>
                       <FaEdit className="editIcon" />
                     </Link>
                   </div>
                 </td>
-               
                 <td>
-                  <div
-                    onClick={() => handleDelete(service._id)}
-                    className="editIconWrap"
-                  >
+                  <div onClick={() => handleDelete(service._id)} className="editIconWrap">
                     <FaTrashAlt className="deleteIcon" />
                   </div>
                 </td>
@@ -94,15 +86,15 @@ const SingleServices = () => {
       </div>
       <div className="pagination">
         <div className="paginationBtn">
-          <button>
+          <button onClick={() => setPage((prev) => Math.max(prev - 1, 1))} disabled={page === 1}>
             <FaLongArrowAltLeft className="arrowLeft" />
           </button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button key={i} onClick={() => setPage(i + 1)} className={page === i + 1 ? 'active' : ''}>
+              {i + 1}
+            </button>
+          ))}
+          <button onClick={() => setPage((prev) => Math.min(prev + 1, totalPages))} disabled={page === totalPages}>
             <FaLongArrowAltRight className="arrowRight" />
           </button>
         </div>
