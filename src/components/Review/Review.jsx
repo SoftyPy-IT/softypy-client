@@ -1,6 +1,4 @@
 /* eslint-disable no-useless-escape */
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable react/no-unescaped-entities */
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./Review.css";
@@ -44,8 +42,10 @@ function ThumbnailPlugin(mainRef) {
 }
 
 export default function Review() {
-  const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
- 
+  const { data: reviewsData, isLoading, isError } = useGetAllReviewsQuery({ limit: -1 }); // 
+
+  const reviews = reviewsData?.reviews || [];
+
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
   });
@@ -121,9 +121,7 @@ export default function Review() {
                   <img src={review?.image} alt="thumbnail" />
                   {review?.videoUrl ? (
                     <img
-                      src={`https://img.youtube.com/vi/${getYoutubeVideoId(
-                        review?.videoUrl
-                      )}/0.jpg`}
+                      src={`https://img.youtube.com/vi/${getYoutubeVideoId(review?.videoUrl)}/0.jpg`}
                       alt="thumbnail"
                     />
                   ) : (
@@ -140,8 +138,7 @@ export default function Review() {
 }
 
 function getYoutubeVideoId(url) {
-  const regExp =
-    /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
   const match = url?.match(regExp);
   if (match && match[2].length === 11) {
     return match[2];

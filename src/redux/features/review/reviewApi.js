@@ -3,11 +3,8 @@ import { baseApi } from "../../api/baseApi";
 export const reviewApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getAllReviews: builder.query({
-      query: () => ({
-        url: "/reviews",
-        method: "GET",
-      }),
-      providesTags: ['reviews'],
+      query: ({ page = 1, limit = 3, search = "" } = {}) => `/reviews?page=${page}&limit=${limit}&search=${search}`,
+      providesTags: ["Reviews"],
     }),
     createReviews: builder.mutation({
       query: (data) => ({

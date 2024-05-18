@@ -1,64 +1,97 @@
 import {
   FaTrashAlt,
-
   FaLongArrowAltLeft,
   FaLongArrowAltRight,
   FaEdit,
 } from "react-icons/fa";
-import {Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { useState, useEffect } from "react";
 import {
   useDeleteReviewMutation,
   useGetAllReviewsQuery,
 } from "../../../redux/features/review/reviewApi";
+import { TextField } from "@mui/material";
 
 const ReviewList = () => {
-  const navigate = useNavigate();
-  const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
-  console.log('helllo', reviews)
+  const [page, setPage] = useState(1);
+  const [search, setSearch] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState(search);
+
+  // Debounce the search input to avoid too many API calls
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedSearch(search);
+    }, 500);
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [search]);
+
+  // Refetch data when debouncedSearch or page changes
+  const { data, isLoading, isError } = useGetAllReviewsQuery({ page, search: debouncedSearch });
+
   const [deleteReview] = useDeleteReviewMutation();
 
   if (isLoading) {
     return <p>Loading...........</p>;
   }
   if (isError) {
-    return <p>Something went to wrong </p>;
+    return <p>Something went wrong </p>;
   }
+
+  const reviews = data.reviews || [];
+  const totalPages = data.pages;
 
   const handleDelete = (id) => {
     Swal.fire({
       title: "Are you sure?",
-      text: "You want to delete this services !",
+      text: "You want to delete this review!",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
-      deleteReview(id);
-      if (result.isSuccess) {
-        Swal.fire({
-          title: "Deleted!",
-          text: "Review deleted successfully.",
-          icon: "success",
-        });
+      if (result.isConfirmed) {
+        deleteReview(id)
+          .unwrap()
+          .then(() => {
+            Swal.fire({
+              title: "Deleted!",
+              text: "Review deleted successfully.",
+              icon: "success",
+            });
+          });
       }
     });
+  };
 
-    navigate("/dashboard/reviews");
+  const handlePageChange = (newPage) => {
+    setPage(newPage);
   };
 
   return (
     <div className="mt-5 mb-24 w-full">
       <h3 className="text-xl text-center mb-3 font-bold">
-        Total Reviews {reviews.length}
+        Total Reviews {data.total}
       </h3>
-      <div className="overflow-x-auto ">
-        <table className="table ">
+      <TextField
+        id="outlined-basic"
+        label="Search here"
+        sx={{ margin: "20px 10px", width: '300px' }}
+        size="small"
+        variant="outlined"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+      <div className="overflow-x-auto">
+        <table className="table">
           <thead className="tableWrap">
             <tr>
-              <th>SL NO </th>
-              <th>Name </th>
+              <th>SL NO</th>
+              <th>Name</th>
               <th>Title</th>
               <th>Image</th>
               <th colSpan={2}>Action</th>
@@ -67,19 +100,19 @@ const ReviewList = () => {
           <tbody>
             {reviews.map((review, i) => (
               <tr key={review._id}>
-                <td>{i + 1}</td>
-                <td>{review.name} </td>
+                <td>{(page - 1) * 10 + i + 1}</td>
+                <td>{review.name}</td>
                 <td>{review.title}</td>
-                <td>  <img
-                    className="w-20 h-20 mx-auto rounded-full "
+                <td>
+                  <img
+                    className="w-20 h-20 mx-auto rounded-full"
                     src={review.image}
-                    alt="services"
-                  /></td>
+                    alt="review"
+                  />
+                </td>
                 <td>
                   <div className="editIconWrap">
-                    <Link
-                      to={`/dashboard/update-reviews/${review._id}`}
-                    >
+                    <Link to={`/dashboard/update-reviews/${review._id}`}>
                       <FaEdit className="editIcon" />
                     </Link>
                   </div>
@@ -99,15 +132,25 @@ const ReviewList = () => {
       </div>
       <div className="pagination">
         <div className="paginationBtn">
-          <button>
+          <button
+            onClick={() => handlePageChange(page - 1)}
+            disabled={page === 1}
+          >
             <FaLongArrowAltLeft className="arrowLeft" />
           </button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>
+          {[...Array(totalPages).keys()].map((p) => (
+            <button
+              key={p + 1}
+              onClick={() => handlePageChange(p + 1)}
+              className={page === p + 1 ? "active" : ""}
+            >
+              {p + 1}
+            </button>
+          ))}
+          <button
+            onClick={() => handlePageChange(page + 1)}
+            disabled={page === totalPages}
+          >
             <FaLongArrowAltRight className="arrowRight" />
           </button>
         </div>
