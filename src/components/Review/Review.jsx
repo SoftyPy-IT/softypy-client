@@ -43,7 +43,6 @@ function ThumbnailPlugin(mainRef) {
   };
 }
 
-
 export default function Review() {
   const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
  
@@ -66,7 +65,7 @@ export default function Review() {
   }
 
   if (isError) {
-    return <p>Something went to wrong </p>;
+    return <p>Something went wrong </p>;
   }
 
   return (
@@ -77,222 +76,62 @@ export default function Review() {
         </div>
         <div className="reviewSliderWrap ">
           <div ref={sliderRef} className="keen-slider keenSlider">
-            <div className="keen-slider__slide number-slide1">
-              <div className="swiperWrap">
-                <div className={`${reviews[0]?.image ? "reviewImg" : ""}`}>
-                  {reviews[0]?.image ? (
-                    <img src={reviews[0]?.image} alt="" />
-                  ) : (
-                    <iframe
-                      className="videoWidth"
-                      src={reviews[0]?.videoUrl}
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  )}
-                </div>
-                <div className="reviewContent mt-3">
-                  <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">{reviews[0]?.name}</h3>
-                  <span className=" text-[12px] md:text-sm text-semibold ">{reviews[0]?.title}</span>
-                  <blockquote className="flex mt-3">
-                    <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">
-                      {reviews[0]?.description.slice(0, 200)}....
-                    </p>
-                  </blockquote>
-                  <Link to="/client">
-                    <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                      <button>See More </button>
-                      <FaArrowRight className="historyIcon" />
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide1">
-              <div className="swiperWrap">
-                <div className={`${reviews[1]?.image ? "reviewImg" : ""}`}>
-                  {reviews[1]?.image ? (
-                    <img src={reviews[1]?.image} alt="" />
-                  ) : (
-                    <iframe
-                      className="videoWidth"
-                      src={reviews[0]?.videoUrl}
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  )}
-                </div>
-                <div className="reviewContent">
-                  <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">
-                    {reviews[1]?.name}
-                  </h3>
-                  <span className="mt-2 md:text-sm text-[12px]  font-semibold">
-                    {reviews[1]?.title}
-                  </span>
-                  <blockquote className="flex mt-3">
-                    <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">{reviews[1]?.description.slice(0, 250)}...</p>
-                  </blockquote>
-                  <Link to="/client">
-                    <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                      <button>See More </button>
-                      <FaArrowRight className="historyIcon" />
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide1">
-              <div className="swiperWrap">
-                <div className={`${reviews[2]?.image ? "reviewImg" : ""}`}>
-                  {reviews[2]?.image ? (
-                    <img src={reviews[2]?.image} alt="" />
-                  ) : (
-                    <iframe
-                      className="videoWidth"
-                      src={reviews[2]?.videoUrl}
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  )}
-                </div>
-                <div className="reviewContent">
-                  <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">
-                    {reviews[2]?.name}
-                  </h3>
-                  <span className="mt-2 md:text-sm text-[12px] font-semibold">
-                    {reviews[2]?.title}
-                  </span>
-                  <blockquote className="flex mt-3">
-                    <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">
-                      {reviews[2]?.description.slice(0, 250)}...
-                    </p>
-                  </blockquote>
-                  <Link to="/client">
-                  <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                    <button>See More </button>
-                    <FaArrowRight className="historyIcon" />
+            {reviews.map((review, index) => (
+              <div key={index} className="keen-slider__slide number-slide1">
+                <div className="swiperWrap">
+                  <div className={`${review?.image ? "reviewImg" : ""}`}>
+                    {review?.image ? (
+                      <img src={review?.image} alt="" />
+                    ) : (
+                      <iframe
+                        className="videoWidth"
+                        src={review?.videoUrl}
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    )}
                   </div>
-                </Link>
-                </div>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide1">
-              <div className="swiperWrap">
-                <div className={`${reviews[3]?.image ? "reviewImg" : ""}`}>
-                  {reviews[3]?.image ? (
-                    <img src={reviews[3]?.image} alt="" />
-                  ) : (
-                    <iframe
-                      className="videoWidth"
-                      src={reviews[3]?.videoUrl}
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  )}
-                </div>
-                <div className="reviewContent">
-                  <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">
-                    {reviews[3]?.name}
-                  </h3>
-                  <span className="mt-2 font-semibold">
-                    {reviews[3]?.title}
-                  </span>
-                  <blockquote className="flex mt-3">
-                    <FaQuoteLeft className="leftQoute" />
-                    <p className="text-xl">
-                      {reviews[3]?.description.slice(0, 250)}...
-                    </p>
-                  </blockquote>
-                  <Link to="/client">
-                  <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                    <button>See More </button>
-                    <FaArrowRight className="historyIcon" />
+                  <div className="reviewContent mt-3">
+                    <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">{review?.name}</h3>
+                    <span className=" text-[12px] md:text-sm text-semibold ">{review?.title}</span>
+                    <blockquote className="flex mt-3">
+                      <FaQuoteLeft className="leftQoute" />
+                      <p className="text-xl">
+                        {review?.description.slice(0, 200)}....
+                      </p>
+                    </blockquote>
+                    <Link to="/client">
+                      <div className="flex flex-end items-center text-[#2D57A2] ml-8">
+                        <button>See More </button>
+                        <FaArrowRight className="historyIcon" />
+                      </div>
+                    </Link>
                   </div>
-                </Link>
                 </div>
               </div>
-            </div>
-           
+            ))}
           </div>
 
           <div ref={thumbnailRef} className="keen-slider thumbnail">
-            <div className="keen-slider__slide number-slide1">
-              <div className="reviewThum">
-                <img src={reviews[0]?.image} />
-                {reviews[0]?.videoUrl ? (
-                  <img
-                    src={`https://img.youtube.com/vi/${getYoutubeVideoId(
-                      reviews[0]?.videoUrl
-                    )}/0.jpg`}
-                    alt="man"
-                  />
-                ) : (
-                  <img src={reviews[0]?.image} />
-                )}
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide1">
-              <div className="reviewThum">
-                <img src={reviews[1]?.image} />
-                {reviews[1]?.videoUrl ? (
-                  <img
-                    src={`https://img.youtube.com/vi/${getYoutubeVideoId(
-                      reviews[1]?.videoUrl
-                    )}/0.jpg`}
-                    alt="man"
-                  />
-                ) : (
-                  <img src={reviews[1]?.image} />
-                )}
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide1">
-              <div className="reviewThum">
-                <img src={reviews[2]?.image} />
-                {reviews[2]?.videoUrl ? (
-                  <img
-                    src={`https://img.youtube.com/vi/${getYoutubeVideoId(
-                      reviews[2]?.videoUrl
-                    )}/0.jpg`}
-                    alt="man"
-                  />
-                ) : (
-                  <img src={reviews[2]?.image} />
-                )}
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide1">
-              {reviews[3]?.image ? (
+            {reviews.map((review, index) => (
+              <div key={index} className="keen-slider__slide number-slide1">
                 <div className="reviewThum">
-                  <img src={reviews[3]?.image} />
-
-                  {reviews[3]?.videoUrl ? (
+                  <img src={review?.image} alt="thumbnail" />
+                  {review?.videoUrl ? (
                     <img
                       src={`https://img.youtube.com/vi/${getYoutubeVideoId(
-                        reviews[3]?.videoUrl
+                        review?.videoUrl
                       )}/0.jpg`}
-                      alt="man"
+                      alt="thumbnail"
                     />
                   ) : (
-                    <img src={reviews[3]?.image} />
+                    <img src={review?.image} alt="thumbnail" />
                   )}
                 </div>
-              ) : (
-                ""
-              )}
-            </div>
-           
+              </div>
+            ))}
           </div>
         </div>
       </Container>

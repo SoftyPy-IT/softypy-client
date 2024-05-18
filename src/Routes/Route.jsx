@@ -48,6 +48,7 @@ import WebsiteDetails from "../pages/WebsiteDetails/WebsiteDetails";
 import { API_URL } from "../utils/util";
 import WebDevelopment from "../pages/WebDevelopment/WebDevelopment";
 import Wordpress from "../pages/Wordpress/Wordpress";
+import UpdateReview from "../pages/Dashboard/Reviews/UpdateReview";
 
 export const router = createBrowserRouter([
   {
@@ -236,6 +237,17 @@ export const router = createBrowserRouter([
         path: "reviews",
         element: <ReviewList />,
       },
+      {
+        path: "update-reviews",
+        element: <UpdateReview />,
+      },
+      {
+        path: "update-reviews/:id",
+        element: <UpdateReview />,
+        loader: ({ params }) =>
+          fetch(`${API_URL}/review/${params.id}`),
+      },
+
       {
         path: "add-portfolio",
         element: <AddPortfolio />,

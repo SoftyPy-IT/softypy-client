@@ -3,8 +3,9 @@ import {
 
   FaLongArrowAltLeft,
   FaLongArrowAltRight,
+  FaEdit,
 } from "react-icons/fa";
-import {useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import {
   useDeleteReviewMutation,
@@ -14,8 +15,8 @@ import {
 const ReviewList = () => {
   const navigate = useNavigate();
   const { data: reviews, isLoading, isError } = useGetAllReviewsQuery();
+  console.log('helllo', reviews)
   const [deleteReview] = useDeleteReviewMutation();
-
 
   if (isLoading) {
     return <p>Loading...........</p>;
@@ -59,7 +60,8 @@ const ReviewList = () => {
               <th>SL NO </th>
               <th>Name </th>
               <th>Title</th>
-              <th>Action</th>
+              <th>Image</th>
+              <th colSpan={2}>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -68,7 +70,20 @@ const ReviewList = () => {
                 <td>{i + 1}</td>
                 <td>{review.name} </td>
                 <td>{review.title}</td>
-               
+                <td>  <img
+                    className="w-20 h-20 mx-auto rounded-full "
+                    src={review.image}
+                    alt="services"
+                  /></td>
+                <td>
+                  <div className="editIconWrap">
+                    <Link
+                      to={`/dashboard/update-reviews/${review._id}`}
+                    >
+                      <FaEdit className="editIcon" />
+                    </Link>
+                  </div>
+                </td>
                 <td>
                   <div
                     onClick={() => handleDelete(review._id)}

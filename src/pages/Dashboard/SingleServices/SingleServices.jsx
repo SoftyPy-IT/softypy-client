@@ -110,6 +110,7 @@ const SingleServices = () => {
                     alt="services"
                   />
                 </td>
+                
                 <td>{service.priority}</td>
                 <td>
                   <div className="editIconWrap">
