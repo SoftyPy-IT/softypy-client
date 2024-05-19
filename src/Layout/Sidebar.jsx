@@ -134,7 +134,7 @@ const Sidebar = () => {
           <AccordionDetails>
             <div className="mb-2">
               <Typography>
-                <Link to="/dashboard/add-singleService">
+                <Link to="/dashboard/add-portfolio">
                   <div className="flex items-center text-sm ">
                     <FaPlus className="mr-1 " />
                     <span>Add Portfolio </span>
@@ -143,7 +143,7 @@ const Sidebar = () => {
               </Typography>
             </div>
             <Typography>
-              <Link to="/dashboard/SingleServices">
+              <Link to="/dashboard/portfolio-list">
                 <div className="flex items-center text-sm ">
                   <FaThList className="mr-1 " />
                   <span>All Portfolio </span>

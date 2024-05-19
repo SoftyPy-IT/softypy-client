@@ -8,6 +8,7 @@ export const portfolioApi = baseApi.injectEndpoints({
             url: `/portfolio`,
             method: "GET",
           };
+          
         },
         providesTags: ["portfolio"],
       }),

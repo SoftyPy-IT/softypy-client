@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { useCreatePortfolioMutation } from "../../../redux/features/portfolio/portfolioApi";
+import { useNavigate } from "react-router-dom";
 
 const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN;
 const AddPortfolio = () => {
-  const [createPortfolio, { isSuccess }] =
-    useCreatePortfolioMutation();
+  const navigate = useNavigate();
+  const [createPortfolio, { isSuccess }] = useCreatePortfolioMutation();
 
   const { register, handleSubmit } = useForm();
   const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`;
@@ -21,23 +22,26 @@ const AddPortfolio = () => {
       .then((res) => res.json())
       .then((imageData) => {
         const imageUrl = imageData.data.url;
-        const { title, link, description } = data;
-        const newSingleServices = {
-          link,
+        const { title, link, description, category, priority } = data;
+        const newPortfolio = {
           title,
+          link,
+          category,
+          priority,
           image: imageUrl,
           description,
         };
-        createPortfolio(newSingleServices);
+        createPortfolio(newPortfolio);
         if (isSuccess) {
           Swal.fire({
             position: "center",
             icon: "success",
-            title: "Portfolio Create Successfully !",
+            title: "Portfolio create Successfully !",
             showConfirmButton: false,
             timer: 1500,
           });
         }
+        navigate("/dashboard/portfolio-list");
       })
       .catch((error) => {
         console.error(error);
@@ -50,6 +54,35 @@ const AddPortfolio = () => {
       <div className="w-full mx-auto addServicesWrap">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="formControl">
+            <div className="singleForm">
+              <label>Category </label>
+              <select
+                defaultValue="Select Category"
+                {...register("category", { required: true })}
+                className="select select-bordered"
+                autoComplete="off"
+                name="category"
+              >
+                <option>All </option>
+                <option>E-commerce</option>
+                <option>Travel Agency</option>
+                <option> News Portal</option>
+                <option>Non-Profit</option>
+                <option>Education</option>
+                <option>ERP</option>
+              </select>
+            </div>
+            <div className="singleForm">
+              <label>Priority </label>
+              <input
+                {...register("priority", { required: true })}
+                name="priority"
+                placeholder="Priority"
+                type="text"
+                className="inputField"
+                autoComplete="off"
+              />
+            </div>
             <div className="singleForm">
               <label>Title </label>
               <input

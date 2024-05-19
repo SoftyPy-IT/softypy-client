@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import { useCreateSingleServicesMutation } from "../../../redux/features/singleServices/singleServicesApi";
 import { useNavigate } from "react-router-dom";
 
+
 const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN;
 const AddSingleServices = () => {
   const navigate = useNavigate();
@@ -76,6 +77,7 @@ const AddSingleServices = () => {
               </select>
             </div>
             <div className="singleForm">
+            
               <label>Service Name </label>
               <input
                 {...register("name", { required: true })}
