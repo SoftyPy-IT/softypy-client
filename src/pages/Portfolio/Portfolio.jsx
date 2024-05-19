@@ -83,7 +83,7 @@ console.log(portfolioData)
                 <Tab>ERP</Tab>
               </TabList>
               <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 gap-10 place-items-center">
                   {portfolioData.portfolio.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
@@ -103,7 +103,7 @@ console.log(portfolioData)
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 gap-10 place-items-center">
                   {ecommerceProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
@@ -113,7 +113,7 @@ console.log(portfolioData)
                           backgroundSize: "cover",
                         }}
                       >
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
+                        <div className="bg-[#40C7F4] text-white absolute gap-10 w-full px-10 py-1 md:py-2 right-0 bottom-0">
                           <h2 className="text-sm md:text-xl">{item.title}</h2>
                           <p className="hidden xl:block">{item.description}</p>
                         </div>
@@ -123,7 +123,7 @@ console.log(portfolioData)
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
                   {travelAgencyProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
@@ -143,7 +143,7 @@ console.log(portfolioData)
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
                   {newsPortalProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
@@ -163,7 +163,7 @@ console.log(portfolioData)
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
                   {nonProfitProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
@@ -183,7 +183,7 @@ console.log(portfolioData)
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
                   {realEstateProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
@@ -203,7 +203,7 @@ console.log(portfolioData)
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
                   {educationProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
@@ -223,7 +223,7 @@ console.log(portfolioData)
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
+                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
                   {erpProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
