@@ -3,9 +3,9 @@ import { baseApi } from "../../api/baseApi";
 export const portfolioApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getPortfolio: builder.query({
-      query: ({ page = 1, limit = 5, search = '' }) => 
-        `portfolio?page=${page}&limit=${limit}&search=${search}`,
-      providesTags: ['Portfolio'],
+      query: ({ allData = false, page = 1, limit = 5, search = '' }) => 
+        allData ? `portfolio` : `portfolio?page=${page}&limit=${limit}&search=${search}`,
+      providesTags: ['portfolio'],
     }),
  
     getSinglePortfolio: builder.query({

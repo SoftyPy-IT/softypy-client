@@ -20,8 +20,8 @@ const UpdateReview = () => {
   const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`;
 
   const onSubmit = async (data) => {
-    console.log(data)
-    const { description, title, category, link, priority } = data;
+    console.log(data);
+    const { category, title, link, priority, description } = data;
 
     let imageUrl = singlePortfolio?.image; // Use existing image URL by default
 
@@ -89,9 +89,9 @@ const UpdateReview = () => {
   if (singlePortfolio) {
     setValue("name", singlePortfolio.category);
     setValue("title", singlePortfolio.title);
-    setValue("description", singlePortfolio.description);
     setValue("videoUrl", singlePortfolio.link);
     setValue("videoUrl", singlePortfolio.priority);
+    setValue("description", singlePortfolio.description);
   }
 
   return (

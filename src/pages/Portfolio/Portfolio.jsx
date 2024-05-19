@@ -13,6 +13,7 @@ const Portfolio = () => {
   const { data: portfolioData, isLoading, isError } = useGetPortfolioQuery({
     allData: true,
   });
+console.log(portfolioData)
   const [tabIndex, setTabIndex] = useState(0);
 
   if (isLoading) {
@@ -26,13 +27,13 @@ const Portfolio = () => {
   const ecommerceProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "E-commerce"
   );
-  const travelAgencyProject = portfolioData?.portfolio.filter(
+  const travelAgencyProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "Travel Agency"
   );
-  const nonProfitProject = portfolioData?.portfolio.filter(
+  const nonProfitProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "Non-Profit"
   );
-  const realStateProjects = portfolioData?.portfolio.filter(
+  const realEstateProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "Real State"
   );
   const educationProjects = portfolioData?.portfolio.filter(
@@ -54,10 +55,10 @@ const Portfolio = () => {
           </div>
           <div className="aboutContainers portfolioContainer">
             <div className="aboutContent">
-              <div className="flex items-center  aboutBtnTopWraps uppercase bg-[#40C7F4] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
+              <div className="flex items-center aboutBtnTopWraps uppercase bg-[#40C7F4] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
                 <p>Home</p>
                 <FaAngleRight />
-                <p>Portfolio </p>
+                <p>Portfolio</p>
               </div>
               <h2 className="ml-0 text-xl md:text-3xl font-bold md:text-left text-center uppercase lg:text-5xl">
                 Our Portfolio
@@ -70,19 +71,15 @@ const Portfolio = () => {
         <div className="mb-24 sectionMargin">
           <SectionTitle title="Working Portfolio"></SectionTitle>
           <div className="mt-8 mb-24">
-            <Tabs
-              className="tabWrap"
-              defaultTabIndex={tabIndex}
-              onSelect={(index) => setTabIndex(index)}
-            >
+            <Tabs className="tabWrap" selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
               <TabList>
                 <Tab>All</Tab>
-                <Tab>E-Commerce </Tab>
+                <Tab>E-Commerce</Tab>
                 <Tab>Travel Agency</Tab>
-                <Tab> News Portal</Tab>
-                <Tab> Non-Profit</Tab>
-                <Tab>Real State</Tab>
-                <Tab>Educations</Tab>
+                <Tab>News Portal</Tab>
+                <Tab>Non-Profit</Tab>
+                <Tab>Real Estate</Tab>
+                <Tab>Education</Tab>
                 <Tab>ERP</Tab>
               </TabList>
               <TabPanel>
@@ -107,7 +104,7 @@ const Portfolio = () => {
               </TabPanel>
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                  {ecommerceProjects?.map((item, index) => (
+                  {ecommerceProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
                         className="singlePortfolio portfolio19"
@@ -127,7 +124,7 @@ const Portfolio = () => {
               </TabPanel>
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                  {travelAgencyProject.map((item, index) => (
+                  {travelAgencyProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
                         className="singlePortfolio portfolio19"
@@ -167,7 +164,7 @@ const Portfolio = () => {
               </TabPanel>
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                  {nonProfitProject.map((item, index) => (
+                  {nonProfitProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
                         className="singlePortfolio portfolio19"
@@ -187,7 +184,7 @@ const Portfolio = () => {
               </TabPanel>
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                  {realStateProjects.map((item, index) => (
+                  {realEstateProjects.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
                         className="singlePortfolio portfolio19"

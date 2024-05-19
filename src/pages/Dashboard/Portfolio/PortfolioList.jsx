@@ -7,12 +7,12 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-import { TextField } from "@mui/material";
+import { Button, Stack, TextField } from "@mui/material";
 import {
   useDeletePortfolioMutation,
   useGetPortfolioQuery,
 } from "../../../redux/features/portfolio/portfolioApi";
-import './Portfolio.css'
+import "./Portfolio.css";
 const PortfolioList = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
@@ -81,7 +81,8 @@ const PortfolioList = () => {
       <h3 className="text-xl text-center mb-3 font-bold">
         Total Portfolio {portfolioData ? portfolioData.total : 0}
       </h3>
-      <TextField
+     <Stack direction='row' justifyContent='space-between' alignItems='center' padding='0 5px'>
+     <TextField
         id="outlined-basic"
         label="Search here"
         sx={{ margin: "20px 10px", width: "300px" }}
@@ -90,6 +91,8 @@ const PortfolioList = () => {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
+      <Button component={Link} to='/dashboard/add-portfolio' variant="contained">Add Portfolio</Button>
+     </Stack>
       <div className="overflow-x-auto">
         <table className="table">
           <thead className="tableWrap">
@@ -98,6 +101,7 @@ const PortfolioList = () => {
               <th>Image</th>
               <th>Category</th>
               <th>Title</th>
+              <th>Priority</th>
               <th colSpan={2}>Action</th>
             </tr>
           </thead>
@@ -114,6 +118,7 @@ const PortfolioList = () => {
                 </td>
                 <td>{project.category}</td>
                 <td>{project.title}</td>
+                <td>{project.priority}</td>
                 <td>
                   <div className="editIconWrap">
                     <Link to={`/dashboard/update-portfolio/${project._id}`}>
@@ -141,7 +146,10 @@ const PortfolioList = () => {
   function renderPaginationButtons() {
     return (
       <div className="paginationBtn">
-        <button onClick={() => handlePageChange(page - 1)} disabled={page === 1}>
+        <button
+          onClick={() => handlePageChange(page - 1)}
+          disabled={page === 1}
+        >
           <FaLongArrowAltLeft className="arrowLeft" />
         </button>
         {[...Array(portfolioData.totalPages).keys()].map((p) => (
