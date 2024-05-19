@@ -1,24 +1,17 @@
-import {
-  FaTrashAlt,
-  FaLongArrowAltLeft,
-  FaLongArrowAltRight,
-  FaEdit,
-} from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { FaTrashAlt, FaLongArrowAltLeft, FaLongArrowAltRight, FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-import { useState, useEffect } from "react";
-import {
-  useDeleteReviewMutation,
-  useGetAllReviewsQuery,
-} from "../../../redux/features/review/reviewApi";
 import { TextField } from "@mui/material";
+import { useDeleteReviewMutation, useGetAllReviewsQuery } from "../../../redux/features/review/reviewApi";
 
 const ReviewList = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
-  const [debouncedSearch, setDebouncedSearch] = useState(search);
+  const [debouncedSearch, setDebouncedSearch] = useState("");
+  const [totalPages, setTotalPages] = useState(0);
 
-  // Debounce the search input to avoid too many API calls
+  // Debounce search input
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedSearch(search);
@@ -29,21 +22,23 @@ const ReviewList = () => {
     };
   }, [search]);
 
-  // Refetch data when debouncedSearch or page changes
-  const { data, isLoading, isError } = useGetAllReviewsQuery({ page, search: debouncedSearch });
+  // Fetch reviews data
+  const { data } = useGetAllReviewsQuery({
+    page,
+    limit: 2,
+    search: debouncedSearch,
+  });
 
   const [deleteReview] = useDeleteReviewMutation();
 
-  if (isLoading) {
-    return <p>Loading...........</p>;
-  }
-  if (isError) {
-    return <p>Something went wrong </p>;
-  }
+  // Update total pages when data changes
+  useEffect(() => {
+    if (data) {
+      setTotalPages(data.pages);
+    }
+  }, [data]);
 
-  const reviews = data.reviews || [];
-  const totalPages = data.pages;
-
+  // Handle delete review
   const handleDelete = (id) => {
     Swal.fire({
       title: "Are you sure?",
@@ -68,15 +63,33 @@ const ReviewList = () => {
     });
   };
 
+  // Handle page change
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
 
+  // Render pagination buttons
+  const renderPaginationButtons = () => {
+    return (
+      <div className="paginationBtn">
+        <button onClick={() => handlePageChange(page - 1)} disabled={page === 1}>
+          <FaLongArrowAltLeft className="arrowLeft" />
+        </button>
+        {[...Array(totalPages).keys()].map((p) => (
+          <button key={p + 1} onClick={() => handlePageChange(p + 1)} className={page === p + 1 ? "active" : ""}>
+            {p + 1}
+          </button>
+        ))}
+        <button onClick={() => handlePageChange(page + 1)} disabled={page === totalPages}>
+          <FaLongArrowAltRight className="arrowRight" />
+        </button>
+      </div>
+    );
+  };
+
   return (
     <div className="mt-5 mb-24 w-full">
-      <h3 className="text-xl text-center mb-3 font-bold">
-        Total Reviews {data.total}
-      </h3>
+      <h3 className="text-xl text-center mb-3 font-bold">Total Reviews {data ? data.total : 0}</h3>
       <TextField
         id="outlined-basic"
         label="Search here"
@@ -98,17 +111,13 @@ const ReviewList = () => {
             </tr>
           </thead>
           <tbody>
-            {reviews.map((review, i) => (
+            {data?.reviews?.map((review, i) => (
               <tr key={review._id}>
-                <td>{(page - 1) * 10 + i + 1}</td>
+                <td>{(page - 1) * 2 + i + 1}</td>
                 <td>{review.name}</td>
                 <td>{review.title}</td>
                 <td>
-                  <img
-                    className="w-20 h-20 mx-auto rounded-full"
-                    src={review.image}
-                    alt="review"
-                  />
+                  <img className="w-20 h-20 mx-auto rounded-full" src={review.image} alt="review" />
                 </td>
                 <td>
                   <div className="editIconWrap">
@@ -118,10 +127,7 @@ const ReviewList = () => {
                   </div>
                 </td>
                 <td>
-                  <div
-                    onClick={() => handleDelete(review._id)}
-                    className="editIconWrap"
-                  >
+                  <div onClick={() => handleDelete(review._id)} className="editIconWrap">
                     <FaTrashAlt className="deleteIcon" />
                   </div>
                 </td>
@@ -130,31 +136,7 @@ const ReviewList = () => {
           </tbody>
         </table>
       </div>
-      <div className="pagination">
-        <div className="paginationBtn">
-          <button
-            onClick={() => handlePageChange(page - 1)}
-            disabled={page === 1}
-          >
-            <FaLongArrowAltLeft className="arrowLeft" />
-          </button>
-          {[...Array(totalPages).keys()].map((p) => (
-            <button
-              key={p + 1}
-              onClick={() => handlePageChange(p + 1)}
-              className={page === p + 1 ? "active" : ""}
-            >
-              {p + 1}
-            </button>
-          ))}
-          <button
-            onClick={() => handlePageChange(page + 1)}
-            disabled={page === totalPages}
-          >
-            <FaLongArrowAltRight className="arrowRight" />
-          </button>
-        </div>
-      </div>
+      <div className="pagination">{renderPaginationButtons()}</div>
     </div>
   );
 };

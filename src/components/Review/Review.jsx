@@ -42,7 +42,7 @@ function ThumbnailPlugin(mainRef) {
 }
 
 export default function Review() {
-  const { data: reviewsData, isLoading, isError } = useGetAllReviewsQuery({ limit: -1 }); // 
+  const { data: reviewsData, isLoading, isError } = useGetAllReviewsQuery({ allData:true }); // 
 
   const reviews = reviewsData?.reviews || [];
 
