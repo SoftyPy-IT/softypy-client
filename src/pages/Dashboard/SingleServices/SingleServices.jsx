@@ -21,6 +21,7 @@ const SingleServices = () => {
     data: servicesData,
     isLoading,
     isError,
+    
   } = useGetAllSingleServicesQuery({ page, limit });
   const [deleteSingleService] = useDeleteSingleServiceMutation();
 

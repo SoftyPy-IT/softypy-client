@@ -23,7 +23,7 @@ const ReviewList = () => {
   }, [search]);
 
   // Fetch reviews data
-  const { data } = useGetAllReviewsQuery({
+  const { data:reviewsData } = useGetAllReviewsQuery({
     page,
     limit: 2,
     search: debouncedSearch,
@@ -33,10 +33,10 @@ const ReviewList = () => {
 
   // Update total pages when data changes
   useEffect(() => {
-    if (data) {
-      setTotalPages(data.pages);
+    if (reviewsData) {
+      setTotalPages(reviewsData.pages);
     }
-  }, [data]);
+  }, [reviewsData]);
 
   // Handle delete review
   const handleDelete = (id) => {
@@ -67,6 +67,11 @@ const ReviewList = () => {
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
+  // const filteredServices = reviewsData.filter((service) => Object.values(service).some((value) =>typeof value === "string" &&
+  //       value.toLowerCase().includes(searchQuery.toLowerCase())
+  //   )
+  // );
+const filterReviews  =reviewsData?.reviews?.filter((review)=>Object.values(review).some((value)=>typeof value === 'string' && value.toLowerCase().includes(search.toLowerCase())))
 
   // Render pagination buttons
   const renderPaginationButtons = () => {
@@ -89,7 +94,7 @@ const ReviewList = () => {
 
   return (
     <div className="mt-5 mb-24 w-full">
-      <h3 className="text-xl text-center mb-3 font-bold">Total Reviews {data ? data.total : 0}</h3>
+      <h3 className="text-xl text-center mb-3 font-bold">Total Reviews {reviewsData ? reviewsData.total : 0}</h3>
       <TextField
         id="outlined-basic"
         label="Search here"
@@ -111,7 +116,7 @@ const ReviewList = () => {
             </tr>
           </thead>
           <tbody>
-            {data?.reviews?.map((review, i) => (
+            {filterReviews?.map((review, i) => (
               <tr key={review._id}>
                 <td>{(page - 1) * 2 + i + 1}</td>
                 <td>{review.name}</td>
