@@ -10,7 +10,9 @@ import "./Portfolio.css";
 import { useGetPortfolioQuery } from "../../redux/features/portfolio/portfolioApi";
 
 const Portfolio = () => {
-  const { data: portfolioData, isLoading, isError } = useGetPortfolioQuery();
+  const { data: portfolioData, isLoading, isError } = useGetPortfolioQuery({
+    allData: true,
+  });
   const [tabIndex, setTabIndex] = useState(0);
 
   if (isLoading) {
@@ -21,26 +23,25 @@ const Portfolio = () => {
     return <p>Error fetching data.</p>;
   }
 
- 
-  const EcommerceProjects = portfolioData.filter(
+  const ecommerceProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "E-commerce"
   );
-  const travelAgencyProject = portfolioData.filter(
+  const travelAgencyProject = portfolioData?.portfolio.filter(
     (item) => item.category === "Travel Agency"
   );
-  const nonProfitProject = portfolioData.filter(
+  const nonProfitProject = portfolioData?.portfolio.filter(
     (item) => item.category === "Non-Profit"
   );
-  const realStateProjects = portfolioData.filter(
+  const realStateProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "Real State"
   );
-  const educationProjects = portfolioData.filter(
+  const educationProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "Educations"
   );
-  const erpProjects = portfolioData.filter(
+  const erpProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "ERP"
   );
-  const newsPortalProjects = portfolioData.filter(
+  const newsPortalProjects = portfolioData?.portfolio.filter(
     (item) => item.category === "News Portal"
   );
 
@@ -86,7 +87,7 @@ const Portfolio = () => {
               </TabList>
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                  {portfolioData.map((item, index) => (
+                  {portfolioData.portfolio.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
                         className="singlePortfolio portfolio19"
@@ -106,7 +107,7 @@ const Portfolio = () => {
               </TabPanel>
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
-                  {EcommerceProjects.map((item, index) => (
+                  {ecommerceProjects?.map((item, index) => (
                     <Link key={index} to={item.link} target="_blank">
                       <div
                         className="singlePortfolio portfolio19"
@@ -123,7 +124,7 @@ const Portfolio = () => {
                     </Link>
                   ))}
                 </div>
-              </TabPanel> 
+              </TabPanel>
               <TabPanel>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
                   {travelAgencyProject.map((item, index) => (

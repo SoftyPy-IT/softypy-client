@@ -49,6 +49,7 @@ import { API_URL } from "../utils/util";
 import WebDevelopment from "../pages/WebDevelopment/WebDevelopment";
 import Wordpress from "../pages/Wordpress/Wordpress";
 import UpdateReview from "../pages/Dashboard/Reviews/UpdateReview";
+import UpdatePortfolio from "../pages/Dashboard/Portfolio/UpdatePortfolio";
 
 export const router = createBrowserRouter([
   {
@@ -70,8 +71,7 @@ export const router = createBrowserRouter([
       {
         path: "/singleServices/:id",
         element: <SingleService />,
-        loader: ({ params }) =>
-          fetch(`${API_URL}/singleServices/${params.id}`),
+        loader: ({ params }) => fetch(`${API_URL}/singleServices/${params.id}`),
       },
       {
         path: "/services",
@@ -91,11 +91,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/mern",
-        element: <WebDevelopment/>,
+        element: <WebDevelopment />,
       },
       {
         path: "/wordpress",
-        element: <Wordpress/>,
+        element: <Wordpress />,
       },
       {
         path: "/website",
@@ -103,7 +103,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/website-details",
-        element: <WebsiteDetails/>,
+        element: <WebsiteDetails />,
       },
       {
         path: "/signup",
@@ -123,27 +123,27 @@ export const router = createBrowserRouter([
       },
       {
         path: "/erp",
-        element: <ERP/>,
+        element: <ERP />,
       },
       {
         path: "/erp-details",
-        element: <ERPDetails/>,
+        element: <ERPDetails />,
       },
       {
         path: "/careers",
-        element: <Careers/>,
+        element: <Careers />,
       },
       {
         path: "/careers-details",
-        element: <CareersDetails/>,
+        element: <CareersDetails />,
       },
       {
         path: "/careers-apply",
-        element: <CareersApply/>,
+        element: <CareersApply />,
       },
       {
         path: "/admin",
-        element: <Admin/>,
+        element: <Admin />,
       },
     ],
   },
@@ -166,8 +166,7 @@ export const router = createBrowserRouter([
       {
         path: "updatedservice/:id",
         element: <UpdateServices />,
-        loader: ({ params }) =>
-          fetch(`${API_URL}/services/${params.id}`),
+        loader: ({ params }) => fetch(`${API_URL}/services/${params.id}`),
       },
       {
         path: "about",
@@ -180,8 +179,7 @@ export const router = createBrowserRouter([
       {
         path: "updateAbout/:id",
         element: <UpdateAbout />,
-        loader: ({ params }) =>
-          fetch(`${API_URL}/about/${params.id}`),
+        loader: ({ params }) => fetch(`${API_URL}/about/${params.id}`),
       },
       {
         path: "contact",
@@ -218,8 +216,7 @@ export const router = createBrowserRouter([
       {
         path: "updatedSingleServices/:id",
         element: <UpdateSingleServices />,
-        loader: ({ params }) =>
-          fetch(`${API_URL}/singleServices/${params.id}`),
+        loader: ({ params }) => fetch(`${API_URL}/singleServices/${params.id}`),
       },
       {
         path: "orders",
@@ -244,8 +241,7 @@ export const router = createBrowserRouter([
       {
         path: "update-reviews/:id",
         element: <UpdateReview />,
-        loader: ({ params }) =>
-          fetch(`${API_URL}/review/${params.id}`),
+        loader: ({ params }) => fetch(`${API_URL}/review/${params.id}`),
       },
 
       {
@@ -255,6 +251,15 @@ export const router = createBrowserRouter([
       {
         path: "portfolio-list",
         element: <PortfolioList />,
+      },
+      {
+        path: "update-portfolio",
+        element: <UpdatePortfolio />,
+      },
+      {
+        path: "update-portfolio/:id",
+        element: <UpdatePortfolio />,
+        loader: ({ params }) => fetch(`${API_URL}/portfolio/${params.id}`),
       },
       {
         path: "message-list",

@@ -6,10 +6,7 @@ export const reviewApi = baseApi.injectEndpoints({
       query: ({page = 1, limit= 5,allData = false }) => allData ? `reviews` : `reviews?page=${page}&limit=${limit}`,
       providesTags: ['Reviews'],
     }),
-    getAllSingleServices: builder.query({
-      query: ({ page = 1, limit = 5, allData = false }) =>
-        allData ? `singleServices` : `singleServices?page=${page}&limit=${limit}`,
-    }),
+ 
     
     createReviews: builder.mutation({
       query: (data) => ({
