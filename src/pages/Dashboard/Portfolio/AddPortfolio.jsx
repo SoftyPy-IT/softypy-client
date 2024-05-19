@@ -68,7 +68,8 @@ const AddPortfolio = () => {
                 <option>Travel Agency</option>
                 <option> News Portal</option>
                 <option>Non-Profit</option>
-                <option>Education</option>
+                <option>Educations</option>
+                <option>Real State</option>
                 <option>ERP</option>
               </select>
             </div>

@@ -50,6 +50,7 @@ const PortfolioList = () => {
             <tr>
               <th>SL NO </th>
               <th>Image </th>
+              <th>Category </th>
               <th>Title </th>
               <th>Link</th>
               <th colSpan={2}>Action</th>
@@ -68,6 +69,7 @@ const PortfolioList = () => {
                     />
                   </div>
                 </td>
+                <td>{data.category} </td>
                 <td>{data.title} </td>
                 <td>{data.link}</td>
                 <td>
