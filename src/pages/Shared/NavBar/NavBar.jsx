@@ -154,6 +154,10 @@ const NavBar = () => {
             {" "}
             <li className="navbar-item">Careers</li>
           </NavLink>
+          <NavLink to="/blog">
+            {" "}
+            <li className="navbar-item">Blog</li>
+          </NavLink>
           <NavLink to="/about">
             {" "}
             <li className="navbar-item">About</li>

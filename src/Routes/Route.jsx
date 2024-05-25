@@ -50,6 +50,8 @@ import WebDevelopment from "../pages/WebDevelopment/WebDevelopment";
 import Wordpress from "../pages/Wordpress/Wordpress";
 import UpdateReview from "../pages/Dashboard/Reviews/UpdateReview";
 import UpdatePortfolio from "../pages/Dashboard/Portfolio/UpdatePortfolio";
+import Blog from "../pages/Blog/Blog";
+import BlogDetails from "../pages/Blog/BlogDetails";
 
 export const router = createBrowserRouter([
   {
@@ -140,6 +142,14 @@ export const router = createBrowserRouter([
       {
         path: "/careers-apply",
         element: <CareersApply />,
+      },
+      {
+        path: "/blog",
+        element: <Blog/>,
+      },
+      {
+        path: "/blog-details",
+        element: <BlogDetails/>,
       },
       {
         path: "/admin",

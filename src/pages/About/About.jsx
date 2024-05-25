@@ -70,10 +70,9 @@ const About = () => {
     },
   ];
 
-
   return (
     <section>
-      <div className="">
+      <div >
         <NavBar />
       </div>
       <div className="aboutContainers">
@@ -145,9 +144,7 @@ const About = () => {
               </div>
               <div className="order-2 missionRightSide">
                 <div>
-                  <h3 className="text-5xl font-bold text-[#40C7F4]">
-                    Vision
-                  </h3>
+                  <h3 className="text-5xl font-bold text-[#40C7F4]">Vision</h3>
                   <p className="mt-3 leading-8">
                     SoftyPy envisions a digital realm where businesses not only
                     survive but thrive. We aspire to be the driving force behind
@@ -240,21 +237,21 @@ const About = () => {
                           </>
                         ) : i == 4 ? (
                           <>
-                          <FaLinkedinIn />
-                          <FaXTwitter />
-                          <FaFacebookF />
+                            <FaLinkedinIn />
+                            <FaXTwitter />
+                            <FaFacebookF />
                           </>
                         ) : i == 5 ? (
                           <>
-                          <FaLinkedinIn />
-                          <FaXTwitter />
-                          <FaFacebookF />
+                            <FaLinkedinIn />
+                            <FaXTwitter />
+                            <FaFacebookF />
                           </>
                         ) : i == 6 ? (
                           <>
-                          <FaLinkedinIn />
-                          <FaXTwitter />
-                          <FaFacebookF />
+                            <FaLinkedinIn />
+                            <FaXTwitter />
+                            <FaFacebookF />
                           </>
                         ) : null}
                       </div>

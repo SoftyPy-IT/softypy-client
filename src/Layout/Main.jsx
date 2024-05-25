@@ -7,8 +7,7 @@ import MessageModal from "./MessageModal";
 
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
-import whatsapp from '../../public/assets/whatsapp.png'
-
+import whatsapp from "../../public/assets/whatsapp.png";
 
 const Main = () => {
   const { darkMode } = useSelector((store) => store.theme);
@@ -52,14 +51,12 @@ const Main = () => {
   }, []);
 
   return (
- 
-      <div className={` ${darkMode ? "bg-black text-white" : ""}`}>
-      
-        <Outlet />
+    <div className={` ${darkMode ? "bg-black text-white" : ""}`}>
+      <Outlet />
 
-        <Footer />
+      <Footer />
 
-        {/** 
+      {/** 
 
         <div className="message rounded-full p-2 fixed bg-[#2D57A2] text-white bottom-5 right-1 cursor-pointer transition-all duration-75 shadowStyle">
           {open ? (
@@ -77,11 +74,11 @@ const Main = () => {
           )}
         </div>
 */}
-        <button onClick={scrollToTop} id="button">
-          <HiChevronDoubleUp size={25} />
-        </button>
+      <button onClick={scrollToTop} id="button">
+        <HiChevronDoubleUp size={25} />
+      </button>
 
-        {/**
+      {/**
    my appid: 321223840644901
    my pageid: 257323552817721
 
@@ -92,7 +89,7 @@ const Main = () => {
     
 */}
 
-{/** 
+      {/** 
         <FacebookProvider
           className="messengerApp"
           appId="387557750848217"
@@ -102,22 +99,19 @@ const Main = () => {
         </FacebookProvider>
         */}
 
-        <Link
+      <Link
         to="https://wa.me/8801762380594?text=Hi! how can we help you ?"
         target="_blank"
       >
         <button className="whatsApp">
-        
           <img src={whatsapp} alt="whatsapp" />
         </button>
       </Link>
 
-        <ScrollRestoration/>
+      <ScrollRestoration />
 
-        {open && <MessageModal />}
-      </div>
-
-
+      {open && <MessageModal />}
+    </div>
   );
 };
 

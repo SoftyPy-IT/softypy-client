@@ -1,0 +1,60 @@
+.blogCard {
+    width: 370px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    position: relative;
+    transition: all .100s cubic-bezier(0.49, 0.5, 0.59, 0.6);
+    top: 0px;
+}
+.blogCard:hover{
+    top:-10px;
+
+}
+.blogFeatureContainer{
+    height: 250px;
+}
+.blogFeatureContainer::after{
+    background:#2D57A2;
+    opacity: 0.5;
+    height:250px
+}
+.blogCardImgWrap{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.blogCard img {
+ width:100%;
+ height:100%;
+  object-fit: cover;
+
+  transition: all .5s ease-in-out;
+}
+.blogContent {
+  background: #2d58a2e7;
+  color: #fff;
+  padding: 20px;
+}
+.blogCard:hover img{
+scale: 1.1;
+    top:3px
+}
+.blogCard:hover{
+cursor: pointer;
+top:5px;
+}
+.blogSubscribe{
+    border:1px solid #fff;
+}
+@media only screen and (max-width:1024px){
+    .blogCard {
+        width: 100%;
+    }
+}
