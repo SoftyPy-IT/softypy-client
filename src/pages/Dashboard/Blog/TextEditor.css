@@ -1,0 +1,17 @@
+/* TextEditor.css */
+.ql-toolbar {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .ql-container {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .quill-editor {
+    /* Add any custom styles for the ReactQuill component here */
+  }
+  

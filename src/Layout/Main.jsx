@@ -8,6 +8,7 @@ import MessageModal from "./MessageModal";
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
 import whatsapp from "../../public/assets/whatsapp.png";
+import { Toaster } from "sonner";
 
 const Main = () => {
   const { darkMode } = useSelector((store) => store.theme);
@@ -107,7 +108,7 @@ const Main = () => {
           <img src={whatsapp} alt="whatsapp" />
         </button>
       </Link>
-
+      <Toaster position="bottom-right" />
       <ScrollRestoration />
 
       {open && <MessageModal />}

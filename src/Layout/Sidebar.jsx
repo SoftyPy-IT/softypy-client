@@ -207,6 +207,35 @@ const Sidebar = () => {
             aria-controls="panel1-content"
             id="panel1-header"
           >
+            <Typography> Blog </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className="mb-2">
+              <Typography>
+                <Link to="/dashboard/create-blog">
+                  <div className="flex items-center text-sm ">
+                    <FaPlus className="mr-1 " />
+                    <span>Create Blog Post </span>
+                  </div>
+                </Link>
+              </Typography>
+            </div>
+            <Typography>
+              <Link to="/dashboard/portfolio-list">
+                <div className="flex items-center text-sm ">
+                  <FaThList className="mr-1 " />
+                  <span>All Blog </span>
+                </div>
+              </Link>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDownwardIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
             <Typography> Message </Typography>
           </AccordionSummary>
           <AccordionDetails>

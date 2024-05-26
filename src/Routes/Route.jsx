@@ -52,6 +52,8 @@ import UpdateReview from "../pages/Dashboard/Reviews/UpdateReview";
 import UpdatePortfolio from "../pages/Dashboard/Portfolio/UpdatePortfolio";
 import Blog from "../pages/Blog/Blog";
 import BlogDetails from "../pages/Blog/BlogDetails";
+import AddBlog from "../pages/Dashboard/Blog/AddBlog";
+import BlogList from "../pages/Dashboard/Blog/BlogList";
 
 export const router = createBrowserRouter([
   {
@@ -278,6 +280,14 @@ export const router = createBrowserRouter([
       {
         path: "users-list",
         element: <Users />,
+      },
+      {
+        path: "create-blog",
+        element: <AddBlog />,
+      },
+      {
+        path: "blog-list",
+        element: <BlogList />,
       },
     ],
   },

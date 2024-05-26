@@ -210,6 +210,15 @@ select:focus {
   margin-left: 20px !important;
 }
 
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
 @media only screen and (max-width: 1024px) {
   .css-lfwcke-MuiTabs-flexContainer {
     display: flex !important;

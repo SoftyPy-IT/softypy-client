@@ -1,5 +1,6 @@
+import { useState } from "react";
+import ReactHtmlParser from "react-html-parser";
 import NavBar from "../Shared/NavBar/NavBar";
-import blog from "../../../public/assets/blog.png";
 import "./Blog.css";
 import Container from "../../ui/Container";
 import Box from "@mui/material/Box";
@@ -7,36 +8,30 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import { useState } from "react";
 import { Divider } from "@mui/material";
+import { useGetAllBlogQuery } from "../../redux/features/Blog/blogApi";
 
 const Blog = () => {
-  const blogData = [
-    {
-      id: 1,
-      title: "ব্যবসা প্রতিষ্টানের জন্য ইকমার্স  ওয়েভ  সাইট কেন প্রয়োজন?",
-      text:
-        "বিস্তৃত গ্রাহক পৌঁছানো: ই-কমার্স ওয়েবসাইটের মাধ্যমে ব্যবসায়ীরা সারা বিশ্বের গ্রাহকদের কাছে পৌঁছাতে পারেন, যা স্থানীয় দোকানদারির সীমাবদ্ধতাকে অতিক্রম করে।",
-    },
-    {
-      id: 1,
-      title: "ব্যবসা প্রতিষ্টানের জন্য ইকমার্স  ওয়েভ  সাইট কেন প্রয়োজন?",
-      text:
-        "বিস্তৃত গ্রাহক পৌঁছানো: ই-কমার্স ওয়েবসাইটের মাধ্যমে ব্যবসায়ীরা সারা বিশ্বের গ্রাহকদের কাছে পৌঁছাতে পারেন, যা স্থানীয় দোকানদারির সীমাবদ্ধতাকে অতিক্রম করে।",
-    },
-    {
-      id: 1,
-      title: "ব্যবসা প্রতিষ্টানের জন্য ইকমার্স  ওয়েভ  সাইট কেন প্রয়োজন?",
-      text:
-        "বিস্তৃত গ্রাহক পৌঁছানো: ই-কমার্স ওয়েবসাইটের মাধ্যমে ব্যবসায়ীরা সারা বিশ্বের গ্রাহকদের কাছে পৌঁছাতে পারেন, যা স্থানীয় দোকানদারির সীমাবদ্ধতাকে অতিক্রম করে।",
-    },
-  ];
-
   const [value, setValue] = useState("1");
+  const { data: blogData, isLoading, isError } = useGetAllBlogQuery({
+    allData: true,
+  });
+  console.log(blogData?.blog)
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  if (isError || !blogData) {
+    return <p>Error fetching data.</p>;
+  }
+
+
+
   const tabStyles = {
     width: 130,
     height: "35px",
@@ -46,8 +41,8 @@ const Blog = () => {
     borderRadius: 10,
     padding: "0px",
     fontSize: "12px",
-    lineHeight: "20px", // Ensures the text is vertically centered
-    minHeight: "unset", // Prevents MUI's default min-height from overriding your height setting
+    lineHeight: "20px",
+    minHeight: "unset",
     "&.Mui-selected": {
       backgroundColor: "#4168AB",
       color: "#fff",
@@ -76,43 +71,26 @@ const Blog = () => {
                   <TabList
                     onChange={handleChange}
                     aria-label="lab API tabs example"
-                    sx={{
-                      ".MuiTabs-indicator": {
-                        display: "none",
-                      },
-                    }}
+                    sx={{ ".MuiTabs-indicator": { display: "none" } }}
                   >
-                    <Tab
-                      label="E-commerce"
-                      value="1"
-                      sx={tabStyles}
-                    />
-                    <Tab
-                      label="Item Two"
-                      value="2"
-                      sx={tabStyles}
-                    />
-                    <Tab
-                      label="Item Three"
-                      value="3"
-                      sx={tabStyles}
-                    />
+                    <Tab label="E-commerce" value="1" sx={tabStyles} />
+                    <Tab label="Item Two" value="2" sx={tabStyles} />
+                    <Tab label="Item Three" value="3" sx={tabStyles} />
                   </TabList>
                 </Box>
                 <TabPanel value="1">
-                  <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-10 ">
-                    {blogData.map((data) => (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                  {blogData?.blog?.map((data) => (
                       <div key={data.id} className="blogCard">
                         <div className="blogCardImgWrap">
-                          <img src={blog} alt="blog" />
+                          <img src={data.image} alt="blog" />
                         </div>
                         <div className="blogContent">
                           <h2 className="text-xl font-bold">{data.title}</h2>
                           <p className="text- my-5">
-                            বিস্তৃত গ্রাহক পৌঁছানো: ই-কমার্স ওয়েবসাইটের মাধ্যমে
-                            ব্যবসায়ীরা সারা বিশ্বের গ্রাহকদের কাছে পৌঁছাতে
-                            পারেন, যা স্থানীয় দোকানদারির সীমাবদ্ধতাকে অতিক্রম
-                            করে।
+                            {
+                              data?.description
+                            }
                           </p>
                           <Divider component="div" sx={{background:'white', margin: '5px'}} />
                           <div className="flex justify-between">

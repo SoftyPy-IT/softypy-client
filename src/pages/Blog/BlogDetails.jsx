@@ -1,7 +1,7 @@
 import Container from "../../ui/Container";
 import NavBar from "../Shared/NavBar/NavBar";
 import { FaArrowRight, FaHeart, FaRegEnvelope } from "react-icons/fa";
-import { Divider } from "@mui/material";
+import {  Divider } from "@mui/material";
 const BlogDetails = () => {
   return (
     <div>
@@ -123,10 +123,11 @@ const BlogDetails = () => {
               />
             </div>
             <div className="contactBtn bg-[#4168AB]">
-              <button className="mr-2">Request Now </button>
+              <button className="mr-2">Subscribe Us </button>
               <FaArrowRight />
             </div>
           </div>
+           
         </Container>
       </div>
     </div>

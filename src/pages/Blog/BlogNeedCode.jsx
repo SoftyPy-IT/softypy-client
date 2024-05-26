@@ -9,8 +9,10 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { useState } from "react";
 import { Divider } from "@mui/material";
+import { useGetAllBlogQuery } from "../../redux/features/Blog/blogApi";
 
 const Blog = () => {
+  const {} = useGetAllBlogQuery()
   const blogData = [
     {
       id: 1,
