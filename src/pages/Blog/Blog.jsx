@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ReactHtmlParser from "react-html-parser";
 import NavBar from "../Shared/NavBar/NavBar";
 import "./Blog.css";
 import Container from "../../ui/Container";
