@@ -16,14 +16,7 @@
     top:-10px;
 
 }
-.blogFeatureContainer{
-    height: 250px;
-}
-.blogFeatureContainer::after{
-    background:#2D57A2;
-    opacity: 0.5;
-    height:250px
-}
+
 .blogCardImgWrap{
     width: 100%;
     height: 300px;

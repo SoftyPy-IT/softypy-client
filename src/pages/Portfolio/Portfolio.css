@@ -1,132 +1,130 @@
+.tabWrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.singlePortfolio {
+  width: 550px;
+  aspect-ratio: 1/1;
+  background-position: top;
+  margin-right: 10px;
+  transition-duration: 17s;
+  transition-delay: 0s;
+  transition-property: all;
+  position: relative;
+}
+.singlePortfolio:hover {
+  background-position: bottom;
+}
 
+/* .portfolio1 {
+  background: url(/public/assets/ghuronti.png);
+  background-size: cover;
+}
+.portfolio2 {
+  background: url(/public/assets/NextStair.png);
+  background-size: cover;
+}
+.portfolio3 {
+  background: url(/public/assets/Arkaxis.png);
+  background-size: cover;
+}
+.portfolio4 {
+  background: url(/public/assets/AirTrips.png);
+  background-size: cover;
+}
+.portfolio5 {
+  background: url(/public/assets/portfolio2.png);
+  background-size: cover;
+}
 
+.portfolio6 {
+  background: url(/public/assets/portfilio3.png);
+  background-size: cover;
+}
+.portfolio7 {
+  background: url(/public/assets/portfolio4.png);
+  background-size: cover;
+}
 
-.tabWrap{
+.portfolio8 {
+  background: url(/public/assets/Bus.png);
+  background-size: cover;
+}
+
+.portfolio9 {
+  background: url(/public/assets/Flight.png);
+  background-size: cover;
+}
+
+.portfolio10 {
+  background: url(/public/assets/Umrah.png);
+  background-size: cover;
+}
+.portfolio11 {
+  background: url(/public/assets/Home-Havenly.png);
+  background-size: cover;
+}
+
+.portfolio12 {
+  background: url(/public/assets/Agency-Website.png);
+  background-size: cover;
+}
+
+.portfolio13 {
+  background: url(/public/assets/landing.png);
+  background-size: cover;
+}
+.portfolio14 {
+  background: url(/public/assets/Hospital-Website.png);
+  background-size: cover;
+}
+.portfolio15 {
+  background: url(/public/assets/shop.png);
+  background-size: cover;
+}
+.portfolio16 {
+  background: url(/public/assets/shop2.png);
+  background-size: cover;
+}
+.portfolio17 {
+  background: url(/public/assets/shop3.png);
+  background-size: cover;
+}
+.portfolio18 {
+  background: url(/public/assets/shop4.png);
+  background-size: cover;
+}
+.portfolio19 {
+  background: url(/public/assets/Trust-Auto-Solution.png);
+  background-size: cover;
+  width: 580px;
+  overflow: hidden;
+  object-fit: contain;
+} */
+
+@media only screen and (max-width: 1024px) {
+  .singlePortfolio {
+    width: 470px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .singlePortfolio {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .singlePortfolio {
+    width: 250px
+  }
+}
+/* @media only screen and (max-width: 300px) {
+  .singlePortfolio {
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
+  }
 }
-.singlePortfolio{
-    width: 580px;
-   aspect-ratio: 1/1;
-    background-position: top;
-    margin-right: 10px;
-    transition-duration: 17s;
-    transition-delay: 0s;
-    transition-property: all ;
-    position: relative;
-
-   
-}
-.singlePortfolio:hover{
-    background-position: bottom;
- }
- 
-
-.portfolio1{
-    background: url(/public/assets/ghuronti.png);
-    background-size: cover;
-}
-.portfolio2{
-    background: url(/public/assets/NextStair.png);
-    background-size: cover;
-}
-.portfolio3{
-    background: url(/public/assets/Arkaxis.png);
-    background-size: cover;
-}
-.portfolio4{
-    background: url(/public/assets/AirTrips.png);
-    background-size: cover;
-}
-.portfolio5{
-    background: url(/public/assets/portfolio2.png);
-    background-size: cover;
-}
-
-.portfolio6{
-    background: url(/public/assets/portfilio3.png);
-    background-size: cover;
-}
-.portfolio7{
-    background: url(/public/assets/portfolio4.png);
-    background-size: cover;
-}
-
-.portfolio8{
-    background: url(/public/assets/Bus.png);
-    background-size: cover;
-}
-
-.portfolio9{
-    background: url(/public/assets/Flight.png);
-    background-size: cover;
-}
-
-.portfolio10{
-    background: url(/public/assets/Umrah.png);
-    background-size: cover;
-}
-.portfolio11{
-    background: url(/public/assets/Home-Havenly.png);
-    background-size: cover;
-}
-
-
-.portfolio12{
-    background: url(/public/assets/Agency-Website.png);
-    background-size: cover;
-}
-
-.portfolio13{
-    background: url(/public/assets/landing.png);
-    background-size: cover;
-}
-.portfolio14{
-    background: url(/public/assets/Hospital-Website.png);
-    background-size: cover;
-}
-.portfolio15{
-    background: url(/public/assets/shop.png);
-    background-size: cover;
-}
-.portfolio16{
-    background: url(/public/assets/shop2.png);
-    background-size: cover;
-}
-.portfolio17{
-    background: url(/public/assets/shop3.png);
-    background-size: cover;
-}
-.portfolio18{
-    background: url(/public/assets/shop4.png);
-    background-size: cover;
-}
-.portfolio19{
-    background: url(/public/assets/Trust-Auto-Solution.png);
-    background-size: cover;
-    width:580px;
-    overflow: hidden;
-    object-fit: contain;
-}
-
-
-
-
-
-
-@media only screen and (max-width:1024px){
-    .singlePortfolio {
-        width: 330px;
-    }
-    .singlePortfolio {
-        width: 470px;
-    }
-    
-}
-@media only screen and (max-width:768px){
-    .singlePortfolio {
-  width:100%;
-    }
-    
-}
+@media only screen and (max-width: 250px) {
+  .singlePortfolio {
+    width: 250px;
+  }
+} */

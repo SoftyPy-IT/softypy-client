@@ -8,10 +8,8 @@
   left: 0;
   right: 0;
   position: relative;
-
 }
 .sticky {
- 
   margin: 0 auto;
   background-color: #fff;
   width: 100%;
@@ -36,8 +34,8 @@
   position: relative;
 }
 
-
-.bar, .bar2 {
+.bar,
+.bar2 {
   display: none;
 }
 .mobileMenu,
@@ -49,7 +47,7 @@
 }
 .userItems {
   position: absolute;
-  background: #2D57A2;
+  background: #2d57a2;
   text-align: center;
   padding: 20px 10px;
   border-radius: 3px;
@@ -72,10 +70,11 @@
 .serviceNavItems {
   position: relative;
 }
-.dropDownMenu, .teamSubMenu {
+.dropDownMenu,
+.teamSubMenu {
   position: absolute;
   background: #fff;
-  color:black;
+  color: black;
   top: 24px;
   width: 250px;
   padding: 10px;
@@ -90,7 +89,6 @@
   font-size: 12px;
 }
 
-
 .serviceNavItems:hover .dropDownMenu {
   opacity: 1;
   transform: scaleY(1);
@@ -101,12 +99,13 @@
   transform: scaleY(1);
   visibility: visible;
 }
-.mainSubmenu2:hover .subMenu2{
+.mainSubmenu2:hover .subMenu2 {
   opacity: 1;
   transform: scaleY(1);
   visibility: visible;
 }
-.subMenu1, .subMenu2 {
+.subMenu1,
+.subMenu2 {
   width: 500px;
   background-color: white;
   color: black;
@@ -121,9 +120,8 @@
   opacity: 0;
   transform: scaleY(0);
   visibility: hidden;
-
 }
-.subMenu2{
+.subMenu2 {
   opacity: 0;
   transform: scaleY(0);
   visibility: visible;
@@ -131,7 +129,7 @@
   right: -327px;
   top: 8px;
 }
-.mainSubmenu:hover .subMenu1{
+.mainSubmenu:hover .subMenu1 {
   opacity: 1;
   transform: scaleY(1);
   visibility: visible;
@@ -148,56 +146,54 @@
   transform-origin: top;
   left: 29px;
 }
-.hoverSubmenu:hover .submenu{
+.hoverSubmenu:hover .submenu {
   opacity: 1;
   transform: scaleY(1);
   visibility: visible;
 }
-.teamSubMenu{
-  left:225px;
+.teamSubMenu {
+  left: 225px;
 }
 
-
-.teamHoverMenuItem:hover .teamSubMenu{
+.teamHoverMenuItem:hover .teamSubMenu {
   opacity: 1;
   transform: scaleY(1);
   visibility: visible;
 }
 
-.menuBox{
-  border-right:1px solid #ddd;
+.menuBox {
+  border-right: 1px solid #ddd;
   padding: 0 15px;
   /* width:220px; */
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
 }
-.menuBox:last-child{
+.menuBox:last-child {
   border-right: 0px;
 }
-.iconsShapeWrap{
+.iconsShapeWrap {
   position: relative;
 }
-.iconsShapeWrap::after{
-  position:absolute;
-  content: '';
-  width:50px;
-  height:50px;
-  background:#EDEDEE;
+.iconsShapeWrap::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #ededee;
   border-radius: 100%;
   z-index: -2;
-  top:5px;
-  left:-15px
+  top: 5px;
+  left: -15px;
 }
-.active{
+.active {
   font-weight: bold;
-  color:#40C7F4;
+  color: #40c7f4;
 }
 
-@media only screen and (min-width:1200px){
-  .sticky{
+@media only screen and (min-width: 1200px) {
+  .sticky {
     padding: 15px 349px;
   }
-  
 }
 @media only screen and (max-width: 1024px) {
   .navbar,
@@ -229,7 +225,7 @@
     padding-left: 20px;
     transition: all 0.5s cubic-bezier(0.46, 0.38, 0.52, 0.46);
     z-index: 99999999999;
-    background:black;
+    background: black;
   }
   .mobileMenuActive {
     left: 0px !important;
@@ -239,7 +235,8 @@
     margin-bottom: 18px;
   }
 
-  .bar, .bar2 {
+  .bar,
+  .bar2 {
     padding: 0px !important;
     text-align: left !important;
     width: 49px;
@@ -256,10 +253,12 @@
     right: 21px;
     z-index: 999999;
   }
-  .bar div , .bar2 div {
+  .bar div,
+  .bar2 div {
     position: relative;
   }
-  .bar span , .bar2 span {
+  .bar span,
+  .bar2 span {
     width: 30px;
     height: 2px;
     background: #111;
@@ -268,11 +267,11 @@
     transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
   }
 
-  .bars span{
-    background:#fff !important;
+  .bars span {
+    background: #fff !important;
   }
-  .sticky .bars span{
-    background:#111 !important
+  .sticky .bars span {
+    background: #111 !important;
   }
 
   .bar1 {
@@ -297,38 +296,36 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .menuBox{      
-    border-right:none;
- 
+  .menuBox {
+    border-right: none;
   }
-.sticky .bar span{
-  background:black;
-}
+  .sticky .bar span {
+    background: black;
+  }
 
-.dropDownMenu, .teamSubMenu {
-  width: 200px;
-}
-.teamSubMenu {
-  left: 201px;
-  top: 232px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.subMenu1 {
-  left:210px;
-  background:#40C7F4;
-  
-}
-.subMenu2{
-  left:50px;
-  top:80px;
-  background:#40C7F4;
-  width: 250px;
-  padding:10px 0px;
-}
-.security {
-  display: none;
- }
-
+  .dropDownMenu,
+  .teamSubMenu {
+    width: 200px;
+  }
+  .teamSubMenu {
+    left: 201px;
+    top: 232px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .subMenu1 {
+    left: 210px;
+    background: #40c7f4;
+  }
+  .subMenu2 {
+    left: 50px;
+    top: 80px;
+    background: #40c7f4;
+    width: 250px;
+    padding: 10px 0px;
+  }
+  .security {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -345,44 +342,37 @@
     height: 2.5rem;
   }
 
-
   .whatsApp {
     right: 12px;
-}
+  }
 
-.teamSubMenu {
-  left: 0px;
-  top: 241px;
-  background: #40C7F4;
-  color: white;
-
-}
-.subMenu1 {
-  left: 0px;
-  top: 0px;
-  width:200px;
-  background-color: #40C7F4;
-  padding-left:0px;
-  border:none ;
-  
-}
-.subMenu2{
-  left:10px;
-}
-
-
+  .teamSubMenu {
+    left: 0px;
+    top: 241px;
+    background: #40c7f4;
+    color: white;
+  }
+  .subMenu1 {
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    background-color: #40c7f4;
+    padding-left: 0px;
+    border: none;
+  }
+  .subMenu2 {
+    left: 10px;
+  }
 }
 @media only screen and (max-width: 400px) {
-  .mobileMenu, .mobileMenuActive {
+  .mobileMenu,
+  .mobileMenuActive {
     width: 195px;
+  }
+  .subMenu1 {
+    right: 0px;
+  }
+  .subMenu2 {
+    width: 220px;
+  }
 }
-.subMenu1 {
-  right: 0px;
-}
-.subMenu2{
- width: 220px;
-}
-
-
-}
-

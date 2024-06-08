@@ -19,3 +19,45 @@
       margin-top: 80px;
    }
 }
+
+.serviceDetailsWrap {
+   width: 100%;
+   height: 350px;
+   background-image: url(../assets/business/contact.jpg);
+   position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+.blogFeatureContainer {
+   background-image: url(../assets/business/contact.jpg);
+ }
+ .serviceDetailsWrap::after {
+   position: absolute;
+   top: 0;
+   content: "";
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   z-index: 1;
+   opacity: 0.8;
+ }
+ .chatIcon {
+   font-size: 15px !important;
+ }
+ 
+ .aboutContent {
+   position: absolute;
+   z-index: 5;
+   color: #fff;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ @media only screen and (max-width:768px){
+   .serviceDetailsWrap {
+      height: 250px;
+  }
+ }

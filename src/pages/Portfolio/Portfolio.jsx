@@ -1,50 +1,94 @@
 import { useState } from "react";
-import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
+import {
+  Tabs,
+  Tab,
+  Box,
+  Typography,
+  CircularProgress,
+  AppBar,
+} from "@mui/material";
 import Container from "../../ui/Container";
 import NavBar from "../Shared/NavBar/NavBar";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import "./Portfolio.css";
 import { useGetPortfolioQuery } from "../../redux/features/portfolio/portfolioApi";
 
+
 const Portfolio = () => {
   const { data: portfolioData, isLoading, isError } = useGetPortfolioQuery({
     allData: true,
   });
-console.log(portfolioData)
   const [tabIndex, setTabIndex] = useState(0);
 
+  const handleTabChange = (event, newIndex) => {
+    setTabIndex(newIndex);
+  };
+
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <CircularProgress />;
   }
 
   if (isError || !portfolioData) {
-    return <p>Error fetching data.</p>;
+    return <Typography>Error fetching data.</Typography>;
   }
 
-  const ecommerceProjects = portfolioData?.portfolio.filter(
-    (item) => item.category === "E-commerce"
-  );
-  const travelAgencyProjects = portfolioData?.portfolio.filter(
-    (item) => item.category === "Travel Agency"
-  );
-  const nonProfitProjects = portfolioData?.portfolio.filter(
-    (item) => item.category === "Non-Profit"
-  );
-  const realEstateProjects = portfolioData?.portfolio.filter(
-    (item) => item.category === "Real State"
-  );
-  const educationProjects = portfolioData?.portfolio.filter(
-    (item) => item.category === "Educations"
-  );
-  const erpProjects = portfolioData?.portfolio.filter(
-    (item) => item.category === "ERP"
-  );
-  const newsPortalProjects = portfolioData?.portfolio.filter(
-    (item) => item.category === "News Portal"
-  );
+  const categories = [
+    { label: "All", projects: portfolioData.portfolio },
+    {
+      label: "E-Commerce",
+      projects: portfolioData.portfolio.filter(
+        (item) => item.category === "E-commerce"
+      ),
+    },
+    {
+      label: "Travel Agency",
+      projects: portfolioData.portfolio.filter(
+        (item) => item.category === "Travel Agency"
+      ),
+    },
+    {
+      label: "News Portal",
+      projects: portfolioData.portfolio.filter(
+        (item) => item.category === "News Portal"
+      ),
+    },
+    {
+      label: "Non-Profit",
+      projects: portfolioData.portfolio.filter(
+        (item) => item.category === "Non-Profit"
+      ),
+    },
+    {
+      label: "Real Estate",
+      projects: portfolioData.portfolio.filter(
+        (item) => item.category === "Real State"
+      ),
+    },
+    {
+      label: "Education",
+      projects: portfolioData.portfolio.filter(
+        (item) => item.category === "Educations"
+      ),
+    },
+    {
+      label: "ERP",
+      projects: portfolioData.portfolio.filter(
+        (item) => item.category === "ERP"
+      ),
+    },
+  ];
+  const tabStyles = {
+    color: "#fff",
+    minHeight: "unset",
+    BorderBottom: "none",
+    "&.Mui-selected": {
+      backgroundColor: "#4168AB",
+      color: "#fff",
+      borderRadius: "3px",
+      BorderBottom: "none",
+    },
+  };
 
   return (
     <div>
@@ -53,14 +97,9 @@ console.log(portfolioData)
           <div className="shadow-lg">
             <NavBar />
           </div>
-          <div className="aboutContainers portfolioContainer">
-            <div className="aboutContent">
-              <div className="flex items-center aboutBtnTopWraps uppercase bg-[#40C7F4] text-white rounded-md w-[200px] justify-between mb-5 px-3 py-3">
-                <p>Home</p>
-                <FaAngleRight />
-                <p>Portfolio</p>
-              </div>
-              <h2 className="ml-0 text-xl md:text-3xl font-bold md:text-left text-center uppercase lg:text-5xl">
+          <div className="serviceDetailsWrap aboutWraps portfolioContainer">
+            <div className="aboutContent ">
+              <h2 className="md:text-3xl font-bold text-center uppercase lg:text-5xl ">
                 Our Portfolio
               </h2>
             </div>
@@ -69,23 +108,44 @@ console.log(portfolioData)
       </div>
       <Container>
         <div className="mb-24 sectionMargin">
-          <SectionTitle title="Working Portfolio"></SectionTitle>
+          <SectionTitle title="Working Portfolio" />
           <div className="mt-8 mb-24">
-            <Tabs className="tabWrap" selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-              <TabList>
-                <Tab>All</Tab>
-                <Tab>E-Commerce</Tab>
-                <Tab>Travel Agency</Tab>
-                <Tab>News Portal</Tab>
-                <Tab>Non-Profit</Tab>
-                <Tab>Real Estate</Tab>
-                <Tab>Education</Tab>
-                <Tab>ERP</Tab>
-              </TabList>
-              <TabPanel>
+            <AppBar position="static" color="default">
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  background: "#40C7F4",
+                  color: "white",
+                }}
+              >
+                <Tabs
+                  value={tabIndex}
+                  onChange={handleTabChange}
+                  variant="scrollable"
+                  scrollButtons="auto"
+                  aria-label="portfolio categories"
+                  indicatorColor="primary"
+                  textColor="primary"
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    color: "#fff",
+                  }}
+                >
+                  {categories.map((category, index) => (
+                    <Tab sx={tabStyles} key={index} label={category.label} />
+                  ))}
+                </Tabs>
+              </Box>
+            </AppBar>
+            {categories.map((category, index) => (
+              <TabPanel key={index} value={tabIndex} index={index}>
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 gap-10 place-items-center">
-                  {portfolioData.portfolio.map((item, index) => (
-                    <Link key={index} to={item.link} target="_blank">
+                  {category.projects.map((item, idx) => (
+                    <Link key={idx} to={item.link} target="_blank">
                       <div
                         className="singlePortfolio portfolio19"
                         style={{
@@ -102,151 +162,30 @@ console.log(portfolioData)
                   ))}
                 </div>
               </TabPanel>
-              <TabPanel>
-                <div className="grid grid-cols-1 portfolio lg:grid-cols-2 gap-10 place-items-center">
-                  {ecommerceProjects.map((item, index) => (
-                    <Link key={index} to={item.link} target="_blank">
-                      <div
-                        className="singlePortfolio portfolio19"
-                        style={{
-                          backgroundImage: `url('${item.image}')`,
-                          backgroundSize: "cover",
-                        }}
-                      >
-                        <div className="bg-[#40C7F4] text-white absolute gap-10 w-full px-10 py-1 md:py-2 right-0 bottom-0">
-                          <h2 className="text-sm md:text-xl">{item.title}</h2>
-                          <p className="hidden xl:block">{item.description}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
-                  {travelAgencyProjects.map((item, index) => (
-                    <Link key={index} to={item.link} target="_blank">
-                      <div
-                        className="singlePortfolio portfolio19"
-                        style={{
-                          backgroundImage: `url('${item.image}')`,
-                          backgroundSize: "cover",
-                        }}
-                      >
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
-                          <h2 className="text-sm md:text-xl">{item.title}</h2>
-                          <p className="hidden xl:block">{item.description}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
-                  {newsPortalProjects.map((item, index) => (
-                    <Link key={index} to={item.link} target="_blank">
-                      <div
-                        className="singlePortfolio portfolio19"
-                        style={{
-                          backgroundImage: `url('${item.image}')`,
-                          backgroundSize: "cover",
-                        }}
-                      >
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
-                          <h2 className="text-sm md:text-xl">{item.title}</h2>
-                          <p className="hidden xl:block">{item.description}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
-                  {nonProfitProjects.map((item, index) => (
-                    <Link key={index} to={item.link} target="_blank">
-                      <div
-                        className="singlePortfolio portfolio19"
-                        style={{
-                          backgroundImage: `url('${item.image}')`,
-                          backgroundSize: "cover",
-                        }}
-                      >
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
-                          <h2 className="text-sm md:text-xl">{item.title}</h2>
-                          <p className="hidden xl:block">{item.description}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
-                  {realEstateProjects.map((item, index) => (
-                    <Link key={index} to={item.link} target="_blank">
-                      <div
-                        className="singlePortfolio portfolio19"
-                        style={{
-                          backgroundImage: `url('${item.image}')`,
-                          backgroundSize: "cover",
-                        }}
-                      >
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
-                          <h2 className="text-sm md:text-xl">{item.title}</h2>
-                          <p className="hidden xl:block">{item.description}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
-                  {educationProjects.map((item, index) => (
-                    <Link key={index} to={item.link} target="_blank">
-                      <div
-                        className="singlePortfolio portfolio19"
-                        style={{
-                          backgroundImage: `url('${item.image}')`,
-                          backgroundSize: "cover",
-                        }}
-                      >
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
-                          <h2 className="text-sm md:text-xl">{item.title}</h2>
-                          <p className="hidden xl:block">{item.description}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div className="grid grid-cols-1 portfolio gap-10 lg:grid-cols-2 place-items-center">
-                  {erpProjects.map((item, index) => (
-                    <Link key={index} to={item.link} target="_blank">
-                      <div
-                        className="singlePortfolio portfolio19"
-                        style={{
-                          backgroundImage: `url('${item.image}')`,
-                          backgroundSize: "cover",
-                        }}
-                      >
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
-                          <h2 className="text-sm md:text-xl">{item.title}</h2>
-                          <p className="hidden xl:block">{item.description}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </TabPanel>
-              {/* Add TabPanel for other categories if needed */}
-            </Tabs>
+            ))}
           </div>
         </div>
       </Container>
+    </div>
+  );
+};
+
+const TabPanel = (props) => {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`tabpanel-${index}`}
+      aria-labelledby={`tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
     </div>
   );
 };
