@@ -20,6 +20,7 @@ const Services = () => {
   }
   const sortServicesData = services?.services?.slice()?.sort((a,b)=>(a.priority - b.priority ))
 
+  
   return (
     <Container className="">
       <div className="sectionMargin">

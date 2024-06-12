@@ -9,13 +9,18 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { Divider } from "@mui/material";
 import { useGetAllBlogQuery } from "../../redux/features/Blog/blogApi";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const [value, setValue] = useState("1");
-  const { data: blogData, isLoading, isError } = useGetAllBlogQuery({
+  const {
+    data: blogData,
+    isLoading,
+    isError,
+  } = useGetAllBlogQuery({
     allData: true,
   });
-  console.log(blogData?.blog)
+  console.log(blogData?.blog);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -28,8 +33,6 @@ const Blog = () => {
   if (isError || !blogData) {
     return <p>Error fetching data.</p>;
   }
-
-
 
   const tabStyles = {
     width: 130,
@@ -61,12 +64,12 @@ const Blog = () => {
         </div>
       </div> */}
       <div className="serviceDetailsWrap aboutWraps blogFeatureContainer">
-            <div className="aboutContent ">
-              <h2 className="md:text-3xl font-bold text-center uppercase lg:text-5xl ">
-              Feature Blogs
-              </h2>
-            </div>
-          </div>
+        <div className="aboutContent ">
+          <h2 className="md:text-3xl font-bold text-center uppercase lg:text-5xl ">
+            Feature Blogs
+          </h2>
+        </div>
+      </div>
       <div className="bg-[#2D57A2] text-[#fff] py-16">
         <Container>
           <div className="blogWraps">
@@ -86,24 +89,29 @@ const Blog = () => {
                 </Box>
                 <TabPanel value="1">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                  {blogData?.blog?.map((data) => (
-                      <div key={data.id} className="blogCard">
-                        <div className="blogCardImgWrap">
-                          <img src={data.image} alt="blog" />
-                        </div>
-                        <div className="blogContent">
-                          <h2 className="text-xl font-bold">{data.title}</h2>
-                          <p className="text- my-5">
-                            {
-                              data?.description
-                            }
-                          </p>
-                          <Divider component="div" sx={{background:'white', margin: '5px'}} />
-                          <div className="flex justify-between">
-                            <span>MD Shahin Mia</span>
-                            <span className="text-[#cdc8e9]">25-05-2025</span>
-                          </div>
-                        </div>
+                    {blogData?.blog?.map((data) => (
+                      <div key={data.id}>
+                       <Link to={`/blog-details/${data._id}`}>
+                       <div className="blogCard">
+                       <div className="blogCardImgWrap">
+                         <img src={data.image} alt="blog" />
+                       </div>
+                       <div className="blogContent">
+                         <h2 className="text-xl font-bold">{data.title}</h2>
+                         <p className="text- my-5">{data?.description}</p>
+                         <Divider
+                           component="div"
+                           sx={{ background: "white", margin: "5px" }}
+                         />
+                         <div className="flex justify-between">
+                           <span>{data.name}</span>
+                           <span className="text-[#cdc8e9]">
+                             {data.date}
+                           </span>
+                         </div>
+                       </div>
+                     </div>
+                       </Link>
                       </div>
                     ))}
                   </div>

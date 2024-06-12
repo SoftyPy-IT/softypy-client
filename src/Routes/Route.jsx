@@ -154,6 +154,11 @@ export const router = createBrowserRouter([
         element: <BlogDetails/>,
       },
       {
+        path: "/blog-details/:id",
+        element: <BlogDetails />,
+        loader: ({ params }) => fetch(`${API_URL}/blog-details/${params.id}`),
+      },
+      {
         path: "/admin",
         element: <Admin />,
       },

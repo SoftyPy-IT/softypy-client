@@ -184,13 +184,7 @@ const AddBlog = () => {
                 {...register("content")}
                 value={editorValue}
               />
-              {/* <div className="mt-5">
-                <h2 className="text-lg font-semibold">Content:</h2>
-                <div
-                  className="p-4 bg-gray-100 rounded"
-                  dangerouslySetInnerHTML={{ __html: editorValue }}
-                />
-              </div> */}
+              
             </div>
           </div>
 

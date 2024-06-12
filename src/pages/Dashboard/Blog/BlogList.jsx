@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Button, Stack, TextField } from "@mui/material";
 import { useDeleteBlogMutation, useGetAllBlogQuery } from "../../../redux/features/Blog/blogApi";
-import ReactHtmlParser from "react-html-parser"; 
+// import ReactHtmlParser from "react-html-parser"; 
 
 const BlogList = () => {
   const [page, setPage] = useState(1);
@@ -75,31 +75,31 @@ const BlogList = () => {
   }
 
   // Function to render separate elements for different HTML tags
-  const renderContent = (content) => {
-    const parsedContent = ReactHtmlParser(content);
+  // const renderContent = (content) => {
+  //   const parsedContent = ReactHtmlParser(content);
   
-    return parsedContent.map((element, index) => {
-      if (element.type === "h1") {
-        return <h1 key={index} className="text-3xl font-bold mb-4 text-center">{element.props.children}</h1>;
-      } else if (element.type === "h2") {
-        return <h2 key={index} className="text-2xl font-bold mb-3 text-center">{element.props.children}</h2>;
-      } else if (element.type === "h3") {
-        return <h3 key={index} className="text-xl font-bold mb-2 text-center">{element.props.children}</h3>;
-      } else if (element.type === "p") {
-        return <p key={index} className="mb-2">{element.props.children}</p>;
-      } else if (element.type === "img") {
-        return <img key={index} className="w-full h-auto object-cover mb-4" src={element.props.src} alt="Blog Image" />;
-      } else if (element.type === "div" && element.props.className === "ql-align-center") {
-        return <div key={index} className="text-center mb-2">{element.props.children}</div>;
-      } else if (element.type === "div" && element.props.className === "ql-align-right") {
-        return <div key={index} className="text-right mb-2">{element.props.children}</div>;
-      } else if (element.type === "div" && element.props.className === "ql-align-left") {
-        return <div key={index} className="text-left mb-2">{element.props.children}</div>;
-      } else {
-        return null;
-      }
-    });
-  };
+  //   return parsedContent.map((element, index) => {
+  //     if (element.type === "h1") {
+  //       return <h1 key={index} className="text-3xl font-bold mb-4 text-center">{element.props.children}</h1>;
+  //     } else if (element.type === "h2") {
+  //       return <h2 key={index} className="text-2xl font-bold mb-3 text-center">{element.props.children}</h2>;
+  //     } else if (element.type === "h3") {
+  //       return <h3 key={index} className="text-xl font-bold mb-2 text-center">{element.props.children}</h3>;
+  //     } else if (element.type === "p") {
+  //       return <p key={index} className="mb-2">{element.props.children}</p>;
+  //     } else if (element.type === "img") {
+  //       return <img key={index} className="w-full h-auto object-cover mb-4" src={element.props.src} alt="Blog Image" />;
+  //     } else if (element.type === "div" && element.props.className === "ql-align-center") {
+  //       return <div key={index} className="text-center mb-2">{element.props.children}</div>;
+  //     } else if (element.type === "div" && element.props.className === "ql-align-right") {
+  //       return <div key={index} className="text-right mb-2">{element.props.children}</div>;
+  //     } else if (element.type === "div" && element.props.className === "ql-align-left") {
+  //       return <div key={index} className="text-left mb-2">{element.props.children}</div>;
+  //     } else {
+  //       return null;
+  //     }
+  //   });
+  // };
   
 
   return (
@@ -128,7 +128,7 @@ const BlogList = () => {
           <thead className="tableWrap">
             <tr>
               <th>SL NO</th>
-              <th>Content</th>
+              <th>Image</th>
               <th>Category</th>
               <th>Title</th>
               <th>Priority</th>
@@ -140,9 +140,7 @@ const BlogList = () => {
               <tr key={project._id}>
                 <td>{(page - 1) * 5 + i + 1}</td>
                 <td>
-                  <div className="w-[300px]">
-                    {renderContent(project?.content)}
-                  </div>
+                <img className="w-20 h mx-auto " src={project.image} alt="" />
                 </td>
                 <td>{project.category}</td>
                 <td>{project.title}</td>
