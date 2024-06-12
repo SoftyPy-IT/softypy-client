@@ -27,7 +27,7 @@ const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN;
 
 const AddBlog = () => {
   const navigate = useNavigate();
-  const [createBlog] = useCreateBlogMutation();
+  const [createBlog,{reset}] = useCreateBlogMutation();
   const [editorValue, setEditorValue] = useState("");
   console.log(editorValue);
   const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`;
@@ -66,7 +66,8 @@ const AddBlog = () => {
 
       if (res?.insertedId) {
         toast.success("Blog post created successfully!");
-        // navigate("/dashboard/portfolio-list");
+        navigate("/dashboard/blog-list");
+        reset()
       } else {
         throw new Error("Failed to create blog post.");
       }
@@ -79,6 +80,7 @@ const AddBlog = () => {
       });
     }
   };
+
 
   return (
     <div className="mt-10">

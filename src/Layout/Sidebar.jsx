@@ -11,8 +11,8 @@ const Sidebar = () => {
     <div className="fixed overflow-y-scroll overflow-x-hidden  drawwerLeftSide h-screen text-lg font-semibold  bg-[#191E2D] text-white">
       <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
       <Link to="/" className="shadow-md z-10">
-         <h3 className='text-3xl font-bold m-3'>   SoftyPy</h3>
-          </Link>
+        <h3 className="text-3xl font-bold m-3"> SoftyPy</h3>
+      </Link>
       <ul className=" p-4 ">
         <li className="mb-3">
           <Link to="/dashboard" className="shadow-md z-10">
@@ -76,24 +76,24 @@ const Sidebar = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion>
-        <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography>Employee Application</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <Link to="/dashboard/application">
-              <div className="flex items-center text-sm ">
-                <FaThList className="mr-1 " />
-                <span>Application List </span>
-              </div>
-            </Link>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDownwardIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            <Typography>Employee Application</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              <Link to="/dashboard/application">
+                <div className="flex items-center text-sm ">
+                  <FaThList className="mr-1 " />
+                  <span>Application List </span>
+                </div>
+              </Link>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
         <Accordion>
           <AccordionSummary
             expandIcon={<ArrowDownwardIcon />}
@@ -221,7 +221,7 @@ const Sidebar = () => {
               </Typography>
             </div>
             <Typography>
-              <Link to="/dashboard/portfolio-list">
+              <Link to="/dashboard/blog-list">
                 <div className="flex items-center text-sm ">
                   <FaThList className="mr-1 " />
                   <span>All Blog </span>
@@ -250,24 +250,24 @@ const Sidebar = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion>
-        <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography> Users </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <Link to="/dashboard/users-list">
-              <div className="flex items-center text-sm ">
-                <HiChatBubbleLeft className="mr-1 " />
-                <span>All Users </span>
-              </div>
-            </Link>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDownwardIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            <Typography> Users </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              <Link to="/dashboard/users-list">
+                <div className="flex items-center text-sm ">
+                  <HiChatBubbleLeft className="mr-1 " />
+                  <span>All Users </span>
+                </div>
+              </Link>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
       </ul>
     </div>
   );

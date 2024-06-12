@@ -78,6 +78,16 @@ export const router = createBrowserRouter([
         loader: ({ params }) => fetch(`${API_URL}/singleServices/${params.id}`),
       },
       {
+        path: "/blog",
+        element: <Blog />,
+      },
+
+      {
+        path: "/blog/:id",
+        element: <BlogDetails />,
+        loader: ({ params }) => fetch(`${API_URL}/blog/${params.id}`),
+      },
+      {
         path: "/services",
         element: <Services></Services>,
       },
@@ -145,19 +155,7 @@ export const router = createBrowserRouter([
         path: "/careers-apply",
         element: <CareersApply />,
       },
-      {
-        path: "/blog",
-        element: <Blog/>,
-      },
-      {
-        path: "/blog-details",
-        element: <BlogDetails/>,
-      },
-      {
-        path: "/blog-details/:id",
-        element: <BlogDetails />,
-        loader: ({ params }) => fetch(`${API_URL}/blog-details/${params.id}`),
-      },
+     
       {
         path: "/admin",
         element: <Admin />,

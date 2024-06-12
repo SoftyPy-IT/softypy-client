@@ -8,8 +8,11 @@ import {
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Button, Stack, TextField } from "@mui/material";
-import { useDeleteBlogMutation, useGetAllBlogQuery } from "../../../redux/features/Blog/blogApi";
-// import ReactHtmlParser from "react-html-parser"; 
+import {
+  useDeleteBlogMutation,
+  useGetAllBlogQuery,
+} from "../../../redux/features/Blog/blogApi";
+// import ReactHtmlParser from "react-html-parser";
 
 const BlogList = () => {
   const [page, setPage] = useState(1);
@@ -27,7 +30,6 @@ const BlogList = () => {
     };
   }, [search]);
 
-  // Fetch portfolio data
   const { data: blogData, isLoading, isError } = useGetAllBlogQuery({
     page,
     limit: 5,
@@ -74,41 +76,13 @@ const BlogList = () => {
     return <p>Error fetching data.</p>;
   }
 
-  // Function to render separate elements for different HTML tags
-  // const renderContent = (content) => {
-  //   const parsedContent = ReactHtmlParser(content);
-  
-  //   return parsedContent.map((element, index) => {
-  //     if (element.type === "h1") {
-  //       return <h1 key={index} className="text-3xl font-bold mb-4 text-center">{element.props.children}</h1>;
-  //     } else if (element.type === "h2") {
-  //       return <h2 key={index} className="text-2xl font-bold mb-3 text-center">{element.props.children}</h2>;
-  //     } else if (element.type === "h3") {
-  //       return <h3 key={index} className="text-xl font-bold mb-2 text-center">{element.props.children}</h3>;
-  //     } else if (element.type === "p") {
-  //       return <p key={index} className="mb-2">{element.props.children}</p>;
-  //     } else if (element.type === "img") {
-  //       return <img key={index} className="w-full h-auto object-cover mb-4" src={element.props.src} alt="Blog Image" />;
-  //     } else if (element.type === "div" && element.props.className === "ql-align-center") {
-  //       return <div key={index} className="text-center mb-2">{element.props.children}</div>;
-  //     } else if (element.type === "div" && element.props.className === "ql-align-right") {
-  //       return <div key={index} className="text-right mb-2">{element.props.children}</div>;
-  //     } else if (element.type === "div" && element.props.className === "ql-align-left") {
-  //       return <div key={index} className="text-left mb-2">{element.props.children}</div>;
-  //     } else {
-  //       return null;
-  //     }
-  //   });
-  // };
-  
-
   return (
     <div className="mt-5 mb-24 w-full">
       <Stack
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        padding="0 5px"
+        padding="0 20px"
       >
         <TextField
           id="outlined-basic"
@@ -119,7 +93,11 @@ const BlogList = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <Button component={Link} to="/dashboard/add-portfolio" variant="contained">
+        <Button
+          component={Link}
+          to="/dashboard/create-blog"
+          variant="contained"
+        >
           Add Blog
         </Button>
       </Stack>
@@ -140,7 +118,7 @@ const BlogList = () => {
               <tr key={project._id}>
                 <td>{(page - 1) * 5 + i + 1}</td>
                 <td>
-                <img className="w-20 h mx-auto " src={project.image} alt="" />
+                  <img className="w-20 h mx-auto " src={project.image} alt="" />
                 </td>
                 <td>{project.category}</td>
                 <td>{project.title}</td>

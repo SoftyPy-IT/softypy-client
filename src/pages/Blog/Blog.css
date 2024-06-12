@@ -11,6 +11,7 @@
     position: relative;
     transition: all .100s cubic-bezier(0.49, 0.5, 0.59, 0.6);
     top: 0px;
+    color:#111;
 }
 .blogCard:hover{
     top:-10px;
@@ -22,17 +23,16 @@
     height: 300px;
     overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
-.blogCard img {
+.blogCardImgWrap img {
  width:100%;
  height:100%;
   object-fit: cover;
-
   transition: all .5s ease-in-out;
+  overflow: hidden;
 }
 .blogContent {
-  background: #2d58a2e7;
-  color: #fff;
   padding: 20px;
 }
 .blogCard:hover img{
@@ -46,6 +46,24 @@ top:5px;
 .blogSubscribe{
     border:1px solid #fff;
 }
+
+.newsDetailsRightSideWrap {
+    border: 1px solid #ddd;
+  }
+  
+  .commentCard {
+    padding: 20px 30px;
+    background-color: #f4f7fc;
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+  }
+
+  
+
+  
 @media only screen and (max-width:1024px){
     .blogCard {
         width: 100%;

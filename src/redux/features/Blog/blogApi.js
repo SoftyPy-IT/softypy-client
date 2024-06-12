@@ -5,7 +5,7 @@ export const blogApi = baseApi.injectEndpoints({
     getAllBlog: builder.query({
       query: ({ allData = false, page = 1, limit = 5, search = '' }) => 
         allData ? `blog` : `blog?page=${page}&limit=${limit}&search=${search}`,
-      providesTags: ['portfolio'],
+      providesTags: ['blog'],
     }),
  
     getSingleBlog: builder.query({

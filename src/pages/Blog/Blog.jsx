@@ -1,50 +1,61 @@
 import { useState } from "react";
-import NavBar from "../Shared/NavBar/NavBar";
-import "./Blog.css";
+import { Link } from "react-router-dom";
+import { Tabs, Tab, Box, Typography, CircularProgress } from "@mui/material";
 import Container from "../../ui/Container";
-import Box from "@mui/material/Box";
-import Tab from "@mui/material/Tab";
-import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
+import NavBar from "../Shared/NavBar/NavBar";
 import { Divider } from "@mui/material";
 import { useGetAllBlogQuery } from "../../redux/features/Blog/blogApi";
-import { Link } from "react-router-dom";
+import "./Blog.css";
 
 const Blog = () => {
-  const [value, setValue] = useState("1");
-  const {
-    data: blogData,
-    isLoading,
-    isError,
-  } = useGetAllBlogQuery({
+  const { data: blogData, isLoading, isError } = useGetAllBlogQuery({
     allData: true,
   });
-  console.log(blogData?.blog);
+  console.log(blogData);
+  const [tabIndex, setTabIndex] = useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
+  const handleTabChange = (event, newIndex) => {
+    setTabIndex(newIndex);
   };
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <CircularProgress />;
   }
 
   if (isError || !blogData) {
-    return <p>Error fetching data.</p>;
+    return <Typography>Error fetching data.</Typography>;
   }
+
+  const categories = [
+    { label: "All", projects: blogData.blog },
+    {
+      label: "E-Commerce",
+      projects: blogData.blog.filter((item) => item.category === "E-commerce"),
+    },
+    {
+      label: "Travel Agency",
+      projects: blogData.blog.filter(
+        (item) => item.category === "Travel Agency"
+      ),
+    },
+    {
+      label: "News Portal",
+      projects: blogData.blog.filter((item) => item.category === "News Portal"),
+    },
+  ];
 
   const tabStyles = {
     width: 130,
     height: "35px",
     margin: 1,
-    backgroundColor: "#4168AB",
+    backgroundColor: "#40C7F4",
     color: "white",
     borderRadius: 10,
     padding: "0px",
     fontSize: "12px",
     lineHeight: "20px",
     minHeight: "unset",
+    BorderBottom: "none",
     "&.Mui-selected": {
       backgroundColor: "#4168AB",
       color: "#fff",
@@ -53,76 +64,100 @@ const Blog = () => {
 
   return (
     <div>
-      <div className="">
-        <NavBar />
-      </div>
-      {/* <div className="aboutContainers blogFeatureContainer">
-        <div className="aboutContent">
-          <h2 className="text-xl md:text-2xl font-bold uppercase lg:text-5xl md:text-center">
+      <NavBar />
+      <div className="careerContainerWraps">
+        <div className="careerText">
+          <h3 className="leading-30 md:text-4xl xl:text-4xl font-bold">
             Feature Blogs
-          </h2>
-        </div>
-      </div> */}
-      <div className="serviceDetailsWrap aboutWraps blogFeatureContainer">
-        <div className="aboutContent ">
-          <h2 className="md:text-3xl font-bold text-center uppercase lg:text-5xl ">
-            Feature Blogs
-          </h2>
+          </h3>
         </div>
       </div>
-      <div className="bg-[#2D57A2] text-[#fff] py-16">
+
+      <div className="py-16">
         <Container>
           <div className="blogWraps">
             <h1 className="my-3 text-2xl font-semibold">Recent Blogs</h1>
             <Box sx={{ width: "100%", typography: "body1" }}>
-              <TabContext value={value}>
-                <Box>
-                  <TabList
-                    onChange={handleChange}
-                    aria-label="lab API tabs example"
-                    sx={{ ".MuiTabs-indicator": { display: "none" } }}
-                  >
-                    <Tab label="E-commerce" value="1" sx={tabStyles} />
-                    <Tab label="Item Two" value="2" sx={tabStyles} />
-                    <Tab label="Item Three" value="3" sx={tabStyles} />
-                  </TabList>
-                </Box>
-                <TabPanel value="1">
+              <Tabs
+                value={tabIndex}
+                onChange={handleTabChange}
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="blog categories"
+                indicatorColor="primary"
+                textColor="primary"
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  color: "#fff",
+                  borderBottom: "none",
+                }}
+              >
+                {categories.map((category, index) => (
+                  <Tab key={index} label={category.label} sx={tabStyles} />
+                ))}
+              </Tabs>
+
+              {categories.map((category, index) => (
+                <TabPanel key={index} value={tabIndex} index={index}>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {blogData?.blog?.map((data) => (
+                    {category.projects.map((data) => (
                       <div key={data.id}>
-                       <Link to={`/blog-details/${data._id}`}>
-                       <div className="blogCard">
-                       <div className="blogCardImgWrap">
-                         <img src={data.image} alt="blog" />
-                       </div>
-                       <div className="blogContent">
-                         <h2 className="text-xl font-bold">{data.title}</h2>
-                         <p className="text- my-5">{data?.description}</p>
-                         <Divider
-                           component="div"
-                           sx={{ background: "white", margin: "5px" }}
-                         />
-                         <div className="flex justify-between">
-                           <span>{data.name}</span>
-                           <span className="text-[#cdc8e9]">
-                             {data.date}
-                           </span>
-                         </div>
-                       </div>
-                     </div>
-                       </Link>
+                        <Link to={`/blog/${data._id}`}>
+                          <div className="blogCard">
+                            <div className="blogCardImgWrap">
+                              <img src={data.image} alt="blog" />
+                            </div>
+                            <div className="blogContent">
+                              <h2 className="text-xl font-bold">
+                                {data.title}
+                              </h2>
+                              <p className="text- my-5">
+                                {data.description.slice(0, 250)}
+                              </p>
+                              <Divider
+                                component="div"
+                                sx={{ background: "white", margin: "5px" }}
+                              />
+                              <div className="flex justify-between">
+                                <span>{data.name}</span>
+                                <span className="text-[#645e5e]">
+                                  {data.date}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </Link>
                       </div>
                     ))}
                   </div>
                 </TabPanel>
-                <TabPanel value="2">Item Two</TabPanel>
-                <TabPanel value="3">Item Three</TabPanel>
-              </TabContext>
+              ))}
             </Box>
           </div>
         </Container>
       </div>
+    </div>
+  );
+};
+
+const TabPanel = (props) => {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`tabpanel-${index}`}
+      aria-labelledby={`tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
     </div>
   );
 };
