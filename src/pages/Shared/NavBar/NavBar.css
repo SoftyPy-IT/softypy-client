@@ -225,7 +225,7 @@
     padding-left: 20px;
     transition: all 0.5s cubic-bezier(0.46, 0.38, 0.52, 0.46);
     z-index: 99999999999;
-    background: black;
+    background: #1586FD;
   }
   .mobileMenuActive {
     left: 0px !important;

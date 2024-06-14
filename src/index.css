@@ -51,7 +51,7 @@ body {
   margin: 0 auto;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 10px solid #2d57a2;
+  border-top: 10px solid #1586FD;
   bottom: -1px;
   z-index: 99 !important;
   transform: rotate(56deg);
@@ -94,7 +94,7 @@ table {
   border-right: 1px solid #ddd;
   text-align: center;
   font-size: 12px;
-  border-bottom: 1px solid #2d57a2;
+  border-bottom: 1px solid #1586FD;
 }
 .table :where(td):nth-last-of-type() {
   border-bottom: 3px solid #ddd !important;
@@ -102,7 +102,7 @@ table {
 .table :where(th) {
   border: 1px solid #fff;
   text-align: center;
-  background: #2d57a2;
+  background: #1586FD;
   font-size: 14px;
   color: white;
 }
@@ -252,7 +252,7 @@ select:focus {
     font-size: 7px !important;
     line-height: -3px !important;
     min-width: 30px !important;
-    background: #2d57a2 !important;
+    background: #1586FD !important;
     margin-left: 5px !important;
     margin: 2px !important;
     min-height: 30px !important;

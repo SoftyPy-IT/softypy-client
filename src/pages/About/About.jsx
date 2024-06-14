@@ -87,7 +87,7 @@ const About = () => {
         <div className="sectionMargin">
           <Container>
             <div className="max-w-[800px] mx-auto text-center">
-              <h2 className="text-4xl font-semibold text-[#2D57A2]">
+              <h2 className="text-4xl font-semibold text-[#1586FD]">
                 Our History{" "}
               </h2>
               <p>
@@ -165,7 +165,7 @@ const About = () => {
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              <h2 className="basic-title text-[#2D57A2]">Our Expert Team</h2>
+              <h2 className="basic-title text-[#1586FD]">Our Expert Team</h2>
               <div className="basic-title--sub">
                 <p>
                   {" "}

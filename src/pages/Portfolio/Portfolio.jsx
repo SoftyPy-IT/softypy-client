@@ -83,7 +83,7 @@ const Portfolio = () => {
     minHeight: "unset",
     BorderBottom: "none",
     "&.Mui-selected": {
-      backgroundColor: "#4168AB",
+      backgroundColor: "#2D57A2",
       color: "#fff",
       borderRadius: "3px",
       BorderBottom: "none",
