@@ -131,7 +131,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Ghuronti Travels Ltd
                         </h2>
@@ -153,7 +153,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">Trandhaven </h2>
                         <p className="hidden xl:block">
                           Trandhaven Crafting unforgettable experiences. From
@@ -172,7 +172,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Airtrips Travels Ltd
                         </h2>
@@ -194,7 +194,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">Taqwaacor</h2>
                         <p className="hidden xl:block">
                           Taqwaacor.com: Elevate your shopping experience.
@@ -214,7 +214,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">Techzon </h2>
                         <p className="hidden xl:block">
                           Techzon Crafting unforgettable experiences. From
@@ -232,7 +232,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Qrbangladesh Swimmingpoolstrore{" "}
                         </h2>
@@ -257,7 +257,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">Trandhaven </h2>
                         <p className="hidden xl:block">
                           Trandhaven Crafting unforgettable experiences. From
@@ -275,7 +275,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">Techzon </h2>
                         <p className="hidden xl:block">
                           Techzon Crafting unforgettable experiences. From
@@ -293,7 +293,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">Taqwaacor</h2>
                         <p className="hidden xl:block">
                           Taqwaacor.com: Elevate your shopping experience.
@@ -312,7 +312,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">zynix</h2>
                         <p className="hidden xl:block">
                           "Zynix: Your ultimate shopping destination. Discover
@@ -336,7 +336,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Ghuronti Travels Ltd
                         </h2>
@@ -357,7 +357,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Airtrips Travels Ltd
                         </h2>
@@ -372,7 +372,7 @@ const SingleService = () => {
                   </Link>
                   <Link to="https://www.ghuronti.com/hajj/search">
                     <div className="singlePortfolio portfolio10">
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">Hajj & Umrah</h2>
                         <p className="hidden xl:block">
                           Ghuronti.com: Your gateway to unforgettable
@@ -391,7 +391,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Ghuronti Travels Ltd
                         </h2>
@@ -412,7 +412,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Ghuronti Travels Ltd
                         </h2>
@@ -438,7 +438,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">News24</h2>
                         <p className="hidden xl:block">
                           news24darpan.com Crafting unforgettable experiences.
@@ -461,7 +461,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">GIVE</h2>
                         <p className="hidden xl:block">
                           "Give.com: Empowering generosity. Support causes that
@@ -484,7 +484,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Building Planner{" "}
                         </h2>
@@ -498,14 +498,14 @@ const SingleService = () => {
                   </Link>
                   <Link to="https://arkaxis.net/">
                     <div className="singlePortfolio portfolio3">
-                      <div className="bg-[#40C7F4] text-white absolute w-full right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full right-0 bottom-0  ">
                         <h2 className="text-xl">Arkaxis Ltd</h2>
                       </div>
                     </div>
                   </Link>
                   <Link to="https://havenly-de0a6.web.app/">
                     <div className="singlePortfolio portfolio11">
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">House Rent </h2>
                         <p className="hidden xl:block">
                           HouseRent: Your key to finding the perfect home.
@@ -528,7 +528,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio "
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">SoftEdu </h2>
                         <p className="hidden xl:block">
                           SoftEdu Crafting unforgettable experiences. From
@@ -545,7 +545,7 @@ const SingleService = () => {
                 <div className="grid grid-cols-1 portfolio lg:grid-cols-2 place-items-center">
                   <Link to="https://trust-auto-solution.vercel.app/dashboard">
                     <div className="singlePortfolio portfolio19 ">
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">
                           Trust-Auto-Solution
                         </h2>
@@ -569,7 +569,7 @@ const SingleService = () => {
                       }}
                       className="singlePortfolio portfolio19"
                     >
-                      <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
+                      <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0  ">
                         <h2 className="text-sm md:text-xl">Shop Master </h2>
                         <p className="hidden xl:block">
                           Shop Master Your gateway to unforgettable adventures.

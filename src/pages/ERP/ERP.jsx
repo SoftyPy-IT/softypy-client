@@ -37,7 +37,7 @@ const ERP = () => {
       </div>
       <div className="aboutContainers">
         <div className="aboutContent">
-          <div className="flex items-center uppercase bg-[#40C7F4] aboutBtnTopWraps text-white rounded-md w-[120px] justify-between mb-5 px-3 py-3">
+          <div className="flex items-center uppercase bg-[#1586FD] aboutBtnTopWraps text-white rounded-md w-[120px] justify-between mb-5 px-3 py-3">
             <p>Home</p>
             <FaAngleRight />
             <p>ERP </p>

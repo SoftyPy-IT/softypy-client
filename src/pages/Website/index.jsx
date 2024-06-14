@@ -7,7 +7,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 const Website = () => {
   return (
     <div className="pb-10 bg-[#E5E5E5]">
-      <div className="bg-[#40C7F4] text-white">
+      <div className="bg-[#1586FD] text-white">
         <NavBar />
       </div>
 

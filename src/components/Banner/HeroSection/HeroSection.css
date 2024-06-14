@@ -49,11 +49,11 @@
 
 @keyframes reactAnimation {
   0% {
-    rotate:0deg;
+    rotate: 0deg;
   }
- 
+
   100% {
-    rotate:360deg;
+    rotate: 360deg;
   }
 }
 @keyframes nodeZoom {
@@ -72,32 +72,36 @@
 }
 @keyframes jsUpDown {
   0% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(20px)
+    transform: translateY(20px);
   }
- 
+
   100% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 }
 
-.animationIcon{
+.animationIcon {
   animation-name: reactAnimation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-fill-mode: backwards;
 }
-.animationIcon, .node, .js, .flutter {
+.animationIcon,
+.node,
+.js,
+.flutter {
   width: 70px;
   position: absolute;
   right: -180px;
   top: -160px;
 }
-.node, .flutter{
-  top:260px;
+.node,
+.flutter {
+  top: 260px;
   animation-name: nodeZoom;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -105,19 +109,18 @@
   animation-fill-mode: backwards;
 }
 
-.js{
-  left:500px;
+.js {
+  left: 500px;
   animation-name: jsUpDown;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-fill-mode: backwards;
-  top:-70px;
-
+  top: -70px;
 }
-.flutter{
-  top:300px;
-  left:630px;
+.flutter {
+  top: 300px;
+  left: 630px;
 }
 
 .futureText,
@@ -196,7 +199,7 @@
   transform: translate(-50%, -50%);
 }
 .welcome-heading {
-  color: #40C7F4 !important;
+  color: #1586FD !important;
 }
 .left-side {
   width: 100%;
@@ -223,26 +226,27 @@
 .right-side img {
   width: 500px;
 }
-@media only screen and (max-width:1440px){
-
-.animationIcon{
-  right: -60px;
-  top: -119px;
+@media only screen and (max-width: 1440px) {
+  .animationIcon {
+    right: -60px;
+    top: -119px;
+  }
 }
-
-}
-@media only screen and (max-width:1024px){
+@media only screen and (max-width: 1024px) {
   .header-content {
     width: 100%;
     padding-left: 40px;
-}
-.animationIcon, .node, .js, .flutter {
-  width: 70px;
-  position: absolute;
-  right: -60px;
-  top: -119px;
-}
-
+  }
+  .animationIcon,
+  .node,
+  .js,
+  .flutter {
+    width: 70px;
+    position: absolute;
+    right: -60px;
+    top: -119px;
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -263,20 +267,19 @@
   .getContactField {
     width: 100% !important;
   }
-  
 }
 
-@media only screen and (max-width: 350px) {
-
-
- 
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .header {
+    height: 450px;
+  }
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 300px) {
   .header {
     height: 60vh;
   }
-.header-content {
-  padding: 30px 13px;
-}
+  .header-content {
+    padding: 30px 13px;
+  }
 }

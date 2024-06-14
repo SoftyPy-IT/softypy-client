@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable no-unused-vars */
+import { useEffect, useState } from "react";
 import { FaCode, FaReact, FaShopify, FaWordpressSimple } from "react-icons/fa";
 import { FaMobileScreen } from "react-icons/fa6";
 import { HiChevronDown } from "react-icons/hi";
@@ -7,7 +8,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { logout } from "../../../redux/features/auth/authSlice";
 import Cookies from "js-cookie";
-import logo from "../../../../public/assets/softypy-3.png";
+import logo from "../../../../src/assets/logo/logo2.png";
+import logo2 from "../../../../src/assets/logo/logo3.png";
 // import { toggleTheme } from "../../../redux/features/themeSlice";
 import Container from "../../../ui/Container";
 import "./NavBar.css";
@@ -27,6 +29,7 @@ const NavBar = () => {
   //   dispatch(toggleTheme());
   // };
   const [mobileMenu, setMobileMenu] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
   const toggleMobileMenu = () => {
     setMobileMenu((mobileMenu) => !mobileMenu);
   };
@@ -42,19 +45,51 @@ const NavBar = () => {
     dispatch(logout());
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Container>
       <div className="navbar flex items-center justify-between">
         <div className=" logo">
-          <Link to="/">
-            {pathname === "/contact" ? (
-              <h3 className="text-3xl md:text-5xl font-semibold mt-2">
-                SoftyPy
-              </h3>
-            ) : (
-              <img src={logo} alt="logo" className="w-32 lg:w-40" />
-            )}
-          </Link>
+          {
+            <Link to="/">
+              {pathname === "/" ? (
+                <img
+                  src={logo}
+                  alt="logo"
+                  className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56"
+                />
+              ) : scrolled ? (
+                <img
+                  src={logo}
+                  alt="logo2"
+                  className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56"
+                />
+              ) : pathname === "/contact" ? (
+                <img
+                  src={logo}
+                  alt="logo"
+                  className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56"
+                />
+              ) : (
+                <img
+                  src={logo2}
+                  alt="logo2"
+                  className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56"
+                />
+              )}
+            </Link>
+          }
         </div>
         <ul className="navbar-list ">
           <NavLink to="/">
@@ -168,7 +203,7 @@ const NavBar = () => {
           </NavLink>
         </ul>
 
-        <div className="security">
+        {/* <div className="security">
           {email ? (
             <>
               <Button className="logoutBtn " onClick={handleLogout}>
@@ -178,7 +213,7 @@ const NavBar = () => {
           ) : (
             <Button
               sx={{
-                background: "#40C7F4",
+                background: "#1586FD",
                 color: "#fff",
                 padding: "5px 10px",
                 fontSize: "16px",
@@ -193,7 +228,7 @@ const NavBar = () => {
               <NavLink to="/login">Login</NavLink>
             </Button>
           )}
-        </div>
+        </div> */}
 
         <div
           onClick={toggleMobileMenu}
@@ -206,38 +241,14 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      {/* <ul className={mobileMenu ? `mobileMenu` : `mobileMenuActive`}>
-        <Link to="/">
-          {" "}
-          <li className="navbar-item">Home</li>
-        </Link>
-        <Link to="/services">
-          {" "}
-          <li className="navbar-item">Services</li>
-        </Link>
-        <Link to="/portfolio">
-          {" "}
-          <li className="navbar-item">Portfolio</li>
-        </Link>
-        <Link to="/careers">
-          {" "}
-          <li className="navbar-item">Careers </li>
-        </Link>
-        <Link to="/about">
-          {" "}
-          <li className="navbar-item">About Us </li>
-        </Link>
-        <Link to="/contact">
-          {" "}
-          <li className="navbar-item">Contact Us </li>
-        </Link>
-        <Link to="/signup">
-          <li className="navbar-item">Sign Up </li>
-        </Link>
-      </ul> */}
+
       <ul className={mobileMenu ? `mobileMenu` : `mobileMenuActive`}>
         <NavLink to="/">
-          <li className="navbar-item">Home</li>
+          <img
+            src={logo}
+            alt="logo"
+            className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56 mb-5"
+          />
         </NavLink>
         <li className="flex items-center navbar-item serviceNavItems">
           Services <HiChevronDown size={23} />

@@ -17,7 +17,7 @@ const MernPackage = () => {
         <div className="grid grid-cols-1 gap-10 mt-16 lg:grid-cols-3 xl:grid-cols-3 place-content-center ">
           <div className="wordPressPackageWrap">
             <div className="wordPressPackage">
-              <div className="flex items-center justify-between bg-[#40C7F4] text-white p-3">
+              <div className="flex items-center justify-between bg-[#1586FD] text-white p-3">
                 <IoLogoNodejs size={100} />
                 <div>
                   <h4 className="font-bold lg:text-xl xl:text-2xl">Basic</h4>
@@ -112,7 +112,7 @@ const MernPackage = () => {
 
           <div className="wordPressPackageWrap">
             <div className="wordPressPackage">
-              <div className="flex items-center justify-between bg-[#40C7F4] text-white p-3">
+              <div className="flex items-center justify-between bg-[#1586FD] text-white p-3">
                 <IoLogoNodejs size={100} />
                 <div>
                   <h4 className="font-bold lg:text-xl xl:text-2xl">Advance</h4>
@@ -208,7 +208,7 @@ const MernPackage = () => {
 
           <div className="wordPressPackageWrap">
             <div className="wordPressPackage">
-              <div className="flex items-center justify-between bg-[#40C7F4] text-white p-3">
+              <div className="flex items-center justify-between bg-[#1586FD] text-white p-3">
                 <IoLogoNodejs size={100} />
                 <div>
                   <h4 className="font-bold lg:text-xl xl:text-2xl">Premium</h4>

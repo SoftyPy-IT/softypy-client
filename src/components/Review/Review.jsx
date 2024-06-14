@@ -42,7 +42,9 @@ function ThumbnailPlugin(mainRef) {
 }
 
 export default function Review() {
-  const { data: reviewsData, isLoading, isError } = useGetAllReviewsQuery({ allData:true }); // 
+  const { data: reviewsData, isLoading, isError } = useGetAllReviewsQuery({
+    allData: true,
+  }); //
 
   const reviews = reviewsData?.reviews || [];
 
@@ -94,20 +96,22 @@ export default function Review() {
                     )}
                   </div>
                   <div className="reviewContent mt-3">
-                    <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">{review?.name}</h3>
-                    <span className=" text-[12px] md:text-sm text-semibold ">{review?.title}</span>
+                    <h3 className="text-sm md:text-xl lg:text-3xl text-[#2D57A2] font-semibold ">
+                      {review?.name}
+                    </h3>
+                    <span className=" text-[12px] md:text-sm text-semibold ">
+                      {review?.title}
+                    </span>
                     <blockquote className="flex mt-3">
                       <FaQuoteLeft className="leftQoute" />
                       <p className="text-xl">
                         {review?.description.slice(0, 200)}....
                       </p>
                     </blockquote>
-                    <Link to="/client">
-                      <div className="flex flex-end items-center text-[#2D57A2] ml-8">
-                        <button>See More </button>
-                        <FaArrowRight className="historyIcon" />
-                      </div>
-                    </Link>
+                    <div className="flex flex-end items-center text-[#2D57A2] ml-8">
+                      <button>See More </button>
+                      <FaArrowRight className="historyIcon" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -121,7 +125,9 @@ export default function Review() {
                   <img src={review?.image} alt="thumbnail" />
                   {review?.videoUrl ? (
                     <img
-                      src={`https://img.youtube.com/vi/${getYoutubeVideoId(review?.videoUrl)}/0.jpg`}
+                      src={`https://img.youtube.com/vi/${getYoutubeVideoId(
+                        review?.videoUrl
+                      )}/0.jpg`}
                       alt="thumbnail"
                     />
                   ) : (

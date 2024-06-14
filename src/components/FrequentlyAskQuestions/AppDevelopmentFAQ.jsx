@@ -13,61 +13,61 @@ export default function AppDevelopmentFAQ() {
       title: "Enterprise",
       description:
         "Improve resource planning, track employee productivity, monitor equipment performance and address other business challenges with future-proof Android apps that integrate easily into the enterprise IT ecosystem.",
-      icon: <FaVideo className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <FaVideo className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "E-commerce",
       description:
         "Streamline operations and offer next-level shopping experience with apps that make it super easy to find products, complete orders, and handle in-app purchases, or even bring AR, VR or IoT-powered in-store experience.",
-      icon: <HiOutlineShoppingCart className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <HiOutlineShoppingCart className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "Social Media",
       description:
         "Whether it is a social networking and media sharing, blogging and publishing or interest-based and sharing economy network, we’ve made them all, integrating AI, AR/VR or other emerging tech, too.",
-      icon: <HiOutlineUserGroup className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <HiOutlineUserGroup className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "Real-Time Communication",
       description:
         "Enjoy flawless remote collaboration and data sharing with real-time video, voice, and text messaging apps that allow group chats, group calls, broadcasting, screen sharing and more.",
-      icon: <FaCommentDots className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <FaCommentDots className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "Finance",
       description:
         "Get your enterprise or personal finance app with on-point security and thought-out user experience for budget planning, mobile wallet payments, customer loyalty programs, money transfer or cryptocurrency portfolio management.",
-      icon: <FaCircleDollarToSlot className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <FaCircleDollarToSlot className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "Entertainment",
       description:
         "Engage and entertain users with games, sports, music, and other entertainment content via feature-rich, customizable, and pleasant-to-use Android applications.",
-      icon: <FaVideoSlash className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <FaVideoSlash className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "Healthcare",
       description:
         "Transform the way healthcare is provided with diagnostic assistance, remote patient monitoring, appointment management, clinical assistance, telehealth, medical education and other healthcare apps for medical staff and patients.",
-      icon: <FaHeartCircleBolt className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <FaHeartCircleBolt className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "Education",
       description:
         "Redefine education with m-learning apps that provide comprehensive and personalized learning experience, enhance student interaction, allow convenient access to learning materials (including via AR/VR) and simplify student progress tracking.",
-      icon: <FaGraduationCap className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <FaGraduationCap className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "Logistics & Transportation",
       description:
         "Improve supply chain management with scalable and customizable Android solutions that reduce paperwork, allow real-time order tracking, ensure timely deliveries, and lower inventory and fleet maintenance costs.",
-      icon: <FaCarSide className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <FaCarSide className="text-[#1586FD] hidden md:block" size={35} />,
     },
     {
       title: "Wellness",
       description:
         "Promote health and fitness with activity tracking, nutrition planning, weight loss coaching, sleep cycle analysis and stress management via a wellness app. The apps we build leverage AI, AR/VR and other new tech, and connect with wearables.",
-      icon: <FaOilWell className="text-[#40C7F4] hidden md:block" size={35} />,
+      icon: <FaOilWell className="text-[#1586FD] hidden md:block" size={35} />,
     },
   ];
   const toggle = (idx) =>
@@ -124,7 +124,7 @@ export default function AppDevelopmentFAQ() {
       </div>
       <div className="flex justify-center mt-10">
         <Link to="/contact">
-          <button className="bg-[#40C7F4] text-white w-[200px] h-[45px] flex items-center justify-center">
+          <button className="bg-[#1586FD] text-white w-[200px] h-[45px] flex items-center justify-center">
             <span>Contact Us</span>{" "}
             <HiOutlineArrowNarrowRight className="ml-2" />
           </button>

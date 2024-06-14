@@ -11,9 +11,9 @@
 }
 .sticky {
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #1586FD;
   width: 100%;
-  color: black;
+  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -185,10 +185,10 @@
   top: 5px;
   left: -15px;
 }
-.active {
+/* .active {
   font-weight: bold;
-  color: #40c7f4;
-}
+  color: #4168ab;
+} */
 
 @media only screen and (min-width: 1200px) {
   .sticky {
@@ -201,7 +201,7 @@
     width: 100%;
   }
   .navbar {
-    padding: 10px 30px;
+    padding: 0px 30px;
   }
   .security {
     position: relative;
@@ -314,12 +314,12 @@
   }
   .subMenu1 {
     left: 210px;
-    background: #40c7f4;
+    background: #1586FD;
   }
   .subMenu2 {
     left: 50px;
     top: 80px;
-    background: #40c7f4;
+    background: #1586FD;
     width: 250px;
     padding: 10px 0px;
   }
@@ -330,7 +330,7 @@
 
 @media only screen and (max-width: 500px) {
   .navbar {
-    padding: 5px 8px;
+    padding: 10px 8px;
   }
   .bar {
     top: 12px;
@@ -349,14 +349,14 @@
   .teamSubMenu {
     left: 0px;
     top: 241px;
-    background: #40c7f4;
+    background: #1586FD;
     color: white;
   }
   .subMenu1 {
     left: 0px;
     top: 0px;
     width: 200px;
-    background-color: #40c7f4;
+    background-color: #1586FD;
     padding-left: 0px;
     border: none;
   }

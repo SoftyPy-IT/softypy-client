@@ -100,7 +100,7 @@ const Signup = () => {
             </div>
             <button
               type="submit"
-              className="  bg-[#40C7F4] h-10 text-white businessBtn"
+              className="  bg-[#1586FD] h-10 text-white businessBtn"
             >
               Register
             </button>
@@ -110,7 +110,7 @@ const Signup = () => {
        Already have an account?
         <Link to="/login">
           {" "}
-          <b className="text-[#40C7F4]">
+          <b className="text-[#1586FD]">
            Login
           </b>
         </Link>

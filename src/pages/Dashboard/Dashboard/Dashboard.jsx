@@ -12,7 +12,7 @@ const Dashboard = () => {
     <>
       <div className="flex items-center justify-center min-h-screen">
         <h2 className="text-4xl font-bold ">Dashboard </h2>
-        <div className="message rounded-full p-2 fixed bg-[#40C7F4] text-white bottom-8 right-3 cursor-pointer transition-all duration-75 ">
+        <div className="message rounded-full p-2 fixed bg-[#1586FD] text-white bottom-8 right-3 cursor-pointer transition-all duration-75 ">
           {open ? (
             <IoIosClose
               onClick={handleClose}

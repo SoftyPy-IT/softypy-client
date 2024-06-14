@@ -43,7 +43,7 @@
 //                   <HiOutlineLightBulb size={70} />
 //                 </div>
 //                 <div>
-//                   <b className="text-[#40C7F4]">Requirement Analysis</b>
+//                   <b className="text-[#1586FD]">Requirement Analysis</b>
 //                 </div>
 //               </div>
 //               <div className="workFlowBox workFlowBox2">
@@ -51,7 +51,7 @@
 //                   <HiOutlineLightBulb size={70} />
 //                 </div>
 //                 <div>
-//                   <b className="text-[#40C7F4]">Requirement Analysis</b>
+//                   <b className="text-[#1586FD]">Requirement Analysis</b>
 //                 </div>
 //               </div>
 //               <div className="workFlowBox workFlowBox3">
@@ -59,7 +59,7 @@
 //                 <HiOutlineLightBulb size={70} />
 //               </div>
 //               <div>
-//                 <b className="text-[#40C7F4]">Requirement Analysis</b>
+//                 <b className="text-[#1586FD]">Requirement Analysis</b>
 //               </div>
 //             </div>
 //             <div className="workFlowBox workFlowBox4">
@@ -67,7 +67,7 @@
 //               <HiOutlineLightBulb size={70} />
 //             </div>
 //             <div>
-//               <b className="text-[#40C7F4]">Requirement Analysis</b>
+//               <b className="text-[#1586FD]">Requirement Analysis</b>
 //             </div>
 //           </div>
 //           <div className="workFlowBox workFlowBox5">
@@ -75,7 +75,7 @@
 //             <HiOutlineLightBulb size={70} />
 //           </div>
 //           <div>
-//             <b className="text-[#40C7F4]">Requirement Analysis</b>
+//             <b className="text-[#1586FD]">Requirement Analysis</b>
 //           </div>
 //         </div>
 //         <div className="workFlowBox workFlowBox6">
@@ -83,7 +83,7 @@
 //           <HiOutlineLightBulb size={70} />
 //         </div>
 //         <div>
-//           <b className="text-[#40C7F4]">Requirement Analysis</b>
+//           <b className="text-[#1586FD]">Requirement Analysis</b>
 //         </div>
 //       </div>
 //             </div>

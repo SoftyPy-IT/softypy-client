@@ -116,7 +116,7 @@ const Portfolio = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  background: "#40C7F4",
+                  background: "#1586FD",
                   color: "white",
                 }}
               >
@@ -153,7 +153,7 @@ const Portfolio = () => {
                           backgroundSize: "cover",
                         }}
                       >
-                        <div className="bg-[#40C7F4] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
+                        <div className="bg-[#1586FD] text-white absolute w-full px-10 py-1 md:py-2 right-0 bottom-0">
                           <h2 className="text-sm md:text-xl">{item.title}</h2>
                           <p className="hidden xl:block">{item.description}</p>
                         </div>

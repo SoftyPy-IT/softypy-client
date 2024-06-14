@@ -35,7 +35,7 @@ body {
   margin-bottom: 70px !important;
 } */
 /* .css-10d9dml-MuiTabs-indicator {
-  background-color: #40c7f4 !important;
+  background-color: #1586FD !important;
   height: 100% !important;
   display: none !important;
 }
@@ -156,7 +156,7 @@ select:focus {
 .scrollToTopBtn {
   width: 40px;
   height: 40px;
-  background: #2d57a2;
+  background: #1586FD;
   color: white;
   border-radius: 100%;
   right: 27px;

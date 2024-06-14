@@ -39,7 +39,7 @@ const HeroSection = () => {
           <Container>
             <div className="capitalize header-content">
               <div className="left-side">
-                <h1 className="welcome-heading text-3xl md:text-5xl font-bold text-[#40C7F4]">
+                <h1 className="welcome-heading text-3xl md:text-5xl font-bold text-[#1586FD]">
                   Next-gen enterprise
                 </h1>
               
@@ -49,10 +49,10 @@ const HeroSection = () => {
 
                 <div className="items-center justify-between block w-full mt-10 text-white xl:flex xl:mt-20">
                   <h3 className="mb-3 text-3xl md:text-5xl xl:mb-0">
-                    We Think <span className="text-[#40C7F4]">Future</span>
+                    We Think <span className="text-[#1586FD]">Future</span>
                     <span
                       className={
-                        "text-[#40C7F4] futureText " +
+                        "text-[#1586FD] futureText " +
                         (showText === 1 ? "show" : "")
                       }
                     >
@@ -60,7 +60,7 @@ const HeroSection = () => {
                     </span>
                     <span
                       className={
-                        "text-[#40C7F4] futureText2 " +
+                        "text-[#1586FD] futureText2 " +
                         (showText === 2 ? "show" : "")
                       }
                     >
@@ -68,7 +68,7 @@ const HeroSection = () => {
                     </span>
                     <span
                       className={
-                        "text-[#40C7F4] futureText3 " +
+                        "text-[#1586FD] futureText3 " +
                         (showText === 3 ? "show" : "")
                       }
                     >
@@ -77,8 +77,9 @@ const HeroSection = () => {
                   </h3>
                   <button
                     onClick={handleOpen}
-                    className="bg-[#40C7F4] w-44  md:w-60 py-3 rounded-sm text"
+                    className="bg-[#1586FD] w-44  md:w-60 py-3 rounded-sm text"
                   >
+
                     {" "}
                     Let's Talk{" "}
                   </button>

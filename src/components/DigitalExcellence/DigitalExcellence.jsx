@@ -69,7 +69,7 @@ const DigitalExcellence = () => {
               </li>
             </ul>
             <Link to="/contact">
-              <button className="bg-[#40C7F4] w-32  md:w-36 text-white mt-5 py-3 rounded-md ">
+              <button className="bg-[#1586FD] w-32  md:w-36 text-white mt-5 py-3 rounded-md ">
                 Request Now
               </button>
             </Link>

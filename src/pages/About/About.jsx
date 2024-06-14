@@ -72,19 +72,14 @@ const About = () => {
 
   return (
     <section>
-      <div >
+      <div>
         <NavBar />
       </div>
-      <div className="aboutContainers">
-        <div className="aboutContent">
-          <div className="flex items-center uppercase bg-[#40C7F4] text-white rounded-md w-[200px] max-auto justify-between mb-5 px-3 py-3 aboutBtnTopWraps">
-            <p>Home</p>
-            <FaAngleRight />
-            <p>about us </p>
-          </div>
-          <h2 className="text-xl md:text-2xl font-bold uppercase lg:text-5xl  md:text-center ">
-            Our Expert TEAM
-          </h2>
+      <div className="careerContainerWraps">
+        <div className="careerText">
+          <h3 className="leading-30 md:text-4xl xl:text-4xl font-bold">
+          Our Expert TEAM
+          </h3>
         </div>
       </div>
 
@@ -107,7 +102,7 @@ const About = () => {
             <div className="mission">
               <div className="missionRightSide">
                 <div>
-                  <h3 className="text-5xl font-bold text-[#40C7F4]">Mission</h3>
+                  <h3 className="text-5xl font-bold text-[#1586FD]">Mission</h3>
                   <p className="mt-3 leading-8">
                     At SoftyPy, our mission is clear: to empower businesses with
                     transformative digital solutions that catalyze growth and
@@ -144,7 +139,7 @@ const About = () => {
               </div>
               <div className="order-2 missionRightSide">
                 <div>
-                  <h3 className="text-5xl font-bold text-[#40C7F4]">Vision</h3>
+                  <h3 className="text-5xl font-bold text-[#1586FD]">Vision</h3>
                   <p className="mt-3 leading-8">
                     SoftyPy envisions a digital realm where businesses not only
                     survive but thrive. We aspire to be the driving force behind

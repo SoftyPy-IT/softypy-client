@@ -69,7 +69,7 @@ const TimeLine = () => {
                   <HiOutlineLightBulb size={70} />
                 </div>
                 <div>
-                  <b className="text-[#40C7F4]">Requirement Analysis</b>
+                  <b className="text-[#1586FD]">Requirement Analysis</b>
                 </div>
               </motion.div>
               <motion.div
@@ -83,7 +83,7 @@ const TimeLine = () => {
                   <FaPeopleGroup size={70} className="text"/>
                 </div>
                 <div>
-                  <b className="text-[#40C7F4]">Design and Planning</b>
+                  <b className="text-[#1586FD]">Design and Planning</b>
                 </div>
               </motion.div>
               <motion.div
@@ -97,7 +97,7 @@ const TimeLine = () => {
                   <FaLaptopCode size={70} />
                 </div>
                 <div>
-                  <b className="text-[#40C7F4]"> Development Iterations</b>
+                  <b className="text-[#1586FD]"> Development Iterations</b>
                 </div>
               </motion.div>
               <motion.div
@@ -111,7 +111,7 @@ const TimeLine = () => {
                   <FaStreetView size={70} />
                 </div>
                 <div>
-                  <b className="text-[#40C7F4]">
+                  <b className="text-[#1586FD]">
                     {" "}
                     Quality Assurance and Testing
                   </b>
@@ -128,7 +128,7 @@ const TimeLine = () => {
                   <HiOutlineLightBulb size={70} />
                 </div>
                 <div>
-                  <b className="text-[#40C7F4]">
+                  <b className="text-[#1586FD]">
                     Deployment and Client Approval
                   </b>
                 </div>
@@ -144,7 +144,7 @@ const TimeLine = () => {
                   <FaHeadset size={70} />
                 </div>
                 <div>
-                  <b className="text-[#40C7F4]">
+                  <b className="text-[#1586FD]">
                     Post-Launch Support and Maintenance
                   </b>
                 </div>

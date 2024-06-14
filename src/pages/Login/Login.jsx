@@ -54,7 +54,7 @@ const Login = () => {
             Sign In SoftyPy or{" "}
             <Link to="/signup">
               {" "}
-              <b className="text-[#40C7F4]">
+              <b className="text-[#1586FD]">
                 Create an account{" "}
               </b>
             </Link>
@@ -82,7 +82,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="  bg-[#40C7F4] w-[100px] md:w-[310px] h-10 text-white businessBtn"
+            className="  bg-[#1586FD] w-[100px] md:w-[310px] h-10 text-white businessBtn"
           >
             Login{" "}
           </button>

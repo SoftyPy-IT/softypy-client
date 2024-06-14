@@ -14,14 +14,14 @@
   text-align: center;
 }
 .packageCard {
-  background: #40C7F4;
+  background: #1586FD;
   color: #fff;
 }
 .packageCard:nth-child(even) {
   background: #fc5302;
 }
 .productCard:hover {
-  background: #40C7F4;
+  background: #1586FD;
   color: white;
   scale: 1.1;
   cursor: pointer;

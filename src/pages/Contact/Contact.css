@@ -1,7 +1,7 @@
 .contactHeroSection {
   width: 100%;
   position: relative;
-  background: linear-gradient(to right, #40C7F4, #2D57A2);
+  background: linear-gradient(to right, #1586FD, #2D57A2);
   background-size: 300% 300%;
   height: 46vh;
   background-size: 300% 300%;
@@ -126,7 +126,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #40C7F4;
+  border: 2px solid #1586FD;
   color: black;
   transition: all cubic-bezier(0.25, 0.22, 1, 0.99);
 }
@@ -136,7 +136,7 @@
   color: black !important;
 }
 .singleSocialMedia:hover {
-  background-color: #40C7F4 !important;
+  background-color: #1586FD !important;
   color: white !important;
   border: 1px solid #fff;
 }

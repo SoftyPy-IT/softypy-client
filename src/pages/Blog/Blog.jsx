@@ -48,7 +48,7 @@ const Blog = () => {
     width: 130,
     height: "35px",
     margin: 1,
-    backgroundColor: "#40C7F4",
+    backgroundColor: "#1586FD",
     color: "white",
     borderRadius: 10,
     padding: "0px",

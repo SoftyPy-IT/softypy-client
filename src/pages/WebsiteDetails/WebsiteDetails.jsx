@@ -10,7 +10,7 @@ const WebsiteDetails = () => {
 
   return (
     <div>
-      <div className="bg-[#40C7F4] text-white">
+      <div className="bg-[#1586FD] text-white">
         <NavBar />
       </div>
       <div className="pt-20">

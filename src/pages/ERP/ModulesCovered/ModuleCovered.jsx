@@ -78,81 +78,81 @@ const ModuleCovered = () => {
                 <div className="moduleIconWraps">
                   {i === 0 && (
                     <HiOutlineHome
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
 
                   {i === 1 && (
                     <HiOfficeBuilding
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
 
                   {i === 2 && (
                     <HiCurrencyDollar
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 3 && (
                     <HiOutlineShoppingCart
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 4 && (
                     <HiMiniShoppingBag
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 5 && (
                     <HiOutlineUsers
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 6 && (
                     <HiOutlineUsers
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 7 && (
                     <HiClipboardDocument
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 8 && (
                     <HiClipboardDocument
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 9 && (
                     <HiAdjustments
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 10 && (
                     <HiOutlineIdentification
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                   {i === 11 && (
                     <HiOutlineHandRaised
-                      className="text-center mx-auto text-[#40C7F4]"
+                      className="text-center mx-auto text-[#1586FD]"
                       size={40}
                     />
                   )}
                 </div>
                 <h3 className=" font-semibold mt-3"> {data.name}</h3>
-                <HiChevronDoubleRight className="text-[#40C7F4] mx-auto mt-3" />
+                <HiChevronDoubleRight className="text-[#1586FD] mx-auto mt-3" />
               </div>
             </div>
           ))}

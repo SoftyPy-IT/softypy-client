@@ -582,7 +582,7 @@ const PackagePrice = () => {
                     The Platinum Package
                   </h3>
                   <div className="absolute top-14 right-[130px]">
-                    <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails bg-[#40C7F4] text-white ">
+                    <div className="w-20 h-20 text-sm overflow-hidden  flex items-center justify-center rounded-full priceDetails bg-[#1586FD] text-white ">
                       <div>
                         <div>
                           <del>৳1350250</del>

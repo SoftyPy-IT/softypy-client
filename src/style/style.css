@@ -3,7 +3,7 @@
    @apply absolute -top-2 left-0 bg-transparent text-xs text-gray-400 duration-300 peer-placeholder-shown:left-0 peer-placeholder-shown:top-[50%] peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-2 peer-focus:-translate-y-0 peer-focus:text-xs peer-focus:text-blue-400
 }
 .applyBtn{
-   @apply md:text-xl mt-5 md:mt-0 text-sm w-36 md:w-44 h-10 md:h-14 before:absolute before:block before:inset-0 before:-z-10 before:bg-[#2D57A2] text-white after:block hover:after:w-full after:w-0 after:hover:left-0 after:right-0 after:top-0 after:h-full after:-z-10 after:duration-300 after:bg-[#40C7F4] after:absolute relative inline-block
+   @apply md:text-xl mt-5 md:mt-0 text-sm w-36 md:w-44 h-10 md:h-14 before:absolute before:block before:inset-0 before:-z-10 before:bg-[#2D57A2] text-white after:block hover:after:w-full after:w-0 after:hover:left-0 after:right-0 after:top-0 after:h-full after:-z-10 after:duration-300 after:bg-[#1586FD] after:absolute relative inline-block
 }
 .sectionMargin{
    margin-top:100px;

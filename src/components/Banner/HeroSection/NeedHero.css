@@ -38,7 +38,7 @@
   .header {
     height: 85vh;
     position: relative;
-  background: radial-gradient(farthest-side at 80% 80%, #FF333D, #2D57A2, #541283fb, #2D57A2, #40C7F4, #2D57A2);
+  background: radial-gradient(farthest-side at 80% 80%, #FF333D, #2D57A2, #541283fb, #2D57A2, #1586FD, #2D57A2);
     animation: heroBackground 20s ease-in-out infinite;
     background-size: 300% 300%;
   
@@ -112,7 +112,7 @@
   }
   
   .ExploreBtn:hover {
-      background: linear-gradient(to right, #40C7F4, #2D57A2);
+      background: linear-gradient(to right, #1586FD, #2D57A2);
       color:white;
       border:1px solid white;
   }
