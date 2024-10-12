@@ -23,7 +23,7 @@ export const employeeApi = baseApi.injectEndpoints({
         url: `/employee/${id}`,
         method: "DELETE",
       }),
-      invalidatesTags: ["orders"],
+      invalidatesTags: ["employee"],
     }),
   }),
 });
