@@ -34,8 +34,8 @@ const CareersDetails = () => {
                 and the JavaScript object model.
               </li>
               <li>
-                💠Through understanding of React JS, Next JS, rest API, Figma,
-                Tailwind CSS, typescripts and its core principles.
+                💠Through understanding of React JS, Next JS, Material UI, Rest API, Mongodb, Figma,
+                Tailwind CSS, Typescripts and its core principles.
               </li>
               <li>
                 💠Experience with popular React JS workflows (such as Redux).
