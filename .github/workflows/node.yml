@@ -16,4 +16,5 @@ jobs:
           script: |
             cd /var/www/html/softypy-client
             git pull origin main
-            npm install --legacy-peer-deps
+            npm install --legacy-peer-
+            npm run build
