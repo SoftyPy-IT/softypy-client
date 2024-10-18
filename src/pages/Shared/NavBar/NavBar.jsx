@@ -67,25 +67,25 @@ const NavBar = () => {
                 <img
                   src={logo}
                   alt="logo"
-                  className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56"
+                  className="w-36 lg:object-contain object-fill lg:h-16 lg:w-56"
                 />
               ) : scrolled ? (
                 <img
                   src={logo}
                   alt="logo2"
-                  className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56"
+                  className="w-36 lg:object-contain object-fill lg:h-16 lg:w-56"
                 />
               ) : pathname === "/contact" ? (
                 <img
                   src={logo}
                   alt="logo"
-                  className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56"
+                  className="w-36 lg:object-contain object-fill lg:h-16 lg:w-56"
                 />
               ) : (
                 <img
                   src={logo2}
                   alt="logo2"
-                  className="w-36 lg:object-cover object-fill lg:h-16 lg:w-56"
+                  className="w-36 lg:object-contain object-fill lg:h-16 lg:w-56"
                 />
               )}
             </Link>
